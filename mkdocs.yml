@@ -93,18 +93,12 @@ extra_javascript:
 
 extra: # Footer
   social:
-    - icon: fontawesome/solid/diagram-project
-      name: Projeto @work-dta
-      link: https://github.com/orgs/transparencia-mg/projects/1/views/10
-    - icon: fontawesome/brands/youtube
-      name: Canal Transparência no YouTube.
-      link: https://www.youtube.com/@transparenciamg2235
-    - icon: fontawesome/solid/flag
-      name: Material for MkDocs Icons, Emojis.
-      link: https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+    - icon: fontawesome/brands/instagram
+      name: Instagram Lab.mg.
+      link: https://www.instagram.com/gov.labmg
     - icon: fontawesome/brands/github-alt
-      name: Repositório automatizacoes no GitHub.
-      link: https://github.com/transparencia-mg/automatizacoes
+      name: Repositório lab-mg no GitHub.
+      link: https://github.com/lab-mg
 
 plugins:
   - git-revision-date-localized:
