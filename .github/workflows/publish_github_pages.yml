@@ -1,0 +1,33 @@
+name: Publish documentation on GitHub pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+
+jobs:
+  publish_documentation_on_github_pages:
+    runs-on: Ubuntu-20.04
+    steps:
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10.2
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Git user
+        uses: fregante/setup-git-user@v2
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Publish Documentation
+        run: mkdocs gh-deploy

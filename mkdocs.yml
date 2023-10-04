@@ -1,0 +1,128 @@
+site_name: Automatizações
+
+# Repository
+repo_name: lab-mg/automatizacoes
+repo_url: https://github.com/lab-mg/automatizacoes
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  language: pt
+  custom_dir: overrides
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+    admonition:
+      copy: octicons/copy-24
+
+markdown_extensions:
+  - abbr
+  - footnotes
+  - attr_list
+  - pymdownx.tasklist  # Lista de tarefas
+  - pymdownx.emoji  # Emojis
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - md_in_html
+  - toc:
+      permalink: ⚓︎
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets:
+      url_download: true
+      auto_append:
+        - abbreviations.md
+
+extra_css:
+  - assets/style.css
+  - https://unpkg.com/mermaid@10.4.0/dist/mermaid.css
+extra_javascript:
+  - assets/style.js
+  - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
+
+extra: # Footer
+  social:
+    - icon: fontawesome/solid/diagram-project
+      name: Projeto @work-dta
+      link: https://github.com/orgs/transparencia-mg/projects/1/views/10
+    - icon: fontawesome/brands/youtube
+      name: Canal Transparência no YouTube.
+      link: https://www.youtube.com/@transparenciamg2235
+    - icon: fontawesome/solid/flag
+      name: Material for MkDocs Icons, Emojis.
+      link: https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+    - icon: fontawesome/brands/github-alt
+      name: Repositório automatizacoes no GitHub.
+      link: https://github.com/transparencia-mg/automatizacoes
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
+      enable_creation_date: true
+  - search:
+      lang: pt
+  - blog:
+      post_url_format: "{slug}"
+      archive: false
+      categories_toc: true
+      post_excerpt: required
+  - tags:
+      tags_file: tags.md
+  - mkdocs-video:
+      # is_video: True
+      # video_muted: True
+      # video_controls: True
+      # css_style:
+      #   width: "50%"

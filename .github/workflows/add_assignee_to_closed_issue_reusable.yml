@@ -1,0 +1,12 @@
+# This uses a reusable workflow
+name: Add assignee to closed issue
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  add_assignee_to_closed_issue:
+    uses: o-futuro-ja-comecou/github-actions-reutilizaveis/.github/workflows/add_assignee_to_closed_issue_reusable.yml@v2.2
+    secrets:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}

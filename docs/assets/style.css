@@ -1,0 +1,19 @@
+body {
+  text-align: justify;
+}
+p {
+  text-indent: 50px;
+}
+.p-center {
+  text-indent: 0px;
+  text-align: center;
+}
+.p-right {
+  text-align: right;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.admonition p {
+  text-indent: 0px
+}
