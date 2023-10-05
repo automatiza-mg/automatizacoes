@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../consulta_situacao_fornecedores/">
       
-      
-        <link rel="next" href="../progressao_servidores/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Consulta Situação Cadastral de Fornecedores - Automatizações</title>
+        <title>Progressão de servidores no SISAP - Automatizações</title>
       
     
     
@@ -87,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#consulta-situacao-cadastral-de-fornecedores" class="md-skip">
+        <a href="#progressao-de-servidores-no-sisap" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -128,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Consulta Situação Cadastral de Fornecedores
+              Progressão de servidores no SISAP
             
           </span>
         </div>
@@ -585,6 +583,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../consulta_situacao_fornecedores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Consulta Situação Cadastral de Fornecedores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -600,7 +618,7 @@
           
   
   <span class="md-ellipsis">
-    Consulta Situação Cadastral de Fornecedores
+    Progressão de servidores no SISAP
   </span>
   
 
@@ -611,7 +629,7 @@
         
   
   <span class="md-ellipsis">
-    Consulta Situação Cadastral de Fornecedores
+    Progressão de servidores no SISAP
   </span>
   
 
@@ -650,26 +668,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../progressao_servidores/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Progressão de servidores no SISAP
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -747,7 +745,7 @@
     
     
     
-      <a href="../../tags/#robos-compras" class="md-tag">Robôs - Compras</a>
+      <a href="../../tags/#robos-pessoal" class="md-tag">Robôs - Pessoal</a>
     
   
 </nav>
@@ -757,110 +755,162 @@
   
 
 
-<div><h1 id="consulta-situacao-cadastral-de-fornecedores">Consulta Situação Cadastral de Fornecedores<a class="headerlink" href="#consulta-situacao-cadastral-de-fornecedores" title="Permanent link">⚓︎</a></h1>
+<div><h1 id="progressao-de-servidores-no-sisap">Progressão de servidores no SISAP<a class="headerlink" href="#progressao-de-servidores-no-sisap" title="Permanent link">⚓︎</a></h1>
 <ul>
-<li><strong>Responsável</strong>: Isabela Romancini.</li>
+<li><strong>Responsável pelo desenvolvimento do protótipo</strong>: Yan.</li>
 </ul>
-<p>O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.
-Em linhas gerais ele é capaz de:</p>
+<p>O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.</p>
+<p>Em linhas gerais ele é capaz de:</p>
 <ul>
-<li>Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.</li>
-<li>Consultar a situação cadastral desses fornecedores em diversos sites governamentais.</li>
-<li>Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.</li>
-<li>Salvar documentos (imagens e pdfs) que comprovem a consulta.</li>
+<li>Ler uma planilha, em formato Excel, os MASP dos servidores;</li>
+<li>Acessar o SISAP e consultar a situação dos servidores referenciados na planilha.</li>
+<li>Passar as páginas de consulta do SISAP, para cada servidor/MASP, e aplicar a regra desejada (enviar teclas);</li>
+<li>Realizar as operações desejadas (no caso em tela, a progressão funcional), em escala, para os servidores mencionados na planilha;</li>
+<li>Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando a planilha com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou <code>Não se aplica</code>, por exemplo.</li>
+<li>Salvar a planilha alterada e enviá-la por email.</li>
 </ul>
-<p>Essa automação oferece um processo eficiente de atualização da lista de fornecedores, economizando tempo em processos de compras e gestão de contratos.</p>
 <h2 id="robo-em-funcionamento">Robô em funcionamento<a class="headerlink" href="#robo-em-funcionamento" title="Permanent link">⚓︎</a></h2>
 <p><div class="video-container"><iframe src="https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&amp;nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create%22%20width=%22640%22%20height=%22360%22%20frameborder=%220%22%20scrolling=%22no%22%20allowfullscreen%20title=%22Automatiza%C3%A7%C3%A3o%20consulta%20empresas%201.3x.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="montando-o-meu-robo">Montando o meu robô<a class="headerlink" href="#montando-o-meu-robo" title="Permanent link">⚓︎</a></h2>
-<p>Este robô está armazenado no <a href="">GitHub</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+<p>Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. <strong>Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.</strong></p>
+<p>Este robô está armazenado <a href="https://github.com/Andrelamor/treinamentos-power-automate/blob/main/progressao-fhemig-05-10.md">nesta comunidade do GitHub</a>^[1]. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
 <details class="copy">
 <summary>copiar e colar</summary>
 <div class="language-text highlight"><pre><span></span><code>python
-import click
-from dpckan.create_dataset import create_cli as dc
-from dpckan.update_dataset import update_cli as du
-from dpckan.create_resource import create_cli as rc
-from dpckan.update_resource import update_resource_cli as ru
-from dpckan.diff_dataset import diff_dataset_cli
-from dpckan.diff_resource import diff_resource_cli
-from dpckan.get_dataset import get_dataset_cli
+# extrato simplificado do fluxo do treinamento de 05/10
 
-@click.group(context_settings=dict(help_option_names=["-h", "--help"]))
-@click.option('--ckan-host', '-H', envvar='CKAN_HOST', required=True,
-              help='''
-                   Host or link to CKAN's instance wanted.
-                   Example: https://dados.mg.gov.br.
-                   Not required if CKAN_HOST environment variable is defined.
-                   ''')
-@click.option('--ckan-key', '-k', envvar='CKAN_KEY', required=True,
-              help='''
-                   CKAN key of the user for the CKAN's environment wanted.
-                   Not required if CKAN_KEY environment variable is defined.
-                   ''')
-@click.option('--datapackage', '-dp', required=True, default='datapackage.json',
-              help='''
-                   Local path to datapackage.json file.
-                   Not required if the command run in the same directory as the datapackage.json file.
-                   ''')
-@click.option('--datastore/--no-datastore', default=False,
-             help='''
-             Load resource table schema to Data Store Data Dictionary.
-             -no--datastore = False set as default.
-             If you want load Data Store Data Dictionary --datastore flag must be informed.
-             ''')
-@click.option('--exit-code/--no-exit-code', default=False,
-             help='''
-             Set exit code to 1.
-             --no-exit-code = False set as default.
-             If you want exit code set to 1 exit-code flag must be informed.
-             ''')
-@click.pass_context
-def cli(ctx, ckan_host, ckan_key, datapackage, datastore, exit_code):
-  """
-    Conjunto de comandos criados para publicações/atualizações de datasets em instâncias CKAN
-  """
-  ctx.ensure_object(dict)
-  ctx.obj['CKAN_HOST'] = ckan_host
-  ctx.obj['CKAN_KEY'] = ckan_key
-  ctx.obj['DATAPACKAGE'] = datapackage
-  ctx.obj['DATASTORE'] = datastore
-  ctx.obj['EXIT_CODE'] = exit_code
+- login e senha únicos para evitar dificuldade de login
 
-@cli.group()
-def dataset():
-  """
-    Funções responsáveis pela criação e atualização de conjuntos de dados em uma instância CKAN.
-  """
-  pass
+- menu esquerdo de ações (pesquisar ações)
 
-dataset.add_command(dc)
-dataset.add_command(du)
-dataset.add_command(diff_dataset_cli)
-dataset.add_command(get_dataset_cli)
+- criação de variáveis
 
-@cli.group()
-@click.argument('resource_name', required=True)
-@click.pass_context
-def resource(ctx, resource_name):
-  """
-    Funções responsáveis pela criação e atualização de recursos em conjuntos de dados publicados em uma instância CKAN.
-  """
-  ctx.ensure_object(dict)
-  ctx.obj['RESOURCE_NAME'] = resource_name
+- executar fluxo
 
-resource.add_command(rc)
-resource.add_command(ru)
-resource.add_command(diff_resource_cli)
+- zoom nos textos de variáveis e parâmetros comuns (textos de enviar teclas para SISAP) (limitar a ocupação da sala a 12 pessoas, 3 primeiras bancadas, excluir a quarta)
+
+- nomes das instâncias e variáveis criadas para coluna do excel
+
+- 2,5 hora sem terminar (sugestão: fazer um fluxo mais reduzido)
+
+# Progressão
+
+- iniciar excel (arrastar e soltar) doc em branco ou doc a seguir (planilha predeterminada - janela com caminho do documento) instância visível; somente leitura NÂO; armazenada em variável %Progressao
+
+- executar aplicativo: caminho (Desktop ou arquivos de programas86); estilo janela maximizado; aguardar carregamento aplicativo; 5 segundos
+
+- adicionar variável de entrada (menu direito) 
+    - nome da variável = nome externo = login (texto) m1565211
+    - nome variável, confidencial, senha mg1061
+
+- enviar teclas SISAP
+    - inserir teclas especiais - diversos - TAB
+    - selecionar variável %Login
+    - inserir teclas especiais - diversos - TAB
+    - inserir variável %senha
+    - inserir teclas especiais - diversos - enter {return}
+    - atraso de 10miliseconds
+    - SISAP não aceita teclado virtual (ENVIAR TEXTO COMO CHAVES DE HARDWARE)
+
+- aguardar 1 segundo (para poder logar)
+
+- enviar teclas {CTRL}({A}){CTRL}({C})
+    - inserir modificador {CTRL}({A}){CTRL}({C}), 80 miliseconds
+- obter texto da área de transferência variável produzida %check%
+
+- IF %Check% contém `Logon executado com sucesso`
+    - Enviar teclas SIAP{Return}
+    - Else
+    - Enviar teclas {Return} 
+    - End
+
+- rótulo (VOLTAR) entre 4 e 13, antes de END do if
+
+- enviar teclas 
+    - X{Return}{F3}
+
+- aguardar 1seg
+
+- enviar teclas
+    - evo *{Return}{Tab}X{Return}01{REturn}
+- ler da planilha excel (entre 15 e 16) 
+    - instância do excel
+    - valor de uma única célula
+    - coluna A
+    - linha 2
+    - nova variável MASP
+- enviar teclas
+    - evo *{Return}{Tab}X{Return}01{REturn}%MASP%{Return}
+
+- texto(célula; "DDMMAAA")
+
+- ler da planilha 
+    - progressao
+    - unica celula
+    - B
+    - 2
+    - admissão
+
+- ler da planilha 
+    - progressao
+    - unica celula
+    - C
+    - 2
+    - evolucao
+
+- ler da planilha 
+    - progressao
+    - unica celula
+    - F
+    - 2
+    - publicacao
+
+- ler da planilha 
+    - progressao
+    - unica celula
+    - G
+    - 2
+    - inicio
+
+- enviar teclas
+    - evo *{Return}{Tab}X{Return}01{REturn}%MASP%%admissao%{Return}%evolucao%{Tab}%Publicacao%%inicio%{Return}{F3}
+
+- obter primeira linha livre da planilha do excel (entre 14 e 15)
+    - coluna A
+    - variável produzida: tamanhoPlanilha
+- obter primeira linha livre da planilha do excel (entre 15 e 16)
+    - coluna H
+    - variável produzida: linhaAtual
+- condição de loop (entre 16 e 17 - após obter e antes de 'aguardar')
+    - linha atual diferente de tamanhoPlanilha (enquanto linha A for diferente de H
+
+- retirar referência da linha 2 e atribuir variável linha atual
+
+- gravar na planilha do excel (anres do end)
+    - instância excel: %progressao%
+    - valor CONCLUÍDO
+    - na célula especificada
+    - coluna H
+    - %linhaatual%A
+
+- aumentar variável
+    - nome: %linhaAtual%
+    - aumentar em 1
+
+- enviar teclas (Alt F4 para fechar SISAD)
+
+- fechar excel (Salvar)
+
+- shutdown (só desliga o computador se salvar o fluxo)
+
+**para copiar o código, ctrl A + ctrl C e salvar manualmente em bloco e notas**
 </code></pre></div>
 </details>
 <p>Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
-<ul>
-<li>Modificação 1.</li>
-<li>Modificação 2.</li>
-<li>Modificação 3.</li>
-</ul>
+<p>-Inclua login e senha do SISAP.
+  - Revise todas instâncias criadas.
+  - Revise e edite todas as variáveis criadas.</p>
 <div class="admonition question">
 <p class="admonition-title">Precisando de ajuda?</p>
 <p>Algum erro está ocorrendo em uma das fazes de criação de seu robô?
@@ -877,7 +927,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 4, 2023 19:21:42</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 5, 2023 23:35:24</span>
       
         <br>
         Criada:
