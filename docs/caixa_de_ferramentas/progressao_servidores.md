@@ -5,9 +5,9 @@ tags:
   - Robôs - Pessoal
 ---
 
-# Progressão
+# Progressão de servidores no SISAP
 
-- **Responsável**: Yan.
+- **Responsável pelo desenvolvimento do protótipo**: Yan.
 
 O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.
 
@@ -26,6 +26,8 @@ Em linhas gerais ele é capaz de:
 ![type:video](https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
 
 ## Montando o meu robô
+
+Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
 Este robô está armazenado [nesta comunidade do GitHub](https://github.com/Andrelamor/treinamentos-power-automate/blob/main/progressao-fhemig-05-10.md)^[1]. Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
