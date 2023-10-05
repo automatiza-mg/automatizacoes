@@ -14,7 +14,7 @@ O robô para consulta de situação cadastral de fornecedores foi desenvolvido c
 Em linhas gerais ele é capaz de:
 
 - Ler uma planilha, em formato Excel, os MASP dos servidores;
-- Acessar o SISAP e consultar a situação dos servidores referenciados na planilha.
+- Acessar o SISAP e consultar a situação dos servidores referenciados na planilha;
 - Passar as páginas de consulta do SISAP, para cada servidor/MASP, e aplicar a regra desejada (enviar teclas);
 - Realizar as operações desejadas (no caso em tela, a progressão funcional), em escala, para os servidores mencionados na planilha;
 - Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando a planilha com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou `Não se aplica`, por exemplo.
