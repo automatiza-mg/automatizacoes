@@ -589,7 +589,7 @@
         
   
   <span class="md-ellipsis">
-    Consulta Situação Cadastral de Fornecedores
+    Consulta Situação Cadastral de Fornecedores - CAFIMP
   </span>
   
 
@@ -769,7 +769,7 @@
 <li><strong>Data do treinamento</strong>: 05/10/2023</li>
 <li><strong>Local</strong>: Sala SEE, Torre Minas, 11º andar</li>
 <li><strong>Turma treinada</strong>: FHEMIG</li>
-<li><strong>Arquivo auxiliar</strong>: <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap/progressao-servidores-sisap.xlsx">progressao-servidores-sisap.xlsx</a></li>
+<li><strong>Arquivo auxiliar</strong>: <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.xlsx">progressao-servidores-sisap.xlsx</a></li>
 </ul>
 <h2 id="funcoes-desenvolvidas-pelo-prototipo">Funções desenvolvidas pelo protótipo:<a class="headerlink" href="#funcoes-desenvolvidas-pelo-prototipo" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -784,53 +784,13 @@
 <p><div class="video-container"><iframe src="https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&amp;nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create%22%20width=%22640%22%20height=%22360%22%20frameborder=%220%22%20scrolling=%22no%22%20allowfullscreen%20title=%22Automatiza%C3%A7%C3%A3o%20consulta%20empresas%201.3x.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
 <p>Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. <strong>Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.</strong></p>
-<p>O arquivo contendo o código deste robô está armazenado <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap/progressao-servidores-sisap.txt">nesta página</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop. </p>
+<p>O arquivo contendo o código deste robô está armazenado <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.txt">nesta página</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop. </p>
 <p>Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
 <details class="copy">
 <summary><strong>Progressão de servidores no SISAP</strong></summary>
-<div class="language-text highlight"><pre><span></span><code>        Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\ct10\\Desktop\\Robo.xlsx''' Visible: True ReadOnly: False Instance=&gt; Progressao
-        System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 5
-        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SISAP{Tab}%Login%%Senha%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-        LABEL Voltar
-        WAIT 2
-        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-        Clipboard.GetText Text=&gt; Check
-        IF Contains(Check, $'''Logon executado com sucesso.''', False) THEN
-            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SIAP{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-        ELSE
-            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-            GOTO Voltar
-        END
-        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{X}{Return}{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-        Excel.GetFirstFreeRowOnColumn Instance: Progressao Column: $'''A''' FirstFreeRowOnColumn=&gt; Tamanhoplanilha
-        Excel.GetFirstFreeRowOnColumn Instance: Progressao Column: $'''H''' FirstFreeRowOnColumn=&gt; linhaatual
-        LOOP WHILE (linhaatual) &lt;&gt; (Tamanhoplanilha)
-            WAIT 2
-            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''A''' StartRow: linhaatual ReadAsText: False CellValue=&gt; MASP
-            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''B''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Admissao
-            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''C''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Evolucao
-            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''F''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Publicacao
-            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''G''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Inicio
-            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''EVO *{Return}{Tab}X{Return}01{Return}%MASP%%Admissao%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-            WAIT 2
-            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-            Clipboard.GetText Text=&gt; Check
-            IF Contains(Check, $'''Admissao inexistente''', False) THEN
-                MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-                Excel.WriteToExcel.WriteCell Instance: Progressao Value: $'''Admissão inexistente''' Column: $'''H''' Row: linhaatual
-                Variables.IncreaseVariable Value: linhaatual IncrementValue: 1
-            ELSE
-                MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Evolucao%{Tab}%Publicacao%%Inicio%{Return}{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-                Excel.WriteToExcel.WriteCell Instance: Progressao Value: $'''Concluído''' Column: $'''H''' Row: linhaatual
-                Variables.IncreaseVariable Value: linhaatual IncrementValue: 1
-            END
-        END
-        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}(F4)''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
-        Excel.CloseExcel.CloseAndSave Instance: Progressao
-</code></pre></div>
 </details>
 <p><strong>Importante</strong></p>
-<p>Este protótipo utilizou uma planilha auxiliar, disponível <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap/">nesta pasta</a>. Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
+<p>Este protótipo utilizou uma planilha auxiliar, disponível <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/">nesta pasta</a>. Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
 <ul>
 <li>
 <p>Inclua login e senha do SISAP.</p>
