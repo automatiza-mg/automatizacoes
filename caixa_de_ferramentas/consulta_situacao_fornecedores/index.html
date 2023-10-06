@@ -633,6 +633,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#funcoes-desenvolvidas-pelo-prototipo" class="md-nav__link">
+    Funções desenvolvidas pelo protótipo:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#robo-em-funcionamento" class="md-nav__link">
     Robô em funcionamento
   </a>
@@ -640,8 +647,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#montando-o-meu-robo" class="md-nav__link">
-    Montando o meu robô
+  <a href="#montando-o-seu-robo" class="md-nav__link">
+    Montando o seu robô
   </a>
   
 </li>
@@ -709,6 +716,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#funcoes-desenvolvidas-pelo-prototipo" class="md-nav__link">
+    Funções desenvolvidas pelo protótipo:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#robo-em-funcionamento" class="md-nav__link">
     Robô em funcionamento
   </a>
@@ -716,8 +730,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#montando-o-meu-robo" class="md-nav__link">
-    Montando o meu robô
+  <a href="#montando-o-seu-robo" class="md-nav__link">
+    Montando o seu robô
   </a>
   
 </li>
@@ -754,9 +768,14 @@
 <div><h1 id="consulta-situacao-cadastral-de-fornecedores">Consulta Situação Cadastral de Fornecedores<a class="headerlink" href="#consulta-situacao-cadastral-de-fornecedores" title="Permanent link">⚓︎</a></h1>
 <ul>
 <li><strong>Responsável</strong>: Isabela Romancini.</li>
+<li><strong>Data do treinamento</strong>: 28/09/2023</li>
+<li><strong>Local</strong>: Sala SEE, Torre Minas, 11º andar</li>
+<li><strong>Turma treinada</strong>: órgãos diversos</li>
+<li><strong>Arquivo auxiliar</strong>: <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta-situacao-cadastral-fornecedores/consulta-situacao-cadastral-fornecedores.xlsx">consulta-situacao-cadastral-fornecedores.xlsx</a></li>
 </ul>
 <p>O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.
 Em linhas gerais ele é capaz de:</p>
+<h2 id="funcoes-desenvolvidas-pelo-prototipo">Funções desenvolvidas pelo protótipo:<a class="headerlink" href="#funcoes-desenvolvidas-pelo-prototipo" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.</li>
 <li>Consultar a situação cadastral desses fornecedores em diversos sites governamentais.</li>
@@ -766,94 +785,28 @@ Em linhas gerais ele é capaz de:</p>
 <p>Essa automação oferece um processo eficiente de atualização da lista de fornecedores, economizando tempo em processos de compras e gestão de contratos.</p>
 <h2 id="robo-em-funcionamento">Robô em funcionamento<a class="headerlink" href="#robo-em-funcionamento" title="Permanent link">⚓︎</a></h2>
 <p><div class="video-container"><iframe src="https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&amp;nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create%22%20width=%22640%22%20height=%22360%22%20frameborder=%220%22%20scrolling=%22no%22%20allowfullscreen%20title=%22Automatiza%C3%A7%C3%A3o%20consulta%20empresas%201.3x.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
-<h2 id="montando-o-meu-robo">Montando o meu robô<a class="headerlink" href="#montando-o-meu-robo" title="Permanent link">⚓︎</a></h2>
-<p>Este robô está armazenado no <a href="">GitHub</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+<h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
+<p>Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. <strong>Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.</strong></p>
+<p>O arquivo contendo o código deste robô está armazenado <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta-situacao-cadastral-fornecedores/consulta-situacao-cadastral-fornecedores.txt">nesta página</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
 <details class="copy">
 <summary>copiar e colar</summary>
-<div class="language-text highlight"><pre><span></span><code>python
-import click
-from dpckan.create_dataset import create_cli as dc
-from dpckan.update_dataset import update_cli as du
-from dpckan.create_resource import create_cli as rc
-from dpckan.update_resource import update_resource_cli as ru
-from dpckan.diff_dataset import diff_dataset_cli
-from dpckan.diff_resource import diff_resource_cli
-from dpckan.get_dataset import get_dataset_cli
-
-@click.group(context_settings=dict(help_option_names=["-h", "--help"]))
-@click.option('--ckan-host', '-H', envvar='CKAN_HOST', required=True,
-              help='''
-                   Host or link to CKAN's instance wanted.
-                   Example: https://dados.mg.gov.br.
-                   Not required if CKAN_HOST environment variable is defined.
-                   ''')
-@click.option('--ckan-key', '-k', envvar='CKAN_KEY', required=True,
-              help='''
-                   CKAN key of the user for the CKAN's environment wanted.
-                   Not required if CKAN_KEY environment variable is defined.
-                   ''')
-@click.option('--datapackage', '-dp', required=True, default='datapackage.json',
-              help='''
-                   Local path to datapackage.json file.
-                   Not required if the command run in the same directory as the datapackage.json file.
-                   ''')
-@click.option('--datastore/--no-datastore', default=False,
-             help='''
-             Load resource table schema to Data Store Data Dictionary.
-             -no--datastore = False set as default.
-             If you want load Data Store Data Dictionary --datastore flag must be informed.
-             ''')
-@click.option('--exit-code/--no-exit-code', default=False,
-             help='''
-             Set exit code to 1.
-             --no-exit-code = False set as default.
-             If you want exit code set to 1 exit-code flag must be informed.
-             ''')
-@click.pass_context
-def cli(ctx, ckan_host, ckan_key, datapackage, datastore, exit_code):
-  """
-    Conjunto de comandos criados para publicações/atualizações de datasets em instâncias CKAN
-  """
-  ctx.ensure_object(dict)
-  ctx.obj['CKAN_HOST'] = ckan_host
-  ctx.obj['CKAN_KEY'] = ckan_key
-  ctx.obj['DATAPACKAGE'] = datapackage
-  ctx.obj['DATASTORE'] = datastore
-  ctx.obj['EXIT_CODE'] = exit_code
-
-@cli.group()
-def dataset():
-  """
-    Funções responsáveis pela criação e atualização de conjuntos de dados em uma instância CKAN.
-  """
-  pass
-
-dataset.add_command(dc)
-dataset.add_command(du)
-dataset.add_command(diff_dataset_cli)
-dataset.add_command(get_dataset_cli)
-
-@cli.group()
-@click.argument('resource_name', required=True)
-@click.pass_context
-def resource(ctx, resource_name):
-  """
-    Funções responsáveis pela criação e atualização de recursos em conjuntos de dados publicados em uma instância CKAN.
-  """
-  ctx.ensure_object(dict)
-  ctx.obj['RESOURCE_NAME'] = resource_name
-
-resource.add_command(rc)
-resource.add_command(ru)
-resource.add_command(diff_resource_cli)
-</code></pre></div>
 </details>
-<p>Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
+<p><strong>Importante</strong></p>
+<p>Este protótipo utilizou uma planilha auxiliar, disponível <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/situacao-cadastral-fornecedores/">nesta pasta</a>. Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
 <ul>
-<li>Modificação 1.</li>
-<li>Modificação 2.</li>
-<li>Modificação 3.</li>
+<li>
+<p>Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).</p>
+</li>
+<li>
+<p>Revise e edite todas as variáveis criadas (ex.: nomes das colunas que serão criadas/preenchidas, etc).</p>
+</li>
+<li>
+<p>Confira o caminho dos arquivos editados pelo robô no seu computador (<code>PATH</code>) </p>
+</li>
+<li>
+<p>Certifique-se de haja ações para todas as operações desejadas que o robô execute</p>
+</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">Precisando de ajuda?</p>
@@ -871,7 +824,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 13:54:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 19:05:07</span>
       
         <br>
         Criada:
