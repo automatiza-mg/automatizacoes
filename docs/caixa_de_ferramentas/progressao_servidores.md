@@ -1,7 +1,6 @@
 ---
 comments: true
 tags:
-  - Robôs
   - Pessoal SISAP
 ---
 
@@ -9,17 +8,14 @@ tags:
 
 - **Responsável pelo desenvolvimento do protótipo**: Yan.
 
-O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.
+## Funções desenvolvidas pelo protótipo:
 
-Em linhas gerais ele é capaz de:
-
-- Ler uma planilha, em formato Excel, os MASP dos servidores;
+- Ler os MASP dos servidores em uma planilha, em formato Excel;
 - Acessar o SISAP e consultar a situação dos servidores referenciados na planilha;
 - Passar as páginas de consulta do SISAP, para cada servidor/MASP, e aplicar a regra desejada (enviar teclas);
 - Realizar as operações desejadas (no caso em tela, a progressão funcional), em escala, para os servidores mencionados na planilha;
-- Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando a planilha com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou `Não se aplica`, por exemplo.
+- Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando-a com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou `Não se aplica`, por exemplo.
 - Salvar a planilha alterada e enviá-la por email.
-
 
 ## Robô em funcionamento
 
@@ -29,7 +25,7 @@ Em linhas gerais ele é capaz de:
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-Este robô está armazenado [nesta comunidade do GitHub](https://github.com/Andrelamor/treinamentos-power-automate/blob/main/progressao-fhemig-05-10.md)^[1]. Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+Este robô está armazenado [nesta página](https://github.com/Andrelamor/treinamentos-power-automate/blob/main/progressao-fhemig-05-10.md)^[1]. Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 ??? copy "copiar e colar"
@@ -42,6 +38,7 @@ Após copiar e colar o código em um novo fluxo no Power Automate, realize as se
   -Inclua login e senha do SISAP.
   - Revise todas instâncias criadas.
   - Revise e edite todas as variáveis criadas.
+  - Certifique-se de haja ações para todas as operações desejadas que o robô execute
 
 !!! question "Precisando de ajuda?"
 

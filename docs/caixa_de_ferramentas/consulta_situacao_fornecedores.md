@@ -1,8 +1,7 @@
 ---
 comments: true
 tags:
-  - Robôs
-  - Robôs - Compras
+  - Compras CAFIMP
 ---
 
 # Consulta Situação Cadastral de Fornecedores
