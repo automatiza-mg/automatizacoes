@@ -1,2 +1,38 @@
+SET linha TO 2
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: Caminho_excel Visible: True ReadOnly: False Instance=> ExcelInstance
+Excel.ReadFromExcel.ReadCell Instance: ExcelInstance StartColumn: $'''A''' StartRow: linha ReadAsText: False CellValue=> CNPJ
+LOOP WHILE (CNPJ) > (0)
+    WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.cagef.mg.gov.br/fornecedor-web/br/gov/prodemge/seplag/fornecedor/publico/index.zul''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> Browser
+    MouseAndKeyboard.MoveMouseToImage.ClickImage Images: [imgrepo['Menu']] SearchForImageOn: MouseAndKeyboard.SearchTarget.EntireScreen MousePositionOnImage: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 Tolerance: 10 MovementStyle: MouseAndKeyboard.MovementStyle.Instant Occurence: 1 Timeout: 5 ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClick: 0 SearchAlgorithm: MouseAndKeyboard.ImageFinderAlgorithm.Legacy X=> X Y=> Y
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Return}{Tab}{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+    WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: Browser Text: $'''CNPJ do Fornecedor''')
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}%CNPJ%''' DelayBetweenKeystrokes: 50 SendTextAsHardwareKeys: False
+    MouseAndKeyboard.MoveMouseToImage.ClickImage Images: [imgrepo['Pesquisar']] SearchForImageOn: MouseAndKeyboard.SearchTarget.EntireScreen MousePositionOnImage: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 Tolerance: 10 MovementStyle: MouseAndKeyboard.MovementStyle.Instant Occurence: 1 Timeout: 5 ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClick: 0 SearchAlgorithm: MouseAndKeyboard.ImageFinderAlgorithm.Legacy X=> X2 Y=> Y2
+    WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: Browser ExtractionParameters: {[$'''html > body > div:eq(0) > div > div > div > div > div > div:eq(1) > div:eq(1) > div > div > div > div > div:eq(1) > div:eq(0) > div:eq(1) > div > div:eq(3) > div > span''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> textocafimp
+    Clipboard.SetText Text: textocafimp
+    Clipboard.GetText Text=> textoparaexcel
+    IF Contains(textoparaexcel, $'''NÃO SE ENCONTRA INSCRITO''', True) THEN
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: $'''Não se encontra inscrito''' Column: $'''B''' Row: linha
+    ELSE
+        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: $'''Inscrito''' Column: $'''B''' Row: linha
+    END
+    # Crie uma pasta no seu computador chamada "Automatiza" e inclua seu caminho na variável "Caminho_pasta_automatiza"
+    Folder.Create FolderPath: Caminho_pasta_automatiza FolderName: CNPJ Folder=> pastacnpj
+    WebAutomation.TakeScreenshot.TakeScreenshotSaveToFile BrowserInstance: Browser File: $'''%Caminho_pasta_automatiza%%CNPJ%\\CAFIMP.png''' FileFormat: WebAutomation.FileFormat.Png
+    WebAutomation.CloseWebBrowser BrowserInstance: Browser
+    Variables.IncreaseVariable Value: linha IncrementValue: 1
+    Excel.ReadFromExcel.ReadCell Instance: ExcelInstance StartColumn: $'''A''' StartRow: linha ReadAsText: False CellValue=> CNPJ
+END
+Excel.CloseExcel.CloseAndSave Instance: ExcelInstance
 
+# [ControlRepository][PowerAutomateDesktop]
 
+{
+  "ControlRepositorySymbols": [],
+  "ImageRepositorySymbol": {
+    "Repository": "{\r\n  \"Folders\": [],\r\n  \"Images\": [\r\n    {\r\n      \"Id\": \"181b3ba3-c920-453b-b795-ee00d82582f4\",\r\n      \"Name\": \"Menu\",\r\n      \"Screenshot\": \"iVBORw0KGgoAAAANSUhEUgAAACIAAAAjCAYAAADxG9hnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVFhH7ZZBCsIwEEXTq9mlnsBSD9u1myxFaK8QWnBVGPngQj8SNyFO4Afe9s9LMgMTrqEzD0iEkQgjEaYdkfvxZMt4KQbyvtXJisznwfaUrORBHnK5VlYEN9jX9RVR5iAPuVyrjRcBLnqkJhJhsiK3Q2/bNNkjxmIgD7lcKyuC5nIxvm5E3HxNTSTC/BTRGvAObuBifLUG/BOJMBJhJPJJZ0/Z7WQZ3FRMtAAAAABJRU5ErkJggg==\",\r\n      \"ScreenshotPath\": \"imageRepo-screenshots\\\\b0b8b915-d9ce-438e-99af-cf864c51b432.png\"\r\n    },\r\n    {\r\n      \"Id\": \"0ec2c19e-39ae-4426-95d6-3d6e81a81781\",\r\n      \"Name\": \"Pesquisar\",\r\n      \"Screenshot\": \"iVBORw0KGgoAAAANSUhEUgAAAHQAAAAxCAYAAAALD434AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVTSURBVHhe7ZzLThsxFIazZdEHaqWqb1XxNhWrqot21Ra1GxAgiriKgEi4hvslEIRYduPm9/iEY/vMZAiBceix9CEymbHH5/PxOGGG2u3trQnpdDpKoki+OJ5QqQLi5uZGeWEkDwT3xrFCpQOA1AhxfX2tDBkpzoTkB0RCwx3CiqSG2+228kxI8eY+Ql8gVyg/kBq4urryuLy8VJ6ZMObkgvvh3kAkVBKJyi8uLsz5+bk5OzvzOD09VYZMGGPEHfEnyaFYLpSwQrlMEonK0MjJyYk5Pj42R0dH5vDw0KPVailDIowt4o24I/7wAB9cbJ7UGpdJGYnR0ZicNL8/fDDf3rwxX8fGlIpA/OEBPuCFMjaUSr9boZSZPZk/f6rIxIAPeCGpPFNFobCOnZHqv96/FytVqgVe4AeeeJbylXCNshNzNObsg4MDzc5EgRf4gSf4oiyNhMI2Lry4GO/s7IiVKWkAP/AEX5Sl/DNrDRsxJ2M1BfvNZlOsSEkD+IEn+OILJE8oTbf7+/tma2tLrEhJA/iBJ5p2RaG0GNrd3TWbm5tiRUoawA88hYsjokYfVej6qULThoTCVymhGxsbYkVKGsAPLYzgDf5U6AgjCcXHF8IK5R9Z6vW6WJGSBvBTSii+IN7e3lahiQM/8ARf8Pa8Qj9Omb8mKHdTpt7bZ9y079x2XpqfCuq4M+2PdDzxydy7d6n8nR4X97mf4NscEw3vvFrN+Hhs8wo/xx7uPMT35L6K5/MIKhDaMC22zQamF7ysk7mdQqBDgd1t3v52n7AOF1hv8Awq1InwJHW3NXndDlvPXdTnDKGvbrDm9r8ElQvNAkuSioVa+eJodxQGJBP4IGZAobYNaVaIwXH3E3l9krf7g+fxJCKUOlYstD7dfdPLsqe8P2iGFhzngf2yvsrn9VqFeiO+WCgF04hTWIlgeO0PKtQJ6paituw+NJuIWS30Fe3m9K0sFQvNOvUwjbrXQZFGsS3eqM+O7S+UAju4UIutKytxHaEs6dyEvhZdTkpSgVC/SJ0UgxxBAfGzu7/Qp2eoh82qbuEyooHrMlYYgL32bT3lrs1FVJyhIY8RmmGz1QVTvlY94L9f0NZjhALbrwcZNCXHhQuL2+93/mUYeaE2CN61Ku/4LCO5GD4YOF6dXfoKtXX7M4V0Dn570n4Fs0ZJRkpoqxlOSXEAKDukQEXy3HTp7StMfZ5Q9CGox8sse3xOH7335L5m518Uo2KSFBoVFyySxYso32VqVIRsjPcNB02YoW5w8BJMz2I7Fj4A8wZvzuArycsKrRQm4onXqZT5j4T+H6jQV4YKfWWUFqp/4B4N4KfvH7j1FpTRodQtKCp0dMgTqjeJjSi4jZMLjW7jlG601oeV0gReim60jh6F2Nvbs7fa/3j3TqxQqRZ4KfUoBKZd/rDS4pcvmqWJAR/w0vdhJbzARv7RBWn95/Nn8/3tW/NVxVZLN/7wAB/8+glfocyeUKyS+BNoGAVYHK2urprFxUWzsLBg5ufnzdzcnGV2dtZjZmZGGZAwlhRjxBtxR/zhAT7ghU+3tLqFSHqSu4YflKW02sW1FAdjRKyvr5u1tTWzsrJilpeXzdLSkm1EeR4QX8QZ8UbcEX94gA946ftIPn7wLKWpFyMB6d1oNOyFGJVilBD4xkIZLjy+iDfiDpHwgOsmyeTZSSI9oYCyFDvjIKQ1xKIijAwslVExge8TleHBYwsQbyQV4g8P8AEvfCFE7rz/gsJfUKaSWGQrVlOoDKMDFXPwBbEyHMLYIt6IO+IPD/ABL2Fmwh9H/zVcQoQxRtwpI0lkkcxOp2P+ASKfBHyoAjAmAAAAAElFTkSuQmCC\",\r\n      \"ScreenshotPath\": \"imageRepo-screenshots\\\\19635e12-c8a5-438d-8b94-937838096446.png\"\r\n    }\r\n  ],\r\n  \"Version\": 1\r\n}",
+    "ImportMetadata": {},
+    "Name": "imgrepo"
+  },
+  "ConnectionReferences": []
+}
