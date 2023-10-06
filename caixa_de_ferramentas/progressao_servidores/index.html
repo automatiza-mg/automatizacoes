@@ -780,12 +780,11 @@
 <p><div class="video-container"><iframe src="https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&amp;nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create%22%20width=%22640%22%20height=%22360%22%20frameborder=%220%22%20scrolling=%22no%22%20allowfullscreen%20title=%22Automatiza%C3%A7%C3%A3o%20consulta%20empresas%201.3x.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="montando-o-meu-robo">Montando o meu robô<a class="headerlink" href="#montando-o-meu-robo" title="Permanent link">⚓︎</a></h2>
 <p>Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. <strong>Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.</strong></p>
-<p>Este robô está armazenado <a href="https://github.com/Andrelamor/treinamentos-power-automate/blob/main/progressao-fhemig-05-10.md">nesta página</a>^[1]. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+<p>Este robô está armazenado <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap.txt">nesta página</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
 <details class="copy">
 <summary>copiar e colar</summary>
-<div class="language-text highlight"><pre><span></span><code>python
-Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\ct10\\Desktop\\Robo.xlsx''' Visible: True ReadOnly: False Instance=&gt; Progressao
+<div class="language-text highlight"><pre><span></span><code>Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\ct10\\Desktop\\Robo.xlsx''' Visible: True ReadOnly: False Instance=&gt; Progressao
 System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 5
 MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SISAP{Tab}%Login%%Senha%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
 LABEL Voltar
@@ -827,11 +826,21 @@ Excel.CloseExcel.CloseAndSave Instance: Progressao
 </code></pre></div>
 </details>
 <p>Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
-<p>-Inclua login e senha do SISAP.
-  - Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
-  - Revise e edite todas as variáveis criadas (ex.: login, senha, nomes das colunas que serão criadas/preenchidas, etc).
-  - Confira o caminho dos arquivos editados pelo robô no seu computador (<code>PATH</code>) 
-  - Certifique-se de haja ações para todas as operações desejadas que o robô execute</p>
+<p>-Inclua login e senha do SISAP.</p>
+<ul>
+<li>
+<p>Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).</p>
+</li>
+<li>
+<p>Revise e edite todas as variáveis criadas (ex.: login, senha, nomes das colunas que serão criadas/preenchidas, etc).</p>
+</li>
+<li>
+<p>Confira o caminho dos arquivos editados pelo robô no seu computador (<code>PATH</code>)</p>
+</li>
+<li>
+<p>Certifique-se de haja ações para todas as operações desejadas que o robô execute</p>
+</li>
+</ul>
 <div class="admonition question">
 <p class="admonition-title">Precisando de ajuda?</p>
 <p>Algum erro está ocorrendo em uma das fazes de criação de seu robô?
@@ -848,7 +857,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 14:27:08</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 15:19:39</span>
       
         <br>
         Criada:
