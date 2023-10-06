@@ -1,3 +1,3 @@
-# Classificação de robôs
+# Catálogo de robôs por categoria
 
 [TAGS]
