@@ -31,7 +31,7 @@ Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 ??? copy "copiar e colar"
 
         python
-        --8<-- "https://raw.githubusercontent.com/Andrelamor/treinamentos-power-automate/main/progressao-fhemig-05-10.md"
+        --8<-- "https://raw.githubusercontent.com/lab-mg/automatizacoes/main/docs/robos/progressao-servidores-sisap.txt"
 
 Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
 
