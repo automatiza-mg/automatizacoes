@@ -788,6 +788,46 @@
 <p>Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
 <details class="copy">
 <summary><strong>Progressão de servidores no SISAP</strong></summary>
+<div class="language-text highlight"><pre><span></span><code>        Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\ct10\\Desktop\\Robo.xlsx''' Visible: True ReadOnly: False Instance=&gt; Progressao
+        System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 5
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SISAP{Tab}%Login%%Senha%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        LABEL Voltar
+        WAIT 2
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        Clipboard.GetText Text=&gt; Check
+        IF Contains(Check, $'''Logon executado com sucesso.''', False) THEN
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SIAP{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        ELSE
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            GOTO Voltar
+        END
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{X}{Return}{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        Excel.GetFirstFreeRowOnColumn Instance: Progressao Column: $'''A''' FirstFreeRowOnColumn=&gt; Tamanhoplanilha
+        Excel.GetFirstFreeRowOnColumn Instance: Progressao Column: $'''H''' FirstFreeRowOnColumn=&gt; linhaatual
+        LOOP WHILE (linhaatual) &lt;&gt; (Tamanhoplanilha)
+            WAIT 2
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''A''' StartRow: linhaatual ReadAsText: False CellValue=&gt; MASP
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''B''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Admissao
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''C''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Evolucao
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''F''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Publicacao
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''G''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Inicio
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''EVO *{Return}{Tab}X{Return}01{Return}%MASP%%Admissao%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            WAIT 2
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            Clipboard.GetText Text=&gt; Check
+            IF Contains(Check, $'''Admissao inexistente''', False) THEN
+                MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+                Excel.WriteToExcel.WriteCell Instance: Progressao Value: $'''Admissão inexistente''' Column: $'''H''' Row: linhaatual
+                Variables.IncreaseVariable Value: linhaatual IncrementValue: 1
+            ELSE
+                MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Evolucao%{Tab}%Publicacao%%Inicio%{Return}{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+                Excel.WriteToExcel.WriteCell Instance: Progressao Value: $'''Concluído''' Column: $'''H''' Row: linhaatual
+                Variables.IncreaseVariable Value: linhaatual IncrementValue: 1
+            END
+        END
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}(F4)''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        Excel.CloseExcel.CloseAndSave Instance: Progressao
+</code></pre></div>
 </details>
 <p><strong>Importante</strong></p>
 <p>Este protótipo utilizou uma planilha auxiliar, disponível <a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/">nesta pasta</a>. Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
@@ -824,7 +864,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 18:46:24</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 19:23:06</span>
       
         <br>
         Criada:
