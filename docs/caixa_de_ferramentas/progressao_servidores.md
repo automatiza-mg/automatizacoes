@@ -25,13 +25,12 @@ tags:
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-Este robô está armazenado [nesta página](https://github.com/Andrelamor/treinamentos-power-automate/blob/main/progressao-fhemig-05-10.md)^[1]. Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+Este robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 ??? copy "copiar e colar"
 
-        python
-        --8<-- "https://raw.githubusercontent.com/lab-mg/automatizacoes/main/docs/robos/progressao-servidores-sisap.txt"
+                --8<-- "https://raw.githubusercontent.com/lab-mg/automatizacoes/main/docs/robos/progressao-servidores-sisap.txt"
 
 Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
 
