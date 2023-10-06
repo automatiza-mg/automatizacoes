@@ -7,6 +7,10 @@ tags:
 # Progressão de servidores no SISAP
 
 - **Responsável pelo desenvolvimento do protótipo**: Yan.
+- **Data do treinamento**: 05/10/2023
+- **Local**: Sala SEE, Torre Minas, 11º andar
+- **Turma treinada**: FHEMIG
+- **Arquivo auxiliar**: 
 
 ## Funções desenvolvidas pelo protótipo:
 
@@ -25,24 +29,29 @@ tags:
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-Este robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap/progressao-servidores-sisap.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop. 
+
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
-??? copy "copiar e colar"
 
-        --8<-- "robos/progressao-servidores-sisap.txt"
+??? copy "**Progressão de servidores no SISAP**"
 
-Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
+                --8<-- "robos/progressao-servidores-sisap/progressao-servidores-sisap.txt"
 
-  -Inclua login e senha do SISAP.
+**Importante**
+
+Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta]((https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao-servidores-sisap/). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
+
+  - Inclua login e senha do SISAP.
 
   - Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
 
   - Revise e edite todas as variáveis criadas (ex.: login, senha, nomes das colunas que serão criadas/preenchidas, etc).
 
-  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`)
+  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`) 
 
   - Certifique-se de haja ações para todas as operações desejadas que o robô execute
+
 
 !!! question "Precisando de ajuda?"
 
