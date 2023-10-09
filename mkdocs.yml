@@ -76,6 +76,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -83,6 +86,7 @@ markdown_extensions:
       url_download: true
       auto_append:
         - abbreviations.md
+  - tables
 
 extra_css:
   - assets/style.css
@@ -90,6 +94,12 @@ extra_css:
 extra_javascript:
   - assets/style.js
   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
 
 extra: # Footer
   social:
@@ -120,3 +130,21 @@ plugins:
       # video_controls: True
       # css_style:
       #   width: "50%"
+  - charts
+  - table-reader
+
+## add https://timvink.github.io/mkdocs-charts-plugin/
+
+#plugins:
+#  - search
+#  - charts
+#extra_javascript:
+#  - https://cdn.jsdelivr.net/npm/vega@5
+#  - https://cdn.jsdelivr.net/npm/vega-lite@5
+#  - https://cdn.jsdelivr.net/npm/vega-embed@6
+#markdown_extensions:
+#  - pymdownx.superfences:
+#      custom_fences:
+#        - name: vegalite
+#          class: vegalite
+#          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
