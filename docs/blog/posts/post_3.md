@@ -6,7 +6,7 @@ categories:
   - ferramentas - tabelas
 ---
 
-# Exemplo de aplicação de tabela
+# Exemplo de aplicação de tabela do repositório
 
 Demonstração de parsemento de tabela contida no próprio repositório - configuração em https://timvink.github.io/mkdocs-table-reader-plugin/#documentation-and-how-to-guides
 

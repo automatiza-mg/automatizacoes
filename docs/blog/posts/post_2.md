@@ -6,7 +6,7 @@ categories:
   - ferramentas - tabelas
 ---
 
-# Exemplo de aplicação de tabela
+# Exemplo de aplicação de tabela via markdown
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
