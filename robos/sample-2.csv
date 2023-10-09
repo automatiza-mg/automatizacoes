@@ -1,0 +1,7 @@
+ID,"E-mail",descricao-robo,Humano-ocorrencias,Robo-ocorrencias,Comentarios
+1,iago.silveira@planejamento.mg.gov.br,"Baixa documentos do CRM, envia por e-mail e salva no sharepoint.",2,30,"Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas mensalmente, o que possibilita o empenho em outras atividades." 
+2,leonardo.maciel@planejamento.mg.gov.br,"Alimentação do EFD-REINF (INSS)",114,114,"A lógica da nossa estatística é outra. Temos cerca de 120 Notas Fiscais por mês para lançar no sistema e gastávamos um dia inteiro. A mesma tarefa é feita pelo robô (com menos chance de erro) em menos de 2h."
+14,fernando.ramos@fhemig.mg.gov.br,"Robô de empenho de RPV",30,100,
+15,fernando.ramos@fhemig.mg.gov.br,"Empenho de liquidação de RPVs",50,170,
+16,fernando.ramos@fhemig.mg.gov.br,"Robô de pagamento de RPVs",40,130,
+17,fernando.ramos@fhemig.mg.gov.br,"Robô de consulta no SIAFI",100,350,

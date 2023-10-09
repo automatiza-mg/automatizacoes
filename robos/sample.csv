@@ -1,20 +1,18 @@
-ID;"E-mail
-";Nome ou breve descrição do robô;Humano: número de ocorrências;Robô: número de ocorrências;Comentários
-1;iago.silveira@planejamento.mg.gov.br;Baixa documentos do CRM, envia por e-mail e salva no sharepoint.;2;30;Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas mensalmente, o que possibilita o empenho em outras atividades. 
-2;leonardo.maciel@planejamento.mg.gov.br;Alimentação do EFD-REINF (INSS);114;114;A lógica da nossa estatística é outra. Temos cerca de 120 Notas Fiscais por mês para lançar no sistema e gastávamos um dia inteiro. A mesma tarefa é feita pelo robô (com menos chance de erro) em menos de 2h.
-3;ederson.sousa@educacao.mg.gov.br;elaboração e tramitação de documentos no SEI;30;200;"Passivo de aproximadamente 7 mil processos referentes ao Poupança Jovem. 
-"
-4;ederson.sousa@educacao.mg.gov.br;geração guias FGTS;10;150;Passivo advindo da Lei 100.
-5;ederson.sousa@educacao.mg.gov.br;Empenho, liquidação e pagamento - PTE (transporte escolar);120;1600;Pagamento mensal do PTE (841 municípios em 10 parcelas mensais)
-6;ederson.sousa@educacao.mg.gov.br;Regularização/transferência de patrimônio no SIAD;200;3000;Transferência dos Chromebooks (60 mil) para as escolas estaduais.
-7; fernando.ramos@fhemig.mg.gov.br;"Robô para consulta no SIAFI; Robô de empenho de RPV no SIAFI; Robô de liquidação de RPV no SIAFI; Robô de Pagamento de RPV no SIAFI";50;150;É importante salientar que os numeros apontados não representam um controle literal, são estimativas com base no discurso dos operadores do sistema. Eles salientaram que em média, todos os processos puderam ser triplicados ou mais que isso com a chegada do robô
-8;adilson.silva@educacao.mg.gov.br;Marcação consulta IPSEMG. Monitora o site até surgir uma vaga/desistência. Quando aparece, ele marca a consulta.;1;1;As respostas de 3 a 5 foi apenas para preenchimento. Na verdade quando você precisa marcar uma consulta no site do ipsemg é uma luta muito grande e requer uma consulta permanente no site até que surja uma vaga da consulta desejada, o que o robô faz com muita eficiência.
-9;adilson.silva@educacao.mg.gov.br;Transferência de patrimônio SIAD. A SEEMG compra milhares de equipamentos e mobiliário para distribuição às escolas todos os anos e fazer a transferência desse patrimônio para as escolas manualmente é muito demorado. Este Robô é capaz de realizar a transferência de 2000 patrimônios a cada 20 minutos. ;500;48000;
-10;adilson.silva@educacao.mg.gov.br;Pagamento de Folha. O realiza todo processo desde emissão de guias, e pagamento. Construção em andamento.;1;1;Coloquei números aleatório de 3 a 5. É difícil quantificar cada etapa, mas precisava de cerca de 5 pessoas pra ficar por conta 1 semana e com o robô no máximo em um dia o processo é concluído. 
-11;adilson.silva@educacao.mg.gov.br;Descentralização Financeira para Unidades da SEE. É realizada a descentralização de todos os valores liquidados no dia anterior a certa de 80 unidades executoras. O robô recebe os arquivos do BO por email, cria uma planilha de descentralização e realiza a descentralização, com um eficiente tratamento de exceção.;1;10;
-12;adilson.silva@educacao.mg.gov.br;Empenhos, liquidação e pagamentos diversos. O robô é capaz de realizar 7 pagamentos de uma única vez.;100;5000;
-13;adilson.silva@educacao.mg.gov.br;Cadastramento solicitação e pedido de compras no Portal de Compras. Estamos utilizando esse robô para cadastramento das solicitações e pedidos do Trilhas.;50;500;
-14;fernando.ramos@fhemig.mg.gov.br;Robô de empenho de RPV;30;100;
-15;fernando.ramos@fhemig.mg.gov.br;Empenho de liquidação de RPVs;50;170;
-16;fernando.ramos@fhemig.mg.gov.br;Robô de pagamento de RPVs;40;130;
-17;fernando.ramos@fhemig.mg.gov.br;Robô de consulta no SIAFI;100;350;
+ID;"E-mail";Nome ou breve descriÃ§Ã£o do robÃ´;Humano: nÃºmero de ocorrÃªncias;RobÃ´: nÃºmero de ocorrÃªncias;ComentÃ¡rios
+1;iago.silveira@planejamento.mg.gov.br;Baixa documentos do CRM, envia por e-mail e salva no sharepoint.;2;30;Esse robÃ´, auxiliou na diminuiÃ§Ã£o de tarefas que deveriam ser realizadas mensalmente, o que possibilita o empenho em outras atividades. 
+2;leonardo.maciel@planejamento.mg.gov.br;AlimentaÃ§Ã£o do EFD-REINF (INSS);114;114;A lÃ³gica da nossa estatÃ­stica Ã© outra. Temos cerca de 120 Notas Fiscais por mÃªs para lanÃ§ar no sistema e gastÃ¡vamos um dia inteiro. A mesma tarefa Ã© feita pelo robÃ´ (com menos chance de erro) em menos de 2h.
+3;ederson.sousa@educacao.mg.gov.br;elaboraÃ§Ã£o e tramitaÃ§Ã£o de documentos no SEI;30;200;"Passivo de aproximadamente 7 mil processos referentes ao PoupanÃ§a Jovem. 
+4;ederson.sousa@educacao.mg.gov.br;geraÃ§Ã£o guias FGTS;10;150;Passivo advindo da Lei 100.
+5;ederson.sousa@educacao.mg.gov.br;Empenho, liquidaÃ§Ã£o e pagamento - PTE (transporte escolar);120;1600;Pagamento mensal do PTE (841 municÃ­pios em 10 parcelas mensais)
+6;ederson.sousa@educacao.mg.gov.br;RegularizaÃ§Ã£o/transferÃªncia de patrimÃ´nio no SIAD;200;3000;TransferÃªncia dos Chromebooks (60 mil) para as escolas estaduais.
+7; fernando.ramos@fhemig.mg.gov.br;"RobÃ´ para consulta no SIAFI; RobÃ´ de empenho de RPV no SIAFI; RobÃ´ de liquidaÃ§Ã£o de RPV no SIAFI; RobÃ´ de Pagamento de RPV no SIAFI";50;150;Ã‰ importante salientar que os numeros apontados nÃ£o representam um controle literal, sÃ£o estimativas com base no discurso dos operadores do sistema. Eles salientaram que em mÃ©dia, todos os processos puderam ser triplicados ou mais que isso com a chegada do robÃ´
+8;adilson.silva@educacao.mg.gov.br;MarcaÃ§Ã£o consulta IPSEMG. Monitora o site atÃ© surgir uma vaga/desistÃªncia. Quando aparece, ele marca a consulta.;1;1;As respostas de 3 a 5 foi apenas para preenchimento. Na verdade quando vocÃª precisa marcar uma consulta no site do ipsemg Ã© uma luta muito grande e requer uma consulta permanente no site atÃ© que surja uma vaga da consulta desejada, o que o robÃ´ faz com muita eficiÃªncia.
+9;adilson.silva@educacao.mg.gov.br;TransferÃªncia de patrimÃ´nio SIAD. A SEEMG compra milhares de equipamentos e mobiliÃ¡rio para distribuiÃ§Ã£o Ã s escolas todos os anos e fazer a transferÃªncia desse patrimÃ´nio para as escolas manualmente Ã© muito demorado. Este RobÃ´ Ã© capaz de realizar a transferÃªncia de 2000 patrimÃ´nios a cada 20 minutos. ;500;48000;
+10;adilson.silva@educacao.mg.gov.br;Pagamento de Folha. O realiza todo processo desde emissÃ£o de guias, e pagamento. ConstruÃ§Ã£o em andamento.;1;1;Coloquei nÃºmeros aleatÃ³rio de 3 a 5. Ã‰ difÃ­cil quantificar cada etapa, mas precisava de cerca de 5 pessoas pra ficar por conta 1 semana e com o robÃ´ no mÃ¡ximo em um dia o processo Ã© concluÃ­do. 
+11;adilson.silva@educacao.mg.gov.br;DescentralizaÃ§Ã£o Financeira para Unidades da SEE. Ã‰ realizada a descentralizaÃ§Ã£o de todos os valores liquidados no dia anterior a certa de 80 unidades executoras. O robÃ´ recebe os arquivos do BO por email, cria uma planilha de descentralizaÃ§Ã£o e realiza a descentralizaÃ§Ã£o, com um eficiente tratamento de exceÃ§Ã£o.;1;10;
+12;adilson.silva@educacao.mg.gov.br;Empenhos, liquidaÃ§Ã£o e pagamentos diversos. O robÃ´ Ã© capaz de realizar 7 pagamentos de uma Ãºnica vez.;100;5000;
+13;adilson.silva@educacao.mg.gov.br;Cadastramento solicitaÃ§Ã£o e pedido de compras no Portal de Compras. Estamos utilizando esse robÃ´ para cadastramento das solicitaÃ§Ãµes e pedidos do Trilhas.;50;500;
+14;fernando.ramos@fhemig.mg.gov.br;RobÃ´ de empenho de RPV;30;100;
+15;fernando.ramos@fhemig.mg.gov.br;Empenho de liquidaÃ§Ã£o de RPVs;50;170;
+16;fernando.ramos@fhemig.mg.gov.br;RobÃ´ de pagamento de RPVs;40;130;
+17;fernando.ramos@fhemig.mg.gov.br;RobÃ´ de consulta no SIAFI;100;350;
