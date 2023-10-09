@@ -10,6 +10,8 @@ categories:
 
 Demonstração de parsemento de tabela contida no próprio repositório - configuração em https://timvink.github.io/mkdocs-table-reader-plugin/#documentation-and-how-to-guides
 
+{{ read_csv('robos/progressao_servidores_sisap/progressao-servidores-sisap.xlsx') }}
+
 <!-- more -->
 
 {{ read_csv('robos/sample-2.csv') }}
