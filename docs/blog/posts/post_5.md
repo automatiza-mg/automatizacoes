@@ -6,7 +6,7 @@ categories:
   - ferramentas - scraping
 ---
 
-# Como extrair um caractere de uma coluna de um PDF
+# Como extrair um caracter de uma coluna de um PDF
 
 | ID  | Column1 | Column2        |
 | ----| --------|--------------- |
