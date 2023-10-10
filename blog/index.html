@@ -750,10 +750,32 @@
 <p><vegachart style="width: 100%" class="vegalite">{
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "assets/charts/data/seattle-weather.csv"},
-  "mark": "tick",
-  "encoding": {
-    "x": {"field": "precipitation", "type": "quantitative"}
-  }
+  "layer": [{
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "timeUnit": "month",
+        "field": "date",
+        "type": "ordinal"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "precipitation",
+        "type": "quantitative"
+      }
+    }
+  }, {
+    "mark": "rule",
+    "encoding": {
+      "y": {
+        "aggregate": "mean",
+        "field": "precipitation",
+        "type": "quantitative"
+      },
+      "color": {"value": "firebrick"},
+      "size": {"value": 3}
+    }
+  }]
 }</vegachart></p></div>
       </header>
       
@@ -1180,7 +1202,7 @@
     
   
         <script>
-        var mkdocs_chart_plugin = {'data_path': '', 'use_data_path': 'True', 'vega_theme': 'default', 'vega_theme_dark': 'dark', 'vega_renderer': 'svg', 'vega_width': 'container', 'fallback_width': '800', 'path_to_homepage': '../..'}
+        var mkdocs_chart_plugin = {'data_path': '', 'use_data_path': 'True', 'vega_theme': 'default', 'vega_theme_dark': 'dark', 'vega_renderer': 'svg', 'vega_width': 'container', 'fallback_width': '800', 'path_to_homepage': '..\\..'}
         </script>
         </body>
 </html>
