@@ -130,7 +130,13 @@ plugins:
       # video_controls: True
       # css_style:
       #   width: "50%"
-  - charts
+  - charts:
+      vega_width: container
+      vega_theme: default
+      vega_theme_dark: dark
+      vega_renderer: svg
+      use_data_path: True
+      data_path: ""
   - table-reader
 
 ## add https://timvink.github.io/mkdocs-charts-plugin/
