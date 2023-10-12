@@ -410,8 +410,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dashboard-inicial" class="md-nav__link">
-    Dashboard inicial
+  <a href="#numeros-gerais-1" class="md-nav__link">
+    Números gerais 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeros-treinamentos" class="md-nav__link">
+    Números treinamentos
   </a>
   
 </li>
@@ -815,8 +822,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dashboard-inicial" class="md-nav__link">
-    Dashboard inicial
+  <a href="#numeros-gerais-1" class="md-nav__link">
+    Números gerais 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeros-treinamentos" class="md-nav__link">
+    Números treinamentos
   </a>
   
 </li>
@@ -847,16 +861,102 @@
 
 
 <div><h1 id="pagina-inicial">Página Inicial<a class="headerlink" href="#pagina-inicial" title="Permanent link">⚓︎</a></h1>
-<h2 id="dashboard-inicial">Dashboard inicial<a class="headerlink" href="#dashboard-inicial" title="Permanent link">⚓︎</a></h2>
-<p>ideias do escopo inicial <a href="https://github.com/lab-mg/automatizacoes/issues/9#issue-1928943357">aqui</a></p>
-<h2 id="disclaimer-pagina-a-parte">Disclaimer (página à parte)<a class="headerlink" href="#disclaimer-pagina-a-parte" title="Permanent link">⚓︎</a></h2></div>
+<h2 id="numeros-gerais-1">Números gerais <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><a class="headerlink" href="#numeros-gerais-1" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">robôs</th>
+<th style="text-align: right;">órgãos</th>
+<th style="text-align: right;">criadores</th>
+<th style="text-align: right;">horas humanas</th>
+<th style="text-align: right;">ocorrências humanas</th>
+<th style="text-align: right;">ocorrências robô</th>
+<th style="text-align: right;">total horas poupadas</th>
+<th style="text-align: right;">horas poupadas por robô</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">1399</td>
+<td style="text-align: right;">59506</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">nan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>nuvem palavras orgaos por numero robos</strong></p>
+<p><strong>grafico horas humanas barras X robos linha</strong></p>
+<p><vegachart style="width: 100%" class="vegalite">{
+  "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "assets/charts/data/seattle-weather.csv"},
+  "layer": [{
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "timeUnit": "month",
+        "field": "date",
+        "type": "ordinal"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "precipitation",
+        "type": "quantitative"
+      }
+    }
+  }, {
+    "mark": "rule",
+    "encoding": {
+      "y": {
+        "aggregate": "mean",
+        "field": "precipitation",
+        "type": "quantitative"
+      },
+      "color": {"value": "firebrick"},
+      "size": {"value": 3}
+    }
+  }]
+}</vegachart></p>
+<h2 id="numeros-treinamentos">Números treinamentos<a class="headerlink" href="#numeros-treinamentos" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">turmas</th>
+<th style="text-align: left;">orgaos</th>
+<th style="text-align: left;">participantes</th>
+<th style="text-align: left;">qtde robos</th>
+<th style="text-align: left;">link robos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">https://lab-mg.github.io/automatizacoes/tags/#treinamentos</td>
+</tr>
+</tbody>
+</table>
+<h2 id="disclaimer-pagina-a-parte">Disclaimer (página à parte)<a class="headerlink" href="#disclaimer-pagina-a-parte" title="Permanent link">⚓︎</a></h2>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>ideias do escopo inicial <a href="https://github.com/lab-mg/automatizacoes/issues/9#issue-1928943357">aqui</a> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2023 13:48:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 12, 2023 15:54:34</span>
       
         <br>
         Criada:
@@ -950,5 +1050,9 @@
         <script src="javascripts/tablesort.js"></script>
       
     
-  </body>
+  
+        <script>
+        var mkdocs_chart_plugin = {'data_path': '', 'use_data_path': 'True', 'vega_theme': 'default', 'vega_theme_dark': 'dark', 'vega_renderer': 'svg', 'vega_width': 'container', 'fallback_width': '800', 'path_to_homepage': '../.'}
+        </script>
+        </body>
 </html>
