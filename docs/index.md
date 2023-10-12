@@ -14,31 +14,20 @@
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "assets/charts/data/seattle-weather.csv"},
   "layer": [{
-    "mark": "bar",
-    "encoding": {
-      "x": {
-        "timeUnit": "month",
-        "field": "date",
-        "type": "ordinal"
-      },
-      "y": {
-        "aggregate": "mean",
-        "field": "precipitation",
-        "type": "quantitative"
-      }
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "timeUnit": "month",
+      "field": "date",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "precipitation"
     }
-  }, {
-    "mark": "rule",
-    "encoding": {
-      "y": {
-        "aggregate": "mean",
-        "field": "precipitation",
-        "type": "quantitative"
-      },
-      "color": {"value": "firebrick"},
-      "size": {"value": 3}
-    }
-  }]
+   }
+  }
+ ]
 }
 ````
 
