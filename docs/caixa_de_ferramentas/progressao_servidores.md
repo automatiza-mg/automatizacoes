@@ -1,12 +1,13 @@
 ---
 comments: true
 tags:
+  - treinamentos
   - Pessoal SISAP
 ---
 
 # Progressão de servidores no SISAP
 
-- **Responsável pelo desenvolvimento do protótipo**: Yan.
+- **Responsável pelo desenvolvimento do protótipo**: Yan
 - **Data do treinamento**: 05/10/2023
 - **Local**: Sala SEE, Torre Minas, 11º andar
 - **Turma treinada**: FHEMIG

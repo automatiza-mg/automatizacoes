@@ -1,6 +1,7 @@
 ---
 comments: true
 tags:
+  - treinamentos
   - Compras CAFIMP
 ---
 
