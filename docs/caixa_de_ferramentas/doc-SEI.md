@@ -1,8 +1,6 @@
 ---
-date: 2023-10-10
-authors: [andrelamor]
 comments: true
-categories:
+tags:
   - ferramentas - SEI
 ---
 
