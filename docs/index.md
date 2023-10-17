@@ -9,7 +9,7 @@
 
 **grafico horas humanas barras X robos linha**
 
-````vegalite
+```vegalite
 {
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "assets/charts/data/seattle-weather.csv"},
@@ -29,7 +29,7 @@
   }
  ]
 }
-````
+```
 
 ## Números treinamentos
 
@@ -39,4 +39,3 @@
 
 
 ## Disclaimer (página à parte)
-
