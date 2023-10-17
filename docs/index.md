@@ -1,7 +1,11 @@
+---
+hide:
+  - navigation
+---
+
 # Página Inicial
 
-
-## Números gerais [^1]
+## Números gerais[^1]
 
 {{ read_csv('robos/sum.csv') }}
 
