@@ -1,13 +1,13 @@
 ---
 comments: true
 tags:
-  - treinamentos
-  - outorgas IGAM
+  - treinamento SEPLAG
+  - outorgas ambientais
 ---
 
 # Conferência de outorgas do IGAM 
 
-- **Responsável pelo desenvolvimento do protótipo**: Yan
+- **Responsável pelo desenvolvimento do protótipo**: yan.carmo@planejamento.mg.gov.br
 - **Data do treinamento**: 11/10/2023
 - **Local**: Sala SEE, Torre Minas, 11º andar
 - **Turma treinada**: IGAM

@@ -1,13 +1,14 @@
 ---
 comments: true
 tags:
-  - treinamentos
-  - Pessoal SISAP
+  - treinamento SEPLAG
+  - Pessoal 
+  - SISAP
 ---
 
 # Progressão de servidores no SISAP
 
-- **Responsável pelo desenvolvimento do protótipo**: Yan
+- **Responsável pelo desenvolvimento do protótipo**: yan.carmo@planejamento.mg.gov.br
 - **Data do treinamento**: 05/10/2023
 - **Local**: Sala SEE, Torre Minas, 11º andar
 - **Turma treinada**: FHEMIG

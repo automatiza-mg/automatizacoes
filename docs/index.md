@@ -1,50 +1,15 @@
----
-hide:
-  - navigation
----
-
 # Página Inicial
 
-## Números gerais[^1]
+
+## Números gerais [^1]
 
 {{ read_csv('robos/sum.csv') }}
 
 **nuvem palavras orgaos por numero robos**
-
+**horas, pessoas e salários**
 **grafico horas humanas barras X robos linha**
 
-```vegalite
-{
-  "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "assets/charts/data/seattle-weather.csv"},
-  "layer": [{
-    "mark": "bar",
-    "encoding": {
-      "x": {
-        "timeUnit": "month",
-        "field": "date",
-        "type": "ordinal"
-      },
-      "y": {
-        "aggregate": "mean",
-        "field": "precipitation",
-        "type": "quantitative"
-      }
-    }
-  }, {
-    "mark": "rule",
-    "encoding": {
-      "y": {
-        "aggregate": "mean",
-        "field": "precipitation",
-        "type": "quantitative"
-      },
-      "color": {"value": "firebrick"},
-      "size": {"value": 3}
-    }
-  }]
-}
-```
+## Depoimentos
 
 ## Números treinamentos
 
@@ -54,3 +19,4 @@ hide:
 
 
 ## Disclaimer (página à parte)
+

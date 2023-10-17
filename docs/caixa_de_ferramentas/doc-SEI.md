@@ -1,7 +1,8 @@
 ---
 comments: true
 tags:
-  - ferramentas - SEI
+  - ferramentas 
+  - SEI
 ---
 
 # Como criar um documento no SEI
