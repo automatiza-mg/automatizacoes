@@ -1,13 +1,14 @@
 ---
 comments: true
 tags:
-  - treinamentos
-  - Compras CAFIMP
+  - treinamento SEPLAG
+  - Compras 
+  - CAFIMP
 ---
 
 # Consulta Situação Cadastral de Fornecedores - CAFIMP
 
-- **Responsável**: Isabela Romancini.
+- **Responsável**: isabela.romancini@planejamento.mg.gov.br
 - **Data do treinamento**: 28/09/2023
 - **Local**: Sala SEE, Torre Minas, 11º andar
 - **Turma treinada**: órgãos diversos

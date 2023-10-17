@@ -1,7 +1,8 @@
 ---
 comments: true
 tags:
-  - ferramentas - mantis
+  - ferramentas 
+  - mantis
 ---
 
 # Como abrir um Mantis para PRODEMGE

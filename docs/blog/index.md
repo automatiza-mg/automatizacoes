@@ -7,6 +7,9 @@ title: Blog SUGES-MG
 ```vegalite
 {
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar graph sample",
+  "width": 800,
+  "height": 425,
   "data": {"url": "assets/charts/data/seattle-weather.csv"},
   "layer": [{
     "mark": "bar",
