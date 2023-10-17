@@ -4,7 +4,7 @@ title: Blog SUGES-MG
 
 # Blog
 
-````vegalite
+```vegalite
 {
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "assets/charts/data/seattle-weather.csv"},
@@ -35,4 +35,4 @@ title: Blog SUGES-MG
     }
   }]
 }
-````
+```
