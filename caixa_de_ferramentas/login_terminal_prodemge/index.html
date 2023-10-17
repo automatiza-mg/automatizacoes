@@ -914,6 +914,40 @@
 <p>Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
 <details class="copy">
 <summary><strong>Login terminal PRODEMGE</strong></summary>
+<div class="language-text highlight"><pre><span></span><code>SET sistema_lower TO sistema.toLower
+Variables.CreateNewList List=&gt; sistemas
+Variables.AddItemToList Item: $'''sisap''' List: sistemas
+Variables.AddItemToList Item: $'''siad''' List: sistemas
+Variables.AddItemToList Item: $'''siafi''' List: sistemas
+IF NotContains(sistemas, sistema_lower, True) THEN
+    Display.ShowMessageDialog.ShowMessage Title: $'''Valor incorreto de variável''' Message: $'''A variável \"sistema\" pode conter apenas os valores \"sisap\", \"siad\" ou \"siafi\". ''' Icon: Display.Icon.ErrorIcon Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=&gt; ButtonPressed
+    EXIT Code: 0 ErrorMessage: ButtonPressed
+END
+System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 10 ProcessId=&gt; terminal_prodemge
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%sistema%{Tab}%login%{Tab}%senha%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+LABEL teste_login_terminal
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({a}){Control}({c})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+Clipboard.GetText Text=&gt; texto_inicio_terminal
+IF NotContains(texto_inicio_terminal, $'''Logon executado com sucesso''', True) THEN
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    GOTO teste_login_terminal
+ELSE
+    IF sistema = $'''sisap''' THEN
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''siap{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    ELSE
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%sistema%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    END
+END
+Variables.CreateNewList List=&gt; sistemas
+Variables.AddItemToList Item: $'''sisap''' List: sistemas
+Variables.AddItemToList Item: $'''siad''' List: sistemas
+Variables.AddItemToList Item: $'''siafi''' List: sistemas
+Variables.CreateNewList List=&gt; sistemas
+Variables.AddItemToList Item: $'''sisap''' List: sistemas
+Variables.AddItemToList Item: $'''siad''' List: sistemas
+Variables.AddItemToList Item: $'''siafi''' List: sistemas
+</code></pre></div>
 </details>
 <p><strong>Importante</strong></p>
 <p>Este protótipo necessita da criação de três variáveis de entrada:</p>
@@ -940,7 +974,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
 <p>Lembrar de marcar a variável de entrada criada como confidencial. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>Valores deverão ser cadastrados <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>Valores deverão ser cadastrados com letras minúsculas. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
 </div></div>
@@ -950,7 +984,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 17, 2023 20:11:29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 17, 2023 21:40:44</span>
       
         <br>
         Criada:
