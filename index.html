@@ -894,20 +894,31 @@
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "assets/charts/data/seattle-weather.csv"},
   "layer": [{
-  "mark": "bar",
-  "encoding": {
-    "x": {
-      "timeUnit": "month",
-      "field": "date",
-      "type": "ordinal"
-    },
-    "y": {
-      "aggregate": "mean",
-      "field": "precipitation"
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "timeUnit": "month",
+        "field": "date",
+        "type": "ordinal"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "precipitation",
+        "type": "quantitative"
+      }
     }
-   }
-  }
- ]
+  }, {
+    "mark": "rule",
+    "encoding": {
+      "y": {
+        "aggregate": "mean",
+        "field": "precipitation",
+        "type": "quantitative"
+      },
+      "color": {"value": "firebrick"},
+      "size": {"value": 3}
+    }
+  }]
 }</vegachart></p>
 <h2 id="numeros-treinamentos">Números treinamentos<a class="headerlink" href="#numeros-treinamentos" title="Permanent link">⚓︎</a></h2>
 <table>
@@ -945,7 +956,7 @@
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 17, 2023 17:21:28</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 17, 2023 17:33:30</span>
       
         <br>
         Criada:
