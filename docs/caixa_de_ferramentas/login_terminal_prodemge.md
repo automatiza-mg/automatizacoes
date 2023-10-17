@@ -28,7 +28,7 @@ Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 ??? copy "**Login terminal PRODEMGE**"
 
-                --8<-- "robos/login_terminal_prodemge/login_terminal_prodemge.txt"
+        --8<-- "robos/login_terminal_prodemge/login_terminal_prodemge.txt"
 
 **Importante**
 
@@ -53,4 +53,4 @@ Sugerimos cadastrar um subfluxo durante a utilização deste robô.
     Ótimo trabalho!
 
 [^1]: Lembrar de marcar a variável de entrada criada como confidencial.
-[^2]: Valores deverão ser cadastrados
+[^2]: Valores deverão ser cadastrados com letras minúsculas.
