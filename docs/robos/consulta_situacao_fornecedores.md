@@ -33,7 +33,7 @@ Essa automação oferece um processo eficiente de atualização da lista de forn
     ```mermaid
             --8<-- "docs/fluxos/fluxo1.md"
     ```
-    
+
 ## Robô em funcionamento
 
 ![type:video](https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
@@ -63,7 +63,7 @@ Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https:
 
 !!! question "Precisando de ajuda?"
 
-    Algum erro está ocorrendo em uma das fazes de criação de seu robô?
+    Algum erro está ocorrendo em uma das fases de criação de seu robô?
     Não tem problema.
     Abaixo temos um espaço para perguntas e respostas.
     Dá uma olhadinha lá.

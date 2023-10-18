@@ -51,7 +51,7 @@ Sugerimos cadastrar um subfluxo durante a utilização deste robô.
 
 !!! question "Precisando de ajuda?"
 
-    Algum erro está ocorrendo em uma das fazes de criação de seu robô?
+    Algum erro está ocorrendo em uma das fases de criação de seu robô?
     Não tem problema.
     Abaixo temos um espaço para perguntas e respostas.
     Dá uma olhadinha lá.
