@@ -61,13 +61,4 @@ Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https:
 
   - Certifique-se de haja ações para todas as operações desejadas que o robô execute
 
-!!! question "Precisando de ajuda?"
-
-    Algum erro está ocorrendo em uma das fases de criação de seu robô?
-    Não tem problema.
-    Abaixo temos um espaço para perguntas e respostas.
-    Dá uma olhadinha lá.
-    Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando.
-    Caso prefira mande um e-mail para [escolher-email@dominio.com]().
-
-    Ótimo trabalho!
+--8<-- "docs/partials/ajuda.md"

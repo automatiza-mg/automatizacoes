@@ -49,16 +49,7 @@ Este protótipo necessita da criação de três variáveis de entrada:
 Sugerimos cadastrar um subfluxo durante a utilização deste robô.
 
 
-!!! question "Precisando de ajuda?"
-
-    Algum erro está ocorrendo em uma das fases de criação de seu robô?
-    Não tem problema.
-    Abaixo temos um espaço para perguntas e respostas.
-    Dá uma olhadinha lá.
-    Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando.
-    Caso prefira mande um e-mail para [escolher-email@dominio.com]().
-
-    Ótimo trabalho!
+--8<-- "docs/partials/ajuda.md"
 
 [^1]: Lembrar de marcar a variável de entrada criada como confidencial.
 [^2]: Valores deverão ser cadastrados com letras minúsculas.
