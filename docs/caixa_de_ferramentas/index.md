@@ -1,2 +1,0 @@
-# Caixa de ferramentas
-

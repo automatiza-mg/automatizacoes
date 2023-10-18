@@ -1,7 +1,9 @@
 ---
 comments: true
+hide:
+  - navigation
 tags:
-  - ferramentas 
+  - Ferramentas
   - SEI
 ---
 

@@ -5,6 +5,13 @@ repo_name: lab-mg/automatizacoes
 repo_url: https://github.com/lab-mg/automatizacoes
 edit_uri: edit/main/docs/
 
+nav:
+  - Página inicial: index.md
+  - Robôs:
+    - robos/index.md
+  - Blog:
+    - blog/index.md
+
 # Configuration
 theme:
   name: material
@@ -16,6 +23,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - content.action.edit
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
@@ -123,7 +131,7 @@ plugins:
       categories_toc: true
       post_excerpt: required
   - tags:
-      tags_file: tags.md
+      tags_file: robos/index.md
   - mkdocs-video:
       # is_video: True
       # video_muted: True

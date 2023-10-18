@@ -1,8 +1,10 @@
 ---
 comments: true
+hide:
+  - navigation
 tags:
-  - treinamento SEPLAG
-  - Pessoal 
+  - Treinamento SEPLAG
+  - Pessoal
   - SISAP
 ---
 
@@ -23,6 +25,12 @@ tags:
 - Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando-a com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou `Não se aplica`, por exemplo.
 - Salvar a planilha alterada e enviá-la por email.
 
+??? abstract "**Fluxo do robô**"
+
+    ```mermaid
+            --8<-- "docs/fluxos/fluxo1.md"
+    ```
+
 ## Robô em funcionamento
 
 ![type:video](https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
@@ -31,7 +39,7 @@ tags:
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop. 
+O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
@@ -50,7 +58,7 @@ Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https:
 
   - Revise e edite todas as variáveis criadas (ex.: login, senha, nomes das colunas que serão criadas/preenchidas, etc).
 
-  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`) 
+  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`)
 
   - Certifique-se de haja ações para todas as operações desejadas que o robô execute
 

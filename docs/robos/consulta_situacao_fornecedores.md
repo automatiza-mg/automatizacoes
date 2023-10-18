@@ -1,8 +1,10 @@
 ---
 comments: true
+hide:
+  - navigation
 tags:
-  - treinamento SEPLAG
-  - Compras 
+  - Treinamento SEPLAG
+  - Compras
   - CAFIMP
 ---
 
@@ -26,6 +28,12 @@ Em linhas gerais ele é capaz de:
 
 Essa automação oferece um processo eficiente de atualização da lista de fornecedores, economizando tempo em processos de compras e gestão de contratos.
 
+??? abstract "**Fluxo do robô**"
+
+    ```mermaid
+            --8<-- "docs/fluxos/fluxo1.md"
+    ```
+    
 ## Robô em funcionamento
 
 ![type:video](https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
@@ -49,7 +57,7 @@ Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https:
 
   - Revise e edite todas as variáveis criadas (ex.: nomes das colunas que serão criadas/preenchidas, etc).
 
-  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`) 
+  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`)
 
   - Certifique-se de haja ações para todas as operações desejadas que o robô execute
 

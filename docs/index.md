@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - navigation
+---
+
 # Página Inicial
 
 
@@ -8,14 +14,14 @@
 
 ## Casos de aplicação
 
-* Passivo de aproximadamente 7 mil processos referentes ao Poupança Jovem. 
+* Passivo de aproximadamente 7 mil processos referentes ao Poupança Jovem.
 * Passivo advindo da Lei 100.
 * Pagamento mensal do PTE (841 municípios em 10 parcelas mensais)
 
 ## Depoimentos
 
 ````
-Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas mensalmente, o que possibilita o empenho em outras atividades. 
+Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas mensalmente, o que possibilita o empenho em outras atividades.
 ````
 
 ## Números treinamentos
@@ -34,4 +40,3 @@ Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas mens
 [^1]: ideias do escopo inicial [aqui](https://github.com/lab-mg/automatizacoes/issues/9#issue-1928943357); visão de futuro é ter uma _landing page_
 
 ## Disclaimer (página à parte)
-

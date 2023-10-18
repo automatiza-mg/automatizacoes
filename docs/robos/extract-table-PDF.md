@@ -1,8 +1,10 @@
 ---
 comments: true
+hide:
+  - navigation
 tags:
-  - ferramentas 
-  - scraping
+  - Ferramentas
+  - Scraping
 ---
 
 # Como extrair um caracter de uma coluna de um PDF

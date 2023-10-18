@@ -1,17 +1,25 @@
 ---
 comments: true
+hide:
+  - navigation
 tags:
-  - Reutilizávies
+  - Ferramentas
 ---
 
 # Login terminal PRODEMGE
 
-- **Responsável pelo desenvolvimento do protótipo**: Gabriel
+- **Responsável pelo desenvolvimento do protótipo**: gabriel.dornas@planejamento.mg.gov.br
 
 ## Funções desenvolvidas pelo protótipo:
 
 - Realizar login em terminal PRODEMGE.
 - Consegue logar nos sistemas SIAD, SIAFI e SISAP.
+
+??? abstract "**Fluxo do robô**"
+
+    ```mermaid
+            --8<-- "docs/fluxos/fluxo1.md"
+    ```
 
 ## Robô em funcionamento
 
@@ -26,7 +34,7 @@ O arquivo contendo o código deste robô está armazenado [nesta página](https:
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 
-??? copy "**Login terminal PRODEMGE**"
+??? note "**Login terminal PRODEMGE**"
 
         --8<-- "robos/login_terminal_prodemge/login_terminal_prodemge.txt"
 
