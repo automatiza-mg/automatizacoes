@@ -14,9 +14,11 @@ categories:
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
+{{ read_csv('robos/sample-2.csv') }}
+
 <!-- more -->
 
-Demonstração de tabela - configuração em https://squidfunk.github.io/mkdocs-material/reference/data-tables/
+Demonstração de tabela[^1]
 
 | ID | Nome ou breve descrição do robô                                                                                                                                                                                                                                                                                                   | Humano: número de ocorrências | Robô: número de ocorrências |
 |----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|-----------------------------|
@@ -37,3 +39,5 @@ Demonstração de tabela - configuração em https://squidfunk.github.io/mkdocs-
 | 15 | Empenho de liquidação de RPVs                                                                                                                                                                                                                                                                                                     | 50                            | 170                         |
 | 16 | Robô de pagamento de RPVs                                                                                                                                                                                                                                                                                                         | 40                            | 130                         |
 | 17 | Robô de consulta no SIAFI                                                                                                                                                                                                                                                                                                         | 100                           | 350                         |
+
+[^1]: configuração em https://squidfunk.github.io/mkdocs-material/reference/data-tables/
