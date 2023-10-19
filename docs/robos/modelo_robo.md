@@ -8,7 +8,7 @@ tags:
 
 # Modelo robô
 
-<div class="video-wrapper">
+<div class="content-wrapper">
   <iframe width="1280" height="720" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" allowfullscreen></iframe>
 </div>
 
