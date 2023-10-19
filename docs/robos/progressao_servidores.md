@@ -10,10 +10,12 @@ tags:
 
 # Progressão de servidores no SISAP
 
-- **Responsável pelo desenvolvimento do protótipo**: yan.carmo@planejamento.mg.gov.br
-- **Data do treinamento**: 05/10/2023
-- **Local**: Sala SEE, Torre Minas, 11º andar
-- **Turma treinada**: FHEMIG
+| **Responsável pelo desenvolvimento do protótipo**       | yan.carmo@planejamento.mg.gov.br  |
+| ----------- | ------------------------------------ |
+| **Data do treinamento**       | 05/10/2023 |
+| **Local**    | Sala SEE, Torre Minas, 11º andar |
+| **Turma treinada**       | FHEMIG  |
+
 - **Arquivo auxiliar**: [progressao-servidores-sisap.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.xlsx)
 
 ## Funções desenvolvidas pelo protótipo:

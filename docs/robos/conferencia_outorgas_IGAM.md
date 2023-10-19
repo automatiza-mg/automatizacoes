@@ -9,10 +9,13 @@ tags:
 
 # Conferência de outorgas do IGAM
 
-- **Responsável pelo desenvolvimento do protótipo**: yan.carmo@planejamento.mg.gov.br
-- **Data do treinamento**: 11/10/2023
-- **Local**: Sala SEE, Torre Minas, 11º andar
-- **Turma treinada**: IGAM
+
+| **Responsável pelo desenvolvimento do protótipo**       | yan.carmo@planejamento.mg.gov.br  |
+| ----------- | ------------------------------------ |
+| **Data do treinamento**       | 11/10/2023 |
+| **Local**    | Sala SEE, Torre Minas, 11º andar |
+| **Turma treinada**       | IGAM  |
+
 - **Arquivo auxiliar**: [conferencia-outorgas-IGAM.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/robos/conferencia_outorgas_IGAM/conferencia-outorgas-IGAM.xlsx)
 
 ## Funções desenvolvidas pelo protótipo:

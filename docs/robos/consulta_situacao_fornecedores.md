@@ -5,16 +5,18 @@ hide:
 tags:
   - Treinamento SEPLAG
   - Compras
-  - CAFIMP
+  - CAGEC
 ---
 
-# Consulta Situação Cadastral de Fornecedores - CAFIMP
+# Consulta Situação Cadastral de Fornecedores - CAGEC
 
-- **Responsável**: isabela.romancini@planejamento.mg.gov.br
-- **Data do treinamento**: 28/09/2023
-- **Local**: Sala SEE, Torre Minas, 11º andar
-- **Turma treinada**: órgãos diversos
-- **Arquivo auxiliar**: [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta_situacao_cadastral_CAFIMP/consulta-situacao-cadastral-fornecedores.xlsx)
+| **Responsável pelo desenvolvimento do protótipo**       | isabela.romancini@planejamento.mg.gov.br  |
+| ----------- | ------------------------------------ |
+| **Data do treinamento**       | 28/09/2023 |
+| **Local**    | Sala SEE, Torre Minas, 11º andar |
+| **Turma treinada**       | órgãos diversos  |
+
+- **Arquivo auxiliar**: [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta_situacao_cadastral_CAGEC/consulta-situacao-cadastral-fornecedores.xlsx)
 
 O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.
 Em linhas gerais ele é capaz de:
@@ -42,16 +44,16 @@ Essa automação oferece um processo eficiente de atualização da lista de forn
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta_situacao_cadastral_CAFIMP/consulta-situacao-cadastral-fornecedores.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta_situacao_cadastral_CAGEC/consulta-situacao-cadastral-fornecedores.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
-??? copy "**Consulta Situação Cadastral de Fornecedores CAFIMP**"
+??? copy "**Consulta Situação Cadastral de Fornecedores CAGEC**"
 
-        --8<-- "robos/consulta_situacao_cadastral_CAFIMP/consulta-situacao-cadastral-fornecedores.txt"
+        --8<-- "robos/consulta_situacao_cadastral_CAGEC/consulta-situacao-cadastral-fornecedores.txt"
 
 **Importante**
 
-Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta_situacao_cadastral_CAFIMP/). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
+Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https://github.com/lab-mg/automatizacoes/blob/main/robos/consulta_situacao_cadastral_CAGEC/). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
 
   - Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
 
