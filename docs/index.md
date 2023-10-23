@@ -9,7 +9,9 @@ hide:
 
 ## Resumo - principais números [^1]
 
-![type:video](https://app.powerbi.com/view?r=eyJrIjoiY2I5MjYzYTgtNjQ0Yi00MDI1LWE1NmEtMGRjOWIyZTk0MjNiIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
+<div class="content-wrapper">
+  <iframe width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiY2I5MjYzYTgtNjQ0Yi00MDI1LWE1NmEtMGRjOWIyZTk0MjNiIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 ## Casos de aplicação
