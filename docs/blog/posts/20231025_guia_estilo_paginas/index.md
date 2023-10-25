@@ -76,7 +76,6 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
   - robos
     - nome_robo
       - assets
-        - .gitkeep
         - codigo_fonte.txt
         - fluxo.md
         - arquivo_auxiliar_1.xlsx
@@ -84,6 +83,9 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
         - arquivo_auxiliar_3.xls
       - index.md
 ```
+
+- Arquivo `index.md` deverá seguir padrão do [modelo para criação de robôs](../../robos/modelo/).
+- Pasta `assets` deverá conter com, no mínimo `codigo_fonte.txt`.
 
 ## Tags
 

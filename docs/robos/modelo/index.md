@@ -6,7 +6,7 @@ tags:
   - Treinamento SEPLAG
 ---
 
-# Modelo robô
+# Robô modelo
 
 <div class="content-wrapper">
   <iframe width="1280" height="720" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" allowfullscreen></iframe>
@@ -30,7 +30,7 @@ tags:
 ??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/fluxos/fluxo_modelo.md"
+            --8<-- "docs/robos/modelo/assets/fluxo.md"
     ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
@@ -38,7 +38,7 @@ tags:
 
 ??? note "**Clique para copiar e colar**"
 
-        --8<-- "robos/consulta_situacao_cadastral_CAGEC/consulta-situacao-cadastral-fornecedores.txt"
+        --8<-- "docs/robos/modelo/assets/codigo_fonte.txt"
 
 
 Agora, realize as seguintes adaptações para que seu robô comece a te ajudar:
