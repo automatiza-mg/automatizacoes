@@ -2,7 +2,7 @@
 
 A parceria entre a SIGES e a SCAP para automatizar os processos referentes à folha de pessoal iniciou-se em setembro de 2023. Esse projeto se constitui na criação de robôs para execução de tarefas rotineiras de uma listagem inicial de processos priorizados pela SCAP.
 
-Os robôs criados 
+Os robôs criados no âmbito desse projeto visam facilitar a execução das operações necessárias, reduzir o número de inconsistências e liberar o tempo útil do pessoal envolvido para outras atividades, como análises, por exemplo.  
 
 ## Números Gerais do Projeto
 
