@@ -30,10 +30,10 @@ Em linhas gerais ele é capaz de:
 
 Essa automação oferece um processo eficiente de atualização da lista de fornecedores, economizando tempo em processos de compras e gestão de contratos.
 
-??? abstract "**Fluxo do robô**"
+??? abstract "**Fluxo do robô (resumo das etapas)**"
 
     ```mermaid
-            --8<-- "docs/fluxos/fluxo1.md"
+            --8<-- "docs/fluxos/fluxo2.md"
     ```
 
 ## Robô em funcionamento
