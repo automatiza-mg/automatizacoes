@@ -11,7 +11,7 @@ graph TD;
     10[Captar os dados de vazão da página do IGAM = Extrair dados de página da web e armazenar em nova variável `vazao_web`]-->11;
     11[Gravar os dados de vazão da web na planilha excel = Ler da planilha do excel e armazenar em variável `vazao2`]-->12;
     12[Comparar `vazao_excel` com `vazao2` =If]-->13; 
-    13[???= Enviar teclas {Alt}(LEFT)]-->14;
+    13[Alternar telas= Enviar teclas {Alt}(LEFT)]-->14;
     14[Reservar próxima linha do excel = Aumentar variável]-->15;
     15[Fechar excel]-->16
     16[Feche navegador da web]-->17
