@@ -12,7 +12,14 @@ tags:
   <iframe width="1280" height="720" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## Funções desenvolvidas pelo robô:
+## Informações gerais
+
+| **Responsável**       | Nome do Responsável  |
+| ----------- | ------------------------------------ |
+| **E-mail**       | email.responsavel@dominio.com |
+| **Ferramenta**    | Power Automate Desktop |
+
+## Funções desenvolvidas pelo robô
 
 - Função 1.
 - Função 2.
