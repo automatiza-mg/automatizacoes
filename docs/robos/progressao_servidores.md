@@ -30,7 +30,7 @@ tags:
 ??? abstract "**Fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/fluxos/fluxo1.md"
+            --8<-- "docs/fluxos/fluxo3.md"
     ```
 
 ## Robô em funcionamento
