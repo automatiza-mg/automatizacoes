@@ -40,7 +40,7 @@ tags:
 
 ??? note "**Clique para copiar e colar**"
 
-        --8<-- "robos/conferencia_outorgas_IGAM/conferencia-outorgas-IGAM.txt"
+        --8<-- "robos/assets/codigo_fonte.txt"
 
 
 Agora, realize as seguintes adaptações para que seu robô comece a te ajudar:
