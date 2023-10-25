@@ -33,6 +33,10 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 
 - Nome da pasta principal deverá sempre iniciar com data no padrão `yyyymmaa`[^3].
 - Imagens e outros materiais utilizados na elaboração de um post deverão ser incluídas dentro da pasta `assets`, criada dentro da pasta principal do post.
+- Posts não finalizados deverão ser marcados com a [propriedade `draft: true`](https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/?h=blog#writing-your-first-post:~:text=Create%20a%20new%20file%20called):
+
+> If you mark a post as a draft, a red marker appears next to the post date on index pages. When the site is built, drafts are not included in the output. This behavior can be changed, e.g. for rendering drafts when building deploy previews.
+
 
 ## Cabeçalhos
 
