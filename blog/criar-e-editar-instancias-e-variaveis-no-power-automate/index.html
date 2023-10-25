@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="../guia-de-estilo-de-nossas-paginas/">
+      
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.6">
@@ -268,10 +270,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
   
@@ -433,6 +437,8 @@
       
   
   
+    
+  
   
     
     
@@ -445,13 +451,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
@@ -472,7 +478,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -679,7 +685,7 @@
           <nav class="md-nav">
             <div class="md-post__back">
               <div class="md-nav__title md-nav__container">
-                <a href="../.." class="md-nav__link">
+                <a href="../" class="md-nav__link">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
                   <span class="md-ellipsis">
                     Voltar ao índice
@@ -687,6 +693,20 @@
                 </a>
               </div>
             </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/52294411?v=4" alt="André Luiz Guimarães Amorim">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>André Luiz Guimarães Amorim</strong><br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
             
             <ul class="md-post__meta md-nav__list">
               <li class="md-nav__item md-nav__title">
@@ -704,6 +724,29 @@
               </li>
               
               
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>
+                    <span class="md-ellipsis">
+                      em
+                      
+                        <a href="../category/ferramentas/">ferramentas</a>, 
+                        <a href="../category/instancias-e-variaveis/">instâncias e variáveis</a></span>
+                  </div>
+                </li>
+              
+              
+                
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
+                    <span class="md-ellipsis">
+                      
+                        2 min de leitura
+                      
+                    </span>
+                  </div>
+                </li>
               
             </ul>
           </nav>
@@ -729,14 +772,24 @@
 <!-- more -->
 
 <p><img alt="" src="../20231019_criar_editar_instancias_variaveis_automate/assets/variaveis.png"></p>
-<p>Mudar informações de <abbr title="Definir instância">instâncias</abbr> e variáveis permite o robô executar os mesmos fluxos com outros sites, arquivos e usuários.</p></div>
+<p>Mudar informações de <abbr title="Definir instância">instâncias</abbr> e variáveis permite o robô executar os mesmos fluxos com outros sites, arquivos e usuários. No exemplo da imagem acima, temos variáveis criadas para: </p>
+<ul>
+<li>a página web acessada pelo navegador crhome: <code>Browser</code>;</li>
+<li>o nome de uma pasta no computador local que foi criada: <code>pastacnpj</code>;</li>
+<li>a planilha que foi aberta durante a execução do fluxo pelo robô: <code>ExcellInstance</code>;</li>
+<li>o valor dentro da planilha <code>CNPJ</code>;</li>
+<li>textos que foram capturados da web e foram inseridos na planilha: <code>textocafimp</code> e <code>textoparaexcel</code>.</li>
+</ul>
+<p>Esse exemplo é parte de um robô que realiza consultas ao Cadastro de Fornecedores Impedidos de licitar com a administração (CAFIMP), e pode ser acessado <a href="https://lab-mg.github.io/automatizacoes/robos/consulta_situacao_fornecedores/">nessa página do nosso repositório</a>.</p>
+<p>Se um usuário deseja utilizar esse mesmo robô, precisará checar, pelo menos, o caminho no computador em que será criada a pasta <code>pastacnpj</code> e informá-lo quando da edição dessa variável. Também é uma boa prática editar os nomes das variáveis <code>Browser</code> e <code>ExcelInstance</code> para que sejam memorizadas e aplicadas ao caso concreto mais facilmente. Uma sugestão poderia ser <code>sitecafimp</code> e <code>planilhacnpj</code>, por exemplo.</p>
+<p>O tutorial da Microsoft sobre esse assunto pode ser acessado <a href="https://learn.microsoft.com/en-US/training/modules/input-parameters/">nesta página</a>.  </p></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 25, 2023 18:17:51</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 25, 2023 19:28:36</span>
       
         <br>
         Criada:
