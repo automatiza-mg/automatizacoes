@@ -5,6 +5,7 @@ repo_name: lab-mg/automatizacoes
 repo_url: https://github.com/lab-mg/automatizacoes
 edit_uri: edit/main/docs/
 
+# --8<-- [start:nav]
 nav:
   - Página inicial: index.md
   - Robôs:
@@ -13,6 +14,7 @@ nav:
     - blog/index.md
   - Projetos:
     - projetos/scap.md
+# --8<-- [end:nav]
 
 # Configuration
 theme:
