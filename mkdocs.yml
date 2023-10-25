@@ -11,6 +11,8 @@ nav:
     - robos/index.md
   - Blog:
     - blog/index.md
+  - Projetos:
+    - projetos/scap.md
 
 # Configuration
 theme:
