@@ -18,6 +18,7 @@ tags:
 | ----------- | ------------------------------------ |
 | **E-mail**       | email.responsavel@dominio.com |
 | **Ferramenta**    | Power Automate Desktop |
+| **Arquivo(s) auxiliar(es)**    | [arquivo.ext]() |
 
 ## Funções desenvolvidas pelo robô
 
