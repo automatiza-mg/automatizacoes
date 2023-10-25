@@ -20,14 +20,15 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 
 - Escrito em arquivo `index.md` dentro de uma pasta principal que deverá ser criada com a seguinte estrutura:
 
-```python
-- blog
-  - posts
-    - yyyymmaa_nome_post_reduzido
-      - assets
-        - .gitkeep
-        # apropriado para armazenar imagens e caminho de arquivos
-      - index.md
+```yml
+- docs  
+  - blog
+    - posts
+      - yyyymmaa_nome_post_reduzido
+        - assets
+          - .gitkeep
+          # apropriado para armazenar imagens e caminho de arquivos
+        - index.md
 ```
 
 - Nome da pasta principal deverá sempre iniciar com data no padrão `yyyymmaa`[^3].
@@ -65,6 +66,24 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 - Somente primeira letra maiúscula[^1].
 - Para simplificar o processo de revisão dos arquivos `.md`, incluir cada frase em uma linha.
 - A separação entre parágrafos deverá ser feita com a utilização de uma linha em branco entre um bloco de frases ou parágrafos.
+
+## Robôs
+
+- Criado em arquivo `index.md` dentro de uma pasta principal que deverá ser criada com a seguinte estrutura:
+
+```yml
+- docs  
+  - robos
+    - nome_robo
+      - assets
+        - .gitkeep
+        - codigo_fonte.txt
+        - fluxo.md
+        - arquivo_auxiliar_1.xlsx
+        - arquivo_auxiliar_2.csv
+        - arquivo_auxiliar_3.xls
+      - index.md
+```
 
 ## Tags
 
