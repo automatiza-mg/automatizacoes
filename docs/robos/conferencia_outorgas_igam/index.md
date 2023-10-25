@@ -10,7 +10,7 @@ tags:
 # Conferência de outorgas do IGAM
 
 <div class="content-wrapper">
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Informações gerais
@@ -19,7 +19,7 @@ tags:
 | ----------- | ------------------------------------ |
 | **E-mail**       | yan.carmo@planejamento.mg.gov.br |
 | **Ferramenta**    | Power Automate Desktop |
-| **Arquivo(s) auxiliar(es)**    | [conferencia_outorgas_igam.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia_outorgas_igam.xlsx) |
+| **Arquivo(s) auxiliar(es)**    | [conferencia-outorgas-IGAM.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/robos/conferencia_outorgas_IGAM/conferencia-outorgas-IGAM.xlsx) |
 
 ## Funções desenvolvidas pelo robô
 
@@ -32,7 +32,7 @@ tags:
 ??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/robos/conferencia_outorgas_igam/assets/fluxo.md"
+            --8<-- "docs/fluxos/fluxo4.md"
     ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
@@ -40,14 +40,16 @@ tags:
 
 ??? note "**Clique para copiar e colar**"
 
-        --8<-- "docs/robos/conferencia_outorgas_igam/assets/codigo_fonte.txt"
+        --8<-- "robos/conferencia_outorgas_IGAM/conferencia-outorgas-IGAM.txt"
 
 
 Agora, realize as seguintes adaptações para que seu robô comece a te ajudar:
 
-1. Adaptação 1.
-2. Adaptação 2.
-3. Adaptação 3.
+1. Confira se a URL (caminho da página do site) acessada permanece a mesma.
+2. Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
+3. Revise e edite todas as variáveis criadas (ex.: nomes das colunas que serão criadas/preenchidas, etc).
+4. Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH
+5. Certifique-se de haja ações para todas as operações desejadas que o robô execute
 
 --8<-- "docs/partials/modelo_robo/importante.md"
 
