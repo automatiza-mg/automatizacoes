@@ -10,10 +10,8 @@ hide:
 ## Resumo - principais números [^1]
 
 <div class="content-wrapper">
-  <iframe width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiNmQzZDMxZGMtNGM0OC00YWJmLWIxMjctMTM0OWJjMTAyZWNmIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9&pageName=ReportSection8b08997a641ffd25674f" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiZTY2NGI1MjEtNDMwNS00OWVmLWFiYzctYTAyYWU5M2ZlN2JjIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9" frameborder="0" allowfullscreen></iframe>
 </div>
-
-
 
 ## Casos de aplicação
 
