@@ -49,7 +49,7 @@ Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 ??? copy "**Consulta Situação Cadastral de Fornecedores CAGEC**"
 
-        --8<-- "robos/consulta_situacao_cadastral_CAGEC/consulta-situacao-cadastral-fornecedores.txt"
+        --8<-- "robos/consulta_situacao_cadastral_cagec/consulta-situacao-cadastral-fornecedores.txt"
 
 **Importante**
 
