@@ -723,26 +723,26 @@
 
 <p>graph TD;
     1((Início))--&gt;2;
-    2[Abrir planilha do excel <em>Iniciar excel</em>]--&gt;3;
-    3[Iniciar terminal PRODEMGE <em>Executar aplicativo</em>]--&gt;4;
-    4[Logar no SISAP <em>Enviar teclas</em>]--&gt;5;
-    5[Voltar <em>Rótulo voltar</em>]--&gt;6;
+    2[Abrir planilha do excel = Iniciar excel]--&gt;3;
+    3[Iniciar terminal PRODEMGE = Executar aplicativo]--&gt;4;
+    4[Logar no SISAP = Enviar teclas]--&gt;5;
+    5[Voltar = Rótulo voltar]--&gt;6;
     6[Aguardar]--&gt;7;
-    7[Selecionar texto SISAP <em>Enviar teclas + Obter texto da área de transferência</em>]--&gt;8;
-    8[Checar se login foi efetuado com sucesso (<code>If</code> + enviar teclas ou else + enviar teclas + acessar)]--&gt;9;
-    9[Avançar na página do SISAP (Enviar teclas)]--&gt;10;
-    10[Reservar linhas livres na planilha (Obter 1ª linha livre na coluna da planilha do excel)]--&gt;11;
-    11[Ler e gravar <code>MASP</code> (Ler da planilha do excel e armazenar em varia´vel <code>MASP</code>]--&gt;12;
-    12[Ler e gravar <code>Admissao</code> (Ler da planilha do excel e armazenar em varia´vel <code>Admissao</code>]--&gt;13;<br>
-    13[Ler e gravar <code>Evolucao</code> (Ler da planilha do excel e armazenar em varia´vel <code>Evolucao</code>]--&gt;14;
-    14[Ler e gravar <code>Publicacao</code> (Ler da planilha do excel e armazenar em varia´vel <code>Publicacao</code>]--&gt;15;
-    15[Ler e gravar <code>Inicio</code> (Ler da planilha do excel e armazenar em varia´vel <code>Inicio</code>]--&gt;16;
-    16[Avançar na página do SISAP (Enviar teclas contendo <code>MASP</code> e <code>Admissao</code> + Aguardar)]--&gt;17;
-    17[Selecionar texto SISAP (Enviar teclas + Obter texto da área de transferência)]--&gt;18;
-    18[Checar se Admissao inexistente ou Progressao (If else)]--&gt;19;
-    19[Gravar na planilha se admissao inexistente (Enviar teclas + gravar na planilha + aumentar variável)]--&gt;20;
-    20[Gravar na planilha se Progressao (Enviar teclas + gravar na planilha + aumentar variável) - fim If]--&gt;21;
-    21[Fechar terminal PRODEMGE (Enviar teclas)]--&gt;22;
+    7[Selecionar texto SISAP = Enviar teclas + Obter texto da área de transferência]--&gt;8;
+    8[Checar se login foi efetuado com sucesso =<code>If</code> + enviar teclas ou else + enviar teclas + acessar]--&gt;9;
+    9[Avançar na página do SISAP =Enviar teclas]--&gt;10;
+    10[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel]--&gt;11;
+    11[Ler e gravar <code>MASP</code> =Ler da planilha do excel e armazenar em variável <code>MASP</code>]--&gt;12;
+    12[Ler e gravar <code>Admissao</code> =Ler da planilha do excel e armazenar em variável <code>Admissao</code>]--&gt;13;<br>
+    13[Ler e gravar <code>Evolucao</code> =Ler da planilha do excel e armazenar em variável <code>Evolucao</code>]--&gt;14;
+    14[Ler e gravar <code>Publicacao</code> =Ler da planilha do excel e armazenar em variável <code>Publicacao</code>]--&gt;15;
+    15[Ler e gravar <code>Inicio</code> =Ler da planilha do excel e armazenar em variável <code>Inicio</code>]--&gt;16;
+    16[Avançar na página do SISAP =Enviar teclas contendo <code>MASP</code> e <code>Admissao</code> + Aguardar]--&gt;17;
+    17[Selecionar texto SISAP =Enviar teclas + Obter texto da área de transferência]--&gt;18;
+    18[Checar se Admissao inexistente ou Progressao =If else]--&gt;19;
+    19[Gravar na planilha se admissao inexistente =Enviar teclas + gravar na planilha + aumentar variável]--&gt;20;
+    20[Gravar na planilha se Progressao =Enviar teclas + gravar na planilha + aumentar variável - fim If]--&gt;21;
+    21[Fechar terminal PRODEMGE = Enviar teclas]--&gt;22;
     22[Fechar excel]--&gt;23
     23((Fim))</p>
 

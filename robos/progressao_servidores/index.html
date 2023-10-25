@@ -823,26 +823,26 @@
 <summary><strong>Fluxo do robô</strong></summary>
 <div class="mermaid">        graph TD;
             1((Início))--&gt;2;
-            2[Abrir planilha do excel _Iniciar excel_]--&gt;3;
-            3[Iniciar terminal PRODEMGE _Executar aplicativo_]--&gt;4;
-            4[Logar no SISAP _Enviar teclas_]--&gt;5;
-            5[Voltar _Rótulo voltar_]--&gt;6;
+            2[Abrir planilha do excel = Iniciar excel]--&gt;3;
+            3[Iniciar terminal PRODEMGE = Executar aplicativo]--&gt;4;
+            4[Logar no SISAP = Enviar teclas]--&gt;5;
+            5[Voltar = Rótulo voltar]--&gt;6;
             6[Aguardar]--&gt;7;
-            7[Selecionar texto SISAP _Enviar teclas + Obter texto da área de transferência_]--&gt;8;
-            8[Checar se login foi efetuado com sucesso (`If` + enviar teclas ou else + enviar teclas + acessar)]--&gt;9;
-            9[Avançar na página do SISAP (Enviar teclas)]--&gt;10;
-            10[Reservar linhas livres na planilha (Obter 1ª linha livre na coluna da planilha do excel)]--&gt;11;
-            11[Ler e gravar `MASP` (Ler da planilha do excel e armazenar em varia´vel `MASP`]--&gt;12;
-            12[Ler e gravar `Admissao` (Ler da planilha do excel e armazenar em varia´vel `Admissao`]--&gt;13;  
-            13[Ler e gravar `Evolucao` (Ler da planilha do excel e armazenar em varia´vel `Evolucao`]--&gt;14;
-            14[Ler e gravar `Publicacao` (Ler da planilha do excel e armazenar em varia´vel `Publicacao`]--&gt;15;
-            15[Ler e gravar `Inicio` (Ler da planilha do excel e armazenar em varia´vel `Inicio`]--&gt;16;
-            16[Avançar na página do SISAP (Enviar teclas contendo `MASP` e `Admissao` + Aguardar)]--&gt;17;
-            17[Selecionar texto SISAP (Enviar teclas + Obter texto da área de transferência)]--&gt;18;
-            18[Checar se Admissao inexistente ou Progressao (If else)]--&gt;19;
-            19[Gravar na planilha se admissao inexistente (Enviar teclas + gravar na planilha + aumentar variável)]--&gt;20;
-            20[Gravar na planilha se Progressao (Enviar teclas + gravar na planilha + aumentar variável) - fim If]--&gt;21;
-            21[Fechar terminal PRODEMGE (Enviar teclas)]--&gt;22;
+            7[Selecionar texto SISAP = Enviar teclas + Obter texto da área de transferência]--&gt;8;
+            8[Checar se login foi efetuado com sucesso =`If` + enviar teclas ou else + enviar teclas + acessar]--&gt;9;
+            9[Avançar na página do SISAP =Enviar teclas]--&gt;10;
+            10[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel]--&gt;11;
+            11[Ler e gravar `MASP` =Ler da planilha do excel e armazenar em variável `MASP`]--&gt;12;
+            12[Ler e gravar `Admissao` =Ler da planilha do excel e armazenar em variável `Admissao`]--&gt;13;  
+            13[Ler e gravar `Evolucao` =Ler da planilha do excel e armazenar em variável `Evolucao`]--&gt;14;
+            14[Ler e gravar `Publicacao` =Ler da planilha do excel e armazenar em variável `Publicacao`]--&gt;15;
+            15[Ler e gravar `Inicio` =Ler da planilha do excel e armazenar em variável `Inicio`]--&gt;16;
+            16[Avançar na página do SISAP =Enviar teclas contendo `MASP` e `Admissao` + Aguardar]--&gt;17;
+            17[Selecionar texto SISAP =Enviar teclas + Obter texto da área de transferência]--&gt;18;
+            18[Checar se Admissao inexistente ou Progressao =If else]--&gt;19;
+            19[Gravar na planilha se admissao inexistente =Enviar teclas + gravar na planilha + aumentar variável]--&gt;20;
+            20[Gravar na planilha se Progressao =Enviar teclas + gravar na planilha + aumentar variável - fim If]--&gt;21;
+            21[Fechar terminal PRODEMGE = Enviar teclas]--&gt;22;
             22[Fechar excel]--&gt;23
             23((Fim))</div>
 </details>
