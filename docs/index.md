@@ -13,7 +13,6 @@ hide:
   <iframe width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiZTY2NGI1MjEtNDMwNS00OWVmLWFiYzctYTAyYWU5M2ZlN2JjIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9" frameborder="0" allowfullscreen></iframe>
 </div>
 
-
 ## Casos de uso
 
 * Cadastramento de solicitação e pedido no Portal de Compras 
