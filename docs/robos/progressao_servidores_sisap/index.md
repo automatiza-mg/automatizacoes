@@ -10,13 +10,13 @@ tags:
 
 # Progressão de servidores no SISAP
 
-| **Responsável pelo desenvolvimento do protótipo**       | yan.carmo@planejamento.mg.gov.br  |
+| **Responsável pelo desenvolvimento do protótipo**  | Yan Carmo  |
+| **E-mail**  | yan.carmo@planejamento.mg.gov.br  |
 | ----------- | ------------------------------------ |
 | **Data do treinamento**       | 05/10/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | FHEMIG  |
-
-- **Arquivo auxiliar**: [progressao-servidores-sisap.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.xlsx)
+| **Arquivo auxiliar** | [progressao-servidores-sisap.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao-servidores-sisap.xlsx)
 
 ## Funções desenvolvidas pelo protótipo:
 
@@ -30,7 +30,7 @@ tags:
 ??? abstract "**Fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/fluxos/fluxo3.md"
+            --8<-- "robos/progressao_servidores_sisap/assets/fluxo.md"
     ```
 
 ## Robô em funcionamento
@@ -41,18 +41,18 @@ tags:
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/progressao-servidores-sisap.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/codigo_fonte.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 
 ??? copy "**Progressão de servidores no SISAP**"
 
-                --8<-- "robos/progressao_servidores_sisap/progressao-servidores-sisap.txt"
+                --8<-- "robos/progressao_servidores_sisap/assets/codigo_fonte.txt"
 
 **Importante**
 
-Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https://github.com/lab-mg/automatizacoes/blob/main/robos/progressao_servidores_sisap/). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
+Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
 
   - Inclua login e senha do SISAP.
 

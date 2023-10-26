@@ -15,7 +15,7 @@ categories:
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
-{{ read_csv('robos/sample-2.csv') }}
+{{ read_csv('dados/sample-2.csv') }}
 
 <!-- more -->
 
