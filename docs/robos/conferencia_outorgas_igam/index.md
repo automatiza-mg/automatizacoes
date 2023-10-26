@@ -24,7 +24,7 @@ tags:
 | **Turma treinada**       | IGAM  |
 | **Arquivo(s) auxiliar(es)**    | [conferencia-outorgas-IGAM.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia_outorgas_igam.xlsx) |
 
-## Funções desenvolvidas pelo robô
+## Funções desenvolvidas pelo protótipo
 
 - Ler os dados sobre processos de outorga, em formato Excel.
 - Acessar o site do IGAM e consultar a situação dos processos de outorga por Portaria.

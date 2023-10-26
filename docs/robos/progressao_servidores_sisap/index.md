@@ -11,7 +11,7 @@ tags:
 # Progressão de servidores no SISAP
 
 <div class="content-wrapper">
-  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+  <iframe width="320" height="180" src="" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Informações gerais
