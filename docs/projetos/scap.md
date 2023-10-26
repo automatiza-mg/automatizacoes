@@ -17,11 +17,11 @@ Os robôs criados no âmbito desse projeto visam facilitar a execução das oper
 
 ## Robôs criados
 
-O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `SCAP`[aqui](https://lab-mg.github.io/automatizacoes/robos/#ferramentas)(exemplo).
+O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `Projeto SCAP`[aqui](https://lab-mg.github.io/automatizacoes/robos/#projeto_SCAP)(exemplo).
 
 Ou clicando na página de cada robô específico:
 
-- [tag pessoal (exemplo)](https://lab-mg.github.io/automatizacoes/robos/#pessoal)
+- [Pensão Alimentícia](https://lab-mg.github.io/automatizacoes/robos/)
 
 - []()
 
