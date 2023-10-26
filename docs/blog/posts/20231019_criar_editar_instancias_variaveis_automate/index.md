@@ -24,7 +24,7 @@ Mudar informações de instâncias e variáveis permite o robô executar os mesm
 - o valor dentro da planilha `CNPJ`;
 - textos que foram capturados da web e foram inseridos na planilha: `textocafimp` e `textoparaexcel`.
 
-Esse exemplo é parte de um robô que realiza consultas ao Cadastro de Fornecedores Impedidos de licitar com a administração (CAFIMP), e pode ser acessado [nessa página do nosso repositório](https://lab-mg.github.io/automatizacoes/robos/consulta_situacao_fornecedores/).
+Esse exemplo é parte de um robô que realiza consultas ao Cadastro de Fornecedores Impedidos de licitar com a administração (CAFIMP), e pode ser acessado [nessa página do nosso repositório](https://lab-mg.github.io/automatizacoes/robos/consulta_situacao_cadastral_cagec/).
 
 Se um usuário deseja utilizar esse mesmo robô, precisará checar, pelo menos, o caminho no computador em que será criada a pasta `pastacnpj` e informá-lo quando da edição dessa variável. Também é uma boa prática editar os nomes das variáveis `Browser` e `ExcelInstance` para que sejam memorizadas e aplicadas ao caso concreto mais facilmente. Uma sugestão poderia ser `sitecafimp` e `planilhacnpj`, por exemplo.
 
