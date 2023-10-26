@@ -1,0 +1,34 @@
+SET sistema_lower TO sistema.toLower
+Variables.CreateNewList List=> sistemas
+Variables.AddItemToList Item: $'''sisap''' List: sistemas
+Variables.AddItemToList Item: $'''siad''' List: sistemas
+Variables.AddItemToList Item: $'''siafi''' List: sistemas
+IF NotContains(sistemas, sistema_lower, True) THEN
+    Display.ShowMessageDialog.ShowMessage Title: $'''Valor incorreto de variável''' Message: $'''A variável \"sistema\" pode conter apenas os valores \"sisap\", \"siad\" ou \"siafi\". ''' Icon: Display.Icon.ErrorIcon Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False ButtonPressed=> ButtonPressed
+    EXIT Code: 0 ErrorMessage: ButtonPressed
+END
+System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 10 ProcessId=> terminal_prodemge
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%sistema%{Tab}%login%{Tab}%senha%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+LABEL teste_login_terminal
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({a}){Control}({c})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+Clipboard.GetText Text=> texto_inicio_terminal
+IF NotContains(texto_inicio_terminal, $'''Logon executado com sucesso''', True) THEN
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    GOTO teste_login_terminal
+ELSE
+    IF sistema = $'''sisap''' THEN
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''siap{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    ELSE
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%sistema%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    END
+END
+Variables.CreateNewList List=> sistemas
+Variables.AddItemToList Item: $'''sisap''' List: sistemas
+Variables.AddItemToList Item: $'''siad''' List: sistemas
+Variables.AddItemToList Item: $'''siafi''' List: sistemas
+Variables.CreateNewList List=> sistemas
+Variables.AddItemToList Item: $'''sisap''' List: sistemas
+Variables.AddItemToList Item: $'''siad''' List: sistemas
+Variables.AddItemToList Item: $'''siafi''' List: sistemas
+

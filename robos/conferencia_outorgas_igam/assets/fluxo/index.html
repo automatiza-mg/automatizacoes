@@ -678,14 +678,30 @@
   <h1>Fluxo</h1>
 
 <p>graph TD;
-    1((Início))--&gt;2;</p>
+    1((Início))--&gt;2;
+    2[Abrir planilha do excel = Iniciar excel]--&gt;3;
+    3[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel]--&gt;4;
+    4[Abrir navegador na URL de lista de outorgas = Iniciar novo Chrome]--&gt;5;
+    5[Ler e gravar <code>num_portaria</code> =Ler da planilha do excel e armazenar em variável <code>num_portaria</code>]--&gt;6;
+    6[Aguardar carregamento da página = Aguardar conteúdo da página da web]--&gt;7;
+    7[Inserir num_portaria na página = Preencher campo de texto na página da Web]--&gt;8;
+    8[Navegar pela página = Enviar teclas]--&gt;9;
+    9[Ler e gravar dados de vazão da planilha =Ler da planilha do excel e armazenar em variável <code>vazao_excel</code>]--&gt;10;
+    10[Captar os dados de vazão da página do IGAM = Extrair dados de página da web e armazenar em nova variável <code>vazao_web</code>]--&gt;11;
+    11[Gravar os dados de vazão da web na planilha excel = Ler da planilha do excel e armazenar em variável <code>vazao2</code>]--&gt;12;
+    12[Comparar <code>vazao_excel</code> com <code>vazao2</code> =If]--&gt;13; 
+    13[Alternar telas= Enviar teclas AltLEFT]--&gt;14;
+    14[Reservar próxima linha do excel = Aumentar variável]--&gt;15;
+    15[Fechar excel]--&gt;16
+    16[Feche navegador da web]--&gt;17
+    17((Fim))</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 25, 2023 17:55:45</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 26, 2023 12:47:26</span>
       
         <br>
         Criada:

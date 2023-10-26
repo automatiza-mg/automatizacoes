@@ -758,7 +758,7 @@
 </tr>
 <tr>
 <td><strong>Arquivo(s) auxiliar(es)</strong></td>
-<td><a href="https://github.com/lab-mg/automatizacoes/blob/main/robos/conferencia_outorgas_IGAM/conferencia-outorgas-IGAM.xlsx">conferencia-outorgas-IGAM.xlsx</a></td>
+<td><a href="https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia-outorgas-igam.xlsx">conferencia-outorgas-IGAM.xlsx</a></td>
 </tr>
 </tbody>
 </table>
@@ -772,24 +772,7 @@
 </ul>
 <details class="note">
 <summary><strong>Clique e veja o fluxo do robô</strong></summary>
-<div class="mermaid">        graph TD;
-            1((Início))--&gt;2;
-            2[Abrir planilha do excel = Iniciar excel]--&gt;3;
-            3[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel]--&gt;4;
-            4[Abrir navegador na URL de lista de outorgas = Iniciar novo Chrome]--&gt;5;
-            5[Ler e gravar `num_portaria` =Ler da planilha do excel e armazenar em variável `num_portaria`]--&gt;6;
-            6[Aguardar carregamento da página = Aguardar conteúdo da página da web]--&gt;7;
-            7[Inserir num_portaria na página = Preencher campo de texto na página da Web]--&gt;8;
-            8[Navegar pela página = Enviar teclas]--&gt;9;
-            9[Ler e gravar dados de vazão da planilha =Ler da planilha do excel e armazenar em variável `vazao_excel`]--&gt;10;
-            10[Captar os dados de vazão da página do IGAM = Extrair dados de página da web e armazenar em nova variável `vazao_web`]--&gt;11;
-            11[Gravar os dados de vazão da web na planilha excel = Ler da planilha do excel e armazenar em variável `vazao2`]--&gt;12;
-            12[Comparar `vazao_excel` com `vazao2` =If]--&gt;13; 
-            13[Alternar telas= Enviar teclas AltLEFT]--&gt;14;
-            14[Reservar próxima linha do excel = Aumentar variável]--&gt;15;
-            15[Fechar excel]--&gt;16
-            16[Feche navegador da web]--&gt;17
-            17((Fim))</div>
+<div class="mermaid"></div>
 </details>
 <h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
 <p>Aqui temos um <strong>protótipo de robô</strong>.
@@ -832,7 +815,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 25, 2023 20:39:08</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 26, 2023 12:47:26</span>
       
         <br>
         Criada:
