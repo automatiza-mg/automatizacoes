@@ -1,0 +1,33 @@
+System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 2 ProcessId=> AppProcessId WindowHandle=> WindowHandle
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SIMG{Tab}%UsuarioSISAP%{Tab}%SenhaSisap%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+LABEL Voltar
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 60 SendTextAsHardwareKeys: True
+Clipboard.GetText Text=> CheckSIAFI
+IF NotContains(CheckSIAFI, $'''Logon executado com sucesso.''', False) THEN
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    GOTO Voltar
+END
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''simg{Return}{Return}1930001{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+LABEL Voltar2
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 60 SendTextAsHardwareKeys: True
+Clipboard.GetText Text=> CheckSIAFI
+IF NotContains(CheckSIAFI, $'''01-Rotina Administrativa''', False) THEN
+    WAIT 2
+    GOTO Voltar2
+END
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}104{Return}011{Return}x{Return}07{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+Excel.Attach DocumentName: $'''CONTROLE OPE - 2023.xlsx''' Instance=> PlanilhaOPE
+Text.Replace Text: CPF TextToFind: $'''.''' IsRegEx: False IgnoreCase: False ReplaceWith: Nada ActivateEscapeSequences: False Result=> CPFCorreto
+Text.Replace Text: CPFCorreto TextToFind: $''' - ''' IsRegEx: False IgnoreCase: False ReplaceWith: Nada ActivateEscapeSequences: False Result=> CPFCorreto
+Text.CropText.CropTextBeforeFlag Text: Agencia ToFlag: $''' -''' IgnoreCase: False CroppedText=> Agg
+Text.CropText.CropTextBeforeFlag Text: Conta ToFlag: $''' -''' IgnoreCase: False CroppedText=> ContaCorreta
+Text.CropText.CropTextAfterFlag Text: Agencia FromFlag: $'''- ''' IgnoreCase: False CroppedText=> AggDig
+Text.CropText.CropTextAfterFlag Text: Conta FromFlag: $'''- ''' IgnoreCase: False CroppedText=> ContaDigito
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Nome%{Tab}%CPFCorreto%%Municipio%{Shift}({Tab})MG{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Banco%%Agg%%AggDig%%ContaCorreta%%ContaDigito%{F5}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{F5}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}({F4})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
