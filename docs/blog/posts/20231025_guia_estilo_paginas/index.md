@@ -4,7 +4,6 @@ authors: [gabrielbdornas]
 comments: true
 categories:
   - ferramentas
-  - instâncias e variáveis
 ---
 
 # Guia de estilo de nossas páginas

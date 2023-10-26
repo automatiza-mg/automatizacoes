@@ -5,7 +5,7 @@ authors: [andrelamor]
 comments: true
 categories:
   - ferramentas
-  - instâncias e variáveis
+  - instancias e variaveis
 ---
 
 # Criar e editar instâncias e variáveis no Power Automate
