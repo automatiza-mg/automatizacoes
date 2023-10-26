@@ -10,58 +10,41 @@ tags:
 
 # Consulta Situação Cadastral de Fornecedores - CAGEC
 
+<div class="content-wrapper">
+  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+## Informações gerais
+
 | **Responsável pelo desenvolvimento do protótipo**       | Isabela Romancini|
 | ----------- | ------------------------------------ |
 | **E-mail**  | isabela.romancini@planejamento.mg.gov.br  |
-| ----------- | ------------------------------------ |
+| **Ferramenta**    | Power Automate Desktop |
 | **Data do treinamento**       | 28/09/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | órgãos diversos  |
-| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagec/assets/consulta_situacao_cadastral_fornecedores.xlsx)
-
-O robô para consulta de situação cadastral de fornecedores foi desenvolvido com a ferramenta Microsoft Power Automate e pode auxiliar na automação de tarefas relacionadas à gestão de compras e fornecedores.
-Em linhas gerais ele é capaz de:
+| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagec/assets/consulta_situacao_cadastral_fornecedores.xlsx) |
 
 ## Funções desenvolvidas pelo protótipo:
 
 - Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.
-- Consultar a situação cadastral desses fornecedores em diversos sites governamentais.
+- Consultar a situação cadastral desses fornecedores no site do CAGEC.
 - Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.
-- Salvar documentos (imagens e pdfs) que comprovem a consulta.
+- Criar pasta e salvar imagens e pdfs do site que comprovem a consulta.
 
-Essa automação oferece um processo eficiente de atualização da lista de fornecedores, economizando tempo em processos de compras e gestão de contratos.
 
-??? abstract "**Fluxo do robô (resumo das etapas)**"
+??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "robos/consulta_situacao_cadastral_cagec/assets/fluxo.md"
+            --8<-- "docs/robos/consulta_situacao_cadastral_cagec/assets/fluxo.md"
     ```
 
-## Robô em funcionamento
+--8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
-![type:video](https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
+??? note "**Clique para copiar e colar**"
 
-## Montando o seu robô
+        --8<-- "docs/robos/consulta_situacao_cadastral_cagec/assets/codigo_fonte.txt"
 
-Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
+--8<-- "docs/partials/modelo_robo/importante.md"
 
-O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagec/assets/codigo_fonte.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
-Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
-
-??? copy "**Consulta Situação Cadastral de Fornecedores CAGEC**"
-
-        --8<-- "robos/consulta_situacao_cadastral_cagec/assets/codigo_fonte.txt"
-
-**Importante**
-
-Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/assets/consulta_situacao_cadastral_fornecedores.xlsx). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
-
-  - Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
-
-  - Revise e edite todas as variáveis criadas (ex.: nomes das colunas que serão criadas/preenchidas, etc).
-
-  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`)
-
-  - Certifique-se de haja ações para todas as operações desejadas que o robô execute
-
---8<-- "docs/partials/ajuda.md"
+--8<-- "docs/partials/modelo_robo/ajuda.md"

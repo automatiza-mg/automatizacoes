@@ -10,13 +10,20 @@ tags:
 
 # Progressão de servidores no SISAP
 
+<div class="content-wrapper">
+  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+## Informações gerais
+
 | **Responsável pelo desenvolvimento do protótipo**  | Yan Carmo  |
-| **E-mail**  | yan.carmo@planejamento.mg.gov.br  |
 | ----------- | ------------------------------------ |
+| **E-mail**  | yan.carmo@planejamento.mg.gov.br  |
+| **Ferramenta**    | Power Automate Desktop |
 | **Data do treinamento**       | 05/10/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | FHEMIG  |
-| **Arquivo auxiliar** | [progressao-servidores-sisap.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao-servidores-sisap.xlsx)
+| **Arquivo auxiliar** | [progressao-servidores-sisap.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao_servidores_sisap.xlsx) |
 
 ## Funções desenvolvidas pelo protótipo:
 
@@ -27,42 +34,18 @@ tags:
 - Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando-a com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou `Não se aplica`, por exemplo.
 - Salvar a planilha alterada e enviá-la por email.
 
-??? abstract "**Fluxo do robô**"
+??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "robos/progressao_servidores_sisap/assets/fluxo.md"
+            --8<-- "docs/robos/progressao_servidores_sisap/assets/fluxo.md"
     ```
 
-## Robô em funcionamento
+--8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
-![type:video](https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Automatização consulta empresas 1.3x.mp4)
+??? note "**Clique para copiar e colar**"
 
-## Montando o seu robô
+                --8<-- "docs/robos/progressao_servidores_sisap/assets/codigo_fonte.txt"
 
-Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
+--8<-- "docs/partials/modelo_robo/importante.md"
 
-O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/codigo_fonte.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
-
-Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
-
-
-??? copy "**Progressão de servidores no SISAP**"
-
-                --8<-- "robos/progressao_servidores_sisap/assets/codigo_fonte.txt"
-
-**Importante**
-
-Este protótipo utilizou uma planilha auxiliar, disponível [nesta pasta](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/). Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:
-
-  - Inclua login e senha do SISAP.
-
-  - Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
-
-  - Revise e edite todas as variáveis criadas (ex.: login, senha, nomes das colunas que serão criadas/preenchidas, etc).
-
-  - Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH`)
-
-  - Certifique-se de haja ações para todas as operações desejadas que o robô execute
-
-
---8<-- "docs/partials/ajuda.md"
+--8<-- "docs/partials/modelo_robo/ajuda.md"

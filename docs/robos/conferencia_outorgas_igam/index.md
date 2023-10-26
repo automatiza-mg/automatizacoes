@@ -19,7 +19,10 @@ tags:
 | ----------- | ------------------------------------ |
 | **E-mail**       | yan.carmo@planejamento.mg.gov.br |
 | **Ferramenta**    | Power Automate Desktop |
-| **Arquivo(s) auxiliar(es)**    | [conferencia-outorgas-IGAM.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia-outorgas-igam.xlsx) |
+| **Data do treinamento**       | 11/10/2023 |
+| **Local**    | Sala SEE, Torre Minas, 11º andar |
+| **Turma treinada**       | IGAM  |
+| **Arquivo(s) auxiliar(es)**    | [conferencia-outorgas-IGAM.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia_outorgas_igam.xlsx) |
 
 ## Funções desenvolvidas pelo robô
 
@@ -32,7 +35,7 @@ tags:
 ??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "assets/fluxo.md"
+            --8<-- "docs/robos/conferencia_outorgas_igam/assets/fluxo.md"
     ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
@@ -40,16 +43,7 @@ tags:
 
 ??? note "**Clique para copiar e colar**"
 
-        --8<-- "assets/codigo_fonte.txt"
-
-
-Agora, realize as seguintes adaptações para que seu robô comece a te ajudar:
-
-1. Confira se a URL (caminho da página do site) acessada permanece a mesma.
-2. Revise todas instâncias criadas (nomes dos arquivos, páginas da web, etc).
-3. Revise e edite todas as variáveis criadas (ex.: nomes das colunas que serão criadas/preenchidas, etc).
-4. Confira o caminho dos arquivos editados pelo robô no seu computador (`PATH
-5. Certifique-se de haja ações para todas as operações desejadas que o robô execute
+        --8<-- "docs/robos/conferencia_outorgas_igam/assets/codigo_fonte.txt"
 
 --8<-- "docs/partials/modelo_robo/importante.md"
 
