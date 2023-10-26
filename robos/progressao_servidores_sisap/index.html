@@ -553,7 +553,7 @@
         
   
   <span class="md-ellipsis">
-    instâncias e variáveis
+    instancias e variaveis
   </span>
   
 
@@ -672,15 +672,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#funcoes-desenvolvidas-pelo-prototipo" class="md-nav__link">
-    Funções desenvolvidas pelo protótipo:
+  <a href="#informacoes-gerais" class="md-nav__link">
+    Informações gerais
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#robo-em-funcionamento" class="md-nav__link">
-    Robô em funcionamento
+  <a href="#funcoes-desenvolvidas-pelo-prototipo" class="md-nav__link">
+    Funções desenvolvidas pelo protótipo:
   </a>
   
 </li>
@@ -741,13 +741,45 @@
 
 
 <div><h1 id="progressao-de-servidores-no-sisap">Progressão de servidores no SISAP<a class="headerlink" href="#progressao-de-servidores-no-sisap" title="Permanent link">⚓︎</a></h1>
-<p>| <strong>Responsável pelo desenvolvimento do protótipo</strong>  | Yan Carmo  |
-| <strong>E-mail</strong>  | yan.carmo@planejamento.mg.gov.br  |
-| ----------- | ------------------------------------ |
-| <strong>Data do treinamento</strong>       | 05/10/2023 |
-| <strong>Local</strong>    | Sala SEE, Torre Minas, 11º andar |
-| <strong>Turma treinada</strong>       | FHEMIG  |
-| <strong>Arquivo auxiliar</strong> | <a href="https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao-servidores-sisap.xlsx">progressao-servidores-sisap.xlsx</a></p>
+<div class="content-wrapper">
+  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2 id="informacoes-gerais">Informações gerais<a class="headerlink" href="#informacoes-gerais" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Responsável pelo desenvolvimento do protótipo</strong></th>
+<th>Yan Carmo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E-mail</strong></td>
+<td>yan.carmo@planejamento.mg.gov.br</td>
+</tr>
+<tr>
+<td><strong>Ferramenta</strong></td>
+<td>Power Automate Desktop</td>
+</tr>
+<tr>
+<td><strong>Data do treinamento</strong></td>
+<td>05/10/2023</td>
+</tr>
+<tr>
+<td><strong>Local</strong></td>
+<td>Sala SEE, Torre Minas, 11º andar</td>
+</tr>
+<tr>
+<td><strong>Turma treinada</strong></td>
+<td>FHEMIG</td>
+</tr>
+<tr>
+<td><strong>Arquivo auxiliar</strong></td>
+<td><a href="https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao_servidores_sisap.xlsx">progressao-servidores-sisap.xlsx</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="funcoes-desenvolvidas-pelo-prototipo">Funções desenvolvidas pelo protótipo:<a class="headerlink" href="#funcoes-desenvolvidas-pelo-prototipo" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Ler os MASP dos servidores em uma planilha, em formato Excel;</li>
@@ -757,45 +789,109 @@
 <li>Atualizar a situação de progressão dos servidores na mesma planilha Excel aberta no início do processo, adaptando-a com a inclusão e/ou edição de novas colunas de informações necessárias e controle da operação (concluída, ou <code>Não se aplica</code>, por exemplo.</li>
 <li>Salvar a planilha alterada e enviá-la por email.</li>
 </ul>
-<details class="abstract">
-<summary><strong>Fluxo do robô</strong></summary>
-<div class="mermaid"></div>
+<details class="note">
+<summary><strong>Clique e veja o fluxo do robô</strong></summary>
+<div class="mermaid">        graph TD;
+            1((Início))--&gt;2;
+            2[Abrir planilha do excel = Iniciar excel]--&gt;3;
+            3[Iniciar terminal PRODEMGE = Executar aplicativo]--&gt;4;
+            4[Logar no SISAP = Enviar teclas]--&gt;5;
+            5[Voltar = Rótulo voltar]--&gt;6;
+            6[Aguardar]--&gt;7;
+            7[Selecionar texto SISAP = Enviar teclas + Obter texto da área de transferência]--&gt;8;
+            8[Checar se login foi efetuado com sucesso =`If` + enviar teclas ou else + enviar teclas + acessar]--&gt;9;
+            9[Avançar na página do SISAP =Enviar teclas]--&gt;10;
+            10[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel]--&gt;11;
+            11[Ler e gravar `MASP` =Ler da planilha do excel e armazenar em variável `MASP`]--&gt;12;
+            12[Ler e gravar `Admissao` =Ler da planilha do excel e armazenar em variável `Admissao`]--&gt;13;  
+            13[Ler e gravar `Evolucao` =Ler da planilha do excel e armazenar em variável `Evolucao`]--&gt;14;
+            14[Ler e gravar `Publicacao` =Ler da planilha do excel e armazenar em variável `Publicacao`]--&gt;15;
+            15[Ler e gravar `Inicio` =Ler da planilha do excel e armazenar em variável `Inicio`]--&gt;16;
+            16[Avançar na página do SISAP =Enviar teclas contendo `MASP` e `Admissao` + Aguardar]--&gt;17;
+            17[Selecionar texto SISAP =Enviar teclas + Obter texto da área de transferência]--&gt;18;
+            18[Checar se Admissao inexistente ou Progressao =If else]--&gt;19;
+            19[Gravar na planilha se admissao inexistente =Enviar teclas + gravar na planilha + aumentar variável]--&gt;20;
+            20[Gravar na planilha se Progressao =Enviar teclas + gravar na planilha + aumentar variável - fim If]--&gt;21;
+            21[Fechar terminal PRODEMGE = Enviar teclas]--&gt;22;
+            22[Fechar excel]--&gt;23
+            23((Fim))</div>
 </details>
-<h2 id="robo-em-funcionamento">Robô em funcionamento<a class="headerlink" href="#robo-em-funcionamento" title="Permanent link">⚓︎</a></h2>
-<p><div class="video-container"><iframe src="https://cecad365.sharepoint.com/sites/LAB.mg/_layouts/15/embed.aspx?UniqueId=4a028dcd-334c-4156-b350-adaedeb4677f&amp;nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create%22%20width=%22640%22%20height=%22360%22%20frameborder=%220%22%20scrolling=%22no%22%20allowfullscreen%20title=%22Automatiza%C3%A7%C3%A3o%20consulta%20empresas%201.3x.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
-<p>Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. <strong>Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.</strong></p>
-<p>O arquivo contendo o código deste robô está armazenado <a href="https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/codigo_fonte.txt">nesta página</a>. Para dar vida ao seu, clique na caixa <strong>copiar e colar</strong> abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.</p>
-<p>Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.</p>
-<details class="copy">
-<summary><strong>Progressão de servidores no SISAP</strong></summary>
+<p>Aqui temos um <strong>protótipo de robô</strong>.
+Ele só vai solucionar o seu problema se ajustado às suas necessidades.
+Portanto, você deverá adaptá-lo.</p>
+<p>Para dar vida ao seu robô, clique na caixa <strong>copiar e colar</strong> abaixo.
+Depois, copie e cole o código disponível em um novo fluxo Power Automate Desktop.</p>
+<details class="note">
+<summary><strong>Clique para copiar e colar</strong></summary>
+<div class="language-text highlight"><pre><span></span><code>        Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\ct10\\Desktop\\Robo.xlsx''' Visible: True ReadOnly: False Instance=&gt; Progressao
+        System.RunApplication.RunApplicationAndWaitToLoad ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized Timeout: 5
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SISAP{Tab}%Login%%Senha%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        LABEL Voltar
+        WAIT 2
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        Clipboard.GetText Text=&gt; Check
+        IF Contains(Check, $'''Logon executado com sucesso.''', False) THEN
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''SIAP{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        ELSE
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            GOTO Voltar
+        END
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{X}{Return}{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        Excel.GetFirstFreeRowOnColumn Instance: Progressao Column: $'''A''' FirstFreeRowOnColumn=&gt; Tamanhoplanilha
+        Excel.GetFirstFreeRowOnColumn Instance: Progressao Column: $'''H''' FirstFreeRowOnColumn=&gt; linhaatual
+        LOOP WHILE (linhaatual) &lt;&gt; (Tamanhoplanilha)
+            WAIT 2
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''A''' StartRow: linhaatual ReadAsText: False CellValue=&gt; MASP
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''B''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Admissao
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''C''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Evolucao
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''F''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Publicacao
+            Excel.ReadFromExcel.ReadCell Instance: Progressao StartColumn: $'''G''' StartRow: linhaatual ReadAsText: False CellValue=&gt; Inicio
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''EVO *{Return}{Tab}X{Return}01{Return}%MASP%%Admissao%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            WAIT 2
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            Clipboard.GetText Text=&gt; Check
+            IF Contains(Check, $'''Admissao inexistente''', False) THEN
+                MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+                Excel.WriteToExcel.WriteCell Instance: Progressao Value: $'''Admissão inexistente''' Column: $'''H''' Row: linhaatual
+                Variables.IncreaseVariable Value: linhaatual IncrementValue: 1
+            ELSE
+                MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Evolucao%{Tab}%Publicacao%%Inicio%{Return}{F3}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+                Excel.WriteToExcel.WriteCell Instance: Progressao Value: $'''Concluído''' Column: $'''H''' Row: linhaatual
+                Variables.IncreaseVariable Value: linhaatual IncrementValue: 1
+            END
+        END
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}(F4)''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        Excel.CloseExcel.CloseAndSave Instance: Progressao
+</code></pre></div>
 </details>
-<p><strong>Importante</strong></p>
-<p>Este protótipo utilizou uma planilha auxiliar, disponível <a href="https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/">nesta pasta</a>. Após copiar e colar o código em um novo fluxo no Power Automate, realize as seguintes adaptações para que seu robô começe a te ajudar:</p>
+<details class="note">
+<summary><strong>Importante:</strong> realize as seguintes adaptações para que seu robô comece a te ajudar</summary>
 <ul>
-<li>
-<p>Inclua login e senha do SISAP.</p>
-</li>
-<li>
-<p>Revise todas <abbr title="Definir instância">instâncias</abbr> criadas (nomes dos arquivos, páginas da web, etc).</p>
-</li>
-<li>
-<p>Revise e edite todas as variáveis criadas (ex.: login, senha, nomes das colunas que serão criadas/preenchidas, etc).</p>
-</li>
-<li>
-<p>Confira o caminho dos arquivos editados pelo robô no seu computador (<code>PATH</code>)</p>
-</li>
-<li>
-<p>Certifique-se de haja ações para todas as operações desejadas que o robô execute</p>
-</li>
-</ul></div>
+<li>Revise/crie <abbr title="Definir instância">instâncias</abbr> (arquivos, terminais PRODEMGE, páginas da web, etc).</li>
+<li>Revise/crie variávei(s) (logins, senhas, nomes das colunas que serão criadas/preenchidas, etc).</li>
+<li>Revise caminho(s) de arquivo(s) (<code>PATH</code>).</li>
+<li>Confira se as URLs (caminho das páginas dos sites) acessados permanecem as mesmas.</li>
+<li>Certifique-se de haja ações para todas as operações desejadas que o robô execute</li>
+</ul>
+</details>
+<details class="question">
+<summary>Clique caso precise de ajuda</summary>
+<p>Algum erro está ocorrendo em uma das fases de criação de seu robô?
+Não tem problema.
+Abaixo temos um espaço para perguntas e respostas.
+Dá uma olhadinha lá.
+Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando.
+Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
+<p>Ótimo trabalho!</p>
+</details></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 26, 2023 12:47:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 26, 2023 13:36:03</span>
       
         <br>
         Criada:
