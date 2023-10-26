@@ -10,10 +10,10 @@ nav:
   - Página inicial: index.md
   - Robôs:
     - robos/index.md
-  - Blog:
-    - blog/index.md
   - Projetos:
     - projetos/scap.md
+  - Blog:
+    - blog/index.md
 # --8<-- [end:nav]
 
 # Configuration
