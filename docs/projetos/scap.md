@@ -4,6 +4,8 @@ A parceria entre a SIGES e a SCAP para automatizar os processos referentes à fo
 
 Os robôs criados no âmbito desse projeto visam facilitar a execução das operações necessárias, reduzir o número de inconsistências e liberar o tempo útil do pessoal envolvido para outras atividades, como análises, por exemplo.  
 
+- - - 
+
 ## Números Gerais do Projeto
 
 * Setores envolvidos
@@ -14,14 +16,16 @@ Os robôs criados no âmbito desse projeto visam facilitar a execução das oper
 
 * Medidas de diferença de ocorrências, horas e semana produtiva (pessoa X robô)
 
+- - - 
 
 ## Robôs criados
 
-O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `Projeto SCAP`[aqui](https://lab-mg.github.io/automatizacoes/robos/#projeto_SCAP)(exemplo).
+O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `Projeto SCAP`[aqui](https://lab-mg.github.io/automatizacoes/robos/#projeto-scap).
 
 Ou clicando na página de cada robô específico:
 
-- [Pensão Alimentícia](https://lab-mg.github.io/automatizacoes/robos/)
+- [Pensão Alimentícia](https://lab-mg.github.io/automatizacoes/robos/pensao_alimenticia/
+])
 
 - []()
 
