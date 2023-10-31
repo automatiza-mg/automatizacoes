@@ -9,13 +9,13 @@ tags:
 
 # Folha Entidades - pessoal ATIVO
 
-<div class="content-wrapper">
-  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-</div>
+<video width="640"  controls>
+    <source src="assets/video.mp4" type="video/mp4">
+</video>
 
 ## Informações gerais
 
-| **Responsável**       | Yan Carmo e André Amorim  |
+| **Responsáveis**       | Yan Carmo e André Amorim  |
 | ----------- | ------------------------------------ |
 | **E-mail**       | andre.amorim@planejamento.mg.gov.br |
 | **Ferramenta**    | Power Automate Desktop |

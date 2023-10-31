@@ -17,6 +17,7 @@ Mas nem sempre se conhece todas as oções de ferramentas embutidas no excel. Af
 Como exemplos:
 
 - extrair parte do valor de uma cadeia de caracteres ou números;
+- concatenar valores de duas colunas em uma nova
 - transformar formatos de valores;
 - transpor valores;
 - comparar valores e checar coincidências ou contar ocorrências 
@@ -33,6 +34,11 @@ Valores mesclados, células coloridas, valores de linhas preenchidas em colunas 
 
 A função de coletar parte da cadeia de valores de uma célula:
 `=direita(a2;3)`, por exemplo, vai retornar os 3 caracteres/algarismos da direita para a esquerda da célula `a2`. Ela pode ser útil em casos em que a notação de `CNPJ` ou fonte de receita `GFIMP` está com notação diferente entre a planilha e o sistema a ser utilizado.
+
+- concatenar valores de duas colunas em uma nova
+- transformar formatos de valores;
+- transpor valores;
+- comparar valores e checar coincidências ou contar ocorrências
 
 # Saiba Mais
 
