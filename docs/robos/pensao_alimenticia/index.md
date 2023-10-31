@@ -19,7 +19,6 @@ tags:
 | ----------- | ------------------------------------ |
 | **E-mail**       | yan.carmo@planejamento.mg.gov.br |
 | **Ferramenta**    | Power Automate Desktop |
-| **Arquivo(s) auxiliar(es)**    | [arquivo.ext]() |
 
 ## Funções desenvolvidas pelo robô
 
