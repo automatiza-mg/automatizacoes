@@ -24,8 +24,7 @@ O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `Projeto 
 
 Ou clicando na página de cada robô específico:
 
-- [Pensão Alimentícia](https://lab-mg.github.io/automatizacoes/robos/pensao_alimenticia/
-])
+- [Pensão Alimentícia](https://lab-mg.github.io/automatizacoes/robos/pensao_alimenticia/)
 
 - [Folha - pagamento entidades pessoal ATIVO](https://lab-mg.github.io/automatizacoes/robos/folha_bancos_entidades/)
 
