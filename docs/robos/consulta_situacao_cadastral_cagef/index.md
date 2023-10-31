@@ -10,9 +10,9 @@ tags:
 
 # Consulta Situação Cadastral de Fornecedores - CAGEC
 
-<div class="content-wrapper">
-  <iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-</div>
+<video width="640"  controls>
+    <source src="assets/video.mp4" type="video/mp4">
+</video>
 
 ## Informações gerais
 
@@ -23,7 +23,7 @@ tags:
 | **Data do treinamento**       | 28/09/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | órgãos diversos  |
-| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagec/assets/consulta_situacao_cadastral_fornecedores.xlsx) |
+| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagef/assets/consulta_situacao_cadastral_fornecedores.xlsx) |
 
 ## Funções desenvolvidas pelo protótipo:
 
@@ -36,14 +36,14 @@ tags:
 ??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/robos/consulta_situacao_cadastral_cagec/assets/fluxo.md"
+            --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/fluxo.md"
     ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
 ??? note "**Clique para copiar e colar**"
 
-        --8<-- "docs/robos/consulta_situacao_cadastral_cagec/assets/codigo_fonte.txt"
+        --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/codigo_fonte.txt"
 
 --8<-- "docs/partials/modelo_robo/importante.md"
 
