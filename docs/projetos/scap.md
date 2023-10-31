@@ -8,13 +8,13 @@ Os robôs criados no âmbito desse projeto visam facilitar a execução das oper
 
 ## Números Gerais do Projeto
 
-* Setores envolvidos
-
-* Pessoas envolvidas
-
-* Nº de processos automatizados
-
-* Medidas de diferença de ocorrências, horas e semana produtiva (pessoa X robô)
+| **Robôs criados**       | x  |
+| ----------- | ------------------------------------ |
+| **Setores envolvidos**       | x |
+| **Pessoas envolvidas**    | x |
+| **Valores envolvidos**    | x |
+| **Horas poupadas - estimativa**    | x |
+| **Semanas poupadas - estimativa**    | x |
 
 - - - 
 
@@ -27,7 +27,7 @@ Ou clicando na página de cada robô específico:
 - [Pensão Alimentícia](https://lab-mg.github.io/automatizacoes/robos/pensao_alimenticia/
 ])
 
-- []()
+- [Folha - pagamento entidades pessoal ATIVO](https://lab-mg.github.io/automatizacoes/robos/folha_bancos_entidades/)
 
 - []()
 
