@@ -678,14 +678,40 @@
   <h1>Fluxo</h1>
 
 <p>graph TD;
-    1((Início))--&gt;2;</p>
+graph TD;
+    1((Início))--&gt;2;
+    2[Abrir planilha do excel = Iniciar excel]--&gt;3;
+    3[Definir planilha ativa]--&gt;4;
+    4[Iniciar terminal PRODEMGE = Executar aplicativo]--&gt;5;
+    5[Logar no SIAFI = Enviar teclas]--&gt;6;
+    6[Voltar = Rótulo voltar]--&gt;7;
+    7[Aguardar]--&gt;8;
+    8[Selecionar texto SISAP = Enviar teclas + Obter texto da área de transferência]--&gt;9;
+    9[Checar se login foi efetuado com sucesso =<code>If</code> + enviar teclas ou else + enviar teclas + acessar]--&gt;10;
+    10[Avançar na página do SISAP =Enviar teclas]--&gt;11;
+    11[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel a ser preenchida pelo robô]--&gt;12;
+    12[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel a ser verificada se está preenchida]--&gt;13;
+    13[Comparar se coluna a ser preenchida corresponde à linha preenchida da primeira coluna = Condição de loop while K menor que A]--&gt;14;
+    14[Passar página do SIAFI = Enviar teclas]--&gt;15;
+    15[Ler e gravar <code>UO</code> =Ler da planilha do excel e armazenar em variável <code>UO</code>]--&gt;16;
+    16[Ler e gravar <code>Ano</code> =Ler da planilha do excel e armazenar em variável <code>Ano</code>]--&gt;17;<br>
+    17[Ler e gravar <code>GMFIP</code> =Ler da planilha do excel e armazenar em variável <code>GMFIP</code>]--&gt;18;
+    18[Ler e gravar <code>Mudafonte</code> =Ler da planilha do excel e armazenar em variável <code>Mudafonte</code>]--&gt;19;
+    19[Diferenciar operações no SIAFI segundo 3 últimos algarismos da FONTE GMFIP = If variável <code>Mudafonte</code>]--&gt;20;
+    20[Buscar o CNPJ do credor na planilha e armazenar variável <code>CNPJ</code>= Ler da planilha do Excel]--&gt;21;
+    21[Rótulo <code>VOLTACNPJ</code> + Aguardar]--&gt;22;
+    22[Checar CNPJ = Enviar teclas + obter texto da área de transferência + If else]--&gt;23;
+    23[Gravar na planilha se <code>PagamentoEfetuado</code> = gravar na planilha + aumentar variável]--&gt;24;
+    24[Salvar e fechar excel]--&gt;25;
+    25[Fechar terminal PRODEMGE = Enviar teclas Alt F4]--&gt;26;
+    26((Fim))    </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 31, 2023 18:30:23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 31, 2023 22:51:20</span>
       
         <br>
         Criada:
