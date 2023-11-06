@@ -1,0 +1,64 @@
+
+/# lembrar de:
+identificar os CPF da lista e pagar antes;
+verificar os CNPJ e entidades que são fora da conta única (ESP) - vide aba "Exceções entidades" #/
+Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\m1514315\\Desktop\\ATIVOD.N.M202310 entidades .xlsx''' Visible: True ReadOnly: False Instance=> bancodedados
+Excel.SetActiveWorksheet.ActivateWorksheetByName Instance: bancodedados Name: $'''ENTIDADES ATIVO'''
+System.RunApplication.RunApplication ApplicationPath: $'''C:\\Program Files (x86)\\pw3270\\pw3270.exe''' WindowStyle: System.ProcessWindowStyle.Maximized ProcessId=> siafi
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''simg{Tab}m1514315%Senha%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+LABEL voltar
+WAIT 1
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 20 SendTextAsHardwareKeys: True
+Clipboard.GetText Text=> telainicial
+IF Contains(telainicial, $'''Logon executado com sucesso''', True) THEN
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''simg{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+ELSE
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    GOTO voltar
+END
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}1930001{Return}{Tab}71{Return}{Return}''' DelayBetweenKeystrokes: 20 SendTextAsHardwareKeys: True
+Excel.GetFirstFreeRowOnColumn Instance: bancodedados Column: $'''K''' FirstFreeRowOnColumn=> Automatelivre
+Excel.GetFirstFreeRowOnColumn Instance: bancodedados Column: $'''A''' FirstFreeRowOnColumn=> Tamanhoplanilha
+LOOP WHILE (Automatelivre) < (Tamanhoplanilha)
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''041{Return}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}x{Return}''' DelayBetweenKeystrokes: 30 SendTextAsHardwareKeys: True
+    Excel.ReadFromExcel.ReadCell Instance: bancodedados StartColumn: $'''H''' StartRow: Automatelivre ReadAsText: True CellValue=> UO
+    Excel.ReadFromExcel.ReadCell Instance: bancodedados StartColumn: $'''I''' StartRow: Automatelivre ReadAsText: True CellValue=> ANO
+    Excel.ReadFromExcel.ReadCell Instance: bancodedados StartColumn: $'''J''' StartRow: Automatelivre ReadAsText: True CellValue=> GMIFP
+    Excel.ReadFromExcel.ReadCell Instance: bancodedados StartColumn: $'''L''' StartRow: Automatelivre ReadAsText: True CellValue=> MUDAFONTE
+    WAIT 1
+    IF MUDAFONTE = 101 THEN
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%UO%%ANO%%GMIFP%%Ordenador%{Return}x{F5}''' DelayBetweenKeystrokes: 50 SendTextAsHardwareKeys: True
+    ELSE IF MUDAFONTE <> 101 THEN
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%UO%%ANO%%GMIFP%%Ordenador%{Return}''' DelayBetweenKeystrokes: 50 SendTextAsHardwareKeys: True
+    END
+    Excel.ReadFromExcel.ReadCell Instance: bancodedados StartColumn: $'''D''' StartRow: Automatelivre ReadAsText: False CellValue=> CNPJ
+    LABEL VOLTACNPJ
+    WAIT 3
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({A}){Control}({C})''' DelayBetweenKeystrokes: 50 SendTextAsHardwareKeys: True
+    Clipboard.GetText Text=> TELACNPJ
+    IF NotContains(TELACNPJ, CNPJ, True) THEN
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{F8}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+        GOTO VOLTACNPJ
+    ELSE
+        Excel.LaunchExcel.LaunchUnderExistingProcess Visible: True Instance=> apoiocnpj
+        WAIT 2
+        MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: apoiocnpj TextToSend: $'''{Control}({V})''' DelayBetweenKeystrokes: 30 SendTextAsHardwareKeys: False
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}({Tab})''' DelayBetweenKeystrokes: 50 SendTextAsHardwareKeys: True
+        SET LinhaCNPJ TO 12
+        LABEL VOLTATESTECNPJ
+        Excel.ReadFromExcel.ReadCell Instance: apoiocnpj StartColumn: $'''A''' StartRow: LinhaCNPJ ReadAsText: True CellValue=> TESTECNPJ
+        IF Contains(TESTECNPJ, CNPJ, True) THEN
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''X''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+        ELSE
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Down}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+            Variables.IncreaseVariable Value: LinhaCNPJ IncrementValue: 1
+            GOTO VOLTATESTECNPJ
+        END
+        Excel.CloseExcel.Close Instance: apoiocnpj
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{F5}{Return}%DataPagENTIDADE%{Return}REGISTRO ORDEM PAGAMENTO BANCARIA - PESSOAL{F5}{F5}{F3}''' DelayBetweenKeystrokes: 30 SendTextAsHardwareKeys: True
+    END
+    Excel.WriteToExcel.WriteCell Instance: bancodedados Value: $'''Pagamentoefetuado''' Column: $'''K''' Row: Automatelivre
+    Variables.IncreaseVariable Value: Automatelivre IncrementValue: 1
+END
+Excel.CloseExcel.CloseAndSave Instance: bancodedados
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}({F4})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True

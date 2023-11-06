@@ -1,0 +1,34 @@
+graph TD;
+    1((Início))-->2;
+    2[Abrir planilha do excel = Iniciar excel]-->3;
+    3[Definir planilha ativa]-->4;
+    4[Ver listagem de processos da planilha do excel]-->5;
+    5[Salvar coluna com nº dos processos em variável `processos`]-->6;
+    6[Abrir navegador]-->7;
+    7[Acessar site do SISCONDJ-DEPOX-TJMG]-->8;
+    8[Inserir `processos` = enviar teclas 11tabs para processos e 10 para instância?]-->9;
+    9[Salvar guia emitida na pasta]-->10;
+    10[Copiar número do código de barras e salvar em variável `guia`]-->11;
+    11[Incluir os números `guia` em nova coluna do excel]-->12
+    12[Logar no SIAFI = Enviar teclas]-->13;
+    13[Voltar = Rótulo voltar]-->14;
+    14[Aguardar]-->15;
+    15[Selecionar texto SISAP = Enviar teclas + Obter texto da área de transferência]-->16;
+    16[Checar se login foi efetuado com sucesso =`If` + enviar teclas ou else + enviar teclas + acessar]-->17;
+    17[Avançar na página do SISAP =Enviar teclas]-->18;
+    18[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel a ser preenchida pelo robô]-->19;
+    19[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel a ser verificada se está preenchida]-->20;
+    20[Comparar se coluna a ser preenchida corresponde à linha preenchida da primeira coluna = Condição de loop while K menor que A]-->21;
+    21[Passar página do SIAFI = Enviar teclas]-->22;
+    22[Ler e gravar `UO` =Ler da planilha do excel e armazenar em variável `UO`]-->23;
+    23[Ler e gravar `Ano` =Ler da planilha do excel e armazenar em variável `Ano`]-->24;  
+    24[Ler e gravar `GMFIP` =Ler da planilha do excel e armazenar em variável `GMFIP`]-->25;
+    25[Ler e gravar `Mudafonte` =Ler da planilha do excel e armazenar em variável `Mudafonte`]-->26;
+    26[Diferenciar operações no SIAFI segundo 3 últimos algarismos da FONTE GMFIP = If variável `Mudafonte`]-->27;
+    27[Buscar o CNPJ do credor na planilha e armazenar variável `CNPJ`= Ler da planilha do Excel]-->28;
+    28[Rótulo `VOLTACNPJ` + Aguardar]-->29;
+    29[Checar CNPJ = Enviar teclas + obter texto da área de transferência + If else]-->30;
+    30[Gravar na planilha se `PagamentoEfetuado` = gravar na planilha + aumentar variável]-->31;
+    31[Salvar e fechar excel]-->32;
+    32[Fechar terminal PRODEMGE = Enviar teclas Alt F4]-->33;
+    33((Fim))  
