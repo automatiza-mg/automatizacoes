@@ -28,4 +28,8 @@ Esse exemplo é parte de um robô que realiza consultas ao Cadastro de Fornecedo
 
 Se um usuário deseja utilizar esse mesmo robô, precisará checar, pelo menos, o caminho no computador em que será criada a pasta `pastacnpj` e informá-lo quando da edição dessa variável. Também é uma boa prática editar os nomes das variáveis `Browser` e `ExcelInstance` para que sejam memorizadas e aplicadas ao caso concreto mais facilmente. Uma sugestão poderia ser `sitecafimp` e `planilhacnpj`, por exemplo.
 
+E o que aconteceria caso o usuário deixar de fazer essas edições? Para colar o código de um protótipo copiado de outra máquina, apareceria a caixa de diálogo similar à imagem abaixo, informando que há referências a objetos não definidos. Isso inviabiliza a cópia do código!
+![image](https://github.com/lab-mg/automatizacoes/assets/52294411/9290dddb-8527-4829-8d48-c61eecb50710)
+
+
 O tutorial da Microsoft sobre esse assunto pode ser acessado [nesta página](https://learn.microsoft.com/en-US/training/modules/input-parameters/).  
