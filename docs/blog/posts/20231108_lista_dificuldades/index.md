@@ -10,7 +10,7 @@ categories:
 
 # Dificuldades recorrentes e alternativas na montagem de protótipos 
 
-Algumas ações pensadas para montagem de um fluxo no power automate podem não funcionar como inicialmente planejado. Por exemnplo, algumas circunstâncias como a forma com que a página html da web foi concebida, tamanho da tela do monitor, janelas pop up podem restringir a atuação do robô montado.
+Algumas ações pensadas para montagem de um fluxo no power automate podem não funcionar como inicialmente planejado. Por exemplo, algumas circunstâncias como a forma com que a página html da web foi concebida, tamanho da tela do monitor, janelas pop up podem restringir a atuação do robô montado.
 
 Como exemplos de tarefas úteis, que às vezes não é possível:
 
@@ -50,8 +50,4 @@ Uma guia ou boleto bancário pode ter seu texto quase que integralmente decodifi
 
 # Saiba Mais
 
-O tutorial da Microsoft sobre esse assunto pode ser acessado [nesta página]().
-
-Um guia  de erros e problemas recorrentes em planilhas está disponível [neste link]().
-
-Para aprofundar sobre formatos de arquivos estruturados, suas sintaxes e como são representados em [especificações de metadados]().   
+(materiais e cursos sobre as ações enumeradas - a explorar e mencionar)
