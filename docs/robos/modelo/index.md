@@ -40,13 +40,6 @@ tags:
 
         --8<-- "docs/robos/modelo/assets/codigo_fonte.txt"
 
-
-Agora, realize as seguintes adaptações para que seu robô comece a te ajudar:
-
-1. Adaptação 1.
-2. Adaptação 2.
-3. Adaptação 3.
-
 --8<-- "docs/partials/modelo_robo/importante.md"
 
 --8<-- "docs/partials/modelo_robo/ajuda.md"
