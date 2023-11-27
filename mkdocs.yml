@@ -12,6 +12,7 @@ nav:
     - robos/index.md
   - Projetos:
     - projetos/scap.md
+    - projetos/pae.md
   - Blog:
     - blog/index.md
 # --8<-- [end:nav]
