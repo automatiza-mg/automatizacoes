@@ -724,44 +724,14 @@
 <p>graph TD;
     1((Início))--&gt;2;
     2[Abrir planilha do excel = Iniciar excel]--&gt;3;
-    3[Definir planilha ativa]--&gt;4;
-    4[Ver listagem de processos da planilha do excel]--&gt;5;
-    5[Salvar coluna com nº dos processos em variável <code>processos</code>]--&gt;6;
-    6[Abrir navegador]--&gt;7;
-    7[Acessar site do SISCONDJ-DEPOX-TJMG]--&gt;8;
-    8[Inserir <code>processos</code> = enviar teclas 11tabs para processos e 10 para <abbr title="Definir instância">instância</abbr>?]--&gt;9;
-    9[Salvar guia emitida na pasta]--&gt;10;
-    10[Copiar número do código de barras e salvar em variável <code>guia</code>]--&gt;11;
-    11[Incluir os números <code>guia</code> em nova coluna do excel]--&gt;12
-    12[Logar no SIAFI = Enviar teclas]--&gt;13;
-    13[Voltar = Rótulo voltar]--&gt;14;
-    14[Aguardar]--&gt;15;
-    15[Selecionar texto SISAP = Enviar teclas + Obter texto da área de transferência]--&gt;16;
-    16[Checar se login foi efetuado com sucesso =<code>If</code> + enviar teclas ou else + enviar teclas + acessar]--&gt;17;
-    17[Avançar na página do SISAP =Enviar teclas]--&gt;18;
-    18[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel a ser preenchida pelo robô]--&gt;19;
-    19[Reservar linhas livres na planilha =Obter 1ª linha livre na coluna da planilha do excel a ser verificada se está preenchida]--&gt;20;
-    20[Comparar se coluna a ser preenchida corresponde à linha preenchida da primeira coluna = Condição de loop while K menor que A]--&gt;21;
-    21[Passar página do SIAFI = Enviar teclas]--&gt;22;
-    22[Ler e gravar <code>UO</code> =Ler da planilha do excel e armazenar em variável <code>UO</code>]--&gt;23;
-    23[Ler e gravar <code>Ano</code> =Ler da planilha do excel e armazenar em variável <code>Ano</code>]--&gt;24;<br>
-    24[Ler e gravar <code>GMFIP</code> =Ler da planilha do excel e armazenar em variável <code>GMFIP</code>]--&gt;25;
-    25[Ler e gravar <code>Mudafonte</code> =Ler da planilha do excel e armazenar em variável <code>Mudafonte</code>]--&gt;26;
-    26[Diferenciar operações no SIAFI segundo 3 últimos algarismos da FONTE GMFIP = If variável <code>Mudafonte</code>]--&gt;27;
-    27[Buscar o CNPJ do credor na planilha e armazenar variável <code>CNPJ</code>= Ler da planilha do Excel]--&gt;28;
-    28[Rótulo <code>VOLTACNPJ</code> + Aguardar]--&gt;29;
-    29[Checar CNPJ = Enviar teclas + obter texto da área de transferência + If else]--&gt;30;
-    30[Gravar na planilha se <code>PagamentoEfetuado</code> = gravar na planilha + aumentar variável]--&gt;31;
-    31[Salvar e fechar excel]--&gt;32;
-    32[Fechar terminal PRODEMGE = Enviar teclas Alt F4]--&gt;33;
-    33((Fim))  </p>
+    3((Fim))  </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 6, 2023 19:34:22</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 28, 2023 15:07:20</span>
       
         <br>
         Criada:
