@@ -14,10 +14,16 @@ Neste exemplo, a necessidade é guardar o número do boleto ou guia de pagamento
 
 <!-- more -->
 
-![](docs/assets/images/texto_pdf/texto_pdf.jpg)
+O número do boleto da imagem abaixo, bem como outras informações deste documento, são extraídas e salvas em formato de tabela.
+
+![](assets/texto-pdf.jpg)
 
 ??? copy "**Código-Fonte**"
 
-        --8<-- "docs/posts/20231129_texto_pdf/texto_pdf.txt"
+        --8<-- "assets/texto_pdf.txt"
 
+![](assets/codigo.png)
 
+A lista resultante da aplicação deste código no Power Automate aparece como na figura abaixo, e o código de barras do boleto ficou guardado na posição 11 da lista criada:
+
+![](assets/lista.png)
