@@ -11,5 +11,5 @@ tags:
 
 ??? copy "**doc SEI**"
 
-        --8<-- "robos/login_sei/assets/login-sei.txt"
+        --8<-- "docs/robos/login_sei/assets/login-sei.txt"
 
