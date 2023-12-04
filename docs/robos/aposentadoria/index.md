@@ -23,8 +23,8 @@ tags:
 
 ## Funções desenvolvidas pelo robô
 
-- Acessa sistema de aposentadoria e extrair relatórios em word.
-- Acessa word, checar arquivos de texto e juntá-los num arquivo único.
+- Acessa sistema de aposentadoria e extrai relatórios em word.
+- Acessa word, confere arquivos de texto e os junta num arquivo único.
 - Busca CPF das pessoas e substitui parte deles por **
 - Prepara arquivo único de atos de aposentadoria com CPFs modificados.
 
