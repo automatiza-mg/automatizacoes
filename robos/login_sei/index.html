@@ -752,6 +752,9 @@
 <div><h1 id="como-fazer-login-no-sei">Como fazer login no SEI<a class="headerlink" href="#como-fazer-login-no-sei" title="Permanent link">⚓︎</a></h1>
 <details class="copy">
 <summary><strong>doc SEI</strong></summary>
+<div class="language-text highlight"><pre><span></span><code>WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=&gt; SEI
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Usuario%{Tab}%Senha%{Tab}%Orgao%{Tab}{Return}''' DelayBetweenKeystrokes: 30 SendTextAsHardwareKeys: False
+</code></pre></div>
 </details></div>
 
   <hr>
