@@ -21,13 +21,15 @@ São 2 desafios superados com esse protótipo de robô:
 
 O texto a ser modificado inclui várias partes obrigatórias e padronizadas, exceto o CPF, que aparece na íntegra, do sistema onde é extraído.
 
-(figura ato)
+![](assets/ato.png)
 
 Após modificá-lo, é preciso procurar por todos os demais, ao longo do texto. Um loop aumentando a 'variável CPF' não seria aplicável, pois não se trata de uma variável numérica. Assim, a estratégia desse código foi utilizar as ações _ACESSAR Voltar texto_ e _RÓTULO Voltar Texto_:
 
-(imagem código)
+![](assets/codigo1.png)
+![](assets/codigo2.png)
+![](assets/codigo3.png)
 
-O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página]().
+O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](https://lab-mg.github.io/automatizacoes/robos/aposentadoria/#montando-o-seu-robo).
 
 # Saiba Mais
 
