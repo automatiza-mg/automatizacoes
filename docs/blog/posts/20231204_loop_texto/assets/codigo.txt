@@ -1,0 +1,18 @@
+# Anonimização de CPFs
+LABEL 'Voltar texto'
+IF Contains(gabarito_copiado, $'''CPF''', True) THEN
+    Text.CropText.CropTextBetweenFlags Text: gabarito_copiado FromFlag: $'''CPF ''' ToFlag: $''',''' IgnoreCase: True CroppedText=> CPF_cortado IsFlagFound=> IsFlagFound
+    Text.GetSubtext.GetSubtextFromStartTo Text: CPF_cortado NumberOfChars: 4 Subtext=> inicio_cpf
+    Text.GetSubtext.GetSubtextFrom Text: CPF_cortado CharacterPosition: 11 Subtext=> fim_cpf
+    # Alguns CPFs tem espaço no meio, por isso coloquei esse "SE"
+    Text.GetSubtext.GetSubtextFrom Text: CPF_cortado CharacterPosition: 4 Subtext=> meio_cpf
+    IF StartsWith(meio_cpf, espaço, False) THEN
+        Text.GetSubtext.GetSubtextFrom Text: CPF_cortado CharacterPosition: 12 Subtext=> fim_cpf
+        Text.Trim Text: fim_cpf TrimOption: Text.TrimOption.ToEnd TrimmedText=> fim_cpf
+    END
+    Text.JoinText.Join List: $'''%inicio_cpf%***.***%fim_cpf%''' Result=> cpfanonimizado
+    # Localizar e substituir o CPF
+    MouseAndKeyboard.SendKeys.FocusAndSendKeysByTitleClass Title: $'''gabarito1 [Modo de Compatibilidade] - Word''' Class: $'''''' TextToSend: $'''{Control}({U})%CPF_cortado%{Tab}%cpfanonimizado%{Tab}{Tab}{Return}{Left}{Left}{Return}{Return}{Return}''' DelayBetweenKeystrokes: 30 SendTextAsHardwareKeys: False
+    Text.CropText.CropTextAfterFlag Text: gabarito_copiado FromFlag: $'''CPF ''' IgnoreCase: True CroppedText=> gabarito_copiado IsFlagFound=> IsFlagFound
+    GOTO 'Voltar texto'
+END

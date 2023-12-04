@@ -31,6 +31,12 @@ Após modificá-lo, é preciso procurar por todos os demais, ao longo do texto. 
 
 O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](https://lab-mg.github.io/automatizacoes/robos/aposentadoria/#montando-o-seu-robo).
 
+A parte do código a que fez referência este post:
+
+??? copy "**Código-Fonte**"
+
+        --8<-- "assets/codigo.txt"
+
 # Saiba Mais
 
 A página dos guias da Microsoft sobre manipulação de texto pode ser acessada [neste link](https://learn.microsoft.com/pt-br/training/modules/pad-text-manipulation/).

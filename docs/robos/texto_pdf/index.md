@@ -11,7 +11,11 @@ tags:
 
 Neste exemplo, a necessidade é guardar o número do boleto ou guia de pagamento gerada em um [arquivo pdf](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/texto_pdf/texto-pdf.jpg):
 
-![](docs/assets/images/texto-pdf.jpg)
+![](texto-pdf.jpg)
+
+``` title="Arquivo PDF"
+--8<-- "texto-pdf.jpg"
+```
 
 ??? copy "**Código-Fonte**"
 
