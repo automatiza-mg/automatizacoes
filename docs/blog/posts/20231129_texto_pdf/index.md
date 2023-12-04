@@ -1,6 +1,6 @@
 ---
 date: 2023-11-29
-draft: true
+draft: false
 authors: [andrelamor]
 comments: true
 categories:
@@ -18,12 +18,18 @@ O número do boleto da imagem abaixo, bem como outras informações deste docume
 
 ![](assets/texto-pdf.jpg)
 
-??? copy "**Código-Fonte**"
-
-        --8<-- "assets/texto_pdf.txt"
-
 ![](assets/codigo.png)
 
 A lista resultante da aplicação deste código no Power Automate aparece como na figura abaixo, e o código de barras do boleto ficou guardado na posição 11 da lista criada:
 
 ![](assets/lista.png)
+
+A parte do código a que fez referência este post:
+
+??? copy "**Código-Fonte**"
+
+        --8<-- "docs/blog/posts/20231129_texto_pdf/assets/texto_pdf.txt"
+
+# Saiba Mais
+
+A página dos guias da Microsoft sobre manipulação de arquivos em PDF pode ser acessada [neste link](https://learn.microsoft.com/pt-br/power-automate/desktop-flows/actions-reference/pdf)

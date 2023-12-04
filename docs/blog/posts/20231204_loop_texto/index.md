@@ -1,6 +1,6 @@
 ---
 date: 2023-12-04
-draft: true
+draft: false
 authors: [andrelamor]
 comments: true
 categories:
@@ -35,7 +35,7 @@ A parte do código a que fez referência este post:
 
 ??? copy "**Código-Fonte**"
 
-        --8<-- "assets/codigo.txt"
+        --8<-- "docs/blog/posts/20231204_loop_texto/assets/codigo.txt"
 
 # Saiba Mais
 
