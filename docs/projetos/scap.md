@@ -8,6 +8,22 @@ Os robôs criados no âmbito desse projeto visam facilitar a execução das oper
 
 ## Números Gerais do Projeto
 
+<!--- file: docs/projetos/scap.md --->
+{% with pdf_file = "docs/assets/reports/Proposta_SCAP.pdf" %}
+{% set solid_filepdf = '<i class="fas fa-file-pdf"></i>' %}
+{% set empty_filepdf = '<i class="far fa-file-pdf"></i>' %}
+<object data="{{ pdf_file }}" type="application/pdf">
+    <embed src="{{ pdf_file }}" type="application/pdf" />
+</object>
+<a href="{{ pdf_file }}" class="image fit">{{ solid_filepdf }}</a>
+{% endwith %}
+
+<object data="{{ pdf_file }}" type="application/pdf">
+    <embed src="{{ pdf_file }}" type="application/pdf" />
+</object>
+<a href="{{ pdf_file }}" class="image fit">{{ solid_filepdf }}</a>
+{% endwith %}
+
 
 | **Robôs criados**       | x  |
 | ----------- | ------------------------------------ |

@@ -15,6 +15,8 @@ nav:
     - projetos/pae.md
   - Blog:
     - blog/index.md
+  - HowTo:
+    - Embedding a PDF File: docs/projetos/scap.md
 # --8<-- [end:nav]
 
 # Configuration
@@ -99,6 +101,11 @@ markdown_extensions:
       url_download: true
       auto_append:
         - abbreviations.md
+  - pymdownx.pathconverter:
+      base_path: 'automatizacoes' # default: ''
+      relative_path: '' # default ''
+      absolute: true # default: false
+      tags: 'a script img link object embed'
   - tables
 
 extra_css:
