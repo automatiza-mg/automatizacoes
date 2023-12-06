@@ -21,12 +21,11 @@ tags:
 
 ## Funções desenvolvidas pelo robô
 
-- Faz login no SEI e pesquisa número do processo, após buscar seu número na a Planilha Base - Automatização 1;
-- Baixa processo SEI, descompacta arquivos e os salva no computador;
-- Preenche “Planilha Base - Automatização 1” informando que o processo foi baixado e que os arquivos foram descompactados;
-- Cria uma nova planilha “Planilha Documentos - Automatização 1” para cada processo SEI;
-- Verifica se há arquivos (PDF, shapefile e tif) corrompidos e preenche “Planilha Documentos - Automatização 1" informando se arquivo abriu ou se está corrompido;
-- Verifica se no processo SEI há arquivos com formatos que não são aceitos para o PAE: KML, MPK e MXD; e Preenche Planilha Documentos - Automatização 1 informando se há arquivo com formato não aceito.
+- Realiza pesquisa por número do processo SEI! e baixa todo o processo.
+- Descompacta arquivos e os salva no computador.
+- Verifica se há arquivos (PDF, shapefile e tif) corrompidos.
+- Verifica se no processo SEI há arquivos com formatos que não são aceitos para o PAE: KML, MPK e MXD.
+- Preenche planilhas de controle com as informações verificadas.
 
 ??? note "**Clique e veja o fluxo do robô**"
 
@@ -40,7 +39,7 @@ tags:
 
         --8<-- "docs/robos/pae/assets/codigo_fonte.txt"
 
-!!! note "**Importante:**" 
+!!! note "**Importante:**"
 
     Antes de executar este robô em especial, é importante seguir os seguintes passos:
 

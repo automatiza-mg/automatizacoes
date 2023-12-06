@@ -1,31 +1,28 @@
-## Projeto de Automatização do Plano de Ação Emergencial (PAE)
+# Plano de Ação Emergencial (PAE) Barragens
 
-TEXT
+O projeto busca compreender o processo de análise e aprovação do PAE a fim de identificar e testar propostas de melhoria que possam ser implementadas para otimização do processo.
+Com o objetivo de otimizar algumas atividades operacionais e repetitivas do processo de análise do PAE e disponibilizar mais tempo para as pessoas realizarem atividades de análise, foram criadas duas automatizações:
 
-TEXT
+- **Automatização PAE 1**: tem como foco o processo SEI! e pode ser utilizada para a triagem inicial do processo PAE.
+- **Automatização PAE 2**: tem como foco o documento SEI! e pode ser utilizada para a triagem dos documentos de cada casa.
 
-- - - 
+- - -
 
 ## Números Gerais do Projeto
 
-| **Robôs criados**       | x  |
+| **Robôs criados**       | 02  |
 | ----------- | ------------------------------------ |
-| **Setores envolvidos**       | x |
+| **Setores envolvidos**       | 7 órgãos e entidades |
 | **Pessoas envolvidas**    | x |
 | **Valores envolvidos**    | x |
 | **Horas poupadas - estimativa**    | x |
 | **Semanas poupadas - estimativa**    | x |
 
-- - - 
+- - -
 
 ## Robôs criados
 
-O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `PAE`[aqui](https://lab-mg.github.io/automatizacoes/robos/#pae).
+O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `PAE`[aqui](../../robos/#pae), ou clicando na página de cada robô específico:
 
-Ou clicando na página de cada robô específico:
-
-- [PAE](https://lab-mg.github.io/automatizacoes/robos/pae/)
-
-- [PAE-2](https://lab-mg.github.io/automatizacoes/robos/pae-2/)
-
- 
+- [PAE](../../robos/pae/).
+- [PAE-2](../../robos/pae-2/).
