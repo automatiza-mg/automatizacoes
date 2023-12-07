@@ -3,8 +3,8 @@
 O projeto busca compreender o processo de análise e aprovação do PAE a fim de identificar e testar propostas de melhoria que possam ser implementadas para otimização do processo.
 Com o objetivo de otimizar algumas atividades operacionais e repetitivas do processo de análise do PAE e disponibilizar mais tempo para as pessoas realizarem atividades de análise, foram criadas duas automatizações:
 
-- **Automatização PAE 1**: tem como foco o processo SEI! e pode ser utilizada para a triagem inicial do processo PAE.
-- **Automatização PAE 2**: tem como foco o documento SEI! e pode ser utilizada para a triagem dos documentos de cada casa.
+- **Triagem de processos SEI**: tem como foco o processo SEI! e pode ser utilizada para a triagem inicial do processo PAE.
+- **Triagem de documentos SEI**: tem como foco o documento SEI! e pode ser utilizada para a triagem dos documentos de cada casa.
 
 - - -
 
@@ -24,5 +24,5 @@ Com o objetivo de otimizar algumas atividades operacionais e repetitivas do proc
 
 O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `PAE`[aqui](../../robos/#pae), ou clicando na página de cada robô específico:
 
-- [PAE](../../robos/pae/).
-- [PAE-2](../../robos/pae-2/).
+- [Triagem de processos SEI](../../robos/pae/).
+- [Triagem de documentos SEI](../../robos/pae-2/).
