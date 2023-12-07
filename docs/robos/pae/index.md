@@ -17,7 +17,7 @@ tags:
 | **Desenvolvedora**| Isabela Romancini  |
 | **e-mail**       | isabela.romancini@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
-| **Arquivo(s) auxiliar(es)**    | [PAE.xlsx](https://github.com/lab-mg/automatizacoes/blob/maindocs/robos/pae/assets/PAE.xlsx) |
+| **Arquivo(s) auxiliar(es)**    | [PAE.xlsx](./assets/PAE.xlsx){:download="PAE.xlsx"} |
 
 ## Funções desenvolvidas pelo robô
 
