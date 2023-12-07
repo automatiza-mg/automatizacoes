@@ -16,7 +16,7 @@
     
     
       
-        <title>Robô PAE 2 - Automatizações</title>
+        <title>Triagem de documentos SEI - Automatizações</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#robo-pae-2" class="md-skip">
+        <a href="#triagem-de-documentos-sei" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -246,7 +246,7 @@ c-2 -12 -14 -19 -36 -21 -27 -3 -32 0 -32 17 0 17 6 21 36 21 28 0 35 -3 32
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Robô PAE 2
+              Triagem de documentos SEI
             
           </span>
         </div>
@@ -755,7 +755,7 @@ c-2 -12 -14 -19 -36 -21 -27 -3 -32 0 -32 17 0 17 6 21 36 21 28 0 35 -3 32
         
   
   <span class="md-ellipsis">
-    Pae
+    Plano de Ação Emergencial (PAE) Barragens
   </span>
   
 
@@ -1072,7 +1072,7 @@ c-2 -12 -14 -19 -36 -21 -27 -3 -32 0 -32 17 0 17 6 21 36 21 28 0 35 -3 32
   
 
 
-<div><h1 id="robo-pae-2">Robô PAE 2<a class="headerlink" href="#robo-pae-2" title="Permanent link">⚓︎</a></h1>
+<div><h1 id="triagem-de-documentos-sei">Triagem de documentos SEI<a class="headerlink" href="#triagem-de-documentos-sei" title="Permanent link">⚓︎</a></h1>
 <h2 id="informacoes-gerais">Informações gerais<a class="headerlink" href="#informacoes-gerais" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
@@ -1100,18 +1100,17 @@ c-2 -12 -14 -19 -36 -21 -27 -3 -32 0 -32 17 0 17 6 21 36 21 28 0 35 -3 32
 </tr>
 <tr>
 <td><strong>Arquivo(s) auxiliar(es)</strong></td>
-<td><a href="https://github.com/lab-mg/automatizacoes/blob/maindocs/robos/pae-2/assets/PAE2.xlsx">PAE2.xlsx</a></td>
+<td><a download="PAE2.xlsx" href="assets/Pae2.xlsx">PAE2.xlsx</a></td>
 </tr>
 </tbody>
 </table>
 <h2 id="funcoes-desenvolvidas-pelo-robo">Funções desenvolvidas pelo robô<a class="headerlink" href="#funcoes-desenvolvidas-pelo-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Faz login no SEI e pesquisa número do documento, após buscar seu número na a Planilha Base - Automatização 2;</li>
-<li>Baixa documento SEI, descompacta arquivos e os salva no computador;</li>
-<li>Preenche “Planilha Base - Automatização 2” informando que o processo foi baixado e que os arquivos foram descompactados;</li>
-<li>Cria uma nova planilha “Planilha Documentos - Automatização 2” para cada processo SEI;</li>
-<li>Verifica se há arquivos (PDF, shapefile e tif) corrompidos e preenche “Planilha Documentos - Automatização 2" informando se arquivo abriu ou se está corrompido;</li>
-<li>Verifica se no processo SEI há arquivos com formatos que não são aceitos para o PAE: KML, MPK e MXD; e Preenche Planilha Documentos - Automatização 2 informando se há arquivo com formato não aceito.</li>
+<li>Realiza pesquisa por número do documento SEI! e baixa o documento.</li>
+<li>Descompacta arquivos e os salva no computador.</li>
+<li>Verifica se há arquivos (PDF, shapefile e tif) corrompidos.</li>
+<li>Verifica se há arquivos com formatos que não são aceitos para o PAE: KML, MPK e MXD;</li>
+<li>Preenche planilhas de controle com as informações verificadas.</li>
 </ul>
 <details class="note">
 <summary><strong>Clique e veja o fluxo do robô</strong></summary>
@@ -1131,7 +1130,9 @@ c-2 -12 -14 -19 -36 -21 -27 -3 -32 0 -32 17 0 17 6 21 36 21 28 0 35 -3 32
             13[Preencher Planilha Documentos informando se arquivos estão corrompidos]--&gt;14
             14[Verificar processo SEI! em busca de formatos de arquivos não aceitos]--&gt;15
             15[Preencher Planilha Documentos informando se formatos dos arquivos é aceito]--&gt;16
-            16[Aumentar variável linha em 1 para ir ao próximo processo]--&gt;17
+            16{Mais um processo?}
+            16--&gt;|Não|17
+            16--&gt;|Sim|3
             17((Fim))</div>
 </details>
 <h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
@@ -1453,7 +1454,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
   <small>
     
       Última atualização:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 27, 2023 14:59:25</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 7, 2023 21:39:43</span>
       
         <br>
         Criada:
@@ -1482,7 +1483,7 @@ Caso prefira mande um e-mail para <a href="">escolher-email@dominio.com</a>.</p>
       data-emit-metadata="0"
       data-input-position="bottom"
       data-theme="preferred_color_scheme"
-      data-lang="en"
+      data-lang="pt"
       crossorigin="anonymous"
       async>
 </script>
