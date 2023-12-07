@@ -14,5 +14,7 @@ graph TD;
     13[Preencher Planilha Documentos informando se arquivos estão corrompidos]-->14
     14[Verificar processo SEI! em busca de formatos de arquivos não aceitos]-->15
     15[Preencher Planilha Documentos informando se formatos dos arquivos é aceito]-->16
-    16[Aumentar variável linha em 1 para ir ao próximo processo]-->17
+    16{Mais um processo?}
+    16-->|Não|17
+    16-->|Sim|3
     17((Fim))
