@@ -62,9 +62,7 @@ theme:
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    logo: logo
-    admonition:
-      copy: octicons/copy-24
+    logo: labmg/labmg
 
 markdown_extensions:
   - abbr
@@ -95,6 +93,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons/linktree/linktree.svg
+          - overrides/.icons/labmg/labmg.svg
   - pymdownx.snippets:
       url_download: true
       auto_append:
@@ -121,6 +123,9 @@ extra: # Footer
     - icon: fontawesome/brands/github-alt
       name: Repositório lab-mg no GitHub.
       link: https://github.com/lab-mg
+    - icon: linktree/linktree
+      name: Página do Lab.mg no linktree.
+      link: https://linktr.ee/lab.mg
 
 plugins:
   - git-revision-date-localized:
