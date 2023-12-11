@@ -56,12 +56,10 @@
     </div>
 </div>
 
-<div class="top-hr">
-    <div class="hr">
-    </div>
-</div>
-
-
 {% endblock %}
+
 {% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
