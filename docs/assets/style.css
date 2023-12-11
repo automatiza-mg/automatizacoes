@@ -189,10 +189,10 @@ body {
       min-width: 0;
   }
 
-  .feature-item:hover {
+  /* .feature-item:hover {
       background-color: #526cfe47;
       border-radius: 3px;
-  }
+  } */
 }
 
 .hr {
@@ -245,7 +245,41 @@ body {
   padding-top: 20px;
 }
 
+/* My configurations to home page */
+
 .center-paragraph {
   text-align: center;
   font-size: 2em;
+}
+
+.feature-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-avatar img {
+  max-width: 40%;
+  border-radius: 50%;
+}
+
+.feature-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+}
+
+.feature-icons a {
+  margin: 5px 15px;
+}
+
+.feature-icons svg {
+  height: 3em;
+}
+
+.feature-item-border {
+  border: 3px solid #f6f6f6;
+  padding: 2.5em;
+  margin-right: 2.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
