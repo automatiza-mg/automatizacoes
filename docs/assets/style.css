@@ -244,3 +244,8 @@ body {
 .md-footer-social {
   padding-top: 20px;
 }
+
+.center-paragraph {
+  text-align: center;
+  font-size: 2em;
+}
