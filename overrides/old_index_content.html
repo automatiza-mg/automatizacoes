@@ -1,0 +1,153 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+          <img src="images/rocket.png" draggable="false">
+        </div>
+        <div class="tx-hero__content">
+          <h1>Automatiza-mg</h1>
+          <p>Portal da automatização de processos no Estado de Minas Gerais.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
+            Get started
+          </a>
+          <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
+            Go to GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<h2 class="center-paragraph">Por que esta ideia é super legal?</h2>
+<div class="top-hr">
+  <div class="feature-item">
+    <h2>
+      {% include ".icons/simple/powerautomate.svg" %}
+      Power Automate
+    </h2>
+    <p>Incentiva a utilização da ferramenta Microsoft Power Automate para criação de fluxos automatizados.</p>
+  </div>
+
+  <div class="feature-item">
+    <h2>
+      {% include ".icons/material/head-sync.svg" %}
+      Descomplicado
+    </h2>
+    <p>Ferramenta clica e arrasta, fácil de aprender e sem nenhum conhecimento prévio necessário.</p>
+  </div>
+
+  <div class="feature-item">
+    <h2>
+      {% include ".icons/fontawesome/solid/people-group.svg" %}
+      Comunidade
+    </h2>
+    <p>Estimula a troca de experiências e o compartilhamento de automatizações de casos reais, evitando a reinvenção da roda.</p>
+  </div>
+</div>
+
+<div class="top-hr">
+  <div class="feature-item">
+    <h2>
+      {% include ".icons/material/run-fast.svg" %}
+      Simplifica
+    </h2>
+    <p>Elimina processos repetitivos, liberando tempo para atividades mais importantes.</p>
+  </div>
+
+  <div class="feature-item">
+    <h2>
+      {% include ".icons/material/book-open-variant.svg" %}
+      Transmite Conhecimento
+    </h2>
+    <p>Fluxos automatizados documentam rotinas de trabalho, auxiliando na gestão do conhecimento.</p>
+  </div>
+
+  <div class="feature-item">
+    <h2>
+      {% include ".icons/fontawesome/solid/infinity.svg" %}
+      Inovação
+    </h2>
+    <p>Amplia os horizontes para adoção de tecnologias inovadoras como inteligência artificial.</p>
+  </div>
+</div>
+
+<h2 class="center-paragraph">Descubra nosso time</h2>
+<div class="top-hr">
+
+  <div class="feature-item feature-item-border">
+
+    <div class="feature-avatar">
+      <img src="https://avatars.githubusercontent.com/u/49699290?v=4" alt="">
+    </div>
+
+    <div>
+      <h2 class="center-paragraph">Gabriel Dornas</h2>
+    </div>
+
+    <p>Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por pela linguagem de programação Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.</p>
+
+    <div class="feature-icons">
+      <a href=""><i>{% include ".icons/material/email.svg" %}</i></a>
+      <a href=""><i>{% include ".icons/simple/github.svg" %}</i></a>
+    </div>
+
+  </div>
+
+  <div class="feature-item feature-item-border">
+
+    <div class="feature-avatar">
+      <img src="https://avatars.githubusercontent.com/u/49699290?v=4" alt="">
+    </div>
+
+    <div>
+      <h2 class="center-paragraph">Gabriel Dornas</h2>
+    </div>
+
+    <p>Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por pela linguagem de programação Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.</p>
+
+    <div class="feature-icons">
+      <a href=""><i>{% include ".icons/material/email.svg" %}</i></a>
+      <a href=""><i>{% include ".icons/simple/github.svg" %}</i></a>
+    </div>
+
+  </div>
+
+  <div class="feature-item feature-item-border">
+
+    <div class="feature-avatar">
+      <img src="https://avatars.githubusercontent.com/u/49699290?v=4" alt="">
+    </div>
+
+    <div>
+      <h2 class="center-paragraph">Gabriel Dornas</h2>
+    </div>
+
+    <p>Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por pela linguagem de programação Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.</p>
+
+    <div class="feature-icons">
+      <a href=""><i>{% include ".icons/material/email.svg" %}</i></a>
+      <a href=""><i>{% include ".icons/simple/github.svg" %}</i></a>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

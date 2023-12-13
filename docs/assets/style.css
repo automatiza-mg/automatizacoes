@@ -247,39 +247,79 @@ body {
 
 /* My configurations to home page */
 
-.center-paragraph {
+.light-blue {
+  color: #4051B5;
+}
+
+.text-larger {
+  font-size: larger;
+}
+
+.p-center {
   text-align: center;
-  font-size: 2em;
 }
 
-.feature-avatar {
-  display: flex;
-  justify-content: center;
+.h2-center {
+  text-align: center;
+  margin: 0!Important;
 }
 
-.feature-avatar img {
-  max-width: 40%;
+.avatar {
+  width: 10em;
   border-radius: 50%;
 }
 
-.feature-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
+/* ------------------
+	Navigation
+------------------ */
+.side-menu {
+	position: fixed;
+	right: 30px;
+	top: 50%;
+    transform: translateY(-73px);
+    z-index: 99;
 }
-
-.feature-icons a {
-  margin: 5px 15px;
+.side-menu ul li {
+    text-align: right;
+    margin: 10px 0;
+    list-style: none;
 }
-
-.feature-icons svg {
-  height: 3em;
+.side-menu ul li a span {
+	display: inline-block;
 }
-
-.feature-item-border {
-  border: 3px solid #f6f6f6;
-  padding: 2.5em;
-  margin-right: 2.5em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+.side-menu ul li a span.menu-title {
+	color: #fff;
+    position: relative;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #dd5138;
+    padding: 3px 10px;
+    font-weight: 600;
+    border-radius: 3px;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    opacity: 0;
+}
+.side-menu ul li a:hover span.menu-title {
+    opacity: 1;
+}
+.side-menu ul li a span.dot {
+    position: relative;
+    background-color: #dd5138;
+    border-radius: 2em;
+    height: 10px;
+    width: 10px;
+    -webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	transition: all 0.3s;
+}
+.side-menu ul li a:hover span.dot {
+	transform: scale(1.8);
 }

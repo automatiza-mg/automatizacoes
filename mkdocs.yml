@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 # --8<-- [start:nav]
 nav:
-  - Página inicial: index.md
+  - index.md
   - Robôs:
     - robos/index.md
   - Projetos:
