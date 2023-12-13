@@ -103,6 +103,8 @@ markdown_extensions:
       auto_append:
         - abbreviations.md
   - tables
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_css:
   - assets/style.css

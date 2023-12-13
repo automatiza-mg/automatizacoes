@@ -269,6 +269,22 @@ body {
   border-radius: 50%;
 }
 
+.yellow-banner {
+  border: none;
+  padding: 40px;
+  background-color: #FBC500;
+  max-height: 10%;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.yellow-banner li {
+  border: none!Important;
+  padding: 0!Important;
+}
+
 /* ------------------
 	Navigation
 ------------------ */
