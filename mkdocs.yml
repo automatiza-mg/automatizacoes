@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 # --8<-- [start:nav]
 nav:
-  - index.md
+  - Home: index.md
   - Robôs:
     - robos/index.md
   - Projetos:
@@ -21,7 +21,7 @@ nav:
 theme:
   name: material
   language: pt
-  custom_dir: overrides
+  custom_dir: docs/overrides
   features:
     # - announce.dismiss
     - content.code.annotate
