@@ -1,53 +1,134 @@
 ---
+template: index.html
 hide:
-  - toc
   - navigation
+  - toc
 ---
+<style>
+  .md-typeset h1,
+  .md-content__button,
+  .md-source-file {
+    display: none;
+  }
+</style>
 
-# Página Inicial
+## Porque isso é super legal { .h2-center }
 
+<div class="grid cards" markdown>
 
-Olá! Este é o portal da Automação Robótica de Processos no Estado de Minas Gerais - uma iniciativa inovadora, cujo impacto aumenta a eficiência e a eficácia das políticas públicas, economizando recursos e melhorando a vida dos servidores públicos e dos cidadãos. Quer saber mais?
-- - - 
+- <p class="light-blue text-larger" markdown>:simple-powerautomate:{ .lg .middle } __Power Automate__</p>
 
-## O que é a automação robótica de processos?
+    ---
 
-[Vídeo explicativo]()
+    Incentiva a utilização da ferramenta Microsoft Power Automate para criação de fluxos automatizados.
 
-- - - 
+- <p class="light-blue text-larger" markdown>:material-head-sync:{ .lg .middle .light-blue } __Descomplicado__</p>
 
-## Como um robô pode ser útil?
+    ---
 
-Um robô é uma espécie de colega de trabalho do servidor público, que o ajuda a desempenhar trabalhos repetitivos, para que o humano foque naquilo que exige sua atenção. Veja esses casos de uso:
-
-
-* Cadastramento de solicitação e pedido no Portal de Compras 
-* Empenho, liquidação e pagamento
-* Marcação de consulta no IPSEMG
-* Pagamentos de Folha
-* Passivo de aproximadamente 7 mil processos referentes ao Poupança Jovem.
-* Passivo advindo da Lei 100.
-* Pagamento mensal do PTE (841 municípios em 10 parcelas mensais)
-* Regularização e transferência de patrimônio no SIAD
-
-- - - 
-
-## Depoimentos
-
-_Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas mensalmente, o que possibilita o empenho em outras atividades._
+    Ferramenta clica e arrasta, fácil de aprender e sem nenhum conhecimento prévio necessário.
 
 
-* [Baixe aqui o Power Automate](https://go.microsoft.com/fwlink/?linkid=2102613)
+- <p class="light-blue text-larger" markdown>:fontawesome-solid-people-group:{ .lg .middle .light-blue } __Comunidade__</p>
 
-- - -
+    ---
 
-## Resumo - principais números [^1]
+    Estimula a troca de experiências e o compartilhamento de automatizações de casos reais, evitando a reinvenção da roda.
 
-<div class="content-wrapper">
-  <iframe width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiZTY2NGI1MjEtNDMwNS00OWVmLWFiYzctYTAyYWU5M2ZlN2JjIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9" frameborder="0" allowfullscreen></iframe>
+- <p class="light-blue text-larger" markdown>:material-run-fast:{ .lg .middle .light-blue } __Simplifica__</p>
+
+    ---
+
+    Elimina processos repetitivos, liberando tempo para atividades mais importantes.
+
+- <p class="light-blue text-larger" markdown>:material-book-open-variant:{ .lg .middle .light-blue } __Transmite Conhecimento__</p>
+
+    ---
+
+    Fluxos automatizados documentam rotinas de trabalho, auxiliando na gestão do conhecimento.
+
+- <p class="light-blue text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-blue } __Inovação__</p>
+
+    ---
+
+    Amplia os horizontes para adoção de tecnologias inovadoras como inteligência artificial.
+
 </div>
 
 
-[^1]: ideias do escopo inicial [aqui](https://github.com/lab-mg/automatizacoes/issues/9#issue-1928943357); visão de futuro é ter uma _landing page_
+<div class="grid cards yellow-banner" markdown>
 
-## Disclaimer (página à parte)
+- 20+
+
+    Turnas
+
+- 290+
+
+    Alunos capacitados
+
+- 30+
+
+    Robôs criados
+
+
+
+- 13
+
+    Órgãos e entidates
+
+- 84%
+
+    Tempo de equipes economizado
+
+- 198
+
+    Vagas abertas 1º semestre 2024
+
+</div>
+
+
+
+## Conheça nosso time { .h2-center }
+
+<div class="grid cards" markdown>
+
+- <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/49699290?v=4){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__André Amorim__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/153224852?v=4){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Lucas Fainblat__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+</div>

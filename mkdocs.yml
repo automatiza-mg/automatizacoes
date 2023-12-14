@@ -1,4 +1,4 @@
-site_name: Automatizações
+site_name: Automatiza-mg
 
 # Repository
 repo_name: lab-mg/automatizacoes
@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 # --8<-- [start:nav]
 nav:
-  - Página inicial: index.md
+  - index.md
   - Robôs:
     - robos/index.md
   - Projetos:
@@ -27,6 +27,7 @@ theme:
     - content.code.annotate
     - navigation.tabs
     #- navigation.tabs.sticky
+    - navigation.footer
     - navigation.indexes
     - content.action.edit
     # - content.tabs.link
@@ -102,6 +103,8 @@ markdown_extensions:
       auto_append:
         - abbreviations.md
   - tables
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_css:
   - assets/style.css

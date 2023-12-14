@@ -1,0 +1,58 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<!-- Main site Entry button descriptions -->
+<nav class="side-menu">
+  <ul>
+    <li class="hidden active">
+      <a class="page-scroll" href="#page-top"></a>
+    </li>
+    <li>
+      <a href="/" class="page-scroll">
+        <span class="menu-title">Início</span>
+        <span class="dot"></span>
+      </a>
+    </li>
+    <li>
+    </li>
+    <li>
+      <a href="#conheca-nosso-time" class="page-scroll">
+        <span class="menu-title">Time</span>
+        <span class="dot"></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+          <img src="images/rocket.png" draggable="false">
+        </div>
+        <div class="tx-hero__content">
+          <h1>Automatiza-mg</h1>
+          <p>Portal da automatização de processos no Estado de Minas Gerais.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
+            Get started
+          </a>
+          <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
+            Go to GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
