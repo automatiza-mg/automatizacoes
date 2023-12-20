@@ -259,9 +259,13 @@ body {
   text-align: center;
 }
 
+.p-black {
+  color: black;
+}
+
 .h2-center {
   text-align: center;
-  margin: 0!Important;
+  margin-top: 0!Important;
 }
 
 .avatar {
@@ -338,8 +342,4 @@ body {
 }
 .side-menu ul li a:hover span.dot {
 	transform: scale(1.8);
-}
-
-.blue {
-  background-color: blue;
 }

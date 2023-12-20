@@ -69,38 +69,37 @@ hide:
 
 </div>
 
+## Veja funcionando { .h2-center }
+
+![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 
 <div class="grid cards yellow-banner" markdown>
 
-- 20+
+- <p class="p-black" markdown>20+</p>
 
-    Turnas
+    Cursos oferecidos
 
-- 290+
+- <p class="p-black" markdown>290+</p>
 
-    Alunos capacitados
+    Servidores capacitados
 
-- 30+
+- <p class="p-black" markdown>30+</p>
 
     Robôs criados
 
-
-
-- 13
+- <p class="p-black" markdown>13</p>
 
     Órgãos e entidates
 
-- 84%
+- <p class="p-black" markdown>84%</p>
 
     Tempo de equipes economizado
 
-- 198
+- <p class="p-black" markdown>198</p>
 
     Vagas abertas 1º semestre 2024
 
 </div>
-
-
 
 ## Conheça nosso time { .h2-center }
 
