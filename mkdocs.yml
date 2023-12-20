@@ -7,13 +7,10 @@ edit_uri: edit/main/docs/
 
 # --8<-- [start:nav]
 nav:
-  - Home: index.md
-  - Robôs:
+  - Início: index.md
+  - Catálogo de robôs:
     - robos/index.md
-  - Projetos:
-    - projetos/scap.md
-    - projetos/pae.md
-  - Blog:
+  - Saiba mais:
     - blog/index.md
 # --8<-- [end:nav]
 

@@ -1,7 +1,5 @@
 ---
-title: Blog SUGES-MG
+title: Saiba mais
 ---
 
-# Nosso Blog
-
-
+# Saiba mais
