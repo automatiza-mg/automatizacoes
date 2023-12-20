@@ -339,3 +339,7 @@ body {
 .side-menu ul li a:hover span.dot {
 	transform: scale(1.8);
 }
+
+.blue {
+  background-color: blue;
+}

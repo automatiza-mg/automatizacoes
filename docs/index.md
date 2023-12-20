@@ -21,20 +21,27 @@ hide:
 
     ---
 
-    Incentiva a utilização da ferramenta Microsoft Power Automate para criação de fluxos automatizados.
+    Ferramenta já disponibilizada para a maioria dos órgãos e entidades do Governo de Minas pelo pacote Office 365.
+
+    [:octicons-arrow-right-24: Comece a utilizar](blog/como-modificar-uma-expressão-regular-em-um-texto/)
+
+- <p class="light-blue text-larger" markdown>:material-tools:{ .lg .middle .light-blue } __Mão na roda__</p>
+
+    ---
+
+    Serve para inserir processos no SEI, utilizar SIAD, SIAFI e SISAP, extrair dados de PDFs e fazer empenhos, liquidações e pagamentos.
+
+    [:octicons-arrow-right-24: E muito mais](../robos/)
+
 
 - <p class="light-blue text-larger" markdown>:material-head-sync:{ .lg .middle .light-blue } __Descomplicado__</p>
 
     ---
 
-    Ferramenta clica e arrasta, fácil de aprender e sem nenhum conhecimento prévio necessário.
+    Soluções ao alcance do servidor mineiro, sem necessidade de conhecimentos aprofundados em informática ou programação.
 
+    [:octicons-arrow-right-24: Entenda](blog/como-modificar-uma-expressão-regular-em-um-texto/)
 
-- <p class="light-blue text-larger" markdown>:fontawesome-solid-people-group:{ .lg .middle .light-blue } __Comunidade__</p>
-
-    ---
-
-    Estimula a troca de experiências e o compartilhamento de automatizações de casos reais, evitando a reinvenção da roda.
 
 - <p class="light-blue text-larger" markdown>:material-run-fast:{ .lg .middle .light-blue } __Simplifica__</p>
 
@@ -42,17 +49,23 @@ hide:
 
     Elimina processos repetitivos, liberando tempo para atividades mais importantes.
 
+    [:octicons-arrow-right-24: Vamos lá](blog/introdução-power-automate/)
+
 - <p class="light-blue text-larger" markdown>:material-book-open-variant:{ .lg .middle .light-blue } __Transmite Conhecimento__</p>
 
     ---
 
     Fluxos automatizados documentam rotinas de trabalho, auxiliando na gestão do conhecimento.
 
+    [:octicons-arrow-right-24: Saiba mais](blog/como-modificar-uma-expressão-regular-em-um-texto/)
+
 - <p class="light-blue text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-blue } __Inovação__</p>
 
     ---
 
     Amplia os horizontes para adoção de tecnologias inovadoras como inteligência artificial.
+
+    [:octicons-arrow-right-24: Tendências](blog/como-modificar-uma-expressão-regular-em-um-texto/)
 
 </div>
 
