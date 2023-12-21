@@ -5,7 +5,7 @@ O objetivo deste repositório é documentar nosso projeto de Automatizações.
 
 ## Setup :open_book:
 
-O setup windows poderá ser realizado via:
+O setup **windows** poderá ser realizado [via](google.com):
 
 ```Python
 $ git clone https://github.com/lab-mg/automatizacoes.git
