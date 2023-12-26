@@ -94,7 +94,6 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons/linktree/linktree.svg
-          - overrides/.icons/labmg/labmg.svg
   - pymdownx.snippets:
       url_download: true
       auto_append:
