@@ -67,7 +67,7 @@ Ambas as versões oferecem recursos poderosos, e a escolha entre elas dependerá
 Explore canais e materiais de referência para aprofundar seus conhecimentos sobre o **Power Automate**:
 
 - [Documentação Oficial](https://docs.microsoft.com/pt-br/power-automate/)
-- [Canal do Power Automate no YouTube](https://www.youtube.com/c/MicrosoftPowerAutomate)
+- [Canal do Power Automate no YouTube](https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA)
 - [Comunidade Power Automate](https://powerusers.microsoft.com/t5/Power-Automate-Community/ct-p/MPACommunity)
 
 Esses recursos oferecem uma ampla gama de informações e tutoriais para ajudá-lo a aproveitar ao máximo o potencial do **Power Automate**. Fique por dentro das novidades e aprimore suas habilidades de automação!
