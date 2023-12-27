@@ -71,7 +71,7 @@ hide:
 
 ## Veja funcionando { .h2-center }
 
-![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
+![type:video](assets/demostracao_automate.mp4)
 
 <div class="grid cards yellow-banner" markdown>
 
@@ -93,11 +93,11 @@ hide:
 
 - <p class="p-black" markdown>84%</p>
 
-    Tempo de equipes economizado
+    Tempo economizado
 
 - <p class="p-black" markdown>198</p>
 
-    Vagas abertas 1º semestre 2024
+    Vagas 1° Semestre 2024
 
 </div>
 
@@ -145,3 +145,4 @@ hide:
     </p>
 
 </div>
+

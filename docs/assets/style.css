@@ -261,6 +261,7 @@ body {
 
 .p-black {
   color: black;
+  font-weight: bold;
 }
 
 .h2-center {
@@ -282,6 +283,10 @@ body {
   color: white;
   font-size: 2em;
   text-align: center;
+}
+
+.yellow-banner li p {
+  margin: 0!Important;
 }
 
 .yellow-banner li {
