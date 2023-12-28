@@ -23,7 +23,7 @@ hide:
 
     Ferramenta de automatização já disponibilizada para a maioria dos órgãos e entidades do Governo de Minas pelo pacote Office 365.
 
-    [:octicons-arrow-right-24: Comece a utilizar](https://lab-mg.github.io/automatizacoes/blog/o-que-%C3%A9-power-automate/)
+    [:octicons-arrow-right-24: Comece a utilizar](blog/posts/20231226_sobre/index.md)
 
 - <p class="light-blue text-larger" markdown>:material-tools:{ .lg .middle .light-blue } __Mão na roda__</p>
 
@@ -31,7 +31,7 @@ hide:
 
     Serve para inserir processos no SEI, utilizar SIAD, SIAFI e SISAP, extrair dados de PDFs e fazer empenhos, liquidações e pagamentos.
 
-    [:octicons-arrow-right-24: E muito mais](../robos/)
+    [:octicons-arrow-right-24: E muito mais](robos/index.md)
 
 
 - <p class="light-blue text-larger" markdown>:material-head-sync:{ .lg .middle .light-blue } __Descomplicado__</p>
@@ -40,7 +40,7 @@ hide:
 
     Soluções ao alcance do servidor mineiro, sem necessidade de conhecimentos aprofundados em informática ou programação.
 
-    [:octicons-arrow-right-24: Entenda](https://lab-mg.github.io/automatizacoes/blog/descomplicado-ferramenta-_no-code_-e-_low-code_/)
+    [:octicons-arrow-right-24: Entenda](blog/posts/20231226_descomplicado/index.md)
 
 
 - <p class="light-blue text-larger" markdown>:material-run-fast:{ .lg .middle .light-blue } __Simplifica__</p>
@@ -49,7 +49,7 @@ hide:
 
     Elimina processos repetitivos, liberando tempo para atividades mais importantes.
 
-    [:octicons-arrow-right-24: Vamos lá](blog/introdução-power-automate/)
+    [:octicons-arrow-right-24: Vamos lá](blog/posts/20231122_introducao_power_automate/index.md)
 
 - <p class="light-blue text-larger" markdown>:material-book-open-variant:{ .lg .middle .light-blue } __Transmite Conhecimento__</p>
 
@@ -65,7 +65,7 @@ hide:
 
     Amplia os horizontes para adoção de tecnologias inovadoras como inteligência artificial.
 
-    [:octicons-arrow-right-24: Tendências](https://lab-mg.github.io/automatizacoes/blog/inova%C3%A7%C3%A3o-tend%C3%AAncias-de-ia-e-automatiza%C3%A7%C3%A3o-no-servi%C3%A7o-p%C3%BAblico/)
+    [:octicons-arrow-right-24: Tendências](blog/posts/20231226_inovacao/index.md)
 
 </div>
 

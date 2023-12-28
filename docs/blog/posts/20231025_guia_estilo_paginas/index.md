@@ -20,7 +20,7 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 - Escrito em arquivo `index.md` dentro de uma pasta principal que deverá ser criada com a seguinte estrutura:
 
 ```yml
-- docs  
+- docs
   - blog
     - posts
       - yyyymmaa_nome_post_reduzido
@@ -75,7 +75,7 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 - Criado em arquivo `index.md` dentro de uma pasta principal que deverá ser criada com a seguinte estrutura:
 
 ```yml
-- docs  
+- docs
   - robos
     - nome_robo
       - assets
@@ -87,12 +87,12 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
       - index.md
 ```
 
-- Arquivo `index.md` deverá seguir padrão do [modelo para criação de robôs](../../robos/modelo/).
+- Arquivo `index.md` deverá seguir padrão do [modelo para criação de robôs](../../../robos/modelo/index.md).
 - Pasta `assets` deverá conter com, no mínimo `codigo_fonte.txt`.
 
 ## Tags
 
-- Tags são categorias padronizadas de nosso [catálogo de robôs](../../robos/)[^4].
+- Tags são categorias padronizadas de nosso [catálogo de robôs](../../../robos/index.md)[^4].
 - Deverão ser evitadas tags com duas palavras. Tente utilizar apenas uma palavra, sempre que possível, englobando todas as características principais de um grupo de robôs.
 - Robôs com mais de uma característica principal poderão receber, no máximo, duas tags.
 
@@ -100,5 +100,3 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 [^2]: Use e abuse da documentação do tema [Material](https://squidfunk.github.io/mkdocs-material/) para criar páginas cada vez mais atrativas.
 [^3]: Ano com quatro dígitos, mês e dia com do dois. Exemplo `20231025`.
 [^4]: O [Issue número 5](https://github.com/lab-mg/automatizacoes/issues/5) do repositório [automatizações](https://github.com/lab-mg/automatizacoes) contém a discussão inicial para a criação deste guia de estilo das tags.
-
-

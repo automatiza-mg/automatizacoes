@@ -41,4 +41,4 @@ A parte do código a que fez referência este post:
 
 A página dos guias da Microsoft sobre manipulação de texto pode ser acessada [neste link](https://learn.microsoft.com/pt-br/training/modules/pad-text-manipulation/).
 
-Para estudar a criação e a execução de loops, acesse [esta página](https://learn.microsoft.com/pt-br/training/modules/pad-loops/)   
+Para estudar a criação e a execução de loops, acesse [esta página](https://learn.microsoft.com/pt-br/training/modules/pad-loops/)
