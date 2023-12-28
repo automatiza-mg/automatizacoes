@@ -259,9 +259,14 @@ body {
   text-align: center;
 }
 
+.p-black {
+  color: black;
+  font-weight: bold;
+}
+
 .h2-center {
   text-align: center;
-  margin: 0!Important;
+  margin-top: 0!Important;
 }
 
 .avatar {
@@ -280,9 +285,14 @@ body {
   text-align: center;
 }
 
+.yellow-banner li p {
+  margin: 0!Important;
+}
+
 .yellow-banner li {
   border: none!Important;
   padding: 0!Important;
+  pointer-events: none;
 }
 
 /* ------------------
