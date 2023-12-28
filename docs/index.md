@@ -13,7 +13,7 @@ hide:
   }
 </style>
 
-## Porque isso é super legal { .h2-center }
+## Por que isso é super legal? { .h2-center }
 
 <div class="grid cards" markdown>
 
@@ -21,7 +21,7 @@ hide:
 
     ---
 
-    Ferramenta já disponibilizada para a maioria dos órgãos e entidades do Governo de Minas pelo pacote Office 365.
+    Ferramenta de automatização já disponibilizada para a maioria dos órgãos e entidades do Governo de Minas pelo pacote Office 365.
 
     [:octicons-arrow-right-24: Comece a utilizar](https://lab-mg.github.io/automatizacoes/blog/o-que-%C3%A9-power-automate/)
 
@@ -73,35 +73,114 @@ hide:
 
 ![type:video](assets/demostracao_automate.mp4)
 
+## O Projeto em Números { .h2-center }
+
 <div class="grid cards yellow-banner" markdown>
 
-- <p class="p-black" markdown>20+</p>
+- <p class="p-black" markdown>30</p>
 
-    Cursos oferecidos
+    robôs
 
-- <p class="p-black" markdown>290+</p>
+    criados
 
-    Servidores capacitados
+- <p class="p-black" markdown>R$30</p>
 
-- <p class="p-black" markdown>30+</p>
+    milhões
 
-    Robôs criados
+    arrecadados
 
-- <p class="p-black" markdown>13</p>
+- <p class="p-black" markdown>1.000</p>
 
-    Órgãos e entidates
+    horas
 
-- <p class="p-black" markdown>84%</p>
+    economizadas
 
-    Tempo economizado
+- <p class="p-black" markdown>298</p>
+
+    servidores
+
+    capacitados
+
+- <p class="p-black" markdown>22</p>
+
+    cursos
+
+    oferecidos
 
 - <p class="p-black" markdown>198</p>
 
-    Vagas 1° Semestre 2024
+    servidores
+
+    reposicionados
 
 </div>
 
-## Conheça nosso time { .h2-center }
+## Depoimentos { .h2-center }
+
+=== "Amorim"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__André Amorim__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    </div>
+
+=== "Dornas"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/49699290?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    </div>
+
+=== "Fainblat"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/153224852?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__Lucas Fainblat__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    </div>
+
+=== "Romancini"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/76135149?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__Lucas Fainblat__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+        <p class="p-center" markdown>
+            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        </p>
+    </div>
+
+## Conheça nossa equipe { .h2-center }
 
 <div class="grid cards" markdown>
 
@@ -144,78 +223,82 @@ hide:
         [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
     </p>
 
+- <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/76135149?v=4){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Isabela Romancini__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](assets/images/speaker-1.png){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](assets/images/speaker-6.png){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Ana Flávia__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](assets/images/speaker-4.png){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Camila Neves__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](assets/images/speaker-6.png){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Maria Laura__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![minha_foto](assets/images/speaker-2.png){ .lg .middle .avatar }</p>
+
+
+    <p class="p-center" markdown>__Augusta Cora__</p>
+
+    ---
+
+    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+    <p class="p-center" markdown>
+        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+    </p>
+
 </div>
-
-## Conheça nosso time { .h2-center }
-
-=== "Amorim"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
-
-
-        <p class="p-center" markdown>__André Amorim__</p>
-
-        ---
-
-        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-        <p class="p-center" markdown>
-            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
-        </p>
-    </div>
-
-=== "Dornas"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/49699290?v=4){ .lg .middle .avatar }</p>
-
-
-        <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
-
-        ---
-
-        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-        <p class="p-center" markdown>
-            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
-        </p>
-    </div>
-
-=== "Fainblat"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/153224852?v=4){ .lg .middle .avatar }</p>
-
-
-        <p class="p-center" markdown>__Lucas Fainblat__</p>
-
-        ---
-
-        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-        <p class="p-center" markdown>
-            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
-        </p>
-    </div>
-
-=== "Romancini"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/76135149?v=4){ .lg .middle .avatar }</p>
-
-
-        <p class="p-center" markdown>__Lucas Fainblat__</p>
-
-        ---
-
-        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-        <p class="p-center" markdown>
-            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
-        </p>
-    </div>

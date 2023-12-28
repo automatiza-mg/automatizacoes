@@ -122,7 +122,7 @@ extra: # Footer
     - icon: fontawesome/brands/github-alt
       name: Repositório lab-mg no GitHub.
       link: https://github.com/lab-mg
-    - icon: linktree/linktree
+    - icon: simple/linktree
       name: Página do Lab.mg no linktree.
       link: https://linktr.ee/lab.mg
 
@@ -141,9 +141,10 @@ plugins:
   - tags:
       tags_file: robos/index.md
   - mkdocs-video:
-      # is_video: True
-      # video_muted: True
-      # video_controls: True
+      is_video: True
+      video_muted: True
+      video_controls: True
+      video_autoplay: False
       # css_style:
       #   width: "50%"
   - charts:
