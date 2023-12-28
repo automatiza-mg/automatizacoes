@@ -23,7 +23,7 @@ hide:
 
     Ferramenta já disponibilizada para a maioria dos órgãos e entidades do Governo de Minas pelo pacote Office 365.
 
-    [:octicons-arrow-right-24: Comece a utilizar](blog/como-modificar-uma-expressão-regular-em-um-texto/)
+    [:octicons-arrow-right-24: Comece a utilizar](http://127.0.0.1:8000/blog/o-que-%C3%A9-power-automate/)
 
 - <p class="light-blue text-larger" markdown>:material-tools:{ .lg .middle .light-blue } __Mão na roda__</p>
 
@@ -40,7 +40,7 @@ hide:
 
     Soluções ao alcance do servidor mineiro, sem necessidade de conhecimentos aprofundados em informática ou programação.
 
-    [:octicons-arrow-right-24: Entenda](blog/como-modificar-uma-expressão-regular-em-um-texto/)
+    [:octicons-arrow-right-24: Entenda](http://127.0.0.1:8000/blog/descomplicado-ferramenta-_no-code_-e-_low-code_/)
 
 
 - <p class="light-blue text-larger" markdown>:material-run-fast:{ .lg .middle .light-blue } __Simplifica__</p>
@@ -65,7 +65,7 @@ hide:
 
     Amplia os horizontes para adoção de tecnologias inovadoras como inteligência artificial.
 
-    [:octicons-arrow-right-24: Tendências](blog/como-modificar-uma-expressão-regular-em-um-texto/)
+    [:octicons-arrow-right-24: Tendências](http://127.0.0.1:8000/blog/inova%C3%A7%C3%A3o-tend%C3%AAncias-de-ia-e-automatiza%C3%A7%C3%A3o-no-servi%C3%A7o-p%C3%BAblico/)
 
 </div>
 
