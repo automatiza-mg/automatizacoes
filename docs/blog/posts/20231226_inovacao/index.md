@@ -1,6 +1,6 @@
 ---
 date: 2023-12-26
-draft: true
+draft: false
 authors: [lucasfainblat]
 comments: true
 categories:
@@ -50,6 +50,6 @@ Explore canais e materiais de referência para aprofundar seus conhecimentos sob
 
 - [AI for Everyone - Coursera](https://www.coursera.org/learn/ai-for-everyone)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
-- [AI in Government - Microsoft](https://www.microsoft.com/en-us/ai/industries/government)
+- [AI in Government - Microsoft](https://www.microsoft.com/en-us/ai/industry/ai-in-government?activetab=pivot1%3aprimaryr6)
 
 Esses recursos oferecem informações práticas sobre como implementar e entender as tendências de **IA** e **Automatização** no serviço público. Esteja preparado para impulsionar a inovação em sua área!

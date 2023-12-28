@@ -1,6 +1,6 @@
 ---
 date: 2023-12-26
-draft: true
+draft: false
 authors: [lucasfainblat]
 comments: true
 categories:
@@ -34,7 +34,7 @@ Existem ferramentas tradicionais que demandam maior conhecimento técnico, como 
 
 Explore canais e materiais de referência para aprofundar seus conhecimentos sobre No Code, Low Code e automação:
 
-- [Understanding No Code/Low Code](https://www.forrester.com/webinar/understanding-no-code-low-code)
+- [Understanding No Code/Low Code](https://www.forrester.com/blogs/why-you-need-to-know-about-low-code-even-if-youre-not-responsible-for-software-delivery/)
 - [Power Automate Blog](https://flow.microsoft.com/en-us/blog/)
 - [Microsoft Power Platform Learning Pathways](https://learn.microsoft.com/en-us/power-platform/)
 
