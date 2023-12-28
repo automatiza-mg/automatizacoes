@@ -292,6 +292,7 @@ body {
 .yellow-banner li {
   border: none!Important;
   padding: 0!Important;
+  pointer-events: none;
 }
 
 /* ------------------

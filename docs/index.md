@@ -146,3 +146,76 @@ hide:
 
 </div>
 
+## Conheça nosso time { .h2-center }
+
+=== "Amorim"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__André Amorim__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+        <p class="p-center" markdown>
+            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        </p>
+    </div>
+
+=== "Dornas"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/49699290?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+        <p class="p-center" markdown>
+            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        </p>
+    </div>
+
+=== "Fainblat"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/153224852?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__Lucas Fainblat__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+        <p class="p-center" markdown>
+            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        </p>
+    </div>
+
+=== "Romancini"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/76135149?v=4){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__Lucas Fainblat__</p>
+
+        ---
+
+        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+
+        <p class="p-center" markdown>
+            [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        </p>
+    </div>
