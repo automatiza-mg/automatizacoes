@@ -31,7 +31,6 @@ theme:
     - content.tooltips
     # - header.autohide
     # - navigation.expand
-    - navigation.indexes
     # - navigation.instant
     # - navigation.prune
     - navigation.sections
