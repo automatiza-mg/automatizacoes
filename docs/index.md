@@ -83,7 +83,7 @@ hide:
 
     criados
 
-- <p class="p-black" markdown>R$30</p>
+- <p class="p-black" markdown>R$ 30</p>
 
     milhões
 
