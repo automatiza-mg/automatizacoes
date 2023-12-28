@@ -39,10 +39,10 @@ As tendências incluem:
 
 ## Exemplos de Inovações no Mundo Real
 
-- **Trânsito:** [Sistemas de Controle de Tráfego Inteligentes](https://www.forbes.com/sites/forbestechcouncil/2020/08/26/here-are-7-ways-ai-can-transform-urban-mobility/) que se adaptam em tempo real para otimizar o fluxo de veículos.
+- **Trânsito:** [Sistemas de Controle de Tráfego Inteligentes](https://www.clickworker.com/customer-blog/artificial-intelligence-road-traffic/) que se adaptam em tempo real para otimizar o fluxo de veículos.
 - **Educação:** Plataformas de aprendizado personalizadas que utilizam IA para adaptar o ensino ao ritmo de cada aluno, como o [Khan Academy](https://www.khanacademy.org/).
 - **Saúde:** [Diagnóstico médico assistido por IA](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7293022/) para identificação precoce de doenças.
-- **Segurança:** [Análise de dados para prever e prevenir atividades criminosas](https://www.tandfonline.com/doi/abs/10.1080/15252019.2020.1790802) em áreas específicas.
+- **Segurança:** [Análise de dados para prever e prevenir atividades criminosas](https://www.ojp.gov/ncjrs/virtual-library/abstracts/artificial-intelligence-applications-law-enforcement-overview) em áreas específicas.
 
 ## Saiba mais
 
