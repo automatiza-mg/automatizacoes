@@ -57,7 +57,7 @@ hide:
 
     Fluxos automatizados documentam rotinas de trabalho, auxiliando na gestão do conhecimento.
 
-    [:octicons-arrow-right-24: Saiba mais](blog/como-modificar-uma-expressão-regular-em-um-texto/)
+    [:octicons-arrow-right-24: Saiba mais](blog/index.md)
 
 - <p class="light-blue text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-blue } __Inovação__</p>
 
