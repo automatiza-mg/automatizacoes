@@ -19,17 +19,15 @@ São 2 desafios superados com esse protótipo de robô:
 
 <!-- more -->
 
-O texto a ser modificado inclui várias partes obrigatórias e padronizadas, exceto o CPF, que aparece na íntegra, do sistema onde é extraído.
+O texto a ser modificado inclui várias partes obrigatórias e padronizadas, exceto o CPF, que aparece na íntegra, do sistema onde é extraído. Sua notação segue o modelo: `000.000.000-00`
 
-![](assets/ato.png)
-
-Após modificá-lo, é preciso procurar por todos os demais, ao longo do texto. Um loop aumentando a 'variável CPF' não seria aplicável, pois não se trata de uma variável numérica. Assim, a estratégia desse código foi utilizar as ações _ACESSAR Voltar texto_ e _RÓTULO Voltar Texto_:
+Após descaracterizá-lo para o modelo `xxx.000.000-xx`, é preciso procurar por todos os demais, ao longo do texto. Um loop aumentando a 'variável CPF' não seria aplicável, pois não se trata de uma variável numérica. Assim, a estratégia desse código foi utilizar as ações _ACESSAR Voltar texto_ e _RÓTULO Voltar Texto_:
 
 ![](assets/codigo1.png)
 ![](assets/codigo2.png)
 ![](assets/codigo3.png)
 
-O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](robos/aposentadoria/index.md).
+O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](../../../robos/aposentadoria/index.md).
 
 A parte do código a que fez referência este post:
 

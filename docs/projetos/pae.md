@@ -22,7 +22,7 @@ Com o objetivo de otimizar algumas atividades operacionais e repetitivas do proc
 
 ## Robôs criados
 
-O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `PAE`[aqui](../../robos/#pae), ou clicando na página de cada robô específico:
+O conjunto de robôs criados pode ser acessado pela seleção da _tag_ `PAE`[aqui](../robos/index.md#pae), ou clicando na página de cada robô específico:
 
-- [Triagem de processos SEI](../../robos/pae/).
-- [Triagem de documentos SEI](../../robos/pae-2/).
+- [Triagem de processos SEI](../robos/pae/index.md).
+- [Triagem de documentos SEI](../robos/pae-2/index.md).
