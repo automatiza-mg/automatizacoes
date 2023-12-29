@@ -29,7 +29,7 @@ Após modificá-lo, é preciso procurar por todos os demais, ao longo do texto. 
 ![](assets/codigo2.png)
 ![](assets/codigo3.png)
 
-O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](https://lab-mg.github.io/automatizacoes/robos/aposentadoria/#montando-o-seu-robo).
+O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](robos/aposentadoria/index.md).
 
 A parte do código a que fez referência este post:
 
