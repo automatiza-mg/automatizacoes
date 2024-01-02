@@ -1,5 +1,3 @@
-- [x] Seção "Métricas": redigir postagem para explicar o cálculo de cada indicador e enviar ao [@Andrelamor](https://github.com/Andrelamor) para revisão e publicação
-------------------------------------------------------------
 # Automatiza.MG em Números - Entenda os Resultados!
 
 ## Por que os Números Importam?
@@ -21,7 +19,8 @@ A fonte da informação é a SIGES/SEPLAG - Subsecretaria de Inovação e Gestã
 Calculamos somando os robôs desenvolvidos em imersões[^1] do projeto **Automatiza.MG** e em exercício no Estado.
 
 A fórmula é simples:
-$$R_{somatorio} = R_1 + R_2 + \ldots + R_n$$onde:
+$$R_{somatorio} = R_1 + R_2 + \ldots + R_n$$
+onde:
 - $R_{somatorio}$ é o total de robôs criados.
 - $R_1, R_2, \ldots, R_n$ representam a quantidade de robôs criados em cada imersão específica.
 
@@ -31,7 +30,8 @@ $$R_{somatorio} = R_1 + R_2 + \ldots + R_n$$onde:
 
 O indicador considera os recursos arrecadados[^2] em função da operação dos robôs desenvolvidos no âmbito das imersões do projeto **Automatiza.MG** e **em exercício ativo**[^3] nos órgãos e entidades do Estado.
 
-Somamos os valores arrecadados pelos robôs em operação. A fórmula é: $$R_{\text{somatório}} = R_1 + R_2 + \ldots + R_n$$onde:
+Somamos os valores arrecadados pelos robôs em operação. A fórmula é: $$R_{\text{somatório}} = R_1 + R_2 + \ldots + R_n$$
+onde:
 - $R_{\text{somatório}}$ é o total de valores reais arrecadados.
 - $R_1, R_2, \ldots, R_n$ representam os valores individuais arrecadados em cada instância ou evento.
 
@@ -45,9 +45,11 @@ Calculamos subtraindo o tempo gasto por humanos e robôs ao desempenhar a mesma 
 Por exemplo: um humano conclui 10 repetições de uma tarefa em 8 horas; um robô, por sua vez, faz 100 repetições durante o mesmo período. Então, **repetir a tarefa 100 vezes gastaria 80 horas humanas, mas custa apenas 8 horas robóticas**. São, portanto, **72 horas economizadas**.
 
 O total de horas economizadas resulta da soma da apuração do indicador para todos os robôs decorrentes do **Automatiza.MG** em funcionamento no Estado. A fórmula segue:
-$$H_{\text{total\_economizadas}} = \sum_{j=1}^{m} \left( \sum_{i=1}^{n_j} (H_{\text{humano}, i, j} - H_{\text{robô}, i, j}) \right)$$
+
+$$H_{\text{total\ economizadas}} = \sum_{j=1}^{m} \left( \sum_{i=1}^{n_j} (H_{\text{humano}, i, j} - H_{\text{robô}, i, j}) \right)$$
+
 onde:
-- $H_{\text{total\_economizadas}}$ é o número total de horas economizadas.
+- $H_{\text{total\ economizadas}}$ é o número total de horas economizadas.
 - $m$ é o número total de robôs em funcionamento.
 - $n_j$ é o número total de atividades executadas pelo robô $j$.
 - $H_{\text{humano}, i, j}$ é o tempo gasto pelo humano na atividade $i$ realizada pelo robô $j$.
@@ -77,10 +79,12 @@ Uma das grandes vantagens da automatização de processos é o **reposicionament
 
 Este indicador é calculado comparando a projeção semanal das horas economizadas com o número de horas semanais produtivas de um servidor (24h/semana, conforme [metodologia utilizada pelo projeto MAP](https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2023/gestao-de-pessoas/gestao-da-forca-de-trabalho/guia-map-2022.pdf "https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2023/gestao-de-pessoas/gestao-da-forca-de-trabalho/guia-map-2022.pdf")). É como se os robôs atuassem como novos colegas de trabalho das equipes humanas.
 
-Por exemplo: se um robô economizou 72h, isto equivale a 3 "novos" servidores contratados, ou seja, 72h/24h. Isso quer dizer, no fim das contas, que **3 servidores foram reposicionados, deixando atividades repetitivas em favor de atividades mais importantes**. A fórmula é: $$S_{\text{reposicionados}} = \sum_{j=1}^{m} \left( \frac{H_{\text{economizadas}, j}}{H_{\text{semanais\_produtivas}}} \right)$$onde:
+Por exemplo: se um robô economizou 72h, isto equivale a 3 "novos" servidores contratados, ou seja, 72h/24h. Isso quer dizer, no fim das contas, que **3 servidores foram reposicionados, deixando atividades repetitivas em favor de atividades mais importantes**. A fórmula é:
+$$S_{\text{reposicionados}} = \sum_{j=1}^{m} \left( \frac{H_{\text{economizadas}, j}}{H_{\text{semanais\ produtivas}}} \right)$$
+onde:
 - $S_{\text{reposicionados}}$ é o número total de servidores reposicionados.
 - $m$ é o número total de robôs em funcionamento.
 - $H_{\text{economizadas}, j}$ é o número total de horas economizadas pelo robô $j$.
-- $H_{\text{semanais\_produtivas}}$ é o número de horas semanais produtivas de um servidor humano.
+- $H_{\text{semanais\ produtivas}}$ é o número de horas semanais produtivas de um servidor humano.
 
 Esses números não são apenas estatísticas; são o compromisso do governo em transformar Minas Gerais em direção a um futuro mais eficiente, transparente e confiável.
