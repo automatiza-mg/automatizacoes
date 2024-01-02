@@ -117,18 +117,18 @@ hide:
 
 ## Depoimentos { .h2-center }
 
-=== "Amorim"
+=== "IEPHA"
 
     <div class="grid cards" markdown>
 
     - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
 
 
-        <p class="p-center" markdown>__André Amorim__</p>
+        <p class="p-center" markdown>__Alexander Marair Ferreira - Técnico de Gestão, Proteção e Restauro__</p>
 
         ---
 
-        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+        Com a implantação do projeto piloto de automatização de processos na Gerência de Recursos Humanos do IEPHA pelo Automatiza.MG, tivemos a oportunidade de conhecer o Power Automate, que nos ajudou na redução do tempo gasto em tarefas manuais e repetitivas, liberando a equipe para se concentrar em tarefas mais importantes. A ferramenta comunica muito bem com diversos aplicativos e programas, com segurança e eficiência, ajudando na economia de recursos e tempo de espera para os públicos interno e externo. Em breve, novos fluxos poderão ser criados continuamente, no intuito de facilitar e desburocratizar os processos no serviço público, impactando diretamente na qualidade do trabalho.
 
     </div>
 
