@@ -73,7 +73,7 @@ hide:
 
 ![type:video](assets/demostracao_automate.mp4)
 
-## O Projeto em Números { .h2-center }
+## O Projeto em Números { .h2-center }[^1]
 
 <div class="grid cards yellow-banner" markdown>
 
@@ -114,6 +114,10 @@ hide:
     reposicionados
 
 </div>
+
+Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre esses números
+
+[^1]: Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre esses números
 
 ## Depoimentos { .h2-center }
 
