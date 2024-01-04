@@ -125,10 +125,10 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/153224852/6bd9fe09-ae88-4d79-84fd-5a9cc7d50a69){ .lg .middle .avatar }</p>
 
 
-        <p class="p-center" markdown>__Alexander Marair Ferreira - Técnico de Gestão, Proteção e Restauro__</p>
+        <p class="p-center" markdown>__Alexander Ferreira - Técnico de Gestão, Proteção e Restauro da Gerência de Recursos Humanos__</p>
 
         ---
 
@@ -136,18 +136,22 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     </div>
 
-=== "Dornas"
+=== "SEPLAG"
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/49699290?v=4){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://private-user-images.githubusercontent.com/52294411/294066785-96b84da4-9b54-4921-8e3a-b56f051b6bbd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQzMzMzODUsIm5iZiI6MTcwNDMzMzA4NSwicGF0aCI6Ii81MjI5NDQxMS8yOTQwNjY3ODUtOTZiODRkYTQtOWI1NC00OTIxLThlM2EtYjU2ZjA1MWI2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTA0VDAxNTEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFkMzY2ZGUyYmY5NGQxM2RmMDMwNTI3ZmJkYzFmMjQwZGE3NTlmN2U5YjBkMjU2MzkyMWJiNTZjNWY2YjRkZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.vA9-YKWCDB3ocIVjj3ApnnhKekjl_UaU4jlqZkTjxsQ){ .lg .middle .avatar }</p>
 
 
-        <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
+        <p class="p-center" markdown>__Gabriella Marcelino - Técnica da Diretoria Central de Controle e Modernização do Pagamento de Pessoal__</p>
 
         ---
 
-        Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+        Aqui a gente utiliza o Power Automate para a inserção de óbitos no Sistema de Administração de Pessoal (SISAP), com o objetivo de prevenir que sejam efetivados pagamentos para servidores falecidos. Esse serviço é muito importante, pois em caso de qualquer eventualidade, pagamentos irregulares podem ser equivocadamente programados, prejudicando os cofres públicos. Por conta da complexidade dos processos e de sua relevância, e considerando que há picos de demanda em períodos de pagamento de folha de pessoal, muitas vezes a equipe era obrigada a trabalhar para além do horário de expediente, ou até mesmo nos finais de semana!
+
+        A automatização de processos via Power Automate conseguiu dar fôlego à equipe, pois agilizou significativamente o tempo exigido para completar o serviço, além de elevar o nível de sucesso, diminuindo o risco de erro. Com isso, houve aumento do bem-estar dos servidores!
+
+        Além disso, a automatização de processos viabilizou que a gente desse mais atenção a outras atividades, racionalizando os nossos esforços e reduzindo o retrabalho. Por exemplo, havia um passivo de quase 6 mil pedidos de estornos bancários que precisávamos viabilizar para sanar pagamentos passados feitos por equívoco. A consulta e emissão automatizadas de certidões ou informes de óbito diminuiu consideravelmente esse passivo.
 
     </div>
 
@@ -234,7 +238,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Instrutor e monitor no curso de Power Automate.
+    EPPGG lotado na Diretoria Central de Desburocratização. Instrutor e monitor no curso de Power Automate. Também estuda gestão e análise de dados, representação do conhecimento, governo aberto e inteligência natural.  
 
     <p class="p-center" markdown>
         [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
@@ -273,7 +277,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+    Trabalha no Lab.mg. Instrutora e monitora no curso de Power Automate. Especialista em Políticas Públicas e Gestão Governamental – EPPGG e pós-graduada em Governança de TI.
 
     <p class="p-center" markdown>
         [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
