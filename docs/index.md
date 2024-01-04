@@ -140,7 +140,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://private-user-images.githubusercontent.com/52294411/294066785-96b84da4-9b54-4921-8e3a-b56f051b6bbd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQzMzMzODUsIm5iZiI6MTcwNDMzMzA4NSwicGF0aCI6Ii81MjI5NDQxMS8yOTQwNjY3ODUtOTZiODRkYTQtOWI1NC00OTIxLThlM2EtYjU2ZjA1MWI2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTA0VDAxNTEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFkMzY2ZGUyYmY5NGQxM2RmMDMwNTI3ZmJkYzFmMjQwZGE3NTlmN2U5YjBkMjU2MzkyMWJiNTZjNWY2YjRkZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.vA9-YKWCDB3ocIVjj3ApnnhKekjl_UaU4jlqZkTjxsQ){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/52294411/96b84da4-9b54-4921-8e3a-b56f051b6bbd){ .lg .middle .avatar }</p>
 
 
         <p class="p-center" markdown>__Gabriella Marcelino - Técnica da Diretoria Central de Controle e Modernização do Pagamento de Pessoal__</p>
@@ -238,7 +238,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    EPPGG lotado na Diretoria Central de Desburocratização. Instrutor e monitor no curso de Power Automate. Também estuda gestão e análise de dados, representação do conhecimento, governo aberto e inteligência natural.  
+    EPPGG da Diretoria Central de Desburocratização. Instrutor e monitor no curso de Power Automate. Também estuda gestão e análise de dados, representação do conhecimento, governo aberto e inteligência natural.  
 
     <p class="p-center" markdown>
         [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
