@@ -121,22 +121,6 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 ## Depoimentos { .h2-center }
 
-=== "EDUCAÇÃO"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/64f0b410-8910-4ede-9cd7-b57493bf4b07){ .lg .middle .avatar }</p>
-
-
-        <p class="p-center" markdown>__André Silva__</p>
-        <p class="p-center" markdown>__Coordenador Adjunto Qualifica Mais e Ponto Focal do Projeto Trilhas de Futuro, da Superintendência de Políticas Pedagógicas__</p>
-
-        ---
-
-        Gostaria de expressar minha profunda satisfação e reconhecimento pelos resultados extraordinários alcançados por meio da implementação da automatização em nossa coordenação. A iniciativa não apenas superou nossas expectativas, mas também provocou um impacto transformador em diversas áreas. Inicialmente, a automatização se revelou como uma peça-chave nas demandas, otimizando processos, identificando oportunidades que antes passavam despercebidas. Essa eficiência operacional proporcionou uma visão mais abrangente e estratégica para a gestão de recursos. Além disso, a notável agilidade introduzida pelo projeto não apenas economizou tempo, mas também permitiu uma alocação mais eficiente dos recursos humanos, resultando na liberação de servidores para as demais atividades do setor, contribuindo significativamente para o crescimento e desenvolvimento de outras áreas dentro da coordenação. Gostaria de ressaltar e reconhecer o profissionalismo exemplar da equipe do Automatiza.MG, na pessoa do servidor Klécius, que esteve aqui durante todo o processo de implementação do projeto de automatização: sua dedicação incansável, suas habilidades técnicas notáveis e o seu comprometimento com a excelência foram fundamentais para o sucesso dessa iniciativa. Em suma, o projeto de automatização não apenas atendeu, mas superou nossas expectativas, proporcionando resultados tangíveis e impactos positivos em várias frentes. Expresso meu profundo agradecimento à equipe envolvida por seu comprometimento, expertise e sua dedicação na condução desse projeto tão significativo para o sucesso organizacional. Estamos ansiosos para continuar explorando novas possibilidades e avançar em conjunto na busca pela excelência.
-
-    </div>
-
 === "SEPLAG"
 
     <div class="grid cards" markdown>
@@ -170,6 +154,22 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         ---
 
         Com a implantação do projeto piloto de automatização de processos na Gerência de Recursos Humanos do IEPHA pelo Automatiza.MG, tivemos a oportunidade de conhecer o Power Automate, que nos ajudou na redução do tempo gasto em tarefas manuais e repetitivas, liberando a equipe para se concentrar em tarefas mais importantes. A ferramenta comunica muito bem com diversos aplicativos e programas, com segurança e eficiência, ajudando na economia de recursos e tempo de espera para os públicos interno e externo. Em breve, novos fluxos poderão ser criados continuamente, no intuito de facilitar e desburocratizar os processos no serviço público, impactando diretamente na qualidade do trabalho.
+
+    </div>
+
+=== "EDUCAÇÃO"
+
+    <div class="grid cards" markdown>
+
+    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/64f0b410-8910-4ede-9cd7-b57493bf4b07){ .lg .middle .avatar }</p>
+
+
+        <p class="p-center" markdown>__André Silva__</p>
+        <p class="p-center" markdown>__Coordenador Adjunto Qualifica Mais e Ponto Focal do Projeto Trilhas de Futuro, da Superintendência de Políticas Pedagógicas__</p>
+
+        ---
+
+        Gostaria de expressar minha profunda satisfação e reconhecimento pelos resultados extraordinários alcançados por meio da implementação da automatização em nossa coordenação. A iniciativa não apenas superou nossas expectativas, mas também provocou um impacto transformador em diversas áreas. Inicialmente, a automatização se revelou como uma peça-chave nas demandas, otimizando processos, identificando oportunidades que antes passavam despercebidas. Essa eficiência operacional proporcionou uma visão mais abrangente e estratégica para a gestão de recursos. Além disso, a notável agilidade introduzida pelo projeto não apenas economizou tempo, mas também permitiu uma alocação mais eficiente dos recursos humanos, resultando na liberação de servidores para as demais atividades do setor, contribuindo significativamente para o crescimento e desenvolvimento de outras áreas dentro da coordenação. Gostaria de ressaltar e reconhecer o profissionalismo exemplar da equipe do Automatiza.MG, na pessoa do servidor Klécius, que esteve aqui durante todo o processo de implementação do projeto de automatização: sua dedicação incansável, suas habilidades técnicas notáveis e o seu comprometimento com a excelência foram fundamentais para o sucesso dessa iniciativa. Em suma, o projeto de automatização não apenas atendeu, mas superou nossas expectativas, proporcionando resultados tangíveis e impactos positivos em várias frentes. Expresso meu profundo agradecimento à equipe envolvida por seu comprometimento, expertise e sua dedicação na condução desse projeto tão significativo para o sucesso organizacional. Estamos ansiosos para continuar explorando novas possibilidades e avançar em conjunto na busca pela excelência.
 
     </div>
 
