@@ -125,25 +125,27 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/52294411/9c01c345-4f9d-400d-ad61-2697f25f09dd){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/64f0b410-8910-4ede-9cd7-b57493bf4b07){ .lg .middle .avatar }</p>
 
 
-        <p class="p-center" markdown>__André Silva, Coordenador Adjunto Qualifica Mais e Ponto Focal do Projeto Trilhas de Futuro, da Superintendência de Políticas Pedagógicas__</p>
+        <p class="p-center" markdown>__André Silva__</p>
+        <p class="p-center" markdown>__Coordenador Adjunto Qualifica Mais e Ponto Focal do Projeto Trilhas de Futuro, da Superintendência de Políticas Pedagógicas__</p>
 
         ---
 
         Gostaria de expressar minha profunda satisfação e reconhecimento pelos resultados extraordinários alcançados por meio da implementação da automatização em nossa coordenação. A iniciativa não apenas superou nossas expectativas, mas também provocou um impacto transformador em diversas áreas. Inicialmente, a automatização se revelou como uma peça-chave nas demandas, otimizando processos, identificando oportunidades que antes passavam despercebidas. Essa eficiência operacional proporcionou uma visão mais abrangente e estratégica para a gestão de recursos. Além disso, a notável agilidade introduzida pelo projeto não apenas economizou tempo, mas também permitiu uma alocação mais eficiente dos recursos humanos, resultando na liberação de servidores para as demais atividades do setor, contribuindo significativamente para o crescimento e desenvolvimento de outras áreas dentro da coordenação. Gostaria de ressaltar e reconhecer o profissionalismo exemplar da equipe do Automatiza.MG, na pessoa do servidor Klécius, que esteve aqui durante todo o processo de implementação do projeto de automatização: sua dedicação incansável, suas habilidades técnicas notáveis e o seu comprometimento com a excelência foram fundamentais para o sucesso dessa iniciativa. Em suma, o projeto de automatização não apenas atendeu, mas superou nossas expectativas, proporcionando resultados tangíveis e impactos positivos em várias frentes. Expresso meu profundo agradecimento à equipe envolvida por seu comprometimento, expertise e sua dedicação na condução desse projeto tão significativo para o sucesso organizacional. Estamos ansiosos para continuar explorando novas possibilidades e avançar em conjunto na busca pela excelência.
 
     </div>
-    
+
 === "SEPLAG"
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/52294411/96b84da4-9b54-4921-8e3a-b56f051b6bbd){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/3cf8a8f9-ce9a-4d8d-bf91-d2b38d1de16f){ .lg .middle .avatar }</p>
 
 
-        <p class="p-center" markdown>__Gabriella Marcelino - Técnica da Diretoria Central de Controle e Modernização do Pagamento de Pessoal__</p>
+        <p class="p-center" markdown>__Gabriella Marcelino__</p>
+        <p class="p-center" markdown>__Técnica da Diretoria Central de Controle e Modernização do Pagamento de Pessoal__</p>
 
         ---
 
@@ -159,10 +161,11 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/153224852/6bd9fe09-ae88-4d79-84fd-5a9cc7d50a69){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/262f0f1d-6d27-4635-b849-509907e1b6a8){ .lg .middle .avatar }</p>
 
 
-        <p class="p-center" markdown>__Alexander Ferreira - Técnico de Gestão, Proteção e Restauro da Gerência de Recursos Humanos__</p>
+        <p class="p-center" markdown>__Alexander Ferreira__</p>
+        <p class="p-center" markdown>__Técnico de Gestão, Proteção e Restauro da Gerência de Recursos Humanos__</p>
 
         ---
 
