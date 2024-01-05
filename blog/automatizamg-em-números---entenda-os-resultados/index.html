@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="https://unpkg.com/mermaid@10.4.0/dist/mermaid.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1196,51 +1198,51 @@ c-2 -12 -14 -19 -36 -21 -27 -3 -32 0 -32 17 0 17 6 21 36 21 28 0 35 -3 32
 <h3 id="no-de-robos-criados">🤖 Nº de Robôs Criados<a class="headerlink" href="#no-de-robos-criados" title="Permanent link">⚓︎</a></h3>
 <p>Calculamos somando os robôs desenvolvidos em imersões<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> do projeto <strong>Automatiza.MG</strong> e em exercício no Estado.</p>
 <p>A fórmula é simples:
-$$R_{somatorio} = R_1 + R_2 + \ldots + R_n$$
+<span class="arithmatex">\(<span class="arithmatex">\(R_{somatorio} = R_1 + R_2 + \ldots + R_n\)</span>\)</span>
 onde:
-- $R_{somatorio}$ é o total de robôs criados.
-- $R_1, R_2, \ldots, R_n$ representam a quantidade de robôs criados em cada imersão específica.</p>
+- <span class="arithmatex">\(R_{somatorio}\)</span> é o total de robôs criados.
+- <span class="arithmatex">\(R_1, R_2, \ldots, R_n\)</span> representam a quantidade de robôs criados em cada imersão específica.</p>
 <h3 id="r-arrecadados">💰 R$ Arrecadados<a class="headerlink" href="#r-arrecadados" title="Permanent link">⚓︎</a></h3>
 <p>O indicador considera os recursos arrecadados<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> em função da operação dos robôs desenvolvidos no âmbito das imersões do projeto <strong>Automatiza.MG</strong> e <strong>em exercício ativo</strong><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> nos órgãos e entidades do Estado.</p>
-<p>Somamos os valores arrecadados pelos robôs em operação. A fórmula é: $$R_{\text{somatório}} = R_1 + R_2 + \ldots + R_n$$
+<p>Somamos os valores arrecadados pelos robôs em operação. A fórmula é: <span class="arithmatex">\(<span class="arithmatex">\(R_{\text{somatório}} = R_1 + R_2 + \ldots + R_n\)</span>\)</span>
 onde:
-- $R_{\text{somatório}}$ é o total de valores reais arrecadados.
-- $R_1, R_2, \ldots, R_n$ representam os valores individuais arrecadados em cada <abbr title="Definir instância">instância</abbr> ou evento.</p>
+- <span class="arithmatex">\(R_{\text{somatório}}\)</span> é o total de valores reais arrecadados.
+- <span class="arithmatex">\(R_1, R_2, \ldots, R_n\)</span> representam os valores individuais arrecadados em cada <abbr title="Definir instância">instância</abbr> ou evento.</p>
 <h3 id="no-de-horas-economizadas">⏳ Nº de Horas Economizadas<a class="headerlink" href="#no-de-horas-economizadas" title="Permanent link">⚓︎</a></h3>
 <p>Calculamos subtraindo o tempo gasto por humanos e robôs ao desempenhar a mesma tarefa.</p>
 <p>Por exemplo: um humano conclui 10 repetições de uma tarefa em 8 horas; um robô, por sua vez, faz 100 repetições durante o mesmo período. Então, <strong>repetir a tarefa 100 vezes gastaria 80 horas humanas, mas custa apenas 8 horas robóticas</strong>. São, portanto, <strong>72 horas economizadas</strong>.</p>
 <p>O total de horas economizadas resulta da soma da apuração do indicador para todos os robôs decorrentes do <strong>Automatiza.MG</strong> em funcionamento no Estado. A fórmula segue:</p>
-<p>$$H_{\text{total economizadas}} = \sum_{j=1}^{m} \left( \sum_{i=1}^{n_j} (H_{\text{humano}, i, j} - H_{\text{robô}, i, j}) \right)$$</p>
+<div class="arithmatex">\[H_{\text{total\ economizadas}} = \sum_{j=1}^{m} \left( \sum_{i=1}^{n_j} (H_{\text{humano}, i, j} - H_{\text{robô}, i, j}) \right)\]</div>
 <p>onde:
-- $H_{\text{total economizadas}}$ é o número total de horas economizadas.
-- $m$ é o número total de robôs em funcionamento.
-- $n_j$ é o número total de atividades executadas pelo robô $j$.
-- $H_{\text{humano}, i, j}$ é o tempo gasto pelo humano na atividade $i$ realizada pelo robô $j$.
-- $H_{\text{robô}, i, j}$ é o tempo gasto pelo robô na mesma atividade $i$ realizada pelo robô $j$.</p>
+- <span class="arithmatex">\(H_{\text{total\ economizadas}}\)</span> é o número total de horas economizadas.
+- <span class="arithmatex">\(m\)</span> é o número total de robôs em funcionamento.
+- <span class="arithmatex">\(n_j\)</span> é o número total de atividades executadas pelo robô <span class="arithmatex">\(j\)</span>.
+- <span class="arithmatex">\(H_{\text{humano}, i, j}\)</span> é o tempo gasto pelo humano na atividade <span class="arithmatex">\(i\)</span> realizada pelo robô <span class="arithmatex">\(j\)</span>.
+- <span class="arithmatex">\(H_{\text{robô}, i, j}\)</span> é o tempo gasto pelo robô na mesma atividade <span class="arithmatex">\(i\)</span> realizada pelo robô <span class="arithmatex">\(j\)</span>.</p>
 <h3 id="no-de-servidores-capacitados">🎓 Nº de Servidores Capacitados<a class="headerlink" href="#no-de-servidores-capacitados" title="Permanent link">⚓︎</a></h3>
-<p>Calculamos somando servidores capacitados nos cursos em Power Automate. A fórmula é simples: $$S_{acumulado} = S_{inicial} + S_{novos} - S_{exclusivos}$$
+<p>Calculamos somando servidores capacitados nos cursos em Power Automate. A fórmula é simples: <span class="arithmatex">\(<span class="arithmatex">\(S_{acumulado} = S_{inicial} + S_{novos} - S_{exclusivos}\)</span>\)</span>
 onde:
-- $S_{acumulado}$ é o número acumulado de servidores capacitados em Power Automate.
-- $S_{inicial}$ é o número inicial de servidores capacitados.
-- $S_{novos}$ é o número de novos servidores capacitados adicionados.
-- $S_{exclusivos}$ é o número de servidores que foram excluídos ou desconsiderados (se houver).</p>
+- <span class="arithmatex">\(S_{acumulado}\)</span> é o número acumulado de servidores capacitados em Power Automate.
+- <span class="arithmatex">\(S_{inicial}\)</span> é o número inicial de servidores capacitados.
+- <span class="arithmatex">\(S_{novos}\)</span> é o número de novos servidores capacitados adicionados.
+- <span class="arithmatex">\(S_{exclusivos}\)</span> é o número de servidores que foram excluídos ou desconsiderados (se houver).</p>
 <h3 id="no-de-cursos-oferecidos">🎒 Nº de Cursos Oferecidos<a class="headerlink" href="#no-de-cursos-oferecidos" title="Permanent link">⚓︎</a></h3>
-<p>Calculamos o número acumulado de capacitações em Power Automate oferecidas pela equipe do <strong>Automatiza.MG</strong>: $$N_{acumulado} = N_{inicial} + N_{novas} - N_{exclusivas}$$
+<p>Calculamos o número acumulado de capacitações em Power Automate oferecidas pela equipe do <strong>Automatiza.MG</strong>: <span class="arithmatex">\(<span class="arithmatex">\(N_{acumulado} = N_{inicial} + N_{novas} - N_{exclusivas}\)</span>\)</span>
 onde:
-- $N_{acumulado}$ é o número acumulado de capacitações em Power Automate.
-- $N_{inicial}$ é o número inicial de capacitações.
-- $N_{novas}$ é o número de novas capacitações adicionadas.
-- $N_{exclusivas}$ é o número de capacitações que foram excluídas ou desconsideradas (se houver).</p>
+- <span class="arithmatex">\(N_{acumulado}\)</span> é o número acumulado de capacitações em Power Automate.
+- <span class="arithmatex">\(N_{inicial}\)</span> é o número inicial de capacitações.
+- <span class="arithmatex">\(N_{novas}\)</span> é o número de novas capacitações adicionadas.
+- <span class="arithmatex">\(N_{exclusivas}\)</span> é o número de capacitações que foram excluídas ou desconsideradas (se houver).</p>
 <h3 id="no-de-servidores-reposicionados">🏋️ Nº de Servidores Reposicionados<a class="headerlink" href="#no-de-servidores-reposicionados" title="Permanent link">⚓︎</a></h3>
 <p>Uma das grandes vantagens da automatização de processos é o <strong>reposicionamento da força de trabalho onde ela é mais requerida</strong>. Em outras palavras, <strong>retirar servidores de tarefas repetitivas</strong> para <strong>priorizá-los onde atuam no seu <em>ponto forte</em></strong>.</p>
 <p>Este indicador é calculado comparando a projeção semanal das horas economizadas com o número de horas semanais produtivas de um servidor (24h/semana, conforme <a href="https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2023/gestao-de-pessoas/gestao-da-forca-de-trabalho/guia-map-2022.pdf" title="https://www.mg.gov.br/system/files/media/planejamento/documento_detalhado/2023/gestao-de-pessoas/gestao-da-forca-de-trabalho/guia-map-2022.pdf">metodologia utilizada pelo projeto MAP</a>). É como se os robôs atuassem como novos colegas de trabalho das equipes humanas.</p>
 <p>Por exemplo: se um robô economizou 72h, isto equivale a 3 "novos" servidores contratados, ou seja, 72h/24h. Isso quer dizer, no fim das contas, que <strong>3 servidores foram reposicionados, deixando atividades repetitivas em favor de atividades mais importantes</strong>. A fórmula é:
-$$S_{\text{reposicionados}} = \sum_{j=1}^{m} \left( \frac{H_{\text{economizadas}, j}}{H_{\text{semanais produtivas}}} \right)$$
+<span class="arithmatex">\(<span class="arithmatex">\(S_{\text{reposicionados}} = \sum_{j=1}^{m} \left( \frac{H_{\text{economizadas}, j}}{H_{\text{semanais\ produtivas}}} \right)\)</span>\)</span>
 onde:
-- $S_{\text{reposicionados}}$ é o número total de servidores reposicionados.
-- $m$ é o número total de robôs em funcionamento.
-- $H_{\text{economizadas}, j}$ é o número total de horas economizadas pelo robô $j$.
-- $H_{\text{semanais produtivas}}$ é o número de horas semanais produtivas de um servidor humano.</p>
+- <span class="arithmatex">\(S_{\text{reposicionados}}\)</span> é o número total de servidores reposicionados.
+- <span class="arithmatex">\(m\)</span> é o número total de robôs em funcionamento.
+- <span class="arithmatex">\(H_{\text{economizadas}, j}\)</span> é o número total de horas economizadas pelo robô <span class="arithmatex">\(j\)</span>.
+- <span class="arithmatex">\(H_{\text{semanais\ produtivas}}\)</span> é o número de horas semanais produtivas de um servidor humano.</p>
 <p>Esses números não são apenas estatísticas; são o compromisso do governo em transformar Minas Gerais em direção a um futuro mais eficiente, transparente e confiável.</p>
 <div class="footnote">
 <hr>
@@ -1461,6 +1463,18 @@ onde:
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../assets/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   </body>
