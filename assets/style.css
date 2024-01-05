@@ -271,6 +271,7 @@ body {
 
 .avatar {
   width: 10em;
+  height: 10em!important;
   border-radius: 50%;
 }
 
