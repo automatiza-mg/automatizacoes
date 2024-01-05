@@ -306,6 +306,9 @@ body {
     transform: translateY(-73px);
     z-index: 99;
 }
+.side-menu ul {
+  padding-left: 0px!Important;
+}
 .side-menu ul li {
     text-align: right;
     margin: 10px 0;
