@@ -100,10 +100,13 @@ markdown_extensions:
   - tables
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - assets/style.css
   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 extra_javascript:
   - assets/style.js
   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
@@ -111,6 +114,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - assets/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 
 extra: # Footer
