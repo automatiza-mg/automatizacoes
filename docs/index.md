@@ -77,19 +77,19 @@ hide:
 
 <div class="grid cards yellow-banner" markdown>
 
-- <p class="p-black" markdown>30</p>
+- <p class="p-black" markdown>18</p>
 
     robôs
 
     criados
 
-- <p class="p-black" markdown>R$ 30</p>
+- <p class="p-black" markdown>R$ 1,3</p>
 
     milhões
 
     arrecadados
 
-- <p class="p-black" markdown>1.000</p>
+- <p class="p-black" markdown>297</p>
 
     horas
 
@@ -107,7 +107,7 @@ hide:
 
     oferecidos
 
-- <p class="p-black" markdown>198</p>
+- <p class="p-black" markdown>4</p>
 
     servidores
 
