@@ -89,7 +89,7 @@ hide:
 
     arrecadados
 
-- <p class="p-black" markdown>297</p>
+- <p class="p-black" markdown>269</p>
 
     horas
 
@@ -107,7 +107,7 @@ hide:
 
     oferecidos
 
-- <p class="p-black" markdown>4</p>
+- <p class="p-black" markdown>2,4</p>
 
     servidores
 
