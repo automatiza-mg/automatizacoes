@@ -125,7 +125,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/3cf8a8f9-ce9a-4d8d-bf91-d2b38d1de16f){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/automatiza-mg/automatizacoes/assets/49699290/3cf8a8f9-ce9a-4d8d-bf91-d2b38d1de16f){ .lg .middle .avatar }</p>
 
 
         <p class="p-center" markdown>__Gabriella Marcelino__</p>
@@ -145,7 +145,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/262f0f1d-6d27-4635-b849-509907e1b6a8){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/automatiza-mg/automatizacoes/assets/49699290/262f0f1d-6d27-4635-b849-509907e1b6a8){ .lg .middle .avatar }</p>
 
 
         <p class="p-center" markdown>__Alexander Ferreira__</p>
@@ -161,7 +161,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://github.com/lab-mg/automatizacoes/assets/49699290/64f0b410-8910-4ede-9cd7-b57493bf4b07){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://github.com/automatiza-mg/automatizacoes/assets/49699290/64f0b410-8910-4ede-9cd7-b57493bf4b07){ .lg .middle .avatar }</p>
 
 
         <p class="p-center" markdown>__André Silva__</p>

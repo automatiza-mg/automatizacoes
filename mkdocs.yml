@@ -1,8 +1,8 @@
 site_name: Automatiza-mg
 
 # Repository
-repo_name: lab-mg/automatizacoes
-repo_url: https://github.com/lab-mg/automatizacoes
+repo_name: automatiza-mg/automatizacoes
+repo_url: https://github.com/automatiza-mg/automatizacoes
 edit_uri: edit/main/docs/
 
 # --8<-- [start:nav]
@@ -128,8 +128,8 @@ extra: # Footer
       name: Instagram Lab.mg.
       link: https://www.instagram.com/gov.labmg
     - icon: fontawesome/brands/github-alt
-      name: Repositório lab-mg no GitHub.
-      link: https://github.com/lab-mg
+      name: Repositório Automatiza-mg no GitHub.
+      link: https://github.com/automatiza-mg
     - icon: simple/linktree
       name: Página do Lab.mg no linktree.
       link: https://linktr.ee/lab.mg

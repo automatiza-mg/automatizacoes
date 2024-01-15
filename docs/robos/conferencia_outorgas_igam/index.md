@@ -22,7 +22,7 @@ tags:
 | **Data do treinamento**       | 11/10/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | IGAM  |
-| **Arquivo(s) auxiliar(es)**    | [conferencia-outorgas-IGAM.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia_outorgas_igam.xlsx) |
+| **Arquivo(s) auxiliar(es)**    | [conferencia-outorgas-IGAM.xlsx](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/robos/conferencia_outorgas_igam/assets/conferencia_outorgas_igam.xlsx) |
 
 ## Funções desenvolvidas pelo protótipo
 

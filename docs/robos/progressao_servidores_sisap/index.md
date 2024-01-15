@@ -23,7 +23,7 @@ tags:
 | **Data do treinamento**       | 05/10/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | FHEMIG  |
-| **Arquivo auxiliar** | [progressao-servidores-sisap.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao_servidores_sisap.xlsx) |
+| **Arquivo auxiliar** | [progressao-servidores-sisap.xlsx](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/robos/progressao_servidores_sisap/assets/progressao_servidores_sisap.xlsx) |
 
 ## Funções desenvolvidas pelo protótipo:
 

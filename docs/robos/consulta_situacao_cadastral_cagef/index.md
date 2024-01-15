@@ -23,7 +23,7 @@ tags:
 | **Data do treinamento**       | 28/09/2023 |
 | **Local**    | Sala SEE, Torre Minas, 11º andar |
 | **Turma treinada**       | órgãos diversos  |
-| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/lab-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagef/assets/consulta_situacao_cadastral_fornecedores.xlsx) |
+| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagef/assets/consulta_situacao_cadastral_fornecedores.xlsx) |
 
 ## Funções desenvolvidas pelo protótipo:
 

@@ -29,7 +29,7 @@ tags:
 
 Em primeiro lugar, é importante relembrar que o conteúdo desta página é um protótipo de robô. **Portanto, se você pretende utilizar este protótipo, tenha especial atenção às especificidades do problema que você quer solucionar, ajustando o código às suas necessidades.**
 
-O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/lab-mg/automatizacoes/blob/main/robos/login_terminal_prodemge/login_terminal_prodemge.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+O arquivo contendo o código deste robô está armazenado [nesta página](https://github.com/automatiza-mg/automatizacoes/blob/main/robos/login_terminal_prodemge/login_terminal_prodemge.txt). Para dar vida ao seu, clique na caixa **copiar e colar** abaixo, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
 
 Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 

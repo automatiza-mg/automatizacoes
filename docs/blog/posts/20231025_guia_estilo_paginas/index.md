@@ -99,4 +99,4 @@ Neste sentido, proponho as seguintes regras durante a elaboração de conteúdo 
 [^1]: Com exceção de nomes próprios e ou siglas.
 [^2]: Use e abuse da documentação do tema [Material](https://squidfunk.github.io/mkdocs-material/) para criar páginas cada vez mais atrativas.
 [^3]: Ano com quatro dígitos, mês e dia com do dois. Exemplo `20231025`.
-[^4]: O [Issue número 5](https://github.com/lab-mg/automatizacoes/issues/5) do repositório [automatizações](https://github.com/lab-mg/automatizacoes) contém a discussão inicial para a criação deste guia de estilo das tags.
+[^4]: O [Issue número 5](https://github.com/automatiza-mg/automatizacoes/issues/5) do repositório [automatizações](https://github.com/automatiza-mg/automatizacoes) contém a discussão inicial para a criação deste guia de estilo das tags.

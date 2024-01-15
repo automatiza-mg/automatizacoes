@@ -8,20 +8,20 @@ hide:
 
 
 Olá! Este é o portal da Automação Robótica de Processos no Estado de Minas Gerais - uma iniciativa inovadora, cujo impacto aumenta a eficiência e a eficácia das políticas públicas, economizando recursos e melhorando a vida dos servidores públicos e dos cidadãos. Quer saber mais?
-- - - 
+- - -
 
 ## O que é a automação robótica de processos?
 
 [Vídeo explicativo]()
 
-- - - 
+- - -
 
 ## Como um robô pode ser útil?
 
 Um robô é uma espécie de colega de trabalho do servidor público, que o ajuda a desempenhar trabalhos repetitivos, para que o humano foque naquilo que exige sua atenção. Veja esses casos de uso:
 
 
-* Cadastramento de solicitação e pedido no Portal de Compras 
+* Cadastramento de solicitação e pedido no Portal de Compras
 * Empenho, liquidação e pagamento
 * Marcação de consulta no IPSEMG
 * Pagamentos de Folha
@@ -30,7 +30,7 @@ Um robô é uma espécie de colega de trabalho do servidor público, que o ajuda
 * Pagamento mensal do PTE (841 municípios em 10 parcelas mensais)
 * Regularização e transferência de patrimônio no SIAD
 
-- - - 
+- - -
 
 ## Depoimentos
 
@@ -48,6 +48,6 @@ _Esse robô, auxiliou na diminuição de tarefas que deveriam ser realizadas men
 </div>
 
 
-[^1]: ideias do escopo inicial [aqui](https://github.com/lab-mg/automatizacoes/issues/9#issue-1928943357); visão de futuro é ter uma _landing page_
+[^1]: ideias do escopo inicial [aqui](https://github.com/automatiza-mg/automatizacoes/issues/9#issue-1928943357); visão de futuro é ter uma _landing page_
 
 ## Disclaimer (página à parte)
