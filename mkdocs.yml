@@ -59,7 +59,7 @@ theme:
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    logo: labmg/labmg
+    logo: automatiza/logo-automatiza.jpg
 
 markdown_extensions:
   - abbr
