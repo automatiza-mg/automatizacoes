@@ -10,11 +10,9 @@ categories:
 
 # Como extrair um texto de um arquivo PDF
 
-Neste exemplo, a necessidade é guardar o número do boleto ou guia de pagamento gerada em um [arquivo pdf](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/robos/texto_pdf/texto-pdf.jpg).
+Neste exemplo, a necessidade é guardar o número do boleto ou guia de pagamento gerada em um arquivo no formato pdf. O número do boleto da imagem abaixo, bem como outras informações deste documento, são extraídas e salvas em formato de tabela.
 
 <!-- more -->
-
-O número do boleto da imagem abaixo, bem como outras informações deste documento, são extraídas e salvas em formato de tabela.
 
 ![](assets/texto-pdf.jpg)
 
