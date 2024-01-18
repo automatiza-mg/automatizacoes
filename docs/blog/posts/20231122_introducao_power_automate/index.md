@@ -185,5 +185,5 @@ flowchart TD
 
 [^1]: Carinhosamente chamado de Automate deste ponto em diante.
 [^2]: Não é nossa intenção aqui explicar todas as ações disponíveis, pois são muitas. Navegue nesta lista e tente, por conta própria, utilizar ações que te chamaram atenção, uma vez que suas configurações são, via de regra, bastante autoexplicativas.
-[^3]: Anteriormente abordado [neste post](../20231019_criar_editar_instancias_variaveis_automate/index.md).
+[^3]: Anteriormente abordado [neste post](../20231019_variaveis/index.md).
 [^4]: Não utilize espaços e ou caracteres especiais como acentos, cedilha e til, para renomear as variáveis de fluxo. Sugerimos a utilização de letras minúsculas, separadas por underscore (`_`) como em `resultado_pesquisa`.
