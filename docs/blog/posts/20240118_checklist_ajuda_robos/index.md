@@ -27,9 +27,13 @@ Para compreender como fazer o robô executar as tarefas que desejamos, pode ser 
     - caminhos de arquivos: é comum esquecer de atualizar nas **Variáveis de Entrada** quando se compartilha código dos robôs entre computadores diferentes
     - Dica! Veja uma pouco mais sobre as variáveis [neste post](../20231019_variaveis/index.md)
 
-- ... nos **loops** (_If, else_):
-    - foi colocada _aumentar variável_ ao final das ações de loop
-    - o loop está rodando indefinidamente (faltou ações _Else_ ou _End_)
+- ... nos **loops**:
+    - o loop está rodando indefinidamente? Veja se foi colocada _aumentar variável_ ao final das ações de loop;
+    - faltou colocar _End_ ao final das ações de loop? 
+
+- ... nas ações de **If**:
+    - falta Else?
+    - ou falta End?
      
 ## se o robô tiver ações no browser da web:
 - A extensão está instalada e ativada?
@@ -39,8 +43,9 @@ Para compreender como fazer o robô executar as tarefas que desejamos, pode ser 
 
 -  **enviar teclas**:
     - Os comandos estão nos locais corretos (tabs, return, setas, etc)?
-    - Os comandos foram incluídos como chave de hardware?
-    - As teclas especiais estão com formação correta (ex.: {Ctrl(C)}{Ctrl(V)}?
+    - As teclas especiais estão com formação correta (ex.: {Control}({A}){Control}({C})?
+    
+    - PARA TERMINAIS PRODEMGE: Os comandos foram incluídos como chave de hardware?
 
 # Saiba Mais
 
