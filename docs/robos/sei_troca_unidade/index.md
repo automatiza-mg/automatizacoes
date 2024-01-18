@@ -41,10 +41,13 @@ tags:
         - Microsoft Power Automate;
         - Extensão do Google Chrome ("Microsoft Power Automate" - sem ser o legacy);
     2. Criar **Variável de Entrada** para
-        - Login_SEI (verificar se o navegador está com autocomplete ativado para este login - desativar, se for o caso)
-        - Senha_SEI
+        - 2.1. Login_SEI (verificar se o navegador está com autocomplete ativado para este login - desativar, se for o caso)
+        - 2.2. Senha_SEI
+        - 2.3. Nome do Órgão** (ação nº 2)
+        - 2.4. Nome da unidade do SEI (ação de número 6 - Enviar teclas)
+    3. Editar imagens 
+        - 3.1. Na ação 7 (Aguardar conteúdo da página da Web)
+        - 3.2. Na ação 11 (Clicar em link na página da Web) 
 
-
---8<-- "docs/partials/modelo_robo/alem_disso.md"
 
 --8<-- "docs/partials/modelo_robo/ajuda.md"
