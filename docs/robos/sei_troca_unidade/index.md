@@ -17,17 +17,10 @@ tags:
 | **e-mail**       | isabela.romancini@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
 
-## Funções desenvolvidas pelo robô
+## Ações do fluxo do robô
 
-- Troca unidade do usuário logado no SEI
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/52294411/16f7c9a8-79b1-496d-ad5b-b79948fd6a22)
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/52294411/6ab52b83-9fee-4e76-aa4d-8babbb0063ab)
-
-??? note "**Clique e veja o fluxo do robô**"
-
-    ```mermaid
-            --8<-- "docs/robos/sei_troca_unidade/assets/fluxo.md"
-    ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
