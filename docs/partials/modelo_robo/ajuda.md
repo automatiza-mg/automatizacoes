@@ -5,6 +5,6 @@
     Abaixo temos um espaço para perguntas e respostas.
     Dá uma olhadinha lá.
     Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando.
-    Caso prefira mande um e-mail para [escolher-email@dominio.com]().
+    Caso prefira mande um e-mail para simplificacao@planejamento.mg.gov.br.
 
     Ótimo trabalho!
