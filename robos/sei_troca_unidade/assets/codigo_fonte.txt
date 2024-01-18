@@ -1,5 +1,5 @@
 WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=GOVMG&sigla_sistema=SEI''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> Browser
-MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%login%{Tab}%senhasei%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Login_SEI%{Tab}%Senha_SEI%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: Browser Text: $'''Controle de Processos''')
 MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: Browser Text: $'''Trocar Unidade''')
