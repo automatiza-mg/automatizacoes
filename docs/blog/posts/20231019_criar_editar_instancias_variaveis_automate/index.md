@@ -32,4 +32,8 @@ E o que aconteceria caso o usuário deixar de fazer essas edições? Para colar 
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/52294411/9290dddb-8527-4829-8d48-c61eecb50710)
 
 
-O tutorial da Microsoft sobre esse assunto pode ser acessado [nesta página](https://learn.microsoft.com/en-US/training/modules/input-parameters/).
+## Saiba Mais 
+
+
+O tutorial da Microsoft sobre esse assunto pode ser acessado [nesta página](https://learn.microsoft.com/pt-br/power-automate/desktop-flows/manage-variables?source=recommendations.)
+
