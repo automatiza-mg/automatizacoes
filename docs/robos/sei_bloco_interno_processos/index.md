@@ -20,9 +20,9 @@ tags:
 
 ## Funções desenvolvidas pelo robô
 
-- Faz login no SEI.
-- Acessa bloco interno definido como variável
-- Copia a lista dos processos do bloco e salva no excel
+- Faz login no SEI
+- Acessa bloco interno do SEI e lista todos seus processos em planilha de excel
+- Realiza pesquisa por número do processo SEI
 
 ??? note "**Clique e veja o fluxo do robô**"
 
@@ -45,6 +45,8 @@ tags:
     2. Criar **Variável de Entrada** para
         - Login_SEI (verificar se o navegador está com autocomplete ativado para este login - desativar, se for o caso)
         - Senha_SEI
+        - Número_bloco_SEI
+    3. Verifique se o nome do seu órgão já consta no campo "órgão" na tela de login do SEI. Caso não conste, entre no SEI com suas credenciais e, logo após fazer o login, saia do sistema. Assim, seu órgão ficará como padrão na tela de login
 
 
 --8<-- "docs/partials/modelo_robo/alem_disso.md"

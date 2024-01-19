@@ -1,10 +1,10 @@
 # Entrar e logar no SEI
 WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=GOVMG&sigla_sistema=SEI&infra_url=L3NlaS8=''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> SEI
-MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''%Login_SEI%{Tab}%Senha_SEI%{Tab}SEPLAG{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''%Login_SEI%{Tab}%Senha_SEI%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WebAutomation.Click.Click BrowserInstance: SEI Control: appmask['Web Page \'h ... bace3ef54#\'']['Span \'Blocos\''] ClickType: WebAutomation.ClickType.LeftClick MouseClick: True WaitForPageToLoadTimeout: 60 MousePositionRelativeToElement: WebAutomation.RectangleEdgePoint.MiddleCenter OffsetX: 0 OffsetY: 0
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: SEI Text: $'''Blocos Internos''')
-# Encontrar o bloco interno com os processos para inserir no FISCAP
+# Encontrar o bloco interno desejado
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}%Número_bloco_SEI%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: SEI Text: Número_bloco_SEI)
 WebAutomation.Click.Click BrowserInstance: SEI Control: appmask['Web Page \'h ... 92145f2e4a\'']['Image \'Processos/Documentos do Bloco\''] ClickType: WebAutomation.ClickType.LeftClick MouseClick: True WaitForPageToLoadTimeout: 60 MousePositionRelativeToElement: WebAutomation.RectangleEdgePoint.MiddleCenter OffsetX: 0 OffsetY: 0
