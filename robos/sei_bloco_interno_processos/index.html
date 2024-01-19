@@ -864,9 +864,9 @@ c-34 41 -94 59 -150 45z"/>
 </table>
 <h2 id="funcoes-desenvolvidas-pelo-robo">Funções desenvolvidas pelo robô<a class="headerlink" href="#funcoes-desenvolvidas-pelo-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Faz login no SEI.</li>
-<li>Acessa bloco interno definido como variável</li>
-<li>Copia a lista dos processos do bloco e salva no excel</li>
+<li>Faz login no SEI</li>
+<li>Acessa bloco interno do SEI e lista todos seus processos em planilha de excel</li>
+<li>Realiza pesquisa por número do processo SEI</li>
 </ul>
 <details class="note">
 <summary><strong>Clique e veja o fluxo do robô</strong></summary>
@@ -885,11 +885,11 @@ Depois, copie e cole o código disponível em um novo fluxo Power Automate Deskt
 <summary><strong>Clique para copiar e colar</strong></summary>
 <div class="language-text highlight"><pre><span></span><code># Entrar e logar no SEI
 WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=GOVMG&amp;sigla_sistema=SEI&amp;infra_url=L3NlaS8=''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=&gt; SEI
-MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''%Login_SEI%{Tab}%Senha_SEI%{Tab}SEPLAG{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''%Login_SEI%{Tab}%Senha_SEI%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WebAutomation.Click.Click BrowserInstance: SEI Control: appmask['Web Page \'h ... bace3ef54#\'']['Span \'Blocos\''] ClickType: WebAutomation.ClickType.LeftClick MouseClick: True WaitForPageToLoadTimeout: 60 MousePositionRelativeToElement: WebAutomation.RectangleEdgePoint.MiddleCenter OffsetX: 0 OffsetY: 0
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: SEI Text: $'''Blocos Internos''')
-# Encontrar o bloco interno com os processos para inserir no FISCAP
+# Encontrar o bloco interno desejado
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}%Número_bloco_SEI%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
 WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: SEI Text: Número_bloco_SEI)
 WebAutomation.Click.Click BrowserInstance: SEI Control: appmask['Web Page \'h ... 92145f2e4a\'']['Image \'Processos/Documentos do Bloco\''] ClickType: WebAutomation.ClickType.LeftClick MouseClick: True WaitForPageToLoadTimeout: 60 MousePositionRelativeToElement: WebAutomation.RectangleEdgePoint.MiddleCenter OffsetX: 0 OffsetY: 0
@@ -944,8 +944,10 @@ MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: SEI
 <li>Criar <strong>Variável de Entrada</strong> para<ul>
 <li>Login_SEI (verificar se o navegador está com autocomplete ativado para este login - desativar, se for o caso)</li>
 <li>Senha_SEI</li>
+<li>Número_bloco_SEI</li>
 </ul>
 </li>
+<li>Verifique se o nome do seu órgão já consta no campo "órgão" na tela de login do SEI. Caso não conste, entre no SEI com suas credenciais e, logo após fazer o login, saia do sistema. Assim, seu órgão ficará como padrão na tela de login</li>
 </ol>
 </div>
 <div class="admonition note">
@@ -988,7 +990,7 @@ Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo p
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 18, 2024 14:12:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 19, 2024 13:44:29</span>
   </span>
 
     
