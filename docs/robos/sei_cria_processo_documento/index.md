@@ -24,12 +24,6 @@ tags:
 - Cria processo no SEI
 - Cria documento no processo criado
 
-??? note "**Clique e veja o fluxo do robô**"
-
-    ```mermaid
-            --8<-- "docs/robos/sei_cria_processo_documento/assets/fluxo.md"
-    ```
-
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
 ??? note "**Clique para copiar e colar**"
@@ -46,8 +40,7 @@ tags:
     2. Criar **Variável de Entrada** para
         - Login_SEI (verificar se o navegador está com autocomplete ativado para este login - desativar, se for o caso)
         - Senha_SEI
+    3. Verifique se o nome do seu órgão já consta no campo "órgão" na tela de login do SEI. Caso não conste, entre no SEI com suas credenciais e, logo após fazer o login, saia do sistema. Assim, seu órgão ficará como padrão na tela de login
 
-
---8<-- "docs/partials/modelo_robo/alem_disso.md"
 
 --8<-- "docs/partials/modelo_robo/ajuda.md"
