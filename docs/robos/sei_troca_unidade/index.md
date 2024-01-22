@@ -19,8 +19,7 @@ tags:
 
 ## Ações do fluxo do robô
 
-![image](https://github.com/automatiza-mg/automatizacoes/assets/52294411/16f7c9a8-79b1-496d-ad5b-b79948fd6a22)
-![image](https://github.com/automatiza-mg/automatizacoes/assets/52294411/6ab52b83-9fee-4e76-aa4d-8babbb0063ab)
+
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
