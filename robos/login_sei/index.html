@@ -16,7 +16,7 @@
     
     
       
-        <title>Como fazer login no SEI - Automatiza-mg</title>
+        <title>Fazer login no SEI - Automatiza-mg</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#como-fazer-login-no-sei" class="md-skip">
+        <a href="#fazer-login-no-sei" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -136,7 +136,7 @@ c-34 41 -94 59 -150 45z"/>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Como fazer login no SEI
+              Fazer login no SEI
             
           </span>
         </div>
@@ -767,6 +767,32 @@ c-34 41 -94 59 -150 45z"/>
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações gerais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#montando-o-seu-robo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Montando o seu robô
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -807,9 +833,42 @@ c-34 41 -94 59 -150 45z"/>
   
 
 
-<div><h1 id="como-fazer-login-no-sei">Como fazer login no SEI<a class="headerlink" href="#como-fazer-login-no-sei" title="Permanent link">⚓︎</a></h1>
+<div><h1 id="fazer-login-no-sei">Fazer login no SEI<a class="headerlink" href="#fazer-login-no-sei" title="Permanent link">⚓︎</a></h1>
+<video width="640" controls>
+    <source src="#" type="video/mp4">
+</source></video>
+
+<h2 id="informacoes-gerais">Informações gerais<a class="headerlink" href="#informacoes-gerais" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Desenvolvedor</strong></th>
+<th>Gabriel Braico Dornas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E-mail</strong></td>
+<td>gabriel.dornas@planejamento.mg.gov.br</td>
+</tr>
+<tr>
+<td><strong>Ferramenta</strong></td>
+<td>Power Automate Desktop</td>
+</tr>
+<tr>
+<td><strong>Versão Power Automate</strong></td>
+<td>2.39</td>
+</tr>
+</tbody>
+</table>
+<h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
+<p>Aqui temos um <strong>protótipo de robô</strong>.
+Ele só vai solucionar o seu problema se ajustado às suas necessidades.
+Portanto, você deverá adaptá-lo.</p>
+<p>Para dar vida ao seu robô, clique na caixa <strong>copiar e colar</strong> abaixo.
+Depois, copie e cole o código disponível em um novo fluxo Power Automate Desktop.</p>
 <details class="copy">
-<summary><strong>doc SEI</strong></summary>
+<summary><strong>Clique para copiar e colar</strong></summary>
 <div class="language-text highlight"><pre><span></span><code>/# Fluxo para login no SEI:
 
 Necessário criar variáveis de entrada:
@@ -843,7 +902,34 @@ WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: 
 # Envia tecla "Esc" para garantir que qualquer mensagem aberta no início do SEI seja fechada.
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{Escape}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
 </code></pre></div>
-</details></div>
+</details>
+<div class="admonition note">
+<p class="admonition-title"><strong>Importante:</strong></p>
+<p>Antes de executar este robô é importante seguir os seguintes passos:</p>
+<ol>
+<li>Verificar se a máquina em que o robô vai ser executado possui os seguintes programas instalados:<ul>
+<li>Microsoft Power Automate versão 2.39 ou superior.</li>
+<li>Navegador Google Chrome.</li>
+<li>Extensão do Google Chrome ("Microsoft Power Automate" - sem ser o legacy).</li>
+</ul>
+</li>
+<li>Criar <strong>Variável de Entrada</strong> para:<ul>
+<li>2.1. login_sei.</li>
+<li>2.2. senha_sei.</li>
+<li>2.3. orgao_sei.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Caso precise de ajuda</p>
+<p>Algum erro está ocorrendo em uma das fases de criação de seu robô?
+Não tem problema. Acesse <a href="../../blog/causas-comuns-de-erros-na-montagem-dos-fluxos-dos-rob%C3%B4s/">aqui</a> uma lista com causas de erros ou paradas do robô.</p>
+<p>Também temos o espaço abaixo para perguntas e respostas.
+Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando?</p>
+<p>Caso prefira, manda um e-mail para simplificacao@planejamento.mg.gov.br.</p>
+<p>Ótimo trabalho!</p>
+</div></div>
 
 
 
@@ -866,7 +952,7 @@ MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2024 13:06:22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2024 13:38:46</span>
   </span>
 
     
