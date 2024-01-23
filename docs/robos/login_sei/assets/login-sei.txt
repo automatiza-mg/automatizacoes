@@ -1,2 +1,0 @@
-WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> SEI
-MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%Usuario%{Tab}%Senha%{Tab}%Orgao%{Tab}{Return}''' DelayBetweenKeystrokes: 30 SendTextAsHardwareKeys: False
