@@ -810,6 +810,39 @@ c-34 41 -94 59 -150 45z"/>
 <div><h1 id="como-fazer-login-no-sei">Como fazer login no SEI<a class="headerlink" href="#como-fazer-login-no-sei" title="Permanent link">⚓︎</a></h1>
 <details class="copy">
 <summary><strong>doc SEI</strong></summary>
+<div class="language-text highlight"><pre><span></span><code>/# Fluxo para login no SEI:
+
+Necessário criar variáveis de entrada:
+
+login_sei: login para entrar no SEI (CPF).
+
+orgao_sei: orgão de login no SEI (exatamente igual à lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
+
+senha_sei: senha para login no SEI. Recomendamos incluir variável como confidencial.#/
+# Inicia o Chrome na URL correta, que direciona o usuário para página de login, sem se preocupar se ele já estava logado . Por isso a URL básica do sei (https://www.sei.mg.gov.br) não foi utilizada, para prevenir erros de login.
+WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=GOVMG&amp;sigla_sistema=SEI&amp;infra_url=L3NlaS8=''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=&gt; sei
+# Aguarda página inicial de login SEI ser carregada. Somente quando textos "Sistema Eletrônico de informações" e "Usuário Bloqueado" aparecerem é que próximas ações serão realizadas.
+WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text: $'''Sistema Eletrônico de Informações''')
+WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text: $'''Usuário Bloqueado?''')
+# Executa script Javascript para selecionar órgão de login. Órgão é escolhido conforme variável de entrada "orgao_sei" criado no início do fluxo.
+WebAutomation.ExecuteJavascript BrowserInstance: sei Javascript: $'''function ExecuteScript()
+{
+var x = document.getElementsByTagName(\'option\');
+for (var i = 0; i &lt; x.length; i++) {
+    if (x[i].text == \'%orgao_sei%\') {
+     x[i].selected = true   
+    }
+}
+}'''
+# Envia teclas para inclusão de login. Informações de login são lidas conforme variável de entrada "login_sei" criado no início do fluxo.
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{End}{Shift}({Home}){Delete}%login_sei%{Tab}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
+# Envia teclas para inclusão de senha. Informações de senha são lidas conforme variável de entrada "senha_sei" criado no início do fluxo.
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{End}{Shift}({Home}){Delete}%senha_sei%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
+# Aguarda página inicial de SEI ser carregada. Somente quando textos "Controle de Processos" aparecer é que próximas ações serão realizadas.
+WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text: $'''Controle de Processos''')
+# Envia tecla "Esc" para garantir que qualquer mensagem aberta no início do SEI seja fechada.
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{Escape}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
+</code></pre></div>
 </details></div>
 
 
@@ -833,7 +866,7 @@ c-34 41 -94 59 -150 45z"/>
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2023 15:05:48</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2024 13:06:22</span>
   </span>
 
     
