@@ -1,0 +1,12 @@
+/# Fluxo para troca de unidade SEI:
+
+Fluxo que orquestra todo processo de troca de unidade.
+Executa os subfluxos login_sei e troca_unidade.
+
+Necessário criar as variáveis de entrada:
+
+Variáveis necessárias para execução do fluxo de login (descritos no subfluxo login_sei), e
+
+unidade_sei: unidade dentro do orgão de login no SEI (exatamente igual à lista de unidades disponíveis no menu superior direito da página, inclusive com todas as letras maiúsculas e minúsculas.#/
+CALL login_sei
+CALL troca_unidade_sei

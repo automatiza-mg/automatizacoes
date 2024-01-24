@@ -1,0 +1,52 @@
+/# Fluxo para login no SEI:
+
+Necessário criar variáveis de entrada:
+
+login_sei: login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
+
+orgao_sei: orgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
+
+senha_sei: senha para login no SEI. Recomendamos incluir variável como confidencial.#/
+# Análise se CPF cadastrado na variável de entrada "login_sei" possui 11 caracteres numéricos.
+Text.ParseText.RegexParseForFirstOccurrence Text: login_sei TextToFind: $'''[0-9]{11}''' StartingPosition: 0 IgnoreCase: False Match=> login_sei_erro
+IF login_sei <> login_sei_erro THEN
+    SET login_sei_erro_mensagem TO $'''CPF cadastrado na variável \"login_sei\" deverá ter exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).'''
+    EXIT Code: 0 ErrorMessage: login_sei_erro_mensagem
+END
+# Inicia o Chrome na URL correta, que direciona o usuário para página de login, sem se preocupar se ele já estava logado . Por isso a URL básica do sei (https://www.sei.mg.gov.br) não foi utilizada, para prevenir erros de login.
+WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=GOVMG&sigla_sistema=SEI&infra_url=L3NlaS8=''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> sei
+WebAutomation.ExecuteJavascript BrowserInstance: sei Javascript: $'''function ExecuteScript()
+{
+var x = document.getElementsByTagName(\'option\');
+for (var i = 0; i < x.length; i++) {
+	if (x[i].text == \'%orgao_sei%\') {
+	 return true   
+	}
+}
+return false
+}''' Result=> orgao_erro
+IF orgao_erro = $'''false''' THEN
+    SET orgao_erro_mensagem TO $'''Órgão cadastrado na variável \"orgao_sei\" não disponível na lista de órgãos da página de login SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.'''
+    EXIT Code: 0 ErrorMessage: orgao_erro_mensagem
+END
+# Aguarda página inicial de login SEI ser carregada. Somente quando textos "Sistema Eletrônico de informações" e "Usuário Bloqueado" aparecerem é que próximas ações serão realizadas.
+WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text: $'''Sistema Eletrônico de Informações''')
+WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text: $'''Usuário Bloqueado?''')
+# Executa script Javascript para selecionar órgão de login. Órgão é escolhido conforme variável de entrada "orgao_sei" criado no início do fluxo.
+WebAutomation.ExecuteJavascript BrowserInstance: sei Javascript: $'''function ExecuteScript()
+{
+var x = document.getElementsByTagName(\'option\');
+for (var i = 0; i < x.length; i++) {
+	if (x[i].text == \'%orgao_sei%\') {
+	 x[i].selected = true   
+	}
+}
+}'''
+# Envia teclas para inclusão de login. Informações de login são lidas conforme variável de entrada "login_sei" criado no início do fluxo.
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{End}{Shift}({Home}){Delete}%login_sei%{Tab}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
+# Envia teclas para inclusão de senha. Informações de senha são lidas conforme variável de entrada "senha_sei" criado no início do fluxo.
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{End}{Shift}({Home}){Delete}%senha_sei%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
+# Aguarda página inicial de SEI ser carregada. Somente quando textos "Controle de Processos" aparecer é que próximas ações serão realizadas.
+WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text: $'''Controle de Processos''')
+# Envia tecla "Esc" para garantir que qualquer mensagem aberta no início do SEI seja fechada.
+MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend: $'''{Escape}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: False
