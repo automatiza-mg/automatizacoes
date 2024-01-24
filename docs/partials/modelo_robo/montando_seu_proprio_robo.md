@@ -1,8 +1,8 @@
 ## Montando o seu robô
 
-Aqui temos um **protótipo de robô**.
-Ele só vai solucionar o seu problema se ajustado às suas necessidades.
-Portanto, você deverá adaptá-lo.
+Este é um **protótipo de robô**.
+Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.
 
-Para dar vida ao seu robô, clique na caixa **copiar e colar** abaixo.
-Depois, copie e cole o código disponível em um novo fluxo Power Automate Desktop.
+Para dar vida a ele:
+
+- Copie o código da caixa **copiar e colar** abaixo e cole em um fluxo Power Automate Desktop.
