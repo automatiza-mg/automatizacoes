@@ -3,11 +3,11 @@ comments: true
 hide:
   - navigation
 tags:
-  - Ferramentas
+  - Modular
   - SEI
 ---
 
-# Fazer login no SEI
+# Login no SEI
 
 <video width="640"  controls>
     <source src="#" type="video/mp4">
@@ -15,29 +15,68 @@ tags:
 
 ## Informações gerais
 
-| **Desenvolvedor**| Gabriel Braico Dornas  |
+| **Desenvolvedor**| Automatiza-mg  |
 | ----------- | ------------------------------------ |
-| **E-mail**       | gabriel.dornas@planejamento.mg.gov.br|
+| **E-mail**       | simplificacao@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
-| **Versão Power Automate**    | 2.39 |
+| **Versão Power Automate**    | 2.39.00239.23332 |
+
+- [x] Robô dedicado a facilitar o acesso ao SEI.
+- [x] Automatiza todo o processo de login SEI, verificando, antes de iniciar, se login(CPF) e órgão informados estão no padrão corretos.
+- [x] Aguarda o carregamento das páginas para garantir que tudo esteja certo.
+- [x] Economiza tempo e evita erros.
+
+??? note "**Clique para ver o fluxo do robô**"
+
+    ```mermaid
+    graph TD
+    A("`**Início**`") --> B{Verificar CPF}
+    B --> C{CPF válido?}
+    C --> |Sim| D{Verificar órgão}
+    C --> |Não| E{Erro: CPF inválido}
+    D --> F{Órgão disponível?}
+    F --> |Sim| G{Abrir Chrome}
+    F --> |Não| H{Erro: Órgão inexistente}
+    G --> I{Aguardar página inicial}
+    I --> J{Selecionar órgão}
+    J --> K{Inserir login}
+    K --> L{Inserir senha}
+    L --> M{Aguardar página inicial do SEI}
+    M --> N{Fechar mensagens}
+    N --> O("`**Login realizado com sucesso**`")
+    E[Erro: CPF inválido] --> A
+    H[Erro: Órgão indisponível] --> A
+    ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
 ??? copy "**Clique para copiar e colar**"
 
-        --8<-- "docs/robos/login_sei/assets/login_sei.txt"
+    === ":material-file-code: main"
 
-!!! note "**Importante:**"
+        ```yaml
+        --8<-- "docs/robos/login_sei/assets/main.txt"
+        ```
 
-    Antes de executar este robô é importante seguir os seguintes passos:
+- Crie **variável de entrada** para:
+    - **`login_sei`**: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
+    - **`senha_sei`**: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
+    - **`orgao_sei`**: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
 
-    1. Verificar se a máquina em que o robô vai ser executado possui os seguintes programas instalados:
-        - Microsoft Power Automate versão 2.39 ou superior.
-        - Navegador Google Chrome.
-        - Extensão do Google Chrome ("Microsoft Power Automate" - sem ser o legacy).
-    2. Criar **Variável de Entrada** para:
-        - 2.1. login_sei.
-        - 2.2. senha_sei.
-        - 2.3. orgao_sei.
+## Pré-requisitos
+
+<div class="grid" markdown>
+
+:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+{ .card }
+
+:fontawesome-brands-chrome: __Chrome__ como navegador
+{ .card }
+
+:simple-gitextensions:  __Extensão Chrome__ para [Power Automate](https://chromewebstore.google.com/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk)
+{ .card }
+
+</div>
+
 
 --8<-- "docs/partials/modelo_robo/ajuda.md"
