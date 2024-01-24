@@ -22,12 +22,13 @@ theme:
   features:
     # - announce.dismiss
     - content.code.annotate
+    - content.code.copy
     - navigation.tabs
     #- navigation.tabs.sticky
     - navigation.footer
     - navigation.indexes
     - content.action.edit
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
@@ -65,7 +66,8 @@ markdown_extensions:
   - abbr
   - footnotes
   - attr_list
-  - pymdownx.tasklist  # Lista de tarefas
+  - pymdownx.tasklist: # Lista de tarefas
+      custom_checkbox: true
   - pymdownx.emoji  # Emojis
   - pymdownx.mark
   - pymdownx.tilde
