@@ -21,9 +21,14 @@ tags:
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.39.00239.23332 |
 
-## Ações do fluxo do robô
+- [x] Robô dedicado a facilitar o acesso à diferentes unidades no SEI.
+- [x] Automatiza todo o processo de login SEI, verificando, antes de iniciar, se login(CPF) e órgão informados estão no padrão corretos.
+- [x] Aguarda o carregamento das páginas para garantir que tudo esteja certo.
+- [x] Economiza tempo e evita erros.
 
-![image](https://github.com/automatiza-mg/automatizacoes/assets/52294411/2eb425d3-4295-4831-a8e8-9687712c32d5)
+??? note "**Clique para ver o fluxo do robô**"
+
+
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
 
@@ -57,19 +62,26 @@ Sua construção é dividida entre 3 subfluxos:
         --8<-- "docs/robos/sei_troca_unidade/assets/troca_unidade_sei.txt"
         ```
 
+- Crie **variáveis de entrada** para:
+    - **`login_sei`**: Login para entrar no SEI.
+    - **`senha_sei`**: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
+    - **`orgao_sei`**: Órgão de login no SEI, com todas as letras maiúsculas.
+    - **`unidade_sei`**: Unidade do SEI, com todas as letras maiúsculas. 
 
-!!! note "**Importante:**"
 
-    Antes de executar este robô em especial, é importante seguir os seguintes passos:
+## Pré-requisitos
 
-    1. Verificar se a máquina em que o robô vai ser executado possui os seguintes programas instalados:
-        - Microsoft Power Automate;
-        - Extensão do Google Chrome ("Microsoft Power Automate" - sem ser o legacy);
-    2. Criar **Variável de Entrada** para
-        - 2.1. Login_SEI (verificar se o navegador está com autocomplete ativado para este login - desativar, se for o caso)
-        - 2.2. Senha_SEI
-        - 2.3. Orgao_SEI
-        - 2.4. Unidade_SEI
+<div class="grid" markdown>
 
+:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+{ .card }
+
+:fontawesome-brands-chrome: __Chrome__ como navegador
+{ .card }
+
+:simple-gitextensions:  __Extensão Chrome__ para [Power Automate](https://chromewebstore.google.com/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk)
+{ .card }
+
+</div>
 
 --8<-- "docs/partials/modelo_robo/ajuda.md"
