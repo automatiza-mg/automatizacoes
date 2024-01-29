@@ -73,7 +73,7 @@ hide:
 
 ![type:video](assets/demostracao_automate.mp4)
 
-## O Projeto em Números { .h2-center }[^1]
+## O Projeto em Números { .h2-center }
 
 <div class="grid cards yellow-banner" markdown>
 
