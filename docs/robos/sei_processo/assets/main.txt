@@ -1,0 +1,12 @@
+/# Fluxo para seleção e ou criação de processo no SEI:
+
+Fluxo que orquestra todo processo de troca de unidade.
+Executa os subfluxos login_sei, troca_unidade e abertura de processo.
+
+Necessário criar as variáveis de entrada descritas em cada subfluxo (apontadas como 'erros' quando colar o código pela primeira vez
+
+#/
+CALL login_sei
+CALL troca_unidade_sei
+CALL processo
+
