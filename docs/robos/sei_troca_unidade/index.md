@@ -37,7 +37,7 @@ O que significa que ele se beneficiou de robô(s) já desenvolvido(s) para simpl
 Sua construção é dividida entre 3 subfluxos:
 
 - **`main`**: Executa os dois subluxos listados abaixo.
-- **`login_sei`**: Executa o robô que realiza [login no SEI](../login_sei/).
+- **`login_sei`**: Executa o robô que realiza [login no SEI](../login_sei/index.md).
 - **`troca_unidade_sei`**: Realiza a troca de unidade SEI após o login.
 
 
