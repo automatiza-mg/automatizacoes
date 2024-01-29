@@ -38,9 +38,9 @@ Este robô possui formato modular.
 O que significa que ele se beneficiou de robô(s) já desenvolvido(s) para simplificar o trabalho.
 Sua construção é dividida entre 3 subfluxos:
 
-- **`main`**: Executa os dois subluxos listados abaixo.
-- **`login_sei`**: Executa o robô que realiza [login no SEI](../login_sei/index.md).
-- **`troca_unidade_sei`**: Realiza a troca de unidade SEI após o login.
+- **main**: Executa os dois subluxos listados abaixo.
+- **login_sei**: Executa o robô que realiza [login no SEI](../login_sei/index.md).
+- **troca_unidade_sei**: Realiza a troca de unidade SEI após o login.
 - **processo**: realiza etapas para seleção de processo existente ou abertura de novo
 
 
@@ -76,10 +76,10 @@ Sua construção é dividida entre 3 subfluxos:
     - **`senha_sei`**: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
     - **`orgao_sei`**: Órgão de login no SEI, com todas as letras maiúsculas.
     - **`unidade_sei`**: Unidade do SEI, com todas as letras maiúsculas. 
-    - **tipo_do_processo**: público, sigiloso ou restrito
-    - **assunto**
-    - **hipotese_restricao**
-    - **n_doc_ou_processo_existente**
+    - **`tipo_do_processo`**: público, sigiloso ou restrito
+    - **`assunto`**
+    - **`hipotese_restricao`**
+    - **`n_doc_ou_processo_existente`**
 
 ## Pré-requisitos
 
