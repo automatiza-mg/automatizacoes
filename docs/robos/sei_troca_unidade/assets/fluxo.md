@@ -5,8 +5,7 @@ graph TD
     D --> E{Clicar em 'Trocar Unidade'}
     E --> F{Selecionar nova unidade}
     F --> G{Confirmar a troca}
-    G --> H{Registrar a ocorrência}
-    H --> I("[`**Fim**`]")
-    B --> |Não| I("[`**Fim**`]")
+    G --> H("[`**Fim**`]")
+    B --> |Não| H("[`**Fim**`]")
 
 
