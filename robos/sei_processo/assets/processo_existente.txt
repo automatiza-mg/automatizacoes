@@ -1,0 +1,3 @@
+# Este robô possui como pré-requisito o login no sei e a seleção da unidade correta.
+# Abre o processo existente.
+MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}%n_doc_ou_processo_existente%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
