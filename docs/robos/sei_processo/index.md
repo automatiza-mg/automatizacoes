@@ -29,7 +29,7 @@ tags:
 ??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/robos/aposentadoria/assets/fluxo.md"
+            --8<-- "docs/robos/sei_processo/assets/fluxo.md"
     ```
 
 --8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
@@ -41,7 +41,8 @@ Sua construção é dividida entre 3 subfluxos:
 - **main**: Executa os dois subluxos listados abaixo.
 - **login_sei**: Executa o robô que realiza [login no SEI](../login_sei/index.md).
 - **troca_unidade_sei**: Realiza a troca de unidade SEI após o login.
-- **processo**: realiza etapas para seleção de processo existente ou abertura de novo
+- **processo_existente**: realiza etapas para seleção e abertura de processo existente 
+- **processo_novo**: realiza etapas para abertura de novo processo
 
 
 ??? note "**Clique para copiar e colar**"
@@ -65,10 +66,16 @@ Sua construção é dividida entre 3 subfluxos:
         --8<-- "docs/robos/sei_troca_unidade/assets/troca_unidade_sei.txt"
         ```
 
-    === ":material-file-code: processo_sei"
+    === ":material-file-code: processo_existente"
 
         ``` yaml
-        --8<-- "docs/robos/sei_processo/assets/processo.txt"
+        --8<-- "docs/robos/sei_processo/assets/processo_existente.txt"
+        ```
+
+    === ":material-file-code: processo_novo"
+
+        ``` yaml
+        --8<-- "docs/robos/sei_processo/assets/processo_novo.txt"
         ```
 
 - Crie **variáveis de entrada** para:
@@ -76,10 +83,10 @@ Sua construção é dividida entre 3 subfluxos:
     - **`senha_sei`**: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
     - **`orgao_sei`**: Órgão de login no SEI, com todas as letras maiúsculas.
     - **`unidade_sei`**: Unidade do SEI, com todas as letras maiúsculas. 
-    - **`tipo_do_processo`**: público, sigiloso ou restrito
-    - **`assunto`**
-    - **`hipotese_restricao`**
-    - **`n_doc_ou_processo_existente`**
+    - **`n_doc_ou_processo_existente`**: somente se for utilizar o subfluxo **processo_existente**
+    - **`tipo_do_processo`**: público, sigiloso ou restrito (somente se for utilizar o subfluxo **processo_novo**)
+    - **`assunto`**: você deverá saber, de antemão, uma palacra-chave que diferencia o assunto na lista de assuntos pré-cadastrada no formulário de criação de processos do SEI (somente se for utilizar o subfluxo **processo_novo**)
+    - **`hipotese_restricao`**: se processo for passível de restrição (não for público); você deverá saber, de antemão, a hipótese legal para isso (somente se for utilizar o subfluxo **processo_novo**)
 
 ## Pré-requisitos
 
