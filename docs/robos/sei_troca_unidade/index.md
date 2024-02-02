@@ -29,7 +29,7 @@ tags:
 ??? note "**Clique e veja o fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/robos/aposentadoria/assets/fluxo.md"
+            --8<-- "docs/robos/sei_troca_unidade/assets/fluxo.md"
     ```
 
 
