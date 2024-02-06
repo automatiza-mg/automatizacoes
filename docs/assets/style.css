@@ -1,3 +1,9 @@
+[data-md-color-scheme="youtube"] {
+  --md-primary-fg-color:        #102351;
+  --md-primary-fg-color--light: #0a65c1;
+  --md-primary-fg-color--dark:  #181919;
+}
+
 body {
   text-align: justify;
 }
@@ -45,7 +51,7 @@ body {
 
 .tx-container {
   padding-top: .0rem;
-  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%)
+  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsl(210, 90%, 40%) 99%,#fff 99%)
 }
 
 .tx-hero {
@@ -80,7 +86,7 @@ body {
 
 .tx-hero .md-button--primary {
   background-color: var(--md-primary-bg-color);
-  color: hsla(280deg, 37%, 48%, 1);
+  color: hsl(23, 100%, 53%);
   border-color: var(--md-primary-bg-color)
 }
 
@@ -324,7 +330,7 @@ body {
     margin-right: 10px;
     text-transform: uppercase;
     font-size: 12px;
-    background-color: #dd5138;
+    background-color: #ff6b0f;
     padding: 3px 10px;
     font-weight: 600;
     border-radius: 3px;

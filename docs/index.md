@@ -1,6 +1,6 @@
 ---
 template: index.html
-title: Automatiza-mg
+title: Automatiza-MG
 hide:
   - navigation
   - toc
