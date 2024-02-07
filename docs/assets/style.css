@@ -1,7 +1,7 @@
 [data-md-color-scheme="youtube"] {
-  --md-primary-fg-color:        #102351;
-  --md-primary-fg-color--light: #0a65c1;
-  --md-primary-fg-color--dark:  #181919;
+  --md-primary-fg-color:        #ae0f0a; /*e30613*/
+  --md-primary-fg-color--light: #e4adb5;
+  --md-primary-fg-color--dark:  #ae0f0a;
 }
 
 body {
@@ -51,7 +51,7 @@ body {
 
 .tx-container {
   padding-top: .0rem;
-  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsl(210, 90%, 40%) 99%,#fff 99%)
+  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsl(2, 89%, 36%) 99%,#fff 99%)
 }
 
 .tx-hero {
@@ -86,15 +86,15 @@ body {
 
 .tx-hero .md-button--primary {
   background-color: var(--md-primary-bg-color);
-  color: hsl(23, 100%, 53%);
+  color: 	hsl(60, 1%, 23%);
   border-color: var(--md-primary-bg-color)
 }
 
 .tx-hero .md-button:focus,
 .tx-hero .md-button:hover {
-  background-color: var(--md-accent-fg-color);
+  background-color: #e4adb5;
   color: var(--md-default-bg-color);
-  border-color: var(--md-accent-fg-color)
+  border-color: #e4adb5;
 }
 
 .feature-item h2 svg {
@@ -253,8 +253,8 @@ body {
 
 /* My configurations to home page */
 
-.light-blue {
-  color: #4051B5;
+.light-red {
+  color: #ae0f0a;
 }
 
 .text-larger {
@@ -282,10 +282,10 @@ body {
   border-radius: 50%;
 }
 
-.yellow-banner {
+.red-banner {
   border: none;
   padding: 40px;
-  background-color: #FBC500;
+  background-color: #ae0f0a;
   max-height: 10%;
   border-radius: 10px;
   color: white;
@@ -293,11 +293,11 @@ body {
   text-align: center;
 }
 
-.yellow-banner li p {
+.red-banner li p {
   margin: 0!Important;
 }
 
-.yellow-banner li {
+.red-banner li {
   border: none!Important;
   padding: 0!Important;
   pointer-events: none;
@@ -330,7 +330,7 @@ body {
     margin-right: 10px;
     text-transform: uppercase;
     font-size: 12px;
-    background-color: #ff6b0f;
+    background-color: #3c3c3b;
     padding: 3px 10px;
     font-weight: 600;
     border-radius: 3px;
@@ -349,7 +349,7 @@ body {
 }
 .side-menu ul li a span.dot {
     position: relative;
-    background-color: #dd5138;
+    background-color: #3c3c3b;
     border-radius: 2em;
     height: 10px;
     width: 10px;

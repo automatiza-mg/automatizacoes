@@ -17,7 +17,7 @@ hide:
 
 <div class="grid cards" markdown>
 
-- <p class="light-blue text-larger" markdown>:simple-powerautomate:{ .lg .middle } __Power Automate__</p>
+- <p class="text-larger" markdown>:simple-powerautomate:{ .lg .middle .light-red } __Power Automate__</p>
 
     ---
 
@@ -25,7 +25,7 @@ hide:
 
     [:octicons-arrow-right-24: Comece a utilizar](blog/posts/20231226_sobre/index.md)
 
-- <p class="light-blue text-larger" markdown>:material-tools:{ .lg .middle .light-blue } __Mão na roda__</p>
+- <p class="text-larger" markdown>:material-tools:{ .lg .middle .light-red } __Mão na roda__</p>
 
     ---
 
@@ -34,7 +34,7 @@ hide:
     [:octicons-arrow-right-24: E muito mais](robos/index.md)
 
 
-- <p class="light-blue text-larger" markdown>:material-head-sync:{ .lg .middle .light-blue } __Descomplicado__</p>
+- <p class="text-larger" markdown>:material-head-sync:{ .lg .middle .light-red } __Descomplicado__</p>
 
     ---
 
@@ -43,7 +43,7 @@ hide:
     [:octicons-arrow-right-24: Entenda](blog/posts/20231226_descomplicado/index.md)
 
 
-- <p class="light-blue text-larger" markdown>:material-run-fast:{ .lg .middle .light-blue } __Simplifica__</p>
+- <p class="text-larger" markdown>:material-run-fast:{ .lg .middle .light-red } __Simplifica__</p>
 
     ---
 
@@ -51,7 +51,7 @@ hide:
 
     [:octicons-arrow-right-24: Vamos lá](blog/posts/20231122_introducao_power_automate/index.md)
 
-- <p class="light-blue text-larger" markdown>:material-book-open-variant:{ .lg .middle .light-blue } __Transmite Conhecimento__</p>
+- <p class="text-larger" markdown>:material-book-open-variant:{ .lg .middle .light-red } __Transmite Conhecimento__</p>
 
     ---
 
@@ -59,7 +59,7 @@ hide:
 
     [:octicons-arrow-right-24: Saiba mais](blog/index.md)
 
-- <p class="light-blue text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-blue } __Inovação__</p>
+- <p class="text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-red } __Inovação__</p>
 
     ---
 
@@ -75,39 +75,39 @@ hide:
 
 ## O Projeto em Números { .h2-center }
 
-<div class="grid cards yellow-banner" markdown>
+<div class="grid cards red-banner" markdown>
 
-- <p class="p-black" markdown>18</p>
+- <p class="p-black" style="font-size: 1.3em" markdown>18</p>
 
     robôs
 
     criados
 
-- <p class="p-black" markdown>R$ 1,3</p>
+- <p class="p-black" style="font-size: 1.3em" markdown>R$ 1,3</p>
 
     milhões
 
     arrecadados
 
-- <p class="p-black" markdown>269</p>
+- <p class="p-black" style="font-size: 1.3em" markdown>269</p>
 
     horas
 
     economizadas
 
-- <p class="p-black" markdown>298</p>
+- <p class="p-black" style="font-size: 1.3em" markdown>298</p>
 
     servidores
 
     capacitados
 
-- <p class="p-black" markdown>22</p>
+- <p class="p-black" style="font-size: 1.3em" markdown>22</p>
 
     cursos
 
     oferecidos
 
-- <p class="p-black" markdown>2,4</p>
+- <p class="p-black" style="font-size: 1.3em" markdown>2,4</p>
 
     servidores
 
@@ -186,7 +186,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](assets/images/speaker-6.png){ .lg .middle .avatar }</p>
@@ -199,7 +199,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](assets/images/speaker-1.png){ .lg .middle .avatar }</p>
@@ -212,7 +212,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por automação, dados e inteligência artificial. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/52294411?v=4){ .lg .middle .avatar }</p>
@@ -225,7 +225,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     EPPGG da Diretoria Central de Desburocratização. Instrutor e monitor no curso de Power Automate. Também estuda gestão e análise de dados, representação do conhecimento, governo aberto e inteligência natural.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](assets/images/speaker-2.png){ .lg .middle .avatar }</p>
@@ -238,7 +238,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/49699290?v=4){ .lg .middle .avatar }</p>
@@ -251,7 +251,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/76135149?v=4){ .lg .middle .avatar }</p>
@@ -264,7 +264,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Trabalha no Lab.mg. Instrutora e monitora no curso de Power Automate. Especialista em Políticas Públicas e Gestão Governamental – EPPGG e pós-graduada em Governança de TI.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](https://avatars.githubusercontent.com/u/153224852?v=4){ .lg .middle .avatar }</p>
@@ -277,7 +277,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![minha_foto](assets/images/speaker-6.png){ .lg .middle .avatar }</p>
@@ -290,7 +290,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-blue .text-larger } [:material-email:](#){ .lg .middle .light-blue .text-larger }
+        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
 </div>

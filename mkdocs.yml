@@ -40,7 +40,7 @@ theme:
     - scheme: youtube
 
   font:
-    text: Roboto
+    text: Plus Jakarta Sans
     code: Roboto Mono
   favicon: assets/favicon.png
 
