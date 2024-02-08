@@ -18,7 +18,7 @@ tags:
 ??? abstract "**Fluxo do robô**"
 
     ```mermaid
-            --8<-- "docs/fluxos/fluxo1.md"
+            --8<-- "robos/login_terminal_prodemge/assets/fluxo.md"
     ```
 
 ## Robô em funcionamento
@@ -36,7 +36,7 @@ Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 ??? note "**Login terminal PRODEMGE**"
 
-        --8<-- "robos/login_terminal_prodemge/login_terminal_prodemge.txt"
+        --8<-- "robos/login_terminal_prodemge/assets/codigo_fonte.txt"
 
 **Importante**
 
