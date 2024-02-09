@@ -1,3 +1,9 @@
+[data-md-color-scheme="youtube"] {
+  --md-primary-fg-color:        #0f1b40;
+  --md-primary-fg-color--light: #0a65c1;
+  --md-primary-fg-color--dark:  #181919;
+}
+
 body {
   text-align: justify;
 }
@@ -45,7 +51,10 @@ body {
 
 .tx-container {
   padding-top: .0rem;
-  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%)
+  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsl(271, 39%, 43%) 99%,#fff 99%);
+  background-image: url('images/banner.png');
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 .tx-hero {
@@ -69,7 +78,7 @@ body {
   width:17rem;
   height:17rem;
   order:1;
-  padding-right: 2.5rem;
+  padding-right: 1.5rem;
 }
 
 .tx-hero .md-button {
@@ -80,7 +89,7 @@ body {
 
 .tx-hero .md-button--primary {
   background-color: var(--md-primary-bg-color);
-  color: hsla(280deg, 37%, 48%, 1);
+  color: hsl(271, 39%, 43%);
   border-color: var(--md-primary-bg-color)
 }
 
@@ -260,7 +269,7 @@ body {
 }
 
 .p-black {
-  color: black;
+  color: #0a65c1;
   font-weight: bold;
 }
 
@@ -276,22 +285,22 @@ body {
   border-radius: 50%;
 }
 
-.yellow-banner {
+.blue-banner {
   border: none;
   padding: 40px;
-  background-color: #FBC500;
+  background-color: #0f1b40;
   max-height: 10%;
   border-radius: 10px;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
 }
 
-.yellow-banner li p {
+.blue-banner li p {
   margin: 0!Important;
 }
 
-.yellow-banner li {
+.blue-banner li {
   border: none!Important;
   padding: 0!Important;
   pointer-events: none;
@@ -303,7 +312,7 @@ body {
 .side-menu {
 	position: fixed;
 	right: 2%;
-	top: 50%;
+	top: 30%;
     transform: translateY(-73px);
     z-index: 99;
 }
@@ -324,7 +333,7 @@ body {
     margin-right: 10px;
     text-transform: uppercase;
     font-size: 12px;
-    background-color: #dd5138;
+    background-color: #60a3be;
     padding: 3px 10px;
     font-weight: 600;
     border-radius: 3px;
@@ -343,7 +352,7 @@ body {
 }
 .side-menu ul li a span.dot {
     position: relative;
-    background-color: #dd5138;
+    background-color: #60a3be;
     border-radius: 2em;
     height: 10px;
     width: 10px;
