@@ -75,39 +75,51 @@ hide:
 
 ## O Projeto em Números { .h2-center }
 
-<div class="grid cards red-banner" markdown>
+<div class="grid cards blue-banner" markdown>
 
-- <p class="p-black" style="font-size: 1.3em" markdown>18</p>
+- :material-robot-angry-outline:
+
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>18</p>
 
     robôs
 
     criados
 
-- <p class="p-black" style="font-size: 1.3em" markdown>R$ 1,3</p>
+- :fontawesome-solid-money-bill-1-wave:
+
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>R$ 1,3</p>
 
     milhões
 
     arrecadados
 
-- <p class="p-black" style="font-size: 1.3em" markdown>269</p>
+- :material-clock-time-five-outline:
+
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>269</p>
 
     horas
 
     economizadas
 
-- <p class="p-black" style="font-size: 1.3em" markdown>298</p>
+- :material-book:
+
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>298</p>
 
     servidores
 
     capacitados
 
-- <p class="p-black" style="font-size: 1.3em" markdown>22</p>
+- :material-earbuds-outline:
+
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>22</p>
 
     cursos
 
     oferecidos
 
-- <p class="p-black" style="font-size: 1.3em" markdown>2,4</p>
+- :fontawesome-solid-people-arrows:
+
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>2,4</p>
 
     servidores
 

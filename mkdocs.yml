@@ -18,7 +18,7 @@ theme:
   name: material
   language: pt
   custom_dir: docs/overrides
-  logo: assets/images/automatiza.png
+  logo: assets/images/logo_pequena.png
   features:
     - content.code.annotate
     - content.code.copy
