@@ -1,39 +1,33 @@
-site_name: Automatiza-mg
+site_name: Automatiza-MG
 
 # Repository
 repo_name: automatiza-mg/automatizacoes
 repo_url: https://github.com/automatiza-mg/automatizacoes
 edit_uri: edit/main/docs/
 
-# --8<-- [start:nav]
 nav:
   - Início: index.md
   - Biblioteca de robôs:
     - robos/index.md
   - Saiba mais:
     - blog/index.md
-# --8<-- [end:nav]
+
 
 # Configuration
 theme:
   name: material
   language: pt
   custom_dir: docs/overrides
+  logo: assets/images/logo_pequena.png
   features:
-    # - announce.dismiss
     - content.code.annotate
     - content.code.copy
     - navigation.tabs
-    #- navigation.tabs.sticky
     - navigation.footer
     - navigation.indexes
     - content.action.edit
     - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    # - navigation.instant
-    # - navigation.prune
     - navigation.sections
     - navigation.top
     - navigation.tracking
@@ -41,26 +35,14 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    - scheme: youtube
+
   font:
-    text: Roboto
+    text: Plus Jakarta Sans
     code: Roboto Mono
   favicon: assets/favicon.png
-  icon:
-    logo: automatiza/automatiza
 
 markdown_extensions:
   - abbr
@@ -92,9 +74,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons/linktree/linktree.svg
   - pymdownx.snippets:
       url_download: true
       auto_append:
@@ -155,29 +134,4 @@ plugins:
       video_muted: True
       video_controls: True
       video_autoplay: False
-      # css_style:
-      #   width: "50%"
-  - charts:
-      vega_width: container
-      vega_theme: default
-      vega_theme_dark: dark
-      vega_renderer: svg
-      use_data_path: True
-      data_path: ""
   - table-reader
-
-## add https://timvink.github.io/mkdocs-charts-plugin/
-
-#plugins:
-#  - search
-#  - charts
-#extra_javascript:
-#  - https://cdn.jsdelivr.net/npm/vega@5
-#  - https://cdn.jsdelivr.net/npm/vega-lite@5
-#  - https://cdn.jsdelivr.net/npm/vega-embed@6
-#markdown_extensions:
-#  - pymdownx.superfences:
-#      custom_fences:
-#        - name: vegalite
-#          class: vegalite
-#          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
