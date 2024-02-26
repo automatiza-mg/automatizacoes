@@ -13,7 +13,7 @@ hide:
   }
 </style>
 
-## Por que isso é super legal? { .h2-center }
+## Conheça mais sobre o projeto { .h2-center }
 
 <div class="grid cards" markdown>
 
@@ -25,7 +25,7 @@ hide:
 
     [:octicons-arrow-right-24: Comece a utilizar](blog/posts/20231226_sobre/index.md)
 
-- <p class="text-larger" markdown>:material-tools:{ .lg .middle .light-red } __Mão na roda__</p>
+- <p class="text-larger" markdown>:material-tools:{ .lg .middle .light-red } __Biblioteca de robôs__</p>
 
     ---
 
@@ -79,7 +79,7 @@ hide:
 
 - :material-robot-angry-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>18</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>25</p>
 
     robôs
 
@@ -95,7 +95,7 @@ hide:
 
 - :material-clock-time-five-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>269</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>307</p>
 
     horas
 
@@ -119,7 +119,7 @@ hide:
 
 - :fontawesome-solid-people-arrows:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>2,4</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>3,7</p>
 
     servidores
 
