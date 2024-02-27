@@ -36,7 +36,7 @@ Não se esqueça de personalizar seu novo robô, conforme orientado abaixo.
 
 ??? note "**Login terminal PRODEMGE**"
 
-        --8<-- "robos/login_terminal_prodemge/assets/codigo_fonte.txt"
+        --8<-- "docs/robos/login_terminal_prodemge/assets/codigo_fonte.txt"
 
 **Importante**
 
