@@ -3,48 +3,46 @@ comments: true
 hide:
   - navigation
 tags:
-  - Treinamento SEPLAG
-  - Compras
-  - CAGEC
+  - Compras Públicas
 ---
 
 # Consulta Situação Cadastral de Fornecedores - CAGEC
 
 <video width="640"  controls>
-    <source src="assets/video.mp4" type="video/mp4">
+    <source src="#" type="video/mp4">
 </video>
 
 ## Informações gerais
 
-| **Responsável pelo desenvolvimento do protótipo**       | Isabela Romancini|
+| **Desenvolvedor**| Automatiza-mg  |
 | ----------- | ------------------------------------ |
-| **E-mail**  | isabela.romancini@planejamento.mg.gov.br  |
+| **E-mail**       | simplificacao@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
-| **Data do treinamento**       | 28/09/2023 |
-| **Local**    | Sala SEE, Torre Minas, 11º andar |
-| **Turma treinada**       | órgãos diversos  |
-| **Arquivo auxiliar**: | [consulta-situacao-cadastral-fornecedores.xlsx](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagef/assets/consulta_situacao_cadastral_fornecedores.xlsx) |
+| **Versão Power Automate**    | 2.39.00239.23332 |
 
-## Funções desenvolvidas pelo protótipo:
+- [x] Robô dedicado a facilitar a busca da [situação cadastral de fornecedores](https://www.cagef.mg.gov.br/fornecedor-web/br/gov/prodemge/seplag/fornecedor/publico/index.zul).
+- [x] Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.
+- [x] Consultar a situação cadastral desses fornecedores no site do CAGEC.
+- [x] Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.
+- [x] Aguarda o carregamento das páginas para garantir que tudo esteja certo.
+- [x] Economiza tempo e evita erros.
 
-- Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.
-- Consultar a situação cadastral desses fornecedores no site do CAGEC.
-- Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.
-- Criar pasta e salvar imagens e pdfs do site que comprovem a consulta.
+??? note "**Clique para ver o fluxo do robô**"
 
+--8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
 
-??? note "**Clique e veja o fluxo do robô**"
+<div class="grid" markdown>
 
-    ```mermaid
-            --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/fluxo.md"
-    ```
+[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/consulta_situacao_cadastral_cagef.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+{ .card }
 
---8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
+[:material-application-variable: __Crie a variável de entrada__] `lista_fornecedores`[^2]
+com o caminho desta planilha Excel modelo.
+{ .card .download-button path="assets/fornecedores.csv" fileName="fornecedores.xls" }
 
-??? note "**Clique para copiar e colar**"
-
-        --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/codigo_fonte.txt"
-
---8<-- "docs/partials/modelo_robo/importante.md"
+</div>
 
 --8<-- "docs/partials/modelo_robo/ajuda.md"
+
+[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^2]: Qualquer modificação além da inclusão de mais CNPJs na planilha pode exigir modificações no código original do robô.
