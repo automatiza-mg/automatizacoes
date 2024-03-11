@@ -3,7 +3,6 @@ comments: true
 hide:
   - navigation
 tags:
-  - Modular
   - SEI
 ---
 
@@ -48,35 +47,27 @@ tags:
     H[Erro: Órgão indisponível] --> A
     ```
 
---8<-- "docs/partials/modelo_robo/montando_seu_proprio_robo.md"
-
-??? copy "**Clique para copiar e colar**"
-
-    === ":material-file-code: main"
-
-        ```yaml
-        --8<-- "docs/robos/login_sei/assets/main.txt"
-        ```
-
-- Crie **variável de entrada** para:
-    - **`login_sei`**: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
-    - **`senha_sei`**: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
-    - **`orgao_sei`**: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
-
-## Pré-requisitos
+--8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/login_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-brands-chrome: __Chrome__ como navegador
+:material-application-variable: __Crie a variável de entrada__ `login_sei`[^2].
 { .card }
 
-:simple-gitextensions:  __Extensão Chrome__ para [Power Automate](https://chromewebstore.google.com/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk)
+:material-application-variable: __Crie a variável de entrada__ `senha_sei`[^3].
+{ .card }
+
+:material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^4].
 { .card }
 
 </div>
 
-
 --8<-- "docs/partials/modelo_robo/ajuda.md"
+
+[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^2]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
+[^3]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
+[^4]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
