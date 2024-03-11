@@ -719,15 +719,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#montando-o-seu-robo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Montando o seu robô
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -852,13 +843,6 @@
             22[Fechar excel]--&gt;23
             23((Fim))</div>
 </details>
-<h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
-<p>Este é um <strong>protótipo de robô</strong>.
-Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.</p>
-<p>Para dar vida a ele:</p>
-<ul>
-<li>Copie o código da caixa <strong>copiar e colar</strong> abaixo e cole em um fluxo Power Automate Desktop.</li>
-</ul>
 <details class="note">
 <summary><strong>Clique para copiar e colar</strong></summary>
 <div class="language-text highlight"><pre><span></span><code>        Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: $'''C:\\Users\\ct10\\Desktop\\Robo.xlsx''' Visible: True ReadOnly: False Instance=&gt; Progressao
@@ -902,17 +886,6 @@ Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.</p>
         Excel.CloseExcel.CloseAndSave Instance: Progressao
 </code></pre></div>
 </details>
-<div class="admonition note">
-<p class="admonition-title"><strong>Importante:</strong></p>
-<p>Realize as seguintes adaptações para que seu robô comece a te ajudar:</p>
-<ul>
-<li>Revise/crie <abbr title="Definir instância">instâncias</abbr> (arquivos, terminais PRODEMGE, páginas da web, etc).</li>
-<li>Revise/crie variávei(s) (logins, senhas, nomes das colunas que serão criadas/preenchidas, etc).</li>
-<li>Revise caminho(s) de arquivo(s) (<code>PATH</code>).</li>
-<li>Confira se as URLs (caminho das páginas dos sites) acessados permanecem as mesmas.</li>
-<li>Certifique-se de haja ações para todas as operações desejadas que o robô execute</li>
-</ul>
-</div>
 <div class="admonition question">
 <p class="admonition-title">Caso precise de ajuda</p>
 <p>Algum erro está ocorrendo em uma das fases de criação de seu robô?

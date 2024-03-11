@@ -711,15 +711,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#montando-o-seu-robo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Montando o seu robô
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
       Pré-requisitos
@@ -818,13 +809,6 @@
 
 </div>
 </details>
-<h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
-<p>Este é um <strong>protótipo de robô</strong>.
-Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.</p>
-<p>Para dar vida a ele:</p>
-<ul>
-<li>Copie o código da caixa <strong>copiar e colar</strong> abaixo e cole em um fluxo Power Automate Desktop.</li>
-</ul>
 <p>Este robô possui formato modular.
 O que significa que ele se beneficiou de robô(s) já desenvolvido(s) para simplificar o trabalho.
 Sua construção é dividida entre 3 subfluxos:</p>
@@ -853,58 +837,7 @@ Sua construção é dividida entre 3 subfluxos:</p>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="l l-Scalar l-Scalar-Plain">/# Fluxo para login no SEI</span><span class="p p-Indicator">:</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">Necessário criar variáveis de entrada</span><span class="p">:</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">login_sei</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nt">orgao_sei</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">orgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nt">senha_sei</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">senha para login no SEI. Recomendamos incluir variável como confidencial.#/</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Análise se CPF cadastrado na variável de entrada "login_sei" possui 11 caracteres numéricos.</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nt">Text.ParseText.RegexParseForFirstOccurrence Text: login_sei TextToFind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''[0-9]{11}''' StartingPosition</span><span class="nt">: 0 IgnoreCase</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">False Match=&gt; login_sei_erro</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="l l-Scalar l-Scalar-Plain">IF login_sei &lt;&gt; login_sei_erro THEN</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">SET login_sei_erro_mensagem TO $'''CPF cadastrado na variável \"login_sei\" deverá ter exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).'''</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">EXIT Code</span><span class="nt">: 0 ErrorMessage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">login_sei_erro_mensagem</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="l l-Scalar l-Scalar-Plain">END</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1"># Inicia o Chrome na URL correta, que direciona o usuário para página de login, sem se preocupar se ele já estava logado . Por isso a URL básica do sei (https://www.sei.mg.gov.br) não foi utilizada, para prevenir erros de login.</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nt">WebAutomation.LaunchChrome.LaunchChrome Url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''https://www.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=GOVMG&amp;sigla_sistema=SEI&amp;infra_url=L3NlaS8=''' WindowState</span><span class="nt">: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60 BrowserInstance=&gt; sei</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nt">WebAutomation.ExecuteJavascript BrowserInstance: sei Javascript</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''function ExecuteScript()</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p p-Indicator">{</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="nv">var x = document.getElementsByTagName(\'option\');</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="nv">for (var i = 0; i &lt; x.length; i++)</span><span class="w"> </span><span class="p p-Indicator">{</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="nv">if (x</span><span class="p p-Indicator">[</span><span class="nv">i</span><span class="p p-Indicator">]</span><span class="nv">.text == \'%orgao_sei%\')</span><span class="w"> </span><span class="p p-Indicator">{</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">     </span><span class="nv">return true</span><span class="w">   </span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="p p-Indicator">}</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="p p-Indicator">}</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="nv">return false</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p p-Indicator">}</span><span class="s">'</span><span class="se">''</span><span class="nv"> </span><span class="s">Result=&gt;</span><span class="nv"> </span><span class="s">orgao_erro</span>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="s">IF</span><span class="nv"> </span><span class="s">orgao_erro</span><span class="nv"> </span><span class="s">=</span><span class="nv"> </span><span class="s">$</span><span class="se">''</span><span class="s">'</span><span class="l l-Scalar l-Scalar-Plain">false''' THEN</span>
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">SET orgao_erro_mensagem TO $'''Órgão cadastrado na variável \"orgao_sei\" não disponível na lista de órgãos da página de login SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.'''</span>
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">EXIT Code</span><span class="nt">: 0 ErrorMessage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">orgao_erro_mensagem</span>
-</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="l l-Scalar l-Scalar-Plain">END</span>
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="c1"># Aguarda página inicial de login SEI ser carregada. Somente quando textos "Sistema Eletrônico de informações" e "Usuário Bloqueado" aparecerem é que próximas ações serão realizadas.</span>
-</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="nt">WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''Sistema Eletrônico de Informações''')</span>
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="nt">WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''Usuário Bloqueado?''')</span>
-</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="c1"># Executa script Javascript para selecionar órgão de login. Órgão é escolhido conforme variável de entrada "orgao_sei" criado no início do fluxo.</span>
-</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="nt">WebAutomation.ExecuteJavascript BrowserInstance: sei Javascript</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''function ExecuteScript()</span>
-</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="p p-Indicator">{</span>
-</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="nv">var x = document.getElementsByTagName(\'option\');</span>
-</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="nv">for (var i = 0; i &lt; x.length; i++)</span><span class="w"> </span><span class="p p-Indicator">{</span>
-</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">    </span><span class="nv">if (x</span><span class="p p-Indicator">[</span><span class="nv">i</span><span class="p p-Indicator">]</span><span class="nv">.text == \'%orgao_sei%\')</span><span class="w"> </span><span class="p p-Indicator">{</span>
-</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">     </span><span class="nv">x</span><span class="p p-Indicator">[</span><span class="nv">i</span><span class="p p-Indicator">]</span><span class="nv">.selected = true</span><span class="w">   </span>
-</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="w">    </span><span class="p p-Indicator">}</span>
-</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="p p-Indicator">}</span>
-</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="p p-Indicator">}</span><span class="s">'</span><span class="se">''</span>
-</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="s">#</span><span class="nv"> </span><span class="s">Envia</span><span class="nv"> </span><span class="s">teclas</span><span class="nv"> </span><span class="s">para</span><span class="nv"> </span><span class="s">inclusão</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">login.</span><span class="nv"> </span><span class="s">Informações</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">login</span><span class="nv"> </span><span class="s">são</span><span class="nv"> </span><span class="s">lidas</span><span class="nv"> </span><span class="s">conforme</span><span class="nv"> </span><span class="s">variável</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">entrada</span><span class="nv"> </span><span class="s">"login_sei"</span><span class="nv"> </span><span class="s">criado</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">início</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">fluxo.</span>
-</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="s">MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle</span><span class="nv"> </span><span class="s">WindowInstance:</span><span class="nv"> </span><span class="s">sei</span><span class="nv"> </span><span class="s">TextToSend:</span><span class="nv"> </span><span class="s">$</span><span class="se">''</span><span class="s">'</span><span class="p p-Indicator">{</span><span class="nv">End</span><span class="p p-Indicator">}{</span><span class="nv">Shift</span><span class="p p-Indicator">}</span><span class="l l-Scalar l-Scalar-Plain">({Home}){Delete}%login_sei%{Tab}''' DelayBetweenKeystrokes</span><span class="nt">: 150 SendTextAsHardwareKeys</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">False</span>
-</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="c1"># Envia teclas para inclusão de senha. Informações de senha são lidas conforme variável de entrada "senha_sei" criado no início do fluxo.</span>
-</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="nt">MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''{End}{Shift}({Home}){Delete}%senha_sei%{Tab}{Tab}{Return}''' DelayBetweenKeystrokes</span><span class="nt">: 150 SendTextAsHardwareKeys</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">False</span>
-</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="c1"># Aguarda página inicial de SEI ser carregada. Somente quando textos "Controle de Processos" aparecer é que próximas ações serão realizadas.</span>
-</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="nt">WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: sei Text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''Controle de Processos''')</span>
-</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="c1"># Envia tecla "Esc" para garantir que qualquer mensagem aberta no início do SEI seja fechada.</span>
-</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="nt">MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: sei TextToSend</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$'''{Escape}''' DelayBetweenKeystrokes</span><span class="nt">: 150 SendTextAsHardwareKeys</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">False</span>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">

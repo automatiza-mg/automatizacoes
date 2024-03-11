@@ -711,9 +711,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#funcoes-desenvolvidas-pelo-prototipo" class="md-nav__link">
+  <a href="#pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
-      Funções desenvolvidas pelo protótipo:
+      Pré-requisitos
     </span>
   </a>
   
@@ -749,19 +749,7 @@
     
     
     
-      <a href="../#treinamento-seplag" class="md-tag">Treinamento SEPLAG</a>
-    
-  
-    
-    
-    
-      <a href="../#compras" class="md-tag">Compras</a>
-    
-  
-    
-    
-    
-      <a href="../#cagec" class="md-tag">CAGEC</a>
+      <a href="../#compras-publicas" class="md-tag">Compras Públicas</a>
     
   
 </nav>
@@ -778,132 +766,57 @@
 
 <div><h1 id="consulta-situacao-cadastral-de-fornecedores-cagec">Consulta Situação Cadastral de Fornecedores - CAGEC<a class="headerlink" href="#consulta-situacao-cadastral-de-fornecedores-cagec" title="Permanent link">⚓︎</a></h1>
 <video width="640" controls>
-    <source src="assets/video.mp4" type="video/mp4">
+    <source src="#" type="video/mp4">
 </source></video>
 
 <h2 id="informacoes-gerais">Informações gerais<a class="headerlink" href="#informacoes-gerais" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Responsável pelo desenvolvimento do protótipo</strong></th>
-<th>Isabela Romancini</th>
+<th><strong>Desenvolvedor</strong></th>
+<th>Automatiza-mg</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>E-mail</strong></td>
-<td>isabela.romancini@planejamento.mg.gov.br</td>
+<td>simplificacao@planejamento.mg.gov.br</td>
 </tr>
 <tr>
 <td><strong>Ferramenta</strong></td>
 <td>Power Automate Desktop</td>
 </tr>
 <tr>
-<td><strong>Data do treinamento</strong></td>
-<td>28/09/2023</td>
-</tr>
-<tr>
-<td><strong>Local</strong></td>
-<td>Sala SEE, Torre Minas, 11º andar</td>
-</tr>
-<tr>
-<td><strong>Turma treinada</strong></td>
-<td>órgãos diversos</td>
-</tr>
-<tr>
-<td><strong>Arquivo auxiliar</strong>:</td>
-<td><a href="https://github.com/automatiza-mg/automatizacoes/blob/main/docs/robos/consulta_situacao_cadastral_cagef/assets/consulta_situacao_cadastral_fornecedores.xlsx">consulta-situacao-cadastral-fornecedores.xlsx</a></td>
+<td><strong>Versão Power Automate</strong></td>
+<td>2.39.00239.23332</td>
 </tr>
 </tbody>
 </table>
-<h2 id="funcoes-desenvolvidas-pelo-prototipo">Funções desenvolvidas pelo protótipo:<a class="headerlink" href="#funcoes-desenvolvidas-pelo-prototipo" title="Permanent link">⚓︎</a></h2>
-<ul>
-<li>Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.</li>
-<li>Consultar a situação cadastral desses fornecedores no site do CAGEC.</li>
-<li>Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.</li>
-<li>Criar pasta e salvar imagens e pdfs do site que comprovem a consulta.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Robô dedicado a facilitar a busca da <a href="https://www.cagef.mg.gov.br/fornecedor-web/br/gov/prodemge/seplag/fornecedor/publico/index.zul">situação cadastral de fornecedores</a>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Consultar a situação cadastral desses fornecedores no site do CAGEC.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Aguarda o carregamento das páginas para garantir que tudo esteja certo.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Economiza tempo e evita erros.</li>
 </ul>
 <details class="note">
-<summary><strong>Clique e veja o fluxo do robô</strong></summary>
-<div class="mermaid">        graph TD;
-            1((Início))--&gt;2;
-            2[Abrir planilha do excel]--&gt;3;
-            3[Ver listagem de CNPJ da planilha do excel ]--&gt;4;
-            4[Salvar CNPJ em variável `CNPJ`]--&gt;5;
-            5[Abrir navegador]--&gt;6;
-            6[Acessar site do CAGEC/CAFIMP]--&gt;7;
-            7[Navegar no Menu de consulta ao CAFIMP]--&gt;8;
-            8[Inserir variável `CNPJ` no menu de consulta ao CAFIMP]--&gt;9;
-            9[Capturar texto-resultado à consulta sobre `CNPJ`]--&gt;10;
-            10[Verificar qual texto'INSCRITO'ou 'NÃO INSCRITO' foi a resposta]--&gt;11;
-            11[Gravar texto na planilha]--&gt;12;
-            12[Criar pasta]--&gt;13;  
-            13[Salvar captura tela da consulta `CNPJ`na pasta criada]--&gt;14;
-            14[Fechar navegador]--&gt;15;
-            15[Aumentar variável]--&gt;16;
-            16[Ler coluna da planilha e armazenar em `CNPJ`]--&gt;17;
-            17[Fechar excel]--&gt;18;
-            18((Fim))</div>
+<summary><strong>Clique para ver o fluxo do robô</strong></summary>
 </details>
+<h2 id="pre-requisitos">Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Permanent link">⚓︎</a></h2>
+<div class="grid">
+<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m20.079 7.235 3.666 4.097c.34.38.34.956 0 1.336l-7.63 8.528c-.19.213-.462.334-.748.334H7.289l12.79-14.295ZM6.789 21.53H1.005c-.867 0-1.326-1.025-.748-1.671L15.748 2.545c.139.057.265.145.367.259l3.631 4.058a.478.478 0 0 0-.039.039L6.916 21.197a.497.497 0 0 0-.127.333Zm8.356-19.06-8.192 9.155L.257 4.141c-.578-.646-.119-1.671.748-1.671h14.14Z"></path></svg></span> <strong>Power Automate</strong> na <a href="#informacoes-gerais">versão correta</a></p>
+<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 256c0-46.6 12.47-90.4 34.27-128.9L144.1 318.3C166 357.5 207.9 384 256 384c14.3 0 27.1-2.3 40.8-6.6l-76.3 132.2C95.9 492.3 0 385.3 0 256zm365.1 65.6c12.3-19.2 18.9-42.5 18.9-65.6 0-38.2-16.8-72.5-43.3-96h152.7c12 29.6 18.6 62.1 18.6 96 0 141.4-114.6 255.1-256 256l109.1-190.4zM477.8 128H256c-62.9 0-113.7 44.1-125.5 102.7L54.19 98.47C101 38.53 174 0 256 0c94.8 0 177.5 51.48 221.8 128zM168 256c0-48.6 39.4-88 88-88s88 39.4 88 88-39.4 88-88 88-88-39.4-88-88z"></path></svg></span> <strong>Chrome</strong> como navegador</p>
+<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m17.504 0-4.631 4.875 2.533.004c0 2.604-1.327 4.58-3.32 6.16l-6.393 5.065c-2.559 2.027-3.859 4.392-3.859 7.886.01-.009 4.283.026 4.283 0 0-1.91.73-3.581 2.223-4.793l6.723-5.455c2.57-2.085 4.514-4.86 4.517-8.867h2.586zM1.834 4.873c0 3.78 1.833 6.398 4.148 8.518l1.11.88 3.222-2.554-1.078-.858C7.43 9.22 6.117 7.383 6.117 4.873c-1.423-.004-2.856 0-4.283 0zm12.592 10.115-3.178 2.58.992.787c1.82 1.593 3.166 3.33 3.166 5.635h4.166c-.009-3.633-1.788-6.1-4.066-8.144-.356-.28-.722-.572-1.08-.858Z"></path></svg></span>  <strong>Extensão Chrome</strong> para <a href="https://chromewebstore.google.com/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk">Power Automate</a> ativada.</p>
+</div>
 <h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
 <p>Este é um <strong>protótipo de robô</strong>.
 Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.</p>
 <p>Para dar vida a ele:</p>
-<ul>
-<li>Copie o código da caixa <strong>copiar e colar</strong> abaixo e cole em um fluxo Power Automate Desktop.</li>
-</ul>
-<details class="note">
-<summary><strong>Clique para copiar e colar</strong></summary>
-<div class="language-text highlight"><pre><span></span><code>SET linha TO 2
-Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess Path: Caminho_excel Visible: True ReadOnly: False Instance=&gt; ExcelInstance
-Excel.ReadFromExcel.ReadCell Instance: ExcelInstance StartColumn: $'''A''' StartRow: linha ReadAsText: False CellValue=&gt; CNPJ
-LOOP WHILE (CNPJ) &gt; (0)
-    WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.cagef.mg.gov.br/fornecedor-web/br/gov/prodemge/seplag/fornecedor/publico/index.zul''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=&gt; Browser
-    MouseAndKeyboard.MoveMouseToImage.ClickImage Images: [imgrepo['Menu']] SearchForImageOn: MouseAndKeyboard.SearchTarget.EntireScreen MousePositionOnImage: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 Tolerance: 10 MovementStyle: MouseAndKeyboard.MovementStyle.Instant Occurence: 1 Timeout: 5 ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClick: 0 SearchAlgorithm: MouseAndKeyboard.ImageFinderAlgorithm.Legacy X=&gt; X Y=&gt; Y
-    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Return}{Tab}{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
-    WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: Browser Text: $'''CNPJ do Fornecedor''')
-    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}%CNPJ%''' DelayBetweenKeystrokes: 50 SendTextAsHardwareKeys: False
-    MouseAndKeyboard.MoveMouseToImage.ClickImage Images: [imgrepo['Pesquisar']] SearchForImageOn: MouseAndKeyboard.SearchTarget.EntireScreen MousePositionOnImage: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 Tolerance: 10 MovementStyle: MouseAndKeyboard.MovementStyle.Instant Occurence: 1 Timeout: 5 ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClick: 0 SearchAlgorithm: MouseAndKeyboard.ImageFinderAlgorithm.Legacy X=&gt; X2 Y=&gt; Y2
-    WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: Browser ExtractionParameters: {[$'''html &gt; body &gt; div:eq(0) &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div:eq(1) &gt; div:eq(1) &gt; div &gt; div &gt; div &gt; div &gt; div:eq(1) &gt; div:eq(0) &gt; div:eq(1) &gt; div &gt; div:eq(3) &gt; div &gt; span''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=&gt; textocafimp
-    Clipboard.SetText Text: textocafimp
-    Clipboard.GetText Text=&gt; textoparaexcel
-    IF Contains(textoparaexcel, $'''NÃO SE ENCONTRA INSCRITO''', True) THEN
-        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: $'''Não se encontra inscrito''' Column: $'''B''' Row: linha
-    ELSE
-        Excel.WriteToExcel.WriteCell Instance: ExcelInstance Value: $'''Inscrito''' Column: $'''B''' Row: linha
-    END
-    # Crie uma pasta no seu computador chamada "Automatiza" e inclua seu caminho na variável "Caminho_pasta_automatiza"
-    Folder.Create FolderPath: Caminho_pasta_automatiza FolderName: CNPJ Folder=&gt; pastacnpj
-    WebAutomation.TakeScreenshot.TakeScreenshotSaveToFile BrowserInstance: Browser File: $'''%Caminho_pasta_automatiza%%CNPJ%\\CAFIMP.png''' FileFormat: WebAutomation.FileFormat.Png
-    WebAutomation.CloseWebBrowser BrowserInstance: Browser
-    Variables.IncreaseVariable Value: linha IncrementValue: 1
-    Excel.ReadFromExcel.ReadCell Instance: ExcelInstance StartColumn: $'''A''' StartRow: linha ReadAsText: False CellValue=&gt; CNPJ
-END
-Excel.CloseExcel.CloseAndSave Instance: ExcelInstance
-
-# [ControlRepository][PowerAutomateDesktop]
-
-{
-  "ControlRepositorySymbols": [],
-  "ImageRepositorySymbol": {
-    "Repository": "{\r\n  \"Folders\": [],\r\n  \"Images\": [\r\n    {\r\n      \"Id\": \"181b3ba3-c920-453b-b795-ee00d82582f4\",\r\n      \"Name\": \"Menu\",\r\n      \"Screenshot\": \"iVBORw0KGgoAAAANSUhEUgAAACIAAAAjCAYAAADxG9hnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVFhH7ZZBCsIwEEXTq9mlnsBSD9u1myxFaK8QWnBVGPngQj8SNyFO4Afe9s9LMgMTrqEzD0iEkQgjEaYdkfvxZMt4KQbyvtXJisznwfaUrORBHnK5VlYEN9jX9RVR5iAPuVyrjRcBLnqkJhJhsiK3Q2/bNNkjxmIgD7lcKyuC5nIxvm5E3HxNTSTC/BTRGvAObuBifLUG/BOJMBJhJPJJZ0/Z7WQZ3FRMtAAAAABJRU5ErkJggg==\",\r\n      \"ScreenshotPath\": \"imageRepo-screenshots\\\\b0b8b915-d9ce-438e-99af-cf864c51b432.png\"\r\n    },\r\n    {\r\n      \"Id\": \"0ec2c19e-39ae-4426-95d6-3d6e81a81781\",\r\n      \"Name\": \"Pesquisar\",\r\n      \"Screenshot\": \"iVBORw0KGgoAAAANSUhEUgAAAHQAAAAxCAYAAAALD434AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVTSURBVHhe7ZzLThsxFIazZdEHaqWqb1XxNhWrqot21Ra1GxAgiriKgEi4hvslEIRYduPm9/iEY/vMZAiBceix9CEymbHH5/PxOGGG2u3trQnpdDpKoki+OJ5QqQLi5uZGeWEkDwT3xrFCpQOA1AhxfX2tDBkpzoTkB0RCwx3CiqSG2+228kxI8eY+Ql8gVyg/kBq4urryuLy8VJ6ZMObkgvvh3kAkVBKJyi8uLsz5+bk5OzvzOD09VYZMGGPEHfEnyaFYLpSwQrlMEonK0MjJyYk5Pj42R0dH5vDw0KPVailDIowt4o24I/7wAB9cbJ7UGpdJGYnR0ZicNL8/fDDf3rwxX8fGlIpA/OEBPuCFMjaUSr9boZSZPZk/f6rIxIAPeCGpPFNFobCOnZHqv96/FytVqgVe4AeeeJbylXCNshNzNObsg4MDzc5EgRf4gSf4oiyNhMI2Lry4GO/s7IiVKWkAP/AEX5Sl/DNrDRsxJ2M1BfvNZlOsSEkD+IEn+OILJE8oTbf7+/tma2tLrEhJA/iBJ5p2RaG0GNrd3TWbm5tiRUoawA88hYsjokYfVej6qULThoTCVymhGxsbYkVKGsAPLYzgDf5U6AgjCcXHF8IK5R9Z6vW6WJGSBvBTSii+IN7e3lahiQM/8ARf8Pa8Qj9Omb8mKHdTpt7bZ9y079x2XpqfCuq4M+2PdDzxydy7d6n8nR4X97mf4NscEw3vvFrN+Hhs8wo/xx7uPMT35L6K5/MIKhDaMC22zQamF7ysk7mdQqBDgd1t3v52n7AOF1hv8Awq1InwJHW3NXndDlvPXdTnDKGvbrDm9r8ElQvNAkuSioVa+eJodxQGJBP4IGZAobYNaVaIwXH3E3l9krf7g+fxJCKUOlYstD7dfdPLsqe8P2iGFhzngf2yvsrn9VqFeiO+WCgF04hTWIlgeO0PKtQJ6paituw+NJuIWS30Fe3m9K0sFQvNOvUwjbrXQZFGsS3eqM+O7S+UAju4UIutKytxHaEs6dyEvhZdTkpSgVC/SJ0UgxxBAfGzu7/Qp2eoh82qbuEyooHrMlYYgL32bT3lrs1FVJyhIY8RmmGz1QVTvlY94L9f0NZjhALbrwcZNCXHhQuL2+93/mUYeaE2CN61Ku/4LCO5GD4YOF6dXfoKtXX7M4V0Dn570n4Fs0ZJRkpoqxlOSXEAKDukQEXy3HTp7StMfZ5Q9CGox8sse3xOH7335L5m518Uo2KSFBoVFyySxYso32VqVIRsjPcNB02YoW5w8BJMz2I7Fj4A8wZvzuArycsKrRQm4onXqZT5j4T+H6jQV4YKfWWUFqp/4B4N4KfvH7j1FpTRodQtKCp0dMgTqjeJjSi4jZMLjW7jlG601oeV0gReim60jh6F2Nvbs7fa/3j3TqxQqRZ4KfUoBKZd/rDS4pcvmqWJAR/w0vdhJbzARv7RBWn95/Nn8/3tW/NVxVZLN/7wAB/8+glfocyeUKyS+BNoGAVYHK2urprFxUWzsLBg5ufnzdzcnGV2dtZjZmZGGZAwlhRjxBtxR/zhAT7ghU+3tLqFSHqSu4YflKW02sW1FAdjRKyvr5u1tTWzsrJilpeXzdLSkm1EeR4QX8QZ8UbcEX94gA946ftIPn7wLKWpFyMB6d1oNOyFGJVilBD4xkIZLjy+iDfiDpHwgOsmyeTZSSI9oYCyFDvjIKQ1xKIijAwslVExge8TleHBYwsQbyQV4g8P8AEvfCFE7rz/gsJfUKaSWGQrVlOoDKMDFXPwBbEyHMLYIt6IO+IPD/ABL2Fmwh9H/zVcQoQxRtwpI0lkkcxOp2P+ASKfBHyoAjAmAAAAAElFTkSuQmCC\",\r\n      \"ScreenshotPath\": \"imageRepo-screenshots\\\\19635e12-c8a5-438d-8b94-937838096446.png\"\r\n    }\r\n  ],\r\n  \"Version\": 1\r\n}",
-    "ImportMetadata": {},
-    "Name": "imgrepo"
-  },
-  "ConnectionReferences": []
-}
-</code></pre></div>
-</details>
-<div class="admonition note">
-<p class="admonition-title"><strong>Importante:</strong></p>
-<p>Realize as seguintes adaptações para que seu robô comece a te ajudar:</p>
-<ul>
-<li>Revise/crie <abbr title="Definir instância">instâncias</abbr> (arquivos, terminais PRODEMGE, páginas da web, etc).</li>
-<li>Revise/crie variávei(s) (logins, senhas, nomes das colunas que serão criadas/preenchidas, etc).</li>
-<li>Revise caminho(s) de arquivo(s) (<code>PATH</code>).</li>
-<li>Confira se as URLs (caminho das páginas dos sites) acessados permanecem as mesmas.</li>
-<li>Certifique-se de haja ações para todas as operações desejadas que o robô execute</li>
-</ul>
+<div class="grid">
+<p class="card"><a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/consulta_situacao_cadastral_cagef.txt"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg></span> <strong>Copie o código do robô</strong></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> e cole em um novo fluxo Power Automate Desktop.</p>
+<p class="card download-button" filename="fornecedores.xls" path="assets/fornecedores.csv">[<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"></path></svg></span> <strong>Crie a variável de entrada</strong>] <code>lista_fornecedores</code><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>
+com o caminho desta planilha Excel modelo.</p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">Caso precise de ajuda</p>
@@ -913,6 +826,17 @@ Não tem problema. Acesse <a href="../../blog/causas-comuns-de-erros-na-montagem
 Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando?</p>
 <p>Caso prefira, manda um e-mail para simplificacao@planejamento.mg.gov.br.</p>
 <p>Ótimo trabalho!</p>
+</div>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Na nova aba que será aberta, basta apertar <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-a">A</kbd></span> para selecionar todo código e <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> para copiar. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Qualquer modificação além da inclusão de mais CNPJs na planilha pode exigir modificações no código original do robô. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
 </div></div>
 
 
@@ -936,7 +860,7 @@ Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo p
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 15, 2024 14:55:59</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 11, 2024 21:39:33</span>
   </span>
 
     
