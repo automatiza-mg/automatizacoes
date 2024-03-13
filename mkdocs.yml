@@ -18,7 +18,7 @@ theme:
   name: material
   language: pt
   custom_dir: docs/overrides
-  logo: assets/images/logo_pequena.png
+  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
   features:
     - content.code.annotate
     - content.code.copy
