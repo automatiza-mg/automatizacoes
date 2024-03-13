@@ -156,7 +156,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368934/automatiza-mg/avatar_alexandre.webp){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368934/automatiza-mg/avatar_alexandre.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
         <p class="p-center" markdown>__Alexander Ferreira__</p>
@@ -172,7 +172,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368936/automatiza-mg/avatar_andre_silva.webp){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368936/automatiza-mg/avatar_andre_silva.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
         <p class="p-center" markdown>__André Silva__</p>
@@ -188,7 +188,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Camila Neves__</p>
@@ -201,7 +201,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Ana Flávia__</p>
@@ -214,7 +214,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_man.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_man.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
@@ -227,7 +227,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__André Amorim__</p>
@@ -240,7 +240,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Augusta Cora__</p>
@@ -253,7 +253,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
@@ -266,7 +266,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/avatar_isa.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/avatar_isa.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Isabela Romancini__</p>
@@ -279,7 +279,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368357/automatiza-mg/avatar_lucas.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368357/automatiza-mg/avatar_lucas.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Lucas Fainblat__</p>
@@ -292,7 +292,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Maria Laura__</p>
