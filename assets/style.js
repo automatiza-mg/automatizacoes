@@ -1,3 +1,4 @@
+// Target external links blank
 var all_links = document.querySelectorAll('a');
 for (var i = 0; i < all_links.length; i++){
        var a = all_links[i];
@@ -6,6 +7,7 @@ for (var i = 0; i < all_links.length; i++){
        }
 }
 
+// Download .csv content into Excel files
 const downloadButton = document.getElementsByClassName("download-button")[0];
 
 downloadButton.addEventListener("click", () => {
