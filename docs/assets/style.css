@@ -52,7 +52,7 @@ body {
 .tx-container {
   padding-top: .0rem;
   background: linear-gradient(to bottom, var(--md-primary-fg-color), hsl(271, 39%, 43%) 99%,#fff 99%);
-  background-image: url('images/banner.png');
+  background-image: url('https://res.cloudinary.com/dgll6seyc/image/upload/v1710361554/automatiza-mg/banner.webp');
   background-repeat:no-repeat;
   background-size:cover;
 }
