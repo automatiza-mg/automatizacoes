@@ -136,7 +136,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <div class="grid cards" markdown>
 
-    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368933/automatiza-mg/avatar_gabriela.webp){ .lg .middle .avatar }</p>
+    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368933/automatiza-mg/avatar_gabriela.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
         <p class="p-center" markdown>__Gabriella Marcelino__</p>
