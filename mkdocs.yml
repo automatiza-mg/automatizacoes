@@ -34,6 +34,8 @@ theme:
     - navigation.tabs
     - navigation.footer
     - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
     - content.action.edit
     - content.tabs.link
     - content.tooltips
