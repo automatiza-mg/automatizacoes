@@ -4,8 +4,8 @@ draft: false
 authors: [lucasfainblat]
 comments: true
 categories:
-  - ferramentas
-  - power automate
+  - Ferramentas
+  - Power Automate
 ---
 
 # O que é Power Automate?

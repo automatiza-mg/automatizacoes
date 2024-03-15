@@ -3,7 +3,7 @@ date: 2023-10-25
 authors: [gabrielbdornas]
 comments: true
 categories:
-  - ferramentas
+  - Ferramentas
 ---
 
 # Guia de estilo de nossas páginas

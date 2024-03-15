@@ -4,8 +4,8 @@ draft: false
 authors: [andrelamor]
 comments: true
 categories:
-  - ferramentas
-  - excel
+  - Ferramentas
+  - Excel
 ---
 
 # Modificar dados no excel

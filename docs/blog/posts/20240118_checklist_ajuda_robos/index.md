@@ -4,8 +4,8 @@ draft: false
 authors: [andrelamor]
 comments: true
 categories:
-  - ferramentas
-  - power automate
+  - Ferramentas
+  - Power Automate
 ---
 
 # Causas comuns de erros na montagem dos fluxos dos robôs 
