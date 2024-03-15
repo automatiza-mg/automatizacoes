@@ -4,7 +4,7 @@ draft: false
 authors: [gabrielbdornas]
 comments: true
 categories:
-  - power automate
+  - Power Automate
 ---
 
 # Introdução Power Automate

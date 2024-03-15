@@ -4,8 +4,8 @@ draft: false
 authors: [lucasfainblat]
 comments: true
 categories:
-  - ferramentas
-  - power automate
+  - Ferramentas
+  - Power Automate
 ---
 
 # Inovação: Tendências de IA e Automatização no Serviço Público

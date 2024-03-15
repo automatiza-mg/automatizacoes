@@ -4,8 +4,8 @@ draft: false
 authors: [lucasfainblat]
 comments: true
 categories:
-  - metricas
-  - power automate
+  - Métricas
+  - Power Automate
 ---
 
 # Automatiza.MG em Números - Entenda os Resultados!

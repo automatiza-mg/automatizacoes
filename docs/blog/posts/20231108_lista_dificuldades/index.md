@@ -4,8 +4,8 @@ draft: true
 authors: [andrelamor]
 comments: true
 categories:
-  - ferramentas
-  - power automate
+  - Ferramentas
+  - Power Automate
 ---
 
 # Dificuldades recorrentes e alternativas na montagem de protótipos 

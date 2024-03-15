@@ -4,8 +4,8 @@ draft: false
 authors: [andrelamor]
 comments: true
 categories:
-  - ferramentas
-  - texto
+  - Ferramentas
+  - Texto
 ---
 
 # Como modificar uma expressão regular em um texto
