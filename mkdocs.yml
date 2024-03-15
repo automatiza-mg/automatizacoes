@@ -5,6 +5,15 @@ repo_name: automatiza-mg/automatizacoes
 repo_url: https://github.com/automatiza-mg/automatizacoes
 edit_uri: edit/main/docs/
 
+# Project information
+site_name: Automatiza-MG
+site_url: https://automatiza-mg.github.io/automatizacoes/
+site_author: Automatiza-MG
+site_description: >-
+  Projeto de automatização de processos desenvolvido pela equipe Automatiza-MG.
+  Mais rápido, mais inteligente, mais eficiente.
+  Automatização de processos ao alcance do servidor.
+
 nav:
   - Início: index.md
   - Biblioteca de robôs:
@@ -18,13 +27,15 @@ theme:
   name: material
   language: pt
   custom_dir: docs/overrides
-  logo: assets/images/logo_pequena.png
+  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
   features:
     - content.code.annotate
     - content.code.copy
     - navigation.tabs
     - navigation.footer
     - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
     - content.action.edit
     - content.tabs.link
     - content.tooltips
@@ -69,9 +80,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-        - name: vegalite
-          class: vegalite
-          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -82,8 +90,6 @@ markdown_extensions:
   - tables
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.arithmatex:
-      generic: true
 
 extra_css:
   - assets/style.css
@@ -92,13 +98,7 @@ extra_css:
 extra_javascript:
   - assets/style.js
   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
-  - https://cdn.jsdelivr.net/npm/vega@5
-  - https://cdn.jsdelivr.net/npm/vega-lite@5
-  - https://cdn.jsdelivr.net/npm/vega-embed@6
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - assets/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
