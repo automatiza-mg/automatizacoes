@@ -36,9 +36,8 @@ tags:
 [:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/consulta_situacao_cadastral_cagef.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:material-application-variable: __Crie a variável de entrada__] `lista_fornecedores`[^2]
-com o caminho desta planilha Excel modelo.
-{ .card .download-button path="assets/fornecedores.csv" fileName="fornecedores.xls" }
+:material-application-variable: __Crie a variável de entrada__ `lista_fornecedores`[^2] com o caminho onde esta planilha Excel será salva.
+{ .card .download-button path="assets/fornecedores.csv" fileName="fornecedores.xls" title="Clique para fazer o download do Excel" }
 
 </div>
 
