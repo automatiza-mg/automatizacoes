@@ -12,26 +12,34 @@ for (var i = 0; i < all_links.length; i++){
 const downloadButton = document.getElementsByClassName("download-button")[0];
 
 if (downloadButton) {
-  downloadButton.addEventListener("click", () => {
-    // Get the CSV file path (replace with your actual file path)
-    const csvFilePath = downloadButton.attributes.path.value;
+  downloadButton.addEventListener("click", async () => {
+    // Prevent multiple simultaneous clicks
+    downloadButton.disabled = true;
 
-    // Fetch the CSV file contents
-    fetch(csvFilePath)
-      .then(response => response.blob())
-      .then(blob => {
-        // Create a temporary URL for the file
-        const url = URL.createObjectURL(blob);
+    try {
+      // Get the CSV file path (replace with your actual file path)
+      const csvFilePath = downloadButton.attributes.path.value;
 
-        // Create a link element and simulate a click
-        const link = document.createElement("a");
-        link.href = url;
-        // Set desired filename
-        link.download = downloadButton.attributes.fileName.value;
-        link.click();
+      // Fetch the CSV file contents
+      const response = await fetch(csvFilePath);
+      const blob = await response.blob();
 
-        // Revoke the temporary URL to clean up
-        URL.revokeObjectURL(url);
-      });
+      // Create a temporary URL for the file
+      const url = URL.createObjectURL(blob);
+
+      // Create a link element and simulate a click
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = downloadButton.attributes.fileName.value;
+      link.click();
+
+    } catch (error) {
+      console.error("Download error:", error);
+    } finally {
+      // Re-enable button for future clicks
+      downloadButton.disabled = false;
+      // Clean up even if an error occurs
+      URL.revokeObjectURL(url);
+    }
   });
 }
