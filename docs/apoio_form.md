@@ -2,7 +2,7 @@
 
 Este formulário visa captar solicitações de imersão para projetos de automatização. Nele você nos contará um pouquinho sobre o processo que deseja automatizar.
 
-Caso não tenha entendido algum campo, fique com alguma dúvida durante o preenchimento ou se sinta mais confortável preenchendo com alguém de nossa equipe, favor entrar em contato pelo e-mail [simplificacao@planejamento.mg.gov.br](simplificacao@planejamento.mg.gov.br). Ficaremos felizes em agendar um horário para auxiliar.
+Caso não tenha entendido algum campo, ou fique com alguma dúvida durante o preenchimento ou se sinta mais confortável preenchendo com alguém de nossa equipe, favor entrar em contato pelo e-mail [simplificacao@planejamento.mg.gov.br](simplificacao@planejamento.mg.gov.br). Ficaremos felizes em agendar um horário para auxiliar.
 
 **Atenção:** Os dados aqui coletado serão automaticamente disponibilizados em [formato aberto](https://dados.mg.gov.br/dataset/automatiza-mg).
 
