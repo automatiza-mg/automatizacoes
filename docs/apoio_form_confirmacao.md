@@ -17,4 +17,4 @@ A equipe Automatiza.MG agradece pelo envio de sua solicitação. Você receberá
 
 </div>
 
-[Voltar para página Inicial](/){ .md-button .md-button--primary }
+[Voltar para página Inicial](index.md){ .md-button .md-button--primary }
