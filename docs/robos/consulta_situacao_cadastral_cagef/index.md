@@ -29,17 +29,19 @@ tags:
 
 ??? note "**Clique para ver o fluxo do robô**"
 
---8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
+    ```mermaid
+    --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/fluxo.md"
+    ```
 
 <div class="grid" markdown>
 
 [:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/consulta_situacao_cadastral_cagef.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:material-application-variable: __Clique aqui para baixar a planilha modelo__](assets/fornecedores.xls).
-{ .card }
+[:material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^2].
+{ #download-button .card path="assets/fornecedores.csv" fileName="fornecedores.xlsx" }
 
-:material-application-variable: __Crie a variável de entrada__ `Caminho_excel`[^2] com o caminho onde a planilha modelo foi salva.
+:material-application-variable: __Crie a variável de entrada__ `Caminho_excel` com o caminho onde a planilha modelo foi salva.
 { .card }
 
 :material-application-variable: __Crie a variável de entrada__ `Caminho_pasta_automatiza` onde será salvo os prints de tela com os resultados das consultas.
