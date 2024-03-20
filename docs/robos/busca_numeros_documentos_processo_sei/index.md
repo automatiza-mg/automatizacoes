@@ -27,6 +27,10 @@ tags:
 
 ??? note "**Clique para ver o fluxo do robô**"
 
+    ```mermaid
+    --8<-- "docs/robos/busca_numeros_documentos_processo_sei/assets/fluxo.md"
+    ```
+
 --8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
 
 <div class="grid" markdown>
