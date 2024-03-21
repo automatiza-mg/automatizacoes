@@ -126,7 +126,6 @@ plugins:
   - tags:
       tags_file: robos/index.md
   - mkdocs-video:
-      is_video: True
       video_muted: True
       video_controls: True
       video_autoplay: False
