@@ -8,6 +8,10 @@ body p {
   text-align: justify;
 }
 
+.md-ellipsis {
+  display: none;
+}
+
 .p-center {
   text-indent: 0px;
   text-align: center;

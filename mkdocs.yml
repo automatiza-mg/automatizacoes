@@ -25,7 +25,7 @@ theme:
   name: material
   language: pt
   custom_dir: docs/overrides
-  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
+  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710367935/automatiza-mg/logo_grande.webp
   features:
     - content.code.annotate
     - content.code.copy
