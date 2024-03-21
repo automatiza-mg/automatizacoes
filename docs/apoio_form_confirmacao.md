@@ -9,7 +9,7 @@ hide:
 
 A equipe Automatiza.MG agradece pelo envio de sua solicitação.
 Você receberá uma confirmação de recebimento no e-mail informado[^1].
-Caso não receba este e-mail, favor nos acionar no endereço [simplificacao@planejamento.mg.gov.br](simplificacao@planejamento.mg.gov.br).
+Caso não receba este e-mail, favor nos acionar no endereço [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
 
 Durante o preenchimento de seu pedido já te contamos, mas não custa lembrar que caso não identifiquemos nenhuma necessidade de revisão ou esclarecimentos adicionais, seu pedido seguirá para priorização inicial, realizada de maneira automática.
 
@@ -28,7 +28,7 @@ A definição final dos pedidos atendidos ficará a cargo dos gestores da SIGES.
 [:fontawesome-solid-blog: __Acompanhe nosso Blog__](blog/index.md).
 { .card }
 
-[:material-newspaper-variant-outline: __Se cadastre em nossa News Letter__](/).
+[:material-newspaper-variant-outline: __Se cadastre em nossa News Letter__](index.md).
 { .card }
 
 </div>

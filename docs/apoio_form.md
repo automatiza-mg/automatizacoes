@@ -13,7 +13,7 @@ Nele, você nos contará um pouquinho sobre o processo que deseja automatizar.
 Uma avaliação inicial será feita ao recebermos seu pedido.
 Esta avaliação levará em consideração,principalmente, a coerência das informações fornecidas[^2].
 Caso não identifiquemos nenhuma necessidade de revisão ou esclarecimentos adicionais, o pedido segue para priorização inicial, realizada de maneira automática.
-Sendo assim, caso não tenha entendido algum campo, surja alguma dúvida durante o preenchimento, ou se sinta mais confortável preenchendo com alguém de nossa equipe, favor entrar em contato pelo e-mail [simplificacao@planejamento.mg.gov.br](simplificacao@planejamento.mg.gov.br).
+Sendo assim, caso não tenha entendido algum campo, surja alguma dúvida durante o preenchimento, ou se sinta mais confortável preenchendo com alguém de nossa equipe, favor entrar em contato pelo e-mail [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
 Ficaremos felizes em agendar um horário para auxiliar.
 
 **A priorização inicial automática servirá de base para tomada de decisão, mas não é critério definitivo para seleção de pedidos.
