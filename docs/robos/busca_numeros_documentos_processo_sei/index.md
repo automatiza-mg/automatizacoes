@@ -31,7 +31,7 @@ tags:
     --8<-- "docs/robos/busca_numeros_documentos_processo_sei/assets/fluxo.md"
     ```
 
---8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
+--8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
 
 <div class="grid" markdown>
 
@@ -46,7 +46,7 @@ tags:
 
 </div>
 
---8<-- "docs/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: As variáveis de entrada descritas na página do robo para [login no sei](../login_sei/#montando-o-seu-robo) também deverão ser criadas.

@@ -16,7 +16,7 @@ Durante o preenchimento de seu pedido já te contamos, mas não custa lembrar qu
 **A priorização inicial automática servirá de base para tomada de decisão, mas não é critério definitivo para seleção de pedidos.
 A definição final dos pedidos atendidos ficará a cargo dos gestores da SIGES.**
 
---8<-- "docs/partials/fluxo_priorizacao_demandas.md"
+--8<-- "docs/overrides/partials/fluxo_priorizacao_demandas.md"
 
 ## Não deixe de participar
 
@@ -35,4 +35,4 @@ A definição final dos pedidos atendidos ficará a cargo dos gestores da SIGES.
 
 [Voltar para página Inicial](index.md){ .md-button .md-button--primary }
 
---8<-- "docs/partials/prazo_definitivo_resposta_pedido_apoio.md"
+--8<-- "docs/overrides/partials/prazo_definitivo_resposta_pedido_apoio.md"
