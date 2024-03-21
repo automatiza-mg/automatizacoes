@@ -8,9 +8,7 @@ tags:
 
 # Consulta Situação Cadastral de Fornecedores - CAGEC
 
-<video width="640"  controls>
-    <source src="#" type="video/mp4">
-</video>
+![type:video](https://www.youtube.com/embed/ijJdrQYm6vM)
 
 ## Informações gerais
 
@@ -32,7 +30,7 @@ tags:
     ```mermaid
     --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/fluxo.md"
     ```
-    
+
 --8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
 
 <div class="grid" markdown>

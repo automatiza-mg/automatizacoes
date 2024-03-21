@@ -71,7 +71,7 @@ hide:
 
 ## Veja funcionando { .h2-center }
 
-![type:video](assets/demostracao_automate.mp4)
+![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A)
 
 ## O Projeto em Números { .h2-center }
 
