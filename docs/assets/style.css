@@ -75,10 +75,14 @@ body {
 }
 
 .tx-hero__image{
-  width:17rem;
+  width:12rem;
   height:17rem;
   order:1;
-  padding-right: 1.5rem;
+  /* padding-right: 1.5rem; */
+}
+
+.tx-hero__image img{
+  padding-top: 50%;
 }
 
 .tx-hero .md-button {
