@@ -1,16 +1,14 @@
-site_name: Automatiza-MG
-
 # Repository
 repo_name: automatiza-mg/automatizacoes
 repo_url: https://github.com/automatiza-mg/automatizacoes
 edit_uri: edit/main/docs/
 
 # Project information
-site_name: Automatiza-MG
+site_name: Automatiza.MG
 site_url: https://automatiza-mg.github.io/automatizacoes/
-site_author: Automatiza-MG
+site_author: Automatiza.MG
 site_description: >-
-  Projeto de automatização de processos desenvolvido pela equipe Automatiza-MG.
+  Projeto de automatização de processos desenvolvido pela equipe Automatiza.MG.
   Mais rápido, mais inteligente, mais eficiente.
   Automatização de processos ao alcance do servidor.
 
