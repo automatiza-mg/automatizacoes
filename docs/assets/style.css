@@ -146,6 +146,9 @@ body {
   .tx-hero h1 {
       font-size: 1.4rem
   }
+  .side-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width:60em) {
