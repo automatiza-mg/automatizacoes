@@ -15,7 +15,7 @@ hide:
 
 ## Conheça mais sobre o projeto { .h2-center }
 
-<div class="grid cards" markdown>
+<div class="grid cards card-border-radius" markdown>
 
 - <p class="text-larger" markdown>:simple-powerautomate:{ .lg .middle .light-red } __Power Automate__</p>
 

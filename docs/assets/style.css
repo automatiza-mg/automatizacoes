@@ -267,6 +267,10 @@ body p {
 
 /* My configurations to home page */
 
+.card-border-radius li {
+  border-radius: 10px!important;
+}
+
 .light-blue {
   color: #4051B5;
 }
@@ -301,7 +305,7 @@ body p {
   padding: 40px;
   background-color: #0f1b40;
   max-height: 10%;
-  border-radius: 10px;
+  border-radius: 20px;
   color: white;
   font-size: 1.5em;
   text-align: center;
@@ -313,6 +317,7 @@ body p {
 }
 
 .blue-banner li {
+  margin: 8px!Important;
   border: none!Important;
   padding: 0!Important;
   pointer-events: none;
