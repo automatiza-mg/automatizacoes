@@ -49,7 +49,7 @@ theme:
   font:
     text: Plus Jakarta Sans
     code: Roboto Mono
-  favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
+  favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1711112766/automatiza-mg/apenas_logo_favicon.webp
 
 markdown_extensions:
   - abbr
