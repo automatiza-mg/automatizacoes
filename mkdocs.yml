@@ -44,7 +44,7 @@ theme:
     - toc.follow
 
   palette:
-    - scheme: youtube
+    - scheme: automatiza-mg
 
   font:
     text: Plus Jakarta Sans
