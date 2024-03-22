@@ -8,9 +8,7 @@ tags:
 
 # Login no SEI
 
-<video width="640"  controls>
-    <source src="#" type="video/mp4">
-</video>
+![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A)
 
 ## Informações gerais
 

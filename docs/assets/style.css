@@ -275,7 +275,6 @@ body p {
 .video-container {
   display: flex;
   justify-content: center;
-  height: 17em;
 }
 
 #iframe-youtube {
