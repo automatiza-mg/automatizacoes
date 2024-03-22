@@ -34,6 +34,7 @@ body p {
   overflow: hidden;
   padding-bottom: 56.25%;
 }
+
 .content-wrapper > iframe {
   position: absolute;
   top: 0;
@@ -157,6 +158,10 @@ body p {
   .side-menu {
     display: none;
   }
+
+  #iframe-youtube {
+    width: 100%!important;
+  }
 }
 
 @media screen and (min-width:60em) {
@@ -266,6 +271,17 @@ body p {
 }
 
 /* My configurations to home page */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  height: 17em;
+}
+
+#iframe-youtube {
+  width: 60%;
+  border-radius:20px';
+}
 
 .card-border-radius li {
   border-radius: 10px!important;
