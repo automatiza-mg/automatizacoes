@@ -8,7 +8,7 @@ body p {
   text-align: justify;
 }
 
-.md-ellipsis {
+.md-header__topic span {
   display: none;
 }
 
@@ -162,6 +162,7 @@ body p {
   #iframe-youtube {
     width: 100%!important;
   }
+
 }
 
 @media screen and (min-width:60em) {
