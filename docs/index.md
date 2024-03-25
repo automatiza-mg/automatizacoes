@@ -247,7 +247,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+    Servidora pública lotada na Diretoria Central de Desburocratização - DCD. Apaixonada por inovação e comunicação. Instrutora e monitora do curso de Power Automate. 
 
     <p class="p-center" markdown>
         [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
