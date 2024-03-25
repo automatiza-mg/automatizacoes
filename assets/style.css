@@ -1,11 +1,15 @@
-[data-md-color-scheme="youtube"] {
+[data-md-color-scheme="automatiza-mg"] {
   --md-primary-fg-color:        #0f1b40;
   --md-primary-fg-color--light: #0a65c1;
   --md-primary-fg-color--dark:  #181919;
 }
 
-body {
+body p {
   text-align: justify;
+}
+
+.md-header__topic span {
+  display: none;
 }
 
 .p-center {
@@ -30,6 +34,7 @@ body {
   overflow: hidden;
   padding-bottom: 56.25%;
 }
+
 .content-wrapper > iframe {
   position: absolute;
   top: 0;
@@ -82,7 +87,7 @@ body {
 }
 
 .tx-hero__image img{
-  padding-top: 50%;
+  padding-top: 25%;
 }
 
 .tx-hero .md-button {
@@ -153,6 +158,11 @@ body {
   .side-menu {
     display: none;
   }
+
+  #iframe-youtube {
+    width: 100%!important;
+  }
+
 }
 
 @media screen and (min-width:60em) {
@@ -263,6 +273,20 @@ body {
 
 /* My configurations to home page */
 
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+#iframe-youtube {
+  width: 60%;
+  border-radius:20px';
+}
+
+.card-border-radius li {
+  border-radius: 10px!important;
+}
+
 .light-blue {
   color: #4051B5;
 }
@@ -297,7 +321,7 @@ body {
   padding: 40px;
   background-color: #0f1b40;
   max-height: 10%;
-  border-radius: 10px;
+  border-radius: 20px;
   color: white;
   font-size: 1.5em;
   text-align: center;
@@ -305,9 +329,11 @@ body {
 
 .blue-banner li p {
   margin: 0!Important;
+  text-align: center;
 }
 
 .blue-banner li {
+  margin: 8px!Important;
   border: none!Important;
   padding: 0!Important;
   pointer-events: none;
