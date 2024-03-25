@@ -8,9 +8,7 @@ tags:
 
 # Login no SEI
 
-<video width="640"  controls>
-    <source src="#" type="video/mp4">
-</video>
+![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A)
 
 ## Informações gerais
 
@@ -31,7 +29,7 @@ tags:
     --8<-- "docs/robos/login_sei/assets/fluxo.md"
     ```
 
---8<-- "docs/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
+--8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
 
 <div class="grid" markdown>
 
@@ -49,7 +47,7 @@ tags:
 
 </div>
 
---8<-- "docs/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).

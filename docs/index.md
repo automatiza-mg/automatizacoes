@@ -15,7 +15,7 @@ hide:
 
 ## Conheça mais sobre o projeto { .h2-center }
 
-<div class="grid cards" markdown>
+<div class="grid cards card-border-radius" markdown>
 
 - <p class="text-larger" markdown>:simple-powerautomate:{ .lg .middle .light-red } __Power Automate__</p>
 
@@ -71,7 +71,7 @@ hide:
 
 ## Veja funcionando { .h2-center }
 
-![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A)
+![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A){: #iframe-youtube style='width: 60%; height: 17em; border-radius:20px'}
 
 ## O Projeto em Números { .h2-center }
 

@@ -25,7 +25,7 @@ theme:
   name: material
   language: pt
   custom_dir: docs/overrides
-  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
+  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710367935/automatiza-mg/logo_grande.webp
   features:
     - content.code.annotate
     - content.code.copy
@@ -44,12 +44,12 @@ theme:
     - toc.follow
 
   palette:
-    - scheme: youtube
+    - scheme: automatiza-mg
 
   font:
     text: Plus Jakarta Sans
     code: Roboto Mono
-  favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
+  favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1711112766/automatiza-mg/apenas_logo_favicon.webp
 
 markdown_extensions:
   - abbr

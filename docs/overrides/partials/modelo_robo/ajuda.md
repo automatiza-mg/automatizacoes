@@ -5,7 +5,7 @@
 
     Também temos o espaço abaixo para perguntas e respostas.
     Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando?
-    
-    Caso prefira, manda um e-mail para simplificacao@planejamento.mg.gov.br.
+
+    Caso prefira, manda um e-mail para [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
 
     Ótimo trabalho!
