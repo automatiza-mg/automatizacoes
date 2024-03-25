@@ -184,125 +184,14 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     </div>
 
-## Conheça nossa equipe { .h2-center }
 
-<div class="grid cards" markdown>
+Aspectos legais e responsabilidades
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
+Política de Privacidade
 
+SEPLAG MG 
+Cidade Administrativa
 
-    <p class="p-center" markdown>__Camila Neves__</p>
+Rodovia Papa João Paulo II, 3777 - Serra Verde
+Belo Horizonte, MG - CEP 31630-903
 
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Ana Flávia__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_man.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por automação, dados e inteligência artificial. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__André Amorim__</p>
-
-    ---
-
-    EPPGG da Diretoria Central de Desburocratização. Instrutor e monitor no curso de Power Automate. Também estuda gestão e análise de dados, representação do conhecimento, governo aberto e inteligência natural.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Augusta Cora__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/avatar_isa.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Isabela Romancini__</p>
-
-    ---
-
-    Trabalha no Lab.mg. Instrutora e monitora no curso de Power Automate. Especialista em Políticas Públicas e Gestão Governamental – EPPGG e pós-graduada em Governança de TI.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368357/automatiza-mg/avatar_lucas.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Lucas Fainblat__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Maria Laura__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-</div>
