@@ -102,14 +102,18 @@ extra_javascript:
 extra: # Footer
   social:
     - icon: fontawesome/brands/instagram
-      name: Instagram Lab.mg.
-      link: https://www.instagram.com/gov.labmg
-    - icon: fontawesome/brands/github-alt
-      name: Repositório Automatiza-mg no GitHub.
-      link: https://github.com/automatiza-mg
-    - icon: simple/linktree
-      name: Página do Lab.mg no linktree.
-      link: https://linktr.ee/lab.mg
+      name: Instagram Seplagmg.
+      link: https://www.instagram.com/seplagmg/
+    - icon: fontawesome/brands/youtube
+      name: Youtube Seplagmg.
+      link: https://www.youtube.com/channel/UCAQXhpTvKIN12u_Ov_kW3qw
+    - icon: fontawesome/brands/facebook
+      name: Página do governomg no Facebook
+      link: https://www.facebook.com/governomg
+    - icon: fontawesome/brands/twitter
+      name: Página do governomg no Twitter
+      link: https://twitter.com/governomg
+      
 
 plugins:
   - git-revision-date-localized:
