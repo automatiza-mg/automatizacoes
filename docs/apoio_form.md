@@ -8,7 +8,7 @@ hide:
 # Pedidos de apoio de automatização
 
 Este formulário visa captar pedidos de apoio para projetos de automatização[^1].
-Nele, você nos contará um pouquinho sobre o processo que deseja automatizar.
+Nele, você nos contará um pouquinho sobre o processo que deseja automatizar. **Favor preencher um formulário por processo que se deseja automatizar**.
 
 Uma avaliação inicial será feita ao recebermos seu pedido.
 Esta avaliação levará em consideração,principalmente, a coerência das informações fornecidas[^2].
