@@ -8,9 +8,7 @@ site_name: Automatiza.MG
 site_url: https://automatiza-mg.github.io/automatizacoes/
 site_author: Automatiza.MG
 site_description: >-
-  Projeto de automatização de processos desenvolvido pela equipe Automatiza.MG.
-  Mais rápido, mais inteligente, mais eficiente.
-  Automatização de processos ao alcance do servidor.
+  Mais rápido, mais inteligente, mais eficiente: automatização de processos e inteligência artificial ao alcance dos servidores mineiros.
 
 nav:
   - Início: index.md
