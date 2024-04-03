@@ -111,6 +111,9 @@ extra: # Footer
     - icon: fontawesome/brands/twitter
       name: Twitter Governo de Minas Gerais
       link: https://twitter.com/governomg
+    - icon: fontawesome/solid/location-dot
+      name: Localização Seplag MG
+      link: https://maps.app.goo.gl/At1LbwoAuxpdPEkq9
 
 plugins:
   - git-revision-date-localized:
