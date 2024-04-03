@@ -163,6 +163,10 @@ body p {
     width: 100%!important;
   }
 
+  #logo-mg {
+    width: 23em!Important;
+  }
+
 }
 
 @media screen and (min-width:60em) {
@@ -184,6 +188,7 @@ body p {
       margin-right: 4.0rem;
       align-items: center;
   }
+
 }
 
 @media screen and (min-width:76.25em) {
@@ -219,6 +224,11 @@ body p {
       background-color: #526cfe47;
       border-radius: 3px;
   } */
+}
+
+#logo-mg {
+  padding: 1em;
+  width: 25em;
 }
 
 .hr {
