@@ -184,7 +184,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178762/avatar_camila.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Camila Neves__</p>
@@ -193,7 +193,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica - SIGES.</p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Ana Flávia__</p>
@@ -244,7 +244,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
-    <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
+    <p class="p-center" markdown>__Gabriel Dornas__</p>
 
     ---
 
