@@ -29,7 +29,6 @@ theme:
     - content.code.annotate
     - content.code.copy
     - navigation.tabs
-    - navigation.footer
     - navigation.indexes
     - content.action.edit
     - content.tabs.link
