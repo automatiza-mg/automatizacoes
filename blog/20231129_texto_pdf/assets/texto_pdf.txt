@@ -1,4 +1,4 @@
-Pdf.ExtractTextFromPDF.ExtractText PDFFile: $'''C:\\Users\\Andre\\Documents\\SIGES-SEPLAG\\automatizacoes\\docs\\robos\\guias_judiciais\\assets\\VERBA 8490.pdf''' DetectLayout: True ExtractedText=> ExtractedPDFText
+Pdf.ExtractTextFromPDF.ExtractText PDFFile: $''<INCLUIR CAMINHO DO ARQUIVO PDF PARA SER LIDO>'' DetectLayout: True ExtractedText=> ExtractedPDFText
 Variables.CreateNewList List=> List
 Text.SplitText.Split Text: ExtractedPDFText StandardDelimiter: Text.StandardDelimiter.NewLine DelimiterTimes: 1 Result=> List
 SET NewVar TO List[11]

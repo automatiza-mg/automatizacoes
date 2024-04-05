@@ -932,7 +932,7 @@
 <p>A parte do código a que fez referência este post:</p>
 <details class="copy">
 <summary><strong>Código-Fonte</strong></summary>
-<div class="language-text highlight"><pre><span></span><code>Pdf.ExtractTextFromPDF.ExtractText PDFFile: $'''C:\\Users\\Andre\\Documents\\SIGES-SEPLAG\\automatizacoes\\docs\\robos\\guias_judiciais\\assets\\VERBA 8490.pdf''' DetectLayout: True ExtractedText=&gt; ExtractedPDFText
+<div class="language-text highlight"><pre><span></span><code>Pdf.ExtractTextFromPDF.ExtractText PDFFile: $''&lt;INCLUIR CAMINHO DO ARQUIVO PDF PARA SER LIDO&gt;'' DetectLayout: True ExtractedText=&gt; ExtractedPDFText
 Variables.CreateNewList List=&gt; List
 Text.SplitText.Split Text: ExtractedPDFText StandardDelimiter: Text.StandardDelimiter.NewLine DelimiterTimes: 1 Result=&gt; List
 SET NewVar TO List[11]
