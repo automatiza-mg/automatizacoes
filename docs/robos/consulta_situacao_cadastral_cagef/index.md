@@ -35,7 +35,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/consulta_situacao_cadastral_cagef.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/consulta_situacao_cadastral_cagef.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
 [:material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^2].

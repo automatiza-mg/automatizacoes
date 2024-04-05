@@ -33,7 +33,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/login_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
 :material-application-variable: __Crie a variável de entrada__ `login_sei`[^2].
