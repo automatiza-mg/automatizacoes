@@ -26,7 +26,7 @@ tags:
 ??? note "**Clique para ver o fluxo do robô**"
 
     ```mermaid
-    --8<-- "docs/robos/login_sei/assets/fluxo.md"
+    --8<-- "docs/robos/cria_processo_sei/assets/fluxo.md"
     ```
 
 --8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
