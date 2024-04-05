@@ -42,10 +42,10 @@ tags:
 [:fontawesome-solid-3: :octicons-workflow-24: __Utilize o robô de troca de unidade no SEI__](../troca_unidade_sei/#montando-o-seu-robo){ target="_blank" }[^2] em um novo subfluxo chamado `troca_unidade`, :warning: caso seja necessário.
 { .card }
 
-:fontawesome-solid-4::material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar` e `assunto`.
+:fontawesome-solid-4::material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^3] e `assunto`[^4].
 { .card }
 
-:fontawesome-solid-5::material-application-variable: __Crie a variável de entrada__ `hipotese_restricao`, :warning: caso o processo não seja público.
+:fontawesome-solid-5::material-application-variable: __Crie a variável de entrada__ `hipotese_restricao`, :warning: caso o processo não seja público [^5].
 { .card }
 
 </div>
@@ -54,3 +54,6 @@ tags:
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: As variáveis de entrada descritas na página do robo para [login no sei](../login_sei/#montando-o-seu-robo) e [troca de unidade no SEI](../troca_unidade_sei/#montando-o-seu-robo) também deverão ser criadas.
+[^3]:Deverá ser `público`, `sigiloso` ou `restrito`, de acordo com a categorização do SEI.
+[^4]: É um palavra-chave que localiza o assunto na lista do formulário de criação de processos do SEI.
+[^5]: Se processo for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI.
