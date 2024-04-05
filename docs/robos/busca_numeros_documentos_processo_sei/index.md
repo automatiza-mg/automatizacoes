@@ -33,13 +33,16 @@ tags:
 
 <div class="grid" markdown>
 
-[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/busca_numeros_documentos_processo_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/busca_numeros_documentos_processo_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:octicons-workflow-24: __Utilize o robô de login no SEI__](../login_sei/)[^2] em um novo subfluxo chamado `login_sei`.
+[:fontawesome-solid-2: :octicons-workflow-24: __Utilize o robô de login no SEI__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^2] em um novo subfluxo chamado `login_sei`.
 { .card }
 
-:material-application-variable: __Crie a variável de entrada__ `numero_processo`[^3].
+:fontawesome-solid-3: :warning: __Utilize o robô de troca de unidade no SEI__ caso precise.
+{ .card }
+
+:fontawesome-solid-4::material-application-variable: __Crie a variável de entrada__ `numero_processo`[^3].
 { .card }
 
 </div>
