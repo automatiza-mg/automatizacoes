@@ -117,6 +117,23 @@ extra:
   analytics:
     provider: google
     property: G-60K0NGCL9R
+    feedback:
+      title: Gostou desta página?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Gostei
+          data: 1
+          note: >-
+            Obrigado por compartilhar!
+            Adoraria escutar um pouquinho mais sua opinião.
+            Se estiver a vontade quanto a isso peço que utilize <a href="..." target="_blank" rel="noopener">este formulário</a>!
+        - icon: material/thumb-down-outline
+          name: Não gostei
+          data: 0
+          note: >-
+            Obrigado por compartilhar!
+            Adoraria escutar um pouquinho mais sua opinião.
+            Se estiver a vontade quanto a isso peço que utilize <a href="..." target="_blank" rel="noopener">este formulário</a>!
 
 plugins:
   - git-revision-date-localized:
