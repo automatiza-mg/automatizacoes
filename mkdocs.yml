@@ -97,8 +97,8 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 
-extra: # Footer
-  social:
+extra:
+  social: # Footer
     - icon: fontawesome/brands/instagram
       name: Instagram Seplag MG.
       link: https://www.instagram.com/seplagmg/
@@ -114,6 +114,9 @@ extra: # Footer
     - icon: fontawesome/solid/location-dot
       name: Localização Seplag MG
       link: https://maps.app.goo.gl/At1LbwoAuxpdPEkq9
+  analytics:
+    provider: google
+    property: G-60K0NGCL9R
 
 plugins:
   - git-revision-date-localized:
