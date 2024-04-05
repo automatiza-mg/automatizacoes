@@ -95,7 +95,7 @@ extra_javascript:
   - assets/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
-
+  - https://tally.so/widgets/embed.js
 
 extra:
   social: # Footer
@@ -126,14 +126,14 @@ extra:
           note: >-
             Obrigado por compartilhar!
             Adoraria escutar um pouquinho mais sua opinião.
-            Se estiver a vontade quanto a isso peço que utilize <a href="..." target="_blank" rel="noopener">este formulário</a>!
+            Se estiver a vontade quanto a isso peço que utilize <a href="#tally-open=w480k5&tally-emoji-text=👋&tally-emoji-animation=wave">este formulário</a>!
         - icon: material/thumb-down-outline
           name: Não gostei
           data: 0
           note: >-
             Obrigado por compartilhar!
             Adoraria escutar um pouquinho mais sua opinião.
-            Se estiver a vontade quanto a isso peço que utilize <a href="..." target="_blank" rel="noopener">este formulário</a>!
+            Se estiver a vontade quanto a isso peço que utilize <a href="#tally-open=w480k5&tally-emoji-text=👋&tally-emoji-animation=wave">este formulário</a>!
 
 plugins:
   - git-revision-date-localized:
