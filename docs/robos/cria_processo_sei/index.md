@@ -20,7 +20,7 @@ tags:
 
 - [x] Robô que cria novo processo no SEI.
 - [x] Utiliza os subfluxos de login e troca de unidade no SEI.
-- [x] Permite a escolha da criação de processo público ou restrito
+- [x] Permite a escolha da criação de processo público ou restrito.
 - [x] Economiza tempo e evita erros.
 
 ??? note "**Clique para ver o fluxo do robô**"
