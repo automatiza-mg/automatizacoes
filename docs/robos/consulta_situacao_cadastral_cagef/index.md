@@ -6,7 +6,7 @@ tags:
   - Compras Públicas
 ---
 
-# Consulta Situação Cadastral de Fornecedores - CAGEC
+# Consulta Situação Cadastral de Fornecedores - CAGEF
 
 ![type:video](https://www.youtube.com/embed/ijJdrQYm6vM)
 
