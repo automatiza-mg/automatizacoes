@@ -4,6 +4,7 @@ title: Automatiza.MG
 hide:
   - navigation
   - toc
+  - feedback
 ---
 <style>
   .md-typeset h1,
