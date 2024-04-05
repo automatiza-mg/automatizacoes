@@ -121,12 +121,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/cria_processo_sei/</loc>
+         <lastmod>2024-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/cria_processo_sei/assets/fluxo/</loc>
+         <lastmod>2024-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/login_sei/</loc>
          <lastmod>2024-04-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/login_sei/assets/fluxo/</loc>
+         <lastmod>2024-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/troca_unidade_sei/</loc>
+         <lastmod>2024-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/troca_unidade_sei/assets/fluxo/</loc>
          <lastmod>2024-04-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
