@@ -27,7 +27,7 @@ Após descaracterizá-lo para o modelo `xxx.000.000-xx`, é preciso procurar por
 ![](assets/codigo2.png)
 ![](assets/codigo3.png)
 
-O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados. Esse código está acessível [nesta página](../../../robos/aposentadoria/index.md).
+O produto final é a junção dos atos prontos para serem assinados e enviados para publicação, com os CPFs modificados.
 
 A parte do código a que fez referência este post:
 
