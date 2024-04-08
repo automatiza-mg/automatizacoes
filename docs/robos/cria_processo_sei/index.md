@@ -8,7 +8,6 @@ tags:
 
 # Cria processo no SEI
 
-![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A)
 
 ## Informações gerais
 
