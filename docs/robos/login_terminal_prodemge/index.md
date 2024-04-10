@@ -8,7 +8,6 @@ tags:
 
 # Login no Terminal PRODEMGE
 
-![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A)
 
 ## Informações gerais
 
