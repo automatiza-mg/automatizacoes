@@ -24,7 +24,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/login_terminal_prodemge.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_terminal_prodemge.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `login`[^2].
