@@ -23,6 +23,7 @@ A chefia responsável agora tem mais tempo para se dedicar a tarefas mais estrat
 
 ## Premissas
 
+- Utilização de scripts Javascript para facilitar o trabalho.
 - Distribuição inicial de pedidos mais antigos.
 - Varredura dos processos SEI da unidade em busca de processos sem marcadores.
 - Os servidores designados são identificados no processos via marcadores.
