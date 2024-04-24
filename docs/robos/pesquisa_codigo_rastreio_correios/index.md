@@ -8,6 +8,7 @@ tags:
 
 # Pesquisa código rastreio dos correios
 
+![type:video](https://www.youtube.com/embed/cN-68syXTQk){: #iframe-youtube style='width: 100%; height: 17em; border-radius:20px'}
 
 ## Informações gerais
 
@@ -66,7 +67,7 @@ Para dar vida a ele:
 
 ## Agradecimentos
 
-Agradecemos a atenção e o apoio da equipe [Link Track](https://linketrack.com) que nos permitindo acessar gratuitamente esta API. 
+Agradecemos a atenção e o apoio da equipe [Link Track](https://linketrack.com) que nos permitindo acessar gratuitamente esta API.
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: Usuário para acesso à API Link Track.
