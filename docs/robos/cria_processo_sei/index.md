@@ -32,7 +32,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/processo_novo_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__]([https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/processo_novo_sei.txt](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/6e97041a249daa6db545351a23ed3034d73ac4f9/docs/robos/sei_processo/assets/processo_novo.txt))[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
 [:fontawesome-solid-2: :octicons-workflow-24: __Utilize o robô de login no SEI__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^2] em um novo subfluxo chamado `login_sei`.
