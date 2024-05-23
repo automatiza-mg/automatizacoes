@@ -1,6 +1,6 @@
 ---
 date: 2024-05-23
-draft: true
+draft: false
 authors: [gabrielbdornas]
 comments: true
 categories:
@@ -53,7 +53,7 @@ $ source venv/Scripts/activate
 $ pip install pythomate
 ```
 
-Pronto pacote instalado.
+Pronto, pacote instalado.
 Para testar você precisará apenas do nome do fluxo Power Automate que deseja realizar o agendamento.
 No meu caso automatizarei o fluxo `teste-pythomate-sem-variavel`.
 
@@ -64,7 +64,7 @@ $ pythomate run automate teste-pythomate-sem-variavel
 
 Caso seu fluxo seja executado com sucesso você estará pronto para seguir.
 Agora bastará criar uma rotina para rodar o comando acima via agendador de tarefa no Windows.
-Neste ponto vale uma ressalva. 
+Neste ponto vale uma ressalva.
 Como dito no início deste post o pythomate ainda está em fase de desenvolvimento e testes.
 Uma série de erros ainda poderão ocorrer durante a execução do comando mostrado acima.
 Os erros já identificados podem ser observados [nos Issues do repositório GitHub](https://github.com/automatiza-mg/pythomate/issues).
@@ -107,7 +107,7 @@ Vamos aos passos:
 
   - Na opção "Adicione argumentos (opcional)" inclua os comandos responsáveis por chamar o pythomate:
     - Meu exemplo foi `-noexit cd C:\Users\<usuario>\Documents\code\teste-pytomate ; .\venv\Scripts\activate ; pythomate run automate teste-pythomate-sem-variavel ; exit`
-    - Se você reparar bem são praticamentes os mesmos utilizados na instalação e teste do pacote.
+    - Se você reparar bem são praticamentes os mesmos utilizados na [instalação e teste do pacote](#instalacao-do-pacote-pythomate).
     - [Este comentário](https://github.com/automatiza-mg/pythomate/issues/16#issuecomment-2127188908) explica tudo sobre a construção do comando.
   - Para testar se o agendamento foi criado basta clicar com o botão direito e pedir para executar
 
@@ -117,4 +117,4 @@ Vamos aos passos:
 
 Bom, apesar de ainda estar em fase de testes, acredito que o [pythomate](https://github.com/automatiza-mg/pythomate) pode ser uma boa opção para criar fluxos 100% autônomos.
 O repositório do projeto está sendo recheado com o máximo de informações possível sobre sua utilização.
-Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail.
+Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
