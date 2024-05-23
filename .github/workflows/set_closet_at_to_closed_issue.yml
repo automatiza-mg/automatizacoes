@@ -1,0 +1,13 @@
+# This uses a reusable workflow
+name: Set closet at to closed issue
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  set_closet_at_to_closed_issue:
+    uses: o-futuro-ja-comecou/github-actions-reutilizaveis/.github/workflows/set_closet_at_to_closed_issue_reusable.yml@v2.5
+    secrets:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}

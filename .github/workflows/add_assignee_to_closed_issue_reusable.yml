@@ -7,6 +7,6 @@ on:
 
 jobs:
   add_assignee_to_closed_issue:
-    uses: o-futuro-ja-comecou/github-actions-reutilizaveis/.github/workflows/add_assignee_to_closed_issue_reusable.yml@v2.2
+    uses: o-futuro-ja-comecou/github-actions-reutilizaveis/.github/workflows/add_assignee_to_closed_issue_reusable.yml@v2.5
     secrets:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
