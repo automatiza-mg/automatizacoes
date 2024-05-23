@@ -81,6 +81,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/criando-agendamentos-power-automate/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/fluxo_priorizacao_demandas/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
