@@ -75,4 +75,46 @@ Caso encontre algum erro ainda não listado [nos Issues do repositório GitHub](
 
 ## Agendamento de tarefas no Windows
 
-Caso tenha alguma dúvida sobre a instalação é só entrar em contato através do formulário abaixo ou no nosso e-mail
+Como foi a primeira vez que realizei algum agendamento tive algumas dificuldades.
+Todas elas foram relatadas [neste Issue](https://github.com/automatiza-mg/pythomate/issues/16).
+Case encontre alguma, quem sabe ele não poderá te ajudar.
+[Este video](https://www.youtube.com/watch?v=Gq-2tAQP_hE) me ajudou a iniciar o processo.
+Recomendo desmarcar a opção "Executar estando o usuário conectado ou não" (conforme sugerido pelo vídeo) caso encontre algum erro, o meu foi relatado no Issue citado acima.
+
+Vamos aos passos:
+
+  - Digite `Executar` na barra de pesquisa inicial do Windows.
+  - Na janela que será aberta digite `taskschd.msc` para inciar o painel de configuração do agendamento:
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/387f596b-f253-4b97-86f5-b209093c8430)
+
+  - Clique com o botão direito do mouse em `Biblioteca do Agendador de Tarefas` e selecione a opção  `Criar Tarefa`:
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/cc61285f-fb7b-493f-acf9-29873e2ab0a3)
+
+  - Dê um nome para sua tarefa e vá para a aba `Disparadores` para cadastrar o horário desejado para a nova tarefa:
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/348f1cbd-b8fb-49c3-81fb-d5f6070ce845)
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/348168bb-244d-43f7-b94d-c8e74d8b0263)
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/7cb056a1-6d24-4956-a6ca-5910c92a1566)
+
+  - Vá para a aba `Ações` para cadastrar a chamada do pythomate.
+  - Clique em `Novo` e digite `powershell.exe` na opção "Programa/Script"
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/35a10713-3ae9-426e-af8f-a02737d2c050)
+
+  - Na opção "Adicione argumentos (opcional)" inclua os comandos responsáveis por chamar o pythomate:
+    - Meu exemplo foi `-noexit cd C:\Users\<usuario>\Documents\code\teste-pytomate ; .\venv\Scripts\activate ; pythomate run automate teste-pythomate-sem-variavel ; exit`
+    - Se você reparar bem são praticamentes os mesmos utilizados na instalação e teste do pacote.
+    - [Este comentário](https://github.com/automatiza-mg/pythomate/issues/16#issuecomment-2127188908) explica tudo sobre a construção do comando.
+  - Para testar se o agendamento foi criado basta clicar com o botão direito e pedir para executar
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/4109056f-e1af-4be2-85e4-89a22f3f4864)
+
+## Considerações finais
+
+Bom, apesar de ainda estar em fase de testes, acredito que o [pythomate](https://github.com/automatiza-mg/pythomate) pode ser uma boa opção para criar fluxos 100% autônomos.
+O repositório do projeto está sendo recheado com o máximo de informações possível sobre sua utilização.
+Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail.
