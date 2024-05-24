@@ -8,7 +8,7 @@ tags:
 
 # Agendador de fluxos Power Automate Desktop
 
-![type:video](){: #iframe-youtube style='width: 100%; height: 17em; border-radius:20px'}
+![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
 
 ## Informações gerais
 
