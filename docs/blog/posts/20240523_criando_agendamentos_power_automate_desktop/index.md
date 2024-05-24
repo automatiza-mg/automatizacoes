@@ -27,7 +27,17 @@ Você vai precisar ter o Python instalado em sua máquina, o que pode ser realiz
 Não se esqueça de selecionar a opção para incluir a instalação no PATH do Windows.
 Sugiro baixar também a ferramenta [Git for Windows](https://git-scm.com/download/win), ela auxiliará bastante o processo de configuração do nosso pacote [pythomate](https://github.com/automatiza-mg/pythomate).
 
+Nossa ferramenta ganhou uma página de destaque em nossa [Biblioteca de robôs](../../../robos/pythomate/).
+Todos os passos tratados neste post também foram detalhados no vídeo abaixo, caso prefira:
+
+![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
+
 ## Instalação do pacote pythomate
+
+Antes de tudo, certifique-se de ler a [documentação da ferramenta](https://github.com/automatiza-mg/pythomate?tab=readme-ov-file#instala%C3%A7%C3%A3o) para se certificar que:
+
+- Caminho de instalação do Power Automate foi adicionado ao PATH do Windows[^1].
+- A opção de configuração "Ao fechar, manter aplicativo em execução" do Power Automate está desmarcada.
 
 Abra o aplicativo Git Bash e selecione a pasta onde você irá instalar o pacote.
 A criação desta pasta poderá ser feita, sem maiores problemas, via interface gráfica do Windows, como você já está acostumado a fazer.
@@ -118,3 +128,5 @@ Vamos aos passos:
 Bom, apesar de ainda estar em fase de testes, acredito que o [pythomate](https://github.com/automatiza-mg/pythomate) pode ser uma boa opção para criar fluxos 100% autônomos.
 O repositório do projeto está sendo recheado com o máximo de informações possível sobre sua utilização.
 Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
+
+[^1]: Caso encontre algum problema durante este processo, [este Issue](https://github.com/automatiza-mg/pythomate/issues/18) poderá te auxiliar.
