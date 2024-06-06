@@ -55,8 +55,13 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - Alterar mensalmente o conteúdo da variável `caminho_documento_taxacao` com o nome da pasta e arquivo da planilha `taxação` atual.
 - Alterar mensalmente o conteúdo da variável `caminho_documento_sisapmasp` com o nome da pasta e arquivo da planilha `base SISAP` atual.
 
-**Subfluxo preparar_planiha**
+**2. Subfluxo preparar_planiha**
+- Inicia a planilha `taxação` e executa subfluxo `procv`.
+- Cria nova guia na planilha `taxação`que se chama lanca_pagamento. Nessa guia, é formada uma tabela conde cada linha é um professor. Nela, consta o masp, valor a receber das aulas e valor a ser descontado pelo INSS. Esses dois valores são calculados pelo robô.
+ 
 
-- Inicia a planilha `taxação`.
-- Cria nova guia na planilha `taxação`que se chama lanca_pagamento.
-- 
+**3. Subfluxo procv**
+- Como a planilha `taxação`não informa o masp dos professores, somente o cpf, esse subfluxo pega o masp que está na planilha `base SISAP` e coloca na planilha `taxação`.
+
+**4. Subfluxo busca posição admissão**
+- Caso o professor tenha mais de uma admissão, o robô precisa escolher a adimissão correta, isto é 
