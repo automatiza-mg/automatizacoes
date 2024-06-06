@@ -12,13 +12,11 @@
         <meta name="author" content="Automatiza.MG">
       
       
-        <link rel="canonical" href="https://automatiza-mg.github.io/automatizacoes/blog/criando-agendamentos-power-automate/">
+        <link rel="canonical" href="https://automatiza-mg.github.io/automatizacoes/blog/envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxa%C3%A7%C3%A3o---fjp/">
       
       
-        <link rel="prev" href="../agilizando-a-emiss%C3%A3o-de-certid%C3%B5es-inss-na-superintend%C3%AAncia-central-de-administra%C3%A7%C3%A3o-de-pessoal---scap/">
+        <link rel="prev" href="../criando-agendamentos-power-automate/">
       
-      
-        <link rel="next" href="../envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxa%C3%A7%C3%A3o---fjp/">
       
       
       <link rel="icon" href="https://res.cloudinary.com/dgll6seyc/image/upload/v1711112766/automatiza-mg/apenas_logo_favicon.webp">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Criando agendamentos Power Automate - Automatiza.MG</title>
+        <title>Envio de e-mail para docentes a partir de planilha de taxação - FJP - Automatiza.MG</title>
       
     
     
@@ -94,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#criando-agendamentos-power-automate" class="md-skip">
+        <a href="#envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fjp" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -167,7 +165,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Criando agendamentos Power Automate
+              Envio de e-mail para docentes a partir de planilha de taxação - FJP
             
           </span>
         </div>
@@ -833,27 +831,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacao-do-pacote-pythomate" class="md-nav__link">
+  <a href="#premissas" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalação do pacote pythomate
+      Premissas
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#agendamento-de-tarefas-no-windows" class="md-nav__link">
+  <a href="#como-funciona-passo-a-passo-explicado-do-automate" class="md-nav__link">
     <span class="md-ellipsis">
-      Agendamento de tarefas no Windows
+      Como funciona? Passo a passo explicado do Automate
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#consideracoes-finais" class="md-nav__link">
+  <a href="#utilizacao-do-robo" class="md-nav__link">
     <span class="md-ellipsis">
-      Considerações finais
+      Utilização do robô
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
     </span>
   </a>
   
@@ -888,12 +895,12 @@
                 
                   <div class="md-profile md-post__profile">
                     <span class="md-author md-author--long">
-                      <img src="https://avatars.githubusercontent.com/u/49699290" alt="Gabriel Braico Dornas">
+                      <img src="https://avatars.githubusercontent.com/u/146127524?v=4" alt="Augusta Cora">
                     </span>
                     <span class="md-profile__description">
                       <strong>
                         
-                          Gabriel Braico Dornas
+                          Augusta Cora
                         
                       </strong>
                       <br>
@@ -915,7 +922,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
-                        <time datetime="2024-05-23 00:00:00" class="md-ellipsis">23 de maio de 2024</time>
+                        <time datetime="2024-06-03 00:00:00" class="md-ellipsis">3 de junho de 2024</time>
                       </div>
                     </li>
                     
@@ -957,7 +964,7 @@
         
 
   
-    <a href="https://github.com/automatiza-mg/automatizacoes/edit/main/docs/blog/posts/20240523_criando_agendamentos_power_automate_desktop/index.md" title="Editar esta página" class="md-content__button md-icon">
+    <a href="https://github.com/automatiza-mg/automatizacoes/edit/main/docs/blog/posts/20240603_post_cora/index.md" title="Editar esta página" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -965,117 +972,113 @@
   
 
 
-<div><h1 id="criando-agendamentos-power-automate">Criando agendamentos Power Automate<a class="headerlink" href="#criando-agendamentos-power-automate" title="Permanent link">⚓︎</a></h1>
-<p>Segundo a <a href="https://learn.microsoft.com/en-us/power-automate/desktop-flows/run-desktop-flows-url-shortcuts#prerequisites">documentação do Power Automate</a> é possível criar agendamento de tarefas, mas para tal seria necessário uma licença Premium.
-Como esta não é a realidade da maiorida dos usuário a equipe Automatiza.MG resolveu criar a ferramenta <a href="https://github.com/automatiza-mg/pythomate">pythomate</a>, ainda em fase de desenvolvimento e testes, para auxiliar nesta demanda.</p>
+<div><h1 id="envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fjp">Envio de e-mail para docentes a partir de planilha de taxação - FJP<a class="headerlink" href="#envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fjp" title="Permanent link">⚓︎</a></h1>
+<p>Na imersão relativa ao pagamento de professores na Fundação João Pinheiro (FJP), as automatizações de processos já existentes foram acompanhadas da ideia de se inaugurar uma nova parte do processo, que aumentaria a transparência para com os professores taxados acerca do que consistiu o pagamento feito a eles naquele mês. </p>
+<p>A ideia consiste em ter como base duas planilhas primordiais: a que contém os dados da taxação (aulas registradas, relativas a qual curso e o valor a ser pago, por exemplo) e a que contém o nome e e-mail dos professores em questão (retirada do SISAP). A relação entre as duas gera, a cada professor, uma planilha apenas com as próprias informações que será enviada a ele por e-mail. </p>
 <!-- more -->
 
-<p>Mas o que seria então esta ferramenta?
-Ela é um conjunto de scripts Python que, segundo sua documentação:</p>
-<blockquote>
-<p>Pacote pythomate inicia fluxo(s) e rotina(s) de ferramentas Microsoft (como Power Automate e Power Bi) via linha de comando.
-Aliado ao agendador de tarefas Windows cria-se gatilho(s).</p>
-</blockquote>
-<p>Neste sentido o pythomate será capaz, juntamente com o agendador de tarefas Windows, de criar gatilhos de horários para qualquer fluxo Power Automate Desktop.
-Ela foi criada com o intuito de ser simples de configurar e utilizar.</p>
-<p>Você vai precisar ter o Python instalado em sua máquina, o que pode ser realizado fazendo o download da ferramenta na <a href="https://www.python.org/downloads/">página oficial da linguagem</a>.
-Não se esqueça de selecionar a opção para incluir a instalação no PATH do Windows.
-Sugiro baixar também a ferramenta <a href="https://git-scm.com/download/win">Git for Windows</a>, ela auxiliará bastante o processo de configuração do nosso pacote <a href="https://github.com/automatiza-mg/pythomate">pythomate</a>.</p>
-<p>Nossa ferramenta ganhou uma página de destaque em nossa <a href="../../../robos/pythomate/">Biblioteca de robôs</a>.
-Todos os passos tratados neste post também foram detalhados no vídeo abaixo, caso prefira:</p>
-<p><div class="video-container"><iframe src="https://www.youtube.com/embed/09ceWwO6Xx0" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
-<h2 id="instalacao-do-pacote-pythomate">Instalação do pacote pythomate<a class="headerlink" href="#instalacao-do-pacote-pythomate" title="Permanent link">⚓︎</a></h2>
-<p>Antes de tudo, certifique-se de ler a <a href="https://github.com/automatiza-mg/pythomate?tab=readme-ov-file#instala%C3%A7%C3%A3o">documentação da ferramenta</a> para se certificar que:</p>
+<p>Este post tem como objetivo explicar o funcionamento do robô e os parâmetros que ele deve seguir para que a rodagem seja feita a cada mês.</p>
+<h2 id="premissas">Premissas<a class="headerlink" href="#premissas" title="Permanent link">⚓︎</a></h2>
+<p><strong>Pasta de cada mês:</strong> </p>
 <ul>
-<li>Caminho de instalação do Power Automate foi adicionado ao PATH do Windows<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</li>
-<li>A opção de configuração "Ao fechar, manter aplicativo em execução" do Power Automate está desmarcada.</li>
+<li>Mensal (uma nova pasta deve ser criada a cada mês);</li>
+<li>Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP. Posteriormente, conterá duas pastas criadas pelo robô ("Planilhas individuais" e "Planilhas individuais não enviadas");</li>
+<li>Nome da pasta: [Mês][Ano]. Ex: Maio 2024.</li>
 </ul>
-<p>Abra o aplicativo Git Bash e selecione a pasta onde você irá instalar o pacote.
-A criação desta pasta poderá ser feita, sem maiores problemas, via interface gráfica do Windows, como você já está acostumado a fazer.
-No meu caso realizarei a instalação na pasta <code>Documents/code/teste-pytomate/</code>.
-Lembrando que, ao abrir o aplicativo Git Bash você será direcionado para sua pasta de usuário da máquina.
-Em caso de dúvidas basta rodar o comando  <code>pwd</code> para conferência.
-O comando <code>ls -la</code> te ajuda a visualizar todas as pastas para as quais você poderá navegar.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Conferindo local ao abrir Git Bash
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$ pwd
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a># Navegando para pasta onde instalarei o pacote
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>$ cd Documents/code/teste-pytomate/
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a># Criando ambiente virtual python
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>$ python -m venv venv
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a># Ativando ambiente virtual python
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>$ source venv/Scripts/activate
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a># Instalando pacote pythomate
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>$ pip install pythomate
-</span></code></pre></div>
-<p>Pronto, pacote instalado.
-Para testar você precisará apenas do nome do fluxo Power Automate que deseja realizar o agendamento.
-No meu caso automatizarei o fluxo <code>teste-pythomate-sem-variavel</code>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># Testando a execução do fluxo via pythomate
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$ pythomate run automate teste-pythomate-sem-variavel
-</span></code></pre></div>
-<p>Caso seu fluxo seja executado com sucesso você estará pronto para seguir.
-Agora bastará criar uma rotina para rodar o comando acima via agendador de tarefa no Windows.
-Neste ponto vale uma ressalva.
-Como dito no início deste post o pythomate ainda está em fase de desenvolvimento e testes.
-Uma série de erros ainda poderão ocorrer durante a execução do comando mostrado acima.
-Os erros já identificados podem ser observados <a href="https://github.com/automatiza-mg/pythomate/issues">nos Issues do repositório GitHub</a>.
-Neste momento, talvez, o erro mais grave diz respeito a dificuldade de inicialização de fluxos que contenham variáveis de entrada cadastradas.
-<a href="https://github.com/automatiza-mg/pythomate/issues/12">Este Issue</a> relata o problema.
-O erro pode acontecer ou não.
-Caso encontre algum erro ainda não listado <a href="https://github.com/automatiza-mg/pythomate/issues">nos Issues do repositório GitHub</a> seria um prazer se você pudesse nos relatar com a abertura de mais um Issue.</p>
-<h2 id="agendamento-de-tarefas-no-windows">Agendamento de tarefas no Windows<a class="headerlink" href="#agendamento-de-tarefas-no-windows" title="Permanent link">⚓︎</a></h2>
-<p>Como foi a primeira vez que realizei algum agendamento tive algumas dificuldades.
-Todas elas foram relatadas <a href="https://github.com/automatiza-mg/pythomate/issues/16">neste Issue</a>.
-Case encontre alguma, quem sabe ele não poderá te ajudar.
-<a href="https://www.youtube.com/watch?v=Gq-2tAQP_hE">Este video</a> me ajudou a iniciar o processo.
-Recomendo desmarcar a opção "Executar estando o usuário conectado ou não" (conforme sugerido pelo vídeo) caso encontre algum erro, o meu foi relatado no Issue citado acima.</p>
-<p>Vamos aos passos:</p>
+<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1"></p>
+<p><strong>Planilha de taxação:</strong></p>
+<!-- more -->
 <ul>
-<li>Digite <code>Executar</code> na barra de pesquisa inicial do Windows.</li>
-<li>Na janela que será aberta digite <code>taskschd.msc</code> para inciar o painel de configuração do agendamento:</li>
+<li>Mensal (acompanha os dados das taxações);</li>
+<li>Abas (nesta ordem): "lanca_pagamento" (inserida pelo último robô, o da taxação), "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (<strong>essencial</strong> que sejam exatamente esses os nomes);</li>
+<li>Nome do arquivo: [mês]_[ano]. Ex: "maio_2024". </li>
 </ul>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/387f596b-f253-4b97-86f5-b209093c8430"></p>
-<ul>
-<li>Clique com o botão direito do mouse em <code>Biblioteca do Agendador de Tarefas</code> e selecione a opção  <code>Criar Tarefa</code>:</li>
-</ul>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/cc61285f-fb7b-493f-acf9-29873e2ab0a3"></p>
-<ul>
-<li>Dê um nome para sua tarefa e vá para a aba <code>Disparadores</code> para cadastrar o horário desejado para a nova tarefa:</li>
-</ul>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/348f1cbd-b8fb-49c3-81fb-d5f6070ce845"></p>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/348168bb-244d-43f7-b94d-c8e74d8b0263"></p>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/7cb056a1-6d24-4956-a6ca-5910c92a1566"></p>
-<ul>
-<li>Vá para a aba <code>Ações</code> para cadastrar a chamada do pythomate.</li>
-<li>Clique em <code>Novo</code> e digite <code>powershell.exe</code> na opção "Programa/Script"</li>
-</ul>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/35a10713-3ae9-426e-af8f-a02737d2c050"></p>
-<ul>
-<li>Na opção "Adicione argumentos (opcional)" inclua os comandos responsáveis por chamar o pythomate:<ul>
-<li>Meu exemplo foi <code>-noexit cd C:\Users\&lt;usuario&gt;\Documents\code\teste-pytomate ; .\venv\Scripts\activate ; pythomate run automate teste-pythomate-sem-variavel ; exit</code></li>
-<li>Se você reparar bem são praticamentes os mesmos utilizados na <a href="#instalacao-do-pacote-pythomate">instalação e teste do pacote</a>.</li>
-<li><a href="https://github.com/automatiza-mg/pythomate/issues/16#issuecomment-2127188908">Este comentário</a> explica tudo sobre a construção do comando.</li>
-</ul>
-</li>
-<li>Para testar se o agendamento foi criado basta clicar com o botão direito e pedir para executar</li>
-</ul>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/49699290/4109056f-e1af-4be2-85e4-89a22f3f4864"></p>
-<h2 id="consideracoes-finais">Considerações finais<a class="headerlink" href="#consideracoes-finais" title="Permanent link">⚓︎</a></h2>
-<p>Bom, apesar de ainda estar em fase de testes, acredito que o <a href="https://github.com/automatiza-mg/pythomate">pythomate</a> pode ser uma boa opção para criar fluxos 100% autônomos.
-O repositório do projeto está sendo recheado com o máximo de informações possível sobre sua utilização.
-Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail <a href="mailto:simplificacao@planejamento.mg.gov.br">simplificacao@planejamento.mg.gov.br</a>.</p>
-<div class="footnote">
-<hr>
+<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/f332a68c-a7e5-40b2-ab7d-1b4254fb9895"></p>
+<p><strong>Planilha de informações-base dos professores:</strong>
+- Mensal (extraída do SISAP a cada mês);
+- Aba única: "Relatório 1";
+- Para este robô, usa-se a geral (servidores internos e externos);
+- Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.</p>
+<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/80d5cc9a-d437-455d-be77-f8b6866c5a22"></p>
+<h2 id="como-funciona-passo-a-passo-explicado-do-automate">Como funciona? Passo a passo explicado do Automate<a class="headerlink" href="#como-funciona-passo-a-passo-explicado-do-automate" title="Permanent link">⚓︎</a></h2>
 <ol>
-<li id="fn:1">
-<p>Caso encontre algum problema durante este processo, <a href="https://github.com/automatiza-mg/pythomate/issues/18">este Issue</a> poderá te auxiliar. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
+<li><strong>"Main"</strong></li>
 </ol>
-</div></div>
+<p>Este fluxo, ramo principal do robô, ordena os demais subfluxos. </p>
+<ul>
+<li>Cria as pastas "Planilhas individuais" e "Planilhas individuais não enviadas" na pasta do mês. Essas pastas conterão as planilhas de cada professor (a primeira para professores cujo e-mail foi encontrado e, portanto, foi possível enviá-lo automaticamente, e a segunda para professores cujo e-mail não consta na planilha base, sendo necessário mandar o e-mail manualmente);</li>
+<li>Abre a planilha de taxação;</li>
+<li>Chama os subfluxos dos tópicos seguintes na ordem em que devem acontecer as etapas;</li>
+</ul>
+<p>[Ao final]</p>
+<ul>
+<li>Fecha as planilhas de taxação e planilha-base;</li>
+<li>
+<p>Orienta a pessoa usuária para enviar os e-mails da pasta "Planilhas individuais não enviadas" manualmente.</p>
+</li>
+<li>
+<p><strong>"Adicionar coluna 'E-mail enviado?'":</strong></p>
+</li>
+</ul>
+<p>Subfluxo adiciona coluna de controle na planilha de taxação acerca dos e-mails já enviados aos professores, para que, caso o robô pare no meio do percurso e precise ser rodado novamente, um professor que já recebeu e-mail não receba novamente.</p>
+<ol>
+<li><strong>"Filtrar lançamentos errados":</strong></li>
+</ol>
+<p>Subfluxo filtra coluna "Lançamento ok?" da aba "taxacao" para deixar apenas aqueles lançamentos corretos (marcados com "Sim" na mencionada coluna)</p>
+<ul>
+<li>
+<p>Filtra aba "taxacao" para deixar apenas as linhas em que haja "Sim" na coluna "Lançamento ok".</p>
+</li>
+<li>
+<p><strong>"Montagem da aba 'Inss geral'":</strong></p>
+</li>
+</ul>
+<p>Subfluxo cria aba "Inss geral" na planilha de taxação para juntar as informações de INSS dos professores internos e externos em uma só tabela.</p>
+<ol>
+<li><strong>"Montagem da lista de nomes:</strong></li>
+</ol>
+<p>Subfluxo cria aba "Lista nomes" na planilha base do SISAP para reunir os nomes dos professores que foram taxados em uma só tabela, sem repetições. </p>
+<ol>
+<li><strong>"Envio dos e-mails:</strong></li>
+</ol>
+<p>Subfluxo busca as informações necessárias nas diversas abas e envia planilha individual a cada professor taxado.</p>
+<ul>
+<li>Busca nome a nome da lista de nomes na planilha de taxação;</li>
+<li>Copia planilha exclusiva do professor e cola em um Excel individual;</li>
+<li>Busca nome a nome na planilha geral de INSS;</li>
+<li>Copia valor total e valor destinado ao INSS do professor e cola em seu Excel individual;</li>
+<li>Busca o e-mail do professor;</li>
+<li>Envia planilha individual ao professor;</li>
+<li>Sinaliza na coluna "E-mail enviado?" se e-mail foi enviado ao professor.</li>
+</ul>
+<p>OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto planilhas não enviadas (em que o e-mail não consta na planilha base do SISAP) vão para a pasta "Planilhas individuais não enviadas". 
+...</p>
+<h2 id="utilizacao-do-robo">Utilização do robô<a class="headerlink" href="#utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se a pasta do mês está com o nome indicado e se estão nela a planilha de taxação e a planilha-base;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se as planilhas de taxação e base estão com os nomes apropriados de arquivo;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Antes da rodagem do robô do e-mail, criar coluna "Lançamento ok?" (com esta grafia) na planilha de taxação, aba "taxacao", como última coluna da tabela. Nela, sinalizar com "Sim" os lançamentos no Ponto Digital que estão CORRETOS. Os que não serão levados em conta podem ser deixados em branco na coluna;</li>
+</ul>
+<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/9c2beef3-64be-44ed-a113-0c9cbf3c9d14"></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se variáveis de entrada "caminho_planilhabase" e "caminho_taxacao" estão atualizadas com o caminho dos respectivos arquivos. Ele muda a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:</li>
+<li>Clicar com o botão direito no arquivo atualizado de cada mês e selecionar "Copiar como caminho";</li>
+<li>Ir na variável de entrada em questão, na coluna à direita da tela do Automate, e selecionar os três pontinhos;</li>
+<li>Alterar o campo "Valor padrão" com caminho copiado, atentando-se para que as aspas copiadas não sejam coladas;</li>
+<li>
+<p>Salvar a alteração.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se posicionamentos das tabelas de cada aba das planilhas de taxação e planilha-base estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.</p>
+</li>
+</ul>
+<h2 id="resultados">Resultados<a class="headerlink" href="#resultados" title="Permanent link">⚓︎</a></h2>
+<p>Ao final, como explicado, a pasta "Planilhas individuais" conterá as planilhas cujo e-mail foi enviado. Aqui, deve-se atentar para, caso o e-mail retorne (SISAP desatualizado, por exemplo), a mesma planilha ser enviada manualmente ao professor cujo e-mail retornou.</p>
+<p>A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail não foi enviado porque o endereõ não constava na planilha do SISAP. Esses e-mails devem ser enviados manualmente ao professor. </p>
+<p><strong>Caso o robô pare no meio (por motivos de queda de luz ou outro qualquer)...</strong></p>
+<p><strong>e o envio de e-mails NÃO tiver começado</strong>: fechar as planilhas abertas sem salvar e rodar o robô novamente.
+<strong>e algum e-mail já tiver sido enviado</strong>: fechar E SALVAR as planilhas e rodar o robô novamente.</p></div>
 
 
 
@@ -1098,7 +1101,7 @@ Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação do
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 24, 2024 15:22:53</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 6, 2024 13:01:44</span>
   </span>
 
     
@@ -1108,7 +1111,7 @@ Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação do
     <span class="md-icon" title="Criada">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 23, 2024 14:38:06</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 3, 2024 18:37:59</span>
   </span>
 
     
