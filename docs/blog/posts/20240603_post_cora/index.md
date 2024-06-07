@@ -7,11 +7,11 @@ categories:
   - Power Automate
 ---
 
-# Envio de e-mail para docentes a partir de planilha de taxação - FJP
+# Envio de e-mail para docentes a partir de planilha de taxação - Fundação João Pinheiro
 
 Na imersão relativa ao pagamento de professores na Fundação João Pinheiro (FJP), as automatizações de processos já existentes foram acompanhadas da ideia de se inaugurar uma nova parte do processo, que aumentaria a transparência para com os professores taxados acerca do que consistiu o pagamento feito a eles naquele mês. 
 
-A ideia consiste em ter como base duas planilhas primordiais: a que contém os dados da taxação (aulas registradas, relativas a qual curso e o valor a ser pago, por exemplo) e a que contém o nome e e-mail dos professores em questão (retirada do SISAP). A relação entre as duas gera, a cada professor, uma planilha apenas com as próprias informações que será enviada a ele por e-mail. 
+A ideia consiste em ter como base duas planilhas primordiais: a que contém os dados da taxação (aulas registradas, relativas a qual curso e o valor a ser pago, por exemplo) e a que contém o nome e e-mail dos professores em questão (retirada do BO). A relação entre as duas gera, a cada professor, uma planilha apenas com as próprias informações que será enviada a ele por e-mail. 
 
 <!-- more -->
 
@@ -36,6 +36,7 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/f332a68c-a7e5-40b2-ab7d-1b4254fb9895)
 
 **Planilha de informações-base dos professores:**
+
 - Mensal (extraída do SISAP a cada mês);
 - Aba única: "Relatório 1";
 - Para este robô, usa-se a geral (servidores internos e externos);
@@ -58,29 +59,24 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 
 - Fecha as planilhas de taxação e planilha-base;
 - Orienta a pessoa usuária para enviar os e-mails da pasta "Planilhas individuais não enviadas" manualmente.
-
-
+  
 2. **"Adicionar coluna 'E-mail enviado?'":**
 
 Subfluxo adiciona coluna de controle na planilha de taxação acerca dos e-mails já enviados aos professores, para que, caso o robô pare no meio do percurso e precise ser rodado novamente, um professor que já recebeu e-mail não receba novamente.
 
-
 3. **"Filtrar lançamentos errados":**
 
-Subfluxo filtra coluna "Lançamento ok?" da aba "taxacao" para deixar apenas aqueles lançamentos corretos (marcados com "Sim" na mencionada coluna)
+Subfluxo filtra coluna "Lançamento ok?" da aba "taxacao" para deixar apenas aqueles lançamentos incorretos (não marcados com "Não" na mencionada coluna)
 
 - Filtra aba "taxacao" para deixar apenas as linhas em que haja "Sim" na coluna "Lançamento ok".
-
 
 4. **"Montagem da aba 'Inss geral'":**
 
 Subfluxo cria aba "Inss geral" na planilha de taxação para juntar as informações de INSS dos professores internos e externos em uma só tabela.
 
-
 5. **"Montagem da lista de nomes:**
 
 Subfluxo cria aba "Lista nomes" na planilha base do SISAP para reunir os nomes dos professores que foram taxados em uma só tabela, sem repetições. 
-
 
 6. **"Envio dos e-mails:**
 
@@ -95,22 +91,23 @@ Subfluxo busca as informações necessárias nas diversas abas e envia planilha 
 - Sinaliza na coluna "E-mail enviado?" se e-mail foi enviado ao professor.
 
 OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto planilhas não enviadas (em que o e-mail não consta na planilha base do SISAP) vão para a pasta "Planilhas individuais não enviadas". 
-...
+
 
 ## Utilização do robô
 
 - [x] Conferir se a pasta do mês está com o nome indicado e se estão nela a planilha de taxação e a planilha-base;
 - [x] Conferir se as planilhas de taxação e base estão com os nomes apropriados de arquivo;
-- [x] Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;
-- [x] Antes da rodagem do robô do e-mail, criar coluna "Lançamento ok?" (com esta grafia) na planilha de taxação, aba "taxacao", como última coluna da tabela. Nela, sinalizar com "Sim" os lançamentos no Ponto Digital que estão CORRETOS. Os que não serão levados em conta podem ser deixados em branco na coluna;
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/9c2beef3-64be-44ed-a113-0c9cbf3c9d14)
-
-- [x] Conferir se variáveis de entrada "caminho_planilhabase" e "caminho_taxacao" estão atualizadas com o caminho dos respectivos arquivos. Ele muda a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:
+- [x] Alterar, primeiramente, a variável "caminho_pasta" no formato adequado, mudando o mês e o ano, se necessário. Depois, fazer o mesmo para as variáveis "caminho_taxacao" e "caminho_planilhabase"
+    Elas mudam a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:
   - Clicar com o botão direito no arquivo atualizado de cada mês e selecionar "Copiar como caminho";
   - Ir na variável de entrada em questão, na coluna à direita da tela do Automate, e selecionar os três pontinhos;
   - Alterar o campo "Valor padrão" com caminho copiado, atentando-se para que as aspas copiadas não sejam coladas;
   - Salvar a alteração.
+
+- [x] Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;
+- [x] Antes da rodagem do robô do e-mail, criar coluna "Lançamento ok?" (com esta grafia) na planilha de taxação, aba "taxacao", como última coluna da tabela. Nela, sinalizar com "Não" os lançamentos no Ponto Digital que estão INCORRETOS. Os que serão levados em conta devem ser deixados em branco na coluna;
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/70a4aef6-3a02-4739-821f-da48b9f04d17)
 
 - [x] Conferir se posicionamentos das tabelas de cada aba das planilhas de taxação e planilha-base estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.
 
@@ -118,9 +115,10 @@ OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto plan
 
 Ao final, como explicado, a pasta "Planilhas individuais" conterá as planilhas cujo e-mail foi enviado. Aqui, deve-se atentar para, caso o e-mail retorne (SISAP desatualizado, por exemplo), a mesma planilha ser enviada manualmente ao professor cujo e-mail retornou.
 
-A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail não foi enviado porque o endereõ não constava na planilha do SISAP. Esses e-mails devem ser enviados manualmente ao professor. 
+A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail não foi enviado porque o endereço não constava na planilha do SISAP. Esses e-mails devem ser enviados manualmente ao professor. 
 
 **Caso o robô pare no meio (por motivos de queda de luz ou outro qualquer)...**
 
-**e o envio de e-mails NÃO tiver começado**: fechar as planilhas abertas sem salvar e rodar o robô novamente.
-**e algum e-mail já tiver sido enviado**: fechar E SALVAR as planilhas e rodar o robô novamente.
+e o envio de e-mails **NÃO** tiver começado: fechar as planilhas abertas sem salvar e rodar o robô novamente.
+
+e algum e-mail **já tiver sido enviado**: fechar E SALVAR as planilhas e rodar o robô novamente.
