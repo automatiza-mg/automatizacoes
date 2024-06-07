@@ -12,7 +12,7 @@
         <meta name="author" content="Automatiza.MG">
       
       
-        <link rel="canonical" href="https://automatiza-mg.github.io/automatizacoes/blog/envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxa%C3%A7%C3%A3o---fjp/">
+        <link rel="canonical" href="https://automatiza-mg.github.io/automatizacoes/blog/envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxa%C3%A7%C3%A3o---funda%C3%A7%C3%A3o-jo%C3%A3o-pinheiro/">
       
       
         <link rel="prev" href="../criando-agendamentos-power-automate/">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Envio de e-mail para docentes a partir de planilha de taxação - FJP - Automatiza.MG</title>
+        <title>Envio de e-mail para docentes a partir de planilha de taxação - Fundação João Pinheiro - Automatiza.MG</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fjp" class="md-skip">
+        <a href="#envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fundacao-joao-pinheiro" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -165,7 +165,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Envio de e-mail para docentes a partir de planilha de taxação - FJP
+              Envio de e-mail para docentes a partir de planilha de taxação - Fundação João Pinheiro
             
           </span>
         </div>
@@ -972,9 +972,9 @@
   
 
 
-<div><h1 id="envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fjp">Envio de e-mail para docentes a partir de planilha de taxação - FJP<a class="headerlink" href="#envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fjp" title="Permanent link">⚓︎</a></h1>
+<div><h1 id="envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fundacao-joao-pinheiro">Envio de e-mail para docentes a partir de planilha de taxação - Fundação João Pinheiro<a class="headerlink" href="#envio-de-e-mail-para-docentes-a-partir-de-planilha-de-taxacao-fundacao-joao-pinheiro" title="Permanent link">⚓︎</a></h1>
 <p>Na imersão relativa ao pagamento de professores na Fundação João Pinheiro (FJP), as automatizações de processos já existentes foram acompanhadas da ideia de se inaugurar uma nova parte do processo, que aumentaria a transparência para com os professores taxados acerca do que consistiu o pagamento feito a eles naquele mês. </p>
-<p>A ideia consiste em ter como base duas planilhas primordiais: a que contém os dados da taxação (aulas registradas, relativas a qual curso e o valor a ser pago, por exemplo) e a que contém o nome e e-mail dos professores em questão (retirada do SISAP). A relação entre as duas gera, a cada professor, uma planilha apenas com as próprias informações que será enviada a ele por e-mail. </p>
+<p>A ideia consiste em ter como base duas planilhas primordiais: a que contém os dados da taxação (aulas registradas, relativas a qual curso e o valor a ser pago, por exemplo) e a que contém o nome e e-mail dos professores em questão (retirada do BO). A relação entre as duas gera, a cada professor, uma planilha apenas com as próprias informações que será enviada a ele por e-mail. </p>
 <!-- more -->
 
 <p>Este post tem como objetivo explicar o funcionamento do robô e os parâmetros que ele deve seguir para que a rodagem seja feita a cada mês.</p>
@@ -994,11 +994,13 @@
 <li>Nome do arquivo: [mês]_[ano]. Ex: "maio_2024". </li>
 </ul>
 <p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/f332a68c-a7e5-40b2-ab7d-1b4254fb9895"></p>
-<p><strong>Planilha de informações-base dos professores:</strong>
-- Mensal (extraída do SISAP a cada mês);
-- Aba única: "Relatório 1";
-- Para este robô, usa-se a geral (servidores internos e externos);
-- Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.</p>
+<p><strong>Planilha de informações-base dos professores:</strong></p>
+<ul>
+<li>Mensal (extraída do SISAP a cada mês);</li>
+<li>Aba única: "Relatório 1";</li>
+<li>Para este robô, usa-se a geral (servidores internos e externos);</li>
+<li>Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.</li>
+</ul>
 <p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/80d5cc9a-d437-455d-be77-f8b6866c5a22"></p>
 <h2 id="como-funciona-passo-a-passo-explicado-do-automate">Como funciona? Passo a passo explicado do Automate<a class="headerlink" href="#como-funciona-passo-a-passo-explicado-do-automate" title="Permanent link">⚓︎</a></h2>
 <ol>
@@ -1024,7 +1026,7 @@
 <ol>
 <li><strong>"Filtrar lançamentos errados":</strong></li>
 </ol>
-<p>Subfluxo filtra coluna "Lançamento ok?" da aba "taxacao" para deixar apenas aqueles lançamentos corretos (marcados com "Sim" na mencionada coluna)</p>
+<p>Subfluxo filtra coluna "Lançamento ok?" da aba "taxacao" para deixar apenas aqueles lançamentos incorretos (não marcados com "Não" na mencionada coluna)</p>
 <ul>
 <li>
 <p>Filtra aba "taxacao" para deixar apenas as linhas em que haja "Sim" na coluna "Lançamento ok".</p>
@@ -1051,18 +1053,13 @@
 <li>Envia planilha individual ao professor;</li>
 <li>Sinaliza na coluna "E-mail enviado?" se e-mail foi enviado ao professor.</li>
 </ul>
-<p>OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto planilhas não enviadas (em que o e-mail não consta na planilha base do SISAP) vão para a pasta "Planilhas individuais não enviadas". 
-...</p>
+<p>OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto planilhas não enviadas (em que o e-mail não consta na planilha base do SISAP) vão para a pasta "Planilhas individuais não enviadas". </p>
 <h2 id="utilizacao-do-robo">Utilização do robô<a class="headerlink" href="#utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se a pasta do mês está com o nome indicado e se estão nela a planilha de taxação e a planilha-base;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se as planilhas de taxação e base estão com os nomes apropriados de arquivo;</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Antes da rodagem do robô do e-mail, criar coluna "Lançamento ok?" (com esta grafia) na planilha de taxação, aba "taxacao", como última coluna da tabela. Nela, sinalizar com "Sim" os lançamentos no Ponto Digital que estão CORRETOS. Os que não serão levados em conta podem ser deixados em branco na coluna;</li>
-</ul>
-<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/9c2beef3-64be-44ed-a113-0c9cbf3c9d14"></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se variáveis de entrada "caminho_planilhabase" e "caminho_taxacao" estão atualizadas com o caminho dos respectivos arquivos. Ele muda a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Alterar, primeiramente, a variável "caminho_pasta" no formato adequado, mudando o mês e o ano, se necessário. Depois, fazer o mesmo para as variáveis "caminho_taxacao" e "caminho_planilhabase"
+    Elas mudam a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:</li>
 <li>Clicar com o botão direito no arquivo atualizado de cada mês e selecionar "Copiar como caminho";</li>
 <li>Ir na variável de entrada em questão, na coluna à direita da tela do Automate, e selecionar os três pontinhos;</li>
 <li>Alterar o campo "Valor padrão" com caminho copiado, atentando-se para que as aspas copiadas não sejam coladas;</li>
@@ -1070,15 +1067,20 @@
 <p>Salvar a alteração.</p>
 </li>
 <li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se posicionamentos das tabelas de cada aba das planilhas de taxação e planilha-base estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.</p>
+<p><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;</p>
 </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Antes da rodagem do robô do e-mail, criar coluna "Lançamento ok?" (com esta grafia) na planilha de taxação, aba "taxacao", como última coluna da tabela. Nela, sinalizar com "Não" os lançamentos no Ponto Digital que estão INCORRETOS. Os que serão levados em conta devem ser deixados em branco na coluna;</li>
+</ul>
+<p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/70a4aef6-3a02-4739-821f-da48b9f04d17"></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se posicionamentos das tabelas de cada aba das planilhas de taxação e planilha-base estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.</li>
 </ul>
 <h2 id="resultados">Resultados<a class="headerlink" href="#resultados" title="Permanent link">⚓︎</a></h2>
 <p>Ao final, como explicado, a pasta "Planilhas individuais" conterá as planilhas cujo e-mail foi enviado. Aqui, deve-se atentar para, caso o e-mail retorne (SISAP desatualizado, por exemplo), a mesma planilha ser enviada manualmente ao professor cujo e-mail retornou.</p>
-<p>A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail não foi enviado porque o endereõ não constava na planilha do SISAP. Esses e-mails devem ser enviados manualmente ao professor. </p>
+<p>A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail não foi enviado porque o endereço não constava na planilha do SISAP. Esses e-mails devem ser enviados manualmente ao professor. </p>
 <p><strong>Caso o robô pare no meio (por motivos de queda de luz ou outro qualquer)...</strong></p>
-<p><strong>e o envio de e-mails NÃO tiver começado</strong>: fechar as planilhas abertas sem salvar e rodar o robô novamente.
-<strong>e algum e-mail já tiver sido enviado</strong>: fechar E SALVAR as planilhas e rodar o robô novamente.</p></div>
+<p>e o envio de e-mails <strong>NÃO</strong> tiver começado: fechar as planilhas abertas sem salvar e rodar o robô novamente.</p>
+<p>e algum e-mail <strong>já tiver sido enviado</strong>: fechar E SALVAR as planilhas e rodar o robô novamente.</p></div>
 
 
 
@@ -1101,7 +1103,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 6, 2024 13:01:44</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 7, 2024 14:12:50</span>
   </span>
 
     
