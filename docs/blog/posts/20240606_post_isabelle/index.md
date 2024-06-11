@@ -1,6 +1,6 @@
 ---
 date: 2024-06-06
-draft: true
+draft: false
 authors: [Isabelle-Fernandes]
 comments: true
 categories:
@@ -18,11 +18,10 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
 ## Premissas
 
 **Planilha `taxação`:**
-
 - Mensal (acompanha os dados das taxações).
 - Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (**essencial** que sejam exatamente esses os nomes).
 - Nome do arquivo: [mês]_[ano]. Ex: "maio_2024".
-
+  
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/2ae333e8-beab-4efa-b98c-2a340afbf686)
 
 **Planilha `base SISAP BO`:**
@@ -30,30 +29,30 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
 - Aba única: "Relatório 1";
 - Para este robô, usa-se a geral (servidores internos e externos);
 - Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.
-
+  
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/16578ed5-0826-4b15-a0b3-086bd2ba5a01)
 
 **Pasta de cada mês:** 
-
 - Mensal (uma nova pasta deve ser criada a cada mês);
 - Deve conter, antes de iniciar o robô, a planilha `taxação` e a planilha `base SISAP BO`.
 - Nome da pasta: [Mês][espaço][Ano]. Ex: Maio 2024
 
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/95bf7bc8-9aab-4bc1-85b2-d111fb446671)
 
+**Alterar nome de variáveis:** Antes de executar o robô, além da pasta criada e aquivos renomeados adequadamente, o usuário deverá renomear algumas variáveis de entrada/saída. As variáveis que devem ser renomeadas mensalmente estão fixadas.
+
+![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/2e738eb3-2a58-47e7-8499-b6eddee7d4f1)
+
+- Alterar mensalmente o conteúdo das variáveis `data_inicio` e `data_fim`  conforme mês vigente da taxação.
+- Alterar mensalmente o conteúdo da variável `data_extenso` conforme o texto a ser colocado na descrição da taxação no terminal Prodemge SISAP.
+- Alterar mensalmente o conteúdo da variável `caminho_documento_taxacao` com o nome da pasta e arquivo da planilha `taxação` atual.
+- Alterar mensalmente o conteúdo da variável `caminho_documento_sisapmasp` com o nome da pasta e arquivo da planilha `base SISAP BO` atual.
+
 ## Como funciona? Passo a passo explicado do Automate
 
 **1. Main**
 Este fluxo, ramo principal do robô, ordena os demais subfluxos. 
 - Chama os subfluxos dos tópicos seguintes na ordem em que devem acontecer as etapas.
-
-**Importante:** Antes de executar o robô, além da pasta criada e aquivos renomeados adequadamente, o usuário deverá renomear algumas variáveis de entrada/saída. As variáveis que devem ser renomeadas mensalmente estão fixadas.
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/2e738eb3-2a58-47e7-8499-b6eddee7d4f1)
-
-- As variaveis `data_extenso`, `data_inicio` e `data_fim` precisam ser alteradas mensalmente pelo taxador, conforme mês vigente da taxação.
-- Alterar mensalmente o conteúdo da variável `caminho_documento_taxacao` com o nome da pasta e arquivo da planilha `taxação` atual.
-- Alterar mensalmente o conteúdo da variável `caminho_documento_sisapmasp` com o nome da pasta e arquivo da planilha `base SISAP BO` atual.
 
 **2. Subfluxo preparar_planiha**
 - Inicia a planilha `taxação` e executa subfluxo `procv`.
@@ -74,3 +73,17 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
   **3.2 Subfluxo liberacao_financeiro**
   - Esse subfluxo insere os valores de INSS e aulas a receber no terminal Prodemge SISAP.
 
+## Utilização do robô
+
+- [x] Conferir se a pasta do mês está com o nome indicado e se estão nela as planilhas `taxação` e `base SISAP BO`. Isso é feito mensalmente.
+- [x] Conferir se as planilhas `taxação` e `base SISAP BO` estão com os nomes apropriados de arquivo. Isso é feito mensalmente.
+- [x] Alterar o conteúdo das variáveis indicadas na seção Premissas desse blog. Isso é feito mensalmente.
+- [x] Nem todos os professores estão registrados na planilha `base SISAP BO`. Para estes professores que não foram cadastrados, o robô não realizará o lançamento do SISAP. Neste caso há duas alternativas:
+  - Fazer a inclusão manual desses professores faltantes na `base SISAP BO`. Isso deve ser feito antes da execução do robô.
+  - Fazer o lançamento manual desses professores no terminal Prodemge SISAP. Isso deve ser feito após a execução do robô. Nesse caso, o robô indica na planilha `taxação`os professores que não foram lançados. Para os que foram lançados ele escreve "lançamento ok". Os que não foram lançados ele deixa a célula vazia.
+- [x] Conferir se posicionamentos das tabelas de cada aba das planilhas `taxação` e `base SISAP BO` estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.
+- [x] Quando o robô for ser executado é importante nenhum arquivo excel estar aberto. O robô é quem deve abri-los. 
+
+## Resultados
+
+Processo manual x tempo. Passou a ser realizado em x tempo.
