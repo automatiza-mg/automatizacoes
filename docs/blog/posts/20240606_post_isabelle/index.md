@@ -42,7 +42,9 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
 
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/95bf7bc8-9aab-4bc1-85b2-d111fb446671)
 
-**Alterar nome de variáveis:** Antes de executar o robô, além da pasta criada e aquivos renomeados adequadamente, o usuário deverá renomear algumas variáveis de entrada/saída. As variáveis que devem ser renomeadas mensalmente estão fixadas.
+**Alterar nome de variáveis:** 
+
+Antes de executar o robô, além da pasta criada e aquivos renomeados adequadamente, o usuário deverá renomear algumas variáveis de entrada/saída. As variáveis que devem ser renomeadas mensalmente estão fixadas.
 
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/2e738eb3-2a58-47e7-8499-b6eddee7d4f1)
 
@@ -54,6 +56,7 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
 ## Como funciona? Passo a passo explicado do Automate
 
 **1. Main**
+
 Este fluxo, ramo principal do robô, ordena os demais subfluxos. 
 
 - Chama os subfluxos dos tópicos seguintes na ordem em que devem acontecer as etapas.
@@ -63,7 +66,6 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - Inicia a planilha `taxação` e executa subfluxo `procv`.
 - Cria nova guia na planilha `taxação`que se chama `lanca_pagamento`. Nessa guia, é formada uma tabela onde cada linha é um professor. Nela, consta o masp, valor a receber das aulas e valor a ser descontado pelo INSS. Esses dois valores são calculados pelo robô.
  
-
   **2.1 Subfluxo procv**
   
   - Como a planilha `taxação`não informa o masp dos professores, somente o CPF, esse subfluxo pega o masp que está na planilha `base SISAP BO` e coloca na planilha `taxação`.
@@ -75,6 +77,7 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - Executa o subfluxo `liberacao_financeiro`.
 
   **3.1 Subfluxo busca posição_admissão**
+  
   - Caso o professor tenha mais de uma admissão, o robô precisa escolher a adimissão correta. Esse subfluxo consiste em fazer a escolha correta da admissão do professor.
  
   **3.2 Subfluxo liberacao_financeiro**
