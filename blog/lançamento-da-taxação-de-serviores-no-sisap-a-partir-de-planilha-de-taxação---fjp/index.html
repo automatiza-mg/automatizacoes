@@ -978,21 +978,27 @@
 <!-- more -->
 
 <h2 id="premissas">Premissas<a class="headerlink" href="#premissas" title="Permanent link">⚓︎</a></h2>
-<p><strong>Planilha <code>taxação</code>:</strong>
-- Mensal (acompanha os dados das taxações).
-- Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (<strong>essencial</strong> que sejam exatamente esses os nomes).
-- Nome do arquivo: [mês]_[ano]. Ex: "maio_2024".</p>
+<p><strong>Planilha <code>taxação</code>:</strong></p>
+<ul>
+<li>Mensal (acompanha os dados das taxações).</li>
+<li>Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (<strong>essencial</strong> que sejam exatamente esses os nomes).</li>
+<li>Nome do arquivo: [mês]_[ano]. Ex: "maio_2024".</li>
+</ul>
 <p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/2ae333e8-beab-4efa-b98c-2a340afbf686"></p>
-<p><strong>Planilha <code>base SISAP BO</code>:</strong>
-- Mensal (extraída do SISAP a cada mês);
-- Aba única: "Relatório 1";
-- Para este robô, usa-se a geral (servidores internos e externos);
-- Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.</p>
+<p><strong>Planilha <code>base SISAP BO</code>:</strong></p>
+<ul>
+<li>Mensal (extraída do SISAP a cada mês);</li>
+<li>Aba única: "Relatório 1";</li>
+<li>Para este robô, usa-se a geral (servidores internos e externos);</li>
+<li>Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.</li>
+</ul>
 <p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/16578ed5-0826-4b15-a0b3-086bd2ba5a01"></p>
-<p><strong>Pasta de cada mês:</strong> 
-- Mensal (uma nova pasta deve ser criada a cada mês);
-- Deve conter, antes de iniciar o robô, a planilha <code>taxação</code> e a planilha <code>base SISAP BO</code>.
-- Nome da pasta: [Mês][espaço][Ano]. Ex: Maio 2024</p>
+<p><strong>Pasta de cada mês:</strong> </p>
+<ul>
+<li>Mensal (uma nova pasta deve ser criada a cada mês);</li>
+<li>Deve conter, antes de iniciar o robô, a planilha <code>taxação</code> e a planilha <code>base SISAP BO</code>.</li>
+<li>Nome da pasta: [Mês][espaço][Ano]. Ex: Maio 2024</li>
+</ul>
 <p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/95bf7bc8-9aab-4bc1-85b2-d111fb446671"></p>
 <p><strong>Alterar nome de variáveis:</strong> Antes de executar o robô, além da pasta criada e aquivos renomeados adequadamente, o usuário deverá renomear algumas variáveis de entrada/saída. As variáveis que devem ser renomeadas mensalmente estão fixadas.</p>
 <p><img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/2e738eb3-2a58-47e7-8499-b6eddee7d4f1"></p>
@@ -1004,21 +1010,31 @@
 </ul>
 <h2 id="como-funciona-passo-a-passo-explicado-do-automate">Como funciona? Passo a passo explicado do Automate<a class="headerlink" href="#como-funciona-passo-a-passo-explicado-do-automate" title="Permanent link">⚓︎</a></h2>
 <p><strong>1. Main</strong>
-Este fluxo, ramo principal do robô, ordena os demais subfluxos. 
-- Chama os subfluxos dos tópicos seguintes na ordem em que devem acontecer as etapas.</p>
-<p><strong>2. Subfluxo preparar_planiha</strong>
-- Inicia a planilha <code>taxação</code> e executa subfluxo <code>procv</code>.
-- Cria nova guia na planilha <code>taxação</code>que se chama <code>lanca_pagamento</code>. Nessa guia, é formada uma tabela onde cada linha é um professor. Nela, consta o masp, valor a receber das aulas e valor a ser descontado pelo INSS. Esses dois valores são calculados pelo robô.</p>
-<p><strong>2.1 Subfluxo procv</strong>
-  - Como a planilha <code>taxação</code>não informa o masp dos professores, somente o CPF, esse subfluxo pega o masp que está na planilha <code>base SISAP BO</code> e coloca na planilha <code>taxação</code>.</p>
-<p><strong>3. Subfluxo taxacao</strong>
-- Baseado na guia criada <code>lanca_pagamento</code>na planilha exel <code>taxacao</code>, esse subfluxo acessa o terminal Prodemge SISAP e efetua os lançamentos pertinentes.
-- Executa o subfluxo <code>busca_posicao_admissao</code>.
-- Executa o subfluxo <code>liberacao_financeiro</code>.</p>
+Este fluxo, ramo principal do robô, ordena os demais subfluxos. </p>
+<ul>
+<li>Chama os subfluxos dos tópicos seguintes na ordem em que devem acontecer as etapas.</li>
+</ul>
+<p><strong>2. Subfluxo preparar_planiha</strong></p>
+<ul>
+<li>Inicia a planilha <code>taxação</code> e executa subfluxo <code>procv</code>.</li>
+<li>Cria nova guia na planilha <code>taxação</code>que se chama <code>lanca_pagamento</code>. Nessa guia, é formada uma tabela onde cada linha é um professor. Nela, consta o masp, valor a receber das aulas e valor a ser descontado pelo INSS. Esses dois valores são calculados pelo robô.</li>
+</ul>
+<p><strong>2.1 Subfluxo procv</strong></p>
+<ul>
+<li>Como a planilha <code>taxação</code>não informa o masp dos professores, somente o CPF, esse subfluxo pega o masp que está na planilha <code>base SISAP BO</code> e coloca na planilha <code>taxação</code>.</li>
+</ul>
+<p><strong>3. Subfluxo taxacao</strong></p>
+<ul>
+<li>Baseado na guia criada <code>lanca_pagamento</code>na planilha exel <code>taxacao</code>, esse subfluxo acessa o terminal Prodemge SISAP e efetua os lançamentos pertinentes.</li>
+<li>Executa o subfluxo <code>busca_posicao_admissao</code>.</li>
+<li>Executa o subfluxo <code>liberacao_financeiro</code>.</li>
+</ul>
 <p><strong>3.1 Subfluxo busca posição_admissão</strong>
   - Caso o professor tenha mais de uma admissão, o robô precisa escolher a adimissão correta. Esse subfluxo consiste em fazer a escolha correta da admissão do professor.</p>
-<p><strong>3.2 Subfluxo liberacao_financeiro</strong>
-  - Esse subfluxo insere os valores de INSS e aulas a receber no terminal Prodemge SISAP.</p>
+<p><strong>3.2 Subfluxo liberacao_financeiro</strong></p>
+<ul>
+<li>Esse subfluxo insere os valores de INSS e aulas a receber no terminal Prodemge SISAP.</li>
+</ul>
 <h2 id="utilizacao-do-robo">Utilização do robô<a class="headerlink" href="#utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Conferir se a pasta do mês está com o nome indicado e se estão nela as planilhas <code>taxação</code> e <code>base SISAP BO</code>. Isso é feito mensalmente.</li>
@@ -1054,7 +1070,7 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 11, 2024 16:47:36</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 11, 2024 16:57:46</span>
   </span>
 
     
