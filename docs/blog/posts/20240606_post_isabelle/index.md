@@ -66,7 +66,7 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - Inicia a planilha `taxação` e executa subfluxo `procv`.
 - Cria nova guia na planilha `taxação`que se chama `lanca_pagamento`. Nessa guia, é formada uma tabela onde cada linha é um professor. Nela, consta o masp, valor a receber das aulas e valor a ser descontado pelo INSS. Esses dois valores são calculados pelo robô.
   
-  **2.1 Subfluxo procv**
+  **2.1. Subfluxo procv**
 
   - Como a planilha `taxação`não informa o masp dos professores, somente o CPF, esse subfluxo pega o masp que está na planilha `base SISAP BO` e coloca na planilha `taxação`.
 
@@ -76,13 +76,13 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - Executa o subfluxo `busca_posicao_admissao`.
 - Executa o subfluxo `liberacao_financeiro`.
   
-  **3.1 Subfluxo busca posição_admissão**
+  **3.1. Subfluxo busca posição_admissão**
 
-    - Caso o professor tenha mais de uma admissão, o robô precisa escolher a adimissão correta. Esse subfluxo consiste em fazer a escolha correta da admissão do professor.
+  - Caso o professor tenha mais de uma admissão, o robô precisa escolher a adimissão correta. Esse subfluxo consiste em fazer a escolha correta da admissão do professor.
   
-  **3.2 Subfluxo liberacao_financeiro**
-  
-    - Esse subfluxo insere os valores de INSS e aulas a receber no terminal Prodemge SISAP.
+  **3.2. Subfluxo liberacao_financeiro**
+
+  - Esse subfluxo insere os valores de INSS e aulas a receber no terminal Prodemge SISAP.
 
 ## Utilização do robô
 
