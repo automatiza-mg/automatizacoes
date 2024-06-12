@@ -90,8 +90,8 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - [x] Conferir se as planilhas `taxação` e `base SISAP BO` estão com os nomes apropriados de arquivo. Isso é feito mensalmente.
 - [x] Alterar o conteúdo das variáveis indicadas na seção Premissas desse blog. Isso é feito mensalmente.
 - [x] Nem todos os professores estão registrados na planilha `base SISAP BO`. Para estes professores que não foram cadastrados, o robô não realizará o lançamento do SISAP. Neste caso há duas alternativas:
-  - Fazer a inclusão manual desses professores faltantes na `base SISAP BO`. Isso deve ser feito antes da execução do robô.
-  - Fazer o lançamento manual desses professores no terminal Prodemge SISAP. Isso deve ser feito após a execução do robô. Nesse caso, o robô indica na planilha `taxação`os professores que não foram lançados. Para os que foram lançados ele escreve "lançamento ok". Os que não foram lançados ele deixa a célula vazia.
+    - Fazer a inclusão manual desses professores faltantes na `base SISAP BO`. Isso deve ser feito antes da execução do robô.
+    - Fazer o lançamento manual desses professores no terminal Prodemge SISAP. Isso deve ser feito após a execução do robô. Nesse caso, o robô indica na planilha `taxação`os professores que não foram lançados. Para os que foram lançados ele escreve "lançamento ok". Os que não foram lançados ele deixa a célula vazia.
 - [x] Conferir se posicionamentos das tabelas de cada aba das planilhas `taxação` e `base SISAP BO` estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.
 - [x] Quando o robô for ser executado é importante nenhum arquivo excel estar aberto. O robô é quem deve abri-los. 
 
