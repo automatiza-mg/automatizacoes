@@ -38,8 +38,8 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 **Planilha de informações-base dos professores:**
 
 - Mensal (extraída do SISAP a cada mês);
-- Aba única: "Relatório 1";
-- Para este robô, usa-se a geral (servidores internos e externos);
+- Aba única: "Relatório 1" (**essencial** que seja exatamente esse o nome);
+- Para este robô, usa-se a versão geral (servidores internos e externos);
 - Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.
 
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/80d5cc9a-d437-455d-be77-f8b6866c5a22)
@@ -96,7 +96,7 @@ OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto plan
 ## Utilização do robô
 
 - [x] Conferir se a pasta do mês está com o nome indicado e se estão nela a planilha de taxação e a planilha-base;
-- [x] Conferir se as planilhas de taxação e base estão com os nomes apropriados de arquivo;
+- [x] Conferir se as planilhas de taxação e base estão com os nomes indicados;
 - [x] Alterar, primeiramente, a variável "caminho_pasta" no formato adequado, mudando o mês e o ano, se necessário. Depois, fazer o mesmo para as variáveis "caminho_taxacao" e "caminho_planilhabase"
     Elas mudam a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:
   - Clicar com o botão direito no arquivo atualizado de cada mês e selecionar "Copiar como caminho";
