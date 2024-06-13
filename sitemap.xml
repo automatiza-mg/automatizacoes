@@ -96,6 +96,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-un-rob%C3%B4/</loc>
+         <lastmod>2024-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/fluxo_priorizacao_demandas/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
@@ -191,12 +196,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/power-automate/</loc>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/ferramentas/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/ferramentas/</loc>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/power-automate/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -227,6 +232,11 @@
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/blog/page/2/</loc>
+         <lastmod>2024-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/power-automate/page/2/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
