@@ -1,131 +1,110 @@
 ---
-date: 2024-06-03
-draft: True
-authors: [gabrielbdornas]
+date: 2024-06-17
+draft: False
+authors: [henriquesiqr]
 comments: true
 categories:
   - Power Automate
 ---
 
-# Post Henrique
+# Lançamento das horas de docência no Ponto Digital a partir de planilha de taxação - Fundação João Pinheiro
 
-Copie o que eu fiz de modelo
+Na imersão de pagamento de professores na Fundação João Pinheiro (FJP), a primeira fase da automatização de processos consiste em realizar o lançamento das horas de docência no sistema Ponto Digital.
 
+O lançamento é feito com base em duas planilhas: a planilha de taxação, que contém os dados dos docentes (Nome, CPF) e dados relativos às aulas que serão lançadas (data da aula, horas de docência) e; a planilha de dados cadastrais, que será importante para importar o Masp dos professores com base no seu CPF.  
+ 
 <!-- more -->
 
-Mas o que seria então esta ferramenta?
-Ela é um conjunto de scripts Python que, segundo sua documentação:
+Este post tem como objetivo explicar o funcionamento do robô e os parâmetros que ele deve seguir para que a rodagem seja feita a cada mês. 
 
-> Pacote pythomate inicia fluxo(s) e rotina(s) de ferramentas Microsoft (como Power Automate e Power Bi) via linha de comando.
-> Aliado ao agendador de tarefas Windows cria-se gatilho(s).
+## Premissas
+**Pasta de cada mês:** 
 
-Neste sentido o pythomate será capaz, juntamente com o agendador de tarefas Windows, de criar gatilhos de horários para qualquer fluxo Power Automate Desktop.
-Ela foi criada com o intuito de ser simples de configurar e utilizar.
+- Mensal (uma nova pasta deve ser criada a cada mês); 
+- Deve conter a planilha de taxação e a planilha base do SISAP. 
+- Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
 
-Você vai precisar ter o Python instalado em sua máquina, o que pode ser realizado fazendo o download da ferramenta na [página oficial da linguagem](https://www.python.org/downloads/).
-Não se esqueça de selecionar a opção para incluir a instalação no PATH do Windows.
-Sugiro baixar também a ferramenta [Git for Windows](https://git-scm.com/download/win), ela auxiliará bastante o processo de configuração do nosso pacote [pythomate](https://github.com/automatiza-mg/pythomate).
+![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1)
 
-Nossa ferramenta ganhou uma página de destaque em nossa [Biblioteca de robôs](../../../robos/pythomate/).
-Todos os passos tratados neste post também foram detalhados no vídeo abaixo, caso prefira:
+**Planilha de taxação:**
 
-![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
+<!-- more -->
+- Mensal (acompanha os dados das taxações);
+- Abas (nesta ordem): "lanca_pagamento" (inserida pelo último robô, o da taxação), "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (**essencial** que sejam exatamente esses os nomes);
+- Nome do arquivo: [mês]_[ano]. Ex: "maio_2024". 
 
-## Instalação do pacote pythomate
+![image]()
 
-Antes de tudo, certifique-se de ler a [documentação da ferramenta](https://github.com/automatiza-mg/pythomate?tab=readme-ov-file#instala%C3%A7%C3%A3o) para se certificar que:
+**Planilha de informações-base dos professores:**
 
-- Caminho de instalação do Power Automate foi adicionado ao PATH do Windows[^1].
-- A opção de configuração "Ao fechar, manter aplicativo em execução" do Power Automate está desmarcada.
+- Mensal (extraída do SISAP a cada mês);
+- Aba única: "Relatório 1" (**essencial** que seja exatamente esse o nome);
+- Para este robô, usa-se a versão geral (servidores internos e externos);
+- Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.
 
-Abra o aplicativo Git Bash e selecione a pasta onde você irá instalar o pacote.
-A criação desta pasta poderá ser feita, sem maiores problemas, via interface gráfica do Windows, como você já está acostumado a fazer.
-No meu caso realizarei a instalação na pasta `Documents/code/teste-pytomate/`.
-Lembrando que, ao abrir o aplicativo Git Bash você será direcionado para sua pasta de usuário da máquina.
-Em caso de dúvidas basta rodar o comando  `pwd` para conferência.
-O comando `ls -la` te ajuda a visualizar todas as pastas para as quais você poderá navegar.
+![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/80d5cc9a-d437-455d-be77-f8b6866c5a22)
 
-```
-# Conferindo local ao abrir Git Bash
-$ pwd
+## Como funciona? Passo a passo explicado do Automate
 
-# Navegando para pasta onde instalarei o pacote
-$ cd Documents/code/teste-pytomate/
+1. **"Main"**
 
-# Criando ambiente virtual python
-$ python -m venv venv
+Este fluxo, ramo principal do robô, contempla as ações principais:  
 
-# Ativando ambiente virtual python
-$ source venv/Scripts/activate
+- Abrir e logar no Ponto Digital; 
+- Abrir a planilha “[mês]_[ano]” do Excel; 
+- Executar o subfluxo ‘Procv_masp’; 
+- Executar o subfluxo ‘soma_hora_mesmo_dia’; 
+- Fazer a navegação web no Ponto Digital até a página de ‘cadastro horas de docência’; 
+- Registrar a hora de docência para o professor por meio do Masp; 
+- Registrar o sucesso ou erro do lançamento na planilha; 
+  
+As três últimas ações ocorrem em loop. 
 
-# Instalando pacote pythomate
-$ pip install pythomate
-```
+[Ao final] 
+- Salva e fecha a planilha de taxação; 
+- Fecha o navegador do Ponto Digital.
 
-Pronto, pacote instalado.
-Para testar você precisará apenas do nome do fluxo Power Automate que deseja realizar o agendamento.
-No meu caso automatizarei o fluxo `teste-pythomate-sem-variavel`.
+2. **"Subfluxo 'soma_horas_mesmo_dia'":**
 
-```
-# Testando a execução do fluxo via pythomate
-$ pythomate run automate teste-pythomate-sem-variavel
-```
+Esse subfluxo é executado após a ação de abrir a planilha do excel “[mês]_[ano]”. O seu objetivo é somar as horas de docência de um mesmo dia para um mesmo professor. Exemplo: o professor João ministrou, no dia 13/06, uma aula das 08h às 10h (que totaliza 2h de docência) e uma aula das 14h às 15h (que totaliza 1h de docência). Na planilha de taxação, ficam registradas uma linha para cada aula, totalizando 2h em uma e 1h em outra. A ideia do subfluxo é que essas duas linhas sejam transformadas em apenas uma que totalize 3h. 
+Para isso, a automatização executa as seguintes ações principais:
 
-Caso seu fluxo seja executado com sucesso você estará pronto para seguir.
-Agora bastará criar uma rotina para rodar o comando acima via agendador de tarefa no Windows.
-Neste ponto vale uma ressalva.
-Como dito no início deste post o pythomate ainda está em fase de desenvolvimento e testes.
-Uma série de erros ainda poderão ocorrer durante a execução do comando mostrado acima.
-Os erros já identificados podem ser observados [nos Issues do repositório GitHub](https://github.com/automatiza-mg/pythomate/issues).
-Neste momento, talvez, o erro mais grave diz respeito a dificuldade de inicialização de fluxos que contenham variáveis de entrada cadastradas.
-[Este Issue](https://github.com/automatiza-mg/pythomate/issues/12) relata o problema.
-O erro pode acontecer ou não.
-Caso encontre algum erro ainda não listado [nos Issues do repositório GitHub](https://github.com/automatiza-mg/pythomate/issues) seria um prazer se você pudesse nos relatar com a abertura de mais um Issue.
+- Cria uma coluna de 'Chave’ na aba ‘Internos’ da planilha de taxação; 
+- Adiciona nessa coluna o valor [CPF] e [Data da atividade]; 
+- Cria uma aba na planilha; 
+- Exporta todos os dados da aba ‘Internos’ para a nova aba; 
+- Na aba ‘Internos’, remove as duplicatas com base na coluna ‘Chave’; 
+- Cria uma coluna de 'Horas corrigidas’ na aba ‘Internos’ 
+- Adiciona nessa coluna a fórmula SOMASE com base na ‘Chave’ e nos dados colados na aba recém-criada 
 
-## Agendamento de tarefas no Windows
+3. **"Subfluxo 'Procv_masp'":**
+Esse subfluxo é executado após a execução do subfluxo anterior. O seu objetivo é colocar o Masp dos docentes na planilha de taxação. Para isso, a automatização executa as seguintes ações principais: 
 
-Como foi a primeira vez que realizei algum agendamento tive algumas dificuldades.
-Todas elas foram relatadas [neste Issue](https://github.com/automatiza-mg/pythomate/issues/16).
-Case encontre alguma, quem sabe ele não poderá te ajudar.
-[Este video](https://www.youtube.com/watch?v=Gq-2tAQP_hE) me ajudou a iniciar o processo.
-Recomendo desmarcar a opção "Executar estando o usuário conectado ou não" (conforme sugerido pelo vídeo) caso encontre algum erro, o meu foi relatado no Issue citado acima.
+- Cria uma coluna de Masp na planilha de taxação; 
+- Abre a planilha “sisap_[mês]_[ano]”;
+- Busca os valores do Masp na planilha “sisap_[mês]_[ano]” por meio da fórmula do excel “Procv” juntamente com a fórmula “SeErro”; 
+- Retornar na coluna “Masp” da planilha de taxação os valores de Masp com base no CPF do docente, retornando uma mensagem de erro caso o valor não seja encontrado. 
 
-Vamos aos passos:
+## Utilização do robô
 
-  - Digite `Executar` na barra de pesquisa inicial do Windows.
-  - Na janela que será aberta digite `taskschd.msc` para inciar o painel de configuração do agendamento:
+- [ ] Conferir se a pasta do mês está com o nome indicado e se estão nela a planilha de taxação e a planilha-base;
+- [ ] Conferir se as planilhas de taxação e base estão com os nomes indicados;
+- [ ] Alterar, primeiramente, a variável "caminho_arquivo" no formato adequado, mudando o mês e, se necessário, o ano. Depois, fazer o mesmo para as variáveis "sisap_caminho_arquivo". Elas mudam a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:
+    - Clicar com o botão direito no arquivo atualizado de cada mês e selecionar "Copiar como caminho"; 
+    - Ir na variável de entrada em questão, na coluna à direita da tela do Automate, e selecionar os três pontinhos;
+    - Alterar o campo "Valor padrão" com caminho copiado, atentando-se para que as aspas copiadas não sejam coladas; 
+    - Salvar a alteração.    
 
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/387f596b-f253-4b97-86f5-b209093c8430)
+- [ ] Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;
+- [ ] Conferir se as abas dessas planilhas estão na ordem correta: “taxacao”; “Internos”; “Inss Internos”; “Externos” e; “Inss Externos”; 
+- [ ] Conferir a posição da base de dados. A aba ‘Internos’ deve iniciar na Coluna A e linha 1, na célula A1.; 
+- [ ] Conferir o número de colunas. A base de dados da aba ‘Internos’ deve iniciar na Coluna A e ir até a coluna O; 
+- [ ] É importante assegurar que o Excel esteja fechado antes da execução do robô. 
 
-  - Clique com o botão direito do mouse em `Biblioteca do Agendador de Tarefas` e selecione a opção  `Criar Tarefa`:
+## Resultados
 
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/cc61285f-fb7b-493f-acf9-29873e2ab0a3)
+Ao final, o robô terá executado os lançamentos no Ponto Digital e gravado o sucesso ou não da operação para cada linha da aba ‘Internos’. É importante verificar na planilha os casos de erro e realizar os lançamentos manualmente. 
 
-  - Dê um nome para sua tarefa e vá para a aba `Disparadores` para cadastrar o horário desejado para a nova tarefa:
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/348f1cbd-b8fb-49c3-81fb-d5f6070ce845)
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/348168bb-244d-43f7-b94d-c8e74d8b0263)
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/7cb056a1-6d24-4956-a6ca-5910c92a1566)
-
-  - Vá para a aba `Ações` para cadastrar a chamada do pythomate.
-  - Clique em `Novo` e digite `powershell.exe` na opção "Programa/Script"
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/35a10713-3ae9-426e-af8f-a02737d2c050)
-
-  - Na opção "Adicione argumentos (opcional)" inclua os comandos responsáveis por chamar o pythomate:
-    - Meu exemplo foi `-noexit cd C:\Users\<usuario>\Documents\code\teste-pytomate ; .\venv\Scripts\activate ; pythomate run automate teste-pythomate-sem-variavel ; exit`
-    - Se você reparar bem são praticamentes os mesmos utilizados na [instalação e teste do pacote](#instalacao-do-pacote-pythomate).
-    - [Este comentário](https://github.com/automatiza-mg/pythomate/issues/16#issuecomment-2127188908) explica tudo sobre a construção do comando.
-  - Para testar se o agendamento foi criado basta clicar com o botão direito e pedir para executar
-
-![image](https://github.com/automatiza-mg/automatizacoes/assets/49699290/4109056f-e1af-4be2-85e4-89a22f3f4864)
-
-## Considerações finais
-
-Bom, apesar de ainda estar em fase de testes, acredito que o [pythomate](https://github.com/automatiza-mg/pythomate) pode ser uma boa opção para criar fluxos 100% autônomos.
-O repositório do projeto está sendo recheado com o máximo de informações possível sobre sua utilização.
-Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
-
-[^1]: Caso encontre algum problema durante este processo, [este Issue](https://github.com/automatiza-mg/pythomate/issues/18) poderá te auxiliar.
+**Caso o robô pare no meio (por motivos de queda de luz ou outro qualquer)...**
+- e os registros no Ponto Digital **NÃO** tiverem começado: fechar as planilhas abertas sem salvar e rodar o robô novamente.
+- e algum registro no Ponto Digital **já tiver sido realizado**: fechar E SALVAR as planilhas. Abrir e logar o Ponto Digital e rodar o robô novamente a partir da ação 24.
