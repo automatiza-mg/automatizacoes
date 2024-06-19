@@ -9,7 +9,7 @@ categories:
 
 # Envio de e-mail para docentes a partir de planilha de taxação - Fundação João Pinheiro
 
-Na imersão relativa ao pagamento de professores na Fundação João Pinheiro (FJP), as automatizações de processos já existentes foram acompanhadas da ideia de se inaugurar uma nova parte do processo, que aumentaria a transparência para com os professores taxados acerca do que consistiu o pagamento feito a eles naquele mês. 
+Na imersão relativa ao pagamento de professores na Fundação João Pinheiro (FJP), as automatizações de processos já existentes foram acompanhadas da ideia de se inaugurar uma nova parte do processo, que aumentaria a transparência para com os professores taxados acerca do que consistiu o pagamento feito a eles na última taxação. 
 
 A ideia consiste em ter como base duas planilhas primordiais: a que contém os dados da taxação (aulas registradas, relativas a qual curso e o valor a ser pago, por exemplo) e a que contém o nome e e-mail dos professores em questão (retirada do BO). A relação entre as duas gera, a cada professor, uma planilha apenas com as próprias informações que será enviada a ele por e-mail. 
 
@@ -97,18 +97,20 @@ OBS: planilhas enviadas vão para a pasta "Planilhas individuais", enquanto plan
 
 - [x] Conferir se a pasta do mês está com o nome indicado e se estão nela a planilha de taxação e a planilha-base;
 - [x] Conferir se as planilhas de taxação e base estão com os nomes indicados;
-- [x] Alterar, primeiramente, a variável "caminho_pasta" no formato adequado, mudando o mês e o ano, se necessário. Depois, fazer o mesmo para as variáveis "caminho_taxacao" e "caminho_planilhabase"
+- [x] Alterar as variáveis "caminho_taxacao" e "caminho_planilhabase", atualizando em cada uma o nome da pasta e o nome dos dois arquivos (taxação e BO);
     Elas mudam a cada mês, uma vez que os nomes dos arquivos mudarão com os novos meses e anos. Para isso:
-  - Clicar com o botão direito no arquivo atualizado de cada mês e selecionar "Copiar como caminho";
   - Ir na variável de entrada em questão, na coluna à direita da tela do Automate, e selecionar os três pontinhos;
-  - Alterar o campo "Valor padrão" com caminho copiado, atentando-se para que as aspas copiadas não sejam coladas;
+  - Alterar o campo "Valor padrão" com as atualizações de nome de pasta / arquivo taxação / arquivo BO;
   - Salvar a alteração.
 
-- [x] Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;
+- [x] Conferir se as abas das planilhas estão com os nomes (inclusive com a grafia) indicados;
 - [x] Antes da rodagem do robô do e-mail, criar coluna "Lançamento ok?" (com esta grafia) na planilha de taxação, aba "taxacao", como última coluna da tabela. Nela, sinalizar com "Não" os lançamentos no Ponto Digital que estão INCORRETOS. Os que serão levados em conta devem ser deixados em branco na coluna;
 
 ![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/70a4aef6-3a02-4739-821f-da48b9f04d17)
 
+- [x] Fazer o paralelismo entre aba "taxacao" e aba "Internos", de forma que o que foi colocado como "Não" na aba "taxacao" seja excuído na aba "Internos;
+- [x] Atualizar a tabela dinâmica da aba "Inss internos";
+- [x] Buscar, na aba de "taxacao", os professores sem código e colocar "-" nas células em que ficaria o código deles; 
 - [x] Conferir se posicionamentos das tabelas de cada aba das planilhas de taxação e planilha-base estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.
 
 ## Resultados
@@ -121,4 +123,4 @@ A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail 
 
 e o envio de e-mails **NÃO** tiver começado: fechar as planilhas abertas sem salvar e rodar o robô novamente.
 
-e algum e-mail **já tiver sido enviado**: fechar E SALVAR as planilhas e rodar o robô novamente.
+e algum e-mail **já tiver sido enviado**: fechar E SALVAR as planilhas, "desfiltrar" planilha da aba de taxação (para todas as linhas voltarem a aparecer) e rodar o robô novamente.
