@@ -185,25 +185,25 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178762/avatar_camila.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_camila](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178762/avatar_camila.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Camila Neves__</p>
 
     ---
 
-    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica - SIGES.</p>
+    <p class="p-center" markdown>Secretária de Estado de Planejamento e Gestão.</p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Ana Flávia__</p>
 
     ---
 
-    <p class="p-center" markdown>Superintendente Central de Inovação e Desburocratização - SCID</p>
+    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica - SIGES.</p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
@@ -216,7 +216,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_andre](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__André Amorim__</p>
@@ -229,7 +229,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Augusta Cora__</p>
@@ -242,7 +242,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_gabriel](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Gabriel Dornas__</p>
