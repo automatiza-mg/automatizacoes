@@ -124,3 +124,12 @@ A pasta "Planilhas individuais não enviadas" conterá as planilhas cujo e-mail 
 e o envio de e-mails **NÃO** tiver começado: fechar as planilhas abertas sem salvar e rodar o robô novamente.
 
 e algum e-mail **já tiver sido enviado**: fechar E SALVAR as planilhas, "desfiltrar" planilha da aba de taxação (para todas as linhas voltarem a aparecer) e rodar o robô novamente.
+
+## Códigos
+
+1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_email_main.txt)
+2. Subfluxo ['adicionar coluna "E-mail enviado?"'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_email_colunaemail.txt)
+3. Subfluxo ['filtrar lançamentos errados'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_email_lancamentook.txt)
+4. Subfluxo ['montagem da aba "Inss geral"'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_email_inssgeral.txt)
+5. Subfluxo ['montagem da lista de nomes'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_email_listanomes.txt)
+6. Subfluxo ['envio dos e-mails'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/fjp_email_enviar.txt)
