@@ -98,3 +98,12 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 ## Resultados
 
 Processo manual x tempo. Passou a ser realizado em x tempo.
+[Uploading main.txt…]()
+
+## Códigos
+- [x] Fluxo ['Main'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/main.txt)
+- [x] Subfluxo ['Preparar planilha'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/1_preparar_planilha.txt)
+- [x] Subfluxo ['Taxação'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/2_taxacao.txt)
+- [x] Subfluxo ['Busca posição admissão'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/3_busca_posicao_admisao.txt)
+- [x] Subfluxo ['Liberação financeiro'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/4_liberacao_financeiro.txt)
+- [x] Subfluxo ['Procv'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/procv.txt)
