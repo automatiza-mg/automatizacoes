@@ -9,7 +9,7 @@ categories:
 
 # Lançamento da taxação de serviores no SISAP a partir de planilha de taxação - FJP
 
-A taxação dos professores da Fundação João Pinheiro (FJP) é realizada manualmente no SISAP. O objetivo da demanda é criar robô para efetuar os lançamentos de descontos de taxação no SISAP. Com o fluxo atual, manual, eram lançados aproximadamente 140 professores, demandando 01 (um) dia de serviço. 
+A taxação dos professores da Fundação João Pinheiro (FJP) é realizada manualmente no SISAP. O objetivo da demanda é criar robô para efetuar os lançamentos de descontos de taxação no SISAP. Com o fluxo atual, manual, eram lançados aproximadamente 140 professores, demandando 01 (um) dia de serviço.  
 
 Diante dessa situação, foi criado um fluxo automatizado utilizando a ferramenta Power Automate. O novo "robozinho" dá continuidade no preparo da planilha `taxação` e utiliza outra planilha `base SISAP BO`como subsídio que contém os masp's dos servidores. Diante disso, o robô calcula o valor a ser taxado por masp e efetua seu lançamento no SISAP, tendo a necessidade de intervenção humana apenas para iniciar o processo.
 
@@ -97,13 +97,13 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 
 ## Resultados
 
-Processo manual x tempo. Passou a ser realizado em x tempo.
+Processo manual realizado em 8 horas e passou a ser realizado em 2,5 horas.
 [Uploading main.txt…]()
 
 ## Códigos
-- [x] Fluxo ['Main'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/main.txt)
-- [x] Subfluxo ['Prepara planilha'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/1_preparar_planilha.txt)
-- [x] Subfluxo ['Taxação'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/2_taxacao.txt)
-- [x] Subfluxo ['Busca posição admissão'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/3_busca_posicao_admisao.txt)
-- [x] Subfluxo ['Liberação financeiro'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/4_liberacao_financeiro.txt)
-- [x] Subfluxo ['Procv'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/procv.txt)
+- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/main.txt)
+- [x] Subfluxo ['Prepara planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/1_preparar_planilha.txt)
+- [x] Subfluxo ['Taxação'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/2_taxacao.txt)
+- [x] Subfluxo ['Busca posição admissão'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/3_busca_posicao_admisao.txt)
+- [x] Subfluxo ['Liberação financeiro'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/4_liberacao_financeiro.txt)
+- [x] Subfluxo ['Procv'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/procv.txt)
