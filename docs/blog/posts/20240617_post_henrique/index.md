@@ -108,3 +108,9 @@ Ao final, o robô terá executado os lançamentos no Ponto Digital e gravado o s
 **Caso o robô pare no meio (por motivos de queda de luz ou outro qualquer)...**
 - e os registros no Ponto Digital **NÃO** tiverem começado: fechar as planilhas abertas sem salvar e rodar o robô novamente.
 - e algum registro no Ponto Digital **já tiver sido realizado**: fechar E SALVAR as planilhas. Abrir e logar o Ponto Digital e rodar o robô novamente a partir da ação 24.
+
+## Códigos
+
+1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_pontodigital_main.txt)
+2. Subfluxo ['Procv Masp'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_pontodigital_procv_masp.txt)
+3. Subfluxo ['Soma horas mesmo dia'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_pontodigital_soma_horas.txt)
