@@ -95,15 +95,17 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 - [x] Conferir se posicionamentos das tabelas de cada aba das planilhas `taxação` e `base SISAP BO` estão tal como as planilhas taxação e base de maio. Ex: tabela começando na célula A2, ou na A1. Todos os posicionamentos devem ser iguais aos das planilhas em cima das quais o robô foi feito.
 - [x] Quando o robô for ser executado é importante nenhum arquivo excel estar aberto. O robô é quem deve abri-los. 
 
+
 ## Resultados
 
-Processo manual x tempo. Passou a ser realizado em x tempo.
-[Uploading main.txt…]()
+Processo manual: 8 horas. 
+Processo automatizado: 2,5 horas.
+
 
 ## Códigos
-- [x] Fluxo ['Main'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/main.txt)
-- [x] Subfluxo ['Prepara planilha'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/1_preparar_planilha.txt)
-- [x] Subfluxo ['Taxação'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/2_taxacao.txt)
-- [x] Subfluxo ['Busca posição admissão'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/3_busca_posicao_admisao.txt)
-- [x] Subfluxo ['Liberação financeiro'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/4_liberacao_financeiro.txt)
-- [x] Subfluxo ['Procv'](https://github.com/automatiza-mg/biblioteca-de-robos/blob/main/robos/procv.txt)
+- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/main.txt)
+- [x] Subfluxo ['Prepara planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/1_preparar_planilha.txt)
+- [x] Subfluxo ['Taxação'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/2_taxacao.txt)
+- [x] Subfluxo ['Busca posição admissão'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/3_busca_posicao_admisao.txt)
+- [x] Subfluxo ['Liberação financeiro'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/4_liberacao_financeiro.txt)
+- [x] Subfluxo ['Procv'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/procv.txt)
