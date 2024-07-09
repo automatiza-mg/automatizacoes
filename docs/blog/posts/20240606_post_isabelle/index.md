@@ -98,7 +98,8 @@ Este fluxo, ramo principal do robô, ordena os demais subfluxos.
 
 ## Resultados
 
-Processo manual: 8 horas. 
+Processo manual: 8 horas.
+
 Processo automatizado: 2,5 horas.
 
 
