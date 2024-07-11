@@ -8,7 +8,7 @@ categories:
   - Power Automate
 ---
 
-# Copiando código de subfluxos de un robô 
+# Copiando código de subfluxos de um robô 
 
 Uma das estratégias na montagem das ações de um robô no Power Automate pode ser o seu particionamento em **Subfluxos**. Nesse caso, é preciso ter alguns cuidados ao compartilhar o código contido em um subfluxo, quando se está usando a licença mais básica do programa. 
 
