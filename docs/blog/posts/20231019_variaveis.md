@@ -14,7 +14,7 @@ Os robôs criados no Power Automate funcionam melhor quando criamos instâncias 
 
 <!-- more -->
 
-![](assets/variaveis.png)
+![](../../../assets/images/variaveis.png)
 
 Mudar informações de instâncias e variáveis permite o robô executar os mesmos fluxos com outros sites, arquivos e usuários. No exemplo da imagem acima, temos variáveis criadas para:
 

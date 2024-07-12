@@ -15,11 +15,11 @@ Na nossa primeira seção de **Tira-Dúvidas**, avaliamos como utilizar o Power 
 
 A interface gráfica de abrir ou salvar arquivos do Windows é sujeita a diferentes formas de visualização (ícones, lista, detalhes, etc, tal qual mostrado no print a seguir). Isso pode causar erro de um robô, caso sejam incluídas ações de navegação das opções dessas caixas de diálogo com `Enviar teclas` ou `Clique no elemento da interface gráfica`
 
-![](../../assets/images/windows.jpg)
+![](../../../assets/images/windows.jpg)
 
 A necessidade em questão era salvar um arquivo `word` em edição e convertê-lo para o formato `pdf`. Versões recentes do Windows comportam salvar um texto num formato `pdf`, mas isso também dependeria da navegação em caixa de diálogo, se o Power Automate dependesse da navegãção na interface gráfica do Windows, como mostrado abaixo:
 
-![](../../assets/images/word.jpg)
+![](../../../assets/images/word.jpg)
 
 ## Código do Power Shell com ajuda da IA :gemini:
 
@@ -44,7 +44,7 @@ $wordApp.Quit()
 ````
 A conversão via código do Power Shell foi incluída com a ação **Executar script do Power Shell**, como mostrado na figura abaixo:
 
-![](../../assets/images/pdf-powershell.jpg)
+![](../../../assets/images/pdf-powershell.jpg)
 
 Acesse [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/word_pdf_power_shell.txt) o código do Power Automate que cola um print de tela, fecha e salva o arquivo word em formato `.docx` e o converte para `.pdf`, usando o snippet do Power Shell em uma das ações.
 
