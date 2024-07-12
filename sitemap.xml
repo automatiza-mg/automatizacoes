@@ -81,6 +81,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/criando-a%C3%A7%C3%B5es-de-convers%C3%A3o-de-arquivo-com-aux%C3%ADlio-da-ia-e-do-power-shell/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/blog/criando-agendamentos-power-automate/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
@@ -207,6 +212,11 @@
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/ferramentas/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/tira-d%C3%BAvidas/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
