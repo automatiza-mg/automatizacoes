@@ -31,7 +31,7 @@ Ao longo deste capítulo, desvendaremos a construção passo a passo desse fluxo
 ??? note "**Clique e veja o fluxo final que será desempenhado por nosso robô**"
 
     ```mermaid
-            --8<-- "docs/assets/fluxo.txt"
+            --8<-- "docs/blog/posts/20231122_power_automate_ciclo_basico/assets/fluxo_final.md"
     ```
 
 Daremos ênfase à:

@@ -14,19 +14,19 @@ Neste exemplo, a necessidade é guardar o número do boleto ou guia de pagamento
 
 <!-- more -->
 
-![](../../../assets/images/texto-pdf.jpg)
+![](assets/texto-pdf.jpg)
 
-![](../../../assets/images/codigo.png)
+![](assets/codigo.png)
 
 A lista resultante da aplicação deste código no Power Automate aparece como na figura abaixo, e o código de barras do boleto ficou guardado na posição 11 da lista criada:
 
-![](../../../assets/images/lista.png)
+![](assets/lista.png)
 
 A parte do código a que fez referência este post:
 
 ??? copy "**Código-Fonte**"
 
-        --8<-- "docs/assets/texto_pdf.txt"
+        --8<-- "docs/blog/posts/20231129_texto_pdf/assets/texto_pdf.txt"
 
 # Saiba Mais
 

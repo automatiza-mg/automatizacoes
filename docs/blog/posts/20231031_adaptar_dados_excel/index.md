@@ -30,7 +30,7 @@ Neste post algumas dessas possibilidades serão exemplificadas.
 
 A primeira questão para se fazer um uso otimizado do excel é utilizar a planilha como tabela, de fato, e não como texto corrido (word, pdf) - formas não-estruturadas de registro. Isso implica em anotar dados de um evento em cada linha, e os valores de cada uma de suas variáveis em uma coluna separada:
 
-{{ read_csv('docs/assets/table.csv') }}
+{{ read_csv('assets/table.csv') }}
 
 **Valores mesclados, células coloridas, valores de linhas preenchidas em colunas a mais que o cabeçalho, linhas soltas dividindo tabelas dentro de uma mesma planilha, são usos fora do padrão tabular, estruturado, que dificultam o trabalho de automatizar** (que se constitui, na verdade, em elaborar regras para o programa Power Automate executar repetidamente no lugar de uma pessoa).
 

@@ -25,7 +25,7 @@ Para compreender como fazer o robô executar as tarefas que desejamos, pode ser 
     - logins: SEI ou outros sites podem estar com _autocomplete_ ativado no navegador Chrome
     - senhas: podem ter sido atualizadas no aplicativo, mas não no Power Automate
     - caminhos de arquivos: é comum esquecer de atualizar nas **Variáveis de Entrada** quando se compartilha código dos robôs entre computadores diferentes
-    - Dica! Veja uma pouco mais sobre as variáveis [neste post](../20231019_variaveis.md)
+    - Dica! Veja uma pouco mais sobre as variáveis [neste post](../20231019_variaveis/index.md)
 
 - ... nos **loops**:
     - o loop está rodando indefinidamente? Veja se foi colocada _aumentar variável_ ao final das ações de loop;
