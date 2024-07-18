@@ -1,9 +1,10 @@
 ---
 template: index.html
-title: Automatiza-MG
+title: Automatiza.MG
 hide:
   - navigation
   - toc
+  - feedback
 ---
 <style>
   .md-typeset h1,
@@ -15,7 +16,7 @@ hide:
 
 ## Conheça mais sobre o projeto { .h2-center }
 
-<div class="grid cards" markdown>
+<div class="grid cards card-border-radius" markdown>
 
 - <p class="text-larger" markdown>:simple-powerautomate:{ .lg .middle .light-red } __Power Automate__</p>
 
@@ -55,9 +56,9 @@ hide:
 
     ---
 
-    Fluxos automatizados documentam rotinas de trabalho, auxiliando na gestão do conhecimento.
+    Aprenda a utilizar ferramentas de automatização.
 
-    [:octicons-arrow-right-24: Saiba mais](blog/index.md)
+    [:octicons-arrow-right-24: Curso](https://www.ead.planejamento.mg.gov.br/course/view.php?id=98)
 
 - <p class="text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-red } __Inovação__</p>
 
@@ -71,7 +72,7 @@ hide:
 
 ## Veja funcionando { .h2-center }
 
-![type:video](assets/demostracao_automate.mp4)
+![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A){: #iframe-youtube style='width: 60%; height: 17em; border-radius:20px'}
 
 ## O Projeto em Números { .h2-center }
 
@@ -144,11 +145,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
         ---
 
-        Aqui a gente utiliza o Power Automate para a inserção de óbitos no Sistema de Administração de Pessoal (SISAP), com o objetivo de prevenir que sejam efetivados pagamentos para servidores falecidos. Esse serviço é muito importante, pois em caso de qualquer eventualidade, pagamentos irregulares podem ser equivocadamente programados, prejudicando os cofres públicos. Por conta da complexidade dos processos e de sua relevância, e considerando que há picos de demanda em períodos de pagamento de folha de pessoal, muitas vezes a equipe era obrigada a trabalhar para além do horário de expediente, ou até mesmo nos finais de semana!
-
-        A automatização de processos via Power Automate conseguiu dar fôlego à equipe, pois agilizou significativamente o tempo exigido para completar o serviço, além de elevar o nível de sucesso, diminuindo o risco de erro. Com isso, houve aumento do bem-estar dos servidores!
-
-        Além disso, a automatização de processos viabilizou que a gente desse mais atenção a outras atividades, racionalizando os nossos esforços e reduzindo o retrabalho. Por exemplo, havia um passivo de quase 6 mil pedidos de estornos bancários que precisávamos viabilizar para sanar pagamentos passados feitos por equívoco. A consulta e emissão automatizadas de certidões ou informes de óbito diminuiu consideravelmente esse passivo.
+        A utilização do Power Automate no projeto Automatiza.MG visa inserir óbitos no SISAP, prevenindo pagamentos indevidos a servidores falecidos e protegendo os cofres públicos. A automação reduziu significativamente o tempo necessário para concluir o serviço, além de aumentar a precisão e bem-estar da equipe. Isso permitiu direcionar atenção para outras atividades, racionalizando esforços e reduzindo o retrabalho, como o processamento de estornos bancários.
 
     </div>
 
@@ -180,7 +177,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
         ---
 
-        Gostaria de expressar minha profunda satisfação e reconhecimento pelos resultados extraordinários alcançados por meio da implementação da automatização em nossa coordenação. A iniciativa não apenas superou nossas expectativas, mas também provocou um impacto transformador em diversas áreas. Inicialmente, a automatização se revelou como uma peça-chave nas demandas, otimizando processos, identificando oportunidades que antes passavam despercebidas. Essa eficiência operacional proporcionou uma visão mais abrangente e estratégica para a gestão de recursos. Além disso, a notável agilidade introduzida pelo projeto não apenas economizou tempo, mas também permitiu uma alocação mais eficiente dos recursos humanos, resultando na liberação de servidores para as demais atividades do setor, contribuindo significativamente para o crescimento e desenvolvimento de outras áreas dentro da coordenação. Gostaria de ressaltar e reconhecer o profissionalismo exemplar da equipe do Automatiza.MG, na pessoa do servidor Klécius, que esteve aqui durante todo o processo de implementação do projeto de automatização: sua dedicação incansável, suas habilidades técnicas notáveis e o seu comprometimento com a excelência foram fundamentais para o sucesso dessa iniciativa. Em suma, o projeto de automatização não apenas atendeu, mas superou nossas expectativas, proporcionando resultados tangíveis e impactos positivos em várias frentes. Expresso meu profundo agradecimento à equipe envolvida por seu comprometimento, expertise e sua dedicação na condução desse projeto tão significativo para o sucesso organizacional. Estamos ansiosos para continuar explorando novas possibilidades e avançar em conjunto na busca pela excelência.
+        A implementação da automatização pela equipe do Automatiza.MG na nossa coordenação resultou em impacto transformador e superação de expectativas. A otimização de processos revelou-se essencial, proporcionando visão estratégica na gestão de recursos e liberando servidores para outras atividades. Destaca-se a eficiência operacional e agilidade introduzida pelo projeto, que contribuiu significativamente para o crescimento e desenvolvimento da coordenação. Expressamos profundo reconhecimento pelo comprometimento e expertise da equipe envolvida, e estamos ansiosos para continuar avançando em busca da excelência.
 
     </div>
 
@@ -188,121 +185,74 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_camila](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178762/avatar_camila.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Camila Neves__</p>
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+    <p class="p-center" markdown>Secretária de Estado de Planejamento e Gestão.</p>
 
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Ana Flávia__</p>
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica - SIGES.</p>
 
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_man.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por automação, dados e inteligência artificial. Instrutor e monitor no curso de Power Automate.
+    <p class="p-center" markdown>Diretor de Desburocratização - DCD.</p>
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_andre](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__André Amorim__</p>
 
     ---
 
-    EPPGG da Diretoria Central de Desburocratização. Instrutor e monitor no curso de Power Automate. Também estuda gestão e análise de dados, representação do conhecimento, governo aberto e inteligência natural.
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Augusta Cora__</p>
 
     ---
 
-    Servidora pública lotada na Diretoria Central de Desburocratização - DCD. Apaixonada por inovação e comunicação. Instrutora e monitora do curso de Power Automate. 
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_gabriel](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
-    <p class="p-center" markdown>__Gabriel Braico Dornas__</p>
+    <p class="p-center" markdown>__Gabriel Dornas__</p>
 
     ---
 
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/avatar_isa.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Isabela Romancini__</p>
-
-    ---
-
-    Trabalha no Lab.mg. Instrutora e monitora no curso de Power Automate. Especialista em Políticas Públicas e Gestão Governamental – EPPGG e pós-graduada em Governança de TI.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368357/automatiza-mg/avatar_lucas.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Lucas Fainblat__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368355/automatiza-mg/speaker_woman.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Maria Laura__</p>
-
-    ---
-
-    Especialista em Políticas Públicas e Gestão Governamental - EPPGG, lotado na Diretoria Central de Desburocratização - DCD. Apaixonado por programação,  Python e tecnologia em geral. Instrutor e monitor no curso de Power Automate.
-
-    <p class="p-center" markdown>
-        [:simple-github:](#){ .lg .middle .light-red .text-larger } [:material-email:](#){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 </div>

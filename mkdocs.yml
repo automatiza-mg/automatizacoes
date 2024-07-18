@@ -1,24 +1,21 @@
-site_name: Automatiza-MG
-
 # Repository
 repo_name: automatiza-mg/automatizacoes
 repo_url: https://github.com/automatiza-mg/automatizacoes
 edit_uri: edit/main/docs/
 
 # Project information
-site_name: Automatiza-MG
+site_name: Automatiza.MG
 site_url: https://automatiza-mg.github.io/automatizacoes/
-site_author: Automatiza-MG
+site_author: Automatiza.MG
 site_description: >-
-  Projeto de automatização de processos desenvolvido pela equipe Automatiza-MG.
-  Mais rápido, mais inteligente, mais eficiente.
-  Automatização de processos ao alcance do servidor.
+  Mais rápido, mais inteligente, mais eficiente: automatização de processos e inteligência artificial ao alcance dos servidores mineiros.
 
 nav:
   - Início: index.md
   - Biblioteca de robôs:
     - robos/index.md
-  - Saiba mais:
+  - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
+  - Blog:
     - blog/index.md
 
 
@@ -27,12 +24,11 @@ theme:
   name: material
   language: pt
   custom_dir: docs/overrides
-  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710368356/automatiza-mg/logo_pequena.webp
+  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710367935/automatiza-mg/logo_grande.webp
   features:
     - content.code.annotate
     - content.code.copy
     - navigation.tabs
-    - navigation.footer
     - navigation.indexes
     - content.action.edit
     - content.tabs.link
@@ -46,12 +42,12 @@ theme:
     - toc.follow
 
   palette:
-    - scheme: youtube
+    - scheme: automatiza-mg
 
   font:
     text: Plus Jakarta Sans
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1711112766/automatiza-mg/apenas_logo_favicon.webp
 
 markdown_extensions:
   - abbr
@@ -99,19 +95,45 @@ extra_javascript:
   - assets/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://tally.so/widgets/embed.js
 
-
-extra: # Footer
-  social:
+extra:
+  social: # Footer
     - icon: fontawesome/brands/instagram
-      name: Instagram Lab.mg.
-      link: https://www.instagram.com/gov.labmg
-    - icon: fontawesome/brands/github-alt
-      name: Repositório Automatiza-mg no GitHub.
-      link: https://github.com/automatiza-mg
-    - icon: simple/linktree
-      name: Página do Lab.mg no linktree.
-      link: https://linktr.ee/lab.mg
+      name: Instagram Seplag MG.
+      link: https://www.instagram.com/seplagmg/
+    - icon: fontawesome/brands/youtube
+      name: Youtube Seplag MG.
+      link: https://www.youtube.com/channel/UCAQXhpTvKIN12u_Ov_kW3qw
+    - icon: fontawesome/brands/facebook
+      name: Facebook Governo de Minas Gerais
+      link: https://www.facebook.com/governomg
+    - icon: fontawesome/brands/twitter
+      name: Twitter Governo de Minas Gerais
+      link: https://twitter.com/governomg
+    - icon: fontawesome/solid/location-dot
+      name: Localização Seplag MG
+      link: https://maps.app.goo.gl/At1LbwoAuxpdPEkq9
+  analytics:
+    provider: google
+    property: G-60K0NGCL9R
+    feedback:
+      title: Gostou desta página?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Gostei
+          data: 1
+          note: >-
+            Obrigado por compartilhar!
+            Adoraria escutar um pouquinho mais sua opinião.
+            Se estiver a vontade quanto a isso peço que utilize <a href="#tally-open=w480k5&tally-emoji-text=👋&tally-emoji-animation=wave">este formulário</a>!
+        - icon: material/thumb-down-outline
+          name: Não gostei
+          data: 0
+          note: >-
+            Obrigado por compartilhar!
+            Adoraria escutar um pouquinho mais sua opinião.
+            Se estiver a vontade quanto a isso peço que utilize <a href="#tally-open=w480k5&tally-emoji-text=👋&tally-emoji-animation=wave">este formulário</a>!
 
 plugins:
   - git-revision-date-localized:
@@ -128,7 +150,6 @@ plugins:
   - tags:
       tags_file: robos/index.md
   - mkdocs-video:
-      is_video: True
       video_muted: True
       video_controls: True
       video_autoplay: False
