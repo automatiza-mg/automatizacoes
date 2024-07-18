@@ -15,6 +15,10 @@ nav:
   - Biblioteca de robôs:
     - robos/index.md
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
+  - Nossos projetos:
+    - projetos/index.md
+    - FJP: projetos/fjp/index.md
+    - Lançamento Taxação SISAP: projetos/fjp/lancamento_taxacao_sisap.md
   - Blog:
     - blog/index.md
 
