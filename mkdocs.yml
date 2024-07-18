@@ -17,8 +17,9 @@ nav:
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
   - Nossos projetos:
     - projetos/index.md
-    - FJP: projetos/fjp/index.md
-    - Lançamento Taxação SISAP: projetos/fjp/lancamento_taxacao_sisap.md
+    - FJP:
+        - projetos/fjp/index.md
+        - Lançamento Taxação SISAP: projetos/fjp/lancamento_taxacao_sisap.md
   - Blog:
     - blog/index.md
 
@@ -37,7 +38,6 @@ theme:
     - content.action.edit
     - content.tabs.link
     - content.tooltips
-    - navigation.sections
     - navigation.top
     - navigation.tracking
     - search.highlight
