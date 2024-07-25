@@ -80,7 +80,7 @@ hide:
 
 - :material-robot-angry-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>25</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>28</p>
 
     robôs
 
@@ -96,7 +96,7 @@ hide:
 
 - :material-clock-time-five-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>307</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>1.303,8</p>
 
     horas
 
@@ -104,7 +104,7 @@ hide:
 
 - :material-book:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>298</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>1.035</p>
 
     servidores
 
@@ -112,7 +112,7 @@ hide:
 
 - :material-earbuds-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>22</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>23</p>
 
     cursos
 
@@ -120,7 +120,7 @@ hide:
 
 - :fontawesome-solid-people-arrows:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>3,7</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>7,76</p>
 
     servidores
 
