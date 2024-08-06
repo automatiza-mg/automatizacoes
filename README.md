@@ -1,7 +1,7 @@
 Projeto Automatizações
 ===
 
-O objetivo deste repositório é documentar nosso projeto de Automatizações.
+O objetivo deste repositório é criação do site do projeto [Automatiza.MG](https://www.planejamento.mg.gov.br/automatizamg).
 
 ## Setup :open_book:
 
