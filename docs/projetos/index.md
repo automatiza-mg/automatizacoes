@@ -5,10 +5,8 @@ hide:
 
 # Nossos projetos
 
-Desenho de linhas do tempo dos projetos desenvolvidos nesta organização visando simplificar o trabalho dos gestores no momento de contar a história do andamento do projeto. Ao documentar as etapas passadas de forma ordenada e cronológica, cria-se um registro claro e acessível das atividades já realizadas. Isso não apenas facilita o acompanhamento do progresso até o momento, mas também oferece uma base para a análise de desempenho e avaliação de estratégias futuras. Além disso, pode ser uma ferramenta crucial para a comunicação eficaz com partes interessadas, fornecendo um histórico claro do projeto e evidenciando as conquistas alcançadas.
+Nesta página, você poderá conhecer os projetos já desenvolvidos pela equipe do Automatiza.MG em diferentes setores e órgãos do governo do estado de Minas Gerais. 
 
-Em resumo, a construção rotineira destas linhas do tempo visa deixar o gestor sempre preparado para apresentação rápida de seus resultados.
+Cada nome no menu lateral corresponde a um projeto, que pode ter uma ou mais automatizações relacionadas. Para cada automatização, há uma postagem sobre o contexto no qual ela foi desenvolvida, o passo a passo para funcionamento do robô e o código correspondente. 
 
-Desenho de linhas do tempo dos projetos desenvolvidos nesta organização visando simplificar o trabalho dos gestores no momento de contar a história do andamento do projeto. Ao documentar as etapas passadas de forma ordenada e cronológica, cria-se um registro claro e acessível das atividades já realizadas. Isso não apenas facilita o acompanhamento do progresso até o momento, mas também oferece uma base para a análise de desempenho e avaliação de estratégias futuras. Além disso, pode ser uma ferramenta crucial para a comunicação eficaz com partes interessadas, fornecendo um histórico claro do projeto e evidenciando as conquistas alcançadas.
-
-Em resumo, a construção rotineira destas linhas do tempo visa deixar o gestor sempre preparado para apresentação rápida de seus resultados.
+Fique à vontade para navegar pelo menu, entre projetos e robôs, e conhecer um pouco mais sobre o que já desenvolvemos por aqui!
