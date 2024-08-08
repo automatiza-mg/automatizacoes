@@ -1,6 +1,7 @@
 ---
 hide:
   - feedback
+comments: true
 ---
 
 # Nossos projetos

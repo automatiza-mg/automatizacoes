@@ -15,11 +15,10 @@ nav:
   - Biblioteca de robôs:
     - robos/index.md
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
-  - Nossos projetos:
+  - Nossos projetos: 
     - projetos/index.md
-    - FJP:
-        - projetos/fjp/index.md
-        - Lançamento Taxação SISAP: projetos/fjp/lancamento_taxacao_sisap.md
+    - Fundação João Pinheiro (FJP): 
+      - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
   - Blog:
     - blog/index.md
 
