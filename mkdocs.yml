@@ -14,6 +14,12 @@ nav:
   - Início: index.md
   - Biblioteca de robôs:
     - robos/index.md
+  - Nossos projetos: 
+    - projetos/index.md
+    - Fundação João Pinheiro (FJP): 
+      - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
+    - Secretaria Estadual de Planejamento e Gestão (Seplag):
+      - Emissão de certidões INSS: projetos/seplag/scap
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
   - Blog:
     - blog/index.md
@@ -34,7 +40,6 @@ theme:
     - content.action.edit
     - content.tabs.link
     - content.tooltips
-    - navigation.sections
     - navigation.top
     - navigation.tracking
     - search.highlight
