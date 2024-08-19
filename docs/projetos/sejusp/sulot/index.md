@@ -1,18 +1,35 @@
-# Projetos SEJUSP/SULOT
+# Projetos de Automação de leitura de fatura de energia elétrica
 
-(Inserir info do projeto da sejusp)
 
-O desafio em questão consistia em automatizar o fluxo de destribuição, entre os servidores da Diretoria Central de Contagem de Tempo e Aposentadoria - DCCTA, dos pedidos relacionados a INSS.
-Com o fluxo atual, manual, a equipe se via sobrecarregada, acumulando um passivo de mais de 900 pedidos aguardando distribuição.
+O desafio em questão consistia em automatizar a leitura, a extração de dados e a geração de base de dados, de mais de 200 faturas de energia elétrica de baixa tensão que a SEJUSP recebe mensalmente.
 
 <!-- more -->
+A Sejusp conta com uma ampla rede de unidades administrativas espalhadas pelo território de Minas Gerais. Dentre os serviços contratados para operação destas unidades, está o fornecimento de energia elétrica (baixa tensão). Atualmente, 04 concessiónárias fornecem esse serviço, resultando no envio de em cobranças mensais (fatura).
 
-Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta Power Automate.
-Essa iniciativa, implementada com sucesso, representa um grande passo para a eficiência do setor.
-O novo "robozinho" distribui automaticamente os pedidos de certidões aos servidores designados, tendo a necessidade de intervenção humana apenas para iniciar o processo.
+A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.
 
-O fluxo inicialmente pensado busca os pedidos mais antigos para distribuição, podendo o próximo passo ser, inclusive, a elaboração de um parecer preliminar para auxiliar o servidor designado na respota.
-A chefia responsável agora tem mais tempo para se dedicar a tarefas mais estratégicas, e/ou até mesmo, para implementação de outras automatizações.
+Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Inteligência Artificial do Power Automate web.
+
+## O que o robô faz
+ - Realiza leitura da fatura de energia identificando as informações que desejamos coletar;
+ - Extrai informações solicitadas em formato pré definido; 
+ - Insere informações em planilha estruturada;
+
+## Como funciona o robô
+Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de faturas na pasta do sharepoint.
+
+```mermaid
+flowchart TD
+    A[Início] --> B[Incluir faturas na pasta do SharePoint]
+    B --> C[Iniciar execução do robô]
+    C --> D[Preencher informações na planilha]
+    D --> E{Fatura?}
+    E -->|Cemig e DME| F[Preencher primeira aba da planilha]
+    E -->|Energisa| G[Preencher segunda aba da planilha]
+    F --> H[Fim]
+    G --> H
+```
+
 
 ## 1. Premissas
 
