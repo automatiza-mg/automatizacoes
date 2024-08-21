@@ -46,7 +46,7 @@ flowchart TD
 ## 3. Resultados
 
 O processo manual era executado, em média, em 15 minutos para cada fatura, sendo 256 faturas por mês. 
-Com o robô, agora, o processo para cada fatura é executado em segundos!!! :rocket::rocket::rocket:
+**Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!!!** :rocket::rocket::rocket:
 
 
 [^1]: Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual.
