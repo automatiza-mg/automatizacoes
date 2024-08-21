@@ -1,8 +1,8 @@
 # Montagem de defesa recebida no protocolo digital (SIAUT)
 
-Atualmente, a CET possui um grande passivo de instrução, ou montagem, de processo de defesa de AIT. Este passive está consolidado em planilha com os dados dos processos que precisam ser montados para seguirem para análise.
+Atualmente, a CET possui um grande passivo de instrução, ou montagem, de processo de defesa de AIT recebidos via protocolo digital. Este passivo está documentado em planilhas de controle com os dados das defesas que foram recebidas, como número da defesa, placa do veículo, data da defesa, denter outros. A partir dessa informações, é necessário  realizar a montagem de processo, que seguirão para análise.
 
-Desse modo, foi feito um robô para automatizar essa etapa de montagem, acelerando o tratamento do passivo de processos.
+Desse modo, este robô foi concebido para automatizar essa etapa de montagem, acelerando o tratamento do passivo de processos.
  
 <!-- more -->
 
@@ -22,13 +22,15 @@ Subfluxo principal no qual é realizada a identificação da defesa que precisa 
 Realiza login no sistema sei e direciona para a caixa adequada.
 #### 2.3. **"Login_Siaut"** 
 Realiza login no sistema Siaut.
-#### 2.4. **"Mont_Siaut_Anexos"**
-Identifica se o cidadão que protocolou a defesa incluiu documentos anexos. Em caso positivo, realiza downloads dos arquivos e salva em pasta no computado. Em caso negativo, direciona para o subfluxo de Mont_Siaut_S/Anexos. 
-#### 2.5. **"Mont_Siaut_S/Anexos"**
+#### 2.4. **"Mont_Siaut_Capa"**
+Busca no Siaut, a partir do número da defesa, o documento "capa de processo". Salva este documento em pasta no computador. 
+#### 2.5. **"Mont_Siaut_Anexos"**
+Identifica se o cidadão que protocolou a defesa incluiu documentos anexos. Em caso positivo, realiza downloads dos arquivos e salva em pasta no computador. Em caso negativo, direciona para o subfluxo de Mont_Siaut_S/Anexos. 
+#### 2.6. **"Mont_Siaut_S/Anexos"**
 Faz captura de tela do siaut na qual consta a informação que o cidadão não anexou documentos a defesa. Em seguida salva a captura de tela em pasta no computador.
-#### 2.6. **"Mont_Siaut_AIT"**
+#### 2.7. **"Mont_Siaut_AIT"**
 Pesquisa se há AIT, documento digital, da defesa recepcionada. Se sim, faz download do documento. Se não, registra na planilha que não foi encontrada AIT para a defesa.  
-#### 2.6. **"Mont_SEI"**
+#### 2.8. **"Mont_SEI"**
 Iniciar um novo processo sei para cada defesa recepcionada, incluindo os documentos capa, anexos ou captura de tela e AIT (se houver). Em seguida, encaminha o processo sei para a caixa correspondente. Registra em planilha do excel o número do processo sei e o nome do responsável pela montagem.
 
 ## 3. Pré-requisitos para o funcionamento do robô:
