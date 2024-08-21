@@ -1,22 +1,25 @@
-# Projetos de Automação de leitura de fatura de energia elétrica
+# Automação de leitura de fatura de energia elétrica
 
-
-O desafio em questão consistia em automatizar a leitura, a extração de dados e a geração de base de dados, de mais de 200 faturas de energia elétrica de baixa tensão que a SEJUSP recebe mensalmente.
+O desafio em questão consiste em automatizar a leitura, a extração de informações e gerar uma base de dados de mais de 200 faturas de energia elétrica de baixa tensão que a SEJUSP recebe mensalmente.
 
 <!-- more -->
-A Sejusp conta com uma ampla rede de unidades administrativas espalhadas pelo território de Minas Gerais. Dentre os serviços contratados para operação destas unidades, está o fornecimento de energia elétrica (baixa tensão). Atualmente, 04 concessiónárias fornecem esse serviço, resultando no envio de em cobranças mensais (fatura).
+## 1. Sobre o projeto
+A Sejusp conta com uma ampla rede de unidades administrativas espalhadas pelo território de Minas Gerais. Dentre os serviços contratados para operação destas unidades, está o fornecimento de energia elétrica (baixa tensão). Atualmente, 04 concessiónárias fornecem esse serviço, resultando no envio de cobranças mensais (fatura).
 
 A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.
 
 Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Inteligência Artificial do Power Automate web.
 
-## O que o robô faz
- - Realiza leitura da fatura de energia identificando as informações que desejamos coletar;
+## 2. O que o robô faz
+ - Realiza leitura da fatura de energia, identificando as informações que desejamos coletar;
  - Extrai informações solicitadas em formato pré definido; 
  - Insere informações em planilha estruturada;
+ - Calcula o _score_ que indica o nível de acuracidade (0-100) na leitura da fatura.
 
-## Como funciona o robô
-Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de faturas na pasta do sharepoint.
+## 2. Como funciona o robô
+Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de novas faturas na pasta do sharepoint designada para tal.
+
+Veja o fluxo do robô:
 
 ```mermaid
 flowchart TD
@@ -30,40 +33,25 @@ flowchart TD
     G --> H
 ```
 
+## 3. Premissas
 
-## 1. Premissas
+- O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF[^1]. Para diferentes modelos, é necessário novo treinamento e publicação da IA.
+- As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF[^2]. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online[^3].
 
-- Utilização de scripts Javascript para facilitar o trabalho.
-- Distribuição inicial de pedidos mais antigos.
-- Varredura dos processos SEI da unidade em busca de processos sem marcadores.
-- Os servidores designados são identificados no processos via marcadores.
-- Processos sem marcadores serão alvo da distribuição[^1].
-- Criação de variável de ambiente para incluir ou retirar servidores designados (atualmente dois).
-- Criação de variável de ambiente para determinar a quantidade de processos por servidor designado (atualmente 50).
-- Caso número de processos a serem distribuídos seja maior que o a força total de trabalho (número de servidores * número de processos por servidor) fluxo solicita ajuste nas variáveis de entrada `processos_por_marcador` e ou `nome_marcadores`.
-- Testes deverão ser feitos utilizando a variável de entrada `processos_por_marcador` igual a `2`, reduzindo assim o tempo gasto para verificar o processo todo rodando.
-
-
-
-## 2. Utilização do robô
-
-- [ ] [Copiar o código do primeiro robô](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/scap_inclusao_marcadores_main.txt) em um novo fluxo Power Automate Desktop[^2].
-- [ ] [Copiar o código do segundo robô](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/scap_inclusao_marcadores_incluindo_marcadores.txt) em um novo subfluxo chamado `incluindo_marcadores`[^2].
-- [ ]  [Utilizar o robô de login no SEI](../../../robos/login_sei/index.md#montando-o-seu-robo) em um novo subfluxo chamado `login_sei`[^3].
-- [ ]  [Utilizar o robô troca de unidade no SEI](../../../robos/troca_unidade_sei/index.md#montando-o-seu-robo) em um novo subfluxo chamado `troca_unidade_sei`[^3].
-- [ ] Criar a variável de entrada `nome_marcadores` para incluir servidores designados[^4].
-- [ ] Criar a variável de entrada `processos_por_marcador` para incluir a quantidade de processos que será distribuida para cada servidor.
-
-
+## 4. Utilização do robô
+- Neste projeto, o treinamento da IA, bem como fluxo do Power Automate web, foi feito diretamente na conta do servidor responsável por esse processo na DSG.
+- Para usar o robô, mensalmente, devem ser inseridas faturas na pasta do Sharepoint designada para tal. Cada fatura resultará em uma nova linha na planilha de controle. 
+- É necessário conferir o _score_ informado para cada campo. Se o _score_ for baixo (<98%), deve ser feita a conferência manual da informação.
 
 ## 3. Resultados
 
-Processo manual levava, em média, uma hora por mês (60 minutos), passou a ser realizado com 15 minutos.
+O processo manual era executado, em média, em 15 minutos para cada fatura, sendo 256 faturas por mês. 
+Com o robô, agora, o processo para cada fatura é executado em segundos!!! :rocket::rocket::rocket:
 
-[^1]: O fluxo ideal previa a entrada em cada processo da unidade para verificar se o pedido, de fato, referia-se a assuntos relacionados a INSS.
-Tendo em vista a complexidade desta ação resolvemos apenas verificar se o processo tem ou não algum marcador anteriormente incluído.
-Caso o servidor designado constate que aquele pedido não se refere a assuntos relacionados a INSS ele poderá combinar com a chefia qual marcação deverá ser feita no processo, podendo, inclusive, retirar seu marcador do mesmo.
-[^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^3]: Não se esqueça que as variáveis de entrada descritas na página do robo também deverão ser criadas.
-[^4]: A inclusão de servidor(es) designado(s) deverá ser feita por marcador. Sendo assim, o mesmo nome dado ao marcador deverá ser utilizado.
-Caso seja mais de um servidor/marcador, os mesmos deverão ser separados por ponto e vírgula (`;`).
+
+[^1]: Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual.
+
+[^2]: No caso da DSG, isto não se aplica para a fatura da Energisa, que possui uma tabela com as informações de diversas unidades consumidoras em uma mesma fatura. O fluxo foi desenhado para acomodar esta singularidade.
+
+[^3]: Dividir PDF online [opção 1](https://www.ilovepdf.com/pt/dividir_pdf); [opção 2](https://smallpdf.com/pt/dividir-pdf); [opção 3](https://tools.pdf24.org/pt/dividir-pdf).
+
