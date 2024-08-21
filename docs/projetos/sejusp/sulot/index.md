@@ -41,7 +41,7 @@ flowchart TD
 ## 4. Utilização do robô
 - Neste projeto, o treinamento da IA, bem como fluxo do Power Automate web, foi feito diretamente na conta do servidor responsável por esse processo na DSG.
 - Para usar o robô, mensalmente, devem ser inseridas faturas na pasta do Sharepoint designada para tal. Cada fatura resultará em uma nova linha na planilha de controle. 
-- É necessário conferir o _score_ informado para cada campo. Se o _score_ for baixo (<98%), deve ser feita a conferência manual da informação.
+- É necessário conferir o _score_ informado para cada campo. Se o _score_ for baixo (<98%), é recomendada a conferência manual da informação.
 
 ## 3. Resultados
 
