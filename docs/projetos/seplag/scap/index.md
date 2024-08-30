@@ -1,12 +1,3 @@
----
-date: 2024-04-17
-draft: false
-authors: [gabrielbdornas]
-comments: true
-categories:
-  - Power Automate
----
-
 # Agilizando a Emissão de Certidões INSS na Superintendência Central de Administração de Pessoal - SCAP
 
 O desafio em questão consistia em automatizar o fluxo de destribuição, entre os servidores da Diretoria Central de Contagem de Tempo e Aposentadoria - DCCTA, dos pedidos relacionados a INSS.
@@ -21,7 +12,7 @@ O novo "robozinho" distribui automaticamente os pedidos de certidões aos servid
 O fluxo inicialmente pensado busca os pedidos mais antigos para distribuição, podendo o próximo passo ser, inclusive, a elaboração de um parecer preliminar para auxiliar o servidor designado na respota.
 A chefia responsável agora tem mais tempo para se dedicar a tarefas mais estratégicas, e/ou até mesmo, para implementação de outras automatizações.
 
-## Premissas
+## 1. Premissas
 
 - Utilização de scripts Javascript para facilitar o trabalho.
 - Distribuição inicial de pedidos mais antigos.
@@ -33,16 +24,20 @@ A chefia responsável agora tem mais tempo para se dedicar a tarefas mais estrat
 - Caso número de processos a serem distribuídos seja maior que o a força total de trabalho (número de servidores * número de processos por servidor) fluxo solicita ajuste nas variáveis de entrada `processos_por_marcador` e ou `nome_marcadores`.
 - Testes deverão ser feitos utilizando a variável de entrada `processos_por_marcador` igual a `2`, reduzindo assim o tempo gasto para verificar o processo todo rodando.
 
-## Utilização do robô
 
-- [x] [Copiar o código do primeiro robô](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/scap_inclusao_marcadores_main.txt) em um novo fluxo Power Automate Desktop[^2].
-- [x] [Copiar o código do segundo robô](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/scap_inclusao_marcadores_incluindo_marcadores.txt) em um novo subfluxo chamado `incluindo_marcadores`[^2].
-- [x]  [Utilizar o robô de login no SEI](../../../robos/login_sei/index.md#montando-o-seu-robo) em um novo subfluxo chamado `login_sei`[^3].
-- [x]  [Utilizar o robô troca de unidade no SEI](../../../robos/troca_unidade_sei/index.md#montando-o-seu-robo) em um novo subfluxo chamado `troca_unidade_sei`[^3].
-- [x] Criar a variável de entrada `nome_marcadores` para incluir servidores designados[^4].
-- [x] Criar a variável de entrada `processos_por_marcador` para incluir a quantidade de processos que será distribuida para cada servidor.
 
-## Resultados
+## 2. Utilização do robô
+
+- [ ] [Copiar o código do primeiro robô](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/scap_inclusao_marcadores_main.txt) em um novo fluxo Power Automate Desktop[^2].
+- [ ] [Copiar o código do segundo robô](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/scap_inclusao_marcadores_incluindo_marcadores.txt) em um novo subfluxo chamado `incluindo_marcadores`[^2].
+- [ ]  [Utilizar o robô de login no SEI](../../../robos/login_sei/index.md#montando-o-seu-robo) em um novo subfluxo chamado `login_sei`[^3].
+- [ ]  [Utilizar o robô troca de unidade no SEI](../../../robos/troca_unidade_sei/index.md#montando-o-seu-robo) em um novo subfluxo chamado `troca_unidade_sei`[^3].
+- [ ] Criar a variável de entrada `nome_marcadores` para incluir servidores designados[^4].
+- [ ] Criar a variável de entrada `processos_por_marcador` para incluir a quantidade de processos que será distribuida para cada servidor.
+
+
+
+## 3. Resultados
 
 Processo manual levava, em média, uma hora por mês (60 minutos), passou a ser realizado com 15 minutos.
 
