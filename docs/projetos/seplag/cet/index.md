@@ -1,6 +1,6 @@
 # Robô Desbloqueio Gravame
 
-O desafio consiste em realizar o processo de desbloqueio do gravame de todos os veículos solicitados a Coordenadoria Estadual de Trânsito- CET.
+O desafio consiste em realizar o processo de desbloqueio do gravame de todos os veículos solicitados a Coordenadoria Estadual de Trânsito- CET
 
 <!-- more -->
 ## 1. Sobre o projeto
