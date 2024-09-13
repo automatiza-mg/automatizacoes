@@ -20,6 +20,7 @@ nav:
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
     - Secretaria Estadual de Planejamento e Gestão (Seplag):
       - Emissão de certidões INSS: projetos/seplag/scap
+      - Robô Desbloqueio Gravame: projetos/seplag/cet
     - Secretaria de Justiça e Segurança Pública (Sejusp):
       - Leitura de Faturas de Energia: projetos/sejusp/sulot
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
