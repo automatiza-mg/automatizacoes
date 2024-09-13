@@ -27,7 +27,7 @@ flowchart TD
     B --> C[Iniciar execução do robô]
     C --> D[Tratar erros imputados pelo robô na planilha excel da B3]
     D --> E[Fim]
-  ```
+```
 
 ## 4. Premissas
 
