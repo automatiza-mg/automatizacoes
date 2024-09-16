@@ -266,6 +266,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/promt_memorando/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/promt_memorando/assets/fluxo/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/pythomate/</loc>
          <lastmod>2024-09-16</lastmod>
          <changefreq>daily</changefreq>
