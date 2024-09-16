@@ -40,8 +40,13 @@ tags:
 :fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caixa_destino`.
 { .card }
 
+:fontawesome-solid-6: :material-application-variable: __A variável de entrada__ `senha_sei` também será necessária[^2]. 
+{ .card }
+
+
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^2]: A variável `senha_sei` foi necessária no subfluxo de [login no SEI](../login_sei/#montando-o-seu-robo). Caso não tenha copiado esse subfluxo, inclua essa variável.
