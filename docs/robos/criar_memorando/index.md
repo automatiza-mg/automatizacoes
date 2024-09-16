@@ -17,7 +17,7 @@ tags:
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.39.00239.23332 |
 
-- [x] Robô que inseri documento externo em processo no SEI.
+- [x] Robô que cria memorando em processo criado no SEI.
 - [x] Utiliza os subfluxos de login, troca de unidade e criação de processo no SEI.
 - [x] Economiza tempo e evita erros.
 
