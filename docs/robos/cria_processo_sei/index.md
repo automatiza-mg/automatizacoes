@@ -47,7 +47,7 @@ tags:
 :fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `login_sei`, `senha_sei`, `orgao_sei` e `unidade_sei` [^2].
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^3], `especificacao`[^4] e `hipotese_restricao`[^5].
+:fontawesome-solid-6: :material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^3], `especificacao`[^4] e `hipotese_restricao`[^5].
 { .card }
 
 </div>
