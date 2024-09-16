@@ -37,7 +37,7 @@ tags:
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `assinatura_encaminhamento`.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `nome`.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caixa_destino`.
 { .card }
 
 </div>
