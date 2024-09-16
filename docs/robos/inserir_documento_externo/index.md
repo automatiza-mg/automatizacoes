@@ -34,6 +34,10 @@ tags:
 :fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `insere_documento_externo`.
 { .card }
 
+[:fontawesome-solid-4: :material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
+{ #download-button .card path="assets/documento_sei.csv" fileName="documento_sei.xlsx" }
+
+
 :fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `caminho_excel`.
 { .card }
 
