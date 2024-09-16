@@ -18,7 +18,7 @@ tags:
 | **Versão Power Automate**    | 2.39.00239.23332 |
 
 - [x] Robô que cria memorando em processo criado no SEI.
-- [x] Utiliza os subfluxos de login, troca de unidade e criação de processo no SEI.
+- [x] Utiliza os subfluxos de login, troca de unidade, criação de processo no SEI e criação de texto de memorando com IA.
 - [x] Economiza tempo e evita erros.
 
 --8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"

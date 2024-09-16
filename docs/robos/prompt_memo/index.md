@@ -24,7 +24,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô de criação de prompt para texto de memorando__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/prompt_memo.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `prompt_memo`[^1].
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô de criação de texto de memorando com IA__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/prompt_memo.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `prompt_memo`[^1].
 { .card }
 
 :fontawesome-solid-2: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `prompt_memo`.
