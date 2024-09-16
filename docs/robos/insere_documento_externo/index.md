@@ -38,7 +38,7 @@ tags:
 { #download-button .card path="assets/documento_sei.csv" fileName="documento_sei.xlsx" }
 
 
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `caminho_excel`.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
 { .card }
 
 </div>
