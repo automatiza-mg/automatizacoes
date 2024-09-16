@@ -32,13 +32,13 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-2: :octicons-workflow-24: __Utilize o robô de login no SEI__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^1] em um novo subfluxo chamado `login_sei` e crie uma ação _Executar Subfluxo_ no fluxo _Main_.
+[:fontawesome-solid-1: :octicons-workflow-24: __Utilize o robô de login no SEI__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^1] em um novo subfluxo chamado `login_sei` e crie uma ação `Executar subfluxo` no fluxo ``Main``.
 { .card }
 
-[:fontawesome-solid-3: :octicons-workflow-24: __Utilize o robô de troca de unidade no SEI__](../troca_unidade_sei/#montando-o-seu-robo){ target="_blank" }[^1] em um novo subfluxo chamado `troca_unidade`, e crie uma ação _Executar Subfluxo_ no fluxo _Main_. :warning: caso seja necessário.
+[:fontawesome-solid-2: :octicons-workflow-24: __Utilize o robô de troca de unidade no SEI__](../troca_unidade_sei/#montando-o-seu-robo){ target="_blank" }[^1] em um novo subfluxo chamado `troca_unidade`, e crie uma ação ``Executar subfluxo`` no fluxo ``Main``. :warning: caso seja necessário.
 { .card }
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/processo_novo_sei.txt)[^1], cole em um novo subfluxo Power Automate Desktop e crie uma ação _Executar Subfluxo_ no fluxo _Main_.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de criar processo no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/processo_novo_sei.txt)[^2], cole em um novo subfluxo Power Automate Desktop e crie uma ação ``Executar subfluxo`` no fluxo ``Main``.
 { .card }
 
 :fontawesome-solid-4::material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^3] e `especificacao`[^4].
