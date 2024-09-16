@@ -28,13 +28,16 @@ tags:
 [:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de criação de processos no SEI.__](../cria_processo_sei/#montando-o-seu-robo){ target="_blank" }
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de criação de memorando__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_memorando.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `cria_memorando`[^1].
+[:fontawesome-solid-2: :octicons-workflow-24: __Siga todos os passos do robô de criação de texto de memorando com IA.__](../prompt_memo/#montando-o-seu-robo){ target="_blank" } :warning:{ title='Caso seja necessário' }
 { .card }
 
-:fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de criação de memorando__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_memorando.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `cria_memorando`[^1].
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
+:fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
+{ .card }
+
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
 { .card }
 
 </div>
