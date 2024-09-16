@@ -161,6 +161,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/assina_encaminha_sei/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/assina_encaminha_sei/assets/fluxo/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/busca_numeros_documentos_processo_sei/</loc>
          <lastmod>2024-09-16</lastmod>
          <changefreq>daily</changefreq>
