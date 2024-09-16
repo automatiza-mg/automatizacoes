@@ -30,7 +30,7 @@ tags:
 :fontawesome-solid-2: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `prompt_memo`.
 { .card }
 
-:fontawesome-solid-3: :material-application-variable: __Crie as variáveis de entrada__ `resposta_gpt`.
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `texto_prompt`.
 { .card }
 
 </div>
