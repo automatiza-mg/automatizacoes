@@ -37,10 +37,10 @@ tags:
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`[^2].
 { .card }
 
-:fontawesome-solid-6: :material-application-variable: __As variáveis de fluxo__ `resposta1` e `resposta2` serão solicitadas [^2].
+:fontawesome-solid-6: :material-application-variable: __As variáveis de fluxo__ `resposta1` e `resposta2` serão solicitadas [^3].
 { .card }
 
 </div>
@@ -48,4 +48,5 @@ tags:
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: Essas variáveis foram criadas no subfluxo que [Cria texto de memorando com IA](../prompt_memo/#montando-o-seu-robo). Caso não tenha copiado esse subfluxo, inclua os textos no lugar das variáveis `resposta1` e `resposta2`.
+[^2]: Caso não haja planilha de apoio com as variáveis `hipotese_restricao_memo`, `destinatario_memo`, `assunto_memo`, `nprocesso` e `ndoc`, será necessário criá-las.
+[^3]: Essas variáveis foram criadas no subfluxo que [Cria texto de memorando com IA](../prompt_memo/#montando-o-seu-robo). Caso não tenha copiado esse subfluxo, inclua os textos no lugar das variáveis `resposta1` e `resposta2`.
