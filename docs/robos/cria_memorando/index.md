@@ -6,7 +6,7 @@ tags:
   - SEI
 ---
 
-# Inserir documento externo no SEI
+# Cria memorando no SEI
 
 
 ## Informações gerais
@@ -17,7 +17,7 @@ tags:
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.39.00239.23332 |
 
-- [x] Robô que inseri documento externo em processo no SEI.
+- [x] Robô que cria memorando em processo criado no SEI.
 - [x] Utiliza os subfluxos de login, troca de unidade e criação de processo no SEI.
 - [x] Economiza tempo e evita erros.
 
@@ -28,17 +28,13 @@ tags:
 [:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de criação de processos no SEI.__](../cria_processo_sei/#montando-o-seu-robo){ target="_blank" }
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de inserção de documento externo__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/insere_documento_externo.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `insere_documento_externo`[^1].
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de criação de memorando__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_memorando.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `cria_memorando`[^1].
 { .card }
 
-:fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `insere_documento_externo`.
+:fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
 { .card }
 
-[:fontawesome-solid-4: :material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
-{ #download-button .card path="assets/documento_sei.csv" fileName="documento_sei.xlsx" }
-
-
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `caminho_excel`.
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
 { .card }
 
 </div>
