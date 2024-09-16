@@ -18,7 +18,6 @@ tags:
 | **Versão Power Automate**    | 2.39.00239.23332 |
 
 - [x] Robô que cria texto padronizado de memorando com auxílio do chat GPT.
-- [x] Utiliza os subfluxos de login, troca de unidade e criação de processo no SEI.
 - [x] Economiza tempo e evita erros.
 
 --8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
@@ -28,7 +27,7 @@ tags:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô de criação de prompt para texto de memorando__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/prompt_memo.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `prompt_memo`[^1].
 { .card }
 
-:fontawesome-solid-2: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `prompt_memo.
+:fontawesome-solid-2: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `prompt_memo`.
 { .card }
 
 :fontawesome-solid-3: :material-application-variable: __Crie as variáveis de entrada__ `resposta_gpt`.
