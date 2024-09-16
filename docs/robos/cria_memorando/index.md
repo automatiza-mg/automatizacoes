@@ -40,8 +40,12 @@ tags:
 :fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
 { .card }
 
+:fontawesome-solid-6: :material-application-variable: __As variáveis de fluxo__ `resposta1` e `resposta2` serão solicitadas [^2].
+{ .card }
+
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^2]: Essas variáveis foram criadas no subfluxo que [Cria texto de memorando com IA](../prompt_memo/#montando-o-seu-robo). Caso não tenha copiado esse subfluxo, inclua os textos no lugar das variáveis `resposta1` e `resposta2`.
