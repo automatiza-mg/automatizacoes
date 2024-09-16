@@ -41,7 +41,7 @@ tags:
 [:fontawesome-solid-3: :octicons-workflow-24: __Utilize o robô de troca de unidade no SEI__](../troca_unidade_sei/#montando-o-seu-robo){ target="_blank" }[^2] em um novo subfluxo chamado `troca_unidade`, :warning: caso seja necessário.
 { .card }
 
-:fontawesome-solid-4::material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^3] e `especificação`[^4].
+:fontawesome-solid-4::material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^3] e `especificacao`[^4].
 { .card }
 
 :fontawesome-solid-5::material-application-variable: __Crie a variável de entrada__ `hipotese_restricao`, :warning: caso o processo não seja público [^5].
