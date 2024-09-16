@@ -211,6 +211,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/criar_memorando/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/criar_memorando/assets/fluxo/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/inserir_documento_externo/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/inserir_documento_externo/assets/fluxo/</loc>
+         <lastmod>2024-09-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/login_sei/</loc>
          <lastmod>2024-09-16</lastmod>
          <changefreq>daily</changefreq>
