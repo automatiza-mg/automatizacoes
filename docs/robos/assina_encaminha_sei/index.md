@@ -25,7 +25,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de criação de memorando no SEI.__](../criar_memorando/#montando-o-seu-robo){ target="_blank" }
+[:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de criação de memorando no SEI.__](../cria_memorando/#montando-o-seu-robo){ target="_blank" }
 { .card }
 
 [:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de inserir documento externo no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/insere_documento_externo.txt){ target="_blank" }[^1] :warning:{ title='Caso seja necessário' } e cole em um novo subfluxo chamado `insere_documento_externo`[^1].
