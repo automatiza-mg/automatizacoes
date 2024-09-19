@@ -41,8 +41,21 @@ tags:
 :fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
 { .card }
 
+:fontawesome-solid-6: :material-application-variable: __Complete as colunas da planilha modelo__ com as informações do documento a ser anexado: `Tipo de Documento`[^2], `data`[^3], `número na árvore`[^4], `nome na árvore`[^5], `formato`[^6], `tipo de conferência`[^7], `nível de acesso`[^8], `tipo de restrição`[^9], `caminho do arquivo`[^10], `nome do arquivo`[^11].
+{ .card }
+
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^2]: Tipo do documento conforme nominado na lista predefinida do SEI para anexar arquivo externo.
+[^3]: Data sem barras. Exemplo: 19092024 (para 19/09/2024).
+[^4]: Número do documento, de livre atribuição.
+[^5]: Nome do documento, de livre atribuição.
+[^6]: Valores possíveis, conforme opções do SEI: `Nato-digital` ou `Digitalizado nesta Unidade`
+[^7]: Preencher conforme lista predefinida de opções no SEI. Exemplo: `Cópia Simples`
+[^8]: Valores possíveis, conforme opções do SEI: `Sigiloso`, `Restrito` ou `Público`.
+[^9]: Apenas se o documento for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deixar a célula correspondente em branco.
+[^10]: Copiar e colar o endereço da pasta onde se localiza o arquivo a ser anexado, sem o nome do próprio arquivo. Exemplo: `C\Usuários\m123456\Documentos\`
+[^11]: Copiar e colar o nome do arquivo a ser anexado, com a extensão. Exemplo: `planilha.xlsx`
