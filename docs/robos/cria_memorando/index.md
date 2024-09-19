@@ -37,7 +37,7 @@ tags:
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `hipotese_restricao_memo`, `destinatario_memo` e `assunto_memo` serão solicitadas.
+:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `hipotese_restricao_memo`[^2], `destinatario_memo`[^3] e `assunto_memo`[^4] serão solicitadas.
 { .card }
 
 </div>
@@ -45,3 +45,6 @@ tags:
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^2]: Apenas se o documento for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu Valor ficar em branco.
+[^3]: Nome da pessoa do setor destinatário do documento.
+[^4]: Campo aberto para inclusão do assunto do documento.
