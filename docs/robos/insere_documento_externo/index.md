@@ -38,7 +38,7 @@ tags:
 { #download-button .card path="assets/documento_sei.csv" fileName="documento_sei.xlsx" }
 
 
-:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_excel`, com o caminho da pasta onde foi salvo.
 { .card }
 
 :fontawesome-solid-6: :material-application-variable: __Complete as colunas da planilha modelo__ com as informações do documento a ser anexado: `Tipo de Documento`[^2], `data`[^3], `número na árvore`[^4], `nome na árvore`[^5], `formato`[^6], `tipo de conferência`[^7], `nível de acesso`[^8], `tipo de restrição`[^9], `caminho do arquivo`[^10], `nome do arquivo`[^11].
