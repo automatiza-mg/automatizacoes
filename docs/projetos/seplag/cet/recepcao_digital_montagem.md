@@ -20,13 +20,15 @@ Entretanto, o volume de entrada de processos não é compatível com a capacidad
   Realiza login no sistema sei e direciona para a caixa adequada. 
 3. **Login_Siaut**:  
   Realiza login no sistema Siaut. 
-4. **Mont_Siaut_Anexos**:
+4. **Mont_Siaut_Capa**:
+  Emite e realiza download do documento 'capa de defesa'.  
+5. **Mont_Siaut_Anexos**:
   Identifica se o cidadão que protocolou a defesa incluiu documentos anexos. Em caso positivo, realiza downloads dos arquivos e salva em pasta no computado. Em caso negativo, direciona para o subfluxo de Mont_Siaut_S/Anexos. 
-5. **Mont_Siaut_S/Anexos**:
+6. **Mont_Siaut_S/Anexos**:
   Faz captura de tela do siaut na qual consta a informação que o cidadão não anexou documentos a defesa. Em seguida salva a captura de tela em pasta no computador. 
-6. **Mont_Siaut_AIT**:
+7. **Mont_Siaut_AIT**:
   Pesquisa se há AIT, documento digital, da defesa recepcionada. Se sim, faz download do documento. Se não, registra na planilha que não foi encontrada AIT para a defesa.
-7. **Mont_SEI**:
+8. **Mont_SEI**:
   Iniciar um novo processo sei para cada defesa recepcionada, incluindo os documentos capa, anexos ou captura de tela e AIT (se houver). Em seguida, encaminha o processo sei para a caixa correspondente. Registra em planilha do excel o número do processo sei e o nome do responsável pela montagem 
 
 ## 3. Pré-requisitos para o funcionamento do robô 
@@ -40,9 +42,7 @@ Entretanto, o volume de entrada de processos não é compatível com a capacidad
   - :material-application-variable: **`login_siaut`**: login para entrar no Siaut. Valor cadastrado para a variável deverá conter numéricos. Favor não incluir pontos (.) ou hífen (-).
   - :material-application-variable: **`orgao_siaut`**: órgão de login no Siaut. Valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
   - :material-application-variable: **`senha_siaut`**: senha para login no Siaut. Recomendamos incluir variável como confidencial.
-  - :material-application-variable: **`cont`**: variável de loop. O valor deve ser 0. 
-  - :material-application-variable: **`i`**: variável de loop. O valor deve ser 0. 
-  - :material-application-variable: **`j`**: variável de loop. O valor deve ser 0.
+  - :material-application-variable: **`p`**: variável de loop. O valor deve ser 0. 
   - :material-application-variable: **`caminho_pasta`**: Define o caminho da pasta na qual os arquivos deverão ser salvos. Esta pasta deve ser de uso exclusivo do robô, uma vez que o robô irá esvaziar a pasta em durante sua execução 
 
 ### 3.2. Configurar o navegador Google Chrome: 
@@ -92,6 +92,7 @@ Considerando que, no momento que este post está sendo escrito, o passivo é de 
 - [x] Fluxo ['Main']
 - [x] Subfluxo ['Login_Sei']
 - [x] Subfluxo ['Login_Siaut']
+- [x] Subfluxo ['Mont_Siaut_Capa']
 - [x] Subfluxo ['Mont_Siaut_Anexos']
 - [x] Subfluxo ['Mont_Siaut_S/Anexos']
 - [x] Subfluxo ['Mont_Siaut_AIT']
