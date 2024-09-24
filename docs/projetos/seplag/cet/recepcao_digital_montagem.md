@@ -53,12 +53,17 @@ Entretanto, o volume de entrada de processos não é compatível com a capacidad
 
 ### 3.3 Configurar caixa de download - navegação 
 
-- Neste processo, as ações de download e upload de documentos ocorrem na caixa de navegação do próprio Windows. A navegação nessa janela é sensível a alteração de visualização dos ícones. A configuração programada é lista detalhada. 
+- Neste processo, as ações de download e upload de documentos ocorrem na caixa de navegação do próprio Windows. A navegação nessa janela é sensível a alteração de visualização dos ícones. A configuração programada é lista detalhada.
+
+<img width="1438" alt="navega" src="https://github.com/user-attachments/assets/66064066-dd29-4f2a-9386-e435ec825c70">
+
 
 ### 3.4. Baixar arquivo em Excel: 
 
   - É necessário realizar o download da planilha excel na qual estão listados os processos que foram recepcionados, mas ainda não foram montados.
   - Esta planilha deverá conter uma tabela, com o seguinte cabeçalho - n. defesa (A1), data (B1), placa (C1), processamento (D1), recepcionado (E1), montagem (F1), status AIT (G1), sei (H1).
+
+<img width="1077" alt="montagem" src="https://github.com/user-attachments/assets/7304493d-3a5e-48d1-8578-9e984f75921a">
 
 <div class="grid" markdown>
 
