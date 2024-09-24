@@ -55,11 +55,21 @@ Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no si
 
 ### 3.3. Criar arquivos em Excel: 
 
-  - Planilha nomeada “protocolo”. Esta planilha deverá conter tabela, com o seguinte cabeçalho - n. defesa (A1), data (B1), placa (C1), processamento (D1), montagem (E1), sei (F1), AIT (G1). O caminho do arquivo deverá ser incluído na primeira ação do subfluxo “Gravar_excel”. 
+  - Planilha nomeada “protocolo”. Esta planilha deverá conter tabela, com o seguinte cabeçalho - n. defesa (A1), data (B1), placa (C1), processamento (D1), montagem (E1), sei (F1), AIT (G1). O caminho do arquivo deverá ser incluído na primeira ação do subfluxo “Gravar_excel”.
 
-  - Planilha nomeada “erro_protocolo”. Esta planilha deverá conter tabela, com o seguinte cabeçalho - Número Protocolo Digital (A1), Placa (B1), Processamento (C1), Data Cadastro (D1), Erro (E1), Tratado (F1). O caminho do arquivo deverá ser incluído na décima ação do subfluxo “Main”. 
+ <img width="875" alt="protocolo" src="https://github.com/user-attachments/assets/e40be813-cf8a-456e-842a-9e68d7e21d23">
 
-### 3.4. Editar subfluxos: 
+  - Planilha nomeada “erro_protocolo”. Esta planilha deverá conter tabela, com o seguinte cabeçalho - Número Protocolo Digital (A1), Placa (B1), Processamento (C1), Data Cadastro (D1), Erro (E1), Tratado (F1). O caminho do arquivo deverá ser incluído na décima ação do subfluxo “Main”.
+
+<img width="734" alt="erro_protocolo" src="https://github.com/user-attachments/assets/e9edbe70-7653-44ea-a1a6-b445d1b7403c">
+
+### 3.4 Configurar caixa de download - navegação 
+
+  - Neste processo, as ações de download e upload de documentos ocorrem na caixa de navegação do próprio Windows. A navegação nessa janela é sensível a alteração de visualização dos ícones. A configuração programada é lista detalhada.
+
+<img width="1438" alt="navega" src="https://github.com/user-attachments/assets/843def40-3ffe-41b5-9387-846af0894e57">
+
+### 3.5. Editar subfluxos: 
   - `main`: a ação de iniciar o excel deve ser editada para que o caminho do excel seja correspondente à planilha “erro_protocolo” criada.
   - `Gravar_excel`: Neste subfluxo, a primeira ação, que se refere à iniciar a o Excel, deve ser editada para que o caminho do excel seja correspondente à planilha “protocolo” criada.
   - `Mont_Siaut_S/Anexos`: Neste subfluxo, há uma ação nomeada "executar script power Shell". Ao editar esta ação, é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta`.
