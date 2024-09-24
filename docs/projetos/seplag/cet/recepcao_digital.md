@@ -2,7 +2,7 @@
 
 A pessoa condutora ou proprietária do veículo autuado pela Coordenadoria Estadual de Gestão de Trânsito (CET-MG), pode apresentar defesa da autuação pela internet, via UAI Virtual, sem necessidade de comparecer presencialmente à uma unidade de atendimento.
 
-Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no sistema Siaut. Estas defesas precisam ser recepcionadas e intruídas em um processo Sei para que, posteriormente, sejam apreciadas. Diante disto, foi criado um robô para apoiar nesse processo e trazer mais agilidade e eficiência para equipe responsável por este processo.
+Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no sistema Siaut. Estas defesas precisam ser recepcionadas e intruídas em um processo Sei para que, posteriormente, sejam apreciadas. Diante disto, foi criado um robô para apoiar nesse processo e trazer mais agilidade e eficiência para equipe responsável por esta atividade.
 
 ## 1. O que o robô faz 
 - [x] Recepciona os protocolos digitais de defesa de multa recebidos no Siaut.
@@ -76,19 +76,19 @@ Após a execução do robô, a planilha “protocolo” estará preenchida com a
 Ainda, é importante lembrar de salvar e fechar as planilhas de excel antes de rodar o robô novamente. 
 
 ## 5. Métricas alcançadas
-Foi mensurado que a execução manual deste processo leva cerca de 12 minutos, enquanto o robô executa em, em média, 7 minutos por processo. 
+Foi mensurado que a execução manual deste processo leva cerca de 14 minutos, enquanto o robô executa em, em média, 7 minutos por processo. 
 
-Considerando que são recepcionados cerca de 4 mil processo por mês, isto representa uma economia de 333 horas!
+Considerando que são recepcionados cerca de 4 mil processo por mês, isto representa uma economia de mais de 450 horas por mês!
 
 ## 6. Códigos 
-- [x] Fluxo ['Main']
-- [x] Subfluxo ['Login_Sei']
-- [x] Subfluxo ['Login_Siaut']
-- [x] Subfluxo ['Novos_Protocolos']
-- [x] Subfluxo ['Gravar_Excel']
-- [x] Subfluxo ['Mont_Siaut_Anexos']
-- [x] Subfluxo ['Mont_Siaut_S/Anexos']
-- [x] Subfluxo ['Mont_Siaut_AIT']
-- [x] Subfluxo ['Mont_Sei']
+- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/main.txt)
+- [x] Subfluxo ['Login_Sei'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_sei.txt)
+- [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_siaut.txt)
+- [x] Subfluxo ['Novos_Protocolos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_novos_protocolos.txt)
+- [x] Subfluxo ['Gravar_Excel'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_excel.txt)
+- [x] Subfluxo ['Mont_Siaut_Anexos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_siaut_anexo.txt)
+- [x] Subfluxo ['Mont_Siaut_S/Anexos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_siaut_s_anexo.txt)
+- [x] Subfluxo ['Mont_Siaut_AIT'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_ait.txt)
+- [x] Subfluxo ['Mont_Sei'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_sei.txt)
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
