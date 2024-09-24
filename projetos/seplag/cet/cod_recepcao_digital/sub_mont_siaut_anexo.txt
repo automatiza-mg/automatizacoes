@@ -1,0 +1,33 @@
+FUNCTION Mont_Siaut_Anexos GLOBAL
+    WebAutomation.GoToWebPage.GoToWebPage BrowserInstance: siaut Url: $'''http://www.siaut.mg.gov.br/pyaa1085.asp''' WaitForPageToLoadTimeout: 60
+    WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: siaut Text: $'''Número da Defesa:''')
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%n_defesa%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+    WAIT 2
+    SET z TO 0
+    IF (WebAutomation.IfWebPageContains.WebPageContainsText BrowserInstance: siaut Text: $'''Não há arquivos(s) disponíveis para prosseguir !!''') THEN
+        DISABLE Display.ShowMessageDialog.ShowMessage Title: $'''Mira''' Message: $'''N tem doc''' Icon: Display.Icon.None Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False
+        CALL Mont_Siaut_SemAnexo
+        EXIT FUNCTION
+    ELSE
+        WebAutomation.ExtractData.ExtractHtmlTable BrowserInstance: siaut Control: $'''html > frameset > frameset > frame:eq(1) > html > body > center:eq(1) > table:eq(0)''' ExtractionParameters: {[$'''Value #1''', $'''Value #2''', $'''Value #3'''], [$'''''', $'''''', $''''''] } PostProcessData: False TimeoutInSeconds: 60 ExtractedData=> downloads
+        Variables.DeleteRowFromDataTable DataTable: downloads RowIndex: 0
+        LOOP WHILE (z) < (downloads.RowsCount)
+            IF Contains(downloads[z][2], $'''jpg''', True) THEN
+                WebAutomation.GoToWebPage.GoToWebPage BrowserInstance: siaut Url: $'''http://www.siaut.mg.gov.br/exibeimagem.asp?id=%downloads[z][0]%''' WaitForPageToLoadTimeout: 60
+            ELSE IF Contains(downloads[z][2], $'''png''', True) THEN
+                WebAutomation.GoToWebPage.GoToWebPage BrowserInstance: siaut Url: $'''http://www.siaut.mg.gov.br/exibeimagem.asp?id=%downloads[z][0]%''' WaitForPageToLoadTimeout: 60
+            ELSE IF Contains(downloads[z][2], $'''pdf''', True) THEN
+                WebAutomation.GoToWebPage.GoToWebPage BrowserInstance: siaut Url: $'''http://www.siaut.mg.gov.br/exibepdf.asp?id=%downloads[z][0]%''' WaitForPageToLoadTimeout: 60
+            END
+            WAIT 3
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Return}%caminho_pasta%{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            WAIT 1
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%downloads[z][0]% - %n_defesa%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+            WAIT 1
+            MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Escape}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+            Variables.IncreaseVariable Value: z IncrementValue: 1
+        END
+    END
+    DISABLE EXIT Code: 0
+END FUNCTION

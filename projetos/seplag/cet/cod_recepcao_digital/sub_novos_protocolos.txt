@@ -1,0 +1,100 @@
+FUNCTION Novos_Protocolos GLOBAL
+    # inserir processo de filtro da tabela
+    WebAutomation.GoToWebPage.GoToWebPage BrowserInstance: siaut Url: $'''http://www.siaut.mg.gov.br/pyaa0104.asp?id=%protocolo_dia[i][0]%''' WaitForPageToLoadTimeout: 60
+    WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: siaut Text: $'''Nº SIPRO''')
+    WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: siaut ExtractionParameters: {[$'''html > frameset > frameset > frame:eq(1) > html > body > form > center > table > tbody > tr:eq(0) > td:eq(1) > input''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> placa
+    WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: siaut ExtractionParameters: {[$'''html > frameset > frameset > frame:eq(1) > html > body > form > center > table > tbody > tr:eq(1) > td:eq(1) > input''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> processamento
+    WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: siaut ExtractionParameters: {[$'''html > frameset > frameset > frame:eq(1) > html > body > form > center > table > tbody > tr:eq(2) > td:eq(1) > input''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> data_processamento
+    MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: siaut TextToSend: $'''{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+    /# Erro: 
+1)  defesa já cadastrada; 
+2) defesa já encerrada;
+3) infração já baixada
+4) Defesa em trânsito;
+5) Pertence a outros órgãos (não mapeado) 
+6) N tem placa
+6) Iinfração sem notificação (não mapeado)
+#/
+    WAIT 2
+    IF (WebAutomation.IfWebPageContains.WebPageContainsText BrowserInstance: siaut Text: $'''Tipo Requisição:''') THEN
+        DISABLE IF (WebAutomation.IfWebPageContains.WebPageContainsText BrowserInstance: siaut Text: $'''Prazo para Defesa Vencido''') THEN
+        DISABLE END
+        MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: siaut TextToSend: $'''{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+        WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: siaut Text: $'''Dados do Recorrente''')
+        MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: siaut TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+        WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: siaut Text: $'''Defesa da Autuação - Inclusão''')
+        MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: siaut TextToSend: $'''{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+        IF (WebAutomation.IfWebPageContains.WebPageContainsElement BrowserInstance: siaut Control: appmask['Web Page \'http://www.siaut.mg.gov.br/pyaa0115.asp\'']['Heading 2 \'500 - Internal server error.\'']) THEN
+            # erro 500 acontece aqui
+            Excel.GetFirstFreeRowOnColumn Instance: dados Column: $'''A''' FirstFreeRowOnColumn=> Linha_livre_atual
+            Excel.WriteToExcel.WriteCell Instance: dados Value: protocolo_dia[i][0] Column: $'''A''' Row: linha_livre_atual
+            Excel.WriteToExcel.WriteCell Instance: dados Value: placa Column: $'''B''' Row: linha_livre_atual
+            Excel.WriteToExcel.WriteCell Instance: dados Value: processamento Column: $'''C''' Row: linha_livre_atual
+            Excel.WriteToExcel.WriteCell Instance: dados Value: data_processamento Column: $'''D''' Row: linha_livre_atual
+            Excel.SaveExcel.Save Instance: dados
+            DISABLE Display.ShowMessageDialog.ShowMessageWithTimeout Title: $'''ERRO ''' Message: $'''Erro 500 identificado''' Icon: Display.Icon.Warning Buttons: Display.Buttons.OK DefaultButton: Display.DefaultButton.Button1 IsTopMost: False Timeout: 2
+            EXIT FUNCTION
+        END
+        WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: siaut Text: $'''Comprovante de Entrega - Defesa da Autuação''')
+        MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: siaut TextToSend: $'''{Tab}{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+        WAIT (WebAutomation.WaitForWebPageContent.WebPageToContainText BrowserInstance: siaut Text: $'''EXTRATO DE DEFESA DA AUTUAÇÃO''')
+        WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: siaut ExtractionParameters: {[$'''html > body > table:eq(0) > tbody > tr:eq(2) > td:eq(0) > b''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> n_defesa
+        WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: siaut ExtractionParameters: {[$'''html > frameset > frameset > frame:eq(1) > html > body > table:eq(0) > tbody > tr:eq(2) > td:eq(5) > b''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> intempestivo
+        WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: siaut ExtractionParameters: {[$'''html > frameset > frameset > frame:eq(1) > html > body > table:eq(0) > tbody > tr:eq(2) > td:eq(3) > b''', $'''Own Text''', $''''''] } TimeoutInSeconds: 60 ExtractedData=> texto_data_recepcao
+        Text.ConvertTextToDateTime.ToDateTime Text: texto_data_recepcao DateTime=> data_recepcao
+        DateTime.GetCurrentDateTime.Local DateTimeFormat: DateTime.DateTimeFormat.DateOnly CurrentDateTime=> data_atual
+        DateTime.Subtract FromDate: data_atual SubstractDate: data_recepcao TimeUnit: DateTime.DifferenceTimeUnit.Days TimeDifference=> prescrito
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Control}({a}){Control}({p})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+        WAIT 2
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        WAIT 1
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''Salvar como PDF''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        WAIT 2
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Return}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%caminho_pasta%{Return}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: True
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}''' DelayBetweenKeystrokes: 100 SendTextAsHardwareKeys: True
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''capa - %n_defesa%{Return}''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: True
+        WAIT 1
+        MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Return}''' DelayBetweenKeystrokes: 150 SendTextAsHardwareKeys: True
+        WAIT 1
+        DISABLE EXIT Code: 0
+        CALL Gravar_Excel
+        CALL Mont_Siaut_Anexos
+        CALL Mont_Siaut_AIT
+        CALL Mont_Sei
+    ELSE
+        Excel.GetFirstFreeRowOnColumn Instance: dados Column: $'''A''' FirstFreeRowOnColumn=> Linha_livre_atual
+        Excel.WriteToExcel.WriteCell Instance: dados Value: placa Column: $'''B''' Row: linha_livre_atual
+        Excel.WriteToExcel.WriteCell Instance: dados Value: processamento Column: $'''C''' Row: linha_livre_atual
+        Excel.WriteToExcel.WriteCell Instance: dados Value: data_processamento Column: $'''D''' Row: linha_livre_atual
+        Excel.WriteToExcel.WriteCell Instance: dados Value: protocolo_dia[i][0] Column: $'''A''' Row: linha_livre_atual
+        Excel.SaveExcel.Save Instance: dados
+        EXIT FUNCTION
+    END
+    DISABLE EXIT Code: 0
+END FUNCTION
+
+# [ControlRepository][PowerAutomateDesktop]
+
+{
+  "ControlRepositorySymbols": [
+    {
+      "IgnoreImagesOnSerialization": false,
+      "Repository": "{\r\n  \"Screens\": [\r\n    {\r\n      \"Controls\": [\r\n        {\r\n          \"AutomationProtocol\": \"uia3\",\r\n          \"ScreenShot\": null,\r\n          \"ElementTypeName\": \"Heading 2\",\r\n          \"InstanceId\": \"b01ad4ca-7405-4cd3-addb-8e4729194592\",\r\n          \"Name\": \"Heading 2 '500 - Internal server error.'\",\r\n          \"SelectorCount\": 1,\r\n          \"Selectors\": [\r\n            {\r\n              \"CustomSelector\": null,\r\n              \"Elements\": [\r\n                {\r\n                  \"Attributes\": [\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Class\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Id\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": true,\r\n                      \"Name\": \"Ordinal\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": 0\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Title\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    }\r\n                  ],\r\n                  \"CustomValue\": null,\r\n                  \"Ignore\": true,\r\n                  \"Name\": \"Body 'Server Error 500 - Internal server error. There is a problem with the resource you are looking for, and it cannot be displayed.'\",\r\n                  \"Tag\": \"body\"\r\n                },\r\n                {\r\n                  \"Attributes\": [\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Class\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": false,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Id\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": \"content\"\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": true,\r\n                      \"Name\": \"Ordinal\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": 0\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Title\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    }\r\n                  ],\r\n                  \"CustomValue\": null,\r\n                  \"Ignore\": false,\r\n                  \"Name\": \"Div '500 - Internal server error. There is a problem with the resource you are looking for, and it cannot be displayed.'\",\r\n                  \"Tag\": \"div\"\r\n                },\r\n                {\r\n                  \"Attributes\": [\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Class\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": \"content-container\"\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Id\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": true,\r\n                      \"Name\": \"Ordinal\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": 0\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Title\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    }\r\n                  ],\r\n                  \"CustomValue\": null,\r\n                  \"Ignore\": false,\r\n                  \"Name\": \"Div '500 - Internal server error. There is a problem with the resource you are looking for, and it cannot be displayed.'\",\r\n                  \"Tag\": \"div\"\r\n                },\r\n                {\r\n                  \"Attributes\": [\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Class\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Disabled\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": \"false\"\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Id\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Name\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": true,\r\n                      \"Name\": \"Ordinal\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": 0\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Title\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    }\r\n                  ],\r\n                  \"CustomValue\": null,\r\n                  \"Ignore\": false,\r\n                  \"Name\": \"Field set '500 - Internal server error. There is a problem with the resource you are looking for, and it cannot be displayed.'\",\r\n                  \"Tag\": \"fieldset\"\r\n                },\r\n                {\r\n                  \"Attributes\": [\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Class\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Id\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": true,\r\n                      \"Name\": \"Ordinal\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": 0\r\n                    },\r\n                    {\r\n                      \"Ignore\": true,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Title\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": null\r\n                    },\r\n                    {\r\n                      \"Ignore\": false,\r\n                      \"IsOrdinal\": false,\r\n                      \"Name\": \"Text\",\r\n                      \"Operation\": \"EqualTo\",\r\n                      \"Value\": \"500 - Internal server error.\"\r\n                    }\r\n                  ],\r\n                  \"CustomValue\": null,\r\n                  \"Ignore\": false,\r\n                  \"Name\": \"Heading 2 '500 - Internal server error.'\",\r\n                  \"Tag\": \"h2\"\r\n                }\r\n              ],\r\n              \"Ignore\": false,\r\n              \"ImageSelector\": null,\r\n              \"IsCustom\": false,\r\n              \"IsImageBased\": false,\r\n              \"IsWindowsInstance\": false,\r\n              \"Name\": \"Default Selector\",\r\n              \"Properties\": []\r\n            }\r\n          ],\r\n          \"Tag\": \"h2\",\r\n          \"ScreenshotPath\": \"controlRepo-screenshots\\\\e51d133a-0fb7-4180-b062-c1c3f2f60843.png\"\r\n        }\r\n      ],\r\n      \"Handle\": {\r\n        \"value\": 0\r\n      },\r\n      \"ProcessName\": null,\r\n      \"ScreenShot\": null,\r\n      \"ElementTypeName\": \"Web Page\",\r\n      \"InstanceId\": \"f734f175-da22-4f6e-8025-4861e41ecee7\",\r\n      \"Name\": \"Web Page 'http://www.siaut.mg.gov.br/pyaa0115.asp'\",\r\n      \"SelectorCount\": 1,\r\n      \"Selectors\": [\r\n        {\r\n          \"CustomSelector\": null,\r\n          \"Elements\": [\r\n            {\r\n              \"Attributes\": [],\r\n              \"CustomValue\": \"domcontainer\",\r\n              \"Ignore\": false,\r\n              \"Name\": \"Web Page 'http://www.siaut.mg.gov.br/pyaa0115.asp'\",\r\n              \"Tag\": \"domcontainer\"\r\n            }\r\n          ],\r\n          \"Ignore\": false,\r\n          \"ImageSelector\": null,\r\n          \"IsCustom\": false,\r\n          \"IsImageBased\": false,\r\n          \"IsWindowsInstance\": false,\r\n          \"Name\": \"Default Selector\",\r\n          \"Properties\": []\r\n        }\r\n      ],\r\n      \"Tag\": \"domcontainer\",\r\n      \"ScreenshotPath\": \"controlRepo-screenshots\\\\e07ad293-b8ac-4aa7-87c4-a6da0734b2d2.png\"\r\n    }\r\n  ],\r\n  \"Version\": 1\r\n}",
+      "ImportMetadata": {
+        "DisplayName": "Computador local",
+        "ConnectionString": "",
+        "Type": "Local",
+        "DesktopType": "local"
+      },
+      "Name": "appmask"
+    }
+  ],
+  "ImageRepositorySymbol": {
+    "Repository": "{\r\n  \"Folders\": [],\r\n  \"Images\": [],\r\n  \"Version\": 1\r\n}",
+    "ImportMetadata": {},
+    "Name": "imgrepo"
+  },
+  "ConnectionReferences": []
+}
