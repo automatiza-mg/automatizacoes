@@ -15,4 +15,7 @@ A [Biblioteca de robôs do Automatiza.MG](https://automatiza-mg.github.io/automa
 Da forma como esse robô foi construído, a ativação do CapsLock não permite que seja enviada a dupla de teclas Ctrl A + Ctrl C, que identifica o termo "Logon foi executado com sucesso" na tela e dá mais segurança de prosseguir com o login. 
 Estando essa tecla ativada, o seguinte erro aparece:
 
+![image](https://github.com/user-attachments/assets/eb404f1a-45c5-488a-b94c-890aff57b91e)
+
+
 Assim, se for este o caso do seu robô, basta desativar o CapsLock que o login tenderá a ser realizado normalmente! 
