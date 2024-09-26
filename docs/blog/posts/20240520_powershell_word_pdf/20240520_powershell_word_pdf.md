@@ -50,3 +50,6 @@ Acesse [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robo
 
 [^1]: pequenos blocos de código reutilizável que você pode inserir em um arquivo de código
 
+
+
+
