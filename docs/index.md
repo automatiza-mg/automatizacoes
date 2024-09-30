@@ -80,7 +80,7 @@ hide:
 
 - :material-robot-angry-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>28</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>53</p>
 
     robôs
 
@@ -96,7 +96,7 @@ hide:
 
 - :material-clock-time-five-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>1.303,8</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>7.378,6</p>
 
     horas
 
@@ -120,7 +120,7 @@ hide:
 
 - :fontawesome-solid-people-arrows:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>7,76</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>42,49</p>
 
     servidores
 
