@@ -112,7 +112,7 @@ hide:
 
 - :material-earbuds-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>23</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>27</p>
 
     cursos
 
