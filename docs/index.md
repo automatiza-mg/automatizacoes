@@ -131,125 +131,18 @@ hide:
 Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre esses números
 
 
-## Depoimentos { .h2-center }
-
-=== "SEPLAG"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368933/automatiza-mg/avatar_gabriela.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-        <p class="p-center" markdown>__Gabriella Marcelino__</p>
-        <p class="p-center" markdown>__Técnica da Diretoria Central de Controle e Modernização do Pagamento de Pessoal__</p>
-
-        ---
-
-        A utilização do Power Automate no projeto Automatiza.MG visa inserir óbitos no SISAP, prevenindo pagamentos indevidos a servidores falecidos e protegendo os cofres públicos. A automação reduziu significativamente o tempo necessário para concluir o serviço, além de aumentar a precisão e bem-estar da equipe. Isso permitiu direcionar atenção para outras atividades, racionalizando esforços e reduzindo o retrabalho, como o processamento de estornos bancários.
-
-    </div>
-
-=== "IEPHA"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368934/automatiza-mg/avatar_alexandre.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-        <p class="p-center" markdown>__Alexander Ferreira__</p>
-        <p class="p-center" markdown>__Técnico de Gestão, Proteção e Restauro da Gerência de Recursos Humanos__</p>
-
-        ---
-
-        Com a implantação do projeto piloto de automatização de processos na Gerência de Recursos Humanos do IEPHA pelo Automatiza.MG, tivemos a oportunidade de conhecer o Power Automate, que nos ajudou na redução do tempo gasto em tarefas manuais e repetitivas, liberando a equipe para se concentrar em tarefas mais importantes. A ferramenta comunica muito bem com diversos aplicativos e programas, com segurança e eficiência, ajudando na economia de recursos e tempo de espera para os públicos interno e externo. Em breve, novos fluxos poderão ser criados continuamente, no intuito de facilitar e desburocratizar os processos no serviço público, impactando diretamente na qualidade do trabalho.
-
-    </div>
-
-=== "EDUCAÇÃO"
-
-    <div class="grid cards" markdown>
-
-    - <p class="p-center" markdown>![minha_foto](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368936/automatiza-mg/avatar_andre_silva.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-        <p class="p-center" markdown>__André Silva__</p>
-        <p class="p-center" markdown>__Coordenador Adjunto Qualifica Mais e Ponto Focal do Projeto Trilhas de Futuro, da Superintendência de Políticas Pedagógicas__</p>
-
-        ---
-
-        A implementação da automatização pela equipe do Automatiza.MG na nossa coordenação resultou em impacto transformador e superação de expectativas. A otimização de processos revelou-se essencial, proporcionando visão estratégica na gestão de recursos e liberando servidores para outras atividades. Destaca-se a eficiência operacional e agilidade introduzida pelo projeto, que contribuiu significativamente para o crescimento e desenvolvimento da coordenação. Expressamos profundo reconhecimento pelo comprometimento e expertise da equipe envolvida, e estamos ansiosos para continuar avançando em busca da excelência.
-
-    </div>
-
-## Conheça nossa equipe { .h2-center }
+## Entre em Contato { .h2-center }
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![foto_camila](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178762/avatar_camila.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_robo](){ .lg .middle .avatar loading=lazy }</p>
 
 
-    <p class="p-center" markdown>__Camila Neves__</p>
-
-    ---
-
-    <p class="p-center" markdown>Secretária de Estado de Planejamento e Gestão.</p>
-
-- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Ana Flávia__</p>
+    <p class="p-center" markdown>__Equipe AutomatizaMG__</p>
 
     ---
 
-    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica - SIGES.</p>
-
-- <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
-
-    ---
-
-    <p class="p-center" markdown>Diretor de Desburocratização - DCD.</p>
-
-    <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![foto_andre](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__André Amorim__</p>
-
-    ---
-
-    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
-
-    <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Augusta Cora__</p>
-
-    ---
-
-    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
-
-    <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
-    </p>
-
-- <p class="p-center" markdown>![foto_gabriel](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368358/automatiza-mg/avatar_gabriel.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Gabriel Dornas__</p>
-
-    ---
-
-    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+    <p class="p-center" markdown> E-mail</p>
 
     <p class="p-center" markdown>
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }

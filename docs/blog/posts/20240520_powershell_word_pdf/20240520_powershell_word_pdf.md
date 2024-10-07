@@ -1,6 +1,6 @@
 ---
 date: 2024-05-20
-authors: [andrelamor]
+authors: [dcd-github-admin]
 comments: true
 categories:
   - Tira dúvidas

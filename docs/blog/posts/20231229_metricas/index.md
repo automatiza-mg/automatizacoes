@@ -1,7 +1,7 @@
 ---
 date: 2023-12-29
 draft: false
-authors: [lucasfainblat]
+authors: [dcd-github-admin]
 comments: true
 categories:
   - Métricas
