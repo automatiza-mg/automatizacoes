@@ -92,7 +92,7 @@ hide:
 
     milhões
 
-    arrecadados
+    viabilizados
 
 - :material-clock-time-five-outline:
 
