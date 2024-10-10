@@ -6,7 +6,7 @@ tags:
   - Compras Públicas
 ---
 
-# Consulta Situação Cadastral de Fornecedores - CAGEF
+# Consulta Situação Cadastral de Fornecedores - CAFIMP
 
 ![type:video](https://www.youtube.com/embed/ijJdrQYm6vM)
 
@@ -20,7 +20,7 @@ tags:
 
 - [x] Robô dedicado a facilitar a busca da [situação cadastral de fornecedores](https://www.cagef.mg.gov.br/fornecedor-web/br/gov/prodemge/seplag/fornecedor/publico/index.zul).
 - [x] Ler uma planilha, em formato Excel, contendo CNPJs de fornecedores.
-- [x] Consultar a situação cadastral desses fornecedores no site do CAGEC.
+- [x] Consultar a situação cadastral desses fornecedores no site do CAFIMP.
 - [x] Atualizar a situação cadastral desses fornecedores na mesma planilha Excel aberta no início do processo, determinando se eles estão impedidos ou não de participar de licitações com a administração pública.
 - [x] Aguarda o carregamento das páginas para garantir que tudo esteja certo.
 - [x] Economiza tempo e evita erros.
@@ -28,7 +28,7 @@ tags:
 ??? note "**Clique para ver o fluxo do robô**"
 
     ```mermaid
-    --8<-- "docs/robos/consulta_situacao_cadastral_cagef/assets/fluxo.md"
+    --8<-- "docs/robos/consulta_situacao_cadastral_cafimp/assets/fluxo.md"
     ```
 
 --8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
