@@ -1,7 +1,7 @@
 ---
 date: 2023-11-14
 draft: false
-authors: [andrelamor]
+authors: [dcd-github-admin]
 comments: true
 categories:
   - Ferramentas
