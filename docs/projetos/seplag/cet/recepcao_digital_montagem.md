@@ -42,7 +42,7 @@ Entretanto, o volume de entrada de processos não é compatível com a capacidad
   - :material-application-variable: **`login_siaut`**: login para entrar no Siaut. Valor cadastrado para a variável deverá conter numéricos. Favor não incluir pontos (.) ou hífen (-).
   - :material-application-variable: **`orgao_siaut`**: órgão de login no Siaut. Valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
   - :material-application-variable: **`senha_siaut`**: senha para login no Siaut. Recomendamos incluir variável como confidencial.
-  - :material-application-variable: **`p`**: variável de loop. O valor deve ser 0. 
+  - :material-application-variable: **`p`**: variável de loop. O valor deve ser 1. 
   - :material-application-variable: **`caminho_pasta`**: Define o caminho da pasta na qual os arquivos deverão ser salvos. Esta pasta deve ser de uso exclusivo do robô, uma vez que o robô irá esvaziar a pasta em durante sua execução 
 
 ### 3.2. Configurar o navegador Google Chrome: 
@@ -94,13 +94,13 @@ Foi mensurado que a execução manual deste processo leva cerca de 12 minutos, e
 Considerando que, no momento que este post está sendo escrito, o passivo é de aproximadamente 21.800 processos, espera-se alcançar a economia de cerca de 2.000 horas, além de zerar o passivo de processos.
 
 ## 6. Códigos 
-- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_main.txt)
-- [x] Subfluxo ['Login_Sei'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_sei.txt)
-- [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_siaut.txt)
-- [x] Subfluxo ['Mont_Siaut_Capa'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_siaut_capa.txt)
-- [x] Subfluxo ['Mont_Siaut_Anexos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_siaut_anexos.txt)
-- [x] Subfluxo ['Mont_Siaut_S/Anexos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_siaut_s_anexos.txt)
-- [x] Subfluxo ['Mont_Siaut_AIT'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_siaut_ait.txt)
-- [x] Subfluxo ['Mont_Sei'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_montagem/sub_mont_sei)
+- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_main.txt)
+- [x] Subfluxo ['Login_Sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_login_sei.txt)
+- [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_login_siaut.txt)
+- [x] Subfluxo ['Mont_Siaut_Capa'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_siaut_capa.txt)
+- [x] Subfluxo ['Mont_Siaut_Anexos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_siaut_anexos.txt)
+- [x] Subfluxo ['Mont_Siaut_S/Anexos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_siaut_s_anexo.txt)
+- [x] Subfluxo ['Mont_Siaut_AIT'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_siaut_ait.txt)
+- [x] Subfluxo ['Mont_Sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_montagem/sub_mont_sei.txt)
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
