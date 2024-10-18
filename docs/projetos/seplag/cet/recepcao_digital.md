@@ -72,7 +72,9 @@ Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no si
 ### 3.5. Editar subfluxos: 
   - `main`: a ação de iniciar o excel deve ser editada para que o caminho do excel seja correspondente à planilha “erro_protocolo” criada.
   - `Gravar_excel`: Neste subfluxo, a primeira ação, que se refere à iniciar a o Excel, deve ser editada para que o caminho do excel seja correspondente à planilha “protocolo” criada.
-  - `Mont_Siaut_S/Anexos`: Neste subfluxo, há uma ação nomeada "executar script power Shell". Ao editar esta ação, é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta`.
+ - `Mont_Siaut_S/Anexos`: Neste subfluxo, há duas ações que precisam ser alteradas. 
+    - A ação nomeada "Fechar o Word". Ao editar esta ação, o caminho do documento deve ser editado para ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
+    - Igualmente, a ação nomeada "executar script power Shell", na qual é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
 
 ## 4. Resultados da execução do robô
 
@@ -91,14 +93,14 @@ Foi mensurado que a execução manual deste processo leva cerca de 14 minutos, e
 Considerando que são recepcionados cerca de 4 mil processo por mês, isto representa uma economia de mais de 450 horas por mês!
 
 ## 6. Códigos 
-- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/main.txt)
-- [x] Subfluxo ['Login_Sei'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_sei.txt)
-- [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_siaut.txt)
-- [x] Subfluxo ['Novos_Protocolos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_novos_protocolos.txt)
-- [x] Subfluxo ['Gravar_Excel'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_excel.txt)
-- [x] Subfluxo ['Mont_Siaut_Anexos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_siaut_anexo.txt)
-- [x] Subfluxo ['Mont_Siaut_S/Anexos'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_siaut_s_anexo.txt)
-- [x] Subfluxo ['Mont_Siaut_AIT'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_ait.txt)
-- [x] Subfluxo ['Mont_Sei'](https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_sei.txt)
+- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_main.txt)
+- [x] Subfluxo ['Login_Sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_login_sei.txt)
+- [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_login_siaut.txt)
+- [x] Subfluxo ['Novos_Protocolos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_novos_protocolos.txt)
+- [x] Subfluxo ['Gravar_Excel'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_gravar_excel.txt)
+- [x] Subfluxo ['Mont_Siaut_Anexos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_siaut_anexos.txt)
+- [x] Subfluxo ['Mont_Siaut_S/Anexos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_siaut_s_anexo.txt)
+- [x] Subfluxo ['Mont_Siaut_AIT'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_siaut_ait.txt)
+- [x] Subfluxo ['Mont_Sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_sei.txt)
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
