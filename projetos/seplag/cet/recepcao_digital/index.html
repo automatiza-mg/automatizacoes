@@ -1391,7 +1391,11 @@
 <ul>
 <li><code>main</code>: a ação de iniciar o excel deve ser editada para que o caminho do excel seja correspondente à planilha “erro_protocolo” criada.</li>
 <li><code>Gravar_excel</code>: Neste subfluxo, a primeira ação, que se refere à iniciar a o Excel, deve ser editada para que o caminho do excel seja correspondente à planilha “protocolo” criada.</li>
-<li><code>Mont_Siaut_S/Anexos</code>: Neste subfluxo, há uma ação nomeada "executar script power Shell". Ao editar esta ação, é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável <code>caminho_pasta</code>.</li>
+<li><code>Mont_Siaut_S/Anexos</code>: Neste subfluxo, há duas ações que precisam ser alteradas. <ul>
+<li>A ação nomeada "Fechar o Word". Ao editar esta ação, o caminho do documento deve ser editado para ser o mesmo da variável <code>caminho_pasta</code> seguido do nome do arquivo <code>captura.docx</code>.</li>
+<li>Igualmente, a ação nomeada "executar script power Shell", na qual é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável <code>caminho_pasta</code> seguido do nome do arquivo <code>captura.docx</code>.</li>
+</ul>
+</li>
 </ul>
 <h2 id="4-resultados-da-execucao-do-robo">4. Resultados da execução do robô<a class="headerlink" href="#4-resultados-da-execucao-do-robo" title="Permanent link">⚓︎</a></h2>
 <p>Após a execução do robô, a planilha “protocolo” estará preenchida com as informações referentes aos processos recepcionados. </p>
@@ -1406,15 +1410,15 @@
 <p>Considerando que são recepcionados cerca de 4 mil processo por mês, isto representa uma economia de mais de 450 horas por mês!</p>
 <h2 id="6-codigos">6. Códigos<a class="headerlink" href="#6-codigos" title="Permanent link">⚓︎</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Fluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/main.txt">'Main'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_sei.txt">'Login_Sei'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_siaut.txt">'Login_Siaut'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_novos_protocolos.txt">'Novos_Protocolos'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_excel.txt">'Gravar_Excel'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_siaut_anexo.txt">'Mont_Siaut_Anexos'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_siaut_s_anexo.txt">'Mont_Siaut_S/Anexos'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_ait.txt">'Mont_Siaut_AIT'</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/automatizacoes/refs/heads/post-cet-recepcao/docs/projetos/seplag/cet/cod_recepcao_digital/sub_mont_sei.txt">'Mont_Sei'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Fluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_main.txt">'Main'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_login_sei.txt">'Login_Sei'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_login_siaut.txt">'Login_Siaut'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_novos_protocolos.txt">'Novos_Protocolos'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_gravar_excel.txt">'Gravar_Excel'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_siaut_anexos.txt">'Mont_Siaut_Anexos'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_siaut_s_anexo.txt">'Mont_Siaut_S/Anexos'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_siaut_ait.txt">'Mont_Siaut_AIT'</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_sei.txt">'Mont_Sei'</a></li>
 </ul>
 <p>Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar <a href="https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/">códigos de subfluxo</a>.</p></div>
 
@@ -1439,7 +1443,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2024 15:19:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 18, 2024 17:53:45</span>
   </span>
 
     
