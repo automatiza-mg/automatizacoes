@@ -12,7 +12,7 @@ Entretanto, o volume de entrada de processos não é compatível com a capacidad
 - [x] Realiza a instrução de processo SEI da defesa com os documentos: capa, anexos eviado pelo cidadão e, se houver, AIT.
 - [x] Direciona o processo para a caixa Sei correspondente. 
 
-## 2. Subfluxos e suas funcionalidade no robô 
+## 2. Subfluxos e suas funcionalidades no robô 
 
 1. **Main**:  
   Fluxo principal no qual é realizada a identificação da defesa que precisa ser montada. Em seguida, este fluxo direciona para os subfluxos adequados para cada um desses casos.
@@ -77,7 +77,9 @@ Entretanto, o volume de entrada de processos não é compatível com a capacidad
 
 ### 3.5. Editar subfluxos: 
   - `main`: a ação de iniciar o excel deve ser editada para que o caminho do excel seja correspondente à planilha excel na qual estão listados os processos que foram recepcionados, mas ainda não foram montados.
-  - `Mont_Siaut_S/Anexos`: Neste subfluxo, há uma ação nomeada "executar script power Shell". Ao editar esta ação, é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta`.
+  - `Mont_Siaut_S/Anexos`: Neste subfluxo, há duas ações que precisam ser alteradas. 
+    - A ação nomeada "Fechar o Word". Ao editar esta ação, o caminho do documento deve ser editado para ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
+    - Igualmente, a ação nomeada "executar script power Shell", na qual é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
 
 ## 4. Resultados da execução do robô
 

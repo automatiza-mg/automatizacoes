@@ -72,7 +72,9 @@ Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no si
 ### 3.5. Editar subfluxos: 
   - `main`: a ação de iniciar o excel deve ser editada para que o caminho do excel seja correspondente à planilha “erro_protocolo” criada.
   - `Gravar_excel`: Neste subfluxo, a primeira ação, que se refere à iniciar a o Excel, deve ser editada para que o caminho do excel seja correspondente à planilha “protocolo” criada.
-  - `Mont_Siaut_S/Anexos`: Neste subfluxo, há uma ação nomeada "executar script power Shell". Ao editar esta ação, é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta`.
+ - `Mont_Siaut_S/Anexos`: Neste subfluxo, há duas ações que precisam ser alteradas. 
+    - A ação nomeada "Fechar o Word". Ao editar esta ação, o caminho do documento deve ser editado para ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
+    - Igualmente, a ação nomeada "executar script power Shell", na qual é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
 
 ## 4. Resultados da execução do robô
 
