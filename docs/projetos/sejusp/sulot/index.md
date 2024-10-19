@@ -6,9 +6,9 @@ O desafio em questão consiste em automatizar a leitura, a extração de informa
 ## 1. Sobre o projeto
 A Sejusp conta com uma ampla rede de unidades administrativas espalhadas pelo território de Minas Gerais. Dentre os serviços contratados para operação destas unidades, está o fornecimento de energia elétrica (baixa tensão). Atualmente, 04 concessiónárias fornecem esse serviço, resultando no envio de cobranças mensais (fatura).
 
-A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.
+A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot/Sejups), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.
 
-Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Inteligência Artificial do Power Automate web.
+Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Automação Robótica de Processos - RPA[^1], Power Automate web com o superte de Inteligência Artificial. 
 
 ## 2. O que o robô faz
  - Realiza leitura da fatura de energia, identificando as informações que desejamos coletar;
@@ -35,8 +35,8 @@ flowchart TD
 
 ## 3. Premissas
 
-- O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF[^1]. Para diferentes modelos, é necessário novo treinamento e publicação da IA.
-- As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF[^2]. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online[^3].
+- O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF[^2]. Para diferentes modelos, é necessário novo treinamento e publicação da IA.
+- As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF[^3]. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online[^4].
 
 ## 4. Utilização do robô
 - Neste projeto, o treinamento da IA, bem como fluxo do Power Automate web, foi feito diretamente na conta do servidor responsável por esse processo na DSG.
@@ -49,9 +49,10 @@ O processo manual era executado, em média, em 15 minutos para cada fatura, send
 **Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!!!** :rocket::rocket::rocket:
 
 
-[^1]: Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual.
+[^1]:[Saiba mais sobre o que são ferramentas RPA.](https://meadapt.com/blog/o-que-%C3%A9-rpa-e-para-o-que-serve/)
 
-[^2]: No caso da DSG, isto não se aplica para a fatura da Energisa, que possui uma tabela com as informações de diversas unidades consumidoras em uma mesma fatura. O fluxo foi desenhado para acomodar esta singularidade.
+[^2]:Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual.
 
-[^3]: Dividir PDF online [opção 1](https://www.ilovepdf.com/pt/dividir_pdf); [opção 2](https://smallpdf.com/pt/dividir-pdf); [opção 3](https://tools.pdf24.org/pt/dividir-pdf).
+[^3]:No caso da DSG, isto não se aplica para a fatura da Energisa, que possui uma tabela com as informações de diversas unidades consumidoras em uma mesma fatura. O fluxo foi desenhado para acomodar esta singularidade.
 
+[^4]:Dividir PDF online [opção 1](https://www.ilovepdf.com/pt/dividir_pdf); [opção 2](https://smallpdf.com/pt/dividir-pdf); [opção 3](https://tools.pdf24.org/pt/dividir-pdf).
