@@ -1275,8 +1275,8 @@
 <!-- more -->
 <h2 id="1-sobre-o-projeto">1. Sobre o projeto<a class="headerlink" href="#1-sobre-o-projeto" title="Permanent link">⚓︎</a></h2>
 <p>A Sejusp conta com uma ampla rede de unidades administrativas espalhadas pelo território de Minas Gerais. Dentre os serviços contratados para operação destas unidades, está o fornecimento de energia elétrica (baixa tensão). Atualmente, 04 concessiónárias fornecem esse serviço, resultando no envio de cobranças mensais (fatura).</p>
-<p>A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.</p>
-<p>Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Inteligência Artificial do Power Automate web.</p>
+<p>A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot/Sejups), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.</p>
+<p>Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Automação Robótica de Processos - RPA<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Power Automate web com o superte de Inteligência Artificial. </p>
 <h2 id="2-o-que-o-robo-faz">2. O que o robô faz<a class="headerlink" href="#2-o-que-o-robo-faz" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Realiza leitura da fatura de energia, identificando as informações que desejamos coletar;</li>
@@ -1298,8 +1298,8 @@
     G --&gt; H</div>
 <h2 id="3-premissas">3. Premissas<a class="headerlink" href="#3-premissas" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. Para diferentes modelos, é necessário novo treinamento e publicação da IA.</li>
-<li>As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</li>
+<li>O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Para diferentes modelos, é necessário novo treinamento e publicação da IA.</li>
+<li>As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</li>
 </ul>
 <h2 id="4-utilizacao-do-robo">4. Utilização do robô<a class="headerlink" href="#4-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -1314,13 +1314,16 @@
 <hr>
 <ol>
 <li id="fn:1">
-<p>Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p><a href="https://meadapt.com/blog/o-que-%C3%A9-rpa-e-para-o-que-serve/">Saiba mais sobre o que são ferramentas RPA.</a> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>No caso da DSG, isto não se aplica para a fatura da Energisa, que possui uma tabela com as informações de diversas unidades consumidoras em uma mesma fatura. O fluxo foi desenhado para acomodar esta singularidade. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:3">
-<p>Dividir PDF online <a href="https://www.ilovepdf.com/pt/dividir_pdf">opção 1</a>; <a href="https://smallpdf.com/pt/dividir-pdf">opção 2</a>; <a href="https://tools.pdf24.org/pt/dividir-pdf">opção 3</a>. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+<p>No caso da DSG, isto não se aplica para a fatura da Energisa, que possui uma tabela com as informações de diversas unidades consumidoras em uma mesma fatura. O fluxo foi desenhado para acomodar esta singularidade. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>Dividir PDF online <a href="https://www.ilovepdf.com/pt/dividir_pdf">opção 1</a>; <a href="https://smallpdf.com/pt/dividir-pdf">opção 2</a>; <a href="https://tools.pdf24.org/pt/dividir-pdf">opção 3</a>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
 </li>
 </ol>
 </div></div>
@@ -1346,7 +1349,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 21, 2024 18:21:18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 19, 2024 00:11:11</span>
   </span>
 
     
