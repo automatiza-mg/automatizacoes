@@ -6,7 +6,7 @@ tags:
   - APIs
 ---
 
-# Realiza download de Processo SEI
+# Baixa processos e documentos SEI
 
 ## Informações gerais
 
@@ -41,7 +41,7 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/pesquisa_codigo_rastreio_correios.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `api_sei_sistema`[^2].
