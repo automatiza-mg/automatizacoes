@@ -85,8 +85,8 @@ Considerando que são recepcionados cerca de 4 mil processo por mês, isto repre
 - [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_procura_ait/login_siaut.txt)
 - [x] Subfluxo ['Intempestivo'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_procura_ait/intempestivo.txt)
 - [x] Subfluxo ['Envio_Processo'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_procura_ait/envio_processo.txt)
-- [x] Subfluxo ['Extrai_Numero_Defesa']()
-- [x] Subfluxo ['Anexa_AIT']()
-- [x] Subfluxo ['Marcador_AIT']()
+- [x] Subfluxo ['Extrai_Numero_Defesa'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_procura_ait/extrai_numero_defesa.txt)
+- [x] Subfluxo ['Anexa_AIT'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_procura_ait/anexa_ait.txt)
+- [x] Subfluxo ['Marcador_AIT'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_procura_ait/marcador_ait.txt)
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
