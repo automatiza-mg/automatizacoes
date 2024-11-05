@@ -41,7 +41,7 @@ tags:
 [:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de criar processo no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_processo_sei.txt)[^1] e cole em um novo subfluxo `cria_processo_sei`.
 { .card }
 
-:fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 1, 2 e 3, selecionando `login_sei`, `troca_unidade_sei` :warning:{ title='Caso seja necessário' } e `cria_processo_sei` respectivamente.
+:fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 2 e 3, selecionando `troca_unidade_sei` :warning:{ title='Caso seja necessário' } e `cria_processo_sei` respectivamente.
 { .card }
 
 :fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^4], `especificacao`[^5] e `hipotese_restricao`[^6].
