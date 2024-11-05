@@ -38,13 +38,14 @@ tags:
 [:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de troca de unidade do SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt)[^2] e cole em um novo subfluxo `troca_unidade_sei` no Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, com o nome `troca_unidade_sei`.
+:fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, com o nome `login_sei`.
 { .card }
 
-
-:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `unidade_sei`[^3].
+:fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, com o nome `troca_unidade_sei`.
 { .card }
 
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `unidade_sei`[^3].
+{ .card }
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"

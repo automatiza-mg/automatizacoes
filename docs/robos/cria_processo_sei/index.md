@@ -32,7 +32,7 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô de login no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_sei.txt){ target="_blank" }[^1] e cole em um novo subfluxo `login_sei`[^2].
+[:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de login no SEI.__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^1]
 { .card }
 
 [:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de troca de unidade no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt){ target="_blank" }[^1] e cole em um novo subfluxo `troca_unidade` [^3]:warning:{ title='Caso seja necessário' }.
