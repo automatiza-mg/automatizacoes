@@ -192,7 +192,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    <p class="p-center" markdown>Secretária de Estado de Planejamento e Gestão.</p>
+    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica.</p>
 
 - <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
 
@@ -201,7 +201,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica - SIGES.</p>
+    <p class="p-center" markdown>Superintendente Central de Inovação e Desburocratização - SCID.</p>
 
 - <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
 
