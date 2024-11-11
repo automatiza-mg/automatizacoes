@@ -45,19 +45,19 @@ tags:
 [:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô de consulta ao CNPJ__](){ target="_blank" }[^1], cole em um novo subfluxo `CNPJ` e :material-application-variable: __Crie a variável de entrada__ `site_cnpj`[^5].
 { .card }
 
-[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô de consulta à CND Federal__](){ target="_blank" }[^1], cole em um novo subfluxo `CND_FEDERAL` e :material-application-variable: __Crie a variável de entrada__ `site_cnd_federal`[^6].
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô de consulta à CND Federal__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cnd-federal.txt){ target="_blank" }[^1], cole em um novo subfluxo `CND_FEDERAL` e :material-application-variable: __Crie a variável de entrada__ `site_cnd_federal`[^6].
 { .card }
 
 [:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô de consulta ao FGTS__](){ target="_blank" }[^1], cole em um novo subfluxo `FGTS` e :material-application-variable: __Crie a variável de entrada__ `site_fgts`[^7].
 { .card }
 
-[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô de consulta à Justiça do Trabalho__](){ target="_blank" }[^1], cole em um novo subfluxo `JUSTIÇA_TRABALHO` e :material-application-variable: __Crie a variável de entrada__ `site_justiça`[^8].
+[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô de consulta à Justiça do Trabalho__](){ target="_blank" }[^1], cole em um novo subfluxo `JUSTIÇA_TRABALHO` e :material-application-variable: __Crie a variável de entrada__ `site_justiça_trabalho`[^8].
 { .card }
 
-[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô de consulta à CND Estadual de Minas Gerais__](){ target="_blank" }[^1], cole em um novo subfluxo `CND_MG`.:warning:{ title='Para empresas de MG' } e :material-application-variable: __Crie a variável de entrada__ `site_siare`[^9].
+[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô de consulta à CND Estadual de Minas Gerais__](){ target="_blank" }[^1], cole em um novo subfluxo `CND_MG`.:warning:{ title='Para empresas de MG' } e :material-application-variable: __Crie a variável de entrada__ `site_cnd_mg`[^9].
 { .card }
 
-[:fontawesome-solid-9: :octicons-copy-16: __Copie o código do robô de consulta à CND Municipal de Belo Horizonte__](){ target="_blank" }[^1], cole em um novo subfluxo `CND_BH`.:warning:{ title='Para empresas de BH' } e :material-application-variable: __Crie a variável de entrada__ `site_pbh`[^10].
+[:fontawesome-solid-9: :octicons-copy-16: __Copie o código do robô de consulta à CND Municipal de Belo Horizonte__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cnd-pbh.txt){ target="_blank" }[^1], cole em um novo subfluxo `CND_BH`.:warning:{ title='Para empresas de BH' } e :material-application-variable: __Crie a variável de entrada__ `site_cnd_pbh`[^10].
 { .card }
 
 </div>
@@ -68,8 +68,9 @@ tags:
 [^2]: Contendo o caminho da pasta onde será salva a planilha-modelo.
 [^3]: Contendo o caminho da pasta onde serão salvos o CRC ou as certidões dos fornecedores..
 [^4]: [Endereço da página inicial do site do CAGEF](https://www.cagef.mg.gov.br/fornecedor-web/br/gov/prodemge/seplag/fornecedor/publico/index.zul).
-[^5]: .
-[^6]: .
-[^7]:
-[^8]:
-[^9]:
+[^5]: [Endereço da página inicial do site do CNPJ](https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp).
+[^6]: [Endereço da página inicial do site da CND Federal](https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir).
+[^7]: [Endereço da página inicial do site do FGTS](https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf).
+[^8]: [Endereço da página inicial do site da Justiça do Trabalho](https://www.tst.jus.br/certidao1).
+[^9]: [Endereço da página inicial do site da CDT da SEFAZ/MG](https://www2.fazenda.mg.gov.br/sol/ctrl/SOL/CDT/SERVICO_829?ACAO=INICIAR).
+[^10]: [Endereço da página inicial do site da CND da PBH](https://cnd.pbh.gov.br/CNDOnline/).
