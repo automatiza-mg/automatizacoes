@@ -11,7 +11,7 @@ tags:
 
 ## Informações gerais
 
-| **Desenvolvedor**| Automatiza-mg  |
+| **Desenvolvedor**| Extensionistas FJP e Automatiza-mg  |
 | ----------- | ------------------------------------ |
 | **E-mail**       | simplificacao@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
@@ -42,7 +42,7 @@ tags:
 [:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de emissão de CRC__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/crc-cagef.txt){ target="_blank" }[^1], cole em um novo subfluxo `CRC` e :material-application-variable:__Crie a variável de entrada__ `pasta`[^3].
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô de consulta ao CNPJ__](){ target="_blank" }[^1] e cole em um novo subfluxo `CNPJ`.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô de consulta ao CNPJ__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/consulta-cnpj.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CNPJ`.
 { .card }
 
 [:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô de consulta à CND Federal__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cnd-federal.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CND_FEDERAL`.
