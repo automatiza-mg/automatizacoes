@@ -11,7 +11,7 @@ tags:
 
 ## Informações gerais
 
-| **Desenvolvedor**| Extensionistas FJP e Automatiza-mg  |
+| **Desenvolvedores**| Extensionistas FJP (Diego Silva, João Vitor Fonseca e Leidi Alves) e AutomatizaMG (André Amorim)  |
 | ----------- | ------------------------------------ |
 | **E-mail**       | simplificacao@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
@@ -48,10 +48,10 @@ tags:
 [:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô de consulta à CND Federal__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cnd-federal.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CND_FEDERAL`.
 { .card }
 
-[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô de consulta ao FGTS__](){ target="_blank" }[^1] e cole em um novo subfluxo `FGTS`.
+[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô de consulta ao FGTS__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/consulta_fgts.txt){ target="_blank" }[^1] e cole em um novo subfluxo `FGTS`.
 { .card }
 
-[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô de consulta à Justiça do Trabalho__](){ target="_blank" }[^1] e cole em um novo subfluxo `JUSTIÇA_TRABALHO`.
+[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô de consulta à Justiça do Trabalho__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/consulta_justi%C3%A7a_trabalho.txt){ target="_blank" }[^1] e cole em um novo subfluxo `JUSTIÇA_TRABALHO`.
 { .card }
 
 [:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô de consulta à CND Estadual de Minas Gerais__](){ target="_blank" }[^1] e cole em um novo subfluxo `CND_MG`. :warning:{ title='Para empresas de MG' }
