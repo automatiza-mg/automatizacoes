@@ -54,7 +54,7 @@ tags:
 [:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô de consulta à Justiça do Trabalho__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/consulta_justi%C3%A7a_trabalho.txt){ target="_blank" }[^1] e cole em um novo subfluxo `JUSTIÇA_TRABALHO`.
 { .card }
 
-[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô de consulta à CND Estadual de Minas Gerais__](){ target="_blank" }[^1] e cole em um novo subfluxo `CND_MG`. :warning:{ title='Para empresas de MG' }
+[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô de consulta à CND Estadual de Minas Gerais__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cnd-mg-siare.txt){ target="_blank" }[^1] e [cadastro de endereço](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/endere%C3%A7o-siare.txt) e cole em 2 novos subfluxos `CND_MG` e `endereço_CND_MG`. :warning:{ title='Para empresas de MG' }
 { .card }
 
 [:fontawesome-solid-9: :octicons-copy-16: __Copie o código do robô de consulta à CND Municipal de Belo Horizonte__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cnd-pbh.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CND_BH`.:warning:{ title='Para empresas de BH' }
