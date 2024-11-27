@@ -28,7 +28,7 @@ tags:
     --8<-- "docs/robos/emissão_de_certidões_de_fornecedores/assets/fluxo.md"
     ```
 
---8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo.md"
+--8<-- "docs/overrides/partials/modelo_robo/requisitos_montando_robo_cagef.md"
 
 <div class="grid" markdown>
 
