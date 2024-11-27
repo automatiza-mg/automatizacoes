@@ -49,6 +49,8 @@ A representação desse fluxo inicialmente proposto para o robô:
 
 Para aumentar a escala e eficiência do robô, usamos uma planilha-modelo, com o seguinte cabeçalho:
 
+![image](https://github.com/user-attachments/assets/cb2d746b-be01-47f9-9818-248d642b1af9)
+
 Essas colunas são necessárias para:
 
 - que o robô realize iterações em loop sobre cada linha (empresa/fornecedor)
@@ -63,8 +65,9 @@ Essa planilha também pode ser baixada [aqui]()
 
 - [x] É necessário cadastrar uma variável de entrada `pasta` contendo o caminho da pasta onde serão salvas todas as certidões salvas pelo robô.
 - [x] É necessário salvar a planilha-modelo e informar o seu caminho em uma variável de entrada `planilha`.
-- [x] Na planilha-modelo, utilizar números sem pontos ou hífens nas colunas `CNPJ` e `CEP`
 - [x] Os sites das certidões foram pré-cadastrados na ação  `Iniciar novo Chrome` de cada subfluxo. É conveniente verificar periodicamente se houve atualizações nos endereços das URLs dessas páginas.
+![image](https://github.com/user-attachments/assets/f6c860b2-4d7e-4e9b-b25c-cc682ded4ea8)
+- [x] Na planilha-modelo, utilizar números sem pontos ou hífens nas colunas `CNPJ` e `CEP`
 - [x] Antes da execução do robô, nenhum arquivo excel além da planilha modelo deve estar aberto. O robô é que vai abri-la.
 - [x] Antes da execução do robô, também é mais seguro fechar os navegadores que estiverem abertos, para identificação e leitura correta das páginas que devem ser acessadas.  
 
