@@ -67,7 +67,7 @@ Essa planilha também pode ser baixada [aqui]()
 - [x] No navegador Chrome, é necessário ir em configurações <chrome://settings/downloads> e marcar a opção _"Perguntar onde salvar cada arquivo antes de fazer download"_
 
 ![image](https://github.com/user-attachments/assets/57a359a5-12b6-4ac2-b666-28761ac5cd6a)
-
+- [x] Em alguns sites, como o da Justiça do Trabalho, é neceessário "Aceitar Cookies" para emissão das certidões pelo robô. Se isso não tiver sido feito antes, numa consulta manual, é provável que o robô seja interrompido.
 - [x] É necessário cadastrar uma variável de entrada `pasta` contendo o caminho da pasta onde serão salvas todas as certidões salvas pelo robô.
 - [x] É necessário salvar a planilha-modelo e informar o seu caminho em uma variável de entrada `planilha`.
 - [x] Os sites das certidões foram pré-cadastrados na ação  `Iniciar novo Chrome` de cada subfluxo. É conveniente verificar periodicamente se houve atualizações nos endereços das URLs dessas páginas.
