@@ -21,7 +21,7 @@ Este robô visa acessar sites, registrar dados e salvar documentos correspondent
 
 - [Certificado de Registro Cadastral (CRC) de Minas Gerais]();
 - [Cadastro Nacional de Pessoa Jurídica (CNPJ)]();
-- [Certidão do Fundo (FGTS)]();
+- [Certidão do Fundo de Garantia por TEmpo de Serviço (FGTS)]();
 - [Certidão da Justiça do Trabalho]();
 - [Certidão Negativa de Débitos (CND)]() da Fazenda Nacional
   - da [Fazenda Estadual de Minas Gerais](), se for o caso;
