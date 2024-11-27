@@ -45,7 +45,7 @@ A representação desse fluxo inicialmente proposto para o robô:
     --8<-- "docs/robos/emissão_de_certidões_de_fornecedores/assets/fluxo.md"
     ```
 
-**Planilha `modelo`:**
+**Planilha modelo:**
 
 Para aumentar a escala e eficiência do robô, usamos uma planilha-modelo, com o seguinte cabeçalho:
 
@@ -64,19 +64,20 @@ Essa planilha também pode ser baixada [aqui]()
 ## Utilização do robô - cuidados e ajustes
 
 - [x] Não utilizar caracteres especiais nos nomes das pastas e arquivos. Por exemplo, `usuario/trabalho/projeto-extensao/pregao` em vez de `usuário/trabalho/projeto-extensão/pregão`
-- [x] No navegador Chrome, é necessário ir em configurações <chrome://settings/downloads> e marcar a opção _"Perguntar onde salvar cada arquivo antes de fazer download"_
+- [x] No navegador Chrome, é necessário ir em configurações `chrome://settings/downloads` do navegador e marcar a opção _"Perguntar onde salvar cada arquivo antes de fazer download"_
 
 ![image](https://github.com/user-attachments/assets/57a359a5-12b6-4ac2-b666-28761ac5cd6a)
-- [x] Em alguns sites, como o da Justiça do Trabalho, é neceessário "Aceitar Cookies" para emissão das certidões pelo robô. Se isso não tiver sido feito antes, numa consulta manual, é provável que o robô seja interrompido.
+
+- [x] Em alguns sites, como o da Justiça do Trabalho, é necessário "Aceitar Cookies" para emissão das certidões pelo robô. Se isso não tiver sido feito antes, numa consulta manual, é provável que o robô seja interrompido.
 - [x] É necessário cadastrar uma variável de entrada `pasta` contendo o caminho da pasta onde serão salvas todas as certidões salvas pelo robô.
 - [x] É necessário salvar a planilha-modelo e informar o seu caminho em uma variável de entrada `planilha`.
 - [x] Os sites das certidões foram pré-cadastrados na ação  `Iniciar novo Chrome` de cada subfluxo. É conveniente verificar periodicamente se houve atualizações nos endereços das URLs dessas páginas.
       
 ![image](https://github.com/user-attachments/assets/f6c860b2-4d7e-4e9b-b25c-cc682ded4ea8)
 
-- [x] Na planilha-modelo, utilizar números sem pontos ou hífens nas colunas `CNPJ` e `CEP`
+- [x] Na planilha-modelo, utilizar números sem pontos e sem hífens nas colunas `CNPJ` e `CEP`
 - [x] Antes da execução do robô, nenhum arquivo excel além da planilha modelo deve estar aberto. O robô é que vai abri-la.
-- [x] Antes da execução do robô, também é mais seguro fechar os navegadores que estiverem abertos, para identificação e leitura correta das páginas que devem ser acessadas.  
+- [x] Antes da execução do robô, é mais seguro também fechar os navegadores que estiverem abertos, para identificação e leitura correta das páginas que devem ser acessadas.  
 
 ## Resultados
 
