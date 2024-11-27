@@ -63,6 +63,9 @@ Essa planilha também pode ser baixada [aqui]()
 
 ## Utilização do robô - cuidados e ajustes
 
+- [x] Não utilizar caracteres especiais nos nomes das pastas e arquivos. Por exemplo, `usuario/trabalho/projeto-extensao/pregao` em vez de `usuário/trabalho/projeto-extensão/pregão`
+- [x] No navegador Chrome, é necessário ir em configurações e marcar a opção "Perguntar onde salvar cada arquivo antes de fazer download"
+
 - [x] É necessário cadastrar uma variável de entrada `pasta` contendo o caminho da pasta onde serão salvas todas as certidões salvas pelo robô.
 - [x] É necessário salvar a planilha-modelo e informar o seu caminho em uma variável de entrada `planilha`.
 - [x] Os sites das certidões foram pré-cadastrados na ação  `Iniciar novo Chrome` de cada subfluxo. É conveniente verificar periodicamente se houve atualizações nos endereços das URLs dessas páginas.
