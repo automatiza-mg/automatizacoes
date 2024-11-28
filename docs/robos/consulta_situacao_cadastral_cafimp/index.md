@@ -3,7 +3,7 @@ comments: true
 hide:
   - navigation
 tags:
-  - Compras Públicas
+  - Compras
 ---
 
 # Consulta Situação Cadastral de Fornecedores - CAFIMP

@@ -16,6 +16,8 @@ nav:
     - robos/index.md
   - Nossos projetos: 
     - projetos/index.md
+    - Extensão:
+      - Certidões de Fornecedores: projetos/extensao/certidoes_fornecedores
     - Fundação João Pinheiro (FJP): 
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
     - Secretaria Estadual de Planejamento e Gestão (Seplag):
