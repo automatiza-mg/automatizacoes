@@ -20,38 +20,38 @@ Este robô automatiza o registro e a prestação de contas de viagens no Sistema
 
 
 - [x] **Entrada de Informações**: 
-  - Solicita dados essenciais ao usuário, como nome, CPF, senha, MASP, órgão no SEI, e o diretório onde estão salvos os comprovantes de viagem.
+  1. Solicita dados essenciais ao usuário, como nome, CPF, senha, MASP, órgão no SEI, e o diretório onde estão salvos os comprovantes de viagem.
 
-- [x] **Processamento de PDFs**:
-  - Busca os arquivos PDF na pasta informada.
-  - Extrai e processa textos dos comprovantes para identificar valores de transporte.
-  - Utiliza ChatGPT para extrair o valor da viagem.
-  - Calcula o valor total das viagens realizadas.
+- [x] **Processamento de PDFs**:  
+  1. Busca os arquivos PDF na pasta informada.
+  2. Extrai e processa textos dos comprovantes para identificar valores de transporte.
+  3. Utiliza ChatGPT para extrair o valor da viagem.
+  4. Calcula o valor total das viagens realizadas.
 
 - [x] **Automação no SEI**:
-  - Realiza login no SEI com as credenciais fornecidas.
-  - Cria novos processos para "Viagem a Serviço".
-  - Preenche automaticamente os campos necessários do formulário SEI, incluindo valores calculados.
-  - Inclui documentos relacionados, como prestações de contas e comprovantes, no processo criado.
+  1. Realiza login no SEI com as credenciais fornecidas.
+  2. Cria novos processos para "Viagem a Serviço".
+  3. Preenche automaticamente os campos necessários do formulário SEI, incluindo valores calculados.
+  4. Inclui documentos relacionados, como prestações de contas e comprovantes, no processo criado.
 
 
 ## Pré-requisitos
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na versão correta](#informacoes-gerais)
+:simple-powerautomate: __Power Automate__ [na versão correta.](#informacoes-gerais)
 { .card }
 
-:octicons-file-directory-16: __Diretório__ onde estão os comprovantes informado pelo usuário
+:octicons-file-directory-16: __Diretório__ onde estão os comprovantes informado pelo usuário.
 { .card }
 
-:octicons-file-text-16: __Dados do usuário__ para acesso e preenchimento de formulário SEI
+:octicons-key-16: __Dados do usuário__ para acesso e preenchimento de formulário SEI.
 { .card }
 
-:octicons-file-pdf-16: __Comprovantes__ de vigens em formato nato digital (não podem estar digitalizadas)
+:page_facing_up: __Comprovantes__ de vigens em formato nato digital (não podem estar digitalizadas)
 { .card }
 
-:octicons-gear-16: __Subfluxo__ criado com o mesmo nome indicado na seção ## Montando o seu robô
+:octicons-gear-16: __Subfluxo__ criado com o mesmo nome indicado na seção [Montanto o seu robô.](#montando-o-seu-robo)
 { .card }
 
 </div>
@@ -65,16 +65,16 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô Main 1__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no fluxo Main do Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô Main 1__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no fluxo __Main__ do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô subfluxo 1__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __chat_gpt__ do Power Automate Desktop.
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô subfluxo chat_gpt__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __chat_gpt__ do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô subfluxo 2__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __entrada_variaveis__ do Power Automate Desktop.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô subfluxo entrada_variaveis__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __entrada_variaveis__ do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô subfluxo 3__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __sei__ do Power Automate Desktop.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô subfluxo sei__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __sei__ do Power Automate Desktop.
 { .card }
 
 </div>
