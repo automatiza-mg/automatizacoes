@@ -65,16 +65,16 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô Main 1__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no fluxo __Main__ do Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô Main 1__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/extencaoFJP_UBER_main.txt)[^1] e cole no fluxo __Main__ do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô subfluxo chat_gpt__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __chat_gpt__ do Power Automate Desktop.
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô subfluxo chat_gpt__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/extencaoFJP_UBER_chatGPT.txt)[^1] e cole no subfluxo  __chat_gpt__ do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô subfluxo entrada_variaveis__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __entrada_variaveis__ do Power Automate Desktop.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô subfluxo entrada_variaveis__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/extencaoFJP_UBER_entrada_variaveis.txt)[^1] e cole no subfluxo  __entrada_variaveis__ do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô subfluxo sei__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole no subfluxo  __sei__ do Power Automate Desktop.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô subfluxo sei__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/extencaoFJP_UBER_sei.txt)[^1] e cole no subfluxo  __sei__ do Power Automate Desktop.
 { .card }
 
 </div>
