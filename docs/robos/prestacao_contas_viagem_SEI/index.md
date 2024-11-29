@@ -19,19 +19,21 @@ tags:
 Este robô automatiza o registro e a prestação de contas de viagens no Sistema Eletrônico de Informações (SEI). Ele é capaz de processar informações fornecidas pelo usuário necessárias para o preenchimento de formulário SEI,  extrair valor da viagem realizada por meio dos comprovantes PDF nato digital (ele não processa comprovantes digitalizados) que o usuário fornecer e interagir diretamente com o SEI para registrar e documentar as viagens realizadas.
 
 
+- [x] **Entrada de Informações**: 
+  - Solicita dados essenciais ao usuário, como nome, CPF, senha, MASP, órgão no SEI, e o diretório onde estão salvos os comprovantes de viagem.
 
+- [x] **Processamento de PDFs**:
+  - Busca os arquivos PDF na pasta informada.
+  - Extrai e processa textos dos comprovantes para identificar valores de transporte.
+  - Utiliza ChatGPT para extrair o valor da viagem.
+  - Calcula o valor total das viagens realizadas.
 
-- [x] Entrada de Informações: Solicita dados essenciais ao usuário, como nome, CPF, senha, MASP, órgão no SEI, e o diretório onde estão salvos os comprovantes de viagem.
-- [x] Processamento de PDFs: 
-- - Busca os arquivos PDF na pasta informada.
-- - Extrai e processa textos dos comprovantes para identificar valores de transporte.
-- - Utiliza ChatGPT para extrair o valor da viagem.
-- - Calcula o valor total das viagens realizadas.
-- [x] Automação no SEI:
-- - Realiza login no SEI com as credenciais fornecidas.
-- - Cria novos processos para "Viagem a Serviço".
-- - Preenche automaticamente os campos necessários do formulário SEI, incluindo valores calculados.
-- - Inclui documentos relacionados, como prestações de contas e comprovantes, no processo criado.
+- [x] **Automação no SEI**:
+  - Realiza login no SEI com as credenciais fornecidas.
+  - Cria novos processos para "Viagem a Serviço".
+  - Preenche automaticamente os campos necessários do formulário SEI, incluindo valores calculados.
+  - Inclui documentos relacionados, como prestações de contas e comprovantes, no processo criado.
+
 
 ## Pré-requisitos
 
