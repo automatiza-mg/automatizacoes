@@ -1,6 +1,6 @@
 ---
 date: 2024-12-03
-draft: true
+draft: false
 authors: [andrelamor]
 comments: true
 categories:
@@ -10,7 +10,7 @@ categories:
 
 # Retirada de linhas adicionais (escaping) em textos copiados da Web
 
-Um dos riscsos que podemos correr na operação de robôs, ao copiar dados ou textos diretamente na Web, é trazer linhas ocultas ao olhar humano, junto da variável que capturou o texto. Este post contém uma dica para contornar essa armadilha e seguir em frente com o fluxo no Power Automate, usando apenas a linha desejada.  
+Um dos riscos que podemos correr na operação de robôs, ao copiar dados ou textos diretamente na Web, é trazer linhas ocultas ao olhar humano, junto da variável que capturou o texto. Este post contém uma dica para contornar essa armadilha e seguir em frente com o fluxo no Power Automate, usando apenas a linha desejada.  
 
 <!-- more -->
 
@@ -18,12 +18,12 @@ O caso prático em questão é como retirar uma linha 'indesejável' de um texto
 
 - variável capturada
 ````
-<Texto linha desejada> \r
-<Linha vazia indesejável>
+VARIÁVEL A SER COPIADA
+(Linha vazia indesejável)
 ````
 - variável desejada
 ````
-<Texto linha desejada>
+VARIÁVEL A SER COPIADA
 ````
 
 Ações `Extrair dados da página da WEB` e `Cortar texto` podem apresentar problemas, como variável copiada com linha adicional. Isso ocorre pela estrutura da página da Web, ou se não especificamos bem o que copiar da página.
@@ -44,11 +44,23 @@ Em textos ou tabelas, as linhas podem sofrer quebras, ter espaços, dentre outro
 \t (tab)
 \s (space)
 ````
-Tendo isso em vista, foram adicionadas duas ações (10 e 11) para suprimir a linha adicional mostrada na figura anterior:
+Tendo isso em vista, foram adicionadas:
+
+I. uma variável de entrada com nome 'vazio' e valor padrão em branco :
+
+![](assets/vazio.png)
+
+II. duas ações (10 e 11) para suprimir a linha adicional mostrada na figura anterior:
 
 ![](assets/ações-alternativas.png)
 
-Após a ação da linha 11 acima, o texto passa a exibir somente a primeira linha.
+Após a ação da linha 11 acima, o texto passa a exibir somente a primeira linha. As partes do código correspondentes às ações das linhas 10 e 11 seguem abaixo, para cópia e reúso:
+
+````
+Text.Replace Text: nome TextToFind: $'''\\r''' IsRegEx: True IgnoreCase: False ReplaceWith: vazio ActivateEscapeSequences: True Result=> nome
+Text.Replace Text: nome TextToFind: $'''\\n''' IsRegEx: True IgnoreCase: False ReplaceWith: vazio ActivateEscapeSequences: True Result=> nome
+
+````
 
 # Saiba Mais
 
