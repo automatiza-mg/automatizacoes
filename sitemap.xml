@@ -116,12 +116,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/modelo_robo/requisitos_montando_robo_cagef/</loc>
+         <lastmod>2024-12-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo/</loc>
          <lastmod>2024-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/projetos/</loc>
+         <lastmod>2024-12-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/projetos/extensao/certidoes_fornecedores/</loc>
          <lastmod>2024-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -262,6 +272,16 @@
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/cria_processo_sei/assets/fluxo/</loc>
+         <lastmod>2024-12-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/emiss%C3%A3o_de_certid%C3%B5es_de_fornecedores/</loc>
+         <lastmod>2024-12-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/emiss%C3%A3o_de_certid%C3%B5es_de_fornecedores/assets/fluxo/</loc>
          <lastmod>2024-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
