@@ -1,8 +1,18 @@
-
+---
+date: 2024-12-12
+draft: false
+authors: [dudsguedes, kinzinho666]
+comments: true
+categories:
+  - Ferramentas
+  - Power Automate
+---
 
 # Contagem do total de páginas de um arquivo PDF
 
-Na montagem de um robô em específico, nos deparamos com o desafio de contar o total de páginas de um arquivo X em PDF, a fim de configurar o robô para dividir este arquivo em outros PDFs, com no máximo 10 páginas cada.   
+Na montagem de um robô em específico, nos deparamos com o desafio de contar o total de páginas de um arquivo X em PDF, a fim de configurar o robô para dividir este arquivo em outros PDFs, com no máximo 10 páginas cada. Este post contém/faz XXXX, usando (completar com as alternativas de solução que o post traz).  
+
+<!-- more -->   
 
 ## Alternativas
 
