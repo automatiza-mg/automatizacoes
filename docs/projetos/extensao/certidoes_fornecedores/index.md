@@ -1,6 +1,6 @@
 # Certidões de fornecedores em processo de compra
 
-Na instrução de processos de compra, uma necessidade frequente é coletar certidões de vários fornecedores para compor um processo e selecionar as opções mais vantajosas para a Administração. Este post explica como utilizar o [robô elaborado para captar algumas dessas certidões]().  
+Na instrução de processos de compra, uma necessidade frequente é coletar certidões de vários fornecedores para compor um processo e selecionar as opções mais vantajosas para a Administração. Este post explica como utilizar o [robô elaborado para captar algumas dessas certidões](../../../robos/emissão_de_certidões_de_fornecedores/index.md).  
 
 
 ## Certidões coletadas
@@ -47,7 +47,7 @@ Essas colunas são necessárias para:
 - verificar quais empresas estão sediadas em Minas Gerais e Belo Horizonte, para possibilitar a consulta a essas respectivas CNDs
 - cadastrar o endereço no site do SIARE-SEFAZ/MG (CND Estadual), a partir do CEP, quando for o caso
 
-Essa planilha também pode ser baixada [aqui]()  
+Essa planilha também pode ser baixada [aqui](../../../robos/emissão_de_certidões_de_fornecedores/assets/cnpj-fornecedores.csv)  
 
 ## Utilização do robô - cuidados e ajustes
 
@@ -67,6 +67,14 @@ Essa planilha também pode ser baixada [aqui]()
 - [x] Na planilha-modelo, utilizar números sem pontos e sem hífens nas colunas `CNPJ` e `CEP`
 - [x] Antes da execução do robô, nenhum arquivo excel além da planilha modelo deve estar aberto. O robô é que vai abri-la.
 - [x] Antes da execução do robô, é mais seguro também fechar os navegadores que estiverem abertos, para identificação e leitura correta das páginas que devem ser acessadas.  
+
+## O que ainda não está no escopo dos robôs
+
+- Ler valores do documento do CRC Estadual
+- Salvar certidões diretao via java/baixar da web
+- Quebrar recaptchas
+- Certidões de tribunais
+- Interações com SEI
 
 ## Resultados
 
