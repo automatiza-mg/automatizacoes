@@ -122,6 +122,6 @@ Ao final, o robô terá executado os lançamentos no Ponto Digital e gravado o s
 
 ## 5. Códigos
 
-1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_pontodigital_main.txt)
-2. Subfluxo ['Procv Masp'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_pontodigital_procv_masp.txt)
-3. Subfluxo ['Soma horas mesmo dia'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/fjp_pontodigital_soma_horas.txt)
+1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/fjp_pontodigital/fjp_pontodigital_main.txt)
+2. Subfluxo ['Procv Masp'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/fjp_pontodigital/fjp_pontodigital_procv_masp.txt)
+3. Subfluxo ['Soma horas mesmo dia'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/fjp_pontodigital/fjp_pontodigital_soma_horas.txt)
