@@ -16,7 +16,7 @@ Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta d
  - Insere informações em planilha estruturada;
  - Calcula o _score_ que indica o nível de acuracidade (0-100) na leitura da fatura.
 
-## 2. Como funciona o robô
+## 3. Como funciona o robô
 Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de novas faturas na pasta do sharepoint designada para tal.
 
 Veja o fluxo do robô:
@@ -33,17 +33,17 @@ flowchart TD
     G --> H
 ```
 
-## 3. Premissas
+## 4. Premissas
 
 - O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF[^2]. Para diferentes modelos, é necessário novo treinamento e publicação da IA.
 - As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF[^3]. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online[^4].
 
-## 4. Utilização do robô
+## 5. Utilização do robô
 - Neste projeto, o treinamento da IA, bem como fluxo do Power Automate web, foi feito diretamente na conta do servidor responsável por esse processo na DSG.
 - Para usar o robô, mensalmente, devem ser inseridas faturas na pasta do Sharepoint designada para tal. Cada fatura resultará em uma nova linha na planilha de controle. 
 - É necessário conferir o _score_ informado para cada campo. Se o _score_ for baixo (<98%), é recomendada a conferência manual da informação.
 
-## 3. Resultados
+## 6. Resultados
 
 O processo manual era executado, em média, em 15 minutos para cada fatura, sendo 256 faturas por mês. 
 **Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!!!** :rocket::rocket::rocket:
