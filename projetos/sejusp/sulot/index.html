@@ -1285,36 +1285,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-como-funciona-o-robo" class="md-nav__link">
+  <a href="#3-como-funciona-o-robo" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Como funciona o robô
+      3. Como funciona o robô
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-premissas" class="md-nav__link">
+  <a href="#4-premissas" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Premissas
+      4. Premissas
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-utilizacao-do-robo" class="md-nav__link">
+  <a href="#5-utilizacao-do-robo" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Utilização do robô
+      5. Utilização do robô
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-resultados" class="md-nav__link">
+  <a href="#6-resultados" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Resultados
+      6. Resultados
     </span>
   </a>
   
@@ -1357,7 +1357,7 @@
 <li>Insere informações em planilha estruturada;</li>
 <li>Calcula o <em>score</em> que indica o nível de acuracidade (0-100) na leitura da fatura.</li>
 </ul>
-<h2 id="2-como-funciona-o-robo">2. Como funciona o robô<a class="headerlink" href="#2-como-funciona-o-robo" title="Permanent link">⚓︎</a></h2>
+<h2 id="3-como-funciona-o-robo">3. Como funciona o robô<a class="headerlink" href="#3-como-funciona-o-robo" title="Permanent link">⚓︎</a></h2>
 <p>Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de novas faturas na pasta do sharepoint designada para tal.</p>
 <p>Veja o fluxo do robô:</p>
 <div class="mermaid">flowchart TD
@@ -1369,18 +1369,18 @@
     E --&gt;|Energisa| G[Preencher segunda aba da planilha]
     F --&gt; H[Fim]
     G --&gt; H</div>
-<h2 id="3-premissas">3. Premissas<a class="headerlink" href="#3-premissas" title="Permanent link">⚓︎</a></h2>
+<h2 id="4-premissas">4. Premissas<a class="headerlink" href="#4-premissas" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>O fluxo funciona para os modelos de fatura que foram utilizados no treinamento da IA. No caso, faturas da concessionária Cemig (modelo com e sem cor), Energisa e DME (modelo colorida) em formato PDF<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Para diferentes modelos, é necessário novo treinamento e publicação da IA.</li>
 <li>As faturas precisam estar individualizadas, isto é, um arquivo equivale a uma única fatura. A DSG recebe as diversas faturas globalizadas em um único arquivo PDF<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. Assim, esse documento deve ser dividido, utilizando para tal serviços gratuitos disponíveis online<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</li>
 </ul>
-<h2 id="4-utilizacao-do-robo">4. Utilização do robô<a class="headerlink" href="#4-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
+<h2 id="5-utilizacao-do-robo">5. Utilização do robô<a class="headerlink" href="#5-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Neste projeto, o treinamento da IA, bem como fluxo do Power Automate web, foi feito diretamente na conta do servidor responsável por esse processo na DSG.</li>
 <li>Para usar o robô, mensalmente, devem ser inseridas faturas na pasta do Sharepoint designada para tal. Cada fatura resultará em uma nova linha na planilha de controle. </li>
 <li>É necessário conferir o <em>score</em> informado para cada campo. Se o <em>score</em> for baixo (&lt;98%), é recomendada a conferência manual da informação.</li>
 </ul>
-<h2 id="3-resultados">3. Resultados<a class="headerlink" href="#3-resultados" title="Permanent link">⚓︎</a></h2>
+<h2 id="6-resultados">6. Resultados<a class="headerlink" href="#6-resultados" title="Permanent link">⚓︎</a></h2>
 <p>O processo manual era executado, em média, em 15 minutos para cada fatura, sendo 256 faturas por mês. 
 <strong>Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!!!</strong> <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f680.svg" title=":rocket:"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f680.svg" title=":rocket:"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f680.svg" title=":rocket:"></p>
 <div class="footnote">
@@ -1422,7 +1422,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 19, 2024 00:11:11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 13, 2024 19:19:53</span>
   </span>
 
     
