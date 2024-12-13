@@ -7,15 +7,15 @@ Na instrução de processos de compra, uma necessidade frequente é coletar cert
 
 Este robô visa acessar sites, registrar dados e salvar documentos correspondentes às certidões:
 
-- [Certificado de Registro Cadastral (CRC) de Minas Gerais]();
+- [Certificado de Registro Cadastral (CRC) de Minas Gerais](../../../blog/posts/20241213_cagef_cnd_federal/index.md);
 - [Cadastro Nacional de Pessoa Jurídica (CNPJ)]();
-- [Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)]();
+- [Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)](../../../blog/posts/20241213_cnd_pbh_fgts/index.md);
 - [Certidão da Justiça do Trabalho]();
-- [Certidão Negativa de Débitos (CND)]() da Fazenda Nacional
+- [Certidão Negativa de Débitos (CND)](../../../blog/posts/20241213_cagef_cnd_federal/index.md) da Fazenda Nacional
   - da [Fazenda Estadual de Minas Gerais](), se for o caso;
-  - da [Fazenda Municipal de Belo Horizonte](), se for o caso
+  - da [Fazenda Municipal de Belo Horizonte](../../../blog/posts/20241213_cnd_pbh_fgts/index.md), se for o caso
 
-Cada consulta acima corresponde a um subfluxo diferente na [página do robô](). Explicações com mais detalhes, funcionalidades e pontos de atenção de cada um deles podem ser acessadas clicando nos respectivos hiperlinks acima. 
+Cada consulta acima corresponde a um subfluxo diferente na [página do robô](../../../robos/emissão_de_certidões_de_fornecedores/index.md). Explicações com mais detalhes, funcionalidades e pontos de atenção de cada um deles podem ser acessadas clicando nos respectivos hiperlinks acima. 
 
 ## Premissas
 
