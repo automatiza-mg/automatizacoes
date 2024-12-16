@@ -101,6 +101,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/minas-em-rob%C3%B4s-automatizamg-promove-projeto-de-extens%C3%A3o-junto-%C3%A0-escola-de-governo-da-funda%C3%A7%C3%A3o-jo%C3%A3o-pinheiro/</loc>
+         <lastmod>2024-12-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/fluxo_priorizacao_demandas/</loc>
          <lastmod>2024-12-16</lastmod>
          <changefreq>daily</changefreq>
@@ -351,12 +356,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/ferramentas/</loc>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/power-automate/</loc>
          <lastmod>2024-12-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/power-automate/</loc>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/ferramentas/</loc>
          <lastmod>2024-12-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -397,6 +402,11 @@
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/ferramentas/page/2/</loc>
+         <lastmod>2024-12-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/blog/category/power-automate/page/2/</loc>
          <lastmod>2024-12-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
