@@ -19,7 +19,7 @@ Ao todo, a primeira edição do Minas em Robôs - nome do projeto - contou com s
 
 Todos os robôs desenvolvidos a âmbito do Minas em Robôs foram registrados aqui em nosso site. Navegue pelos links e conheça um pouco mais do que foi desenvolvido!
 
-[Emissão de certidões no site do Cadastro Geral de Fornecedores - CAGEF](https://automatiza-mg.github.io/automatizacoes/projetos/extensao/certidoes_fornecedores/)
+[Emissão de certidões de fornecedores para processos de compra](https://automatiza-mg.github.io/automatizacoes/projetos/extensao/certidoes_fornecedores/)
 
 [Prestação de contas de transporte por aplicativo - SEI](https://automatiza-mg.github.io/automatizacoes/projetos/extensao/prestacao_contas_transporte/)
 
