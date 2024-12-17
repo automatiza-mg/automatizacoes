@@ -356,6 +356,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/rh_falta_rotina_historico/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/rh_falta_rotina_historico/assets/fluxo/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/rh_falta_rotina_normal/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/rh_falta_rotina_normal/assets/fluxo/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/troca_unidade_sei/</loc>
          <lastmod>2024-12-17</lastmod>
          <changefreq>daily</changefreq>
