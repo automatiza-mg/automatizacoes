@@ -54,6 +54,6 @@ tags:
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: Verifique se as variáveis de entrada descritas na página do robo para [login no sei](../login_sei/#montando-o-seu-robo) `login_sei`, `senha_sei`, `orgao_sei` ainda precisam ser criadas.
 [^3]: Verifique se a variável de entrada descrita na página do robo para [troca de unidade no SEI](../troca_unidade_sei/#montando-o-seu-robo) `unidade_sei` ainda precisa ser criada.
-[^4]: É um palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: `Memorando` ou `Comunicação: Interna`, por exemplo.
+[^4]: É uma palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: `Memorando` ou `Comunicação: Interna`, por exemplo.
 [^5]: Um texto a ser inserido no campo aberto do SEI que descreve sumariamente o processo a ser criado, como um título.
 [^6]: Apenas se o processo for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu Valor ficar em branco.
