@@ -5,7 +5,7 @@
 :simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
-:material-application-variable: Acesso ao terminal PRODEMGE __SISAP__
+:octicons-key-16: Acesso ao __SISAP__ com perfil necessário
 { .card }
 
 </div>
