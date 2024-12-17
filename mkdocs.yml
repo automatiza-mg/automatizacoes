@@ -16,10 +16,11 @@ nav:
     - robos/index.md
   - Nossos projetos: 
     - projetos/index.md
-    - Projeto de extensão Minas em Robôs:
-      - Certidões de Fornecedores: projetos/extensao/certidoes_fornecedores
     - Fundação João Pinheiro (FJP): 
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
+    - Projeto de extensão Minas em Robôs:
+      - Certidões de fornecedores: projetos/extensao/certidoes_fornecedores
+      - Prestação de contas de transporte por aplicativo: projetos/extensao/prestacao_contas_transporte
     - Secretaria Estadual de Planejamento e Gestão (Seplag):
       - Emissão de certidões INSS: projetos/seplag/scap
       - Automatização da Coordenação Estadual de Trânsito: projetos/seplag/cet
