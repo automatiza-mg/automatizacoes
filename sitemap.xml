@@ -126,6 +126,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/modelo_robo/requisitos_montando_robo_sisap/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/overrides/partials/modelo_robo/requisitos_montando_seu_proprio_robo/</loc>
          <lastmod>2024-12-17</lastmod>
          <changefreq>daily</changefreq>
@@ -297,6 +302,26 @@
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/emiss%C3%A3o_de_certid%C3%B5es_de_fornecedores/assets/fluxo/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/inclusao_ferias_premio/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/inclusao_ferias_premio/assets/fluxo/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/inclusao_ferias_regulamentares/</loc>
+         <lastmod>2024-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/inclusao_ferias_regulamentares/assets/fluxo/</loc>
          <lastmod>2024-12-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
