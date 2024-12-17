@@ -5,7 +5,7 @@
 :simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: Acesso ao terminal PRODEMGE __SISAP__
+:material-application-variable: Acesso ao terminal PRODEMGE __SISAP__
 
 </div>
 
