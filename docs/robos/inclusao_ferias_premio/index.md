@@ -4,7 +4,7 @@ hide:
   - navigation
 tags:
   - RH
-   -SISAP
+   - SISAP
 ---
 
 # Incluir Concessão de Férias Prêmio
