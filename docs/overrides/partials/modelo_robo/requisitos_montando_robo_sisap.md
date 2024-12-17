@@ -6,6 +6,7 @@
 { .card }
 
 :material-application-variable: Acesso ao terminal PRODEMGE __SISAP__
+{ .card }
 
 </div>
 
