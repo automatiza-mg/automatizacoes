@@ -19,6 +19,7 @@ tags:
 Este robô automatiza a criação das Notas Técnicas de trâmites internos para os pedidos de afastamento para aperfeiçoamento profissional. 
 
 Ele é capaz de ler todos os registros planilhados pela equipe da Sugesp ao receber os processos SEI dos pedidos dos servidores, e prosseguir com os trâmites dentro do SEI para o andamento do processo conforme fluxo definido pelo setor.
+
 De maneira resumida o robô executa de forma automática as seguintes tarefas:
 
 
@@ -58,6 +59,8 @@ De maneira resumida o robô executa de forma automática as seguintes tarefas:
 
 ## Montando o seu robô
 
+Em construção!
+<!--
 Este é um **protótipo de robô**.
 Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.
 
@@ -104,3 +107,4 @@ Para dar vida a ele:
 [^6]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
 [^7]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
 [^8]: É uma palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: `Memorando` ou `Comunicação: Interna`, por exemplo.
+-->
