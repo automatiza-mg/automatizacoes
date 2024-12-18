@@ -17,6 +17,7 @@ tags:
 | **E-mail**       | erik.morais@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.51.00227.24333 |
+| **Versão Excel**    | 2016 ou superior |
 
 - [x] Robô destinado a inclusão de Concessão de Férias Prêmio no SISAP para os servidores através da utilização da rotina Férias Prêmio, opção 01 - Concessão de Férias Prêmio, opção 01 - Incluir Concessão de Férias Prêmio.
 - [x] Reduz consideravelmente o tempo no procedimento e evita erros.
