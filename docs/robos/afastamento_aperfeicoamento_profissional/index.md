@@ -52,15 +52,12 @@ De maneira resumida o robô executa de forma automática as seguintes tarefas:
 :simple-gitextensions:  __Extensão Chrome__ para [Power Automate](https://chromewebstore.google.com/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk) ativada.
 { .card }
 
-:octicons-gear-16: __Subfluxos__ criados com os mesmos nomes indicados na seção [Montando o seu robô](#montando-o-seu-robo).
-{ .card }
-
 </div>
 
 ## Montando o seu robô
 
 Em construção!
-<!--
+
 Este é um **protótipo de robô**.
 Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.
 
@@ -68,43 +65,44 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_main.txt)[^1] e cole no fluxo __Main__ do Power Automate Desktop.
+:fontawesome-solid-1: :octicons-workflow-24: __Crie um novo subfluxo para leitura da planilha de apoio__[^1] e nomeie como __criar_planilha__.
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô subfluxo entrada_variaveis__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_entrada_variaveis.txt)[^1] e cole no subfluxo  __entrada_variaveis__ do Power Automate Desktop.
+[:fontawesome-solid-2: :octicons-workflow-24: __Siga todos os passos do robô de login no SEI.__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^2]
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô subfluxo chat_gpt__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_chat_gpt.txt)[^1] e cole no subfluxo  __chat_gpt__ do Power Automate Desktop.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de troca de unidade no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt){ target="_blank" }[^3] e cole em um novo subfluxo `troca_unidade` [^4]:warning:{ title='Caso seja necessário' }.
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô subfluxo login_sei__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/login_sei.txt)[^1] e cole no subfluxo  __login_sei__ do Power Automate Desktop.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô de criar processo no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_processo_sei.txt)[^3] e cole em um novo subfluxo `cria_processo_sei` [^5].
 { .card }
 
-[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô subfluxo cria_processo__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_cria_processo.txt)[^1] e cole no subfluxo  __cria_processo__ do Power Automate Desktop.
+:fontawesome-solid-5: :octicons-workflow-24: __Crie um novo subfluxo para criação da Nota Técnica__[^6] e nomeie como __criar_nota_tecnica__.
 { .card }
 
-[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô subfluxo insere_prestacao__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_prestacao.txt)[^1] e cole no subfluxo  __insere_prestacao__ do Power Automate Desktop.
+:fontawesome-solid-6: :octicons-workflow-24: __Crie um novo subfluxo para edição da Nota Técnica__[^7] e nomeie como __editar_nota_tecnica__.
 { .card }
 
-[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô subfluxo insere_PDFs__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_PDFs.txt)[^1] e cole no subfluxo  __insere_PDFs__ do Power Automate Desktop.
+:fontawesome-solid-7: :octicons-workflow-24: __Crie ações `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 1, 2 e 3.
 { .card }
 
-[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô subfluxo insere_ateste__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_ateste.txt)[^1] e cole no subfluxo  __insere_ateste__ do Power Automate Desktop.
-{ .card }
-
-:fontawesome-solid-9: :material-application-variable: __Crie as variáveis de entrada__ `acesso_processo`[^2], `especificacao`[^3], `hipotese_restricao_ateste`[^4], `hipotese_restricao_prestacao`[^4], `hipotese_restricao_processo`[^4], `login_sei`[^5], `orgao_sei`[^6], `senha_sei`[^7] e `tipo_do_processo_criar`[^8].
+:fontawesome-solid-7: :octicons-workflow-24: Ainda no subfluxo `Main` __inicie um loop usando a ação `For each`__, e dentro do loop __crie ações `Executar subfluxo`__ para cada um dos subfluxos 4, 5 e 6.
 { .card }
 
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
-[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: Nível do acesso ("Público" ou "Restrito"). Recomendamos a modalidade restrita.
-[^3]: Um texto a ser inserido no campo aberto do SEI que descreve sumariamente o processo a ser criado, como um título.
-[^4]: Incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu Valor ficar em branco.
-[^5]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
-[^6]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
-[^7]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
-[^8]: É uma palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: `Memorando` ou `Comunicação: Interna`, por exemplo.
--->
+[^1]: Essa planilha pode ser online (Drive, SharePoint, etc) ou offline (salva no próprio computador do usuário). As ações desse subfluxo serão configuradas de acordo com a planilha.
+
+[^2]: Verifique se as variáveis de entrada descritas na página do robo para [login no sei](../login_sei/#montando-o-seu-robo) `login_sei`, `senha_sei`, `orgao_sei` ainda precisam ser criadas.
+
+[^3]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+
+[^4]: Verifique se a variável de entrada descrita na página do robo para [troca de unidade no SEI](../troca_unidade_sei/#montando-o-seu-robo) `unidade_sei` ainda precisa ser criada.
+
+[^5]: Crie as variáveis de entrada `tipo_do_processo_criar`<sub>(_palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: <ins>Memorando</ins> ou <ins>Comunicação: Interna</ins>, por exemplo._)</sub>, `especificacao` <sub>(_texto a ser inserido no campo aberto do SEI que descreve sumariamente o processo a ser criado, como um título_)</sub> e `hipotese_restricao`<sub>(_apenas se o processo for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu valor ficar em branco_)</sub>.
+
+[^6]: Esse subfluxo é semelhante ao subfluxo de criar memorando (presenta na Biblioteca de robôs), porém alguns ajustes devem ser feitos para selecionar o documento Nota Técnica (geralmente usando um _Documento Modelo_).
+
+[^7]: Esse subfluxo deve usar ações de _substituir texto_ para alterar as palavras chaves da Nota Técnica padrão, para os dados existentes na planilha referentes ao respectivo processo. Uma dica é usar o ++ctrl+f++ para buscar essas palavras chaves no documento padrão, evitando assim a perda da formatação do texto no SEI.
