@@ -1,6 +1,6 @@
 # Certidões de fornecedores em processo de compra
 
-Na instrução de processos de compra, uma necessidade frequente é coletar certidões de vários fornecedores para compor um processo e selecionar as opções mais vantajosas para a Administração. Este post explica como utilizar o [robô elaborado para captar algumas dessas certidões](../../../robos/emissão_de_certidões_de_fornecedores/index.md).  
+Na instrução de processos de compra, uma necessidade frequente é coletar certidões de vários fornecedores para compor um processo e selecionar as opções mais vantajosas para a Administração. Esta página explica como utilizar o [robô elaborado para captar algumas dessas certidões](../../../robos/emissão_de_certidões_de_fornecedores/index.md).  
 
 
 ## Certidões coletadas
@@ -71,7 +71,7 @@ Essa planilha também pode ser baixada [aqui](../../../robos/emissão_de_certid�
 ## O que ainda não está no escopo dos robôs
 
 - Ler valores do documento do CRC Estadual
-- Salvar certidões diretao via java/baixar da web
+- Salvar certidões via java/baixar da web
 - Quebrar recaptchas
 - Certidões de tribunais
 - Interações com SEI
