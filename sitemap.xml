@@ -146,6 +146,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/projetos/extensao/afastamento_aperfeicoamento_profissional/assets/fluxo_afastamento_aperfeicoamento/</loc>
+         <lastmod>2024-12-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/projetos/extensao/certidoes_fornecedores/</loc>
          <lastmod>2024-12-18</lastmod>
          <changefreq>daily</changefreq>
@@ -217,6 +222,11 @@
     </url>
     <url>
          <loc>https://automatiza-mg.github.io/automatizacoes/robos/termos_uso/</loc>
+         <lastmod>2024-12-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://automatiza-mg.github.io/automatizacoes/robos/afastamento_aperfeicoamento_profissional/</loc>
          <lastmod>2024-12-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
