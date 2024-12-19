@@ -1395,7 +1395,7 @@
         <li class="md-nav__item">
   <a href="#cnd-federal" class="md-nav__link">
     <span class="md-ellipsis">
-      CND FederaL:
+      CND Federal:
     </span>
   </a>
   
@@ -1448,29 +1448,32 @@
 <p>Este código automatiza consultas de CNPJs de fornecedores no sistema <a href="https://www.cagef.mg.gov.br/fornecedor-web">CAGEF</a> (Cadastro Geral de Fornecedores), simplificando um processo que anteriormente exigia interações manuais repetitivas. </p>
 <p>Um dos principais desafios enfrentados durante o desenvolvimento foi lidar com a natureza dinâmica dos IDs dos botões da página, que mudam a cada recarregamento. Para superar essa limitação, o código utiliza a execução de <strong>JavaScript</strong> no Power Automate, permitindo que a automação interaja com os elementos desejados com base em características mais estáveis, como  atributos fixos, ao invés de depender de identificadores voláteis.</p>
 <p>Além disso, o código é capaz de identificar e classificar o status do CNPJ consultado como <strong>ativo, não encontrado ou vencido</strong>. Essa funcionalidade amplia sua utilidade ao fornecer uma visão clara sobre a situação dos fornecedores, ajudando na tomada de decisões e no gerenciamento de contratos. </p>
-<h2 id="cnd-federal">CND FederaL:<a class="headerlink" href="#cnd-federal" title="Permanent link">⚓︎</a></h2>
-<p>Este código automatiza consultas simples no site da <a href="https://solucoes.receita.fazenda.gov.br/servicos/certidaointernet/pj/emitir">Receita Federal</a> para verificar a existência de pendências ou a emissão de certidões negativas de débitos para pessoas jurídicas. Como o site não utiliza verificações de robôs, o script opera de forma fluida e, caso não sejam encontradas pendências, realiza o download da certidão <strong>mais recente</strong>. </p>
+<p><a href="../">Voltar para Instrutivo</a></p>
+<h2 id="cnd-federal">CND Federal:<a class="headerlink" href="#cnd-federal" title="Permanent link">⚓︎</a></h2>
+<p>Este código automatiza consultas simples no site da <a href="https://solucoes.receita.fazenda.gov.br/servicos/certidaointernet/pj/emitir">Receita Federal</a> para verificar a existência de pendências ou a emissão de certidões negativas de débitos para pessoas jurídicas. Como o site não utiliza verificações de robôs (recaptchas), o script opera de forma fluida e, caso não sejam encontradas pendências, realiza o download da certidão <strong>mais recente</strong>. </p>
+<p><a href="../">Voltar para Instrutivo</a></p>
 <h2 id="cnd-municipal-de-belo-horizonte">CND Municipal de Belo Horizonte<a class="headerlink" href="#cnd-municipal-de-belo-horizonte" title="Permanent link">⚓︎</a></h2>
-<p>Esse robô automatiza a consulta no site da Prefeitura de Belo Horizonte (PBH) para verificar a situação cadastral de fornecedores. Ele acessa o site, realiza as interações necessárias para buscar as informações cadastrais e analisa o resultado da consulta. Com base no que é encontrado, o robô identifica se o CPF/CNPJ é inexistente, se há débitos com a Fazenda Pública ou se a Certidão Negativa de Débitos (CND) está válida.
-Após essa verificação, o robô registra a situação cadastral de cada fornecedor em uma tabela no Excel, garantindo a organização das informações. Além disso, ele salva as certidões geradas no computador do solicitante, seguindo o caminho e o nome de arquivo definidos pelo fluxo. Com isso, o robô automatiza todo o processo de consulta e armazenamento, otimizando o trabalho.</p>
+<p>Esse robô automatiza a consulta ao site da Prefeitura de Belo Horizonte (PBH) para verificar a situação cadastral de fornecedores(<a href="https://cnd.pbh.gov.br/CNDOnline/">CND MUnicipal de Belo Horizonte</a>). Ele acessa o site, realiza as interações necessárias para buscar as informações cadastrais e analisa o resultado da consulta. Com base no que é encontrado, o robô identifica se o CPF/CNPJ é inexistente, se há débitos com a Fazenda Pública ou se a Certidão Negativa de Débitos (CND) está válida.
+Após essa verificação, o robô registra a situação cadastral de cada fornecedor em uma tabela no Excel, garantindo a organização das informações. Além disso, ele salva as certidões geradas no computador do solicitante, seguindo o caminho e o nome de arquivo definidos pelo fluxo. </p>
 <p><strong>Fluxo</strong>
 <img alt="PBH_MERMAID" src="https://github.com/user-attachments/assets/6f87b181-f3c4-413b-9d66-634a356b1104"></p>
 <p><strong>Passo a Passo</strong>
-Imagem 1: Site PBH<br>
-<img alt="image" src="https://github.com/user-attachments/assets/9a8f931e-7eee-4c2d-92e5-a1a343b902f9">
-Fonte: https://cnd.pbh.gov.br/CNDOnline/</p>
-<p>A página inicial do processo é apresentada na <strong>Imagem 1</strong> acima. O detalhamento do fluxo pode ser descrito a seguir:
-O fluxo do robô da PBH inicia com a injeção e execução de uma função JavaScript na página para superar limitações na navegação automatizada. Essa função identifica e clica em elementos HTML específicos, permitindo que o fluxo avance sem a necessidade de interações manuais. Após esse clique, o sistema aguarda o carregamento completo da página, verificando a presença do texto "CNPJ:". Quando identificado, o robô insere o CNPJ no campo de busca utilizando o valor armazenado na variável cnpjatual e, em seguida, aciona o botão "Pesquisar" para realizar a consulta cadastral.
-Após executar a pesquisa, o robô monitora a abertura de uma nova janela ou atualização da página, confirmando o carregamento do resultado. Com a página carregada, ele foca na nova janela, seleciona todo o texto exibido e copia o conteúdo para a área de transferência. Esse texto é armazenado na variável Situacao, que será utilizada nas próximas etapas para análise e registro das informações. O robô, então, segue para o salvamento automático da certidão, simulando o comando Ctrl+P para abrir a interface de impressão, inserindo o nome do arquivo e o local de destino e confirmando a operação.
+Imagem: Site PBH<br>
+<img alt="image" src="https://github.com/user-attachments/assets/9a8f931e-7eee-4c2d-92e5-a1a343b902f9"></p>
+<p>O fluxo do robô da PBH inicia com a injeção e execução de uma função JavaScript na página para superar limitações na navegação automatizada. Essa função identifica e clica em elementos HTML específicos, permitindo que o fluxo avance sem a necessidade de interações manuais. Após esse clique, o sistema aguarda o carregamento completo da página, verificando a presença do texto "CNPJ:". Quando identificado, o robô insere o CNPJ no campo de busca utilizando o valor armazenado na variável cnpjatual e, em seguida, aciona o botão "Pesquisar" para realizar a consulta cadastral.
+Após executar a pesquisa, o robô monitora a abertura de uma nova janela ou atualização da página, confirmando o carregamento do resultado. Com a página carregada, ele foca na nova janela, seleciona todo o texto exibido e copia o conteúdo para a área de transferência. Esse texto é armazenado na variável Situacao, que será utilizada nas próximas etapas para análise e registro das informações. </p>
+<p>O robô, então, segue para o salvamento automático da certidão, simulando o comando <code>Ctrl+P</code> para abrir a interface de impressão, inserindo o nome do arquivo e o local de destino e confirmando a operação.
 Na etapa final, o robô analisa a variável Situacao para determinar a situação cadastral do fornecedor. Caso identifique "CPF/CNPJ INEXISTENTE", ele registra essa informação na coluna J da tabela Excel. Se o texto indicar débitos com a Fazenda Pública, o robô registra a mensagem "Verificar os débitos com a Fazenda Pública Municipal". Por outro lado, se a certidão for válida, o registro será "CND Válida". Após registrar essas informações, o robô limpa a área de transferência, fecha o navegador e finaliza o fluxo, garantindo que os dados sejam organizados e prontos para análise na tabela.</p>
+<p><a href="../">Voltar para Instrutivo</a></p>
 <h2 id="certidao-do-fundo-de-garantia-por-tempo-de-servico-fgts">Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)<a class="headerlink" href="#certidao-do-fundo-de-garantia-por-tempo-de-servico-fgts" title="Permanent link">⚓︎</a></h2>
 <p><strong>Resumo do Robô FGTS</strong>
 <img alt="image" src="https://github.com/user-attachments/assets/1656a0f8-fb47-42ac-b06c-e1914cac396f"></p>
-<p>O robô automatiza a consulta no site exibido na imagem acima, da Caixa Econômica Federal, para verificar a situação de regularidade do FGTS de fornecedores. Ele inicia abrindo o site e inserindo o CNPJ do fornecedor no campo correspondente, utilizando a variável %cnpjatual%. Após preencher o campo, o fluxo aguarda a entrada manual do captcha, solicitando que o usuário digite os caracteres exibidos e clique no botão "Consultar". Caso o captcha seja digitado incorretamente, o robô exibe uma mensagem de erro e reinicia o fluxo, permitindo que o usuário corrija a entrada.
-Depois que a consulta é realizada com sucesso, o robô verifica o resultado na página. Se o CNPJ não estiver cadastrado, ele registra a informação "não cadastrado" na coluna K da planilha Excel e encerra o fluxo. Caso contrário, o robô copia o texto da situação cadastral diretamente da página e extrai as informações entre os delimitadores "A EMPRESA abaixo identificada está" e ":" para registrar a situação no Excel.
-Por fim, o robô avança para o salvamento da certidão de regularidade. Ele simula os comandos para abrir a interface de impressão, insere o nome do arquivo (baseado na variável %empresa%_FGTS), define o caminho de salvamento com a variável %pasta%, e confirma a operação. Após salvar o documento, o robô fecha o navegador e finaliza o fluxo, garantindo que todas as informações processadas sejam registradas corretamente e os documentos sejam armazenados no local especificado.</p>
+<p>O robô automatiza a consulta no site exibido na imagem acima, da Caixa Econômica Federal, para verificar a situação de regularidade do FGTS de fornecedores. Ele inicia abrindo o site e inserindo o CNPJ do fornecedor no campo correspondente, utilizando a variável <code>%cnpjatual%</code>. Após preencher o campo, o fluxo aguarda a entrada manual do <em>captcha</em>, solicitando que o usuário digite os caracteres exibidos e clique no botão "Consultar". Caso o captcha seja digitado incorretamente, o robô exibe uma mensagem de erro e reinicia o fluxo, permitindo que o usuário corrija a entrada.</p>
+<p>Depois que a consulta é realizada com sucesso, o robô verifica o resultado na página. Se o CNPJ não estiver cadastrado, ele registra a informação "não cadastrado" na coluna K da planilha Excel e encerra o fluxo. Caso contrário, o robô copia o texto da situação cadastral diretamente da página e extrai as informações entre os delimitadores "A EMPRESA abaixo identificada está" e ":" para registrar a situação no Excel.
+Por fim, o robô avança para o salvamento da certidão de regularidade. Ele simula os comandos para abrir a interface de impressão, insere o nome do arquivo (composição da variável <code>%empresa%</code> com o trecho <code>_FGTS</code>), define o caminho de salvamento com a variável <code>%pasta%</code>, e confirma a operação. Após salvar o documento, o robô fecha o navegador e finaliza o fluxo, garantindo que todas as informações processadas sejam registradas corretamente e os documentos sejam armazenados no local especificado.</p>
 <p><strong>Fluxo</strong>
-<img alt="fgts fluxo" src="https://github.com/user-attachments/assets/9489ccb1-a875-4b80-b32f-3a1a8902dc02"></p></div>
+<img alt="fgts fluxo" src="https://github.com/user-attachments/assets/9489ccb1-a875-4b80-b32f-3a1a8902dc02"></p>
+<p><a href="../">Voltar para Instrutivo</a></p></div>
 
 
 
@@ -1493,7 +1496,7 @@ Por fim, o robô avança para o salvamento da certidão de regularidade. Ele sim
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 19, 2024 17:40:41</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 19, 2024 18:21:15</span>
   </span>
 
     
