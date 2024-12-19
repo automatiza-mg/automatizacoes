@@ -9,11 +9,11 @@ Este robô visa acessar sites, registrar dados e salvar documentos correspondent
 
 - [Certificado de Registro Cadastral (CRC) de Minas Gerais](subfluxos/#crccagef);
 - Cadastro Nacional de Pessoa Jurídica (CNPJ);
-- [Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)](subfluxos/#certidao-do-fundo-de-garantia-por-tempo-de-servico-fgts);
+- [Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/projetos/extensao/certidoes_fornecedores/subfluxos.md#certid%C3%A3o-do-fundo-de-garantia-por-tempo-de-servi%C3%A7o-fgts);
 - Certidão da Justiça do Trabalho;
 - [Certidão Negativa de Débitos (CND) da Fazenda Federal](subfluxos/#cnd-federal)
   - da Fazenda Estadual de Minas Gerais, se for o caso;
-  - da [Fazenda Municipal de Belo Horizonte](subfluxos/#cnd-municipal-de-belo-horizonte), se for o caso
+  - da [Fazenda Municipal de Belo Horizonte](https://github.com/automatiza-mg/automatizacoes/blob/main/docs/projetos/extensao/certidoes_fornecedores/subfluxos.md#cnd-municipal-de-belo-horizonte), se for o caso
 
 Cada consulta acima corresponde a um subfluxo diferente na [página do robô](../../../robos/emissão_de_certidões_de_fornecedores/index.md).  
 
