@@ -7,13 +7,13 @@ Na instrução de processos de compra, uma necessidade frequente é coletar cert
 
 Este robô visa acessar sites, registrar dados e salvar documentos correspondentes às certidões:
 
-- Certificado de Registro Cadastral (CRC) de Minas Gerais;
+- [Certificado de Registro Cadastral (CRC) de Minas Gerais](subfluxos/#crccagef);
 - Cadastro Nacional de Pessoa Jurídica (CNPJ);
-- Certidão do Fundo de Garantia por Tempo de Serviço (FGTS);
+- [Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)](subfluxos/#certidao-do-fundo-de-garantia-por-tempo-de-servico-fgts);
 - Certidão da Justiça do Trabalho;
-- Certidão Negativa de Débitos (CND) da Fazenda Nacional
+- [Certidão Negativa de Débitos (CND) da Fazenda Federal](subfluxos/#cnd-federal)
   - da Fazenda Estadual de Minas Gerais, se for o caso;
-  - da Fazenda Municipal de Belo Horizonte, se for o caso
+  - da [Fazenda Municipal de Belo Horizonte](subfluxos/#cnd-municipal-de-belo-horizonte), se for o caso
 
 Cada consulta acima corresponde a um subfluxo diferente na [página do robô](../../../robos/emissão_de_certidões_de_fornecedores/index.md).  
 
@@ -89,3 +89,5 @@ Processo manual x tempo. Passou a ser realizado em x tempo.
 - Na condução de pregões
 
 - Na instrução de processos de compra
+
+[Voltar para página de projetos](../../)
