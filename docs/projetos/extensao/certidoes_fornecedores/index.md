@@ -7,15 +7,15 @@ Na instrução de processos de compra, uma necessidade frequente é coletar cert
 
 Este robô visa acessar sites, registrar dados e salvar documentos correspondentes às certidões:
 
-- [Certificado de Registro Cadastral (CRC) de Minas Gerais](../../../blog/posts/20241213_cagef_cnd_federal/index.md);
-- [Cadastro Nacional de Pessoa Jurídica (CNPJ)]();
-- [Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)](../../../blog/posts/20241213_cnd_pbh_fgts/index.md);
-- [Certidão da Justiça do Trabalho]();
-- [Certidão Negativa de Débitos (CND)](../../../blog/posts/20241213_cagef_cnd_federal/index.md) da Fazenda Nacional
-  - da [Fazenda Estadual de Minas Gerais](), se for o caso;
-  - da [Fazenda Municipal de Belo Horizonte](../../../blog/posts/20241213_cnd_pbh_fgts/index.md), se for o caso
+- Certificado de Registro Cadastral (CRC) de Minas Gerais;
+- Cadastro Nacional de Pessoa Jurídica (CNPJ);
+- Certidão do Fundo de Garantia por Tempo de Serviço (FGTS);
+- Certidão da Justiça do Trabalho;
+- Certidão Negativa de Débitos (CND) da Fazenda Nacional
+  - da Fazenda Estadual de Minas Gerais, se for o caso;
+  - da Fazenda Municipal de Belo Horizonte, se for o caso
 
-Cada consulta acima corresponde a um subfluxo diferente na [página do robô](../../../robos/emissão_de_certidões_de_fornecedores/index.md). Explicações com mais detalhes, funcionalidades e pontos de atenção de cada um deles podem ser acessadas clicando nos respectivos hiperlinks acima. 
+Cada consulta acima corresponde a um subfluxo diferente na [página do robô](../../../robos/emissão_de_certidões_de_fornecedores/index.md).  
 
 ## Premissas
 
@@ -51,7 +51,7 @@ Essa planilha também pode ser baixada [aqui](../../../robos/emissão_de_certid�
 
 ## Utilização do robô - cuidados e ajustes
 
-- [x] Não utilizar caracteres especiais nos nomes das pastas e arquivos. Por exemplo, `usuario/trabalho/projeto-extensao/pregao` em vez de `usuário/trabalho/projeto-extensão/pregão`
+- [x] Não utilizar caracteres especiais nos nomes das pastas, arquivos e das empresas. Por exemplo, `usuario/trabalho/projeto-extensao/pregao` em vez de `usuário/trabalho/projeto-extensão/pregão` e `BRASEIRO IMOVEIS` em vez de `BRASEIRO IMÓVEIS`
 - [x] No navegador Chrome, é necessário ir em configurações `chrome://settings/downloads` do navegador e marcar a opção _"Perguntar onde salvar cada arquivo antes de fazer download"_
 
 ![image](https://github.com/user-attachments/assets/35347b5a-c535-4bf9-89bc-6a3c66b719c1)
@@ -64,7 +64,7 @@ Essa planilha também pode ser baixada [aqui](../../../robos/emissão_de_certid�
       
 ![image](https://github.com/user-attachments/assets/d50fc64c-cac9-431c-a0a7-00e1e6ffbc0b)
 
-- [x] Na planilha-modelo, utilizar números sem pontos e sem hífens nas colunas `CNPJ` e `CEP`
+- [x] Na planilha-modelo, utilizar números sem pontos e sem hífens nas colunas `CNPJ` e `CEP`. Acesse [aqui](https://automatiza-mg.github.io/automatizacoes/blog/modificar-dados-no-excel/#substituir-partes-do-valor-de-uma-celula) uma forma de como substituir esses caracteres nessas colunas.
 - [x] Antes da execução do robô, nenhum arquivo excel além da planilha modelo deve estar aberto. O robô é que vai abri-la.
 - [x] Antes da execução do robô, é mais seguro também fechar os navegadores que estiverem abertos, para identificação e leitura correta das páginas que devem ser acessadas.  
 
@@ -73,8 +73,8 @@ Essa planilha também pode ser baixada [aqui](../../../robos/emissão_de_certid�
 - Ler valores do documento do CRC Estadual
 - Salvar certidões via java/baixar da web
 - Quebrar recaptchas
-- Certidões de tribunais
-- Interações com SEI
+- Coletar certidões de tribunais
+- Executar interações com o SEI
 
 ## Resultados
 
