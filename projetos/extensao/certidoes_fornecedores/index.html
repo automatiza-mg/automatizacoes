@@ -1458,15 +1458,15 @@
 <h2 id="certidoes-coletadas">Certidões coletadas<a class="headerlink" href="#certidoes-coletadas" title="Permanent link">⚓︎</a></h2>
 <p>Este robô visa acessar sites, registrar dados e salvar documentos correspondentes às certidões:</p>
 <ul>
-<li><a href="../../../blog/certificado-de-registro-cadastral-crc-estadual-e-certid%C3%A3o-de-d%C3%A9bitos-da-receita-federal/">Certificado de Registro Cadastral (CRC) de Minas Gerais</a>;</li>
-<li><a href="">Cadastro Nacional de Pessoa Jurídica (CNPJ)</a>;</li>
-<li><a href="../../../blog/certid%C3%A3o-de-d%C3%A9bitos-de-bh-e-certid%C3%A3o-do-fgts/">Certidão do Fundo de Garantia por Tempo de Serviço (FGTS)</a>;</li>
-<li><a href="">Certidão da Justiça do Trabalho</a>;</li>
-<li><a href="../../../blog/certificado-de-registro-cadastral-crc-estadual-e-certid%C3%A3o-de-d%C3%A9bitos-da-receita-federal/">Certidão Negativa de Débitos (CND)</a> da Fazenda Nacional</li>
-<li>da <a href="">Fazenda Estadual de Minas Gerais</a>, se for o caso;</li>
-<li>da <a href="../../../blog/certid%C3%A3o-de-d%C3%A9bitos-de-bh-e-certid%C3%A3o-do-fgts/">Fazenda Municipal de Belo Horizonte</a>, se for o caso</li>
+<li>Certificado de Registro Cadastral (CRC) de Minas Gerais;</li>
+<li>Cadastro Nacional de Pessoa Jurídica (CNPJ);</li>
+<li>Certidão do Fundo de Garantia por Tempo de Serviço (FGTS);</li>
+<li>Certidão da Justiça do Trabalho;</li>
+<li>Certidão Negativa de Débitos (CND) da Fazenda Nacional</li>
+<li>da Fazenda Estadual de Minas Gerais, se for o caso;</li>
+<li>da Fazenda Municipal de Belo Horizonte, se for o caso</li>
 </ul>
-<p>Cada consulta acima corresponde a um subfluxo diferente na <a href="../../../robos/emiss%C3%A3o_de_certid%C3%B5es_de_fornecedores/">página do robô</a>. Explicações com mais detalhes, funcionalidades e pontos de atenção de cada um deles podem ser acessadas clicando nos respectivos hiperlinks acima. </p>
+<p>Cada consulta acima corresponde a um subfluxo diferente na <a href="../../../robos/emiss%C3%A3o_de_certid%C3%B5es_de_fornecedores/">página do robô</a>.  </p>
 <h2 id="premissas">Premissas<a class="headerlink" href="#premissas" title="Permanent link">⚓︎</a></h2>
 <p><strong>Regra de negócio</strong></p>
 <p>A princípio, o robô acessa o site do Cadastro Geral de Empresas e Fornecedores do Estado de Minas Gerais (CAGEF/MG), para verificar a situação do CRC da empresa. Se e empresa estiver ativa, o robô irá consultar a empresa constante na próxima linha da planilha-modelo. Se a empresa não estiver ativa no CRC, o robô irá consultar todas as outras certidões mencionadas acima.</p>
@@ -1507,7 +1507,7 @@ S --&gt; B</div>
 <p>Essa planilha também pode ser baixada <a href="../../../robos/emiss%C3%A3o_de_certid%C3%B5es_de_fornecedores/assets/cnpj-fornecedores.csv">aqui</a>  </p>
 <h2 id="utilizacao-do-robo-cuidados-e-ajustes">Utilização do robô - cuidados e ajustes<a class="headerlink" href="#utilizacao-do-robo-cuidados-e-ajustes" title="Permanent link">⚓︎</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Não utilizar caracteres especiais nos nomes das pastas e arquivos. Por exemplo, <code>usuario/trabalho/projeto-extensao/pregao</code> em vez de <code>usuário/trabalho/projeto-extensão/pregão</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Não utilizar caracteres especiais nos nomes das pastas, arquivos e das empresas. Por exemplo, <code>usuario/trabalho/projeto-extensao/pregao</code> em vez de <code>usuário/trabalho/projeto-extensão/pregão</code> e <code>BRASEIRO IMOVEIS</code> em vez de <code>BRASEIRO IMÓVEIS</code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> No navegador Chrome, é necessário ir em configurações <code>chrome://settings/downloads</code> do navegador e marcar a opção <em>"Perguntar onde salvar cada arquivo antes de fazer download"</em></li>
 </ul>
 <p><img alt="image" src="https://github.com/user-attachments/assets/35347b5a-c535-4bf9-89bc-6a3c66b719c1"></p>
@@ -1519,7 +1519,7 @@ S --&gt; B</div>
 </ul>
 <p><img alt="image" src="https://github.com/user-attachments/assets/d50fc64c-cac9-431c-a0a7-00e1e6ffbc0b"></p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Na planilha-modelo, utilizar números sem pontos e sem hífens nas colunas <code>CNPJ</code> e <code>CEP</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Na planilha-modelo, utilizar números sem pontos e sem hífens nas colunas <code>CNPJ</code> e <code>CEP</code>. Acesse <a href="https://automatiza-mg.github.io/automatizacoes/blog/modificar-dados-no-excel/#substituir-partes-do-valor-de-uma-celula">aqui</a> uma forma de como substituir esses caracteres nessas colunas.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Antes da execução do robô, nenhum arquivo excel além da planilha modelo deve estar aberto. O robô é que vai abri-la.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Antes da execução do robô, é mais seguro também fechar os navegadores que estiverem abertos, para identificação e leitura correta das páginas que devem ser acessadas.  </li>
 </ul>
@@ -1528,8 +1528,8 @@ S --&gt; B</div>
 <li>Ler valores do documento do CRC Estadual</li>
 <li>Salvar certidões via java/baixar da web</li>
 <li>Quebrar recaptchas</li>
-<li>Certidões de tribunais</li>
-<li>Interações com SEI</li>
+<li>Coletar certidões de tribunais</li>
+<li>Executar interações com o SEI</li>
 </ul>
 <h2 id="resultados">Resultados<a class="headerlink" href="#resultados" title="Permanent link">⚓︎</a></h2>
 <p>Este robô é um protótipo. Após ajustes pelas áreas de negócio, atualizaremos a seção seguinte:</p>
@@ -1566,7 +1566,7 @@ S --&gt; B</div>
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 18, 2024 14:52:15</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 19, 2024 17:29:03</span>
   </span>
 
     
