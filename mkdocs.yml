@@ -16,7 +16,9 @@ nav:
     - robos/index.md
   - Nossos projetos: 
     - projetos/index.md
-    - Fundação João Pinheiro (FJP): 
+    - Fundação Hospitalar de Minas Gerais (FHEMIG):
+      - Automatização da análise de custos: projetos/fhemig
+    - Fundação João Pinheiro (FJP):  
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
     - Projeto de extensão Minas em Robôs:
       - Certidões de fornecedores: projetos/extensao/certidoes_fornecedores
