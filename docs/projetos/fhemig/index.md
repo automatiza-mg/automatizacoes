@@ -6,7 +6,7 @@ Mensalmente, um relatório contendo todos os contratos é gerado em formato `.xl
 
 Para apoiar esse processo, foram desenvolvidas **três automatizações complementares:**
 
-1. [Desempilhamento da planilha Contratos de Prestação de Serviços]();
+1. [Desempilhamento da planilha Contratos de Prestação de Serviços](desempilhamento.md);
 2. [Empilhamento de dados para elaboração do relatório de inconsistências]();
 3. [Análise do relatório de composição de custo analítico](analise_boletim_custos.md). 
 
