@@ -8,7 +8,7 @@ Para apoiar esse processo, foram desenvolvidas **três automatizações compleme
 
 1. [Desempilhamento da planilha Contratos de Prestação de Serviços]();
 2. [Empilhamento de dados para elaboração do relatório de inconsistências]();
-3. [Análise do relatório de composição de custo analítico ](). 
+3. [Análise do relatório de composição de custo analítico](analise_boletim_custos.md). 
 
 
 
