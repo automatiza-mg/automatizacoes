@@ -1,6 +1,6 @@
 # Automação de processo: desempilhamento da planilha Contratos de Prestação de Serviços - Fhemig
 
-O desafio em questão consiste em automatizar um dos processos de análise dos contratos de prestação de serviços, realizado pela Coordenação de Custos da Diretoria de Contratualização, Faturamento e Parcerias da FHEMIG.
+O desafio em questão consiste em automatizar um dos processos de análise dos contratos de prestação de serviços, realizado pela Coordenação de Custos da Diretoria de Contratualização, Faturamento e Parcerias da Fhemig.
 
 Para isso, foi criado um fluxo automatizado utilizando a ferramenta Power Automate. O robô realiza o preparo da planilha que contém o Relatório de Contratos de Prestação de Serviços e o seu desempilhamento, por unidade assistencial, tendo a necessidade de intervenção humana apenas para iniciar o processo.
 
