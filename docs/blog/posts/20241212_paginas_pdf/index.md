@@ -40,15 +40,6 @@ Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de 
 
 * Alt+D é o atalho para o cursor ir para a barra de endereço URL no Google Chrome
                             
-A parte do código correspondentes às ações das linhas 1 e 2 seguem para cópia e utilização:
-
-````
-/# - No Google Chrome, acessar chrome://flags na barra de pesquisas, digitar Lens e desativar as opções exibidas na página
-#/
-WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.google.com/''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 PiPUserDataFolderMode: WebAutomation.PiPUserDataFolderModeEnum.AutomaticProfile TargetDesktop: $'''{\"DisplayName\":\"Computador local\",\"Route\":{\"ServerType\":\"Local\",\"ServerAddress\":\"\"}}''' BrowserInstance=> navegador
-MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: navegador TextToSend: $'''{Alt}({D}){Delete}%caminho_pdf%{Return}''' DelayBetweenKeystrokes: 60 SendTextAsHardwareKeys: True
-WAIT 2
-````
 
 **III.** Incluir as ações de `Enviar teclas`, com o texto a ser enviado: {Tab: 2}{End}{Tab: 6}{Control}({C}). Com essa sequência, o robô irá colocar o cursor do mouse no conta páginas, tendo colocado o documento em sua última página, conforme exemplo abaixo e copiará o total de páginas indicado:
 
@@ -63,29 +54,12 @@ WAIT 2
 * A quantidade de teclas Tab utilizada pode variar de navegador para navegador, sendo necessários alguns ajustes. Os 02 primeiros são para o cursor ir para a página do documento, já os outros 06 são para o cursor chegar até a caixinha indicada na imagem acima.
 
 
-A parte do código correspondente ao Item III segue abaixo para cópia e utilização:
-
-````
-/# Os números de tabs variam de navegador para navegador!!!
-Os 2 Tab são para ir para a página do documento
-O End é para ir para a última página, a fim de deixar o marcador de página na última do PDF
-Os 6 Tab são para o cursor chegar até a caixinha que indica o total de páginas no marcador presente no cabeçalho#/
-MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: navegador TextToSend: $'''{Tab: 2}{End}{Tab: 6}{Control}({C})''' DelayBetweenKeystrokes: 700 SendTextAsHardwareKeys: True
-WAIT 2
-````
 
 **IV.** Incluir as ações de `Obter texto da área de transferência` e `Converter texto em número`:
 
 ![imagem (3)](https://github.com/user-attachments/assets/779eec25-57bb-4e00-a36f-68f3d620c87f)
 
 
-
-A parte do código correspondente às ações das linhas 7 e 8 segue abaixo para cópia e utilização:
-
-````
-Clipboard.GetText Text=> total_paginas
-Text.ToNumber Text: total_paginas Number=> total_paginas_numero
-````
 
 **V.** Incluir um `Loop` com as seguintes configurações:
 
@@ -96,25 +70,8 @@ Dentro do `Loop` criado, serão incluídas as ações de `If` e `Else` e um `Ró
 
 ![imagem (5)](https://github.com/user-attachments/assets/d33fb07f-e79d-46a0-9a08-ac2913f0ce11)
 
-Segue a parte do código que é representada na imagem acima:
+Clicando [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/paginas-pdf.txt) você acessará o código completo do robô apresentado.
 
-````
-LOOP pagina FROM 1 TO total_paginas_numero STEP 10
-    IF (pagina + 9) <= total_paginas_numero THEN
-        Pdf.ExtractPages PDFFile: caminho_pdf PageSelection: $'''%pagina% - %pagina + 9%''' ExtractedPDFPath: caminho_pdf IfFileExists: Pdf.IfFileExists.AddSequentialSuffix ExtractedPDFFile=> ExtractedPDF
-            ON ERROR
-                GOTO fim
-            END
-    ELSE
-        Pdf.ExtractPages PDFFile: caminho_pdf PageSelection: $'''%pagina% - %total_paginas_numero%''' ExtractedPDFPath: caminho_pdf IfFileExists: Pdf.IfFileExists.AddSequentialSuffix ExtractedPDFFile=> ExtractedPDF
-            ON ERROR
-                GOTO fim
-            END
-    END
-END
-LABEL fim
-
-````
 
 
 
