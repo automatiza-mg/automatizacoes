@@ -40,7 +40,7 @@ tags:
 Este é um **protótipo de robô**.
 Entenda seu funcionamento e, caso precise, ajuste-o às suas necessidades.
 
-As variáveis [Token de acesso e sistema SEI](https://automatiza-mg.github.io/handbook/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/) e [código da unidade SEI](https://automatiza-mg.github.io/handbook/blog/buscando-c%C3%B3digo-da-unidade-no-sei/) possuem um post a parte para serem explicadas. Confira no hiperlink!
+As variáveis [Token de acesso e sistema SEI](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/) e [código da unidade SEI](https://automatiza-mg.github.io/automatizacoes/blog/buscando-c%C3%B3digo-da-unidade-no-sei/) possuem um post a parte para serem explicadas. Confira no hiperlink!
 
 Para dar vida a ele:
 
@@ -49,13 +49,13 @@ Para dar vida a ele:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/api_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ [`api_sei_sistema`](https://automatiza-mg.github.io/handbook/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/)[^2].
+:fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ [`api_sei_sistema`](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/)[^2].
 { .card }
 
-:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ [`api_sei_token`](https://automatiza-mg.github.io/handbook/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/)[^3].
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ [`api_sei_token`](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/)[^3].
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ [`api_sei_unidade`](https://automatiza-mg.github.io/handbook/blog/buscando-c%C3%B3digo-da-unidade-no-sei/)[^4].
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ [`api_sei_unidade`](https://automatiza-mg.github.io/automatizacoes/blog/buscando-c%C3%B3digo-da-unidade-no-sei/)[^4].
 { .card }
 
 </div>
