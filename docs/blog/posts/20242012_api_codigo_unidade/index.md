@@ -56,4 +56,4 @@ Agora basta você copiá-lo para utilizar no seu fluxo que utiliza a API do SEI.
 
 Caso prefira, as instruções estão detalhadas no vídeo abaixo:
 
-![type:video]()
+![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)

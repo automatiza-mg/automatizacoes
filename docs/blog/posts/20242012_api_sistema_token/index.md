@@ -64,6 +64,5 @@ Para mais informações, [consulte a documentação da API](https://github.com/a
 
 Caso prefira, as instruções estão detalhadas no vídeo abaixo:
 
-![type:video]()
-
+![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
 
