@@ -17,7 +17,7 @@ Na montagem de um robô em específico, nos deparamos com o desafio de contar o 
 ## Alternativas
 
 ### **Solução Low Code**
-Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de codificação manual, a qual chamamos de solução _**Low Code**_ (conforme já explicado [nesse post](https://automatiza-mg.github.io/automatizacoes/blog/descomplicado-ferramenta-_no-code_-e-_low-code_/_)), realizando os seguintes passos:
+Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de codificação manual, a qual chamamos de solução _**Low Code**_ (conforme já explicado [nesse post](../20231226_descomplicado/index.md)), realizando os seguintes passos:
 
 **I.** Criar uma variável de entrada com nome `caminho_pdf` e valor padrão contendo o caminho do PDF que será editado:
 
@@ -35,7 +35,9 @@ Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de 
 
 
 **Observações:** 
+
 * Caso seu navegador possua "Google Lens" ativado, acesse chrome://flags na barra de pesquisas, digite Lens e desative as opções exibidas na página
+
 * Alt+D é o atalho para o cursor ir para a barra de endereço URL no Google Chrome
                             
 A parte do código correspondentes às ações das linhas 1 e 2 seguem para cópia e utilização:
@@ -57,6 +59,7 @@ WAIT 2
 
 
 **Observação Importante:** 
+
 * A quantidade de teclas Tab utilizada pode variar de navegador para navegador, sendo necessários alguns ajustes. Os 02 primeiros são para o cursor ir para a página do documento, já os outros 06 são para o cursor chegar até a caixinha indicada na imagem acima.
 
 
