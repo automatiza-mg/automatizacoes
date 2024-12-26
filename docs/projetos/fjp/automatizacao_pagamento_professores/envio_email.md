@@ -12,9 +12,62 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 **Pasta de cada mês:** 
 
 - Mensal (uma nova pasta deve ser criada a cada mês);
-- Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP. Posteriormente, conterá duas pastas criadas pelo robô ("Planilhas individuais" e "Planilhas individuais não enviadas");
+- Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP (abaixo, prints de cada planilha-modelo e da pasta como um todo); 
 - Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
 
+**PLANILHA DE TAXAÇÃO**
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/f30b25c8-bebb-4529-94f9-5ce756f0afd9)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/def768bc-5377-40d1-a6a8-65e370467b4e)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/47778b18-f00b-4f39-8f1e-8047457f7d1c)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/31b5ce83-b111-49f5-b58d-74d995a7f334)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/990f9c0d-676b-4f56-a76b-5891d5f8a9d4)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/bb2c1f48-723b-46d9-b278-b98a86d7383d)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/d7d1e2ef-a7c6-459c-88c8-8fcd05174cdc)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/9dddb42e-dd21-4388-b410-22efb3da1aa8)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/e2039a20-5555-4b28-ad2f-b50e4c898b18)
+  <figcaption></figcaption>
+</figure>
+
+**PLANILHA BASE DO SISAP**
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/f2b97014-30ed-48ec-8a10-1424cec15eaf)
+  <figcaption></figcaption>
+</figure>
+
+**PASTA E NOMES DOS ARQUIVOS**
 <figure markdown="span">
   ![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1)
   <figcaption></figcaption>

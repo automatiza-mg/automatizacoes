@@ -185,23 +185,14 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![foto_camila](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178762/avatar_camila.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
-    <p class="p-center" markdown>__Camila Neves__</p>
+    <p class="p-center" markdown>__Ana Flávia de Castro Morais__</p>
 
     ---
 
     <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica.</p>
-
-- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__Ana Flávia__</p>
-
-    ---
-
-    <p class="p-center" markdown>Superintendente Central de Inovação e Desburocratização - SCID.</p>
 
 - <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
 

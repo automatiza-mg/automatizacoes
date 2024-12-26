@@ -16,13 +16,21 @@ nav:
     - robos/index.md
   - Nossos projetos: 
     - projetos/index.md
-    - Fundação João Pinheiro (FJP): 
+    - Fundação Hospitalar de Minas Gerais (Fhemig):
+      - Automatização da análise de custos: projetos/fhemig
+    - Fundação João Pinheiro (FJP):  
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
-    - Secretaria Estadual de Planejamento e Gestão (Seplag):
-      - Emissão de certidões INSS: projetos/seplag/scap
-      - Automatização da Coordenação Estadual de Trânsito: projetos/seplag/cet
+    - Projeto de extensão Minas em Robôs:
+      - Certidões de fornecedores: projetos/extensao/certidoes_fornecedores
+      - Prestação de contas de transporte por aplicativo: projetos/extensao/prestacao_contas_transporte
+      - Afastamento para aperfeiçoamento profissional: projetos/extensao/afastamento_aperfeicoamento_profissional
+    - Secretaria de Educação (SEE):
+      - Publicação de Parecer de Equivalência de Estudos: projetos/see/mentoria
     - Secretaria de Justiça e Segurança Pública (Sejusp):
       - Leitura de Faturas de Energia: projetos/sejusp/sulot
+    - Secretaria de Planejamento e Gestão (Seplag):
+      - Emissão de certidões INSS: projetos/seplag/scap
+      - Automatização da Coordenação Estadual de Trânsito: projetos/seplag/cet
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
   - Blog:
     - blog/index.md
