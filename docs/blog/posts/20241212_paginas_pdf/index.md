@@ -66,7 +66,7 @@ Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de 
 ![imagem (4)](https://github.com/user-attachments/assets/0aec80ae-eddd-4222-b475-6fa376496f73)
 
 
-Dentro do `Loop` criado, serão incluídas as ações de `If` e `Else` e um `Rótulo` ao final dele: 
+**VI.** Dentro do `Loop` criado, serão incluídas as ações de `If` e `Else` e um `Rótulo` ao final dele: 
 
 ![imagem (5)](https://github.com/user-attachments/assets/d33fb07f-e79d-46a0-9a08-ac2913f0ce11)
 
