@@ -12,9 +12,14 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 **Pasta de cada mês:** 
 
 - Mensal (uma nova pasta deve ser criada a cada mês);
-- Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP. Posteriormente, conterá duas pastas criadas pelo robô ("Planilhas individuais" e "Planilhas individuais não enviadas");
+- Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP (abaixo, prints de cada planilha-modelo e da pasta como um todo); 
 - Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
 
+**PLANILHA DE TAXAÇÃO**
+
+**PLANILHA BASE DO SISAP**
+
+**PASTA E NOMES DOS ARQUIVOS**
 <figure markdown="span">
   ![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1)
   <figcaption></figcaption>
