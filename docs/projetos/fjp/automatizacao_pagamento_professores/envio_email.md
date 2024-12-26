@@ -16,8 +16,51 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 - Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
 
 **PLANILHA DE TAXAÇÃO**
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/cad43111-19c7-4add-aa3d-a143063eb859)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/68718af7-9c03-4d2c-970c-4cdfbee1a181)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/0828c284-2b64-478f-8eab-6d2b000e7ab0)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/d2d97baf-8034-4d6c-8bdb-6cc2d9410581)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/687231e6-33d4-4373-ae81-75580e72c7c2)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/2c90e0a7-931c-4f30-a9cf-ce52313e2e3e)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/d08a8ea6-89df-4fa9-a637-718a2f9506a5)
+  <figcaption></figcaption>
+</figure>
+
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/b7b1125c-c580-475b-abcd-18affd5902a0)
+  <figcaption></figcaption>
+</figure>
 
 **PLANILHA BASE DO SISAP**
+<figure markdown="span">
+  ![image](https://github.com/user-attachments/assets/ae9dd684-a653-4bae-a028-9db1b4688cfd)
+  <figcaption></figcaption>
+</figure>
 
 **PASTA E NOMES DOS ARQUIVOS**
 <figure markdown="span">
