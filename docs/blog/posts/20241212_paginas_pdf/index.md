@@ -70,7 +70,7 @@ Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de 
 
 ![imagem (5)](https://github.com/user-attachments/assets/d33fb07f-e79d-46a0-9a08-ac2913f0ce11)
 
-Clicando [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/paginas-pdf.txt) você acessará o código completo do robô apresentado.
+Clicando [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/paginas-pdf.txt) você acessará o código completo do robô apresentado[^1].
 
 
 
@@ -90,3 +90,5 @@ Explore canais e materiais de referência para aprofundar seus conhecimentos sob
 - [Documentação Oficial](https://docs.microsoft.com/pt-br/power-automate/)
 - [Canal do Power Automate no YouTube](https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA)
 - [Comunidade Power Automate](https://powerusers.microsoft.com/t5/Power-Automate-Community/ct-p/MPACommunity)
+
+[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
