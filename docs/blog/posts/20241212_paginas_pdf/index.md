@@ -10,51 +10,57 @@ categories:
 
 # Contagem do total de páginas de um arquivo PDF
 
-Na montagem de um robô em específico, nos deparamos com o desafio de contar o total de páginas de um arquivo X em PDF, a fim de configurar o robô para dividir este arquivo em outros PDFs, com no máximo 10 páginas cada. Este post contém/faz XXXX, usando (completar com as alternativas de solução que o post traz).  
+Na montagem de um robô em específico, nos deparamos com o desafio de contar o total de páginas de um arquivo específico em PDF, a fim de configurar o robô para dividir este arquivo em outros PDFs, contendo no máximo 10 (dez) páginas cada.  Este post contém duas alternativas para resolução do problema, sendo uma Low Code e outra com a utilização do Python.  
 
 <!-- more -->   
 
 ## Alternativas
 
-### No Code
-Nesta alternativa, temos o caminho para realização da contagem das páginas sem a utilização de códigos, a qual chamamos de solução _No Code_, realizando os seguintes passos:
+### **Solução Low Code**
+Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de codificação manual, a qual chamamos de solução _**Low Code**_ (conforme já explicado [nesse post](https://automatiza-mg.github.io/automatizacoes/blog/descomplicado-ferramenta-_no-code_-e-_low-code_/_)), realizando os seguintes passos:
 
-**I.** Criar uma variável de entrada com nome `caminho_pdf` e valor padrão contendo o caminho do PDF a ser contado:
-
-
-
-![image](https://github.com/user-attachments/assets/c681845e-929a-4678-9bf7-d6e83c0f5fde)
+**I.** Criar uma variável de entrada com nome `caminho_pdf` e valor padrão contendo o caminho do PDF que será editado:
 
 
 
-**II.** Incluir as ações de `Iniciar novo Chrome`, solicitando que seja aberta qualquer URL válida (no nosso exemplo, utilizamos o site do Google) e `Enviar teclas`, com o texto a ser enviado: {Alt}({D}){Delete}`%caminho_pdf%`{Return} (Alt+D é atalho para o cursor ir para a barra de endereço):
+![imagem](https://github.com/user-attachments/assets/99fa3bd4-a545-40a3-8fa1-dbd52892dae7)
 
 
 
-![image](https://github.com/user-attachments/assets/67c96716-1f77-409b-9b20-c162721c254d)
+
+**II.** Incluir as ações de `Iniciar novo Chrome`, solicitando que seja aberta qualquer URL válida (no nosso exemplo, utilizamos o site do Google) e `Enviar teclas`, com o texto a ser enviado: {Alt}({D}){Delete}`%caminho_pdf%`{Return}:
+
+![imagem (1)](https://github.com/user-attachments/assets/b2cc535f-d585-48c0-ad53-cb0766249b4e)
 
 
 
-As partes do código correspondentes às ações das linhas 1 e 2 seguem abaixo, para cópia e utilização:
+**Observações:** 
+* Caso seu navegador possua "Google Lens" ativado, acesse chrome://flags na barra de pesquisas, digite Lens e desative as opções exibidas na página
+* Alt+D é o atalho para o cursor ir para a barra de endereço URL no Google Chrome
+                            
+A parte do código correspondentes às ações das linhas 1 e 2 seguem para cópia e utilização:
 
 ````
+/# - No Google Chrome, acessar chrome://flags na barra de pesquisas, digitar Lens e desativar as opções exibidas na página
+#/
 WebAutomation.LaunchChrome.LaunchChrome Url: $'''https://www.google.com/''' WindowState: WebAutomation.BrowserWindowState.Maximized ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 PiPUserDataFolderMode: WebAutomation.PiPUserDataFolderModeEnum.AutomaticProfile TargetDesktop: $'''{\"DisplayName\":\"Computador local\",\"Route\":{\"ServerType\":\"Local\",\"ServerAddress\":\"\"}}''' BrowserInstance=> navegador
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: navegador TextToSend: $'''{Alt}({D}){Delete}%caminho_pdf%{Return}''' DelayBetweenKeystrokes: 60 SendTextAsHardwareKeys: True
 WAIT 2
-
 ````
 
-**III.** Incluir as ações de `Enviar teclas`, com o texto a ser enviado: {Tab: 2}{End}{Tab: 6}{Control}({C}). Com essa sequência, o robô irá colocar o cursor do mouse no conta páginas, tendo colocado o documento em sua última página, conforme exemplo abaixo:
+**III.** Incluir as ações de `Enviar teclas`, com o texto a ser enviado: {Tab: 2}{End}{Tab: 6}{Control}({C}). Com essa sequência, o robô irá colocar o cursor do mouse no conta páginas, tendo colocado o documento em sua última página, conforme exemplo abaixo e copiará o total de páginas indicado:
+
+
+![imagem (2)](https://github.com/user-attachments/assets/811c797d-1a73-43a2-8842-4390f565bd8c)
 
 
 
-![image (1)](https://github.com/user-attachments/assets/d5cb919e-b572-4701-9d69-f2e93aaa2255)
+
+**Observação Importante:** 
+* A quantidade de teclas Tab utilizada pode variar de navegador para navegador, sendo necessários alguns ajustes. Os 02 primeiros são para o cursor ir para a página do documento, já os outros 06 são para o cursor chegar até a caixinha indicada na imagem acima.
 
 
-**Observação Importante:** A quantidade de teclas Tab utilizada pode variar de navegador para navegador, sendo necessários alguns ajustes. Os 02 primeiros são para o cursor ir para a página do documento, já os outros 06 são para o cursor chegar até a caixinha indicada na imagem acima.
-
-
-A parte do código correspondente ao Item III segue abaixo, para cópia e utilização:
+A parte do código correspondente ao Item III segue abaixo para cópia e utilização:
 
 ````
 /# Os números de tabs variam de navegador para navegador!!!
@@ -63,13 +69,49 @@ O End é para ir para a última página, a fim de deixar o marcador de página n
 Os 6 Tab são para o cursor chegar até a caixinha que indica o total de páginas no marcador presente no cabeçalho#/
 MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: navegador TextToSend: $'''{Tab: 2}{End}{Tab: 6}{Control}({C})''' DelayBetweenKeystrokes: 700 SendTextAsHardwareKeys: True
 WAIT 2
-
-
 ````
 
+**IV.** Incluir as ações de `Obter texto da área de transferência` e `Converter texto em número`:
 
-________________________________________________________________________________________________________________________________________________________________________________
+![imagem (3)](https://github.com/user-attachments/assets/779eec25-57bb-4e00-a36f-68f3d620c87f)
 
+
+
+A parte do código correspondente às ações das linhas 7 e 8 segue abaixo para cópia e utilização:
+
+````
+Clipboard.GetText Text=> total_paginas
+Text.ToNumber Text: total_paginas Number=> total_paginas_numero
+````
+
+**V.** Incluir um `Loop` com as seguintes configurações:
+
+![imagem (4)](https://github.com/user-attachments/assets/0aec80ae-eddd-4222-b475-6fa376496f73)
+
+
+Dentro do `Loop` criado, serão incluídas as ações de `If` e `Else` e um `Rótulo` ao final dele: 
+
+![imagem (5)](https://github.com/user-attachments/assets/d33fb07f-e79d-46a0-9a08-ac2913f0ce11)
+
+Segue a parte do código que é representada na imagem acima:
+
+````
+LOOP pagina FROM 1 TO total_paginas_numero STEP 10
+    IF (pagina + 9) <= total_paginas_numero THEN
+        Pdf.ExtractPages PDFFile: caminho_pdf PageSelection: $'''%pagina% - %pagina + 9%''' ExtractedPDFPath: caminho_pdf IfFileExists: Pdf.IfFileExists.AddSequentialSuffix ExtractedPDFFile=> ExtractedPDF
+            ON ERROR
+                GOTO fim
+            END
+    ELSE
+        Pdf.ExtractPages PDFFile: caminho_pdf PageSelection: $'''%pagina% - %total_paginas_numero%''' ExtractedPDFPath: caminho_pdf IfFileExists: Pdf.IfFileExists.AddSequentialSuffix ExtractedPDFFile=> ExtractedPDF
+            ON ERROR
+                GOTO fim
+            END
+    END
+END
+LABEL fim
+
+````
 
 
 
