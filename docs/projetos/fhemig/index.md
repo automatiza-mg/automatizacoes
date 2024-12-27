@@ -1,13 +1,13 @@
 # Automatização da análise de custos da Fhemig
 
-Este projeto envolveu o processo de análise de custos das unidades assistencias da Fundação Hospitalar do Estado de Minas Gerais. 
+Este projeto buscou automatizar algumas tarefas realizadas pela Coordenação de Custos da Fhemig. 
 
-Mensalmente, um relatório contendo todos os contratos é gerado em formato `.xlsx` e deve ser desmembrado, por unidade executora, para melhor análise e continuidade dos trabalhos do setor.  
+Dentre tais tarefas, estão o desmembramento do Relatório de Contratos de Prestação de Serviços, o empilhamento do Relatório Mensal de Inconsistências e a atualização do Boletim Executivo Mensal.
 
-Para apoiar esse processo, foram desenvolvidas **três automatizações complementares:**
+Assim, foram desenvolvidas as seguintes automatizações:
 
 1. [Desempilhamento da planilha Contratos de Prestação de Serviços](desempilhamento.md);
-2. [Empilhamento de dados para elaboração do relatório de inconsistências]();
+2. [Empilhamento de dados para elaboração do relatório de inconsistências](empilhamento.md);
 3. [Análise do relatório de composição de custo analítico](analise_boletim_custos.md). 
 
 
