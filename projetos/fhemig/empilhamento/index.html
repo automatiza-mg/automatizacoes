@@ -12,7 +12,7 @@
         <meta name="author" content="Automatiza.MG">
       
       
-        <link rel="canonical" href="https://automatiza-mg.github.io/automatizacoes/projetos/fhemig/analise_boletim_custos/">
+        <link rel="canonical" href="https://automatiza-mg.github.io/automatizacoes/projetos/fhemig/empilhamento/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Automatização de processo: Formatação do relatório de composição do custo analítico das unidades FHEMIG - Automatiza.MG</title>
+        <title>Automatização de processo: empilhamento das planilhas Contratos de Prestação de Serviços - Fhemig - Automatiza.MG</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#automatizacao-de-processo-formatacao-do-relatorio-de-composicao-do-custo-analitico-das-unidades-fhemig" class="md-skip">
+        <a href="#automatizacao-de-processo-empilhamento-das-planilhas-contratos-de-prestacao-de-servicos-fhemig" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -163,7 +163,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Automatização de processo: Formatação do relatório de composição do custo analítico das unidades FHEMIG
+              Automatização de processo: empilhamento das planilhas Contratos de Prestação de Serviços - Fhemig
             
           </span>
         </div>
@@ -1487,27 +1487,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-subfluxo-pag_relatorio" class="md-nav__link">
+  <a href="#22-subfluxo-preparar_planilha_empilhamento" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2. subfluxo "pag_relatorio"
+      2.2. Subfluxo "preparar_planilha_empilhamento"
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-subfluxo-pag_dados" class="md-nav__link">
+  <a href="#23-subfluxo-empilhar" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3. subfluxo "pag_dados"
+      2.3. Subfluxo "empilhar"
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-subfluxo-ajuste_pag_dados" class="md-nav__link">
+  <a href="#24-subfluxo-exclui_celulas_vazias" class="md-nav__link">
     <span class="md-ellipsis">
-      2.4. subfluxo "ajuste_pag_dados"
+      2.4. Subfluxo "exclui_celulas_vazias"
     </span>
   </a>
   
@@ -1560,7 +1560,7 @@
                   
 
   
-    <a href="https://github.com/automatiza-mg/automatizacoes/edit/main/docs/projetos/fhemig/analise_boletim_custos.md" title="Editar esta página" class="md-content__button md-icon">
+    <a href="https://github.com/automatiza-mg/automatizacoes/edit/main/docs/projetos/fhemig/empilhamento.md" title="Editar esta página" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1568,49 +1568,75 @@
   
 
 
-<div><h1 id="automatizacao-de-processo-formatacao-do-relatorio-de-composicao-do-custo-analitico-das-unidades-fhemig">Automatização de processo: Formatação do relatório de composição do custo analítico das unidades FHEMIG<a class="headerlink" href="#automatizacao-de-processo-formatacao-do-relatorio-de-composicao-do-custo-analitico-das-unidades-fhemig" title="Permanent link">⚓︎</a></h1>
-<p>Mensalmente, um relatório de composição do custo analítico das unidades Fhemig é gerado no Sistema de Gestão Hospitalar – SIGCUSTOS. Este, por sua vez, é inserido em uma planilha consolidada de custos por unidades, resultando em demonstrativo de custos mensais. Partindo da geração da planilha “relatório”, foi proposto automatizar as várias etapas da formatação da planilha Boletim Executivo Mensal (BEM - Item de custo), preparando-a para a análise gerencial pela Coordenação de Custos da Fhemig.</p>
+<div><h1 id="automatizacao-de-processo-empilhamento-das-planilhas-contratos-de-prestacao-de-servicos-fhemig">Automatização de processo: empilhamento das planilhas Contratos de Prestação de Serviços - Fhemig<a class="headerlink" href="#automatizacao-de-processo-empilhamento-das-planilhas-contratos-de-prestacao-de-servicos-fhemig" title="Permanent link">⚓︎</a></h1>
+<p>O desafio em questão consiste em automatizar um dos processos de análise dos contratos de prestação de serviços, realizado pela Coordenação de Custos da Diretoria de Contratualização, Faturamento e Parcerias da Fhemig.</p>
+<p>Mensalmente, cada hospital conveniado encaminha um relatório com prestação de contas, no formato .xlsx. São enviadas cerca de 21 planilhas de contratos que passam por tratamento e coleta de dados, o processo consiste na unificação de todas essas planilhas, gerando um relatório único, esse fluxo denomina-se empilhamento. </p>
+<p>Para isso, foi criado um fluxo automatizado utilizando a ferramenta Power Automate. O robô realiza o preparo das planilhas que contém os Relatórios de Contratos de Prestação de Serviços e faz empilhamento, por unidade assistencial, tendo a necessidade de intervenção humana apenas para iniciar o processo.</p>
 <h2 id="1-o-que-o-robo-faz">1. O que o robô faz<a class="headerlink" href="#1-o-que-o-robo-faz" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Copia os dados da planilha "relatório" e transfere para a planilha “BEM - Item de custo”;</li>
-<li>Formata e higieniza a planilha “BEM - Item de custo”.</li>
+<li>Realiza a leitura dos dados das planilhas.</li>
+<li>Realiza o empilhamento dos dados, por unidade assistencial.</li>
 </ul>
 <h2 id="2-como-funciona-passo-a-passo-explicado-do-automate">2. Como funciona? Passo a passo explicado do Automate<a class="headerlink" href="#2-como-funciona-passo-a-passo-explicado-do-automate" title="Permanent link">⚓︎</a></h2>
-<h3 id="21-main">2.1. "Main"<a class="headerlink" href="#21-main" title="Permanent link">⚓︎</a></h3>
-<p>Este é o fluxo principal do robô, que hierarquiza e executa os demais subfluxos;</p>
-<h3 id="22-subfluxo-pag_relatorio">2.2. subfluxo "pag_relatorio"<a class="headerlink" href="#22-subfluxo-pag_relatorio" title="Permanent link">⚓︎</a></h3>
+<h3 id="21-main">2.1. <em>"Main"</em><a class="headerlink" href="#21-main" title="Permanent link">⚓︎</a></h3>
+<p>Este fluxo, ramo principal do robô, contempla as ações principais:</p>
 <ul>
-<li>Abre as planilhas “BEM - Item de custo” e "relatório" a partir de uma pasta especificada;</li>
-<li>Copia os dados da planilha “relatório” na planilha “BEM - Item de custo”;</li>
+<li>Obter arquivos da pasta empilhamento;</li>
+<li>Executar o Subfluxo "Preparar planilha empilhamento";</li>
+<li>Executar o Subfluxo "Empilhar"</li>
+<li>Executar o Subfluxo "Exclui células vazias";</li>
 </ul>
-<h3 id="23-subfluxo-pag_dados">2.3. subfluxo "pag_dados"<a class="headerlink" href="#23-subfluxo-pag_dados" title="Permanent link">⚓︎</a></h3>
+<h3 id="22-subfluxo-preparar_planilha_empilhamento">2.2. Subfluxo "preparar_planilha_empilhamento"<a class="headerlink" href="#22-subfluxo-preparar_planilha_empilhamento" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>Padroniza a formatação da planilha “BEM - Item de custo”;</li>
-<li>Atualiza dados;</li>
-<li>Limpa filtros da planilha;</li>
+<li>Iniciar o excel  -  abrir documento pasta_empilhamento;</li>
+<li>Definir a planilha aba "Apontamento Lista Contratos”;</li>
+<li>Desproteger planilhas;</li>
+<li>Reexibir linhas e colunas ocultas;</li>
+<li>Limpar filtros das planilhas;</li>
+<li>Excluir linhas e colunas vazias;</li>
+<li>Excluir a aba "Apontamento SIGH";</li>
+<li>Renomear a planilha "contrato empilhado"</li>
+<li>Salvar o documento;</li>
 </ul>
-<h3 id="24-subfluxo-ajuste_pag_dados">2.4. subfluxo "ajuste_pag_dados"<a class="headerlink" href="#24-subfluxo-ajuste_pag_dados" title="Permanent link">⚓︎</a></h3>
+<h3 id="23-subfluxo-empilhar">2.3. Subfluxo "empilhar"<a class="headerlink" href="#23-subfluxo-empilhar" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>Reexibe linhas ocultas em todas as abas;</li>
-<li>Padroniza esteticamente linha única</li>
-<li>Oculta linhas vazias</li>
+<li>Iniciar o excel - abrir documento contrato empilhado;</li>
+<li>Definir a planilha aba "Contrato Empilhado";</li>
+<li>Definir a aba "Apontamento Lista Contrato";</li>
+<li>Desproteger planilha;</li>
+<li>Selecionar células;</li>
+<li>Reexibir linhas e colunas ocultas;</li>
+<li>Limpar filtros da planilha;</li>
+<li>Excluir linhas e colunas vazias;</li>
+<li>Copiar dados da planilha;</li>
+<li>Colar dados na planilha "contrato empilhado";</li>
+<li>Salvar o documento;</li>
+</ul>
+<h3 id="24-subfluxo-exclui_celulas_vazias">2.4. Subfluxo "exclui_celulas_vazias"<a class="headerlink" href="#24-subfluxo-exclui_celulas_vazias" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>Iniciar o excel - abrir documento contrato empilhado;</li>
+<li>Definir a planilha aba "Contrato Empilhado";</li>
+<li>Limpar filtros da planilha;</li>
+<li>Seleciona as linhas e colunas vazias;</li>
+<li>Exclui as linhas e colunas vazias;</li>
+<li>Salvar documento;</li>
 </ul>
 <h2 id="3-utilizacao-do-robo">3. Utilização do robô<a class="headerlink" href="#3-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Antes de executar o robô, <strong><em>o(a) usuário(a) deverá alterar a variável de entrada denominada</em></strong>'caminho pasta', inserindo no campo 'valor padrão' o caminho onde a planilha se encontra.</li>
-<li>O robô abrirá todos os arquivos necessários, assim, <strong><em>certifique-se que nenhum arquivo excel esteja aberto</em></strong>.</li>
+<li>Antes de executar o robô, <strong><em>o(a) usuário(a) deverá adicionar a variável de entrada</em></strong> <code>senha</code>.</li>
+<li>O robô abrirá todos os arquivos necessários, assim, <strong><em>certifique-se que nenhum arquivo Excel esteja aberto</em></strong>.</li>
 </ul>
 <h2 id="4-resultados">4. Resultados<a class="headerlink" href="#4-resultados" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Processo manual: 2h30m.</li>
-<li>Processo automatizado: 8 minutos.</li>
+<li>Processo manual: em média 1 hora.</li>
+<li>Processo automatizado: 15 min.</li>
 </ul>
 <h2 id="5-codigos">5. Códigos<a class="headerlink" href="#5-codigos" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Fluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/relatorio_dados_main.txt">'Main'</a></li>
-<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/relatorio_dados_pagina_relatorio.txt">'pag_relatorio</a></li>
-<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/relatorio_dados_pag_dados.txt">'pag_dados'</a></li>
-<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/relatorio_dados_ajuste_pagina.txt">'ajuste_pag_dados'</a></li>
+<li>Fluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/empilhamento_main.txt">'Main'</a></li>
+<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/empilhamento_preparar_planilha_empilhamento.txt">"preparar_planilha_empilhamento"</a></li>
+<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/empilhamento_empilhar.txt">"empilhar"</a></li>
+<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/fhemig/empilhamento_exclui_celulas_vazias.txt">"exclui_celulas_vazias"</a></li>
 </ul></div>
 
 
@@ -1634,7 +1660,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 27, 2024 21:05:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 27, 2024 21:03:54</span>
   </span>
 
     
@@ -1644,7 +1670,7 @@
     <span class="md-icon" title="Criada">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 20, 2024 19:25:54</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 27, 2024 21:03:54</span>
   </span>
 
     
