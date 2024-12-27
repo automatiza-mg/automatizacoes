@@ -1,4 +1,4 @@
-# Automação de processo: desempilhamento da planilha Contratos de Prestação de Serviços - Fhemig
+# Automatização de processo: desempilhamento da planilha Contratos de Prestação de Serviços - Fhemig
 
 O desafio em questão consiste em automatizar um dos processos de análise dos contratos de prestação de serviços, realizado pela Coordenação de Custos da Diretoria de Contratualização, Faturamento e Parcerias da Fhemig.
 
