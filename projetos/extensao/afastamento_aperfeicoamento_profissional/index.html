@@ -1459,54 +1459,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-sobre-o-projeto" class="md-nav__link">
+  <a href="#1-o-que-o-robo-faz" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Sobre o projeto
+      1. O que o robô faz
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-como-funciona-o-robo" class="md-nav__link">
+  <a href="#2-premissas" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Como funciona o robô
+      2. Premissas
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-o-que-o-robo-faz" class="md-nav__link">
+  <a href="#3-resultados-esperados" class="md-nav__link">
     <span class="md-ellipsis">
-      3. O que o robô faz
+      3. Resultados esperados
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-premissas" class="md-nav__link">
+  <a href="#4-codigos" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Premissas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-utilizacao-do-robo" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Utilização do robô
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-resultados-esperados" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Resultados esperados
+      4. Códigos
     </span>
   </a>
   
@@ -1536,50 +1518,56 @@
 
 
 <div><h1 id="automatizacao-de-notas-tecnicas-de-afastamento-para-aperfeicoamento-profissional">Automatização de Notas Técnicas de Afastamento para Aperfeiçoamento Profissional<a class="headerlink" href="#automatizacao-de-notas-tecnicas-de-afastamento-para-aperfeicoamento-profissional" title="Permanent link">⚓︎</a></h1>
-<p>O desafio em questão consiste em automatizar o processo de criação e preenchimento dos processos SEI e das notas técnicas para afastamentos de servidores públicos do Estado de Minas Gerais, otimizando a gestão administrativa e reduzindo o tempo gasto pelos servidores responsáveis presentes na SUGESP. <a href="../../../robos/afastamento_aperfeicoamento_profissional/">Este post explica como utilizar o robô para as tarefas desse processo</a>.  </p>
-<h2 id="1-sobre-o-projeto">1. Sobre o projeto<a class="headerlink" href="#1-sobre-o-projeto" title="Permanent link">⚓︎</a></h2>
-<p>Dentre as subsecretarias da Secretaria de Estado de Planejamento e Gestão (Seplag), a equipe de Afastamento da Sugesp atua como elemento central no gerenciamento e regulamentação dos afastamentos para aperfeiçoamento profissional. </p>
-<p>O presente projeto de automatização nasceu da necessidade de otimizar o trabalho dessa equipe, especialmente diante do elevado volume de solicitações de afastamentos que exigem um controle rigoroso. A centralização e organização deste processo permitem que o foco seja direcionado à análise de mérito das solicitações, deixando para o robô as tarefas operacionais e repetitivas. Com a utilização do Power Automate, a proposta é simplificar o fluxo de trabalho, garantindo maior eficiência e precisão.</p>
-<h2 id="2-como-funciona-o-robo">2. Como funciona o robô<a class="headerlink" href="#2-como-funciona-o-robo" title="Permanent link">⚓︎</a></h2>
-<p>O robô está programado para ler a planilha com os pedidos de afastamento, em seguida ele cria um processo, uma nota técnica e realiza o preenchimento dessa nota de acordo com as informações do servidor. Por ser programado com <em>loop</em>, esse procedimento se repete para os demais servidores presentes na planilha.</p>
-<h2 id="3-o-que-o-robo-faz">3. O que o robô faz<a class="headerlink" href="#3-o-que-o-robo-faz" title="Permanent link">⚓︎</a></h2>
+<p><em>[Este post ainda será atualizado. A segunda fase do projeto ainda está em execução.]</em></p>
+<p>Dentre as subsecretarias da Secretaria de Estado de Planejamento e Gestão (Seplag), a equipe de Afastamento da Subsecretaria de Gestão de Pessoas (Sugesp) atua como elemento central no gerenciamento e regulamentação dos afastamentos para aperfeiçoamento profissional.</p>
+<p>O projeto nasceu da necessidade de otimizar o trabalho dessa equipe, especialmente diante do elevado volume de solicitações de afastamentos que exigem um controle rigoroso. A centralização e organização deste processo permitem que o foco dos servidores seja direcionado à análise de mérito das solicitações, deixando para o robô as tarefas operacionais e repetitivas. Com a utilização do Power Automate, a proposta é simplificar o fluxo de trabalho, garantindo maior eficiência e precisão.</p>
+<h2 id="1-o-que-o-robo-faz">1. O que o robô faz<a class="headerlink" href="#1-o-que-o-robo-faz" title="Permanent link">⚓︎</a></h2>
+<p>O robô está programado para partir de uma planilha com os pedidos de afastamento. Em seguida, ele cria um processo, uma nota técnica e realiza o preenchimento dessa nota de acordo com as informações do servidor. Por ser programado com <em>loop</em>, esse procedimento se repete para os demais servidores presentes na planilha.</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Cria processos no SEI para as solicitações de afastamento;</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Cria a nota técnica de afastamento dentro do processo;</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Edita a nota técnica com as informações de cada servidor.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Login no SEI;</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Seleciona unidade correta no SEI;</p>
+</li>
+<li>
+<p><strong>A partir daqui, para cada pedido planilhado:</strong></p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Cria novo processo SEI;</p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Cria nova Nota Técnica dentro do respectivo processo;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Edita a Nota Técnica com as respectivas informaçoes de cada pedido.</li>
 </ul>
-<p>Através do <em>loop</em>, realiza o processo para as diversas solicitações de forma automática.</p>
-<details class="note">
-<summary><strong>Clique para ver o fluxo do robô</strong></summary>
-<div class="mermaid">graph TD
-    A(Abre navegador)
-    B(Login no SEI)
-    A --&gt; B
-    B --&gt; C(Troca para unidade desejada)
-    C --&gt; D(Lê a planilha de controle)
-    D --&gt; |Planilha no Drive do setor|E(Cria novo processo)
-    E --&gt; |Loop|H
-    E --&gt; F(Cria Nota Técnica)
-    F --&gt; G(Substitui informações na Nota Técnica conforme planilha)
-    G --&gt; H(Salva Nota Técnica)
-    H --&gt; |Loop|E
-    H --&gt; I(Fim)</div>
-</details>
-<h2 id="4-premissas">4. Premissas<a class="headerlink" href="#4-premissas" title="Permanent link">⚓︎</a></h2>
+<h2 id="2-premissas">2. Premissas<a class="headerlink" href="#2-premissas" title="Permanent link">⚓︎</a></h2>
 <ul>
+<li>As solicitações devem ser inseridas na <a href="">planilha-modelo</a></li>
 <li>O fluxo atende aos modelos de solicitações previamente mapeados;</li>
 <li>É necessário treinamento adicional para atender especificidades de outros tipos de afastamento;</li>
 <li>A comunicação com a equipe de afastamentos é essencial para garantir a padronização dos procedimentos.</li>
 </ul>
-<h2 id="5-utilizacao-do-robo">5. Utilização do robô<a class="headerlink" href="#5-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
-<p>O fluxo do Power Automate foi feito diretamente na conta SEI dos alunos extensionistas que passaram a ter acesso à planilha na nuvem da unidade de Afastamentos da Seplag para validar que ele funcionaria corretamente com a equipe responsável.</p>
-<p>Para usar o robô, devem ser inseridas as informações dos pedidos de afastamento na planilha designada para tal. Essa planilha será lida pelo robô que assim dará sequência a seu fluxo.</p>
-<h2 id="6-resultados-esperados">6. Resultados esperados<a class="headerlink" href="#6-resultados-esperados" title="Permanent link">⚓︎</a></h2>
+<h2 id="3-resultados-esperados">3. Resultados esperados<a class="headerlink" href="#3-resultados-esperados" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Redução do tempo gasto para criação de cada nota técnica;</li>
 <li>Padronização e maior precisão nas informações registradas nas notas técnicas;</li>
 <li>Ganho de tempo para as equipes executarem atividades mais estratégicas.</li>
-</ul></div>
+</ul>
+<h2 id="4-codigos">4. Códigos<a class="headerlink" href="#4-codigos" title="Permanent link">⚓︎</a></h2>
+<ol>
+<li><a href="">Main</a></li>
+<li>Subfluxo <a href="">criar_planilha</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_sei.txt">login_sei</a></li>
+<li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt">troca_unidade</a></li>
+<li>Subfluxo <a href="">cria_processo</a></li>
+<li>Subfluxo <a href="">criar_nota_tecnica</a></li>
+<li>Subfluxo <a href="">editar_nota_tecnica</a></li>
+</ol>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Essa planilha pode ser online (Drive, SharePoint, etc) ou offline (salva no próprio computador do usuário). As ações desse subfluxo serão configuradas de acordo com a planilha. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
 
 
 
@@ -1602,7 +1590,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 17, 2024 22:12:54</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 23, 2024 17:50:09</span>
   </span>
 
     
