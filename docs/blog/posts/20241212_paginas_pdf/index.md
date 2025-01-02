@@ -73,29 +73,7 @@ Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de 
 Clicando [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/paginas-pdf.txt) você acessará o código completo do robô apresentado[^1].
 
 
-
-
-
-
-
-
-
-
-
-
-# Saiba Mais
-
-Explore canais e materiais de referência para aprofundar seus conhecimentos sobre o **Power Automate**:
-
-- [Documentação Oficial](https://docs.microsoft.com/pt-br/power-automate/)
-- [Canal do Power Automate no YouTube](https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA)
-- [Comunidade Power Automate](https://powerusers.microsoft.com/t5/Power-Automate-Community/ct-p/MPACommunity)
-
-[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-
-
-
-## Solução Python
+# Solução Python
 
 Nesta alternativa, utilizaremos a linguagem Python e a biblioteca `PyPDF2` para manipulação de arquivos PDF.
 
@@ -105,20 +83,20 @@ Antes de executar o código, ajuste as variáveis conforme a estrutura de diret�
 
 - **`CaminhoDoArquivo`**:
   - Descrição: Caminho completo do arquivo PDF incluindo o nome do arquivo.
-  - Exemplo: `C:\\Documentos\\projeto\\arquivo.pdf`
+  - Exemplo: `C:\Documentos\projeto\arquivo.pdf`
 
 - **`CaminhoPastaDoArquivo`**:
   - Descrição: Diretório onde o arquivo PDF está localizado.
-  - Exemplo: `C:\\Documentos\\projeto`
+  - Exemplo: `C:\Documentos\projeto`
 
 - **`CaminhoArquivosDivididos`**:
   - Descrição: Diretório onde os arquivos resultantes serão armazenados após a divisão.
-  - Exemplo: `C:\\Documentos\\projeto\\arquivos_divididos`
+  - Exemplo: `C:\Documentos\projeto\arquivos_divididos`
 
 - **`AcessoPython`**:
   - Descrição: Diretório de instalação do Python em sua máquina.
   - Observação: Certifique-se de que o Python foi instalado corretamente seguindo [esta orientação](#). Substitua pelo caminho real de instalação.
-  - Exemplo: `C:\\Python39`
+  - Exemplo: `C:\Python\versao\python.exe`
 
 ### Configuração e Utilização
 
@@ -134,6 +112,19 @@ Antes de executar o código, ajuste as variáveis conforme a estrutura de diret�
 
 
 3. **Resultados**:
-   - Após a execução bem-sucedida, os arquivos divididos estarão disponíveis no diretório definido em `CaminhoArquivosDivididos`.
+   - Após a execução bem-sucedida do fluxo, os arquivos divididos estarão disponíveis no diretório definido em `CaminhoArquivosDivididos`.
 
 ---
+
+
+## Saiba Mais
+
+Explore canais e materiais de referência para aprofundar seus conhecimentos sobre o **Power Automate**:
+
+- [Documentação Oficial](https://docs.microsoft.com/pt-br/power-automate/)
+- [Canal do Power Automate no YouTube](https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA)
+- [Comunidade Power Automate](https://powerusers.microsoft.com/t5/Power-Automate-Community/ct-p/MPACommunity)
+
+[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+
+
