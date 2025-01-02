@@ -75,7 +75,7 @@ Clicando [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-ro
 
 # Solução Python
 
-Nesta alternativa, utilizaremos a linguagem Python e a biblioteca `PyPDF2` para manipulação de arquivos PDF.
+Nesta alternativa, utilizaremos a linguagem Python e a biblioteca `PyPDF2` para manipulação de arquivos PDF.  
 
 ### I. Definições de Variáveis
 
@@ -116,6 +116,11 @@ Antes de executar o código, ajuste as variáveis conforme a estrutura de diret�
 
 3. **Resultados**:
    - Após a execução bem-sucedida do fluxo, os arquivos divididos estarão disponíveis no diretório definido em `CaminhoArquivosDivididos`.
+
+---
+
+**Robô TXT**:
+   - 📥 **[Baixar Robô](fluxo_pdf_python.txt)** 
 
 ---
 
