@@ -92,3 +92,48 @@ Explore canais e materiais de referência para aprofundar seus conhecimentos sob
 - [Comunidade Power Automate](https://powerusers.microsoft.com/t5/Power-Automate-Community/ct-p/MPACommunity)
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+
+
+
+## Solução Python
+
+Nesta alternativa, utilizaremos a linguagem Python e a biblioteca `PyPDF2` para manipulação de arquivos PDF.
+
+### I. Definições de Variáveis
+
+Antes de executar o código, ajuste as variáveis conforme a estrutura de diretórios em sua máquina. Segue a descrição:
+
+- **`CaminhoDoArquivo`**:
+  - Descrição: Caminho completo do arquivo PDF incluindo o nome do arquivo.
+  - Exemplo: `C:\\Documentos\\projeto\\arquivo.pdf`
+
+- **`CaminhoPastaDoArquivo`**:
+  - Descrição: Diretório onde o arquivo PDF está localizado.
+  - Exemplo: `C:\\Documentos\\projeto`
+
+- **`CaminhoArquivosDivididos`**:
+  - Descrição: Diretório onde os arquivos resultantes serão armazenados após a divisão.
+  - Exemplo: `C:\\Documentos\\projeto\\arquivos_divididos`
+
+- **`AcessoPython`**:
+  - Descrição: Diretório de instalação do Python em sua máquina.
+  - Observação: Certifique-se de que o Python foi instalado corretamente seguindo [esta orientação](#). Substitua pelo caminho real de instalação.
+  - Exemplo: `C:\\Python39`
+
+### Configuração e Utilização
+
+1. **Prepare o Ambiente**:
+   - Certifique-se de que o Python está instalado e configurado em sua máquina.
+   - Instale utiliznado o prompt de comando como `ADMINISTRADOR`, a biblioteca necessária utilizando o seguinte comando:
+     ```bash
+     pip install pypdf2
+     ```
+
+2. **Modifique o Código**:
+   - Edite as variáveis mencionadas acima no script Python para refletirem a estrutura de seus diretórios locais.
+
+
+3. **Resultados**:
+   - Após a execução bem-sucedida, os arquivos divididos estarão disponíveis no diretório definido em `CaminhoArquivosDivididos`.
+
+---
