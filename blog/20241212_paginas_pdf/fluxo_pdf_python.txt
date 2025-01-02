@@ -1,0 +1,18 @@
+/# Instale a lib pypdf2:
+
+pip install pypdf2
+
+********************************************************
+
+Altere as variáveis:
+
+caminhoPasta, acessoPasta, output_dir e acessoPython#/
+SET CaminhoDoArquivo TO $'''\"C:\\Automatiza\\pdf\\teste.pdf\"'''
+SET CaminhoPastaDoArquivo TO $'''\"C:\\Automatiza\\pdf\"'''
+SET AcessoPasta TO $'''cd %CaminhoPastaDoArquivo%'''
+SET CaminhoArquivosDivididos TO $'''\"C:\\Automatiza\\pdf\\divididos\"'''
+SET AcessoPython TO $'''C:\\Python\\Python313\\python.exe conta_pagina.py %CaminhoDoArquivo% %CaminhoArquivosDivididos%'''
+@@copilotGeneratedAction: 'False'
+Scripting.RunPowershellScript.RunPowershellScript Script: $'''C:
+%AcessoPasta%
+%AcessoPython%''' ScriptOutput=> Retorno ScriptError=> Erro
