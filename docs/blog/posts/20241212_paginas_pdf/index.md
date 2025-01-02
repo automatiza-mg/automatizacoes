@@ -106,6 +106,9 @@ Antes de executar o código, ajuste as variáveis conforme a estrutura de diret�
      ```bash
      pip install pypdf2
      ```
+2. **Baixar o Script Python**:
+   - 📥 **[Baixar conta_pagina.py](scripts/conta_pagina.py)**   
+
 
 2. **Modifique o Código**:
    - Edite as variáveis mencionadas acima no script Python para refletirem a estrutura de seus diretórios locais.
@@ -113,7 +116,10 @@ Antes de executar o código, ajuste as variáveis conforme a estrutura de diret�
 
 3. **Resultados**:
    - Após a execução bem-sucedida do fluxo, os arquivos divididos estarão disponíveis no diretório definido em `CaminhoArquivosDivididos`.
-  
+
+---
+
+**Fluxo**:
 
 ![fluxo](https://github.com/user-attachments/assets/ecbe3263-c8fa-4ed7-9aab-05a25ed1f271)
 
