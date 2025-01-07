@@ -1504,6 +1504,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#24-subfluxo-registro_sei_word" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. "Subfluxo 'registro_sei_word'":
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-subfluxo-cria_processo_sei" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5. "Subfluxo 'cria_processo_sei'":
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-subfluxo-autorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6. "Subfluxo 'autorizacao'":
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1584,18 +1611,27 @@
 <li>Iniciar o Excel no documento esepcífico; </li>
 <li>Ler a planilha do Excel </li>
 <li>Executar o subfluxo ‘login_sei’; </li>
-<li>Executar o subfluxo ‘troca_unidade’; </li>
-<li>Navegar até a página do processo iterado;</li>
-<li>Selecionar o documento 'Parecer';</li>
-<li>Ler a página da Web;</li>
-<li>Realizar os tratamentos no texto lido e registrar as variáveis;</li>
-<li>Registrar o resumo do parecer no Word.</li>
+<li>Executar o subfluxo ‘troca_unidade’;</li>
+<li>Executar o subfluxo ‘registro_sei_word’;</li>
+<li>Executar o subfluxo ‘cria_processo_sei’;</li>
+<li>Executar o subfluxo ‘autorizacao’; </li>
 </ul>
-<p>As cinco últimas ações ocorrem em loop.</p>
 <h4 id="22-subfluxo-login_sei">2.2 <strong>"Subfluxo 'login_sei'":</strong><a class="headerlink" href="#22-subfluxo-login_sei" title="Permanent link">⚓︎</a></h4>
-<p>Esse subfluxo é executado para abrir o google chrome na página do SEI e realizar o login.</p>
+<p>Esse subfluxo é executado para abrir o google chrome na página do SEI e realizar o login. É necessário criar as variáveis 'login_sei', 'orgao_sei' e 'senha_sei'.</p>
 <h4 id="23-subfluxo-troca_unidade">2.3. <strong>"Subfluxo 'troca_unidade'":</strong><a class="headerlink" href="#23-subfluxo-troca_unidade" title="Permanent link">⚓︎</a></h4>
-<p>Esse subfluxo é executado para abrir trocar a unidade do SEI para a correta.</p>
+<p>Esse subfluxo é executado para abrir trocar a unidade do SEI para a correta. É necessário criar a variável 'unidade_protocolo'.</p>
+<h4 id="24-subfluxo-registro_sei_word">2.4. <strong>"Subfluxo 'registro_sei_word'":</strong><a class="headerlink" href="#24-subfluxo-registro_sei_word" title="Permanent link">⚓︎</a></h4>
+<p>Esse subfluxo é executado para:
+- Navegar até a página do processo iterado;
+- Selecionar o documento 'Parecer';
+- Ler a página da Web;
+- Realizar os tratamentos no texto lido e registrar as variáveis;
+- Registrar o resumo do parecer no Word.</p>
+<p>As ações ocorrem em loop.</p>
+<h4 id="25-subfluxo-cria_processo_sei">2.5. <strong>"Subfluxo 'cria_processo_sei'":</strong><a class="headerlink" href="#25-subfluxo-cria_processo_sei" title="Permanent link">⚓︎</a></h4>
+<p>Esse subfluxo é executado para criar um novo processo SEI onde será adiconada a autorização com os resumos dos pareceres. É necessário criar as variáveis 'especificacao', 'hipotese_restricao_autorizacao' e 'tipo_do_processo_criar'.</p>
+<h4 id="26-subfluxo-autorizacao">2.6. <strong>"Subfluxo 'autorizacao'":</strong><a class="headerlink" href="#26-subfluxo-autorizacao" title="Permanent link">⚓︎</a></h4>
+<p>Esse subfluxo é executado para criar um novo documento chamado 'Autorização' no processo SEI e preenchê-lo com as informações do Word. </p>
 <h2 id="3-utilizacao-do-robo">3. Utilização do robô<a class="headerlink" href="#3-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se a planilha está com o nome e caminho correto;</li>
@@ -1637,7 +1673,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 7, 2025 20:32:28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 7, 2025 20:44:33</span>
   </span>
 
     
