@@ -64,6 +64,9 @@ Ao final, o robô terá lido todos os processos constantes na planilha e gravado
  
 ## 5. Códigos
  
-1. [Main]()
-2. Subfluxo ['login_sei']()
-3. Subfluxo ['troca_unidade']()
+1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-main.txt)
+2. Subfluxo ['login_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-loginsei.txt)
+3. Subfluxo ['troca_unidade'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-trocaunidade.txt)
+4. Subfluxo ['registro SEI Word'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-seiword.txt)
+5. Subfluxo ['cria processo'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-criaprocessosei.txt)
+6. Subfluxo ['autorizacao'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-autorizacao.txt)
