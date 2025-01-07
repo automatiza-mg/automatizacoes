@@ -29,24 +29,38 @@ Este fluxo, ramo principal do robô, contempla as ações principais:
 - Iniciar o Excel no documento esepcífico; 
 - Ler a planilha do Excel 
 - Executar o subfluxo ‘login_sei’; 
-- Executar o subfluxo ‘troca_unidade’; 
+- Executar o subfluxo ‘troca_unidade’;
+- Executar o subfluxo ‘registro_sei_word’;
+- Executar o subfluxo ‘cria_processo_sei’;
+- Executar o subfluxo ‘autorizacao’; 
+
+ 
+#### 2.2 **"Subfluxo 'login_sei'":**
+ 
+Esse subfluxo é executado para abrir o google chrome na página do SEI e realizar o login. É necessário criar as variáveis 'login_sei', 'orgao_sei' e 'senha_sei'.
+ 
+ 
+#### 2.3. **"Subfluxo 'troca_unidade'":**
+Esse subfluxo é executado para abrir trocar a unidade do SEI para a correta. É necessário criar a variável 'unidade_protocolo'.
+
+
+#### 2.4. **"Subfluxo 'registro_sei_word'":**
+Esse subfluxo é executado para:
 - Navegar até a página do processo iterado;
 - Selecionar o documento 'Parecer';
 - Ler a página da Web;
 - Realizar os tratamentos no texto lido e registrar as variáveis;
 - Registrar o resumo do parecer no Word.
  
-As cinco últimas ações ocorrem em loop.
+As ações ocorrem em loop.
 
- 
-#### 2.2 **"Subfluxo 'login_sei'":**
- 
-Esse subfluxo é executado para abrir o google chrome na página do SEI e realizar o login.
- 
- 
-#### 2.3. **"Subfluxo 'troca_unidade'":**
-Esse subfluxo é executado para abrir trocar a unidade do SEI para a correta.
- 
+
+#### 2.5. **"Subfluxo 'cria_processo_sei'":**
+Esse subfluxo é executado para criar um novo processo SEI onde será adiconada a autorização com os resumos dos pareceres. É necessário criar as variáveis 'especificacao', 'hipotese_restricao_autorizacao' e 'tipo_do_processo_criar'.
+
+
+#### 2.6. **"Subfluxo 'autorizacao'":**
+Esse subfluxo é executado para criar um novo documento chamado 'Autorização' no processo SEI e preenchê-lo com as informações do Word. 
  
 ## 3. Utilização do robô
  
