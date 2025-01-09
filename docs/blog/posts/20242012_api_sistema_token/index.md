@@ -62,7 +62,5 @@ Assim, com essas informações em mão, é possível criar as variáveis no flux
 
 Para mais informações, [consulte a documentação da API](https://github.com/automatiza-mg/handbook/blob/main/docs/assets/SEI-WebServices-v40.3._240130_172029%201.pdf).
 
-Caso prefira, as instruções estão detalhadas no vídeo abaixo:
 
-![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
 
