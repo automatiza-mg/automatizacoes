@@ -8,7 +8,6 @@ tags:
 
 # Baixa processos e documentos SEI
 
-![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
 
 ## Informações gerais
 
