@@ -22,7 +22,7 @@
     
     
       
-        <title>Incluir Faltas – Rotina Faltas Consolidadas - Automatiza.MG</title>
+        <title>Incluir Faltas – Rotina Histórico - Automatiza.MG</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#incluir-faltas-rotina-faltas-consolidadas" class="md-skip">
+        <a href="#incluir-faltas-rotina-historico" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -163,7 +163,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Incluir Faltas – Rotina Faltas Consolidadas
+              Incluir Faltas – Rotina Histórico
             
           </span>
         </div>
@@ -1534,7 +1534,7 @@
   
 
 
-<div><h1 id="incluir-faltas-rotina-faltas-consolidadas">Incluir Faltas – Rotina Faltas Consolidadas<a class="headerlink" href="#incluir-faltas-rotina-faltas-consolidadas" title="Permanent link">⚓︎</a></h1>
+<div><h1 id="incluir-faltas-rotina-historico">Incluir Faltas – Rotina Histórico<a class="headerlink" href="#incluir-faltas-rotina-historico" title="Permanent link">⚓︎</a></h1>
 <h2 id="informacoes-gerais">Informações gerais<a class="headerlink" href="#informacoes-gerais" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
@@ -1561,98 +1561,39 @@
 <!-- | **Versão Power Automate**    | 2.39.00239.23332 | -->
 
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Robô realiza a inclusão de Faltas para a taxação vigente através da utilização da rotina Faltas Consolidada Pagamento, opção 01 - Incluir Faltas Consolidadas.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Robô destinado a inclusão de Faltas relativas a meses anteriores através da utilização da rotina Histórico Servidor, opção 21 - Faltas, opção 01 - Incluir Histórico Faltas Consolidadas e lançamento da verba 7506 com o valor da falta a ser descontada, através da rotina Manutenção Dados Financeiros, opção 01 - Lançamento Cargo Código de Recebimento</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Economiza tempo e evita erros.</li>
 </ul>
 <details class="note">
 <summary><strong>Clique para ver o fluxo do robô</strong></summary>
-<div class="mermaid">---
-comments: true
-hide:
-  - navigation
-tags:
-  - RH
-   - SISAP
----
+<div class="mermaid">graph TD
+    subgraph Início
+        A(Início) --&gt; B{Obtém hora inicial}
+    end
 
-# Incluir Faltas – Rotina Faltas Consolidadas
+    B --&gt; C{Executa terminal Prodemge}
+    C --&gt; D{Acesso ao Sisap}
+    D --&gt; E{Preenche usuário/senha}
+    E --&gt; F{Acesso à rotina Faltas}
+    F --&gt; G{Acesso à opção 1}
+    G --&gt; H{Abre planilha}
 
+    subgraph Loop
+        H --&gt; I{Primeiro dado}
+        I --&gt; J{Processa dado}
+        J --&gt; K{Próximo dado}
+        K --&gt; I
+    end
 
-## Informações gerais
-
-| **Desenvolvedor**| Erik Tadeu de Morais  |
-| ----------- | ------------------------------------ |
-| **E-mail**       | erik.morais@planejamento.mg,gov.br|
-| **Ferramenta**    | Power Automate Desktop |
-| **Versão Excel**    | 2016 ou superior |
-&lt;!-- | **Versão Power Automate**    | 2.39.00239.23332 | --&gt;
-
-- [x] Robô realiza a inclusão de Faltas para a taxação vigente através da utilização da rotina Faltas Consolidada Pagamento, opção 01 - Incluir Faltas Consolidadas.
-- [x] Economiza tempo e evita erros.
-
-??? note "**Clique para ver o fluxo do robô**"
-
-    ```mermaid
-    ```
-
-## Pré-requisitos
-
-&lt;div class="grid" markdown&gt;
-
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
-{ .card }
-
-:octicons-key-16: __Acesso ao SiSAP__ com perfil para taxação de faltas.
-{ .card }
-
-&lt;/div&gt;
-
-## Montando o seu robô
-
-&lt;div class="grid" markdown&gt;
-
-:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô de inclusão de faltas consolidadas__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
-{ .card }
-
-:fontawesome-solid-2: :material-application-variable:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
-{ #download-button .card path="assets/falta_rotina_historico.csv" fileName="assets/falta_rotina_historico.xlsx" }
-
-:fontawesome-solid-3: :material-application-variable: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,`HORAS A DESCONTAR`,`CÓDIGO DA VERBA DE FALTAS`,`VALOR DO DESCONTO`,`INSERIR OCORRÊNCIA (S/N)`,`DESCRITOR DA OCORRÊNCIA`.
-{ .card }
-
-:fontawesome-solid-4: :material-application-variable: __Crie as variáveis de entrada__ `usuario` e `senha`, com as informações do seu usuário e senha de acesso ao SISAP.
-{ .card }
-
-&lt;/div&gt;
-
-## Observações 
-
-__Instruções de preenchimento da planilha.__
-
-- Para servidores que possuem masp de 6 digitos, sem contar o DV, deverá ser inserido o número "0" antes do masp. Exemplo: 0111222. Se for o caso, formatar os dados da coluna "B - MASP" da seguinte maneira: Formatar Células&gt;Número&gt;Personalizado&gt;Tipo&gt;0######## 
-- As colunas "C - DV" e "D - ADMISSÃO" deverão conter apenas o número, sem zero a esquerda. 
-- A coluna "E - MÊS/ANO APURAÇÃO" deverá ser preencida no formato 00/0000. Repetir os dados em outra linha se existir mais de um mês/ano apuração de falta para o mesmo servidor. 
-- A coluna "G - QUANTIDADE DE FALTAS" deverá ser preenchida no formato de dois digitos. Exemplo: 01, 09, 10. Se for o caso, formatar os dados da coluna "G - QUANTIDADE DE FALTAS" da seguinte maneira: Formatar Células&gt;Número&gt;Personalizado&gt;Tipo&gt;0##.  
-- A coluna "H - HORAS A DESCONTAR" deverá ser preenchida com a quantidade de horas a descontar. Caso não tenha a quantidade de horas a descontar, sempre preenchê-la com o número "0" (zero). As colunas "I" e "N" não devem ser preenchida. 
-- A coluna "J - CÓDIGO DA VERBA DE FALTAS" deverá ser preenchida com o código da verba de desconto da falta, que geralmente é o código 7506 - FALTAS ATRASO.  
-- A coluna  "K - VALOR DO DESCONTO" deverá ser peenchida com o valor a ser descontado do servidor, após apurado/calculado pelo DRH. 
-- A coluna "L - INSERIR OCORRÊNCIA (S/N)" deverá ser preenchida somente com "S" - SIM" ou "N" - NÃO" e serve para inserir ou não as ocorrências após a confirmação da inclusão do desconto de faltas nos dados financeiros. 
-- A coluna "M - DESCRITOR DA OCORRÊNCIA" deve ser preenchida somente no caso de se optar por inserir a ocorrência (S - SIM) na coluna "L", e deverá conter a descrição do ocorrido. Caso exista ocorrencia cadastrada para o servidor, ela não será inserida, e as observações serão gravadas na coluna"O". Para servidores que possuirem mais de um mês/ano apuração de falta, inserir a ocorrência e seu descritor apenas no primeiro registro de falta. O campo de "ocorrências" do Sisap costuma não aceitar certo tipos de caracteres, como por exemplo: ^, /, Ç, ~, além de alguns caracteres especiais, quando eles vem exportados da planilha. Deste modo, ao preencher a coluna M, desconsiderar esses tipos de caracteres, e utilizar somente o texto. Por exemplo: "desconto de faltas relativo ao mes 00-0000". Seguem exemplos de preenchimentos nas primeiras linhas, que poderão ser apagados para inclusão dos dados. 
-
-
-!!! question "Caso precise de ajuda"
-
-    Algum erro está ocorrendo em uma das fases de criação de seu robô?
-    Não tem problema. Acesse [aqui](../../blog/posts/20240118_checklist_ajuda_robos/index.md) uma lista com causas de erros ou paradas do robô.
-
-    Também temos o espaço abaixo para perguntas e respostas.
-    Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando?
-
-    Caso prefira, manda um e-mail para [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
-
-    Ótimo trabalho!
-
-[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.   </div>
+    K --&gt; L{Retorna ao menu inicial}
+    L --&gt; M{Salva planilha}
+    M --&gt; N{Fecha planilha}
+    N --&gt; O{Logoff Sisap}
+    O --&gt; P{Obtém hora final}
+    P --&gt; Q{Calcula tempo}
+    Q --&gt; R{Exibe tempo}
+    R --&gt; S{Fecha terminal}
+    S --&gt; T{Abre planilha para conferência}</div>
 </details>
 <h2 id="pre-requisitos">Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Permanent link">⚓︎</a></h2>
 <div class="grid">
@@ -1661,23 +1602,23 @@ __Instruções de preenchimento da planilha.__
 </div>
 <h2 id="montando-o-seu-robo">Montando o seu robô<a class="headerlink" href="#montando-o-seu-robo" title="Permanent link">⚓︎</a></h2>
 <div class="grid">
-<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.8 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h192c17.7 0 32-14.3 32-32s-14.3-32-32-32h-64V64z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg></span> <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt" target="_blank"><strong>Copie o código do robô de inclusão de faltas consolidadas</strong></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> e cole em um novo fluxo do Power Automate.</p>
-<p class="card" filename="assets/falta_rotina_historico.xlsx" id="download-button" path="assets/falta_rotina_historico.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M142.9 96c-21.5 0-42.2 8.5-57.4 23.8l-30.9 30.8c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l30.9-30.8C67.5 47.3 104.4 32 142.9 32 223 32 288 97 288 177.1c0 38.5-15.3 75.4-42.5 102.6L109.3 416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l190.9-190.8c15.2-15.2 23.8-35.9 23.8-57.4 0-44.8-36.3-81.1-81.1-81.1z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"></path></svg></span><a href="javascript:void(0);"> <strong>Clique aqui para baixar a planilha modelo</strong></a>.</p>
-<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32h240c13.2 0 25 8.1 29.8 20.4s1.5 26.3-8.2 35.2L162.3 208H184c75.1 0 136 60.9 136 136s-60.9 136-136 136h-78.6C63 480 24.2 456 5.3 418.1l-1.9-3.8c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l1.9 3.8c8.1 16.3 24.8 26.5 42.9 26.5H184c39.8 0 72-32.2 72-72s-32.2-72-72-72H80c-13.2 0-25-8.1-29.8-20.4s-1.5-26.3 8.2-35.2L189.7 96H32C14.3 96 0 81.7 0 64z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"></path></svg></span> <strong>Complete as colunas da planilha modelo</strong> com as informações de faltas a serem incluídas no Sisap: <code>NOME</code>,<code>MASP</code>,<code>DV</code>,<code>ADMISSÃO</code>,<code>MÊS/ANO APURAÇÃO</code>,<code>TIPO DE FALTA</code>,<code>QUANTIDADE DE FALTAS</code>,<code>HORAS A DESCONTAR</code>,<code>CÓDIGO DA VERBA DE FALTAS</code>,<code>VALOR DO DESCONTO</code>,<code>INSERIR OCORRÊNCIA (S/N)</code>,<code>DESCRITOR DA OCORRÊNCIA</code>.</p>
+<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.8 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h192c17.7 0 32-14.3 32-32s-14.3-32-32-32h-64V64z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg></span> <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt" target="_blank"><strong>Copie o código do robô de inclusão de faltas na rotina histórico</strong></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> e cole em um novo fluxo do Power Automate.</p>
+<p class="card" filename="assets/falta_rotina_consolidada.xlsx" id="download-button" path="assets/falta_rotina_consolidada.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M142.9 96c-21.5 0-42.2 8.5-57.4 23.8l-30.9 30.8c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l30.9-30.8C67.5 47.3 104.4 32 142.9 32 223 32 288 97 288 177.1c0 38.5-15.3 75.4-42.5 102.6L109.3 416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l190.9-190.8c15.2-15.2 23.8-35.9 23.8-57.4 0-44.8-36.3-81.1-81.1-81.1z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"></path></svg></span><a href="javascript:void(0);"> <strong>Clique aqui para baixar a planilha modelo</strong></a>.</p>
+<p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32h240c13.2 0 25 8.1 29.8 20.4s1.5 26.3-8.2 35.2L162.3 208H184c75.1 0 136 60.9 136 136s-60.9 136-136 136h-78.6C63 480 24.2 456 5.3 418.1l-1.9-3.8c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l1.9 3.8c8.1 16.3 24.8 26.5 42.9 26.5H184c39.8 0 72-32.2 72-72s-32.2-72-72-72H80c-13.2 0-25-8.1-29.8-20.4s-1.5-26.3 8.2-35.2L189.7 96H32C14.3 96 0 81.7 0 64z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"></path></svg></span> <strong>Complete as colunas da planilha modelo</strong> com as informações de faltas a serem incluídas no Sisap: <code>NOME</code>,<code>MASP</code>,<code>DV</code>,<code>ADMISSÃO</code>,<code>MÊS/ANO APURAÇÃO</code>,<code>TIPO DE FALTA</code>,<code>QUANTIDADE DE FALTAS</code>,  <code>NATUREZA DA FALTA</code>,<code>HORAS A DESCONTAR</code>,<code>NATUREZA DA FALTA/HORAS</code>.</p>
 <p class="card"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M189 77.6c7.5-16 .7-35.1-15.3-42.6s-35.1-.7-42.6 15.3L3 322.4c-4.7 9.9-3.9 21.5 1.9 30.8S21 368 32 368h224v80c0 17.7 14.3 32 32 32s32-14.3 32-32v-80h32c17.7 0 32-14.3 32-32s-14.3-32-32-32h-32V160c0-17.7-14.3-32-32-32s-32 14.3-32 32v144H82.4L189 77.6z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"></path></svg></span> <strong>Crie as variáveis de entrada</strong> <code>usuario</code> e <code>senha</code>, com as informações do seu usuário e senha de acesso ao SISAP.</p>
 </div>
 <h2 id="observacoes">Observações<a class="headerlink" href="#observacoes" title="Permanent link">⚓︎</a></h2>
 <p><strong>Instruções de preenchimento da planilha.</strong></p>
 <ul>
-<li>Para servidores que possuem masp de 6 digitos, sem contar o DV, deverá ser inserido o número "0" antes do masp. Exemplo: 0111222. Se for o caso, formatar os dados da coluna "B - MASP" da seguinte maneira: Formatar Células&gt;Número&gt;Personalizado&gt;Tipo&gt;0######## </li>
+<li>Para servidores que possuem masp de 6 digitos, sem contar o DV, deverá ser inserido o número "0" antes do masp. Exemplo: 0111222. Se for o caso, formatar os dados da coluna "B - MASP" da seguinte maneira: Formatar Células&gt;Número&gt;Personalizado&gt;Tipo&gt;0########   </li>
 <li>As colunas "C - DV" e "D - ADMISSÃO" deverão conter apenas o número, sem zero a esquerda. </li>
-<li>A coluna "E - MÊS/ANO APURAÇÃO" deverá ser preencida no formato 00/0000. Repetir os dados em outra linha se existir mais de um mês/ano apuração de falta para o mesmo servidor. </li>
-<li>A coluna "G - QUANTIDADE DE FALTAS" deverá ser preenchida no formato de dois digitos. Exemplo: 01, 09, 10. Se for o caso, formatar os dados da coluna "G - QUANTIDADE DE FALTAS" da seguinte maneira: Formatar Células&gt;Número&gt;Personalizado&gt;Tipo&gt;0##.  </li>
-<li>A coluna "H - HORAS A DESCONTAR" deverá ser preenchida com a quantidade de horas a descontar. Caso não tenha a quantidade de horas a descontar, sempre preenchê-la com o número "0" (zero). As colunas "I" e "N" não devem ser preenchida. </li>
-<li>A coluna "J - CÓDIGO DA VERBA DE FALTAS" deverá ser preenchida com o código da verba de desconto da falta, que geralmente é o código 7506 - FALTAS ATRASO.  </li>
-<li>A coluna  "K - VALOR DO DESCONTO" deverá ser peenchida com o valor a ser descontado do servidor, após apurado/calculado pelo DRH. </li>
-<li>A coluna "L - INSERIR OCORRÊNCIA (S/N)" deverá ser preenchida somente com "S" - SIM" ou "N" - NÃO" e serve para inserir ou não as ocorrências após a confirmação da inclusão do desconto de faltas nos dados financeiros. </li>
-<li>A coluna "M - DESCRITOR DA OCORRÊNCIA" deve ser preenchida somente no caso de se optar por inserir a ocorrência (S - SIM) na coluna "L", e deverá conter a descrição do ocorrido. Caso exista ocorrencia cadastrada para o servidor, ela não será inserida, e as observações serão gravadas na coluna"O". Para servidores que possuirem mais de um mês/ano apuração de falta, inserir a ocorrência e seu descritor apenas no primeiro registro de falta. O campo de "ocorrências" do Sisap costuma não aceitar certo tipos de caracteres, como por exemplo: ^, /, Ç, ~, além de alguns caracteres especiais, quando eles vem exportados da planilha. Deste modo, ao preencher a coluna M, desconsiderar esses tipos de caracteres, e utilizar somente o texto. Por exemplo: "desconto de faltas relativo ao mes 00-0000". Seguem exemplos de preenchimentos nas primeiras linhas, que poderão ser apagados para inclusão dos dados. </li>
+<li>A coluna "E - MÊS/ANO APURAÇÃO" deverá ser preencida no formato 00/0000. </li>
+<li>A coluna "F - TIPO DE FALTA" deverá ser preenchido no formato 00. Exemplo: inlcusão da falta tipo 1 - exercicio: inserir na respectiva coluna "01". </li>
+<li>A coluna "G - QUANTIDADE DE FALTAS" deverá ser preenchida no formato "00". Observação: Se o lançamento for relativo apenas a quantidade de horas a descontar, sempre preencher a coluna "G" com a quantidade de faltas "00". </li>
+<li>A coluna "H - NATUREZA DA FALTA" é relativa a natureza da falta. Deverá ser prenchida no formato "000". Exemplo: 501 para faltas/dias administrativo; 502 para faltas/aulas obrigatórias, etc. Observação: Se o lançamento for relativo apenas a quantidade de horas a descontar, sempre preencher a coluna "H" com o número "000" (três zeros). </li>
+<li>A coluna "I - HORAS A DESCONTAR" deverá ser preenchida com a quantidade de horas a descontar. Caso não tenha a quantidade de horas a descontar, sempre preenchê-la com o número "0" (zero).                                                   </li>
+<li>A coluna "J - NATUREZA DA FALTA/HORAS" é relativa a natureza das faltas/horas. Deverá ser preenchida no formato "000". Exemplo: 511 para horas descontadas/administrativo; 512 para horas/greve. Caso não exista falta em horas para descontar, prencher a coluna  "J - NATUREZA DA FALTA/HORAS" sempre com o número "0" (zero). </li>
+<li>A coluna "K" não deve ser preenchida.</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">Caso precise de ajuda</p>
@@ -1718,7 +1659,7 @@ Dá uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo p
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 9, 2025 14:41:05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 9, 2025 15:10:37</span>
   </span>
 
     
