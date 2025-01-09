@@ -45,7 +45,7 @@ tags:
 
 <div class="grid" markdown>
 
-:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô de inclusão de faltas consolidadas__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/falta_rotina_normal.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
+:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô de inclusão de faltas consolidadas__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_normal/falta_rotina_normal.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
 { .card }
 
 :fontawesome-solid-2: :material-application-variable:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
