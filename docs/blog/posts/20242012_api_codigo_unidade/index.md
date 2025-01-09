@@ -19,7 +19,8 @@ Para utilização do robô de baixar processos e documentos no SEI, presente na 
 ## Passo 1: Navegação no SEI
 O primeiro passo para encontrar o código da unidade SEI é entrar no sistema e clicar no botão de troca de unidade:
 
-![pag_inicial_sei](https://github.com/user-attachments/assets/4d80cc92-b328-4eaf-8476-937f5150fc79)
+![pag_inicial_sei](https://github.com/user-attachments/assets/c06ba75e-bb4a-4bef-99fe-4458d35b1ec7)
+
 
 Depois, já com a página da troca de unidade aberta, clique com o botão direito em qualquer lugar na tela e selecione a opção "Inspecionar":
 
@@ -49,7 +50,7 @@ Com isso, você já está próximo de descobrir o ID da unidade SEI. No lado dir
 
 Assim, após o clique, o ID irá aparecer nas linhas de código:
 
-![id_visivel](https://github.com/user-attachments/assets/62032b15-24ac-4319-be73-f1d48b4045f4)
+![id_visivel](https://github.com/user-attachments/assets/19a2c007-509d-4e9d-975e-91f7ea60d00c)
 
 
 Agora basta você copiá-lo para utilizar no seu fluxo que utiliza a API do SEI.
