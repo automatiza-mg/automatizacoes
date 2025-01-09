@@ -1,6 +1,6 @@
 ---
 date: 2024-12-20
-draft: true
+draft: false
 authors: [henriquesiqr]
 comments: true
 categories:
