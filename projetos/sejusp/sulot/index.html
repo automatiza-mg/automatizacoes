@@ -1536,12 +1536,12 @@
 
 
 <div><h1 id="automacao-de-leitura-de-fatura-de-energia-eletrica">Automação de leitura de fatura de energia elétrica<a class="headerlink" href="#automacao-de-leitura-de-fatura-de-energia-eletrica" title="Permanent link">⚓︎</a></h1>
-<p>O desafio em questão consiste em automatizar a leitura, a extração de informações e gerar uma base de dados de mais de 200 faturas de energia elétrica de baixa tensão que a SEJUSP recebe mensalmente.</p>
+<p>O desafio em questão consiste em automatizar a leitura, a extração de informações e gerar uma base de dados de mais de 200 faturas de energia elétrica de baixa tensão que a Sejusp recebe mensalmente.</p>
 <!-- more -->
 <h2 id="1-sobre-o-projeto">1. Sobre o projeto<a class="headerlink" href="#1-sobre-o-projeto" title="Permanent link">⚓︎</a></h2>
 <p>A Sejusp conta com uma ampla rede de unidades administrativas espalhadas pelo território de Minas Gerais. Dentre os serviços contratados para operação destas unidades, está o fornecimento de energia elétrica (baixa tensão). Atualmente, 04 concessiónárias fornecem esse serviço, resultando no envio de cobranças mensais (fatura).</p>
-<p>A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (Sulot/Sejups), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.</p>
-<p>Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Automação Robótica de Processos - RPA<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Power Automate web com o superte de Inteligência Artificial. </p>
+<p>A gestão dessa faturas é centralizada na Diretoria de Serviços Gerais (DSG), que coleta as informações de cada uma das faturas para sua gestão financeira, o que envolve os processos empenho, liquidação e pagamento destas. Considerando o volume de faturas mensais, este trabalho demanda bastante tempo e esforço da equipe responsável.</p>
+<p>Diante dessa situação, criamos um fluxo automatizado utilizando a ferramenta de Automação Robótica de Processos - RPA<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, <em>Power Automate Web</em> com o superte de Inteligência Artificial. </p>
 <h2 id="2-o-que-o-robo-faz">2. O que o robô faz<a class="headerlink" href="#2-o-que-o-robo-faz" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Realiza leitura da fatura de energia, identificando as informações que desejamos coletar;</li>
@@ -1550,7 +1550,7 @@
 <li>Calcula o <em>score</em> que indica o nível de acuracidade (0-100) na leitura da fatura.</li>
 </ul>
 <h2 id="3-como-funciona-o-robo">3. Como funciona o robô<a class="headerlink" href="#3-como-funciona-o-robo" title="Permanent link">⚓︎</a></h2>
-<p>Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de novas faturas na pasta do sharepoint designada para tal.</p>
+<p>Por se tratar de um fluxo online, o robô já está programado para rodar automaticamente, sendo o gatilho para esta ação a inclusão de novas faturas na pasta do <em>Sharepoint</em> designada para tal.</p>
 <p>Veja o fluxo do robô:</p>
 <div class="mermaid">flowchart TD
     A[Início] --&gt; B[Incluir faturas na pasta do SharePoint]
@@ -1568,8 +1568,8 @@
 </ul>
 <h2 id="5-utilizacao-do-robo">5. Utilização do robô<a class="headerlink" href="#5-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Neste projeto, o treinamento da IA, bem como fluxo do Power Automate web, foi feito diretamente na conta do servidor responsável por esse processo na DSG.</li>
-<li>Para usar o robô, mensalmente, devem ser inseridas faturas na pasta do Sharepoint designada para tal. Cada fatura resultará em uma nova linha na planilha de controle. </li>
+<li>Neste projeto, o treinamento da IA, bem como fluxo do <em>Power Automate Web</em>, foi feito diretamente na conta do servidor responsável por esse processo na DSG.</li>
+<li>Para usar o robô, mensalmente, devem ser inseridas faturas na pasta do <em>Sharepoint</em> designada para tal. Cada fatura resultará em uma nova linha na planilha de controle. </li>
 <li>É necessário conferir o <em>score</em> informado para cada campo. Se o <em>score</em> for baixo (&lt;98%), é recomendada a conferência manual da informação.</li>
 </ul>
 <h2 id="6-resultados">6. Resultados<a class="headerlink" href="#6-resultados" title="Permanent link">⚓︎</a></h2>
@@ -1614,7 +1614,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 13, 2024 19:19:53</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 16, 2025 15:04:27</span>
   </span>
 
     
