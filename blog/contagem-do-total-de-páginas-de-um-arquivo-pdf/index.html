@@ -1472,16 +1472,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alternativas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alternativas
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Alternativas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#solucao-low-code" class="md-nav__link">
     <span class="md-ellipsis">
       Solução Low Code
@@ -1489,9 +1479,22 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#solucao-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solução Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saiba-mais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saiba Mais
+    </span>
+  </a>
   
 </li>
       
@@ -1621,8 +1624,7 @@
 <p>Na montagem de um robô em específico, nos deparamos com o desafio de contar o total de páginas de um arquivo específico em PDF, a fim de configurar o robô para dividir este arquivo em outros PDFs, contendo no máximo 10 (dez) páginas cada.  Este post contém duas alternativas para resolução do problema, sendo uma Low Code e outra com a utilização do Python.  </p>
 <!-- more -->
 
-<h2 id="alternativas">Alternativas<a class="headerlink" href="#alternativas" title="Permanent link">⚓︎</a></h2>
-<h3 id="solucao-low-code"><strong>Solução Low Code</strong><a class="headerlink" href="#solucao-low-code" title="Permanent link">⚓︎</a></h3>
+<h2 id="solucao-low-code">Solução Low Code<a class="headerlink" href="#solucao-low-code" title="Permanent link">⚓︎</a></h2>
 <p>Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de codificação manual, a qual chamamos de solução <em><strong>Low Code</strong></em> (conforme já explicado <a href="../descomplicado-ferramenta-_no-code_-e-_low-code_/">nesse post</a>), realizando os seguintes passos:</p>
 <p><strong>I.</strong> Criar uma variável de entrada com nome <code>caminho_pdf</code> e valor padrão contendo o caminho do PDF que será editado:</p>
 <p><img alt="imagem" src="https://github.com/user-attachments/assets/99fa3bd4-a545-40a3-8fa1-dbd52892dae7"></p>
@@ -1650,9 +1652,9 @@
 <p><strong>VI.</strong> Dentro do <code>Loop</code> criado, serão incluídas as ações de <code>If</code> e <code>Else</code> e um <code>Rótulo</code> ao final dele: </p>
 <p><img alt="imagem (5)" src="https://github.com/user-attachments/assets/d33fb07f-e79d-46a0-9a08-ac2913f0ce11"></p>
 <p>Clicando <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/paginas-pdf.txt">aqui</a> você acessará o código completo do robô apresentado<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
-<h1 id="solucao-python">Solução Python<a class="headerlink" href="#solucao-python" title="Permanent link">⚓︎</a></h1>
+<h2 id="solucao-python">Solução Python<a class="headerlink" href="#solucao-python" title="Permanent link">⚓︎</a></h2>
 <p>Nesta alternativa, utilizaremos a linguagem Python e a biblioteca <code>PyPDF2</code> para manipulação de arquivos PDF.  </p>
-<h3 id="i-definicoes-de-variaveis">I. Definições de Variáveis<a class="headerlink" href="#i-definicoes-de-variaveis" title="Permanent link">⚓︎</a></h3>
+<p><strong>I. Definições de Variáveis</strong></p>
 <p>Antes de executar o código, ajuste as variáveis conforme a estrutura de diretórios em sua máquina. Segue a descrição:</p>
 <ul>
 <li><strong><code>CaminhoDoArquivo</code></strong>:</li>
@@ -1681,7 +1683,7 @@
 <li>Observação: Certifique-se de que o Python foi instalado corretamente seguindo <a href="#">esta orientação</a>. Substitua pelo caminho real de instalação.</li>
 <li>Exemplo: <code>C:\Python\versao\python.exe</code></li>
 </ul>
-<h3 id="configuracao-e-utilizacao">Configuração e Utilização<a class="headerlink" href="#configuracao-e-utilizacao" title="Permanent link">⚓︎</a></h3>
+<p><strong>II. Configuração e Utilização</strong></p>
 <ol>
 <li><strong>Prepare o Ambiente</strong>:</li>
 <li>Certifique-se de que o Python está instalado e configurado em sua máquina.</li>
@@ -1747,7 +1749,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 20, 2025 12:58:30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 20, 2025 14:38:39</span>
   </span>
 
     
