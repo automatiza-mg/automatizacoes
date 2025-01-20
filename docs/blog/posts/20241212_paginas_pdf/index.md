@@ -14,9 +14,8 @@ Na montagem de um robô em específico, nos deparamos com o desafio de contar o 
 
 <!-- more -->   
 
-## Alternativas
 
-### **Solução Low Code**
+## Solução Low Code
 Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de codificação manual, a qual chamamos de solução _**Low Code**_ (conforme já explicado [nesse post](../20231226_descomplicado/index.md)), realizando os seguintes passos:
 
 **I.** Criar uma variável de entrada com nome `caminho_pdf` e valor padrão contendo o caminho do PDF que será editado:
@@ -73,11 +72,11 @@ Nesta alternativa, temos o caminho para solucionar o problema com um mínimo de 
 Clicando [aqui](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/paginas-pdf.txt) você acessará o código completo do robô apresentado[^1].
 
 
-# Solução Python
+## Solução Python
 
 Nesta alternativa, utilizaremos a linguagem Python e a biblioteca `PyPDF2` para manipulação de arquivos PDF.  
 
-### I. Definições de Variáveis
+**I. Definições de Variáveis**
 
 Antes de executar o código, ajuste as variáveis conforme a estrutura de diretórios em sua máquina. Segue a descrição:
 
@@ -98,7 +97,7 @@ Antes de executar o código, ajuste as variáveis conforme a estrutura de diret�
   - Observação: Certifique-se de que o Python foi instalado corretamente seguindo [esta orientação](#). Substitua pelo caminho real de instalação.
   - Exemplo: `C:\Python\versao\python.exe`
 
-### Configuração e Utilização
+**II. Configuração e Utilização**
 
 1. **Prepare o Ambiente**:
    - Certifique-se de que o Python está instalado e configurado em sua máquina.
