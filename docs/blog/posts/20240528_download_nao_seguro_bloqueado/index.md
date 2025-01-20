@@ -3,7 +3,8 @@ date: 2024-05-28
 authors: [Isabelle-Fernandes]
 comments: true
 categories:
-  - Tira dúvidas
+  - Ferramentas
+  - Power Automate
 ---
 
 # Fazer download bloqueado de documento em sites classificados como não seguros
