@@ -1,6 +1,7 @@
-# Robô de emissão das chaves: 
-  - resultado: email enviado com o arquivo PDF da chave em anexo
-  - entradas/dependências: utiliza a planilha-controle atualizada pelo robô de geração de chaves e a conta do Gmail da SGP
+# Robô de envio das chaves por email: 
+ 
+ - **Resultado**: email enviado com o arquivo PDF da chave em anexo
+ - **Entradas/dependências**: utiliza a planilha-controle atualizada pelo robô de geração de chaves e a conta do Gmail da SGP
 
 ## 1. Premissas
 **Robô de conferências concluído** 

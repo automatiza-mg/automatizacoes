@@ -1,6 +1,7 @@
-# Robô de Conferências prévias à emissão das chaves: 
-  - resultado: planilha escrita com colunas dos critérios de elegibilidade e filtros a serem aplicados
-  - entradas/dependências: utiliza por base uma cópia da planilha com o formulário de respostas do gmail da SGP, duas planilhas de relações de processos judiciais, relação nominal de guias pagas pela SEE à CEF e relação de nome, MASP, CPF, PIS e email do SISAP (via relatório B.O.)
+# Robô de conferências prévias à emissão das chaves: 
+
+ - **Resultado**: planilha escrita com colunas dos critérios de elegibilidade e filtros a serem aplicados
+ - **Entradas/dependências**: utiliza por base uma cópia da planilha com o formulário de respostas do gmail da SGP, duas planilhas de relações de processos judiciais, relação nominal de guias pagas pela SEE à CEF e relação de nome, MASP, CPF, PIS e email do SISAP (via relatório B.O.)
 
 ## 1. Premissas
 **Planilhas-base das conferências salvas em pasta do computador onde o robô for rodar:** 
