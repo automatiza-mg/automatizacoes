@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Robô de envio das chaves por email: 
  
  - **Resultado**: email enviado com o arquivo PDF da chave em anexo
@@ -24,3 +28,5 @@ Este robô realiza as ações seguintes:
 ## 4. Códigos
 
 1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-chave-gmail.txt)
+
+[Voltar para Página inicial deste projeto](index.md)

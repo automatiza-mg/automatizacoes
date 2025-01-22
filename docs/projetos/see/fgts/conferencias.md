@@ -1,4 +1,9 @@
+---
+comments: true
+---
+
 # Robô de conferências prévias à emissão das chaves: 
+
 
  - **Resultado**: planilha escrita com colunas dos critérios de elegibilidade e filtros a serem aplicados
  - **Entradas/dependências**: utiliza por base uma cópia da planilha com o formulário de respostas do gmail da SGP, duas planilhas de relações de processos judiciais, relação nominal de guias pagas pela SEE à CEF e relação de nome, MASP, CPF, PIS e email do SISAP (via relatório B.O.)
@@ -69,3 +74,5 @@ Este robô realiza as ações seguintes, por subfluxo:
 3. Subfluxo ['Conferência Sisap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-conferencia-sisap.txt)
 4. Subfluxo ['Conferência Guias'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-conferencia-guias.txt)
 5. Subfluxo ['Campos Robô'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-conferencia-campos_robo.txt)  
+
+[Voltar para Página inicial deste projeto](index.md)

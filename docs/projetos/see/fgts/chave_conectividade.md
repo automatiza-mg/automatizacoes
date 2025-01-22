@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Robô de emissão das chaves no site Conectividade - FGTS CEF: 
  
  - **Resultado**: arquivos em formato PDF com nome e MASP da pessoa beneficiária, salvos na pasta indicada
@@ -35,3 +39,5 @@ Este robô realiza as ações seguintes, por subfluxo:
 
 1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-chave-conectividade-23-12.txt)
 2. Subfluxo [Login CEF](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/login_CEF.txt) 
+
+[Voltar para Página inicial deste projeto](index.md)

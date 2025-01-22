@@ -9,3 +9,5 @@ Foram desenvolvidas **três automatizações:**
 1. [Conferências prévias à emissão das chaves](conferencias.md); 
 2. [Emissão das cahves no site Conectividade - FGTS CEF](chave_conectividade.md);
 3. [Envio das chaves por email](chave_gmail.md).
+
+## [Voltar para página dos projetos](../..)
