@@ -4,7 +4,7 @@
  - **Entradas/dependências**: extensões e permissões do site (certificado digital, token, Kryptonita)
 
 ## 1. Premissas
-**Robô de conferências concluído** 
+**Eatapa com o Robô de conferências concluída** 
 
 **Requisitos de acesso ao site da CEF atendidos**
 
@@ -26,7 +26,7 @@ Este robô realiza as ações seguintes, por subfluxo:
 
 ## 3. Utilização do robô
 
-- [ ] Conferir se a janela do navegador Google Chrome aberta e deslogada, sem nenhuma outra conta do Gmail aberta simultaneamente 
+- [ ] Conferir se a janela do navegador Google Chrome está aberta e deslogada, sem nenhuma outra conta do Gmail aberta simultaneamente 
 - [ ] Conferir se a extensão Power Automate ativa para o navegador Chrome
 - [ ] Conferir se extensão Kryptonita ativa para o navegador Chrome
 - [ ] Conferir se o certificado digital/token de acesso ao Conectividade da CEF está instalado na máquina

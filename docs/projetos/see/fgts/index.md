@@ -2,7 +2,7 @@
 
 Este projeto envolveu o processo deemissão e envio de documentos contendo chaves para saque do FGTS para professores elegíveis, da Lei Complementar 100, da Secretaria de Estado de Educação. 
 
-O processo ocorre diariamente, e envolve os sistemas / plataformas **Microsoft Excel**, **Site Conectividade - FGTS CEF** e **SISAP**. 
+O processo ocorre diariamente, e envolve **Microsoft Excel**, **Site Conectividade - FGTS CEF** e **Gmail**. 
 
 Foram desenvolvidas **três automatizações:**
 

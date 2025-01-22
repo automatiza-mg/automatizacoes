@@ -5,14 +5,21 @@
 
 ## 1. Premissas
 **Planilhas-base das conferências salvas em pasta do computador onde o robô for rodar:** 
+
 - Formulário respondido do google;
+
 - Processos judiciais - base AGE;
+
 - Processos judiciais (planilha interna atualizada periodicamente); 
+
 - Relatório B.O./SISAP
+
 - Relatório nominal das guias de pagamento
 
 **Procedimentos preparatórios das planilhas**
+
 - Formulário respondido do Google: recortar as linhas desejadas para o período (exemplo: linha 5000 a 6000)
+
 - Atualizar a relação nominal das guias de pagamento (agregar as linhas da planilha da guia paga no último mês e excluir as duplicatas, para constar cada nome/MASP somente uma vez)
 
 ## 2. Como funciona? Passo a passo explicado do Automate
