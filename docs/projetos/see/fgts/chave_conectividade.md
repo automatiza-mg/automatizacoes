@@ -8,7 +8,7 @@ comments: true
  - **Entradas/dependências**: extensões e permissões do site (certificado digital, token, Kryptonita)
 
 ## 1. Premissas
-**Eatapa com o Robô de conferências concluída** 
+**Etapa com o Robô de conferências concluída** 
 
 **Requisitos de acesso ao site da CEF atendidos**
 
