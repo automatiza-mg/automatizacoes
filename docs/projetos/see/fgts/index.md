@@ -10,4 +10,4 @@ Foram desenvolvidas **três automatizações:**
 2. [Emissão das chaves no site Conectividade - FGTS CEF](chave_conectividade.md);
 3. [Envio das chaves por email](chave_gmail.md).
 
-## [Voltar para página dos projetos](../..)
+[Voltar para página dos projetos](../..)
