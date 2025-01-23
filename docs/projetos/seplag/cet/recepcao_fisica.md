@@ -28,7 +28,7 @@ Fluxo inicial no qual é realizado o download dos processos SEI com as defesas a
   1.4. **Subfluxo listagem_processos**:   
   Seleciona uma etiqueta do SEI para filtrar apenas os processos pertinentes. Depois disso, realiza o download de uma planilha com o n° desses processos e cria uma lista dentro do Power Automate.
   1.5. **Subfluxo api_sei**:   
-  O subfluxo utiliza a [API do SEI[(https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados.
+  O subfluxo utiliza a [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados.
   1.6. **Subfluxo mover_arquivo**:   
   Move os arquivos PDF dos processos para uma pasta do Sharepoint, sendo este o gatilho do próximo robô.
 
