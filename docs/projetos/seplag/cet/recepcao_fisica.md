@@ -6,7 +6,7 @@ Desse modo, a CET recebe diversas defesas de autuações via SEI com os document
 
 ## 1. O que a automatização faz 
 - [x] Realiza o download de uma planilha do SEI com os processos a serem trabalhados.
-- [x] Realiza uma chamada na API do SEI para baixar cada um desses processos.
+- [x] Realiza uma chamada na [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar cada um desses processos.
 - [X] Lê, por meio de uma IA, as informações dos documentos de cada processo SEI.
 - [x] Registra na planilha as informações do demandante, do veículo e da infração.
 - [x] Realiza uma chamada na API do Correios para buscar a data de envio dos documentos de cada um dos processos.
@@ -28,7 +28,7 @@ Fluxo inicial no qual é realizado o download dos processos SEI com as defesas a
   1.4. **Subfluxo listagem_processos**:   
   Seleciona uma etiqueta do SEI para filtrar apenas os processos pertinentes. Depois disso, realiza o download de uma planilha com o n° desses processos e cria uma lista dentro do Power Automate.
   1.5. **Subfluxo api_sei**:   
-  O subfluxo utiliza a API do SEI para baixar o PDF dos processos anteriormente listados.
+  O subfluxo utiliza a [API do SEI[(https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados.
   1.6. **Subfluxo mover_arquivo**:   
   Move os arquivos PDF dos processos para uma pasta do Sharepoint, sendo este o gatilho do próximo robô.
 
@@ -39,7 +39,7 @@ Fluxo no Power Automate Web que lê as informações de cada um dos processos e 
    2.2. **Registro na planilha**:
    Com as informações coletadas, o robô insere-as na planilha de controle.
    2.3. **Data de envio no correios**:
-   Por fim, o robô utiliza a API dos Correios, desenvolvida pela Link&Track, para identificar quando aquela correspondência foi enviada, pois essa é uma informação crucial para os prazos do processo.
+   Por fim, o robô utiliza a [API dos Correios](https://automatiza-mg.github.io/automatizacoes/robos/pesquisa_codigo_rastreio_correios/?h=correios), desenvolvida pela Link&Track, para identificar quando aquela correspondência foi enviada, pois essa é uma informação crucial para os prazos do processo.
 3. **SDAK**:
   XX.
 4. **SIAUT**:
@@ -53,9 +53,9 @@ Fluxo no Power Automate Web que lê as informações de cada um dos processos e 
   - :material-application-variable: **`orgao_sei`**: órgão de login no SEI. O valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
   - :material-application-variable: **`senha_sei`**: senha para login no SEI. Recomenda-se incluir variável como confidencial.
   - :material-application-variable: **`unidade_sei`**: sigla da unidade a qual caixa deseja ter acesso. O valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
-  - :material-application-variable: **`api_sei_sistema`**: variável a ser criada junto aos Administradores do SEI. Ver post.
-  - :material-application-variable: **`api_sei_token`**: variável a ser criada junto aos Administradores do SEI. Ver post. 
-  - :material-application-variable: **`api_sei_unidade`**: variável a ser criada a partir de busca no SEI. Ver post.
+  - :material-application-variable: **`api_sei_sistema`**: variável a ser criada junto aos Administradores do SEI. [Ver post](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/).
+  - :material-application-variable: **`api_sei_token`**: variável a ser criada junto aos Administradores do SEI. [Ver post](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/). 
+  - :material-application-variable: **`api_sei_unidade`**: variável a ser criada a partir de busca no SEI. [Ver post](https://automatiza-mg.github.io/automatizacoes/blog/buscando-c%C3%B3digo-da-unidade-no-sei/).
   - :material-application-variable: **`pasta_downloads`**: Define o caminho da pasta na qual os arquivos serão salvos. Por padrão, é a pasta de downloads. Ao fim do robô, todos os arquivos serão movidos e ela ficará vazia.
   - :material-application-variable: **`pasta_onedrive`**: Define o caminho da pasta na qual os arquivos serão recepcionados no OneDrive. É necessário habilitar a conexão do OneDrive na máquina. Ver post. 
   - :material-application-variable: **`login_siaut`**: login para entrar no Siaut. Valor cadastrado para a variável deverá conter numéricos. Favor não incluir pontos (.) ou hífen (-).
@@ -70,19 +70,26 @@ Fluxo no Power Automate Web que lê as informações de cada um dos processos e 
 
 ### 3.3. Configurar parâmetros da API do SEI: 
 
-  - Para criar as variáveis relativas à API do SEI, é necessário seguir o passo a passo destacados nos posts a seguir: 1, 2 e 3.
+  - Para criar as variáveis relativas à API do SEI, é necessário seguir o passo a passo destacados nos posts a seguir: [1](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/) e [2](https://automatiza-mg.github.io/automatizacoes/blog/buscando-c%C3%B3digo-da-unidade-no-sei/).
+
+### 3.4. Habilitar a sincronização do OneDrive na máquina: 
+
+  - Conectar-se ao OneDrive na máquina que o robô será utilizado, seguindo as instruções desse [post]()https://automatiza-mg.github.io/handbook/blog/utilizando-a-aplica%C3%A7%C3%A3o-do-one-drive-para-trabalhar-com-arquivos-do-sharepoint-na-vers%C3%A3o-desktop/
+
 
 ## 4. Resultados da execução do robô
 
 Após a execução do robô, a planilha “Listagem Recepção Física” estará preenchida com as informações referentes aos processos recepcionados e esses processos estarão cadastrados no SIAUT. Na coluna 'Status' é possível verificar os que foram incluídos com sucesso e os que não foram por alguma regra já estabelecida, como aqueles sem 'AIT'. Assim, é possíver dar o prosseguimento de forma manual nesses casos.
 
-## 5. Códigos 
+## 5. Códigos
+1. **Robô de download dos arquivos do SEI**:
 - [x] 1.1 Subfluxo ['main']()
 - [x] 1.2 Subfluxo ['login_sei']()
 - [x] 1.3 Subfluxo ['troca_unidade']()
 - [x] 1.4 Subfluxo ['listagem_processos']()
 - [x] 1.5 Subfluxo ['api_sei']()
 - [x] 1.6 Subfluxo ['mover_arquivo']()
+3. **xx**:
 - [x] 3.1 Subfluxo ['']()
 - [x] 3.2 Subfluxo ['']()
 - [x] 3.3 Subfluxo ['']()
