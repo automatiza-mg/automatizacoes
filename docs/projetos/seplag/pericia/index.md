@@ -69,33 +69,39 @@ Fluxo do Power Automate Desktop qual é realizado o download do PDF dos processo
 
 ### 3.2. Configurar o navegador Google Chrome: 
 
-  - 
-  - 
+  - Extensão **Power Automate** deverá ser instalada e habilitada
 
 ### 3.3. Configurar parâmetros da API do SEI: 
 
-  - .
+  - Para criar as variáveis relativas à API do SEI, é necessário seguir o passo a passo destacados nos posts a seguir: [1](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/) e [2](https://automatiza-mg.github.io/automatizacoes/blog/buscando-c%C3%B3digo-da-unidade-no-sei/).
 
-### 3.4. Habilitar a sincronização do OneDrive na máquina: 
+### 3.4. Desmarcar a opção 'Abrir arquivo após publicação' no Word: 
 
-  - 
+  -  Em um dado momento do robô 2, é criado um arquivo PDF em branco a partir do Word. Isso ocorre para que as páginas de cada BIM recortadas do PDF do processo sejam anexadas a outro PDF. Dessa forma, o robô cria um arquivo em branco no Word, utilizando o seguinte caminho: 'Arquivo' -> 'Exportar' -> 'Criar um documento PDF/XPS' (ou, em atalhos: Alt + A + E + A), abrindo uma nova janela de 'Salvar Como'. Nessa janela, basta desmarcar uma vez a opção 'Abrir arquivo após publicação' que essa configuração será mantida no computador.
 
+### 3.5 Definir uma pasta para os arquivos PDF de cada BIM serem salvos
+  - Durante a execução do robô 2, os BIMs de um processo são apartados em um novo PDF. Para definir a pasta, basta salvar um documento antes de iniciar o processo, seguindo o passo a passo acima. Dessa forma, o computador irá salvar os seguintes na mesma pasta.
 
 ## 4. Resultados da execução do robô
 
-Após a execução do robô, a planilha “Listagem Recepção Física” estará preenchida com as informações referentes aos processos recepcionados e esses processos estarão cadastrados no SIAUT. Na coluna 'Status' é possível verificar os que foram incluídos com sucesso e os que não foram por alguma regra já estabelecida, como aqueles sem 'AIT'. Assim, é possíver dar o prosseguimento de forma manual nesses casos.
+Após a execução do robô, a planilha estará preenchida com as informações referentes aos BIMs de cada processo e esses processos estarão incluídos no SISAP. Além disso, a planilha terá sido separada com a quantidade de BIMs em cada processo. Dessa forma, aqueles que só contêm anexos poderão ser tratados de forma manual enquanto os demais podem ser processados pelo robô, já excetuando aqueles que possuem 'Observações'.
 
 ## 5. Códigos
 1. **Robô de download dos arquivos do SEI**:
-- [x] 1.1 Subfluxo ['main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_fisica/main.txt)
-- [x] 1.2 Subfluxo ['login_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_fisica/login_sei.txt)
-- [x] 1.3 Subfluxo ['troca_unidade'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_fisica/troca_unidade.txt)
-- [x] 1.4 Subfluxo ['listagem_processos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_fisica/listagem_processos.txt)
-- [x] 1.5 Subfluxo ['api_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_fisica/api_sei.txt)
-- [x] 1.6 Subfluxo ['mover_arquivo'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_fisica/mover_arquivo.txt)
-3. **xx**:
-- [x] 3.1 Subfluxo ['']()
-- [x] 3.2 Subfluxo ['']()
-- [x] 3.3 Subfluxo ['']()
+- [x] 1.1 Subfluxo ['main']()
+- [x] 1.2 Subfluxo ['leitura_planilha']()
+- [x] 1.3 Subfluxo ['API']()
+- [x] 1.4 Subfluxo ['listagem_processos']()
+- [x] 1.5 Subfluxo ['registro_planilha']()
+- [x] 1.6 Subfluxo ['login_sisap']()
+- [X] 1.7 Subfluxo ['Digitação']()
+2. **xx**:
+- [x] 2.1 Subfluxo ['main']()
+- [x] 2.2 Subfluxo ['leitura_planilha']()
+- [x] 2.3 Subfluxo ['API']()
+- [x] 2.4 Subfluxo ['listagem_processos']()
+- [x] 2.5 Subfluxo ['registro_planilha']()
+- [x] 2.6 Subfluxo ['login_sisap']()
+- [X] 2.7 Subfluxo ['Digitação']()
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
