@@ -41,6 +41,6 @@ tags:
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: Login do usuário no sistema desejado. Em geral é o próprio masp do servidor
+[^2]: Login do usuário no sistema desejado. Em geral é o próprio masp do servidor, sem o dígito verificador
 [^3]: Senha do usuário no sistema desejado. Recomendamos incluir esta variável como confidencial.
 [^4]: Sistema para qual se deseja realizar o login. Valor padrão deverá ser, obrigatoriamente, uma das opções: `sisap`, `siad` ou `siafi`
