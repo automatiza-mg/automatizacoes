@@ -48,7 +48,7 @@ tags:
 { .card }
 
 :fontawesome-solid-2: :material-application-variable:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
-{ #download-button .card path="assets/falta_rotina_historico.csv" fileName="assets/falta_rotina_historico.xlsx" }
+{ #download-button .card path="assets/falta_rotina_consolidada.csv" fileName="falta_rotina_consolidada.xlsx" }
 
 :fontawesome-solid-3: :material-application-variable: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,`HORAS A DESCONTAR`,`CÓDIGO DA VERBA DE FALTAS`,`VALOR DO DESCONTO`,`INSERIR OCORRÊNCIA (S/N)`,`DESCRITOR DA OCORRÊNCIA`.
 { .card }
