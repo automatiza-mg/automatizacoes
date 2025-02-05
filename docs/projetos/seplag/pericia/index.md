@@ -67,7 +67,7 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
   - Durante a execução do robô, os BIMs de um processo são apartados em um novo PDF. Para definir a pasta, basta salvar um documento antes de iniciar o processo, seguindo o passo a passo acima. Dessa forma, o computador irá salvar os seguintes na mesma pasta.
 
 ### 3.6 Utilizar a planilha modelo
-  - A planilha a ser utilizada deverá ser igual ao modelo a seguir, mantendo o nome das colunas, ordem das colunas e o nome da aba.
+  - A planilha a ser utilizada deverá ser igual ao modelo a seguir, mantendo o nome das colunas, ordem das colunas e o nome da aba como 'processos'.
 
 Clique aqui para baixar a planilha modelo. { #download-button .card path="assets/modelo_pericia.csv" fileName="modelo_pericia.xlsx" }
 
