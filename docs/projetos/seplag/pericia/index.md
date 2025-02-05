@@ -6,34 +6,16 @@ Desse modo, as informações contidas nesse documento devem ser lançadas no SIS
 
 ## 1. O que a automatização faz 
 - [x] Realiza uma chamada na [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar cada um dos processos indicados em uma planilha pré estabelecida.
-- [X] Identifica a quantidade de BIMs existentes naquele processo, prosseguindo com a leitura apenas para os processos com apenas 1 BIM.
-- [X] Lê o PDF com as informações do BIM de cada processo SEI com apenas 1 BIM.
-- [X] Obtém as variáveis a partir do texto lido
+- [X] Identifica a quantidade de BIMs existentes naquele processo, separando os processos que não possuem BIM nativo do SEI ou preenchimento no campo 'Observações' e prosseguindo com a leitura dos BIMs de cada processo apto.
+- [X] Lê o PDF com as informações do BIM de cada processo SEI elegível.
+- [X] Obtém as variáveis a partir do texto lido.
 - [x] Registra na planilha as variáveis do interessado e da inspeção médica.
-- [x] Para os processos com mais de um BIM, registra cada as informações de cada BIM em uma nova planilha.
-- [X] Lança no SISAP as informações de cada BIM. 
+- [x] Para os processos com mais de um BIM, adiciona uma linha para cada BIM e os preenche, em caso de não conter "observações".
+- [X] Filtra a planilha excluindo os processos sem BIM nativo do SEI ou com "Observações" existetentes. 
+- [X] Lança no SISAP as informações de cada BIM.
 
-## 2. Fluxos, subfluxos e suas funcionalidades no robô
+## 2. Subfluxos e suas funcionalidades no robô
 
-Essa automatização é constituída por 2 robôs no Power Automate Desktop.
-
-1. **Robô de registro dos processos com apenas 1 BIM**:  
-Fluxo do Power Automate Desktop qual é realizado o download do PDF dos processos SEI com os BIMs.
-  1.1. **Subfluxo main**:   
-  Invoca os demais subfluxos.
-  1.2. **Subfluxo leitura_planilha**:   
-  Lê as informações com o n° de processos na planilha de Input.
-  1.3. **Subfluxo API**:   
-  O subfluxo utiliza a [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados. Em seguida chama o subfluxo seguinte.
-  1.4. **Subfluxo registro_planilha**:   
-  Registra as informações obtidas de cada PDF na planilha.
-  1.5. **Subfluxo login_sisap**:   
-  Realiza o login no SISAP.
-  1.6. **Subfluxo Digitação**:   
-  Digita as informações da planilha no Sisap.
-
-2. **Robô de registro dos processos com apenas 1 BIM**:  
-Fluxo do Power Automate Desktop qual é realizado o download do PDF dos processos SEI com os BIMs.
   2.1. **Subfluxo main**:   
   Invoca os demais subfluxos.
   2.2. **Subfluxo leitura_planilha**:   
@@ -42,13 +24,13 @@ Fluxo do Power Automate Desktop qual é realizado o download do PDF dos processo
   O subfluxo utiliza a [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados. Em seguida chama o subfluxo seguinte.
   2.4. **Subfluxo registro_planilha**:   
   Registra as informações obtidas de cada PDF na planilha.
-  2.5. **Subfluxo login_sisap**:   
+  2.5. **Subfluxo formulas_filtros**:   
+  Filtra os processos que possuem apenas BIMs nativos e não contêm 'Observações'.
+  2.6. **Subfluxo login_sisap**:   
   Realiza o login no SISAP.
-  2.6. **Subfluxo Digitação**:   
+  2.7. **Subfluxo digitacao**:   
   Digita as informações da planilha no Sisap.
 
-!!! Atenção
-  O que diferencia os dois robôs é que o primeiro deles faz a leitura e registro apenas dos processos que têm somente 1 BIM. O segundo robô foi construído para atuar em cima de processos que possuem mais de 1 BIM. Como sugestão de fluxo, é interessante rodar o primeiro robô em cima da lista total de processos, assim, ele irá catalogar a quantidade de BIMs para cada processo. A partir daí, é interessante uma intervenção manual, separando os processos com mais de um BIM e rodando apenas estes no segundo robô.
 
 ## 3. Pré-requisitos para o funcionamento do robô 
 
@@ -80,28 +62,20 @@ Fluxo do Power Automate Desktop qual é realizado o download do PDF dos processo
   -  Em um dado momento do robô 2, é criado um arquivo PDF em branco a partir do Word. Isso ocorre para que as páginas de cada BIM recortadas do PDF do processo sejam anexadas a outro PDF. Dessa forma, o robô cria um arquivo em branco no Word, utilizando o seguinte caminho: 'Arquivo' -> 'Exportar' -> 'Criar um documento PDF/XPS' (ou, em atalhos: Alt + A + E + A), abrindo uma nova janela de 'Salvar Como'. Nessa janela, basta desmarcar uma vez a opção 'Abrir arquivo após publicação' que essa configuração será mantida no computador.
 
 ### 3.5 Definir uma pasta para os arquivos PDF de cada BIM serem salvos
-  - Durante a execução do robô 2, os BIMs de um processo são apartados em um novo PDF. Para definir a pasta, basta salvar um documento antes de iniciar o processo, seguindo o passo a passo acima. Dessa forma, o computador irá salvar os seguintes na mesma pasta.
+  - Durante a execução do robô, os BIMs de um processo são apartados em um novo PDF. Para definir a pasta, basta salvar um documento antes de iniciar o processo, seguindo o passo a passo acima. Dessa forma, o computador irá salvar os seguintes na mesma pasta.
 
 ## 4. Resultados da execução do robô
 
 Após a execução do robô, a planilha estará preenchida com as informações referentes aos BIMs de cada processo e esses processos estarão incluídos no SISAP. Além disso, a planilha terá sido separada com a quantidade de BIMs em cada processo. Dessa forma, aqueles que só contêm anexos poderão ser tratados de forma manual enquanto os demais podem ser processados pelo robô, já excetuando aqueles que possuem 'Observações'.
 
 ## 5. Códigos
-1. **Robô de download dos arquivos do SEI**:
-- [x] 1.1 Subfluxo ['main']()
-- [x] 1.2 Subfluxo ['leitura_planilha']()
-- [x] 1.3 Subfluxo ['API']()
-- [x] 1.4 Subfluxo ['listagem_processos']()
-- [x] 1.5 Subfluxo ['registro_planilha']()
-- [x] 1.6 Subfluxo ['login_sisap']()
-- [X] 1.7 Subfluxo ['Digitação']()
-2. **xx**:
-- [x] 2.1 Subfluxo ['main']()
-- [x] 2.2 Subfluxo ['leitura_planilha']()
-- [x] 2.3 Subfluxo ['API']()
-- [x] 2.4 Subfluxo ['listagem_processos']()
-- [x] 2.5 Subfluxo ['registro_planilha']()
-- [x] 2.6 Subfluxo ['login_sisap']()
-- [X] 2.7 Subfluxo ['Digitação']()
+- [x] 5.1 Subfluxo ['main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/main.txt)
+- [x] 5.2 Subfluxo ['leitura_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/leitura_planilha.txt)
+- [x] 5.3 Subfluxo ['API'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/API.txt)
+- [x] 5.4 Subfluxo ['registro_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/registro_planilha.txt)
+- [x] 5.5 Subfluxo ['formulas_filtros'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/formulas_filtros.txt)
+- [x] 5.6 Subfluxo ['login_sisap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/login_sisap.txt)
+- [X] 5.7 Subfluxo ['Digitação'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/digitacao.txt)
+
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
