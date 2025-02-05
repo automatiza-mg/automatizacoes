@@ -2,7 +2,9 @@
 
 O servidor que passou por perícia documental envia seus documentos, como, por exemplo, atestado médico para avaliação pericial. Após processamento dessas informações, é gerado um "Boletim de Inspeção Médica (BIM)", documento no SEI que será validado e assinado pelo médico perito.
 
-Desse modo, as informações contidas nesse documento devem ser lançadas no SISAP, de modo que antes precisam estar estruturadas, como em uma planilha.
+Desse modo, as informações contidas nesse documento devem ser lançadas no SISAP, de modo que antes precisam estar estruturadas, como em uma planilha:
+
+Clique aqui para baixar a planilha modelo. { #download-button .card path="assets/modelo_pericia.csv" fileName="modelo_pericia.xlsx" }
 
 ## 1. O que a automatização faz 
 - [x] Realiza uma chamada na [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar cada um dos processos indicados em uma planilha pré estabelecida.
@@ -63,6 +65,12 @@ Desse modo, as informações contidas nesse documento devem ser lançadas no SIS
 
 ### 3.5 Definir uma pasta para os arquivos PDF de cada BIM serem salvos
   - Durante a execução do robô, os BIMs de um processo são apartados em um novo PDF. Para definir a pasta, basta salvar um documento antes de iniciar o processo, seguindo o passo a passo acima. Dessa forma, o computador irá salvar os seguintes na mesma pasta.
+
+### 3.6 Utilizar a planilha modelo
+  - A planilha a ser utilizada deverá ser igual ao modelo a seguir, mantendo o nome das colunas, ordem das colunas e o nome da aba.
+
+Clique aqui para baixar a planilha modelo. { #download-button .card path="assets/modelo_pericia.csv" fileName="modelo_pericia.xlsx" }
+
 
 ## 4. Resultados da execução do robô
 
