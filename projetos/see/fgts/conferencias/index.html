@@ -1532,9 +1532,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-main" class="md-nav__link">
+  <a href="#21-ajustes-planilha" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1. "Main"
+      2.1. "Ajustes planilha"
     </span>
   </a>
   
@@ -1625,14 +1625,20 @@
 
 <div><h1 id="robo-de-conferencias-previas-a-emissao-das-chaves">Robô de conferências prévias à emissão das chaves:<a class="headerlink" href="#robo-de-conferencias-previas-a-emissao-das-chaves" title="Permanent link">⚓︎</a></h1>
 <ul>
-<li><strong>Resultado</strong>: planilha escrita com colunas dos critérios de elegibilidade e filtros a serem aplicados</li>
+<li><strong>Resultado</strong>: planilha escrita com colunas dos critérios de elegibilidade e filtros a serem aplicados para geração de chaves do FGTS</li>
 <li><strong>Entradas/dependências</strong>: utiliza por base uma cópia da planilha com o formulário de respostas do gmail da SGP, duas planilhas de relações de processos judiciais, relação nominal de guias pagas pela SEE à CEF e relação de nome, MASP, CPF, PIS e email do SISAP (via relatório B.O.)</li>
 </ul>
 <h2 id="1-premissas">1. Premissas<a class="headerlink" href="#1-premissas" title="Permanent link">⚓︎</a></h2>
 <p><strong>Planilhas-base das conferências salvas em pasta do computador onde o robô for rodar:</strong> </p>
 <ul>
+<li>Formulário respondido do google (auto-declaratório pelos servidores), contendo:</li>
+<li>Nome (C),</li>
+<li>Masp (E),</li>
+<li>CPF (F),</li>
+<li>PIS (G),</li>
+<li>e-mail (B),</li>
 <li>
-<p>Formulário respondido do google;</p>
+<p>se há processo (X);</p>
 </li>
 <li>
 <p>Processos judiciais - base AGE;</p>
@@ -1653,52 +1659,73 @@
 <p>Formulário respondido do Google: recortar as linhas desejadas para o período (exemplo: linha 5000 a 6000)</p>
 </li>
 <li>
+<p>Atualizar a relação nominal dos processos judiciais</p>
+</li>
+<li>
 <p>Atualizar a relação nominal das guias de pagamento (agregar as linhas da planilha da guia paga no último mês e excluir as duplicatas, para constar cada nome/MASP somente uma vez)</p>
 </li>
 </ul>
 <h2 id="2-como-funciona-passo-a-passo-explicado-do-automate">2. Como funciona? Passo a passo explicado do Automate<a class="headerlink" href="#2-como-funciona-passo-a-passo-explicado-do-automate" title="Permanent link">⚓︎</a></h2>
 <p>Este robô realiza as ações seguintes, por subfluxo:  </p>
-<h4 id="21-main">2.1. <strong>"Main"</strong><a class="headerlink" href="#21-main" title="Permanent link">⚓︎</a></h4>
+<h4 id="21-ajustes-planilha">2.1. <strong>"Ajustes planilha"</strong><a class="headerlink" href="#21-ajustes-planilha" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>Ajustes de formatos de números das colunas MASP, CPF e PIS (exclusões de '/', '.' e '-')</li>
-<li>Retira espaços entre e ao final dos nomes das pessoas </li>
+<li>Delimita espaço exato da tabela recortada do Formulário Goole, para escrever fórmulas nas colunas a partir de AA</li>
+<li>Ajusta formatos de números das colunas MASP, CPF e PIS (exclusões de '/', '.' e '-')</li>
+<li>Escreve cabeçalho das colunas a partir de AA</li>
+<li>Retira espaços entre e ao final dos nomes das pessoas na coluna AA</li>
+<li>Retira acentos e carateres especiais ('ê', 'ç', 'ã', etc...) dos nomes das pessoas na coluna AA (usando nova aba provisória)</li>
 </ul>
 <h4 id="22-subfluxo-conferencia-de-processos">2.2 <strong>"Subfluxo 'Conferência de Processos'":</strong><a class="headerlink" href="#22-subfluxo-conferencia-de-processos" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>Sinaliza pessoas que estão constando em alguma das duas planilha de processos judiciais ou que declararam a entrada do processo no formulário </li>
+<li>Sinaliza pessoas que estão constando em alguma das duas planilhas de processos judiciais ou que declararam a entrada do processo no formulário</li>
+<li>Escreve fórmula na coluna AB, com valores 'Encontrado' ou 'Não encontrado'</li>
 </ul>
 <h4 id="23-subfluxo-conferencia-sisap">2.3. <strong>"Subfluxo 'Conferência Sisap'":</strong><a class="headerlink" href="#23-subfluxo-conferencia-sisap" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>Sinaliza pessoas com seguintes dados encontrados na planilha extraída do B.O.:</li>
-<li>Nome</li>
-<li>MASP</li>
-<li>CPF</li>
-<li>PIS</li>
-<li>E-mail</li>
+<li>Sinaliza pessoas com seguintes dados encontrados na planilha extraída do B.O. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, com valores 'Encontrado' ou 'Não encontrado':</li>
+<li>Nome: coluna AC</li>
+<li>MASP: coluna AD</li>
+<li>PIS: coluna AE</li>
+<li>E-mail: coluna AF</li>
+<li>CPF: coluna AG</li>
 </ul>
 <h4 id="24-subfluxo-conferencia-guias">2.4. <strong>"Subfluxo 'Conferência Guias'":</strong><a class="headerlink" href="#24-subfluxo-conferencia-guias" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>Sinaliza pessoas com nome ou MASP não-encontrados na guia de pagamento à CEF</li>
+<li>Sinaliza pessoas com nome ou MASP não-encontrados na guia de pagamento à CEF:</li>
+<li>MASP: coluna AH, retorna o próprio MASP, quando encontrado, ou o valor 'Não encontrado'</li>
+<li>Nome: coluna AI, retorna o próprio nome, quando encontrado, ou o valor 'Não encontrado'</li>
 </ul>
 <h4 id="25-subfluxo-campos-robo">2.5. <strong>"Subfluxo 'Campos Robô'":</strong><a class="headerlink" href="#25-subfluxo-campos-robo" title="Permanent link">⚓︎</a></h4>
 <ul>
 <li>Escreve cabeçalhos das colunas a serem preenchidas pelos robôs subsequentes, da geração das chaves e do envio das chaves por e-mail:</li>
-<li>Data Fim</li>
-<li>Lei 100</li>
-<li>Resultado Site CEF</li>
-<li>Datetime site CEF</li>
-<li>Status após geração da chave</li>
-<li>Datetime email</li>
+<li>Data Fim: coluna AJ</li>
+<li>Lei 100: : coluna AK</li>
+<li>Resultado Site CEF: coluna AL</li>
+<li>Datetime site CEF: coluna AM</li>
+<li>Status após geração da chave: coluna AN</li>
+<li>Datetime email: coluna AO</li>
 <li>Sinaliza nas colunas DATA FIM e LEI 100 as pessoas cujos dados não foram encontrados na planilha das guias pagas (subfluxo anterior)</li>
+<li>Valores elegíveis para a geração das chaves:</li>
+<li>Data Fim = 31/12/2015</li>
+<li>Lei 100 = SIM</li>
+<li>exceções: 'processo'; 'conferir'</li>
+<li><strong>OBS.:</strong> o valor 'conferir', a partir da coluna AK, pode indicar:</li>
+<li>nome digitado incorretamente pelo servidor no formulário Goolge</li>
+<li>nome abreviado no B.O.</li>
+<li>nome abreviado nas guias de pagamento</li>
+<li>nome alterado por nova situação civil  </li>
 </ul>
+<p><img alt="image" src="https://github.com/user-attachments/assets/258a68ef-3ef2-45d9-8f7f-b6860927b5cd"></p>
 <h2 id="3-utilizacao-do-robo">3. Utilização do robô<a class="headerlink" href="#3-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se os nomes e caminhos das planilhas estão indicadas corretamente como variáveis de entrada;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se todos os arquivos citados em <strong>1</strong> estão salvos e atualizados na mesma pasta, <strong>sem alterar o nome com que já estavam</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se os nomes e caminhos dos arquivos dessas planilhas estão indicadas corretamente como variáveis de entrada;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se a planilha-cópia do formulário foi recortada para uma versão reduzida, em número de linhas;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se a planilha com a relação nominal dos processos está atualizada;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se a planilha com a relação nominal das guias de pagamento está atualizada;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> É importante assegurar que o Excel esteja fechado antes da execução do robô.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir se as abas dessas planilhas estão com os nomes (inclusive com a grafia) indicados;</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Conferir as colunas da planilha final, que deve iniciar na Coluna A e ir até a coluna AK; </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> É importante assegurar que o Excel esteja fechado antes da execução do robô. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Ao final da execução deste robô, conferir as colunas da planilha final, que deve iniciar na Coluna A e ir até a coluna AO; </li>
 </ul>
 <h2 id="4-codigos">4. Códigos<a class="headerlink" href="#4-codigos" title="Permanent link">⚓︎</a></h2>
 <ol>
@@ -1708,7 +1735,15 @@
 <li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-conferencia-guias.txt">'Conferência Guias'</a></li>
 <li>Subfluxo <a href="https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-conferencia-campos_robo.txt">'Campos Robô'</a>  </li>
 </ol>
-<p><a href="../">Voltar para Página inicial deste projeto</a></p></div>
+<p><a href="../">Voltar para Página inicial deste projeto</a></p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>planilha de agosto de 2024 <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
 
 
 
@@ -1731,7 +1766,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">22 de janeiro de 2025 14:37:10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">6 de fevereiro de 2025 16:10:38</span>
   </span>
 
     
