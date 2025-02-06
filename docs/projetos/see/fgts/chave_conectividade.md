@@ -34,6 +34,8 @@ Este robô realiza as ações seguintes, por subfluxo:
 - [ ] Conferir se a extensão Power Automate ativa para o navegador Chrome
 - [ ] Conferir se extensão Kryptonita ativa para o navegador Chrome
 - [ ] Conferir se o certificado digital/token de acesso ao Conectividade da CEF está instalado na máquina
+- [ ] Conferir se o arquiv salvo pela última vez no Chrome foi na pasta CHAVES; as ações essa variável de entrada (onde o robô está salvando os arquivos em pdf) estão destivadas, para poupar tempo;
+- [ ] Conferir impressora quando reiniciar o computador ou mudar de usuário
 
 ## 4. Códigos
 
