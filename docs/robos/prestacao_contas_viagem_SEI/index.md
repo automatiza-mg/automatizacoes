@@ -41,7 +41,7 @@ Ele é capaz de processar informações fornecidas pelo usuário necessárias pa
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ [na versão correta.](#informacoes-gerais)
+:material-play-circle: __Power Automate__ [na versão correta.](#informacoes-gerais)
 { .card }
 
 :octicons-file-directory-16: __Diretório (caminho da pasta)__ onde estão os comprovantes em PDF da pessoa para quem a prestação de contas será feita.

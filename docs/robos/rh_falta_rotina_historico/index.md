@@ -33,7 +33,7 @@ tags:
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+:material-play-circle: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
 :octicons-key-16: __Acesso ao SiSAP__ com perfil para taxação de faltas.

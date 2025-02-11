@@ -18,7 +18,7 @@ hide:
 
 <div class="grid cards card-border-radius" markdown>
 
-- <p class="text-larger" markdown>:simple-powerautomate:{ .lg .middle .light-red } __Power Automate__</p>
+- <p class="text-larger" markdown>:material-play-circle:{ .lg .middle .light-red } __Power Automate__</p>
 
     ---
 
