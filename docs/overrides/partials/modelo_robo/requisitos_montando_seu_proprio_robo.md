@@ -2,7 +2,7 @@
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+:material-play-circle: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
 :fontawesome-brands-chrome: __Chrome__ como navegador

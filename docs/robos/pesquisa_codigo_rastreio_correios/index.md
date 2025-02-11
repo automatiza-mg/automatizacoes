@@ -32,7 +32,7 @@ tags:
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+:material-play-circle: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
 :octicons-key-16: [__Token de acesso__](https://github.com/chipytux/correiosApi#:~:text=Rastreamento%20da%20Encomenda-,Os%20exemplos,-abaixo%20utilizam%20o) à API Link Track

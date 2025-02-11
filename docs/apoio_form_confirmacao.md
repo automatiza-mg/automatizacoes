@@ -22,7 +22,7 @@ A definição final dos pedidos atendidos ficará a cargo dos gestores da SIGES.
 
 <div class="grid" markdown>
 
-[:simple-powerautomate: __Nosso curso EAD Power Automate__]().
+[:material-play-circle: __Nosso curso EAD Power Automate__]().
 { .card }
 
 [:fontawesome-solid-blog: __Acompanhe nosso Blog__](blog/index.md).
