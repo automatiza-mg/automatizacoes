@@ -56,7 +56,7 @@ Para dar vida a ele:
 :material-microsoft-excel: __Complete as colunas da planilha modelo__ com a placa e o chassi dos veículos que serão consultados e salve.
 { .card }
 
-[:octicons-copy-16: __Copie o código do robô__]()[^2] e cole em um novo fluxo Power Automate Desktop.
+[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/consulta_veicular/consulta_veicular.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
 :material-application-variable: Abra a primeira ação  __'Iniciar Excel'__, edite o campo  __'caminho do documento'__ e selecione o documento salvo no passo anterior.
@@ -64,8 +64,14 @@ Para dar vida a ele:
 
 </div>
 
+!!! note "Observação"
+
+    Se o site cidadao.mg apresentar falhas no carregamento das páginas, algumas linhas poderão ficar em branco. Nessa situação, recomenda-se que o usuário crie uma nova planilha com as placas não consultadas e execute o robô novamente.
+  
+
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Qualquer modificação além da inclusão de mais CNPJs na planilha Excel pode exigir modificações no código original do robô. Download desta planilha não é suportado na versão mobile desta página.
 [^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+
 
