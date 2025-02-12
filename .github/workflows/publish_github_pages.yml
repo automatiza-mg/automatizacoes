@@ -11,7 +11,7 @@ on:
 
 jobs:
   publish_documentation_on_github_pages:
-    runs-on: Ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
 
       - name: Set up Python
