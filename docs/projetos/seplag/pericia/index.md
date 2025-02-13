@@ -38,10 +38,6 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
 
 ### 3.1. Inserção de variáveis de entrada:
 
-  - :material-application-variable: **`login_sei`**: login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
-  - :material-application-variable: **`orgao_sei`**: órgão de login no SEI. O valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
-  - :material-application-variable: **`senha_sei`**: senha para login no SEI. Recomenda-se incluir variável como confidencial.
-  - :material-application-variable: **`unidade_sei`**: sigla da unidade a qual caixa deseja ter acesso. O valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
   - :material-application-variable: **`api_sei_sistema`**: variável a ser criada junto aos Administradores do SEI. [Ver post](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/).
   - :material-application-variable: **`api_sei_token`**: variável a ser criada junto aos Administradores do SEI. [Ver post](https://automatiza-mg.github.io/automatizacoes/blog/criando-sistema-e-token-no-sei-para-utilizar-o-rob%C3%B4-de-api-do-sei/). 
   - :material-application-variable: **`api_sei_unidade`**: variável a ser criada a partir de busca no SEI. [Ver post](https://automatiza-mg.github.io/automatizacoes/blog/buscando-c%C3%B3digo-da-unidade-no-sei/).
@@ -49,7 +45,6 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
   - :material-application-variable: **`senha_sisap`**: senha para login no terminal Prodemge. Recomenda-se incluir variável como confidencial.
   - :material-application-variable: **`caminho_excel`**: Define o caminho do arquivo excel. 
   - :material-application-variable: **`vazio`**: variavel para utilização no fluxo. Deixar o 'valor padrão' sem preenchimento.
-
 
 ### 3.2. Configurar o navegador Google Chrome: 
 
