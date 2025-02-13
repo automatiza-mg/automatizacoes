@@ -19,17 +19,23 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
 ## 2. Subfluxos e suas funcionalidades no robô
 
   2.1. **Subfluxo main**:   
-  Invoca os demais subfluxos.
+  Invoca os demais subfluxos:
+  
   2.2. **Subfluxo leitura_planilha**:   
   Lê as informações com o n° de processos na planilha de Input.
+  
   2.3. **Subfluxo API**:   
   O subfluxo utiliza a [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados. Em seguida chama o subfluxo seguinte.
+  
   2.4. **Subfluxo registro_planilha**:   
   Registra as informações obtidas de cada PDF na planilha.
+  
   2.5. **Subfluxo formulas_filtros**:   
   Filtra os processos que possuem apenas BIMs nativos e não contêm 'Observações'.
+  
   2.6. **Subfluxo login_sisap**:   
   Realiza o login no SISAP.
+  
   2.7. **Subfluxo digitacao**:   
   Digita as informações da planilha no Sisap.
 
@@ -65,6 +71,8 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
   - A planilha a ser utilizada deverá ser igual ao modelo a seguir, mantendo o nome das colunas, ordem das colunas e o nome da aba como 'processos'.
 
 Clique aqui para baixar a planilha modelo. { #download-button .card path="assets/modelo_pericia.csv" fileName="modelo_pericia.xlsx" }
+
+**OBS.: - REGRA DE NEGÓCIO A SER DEFINIDA**: Preencher a coluna A com a listagem dos processos do SEI a serem utilizados
 
 
 ## 4. Resultados da execução do robô
