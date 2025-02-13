@@ -26,6 +26,8 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
   
   2.3. **Subfluxo API**:   
   O subfluxo utiliza a [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar o PDF dos processos anteriormente listados. Em seguida chama o subfluxo seguinte.
+
+  - OBS.: Caso retorno da API seja diferente de 200 significa que algo deu errado. Nesta situação é aconselhável incluir o registro disso em uma planilha de controle.
   
   2.4. **Subfluxo registro_planilha**:   
   Registra as informações obtidas de cada PDF na planilha.
