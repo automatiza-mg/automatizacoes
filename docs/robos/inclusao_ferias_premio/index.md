@@ -62,7 +62,7 @@ tags:
 
 - [ ] A coluna "I" não deve ser preenchida, pois ela conterá o status após operação pelo robô.
 
---8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: MASP para acesso ao SISAP.
 [^2]: Senha de acesso ao SISAP.

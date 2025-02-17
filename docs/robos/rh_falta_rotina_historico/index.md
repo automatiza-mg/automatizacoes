@@ -73,6 +73,6 @@ __Instruções de preenchimento da planilha.__
 - A coluna "J - NATUREZA DA FALTA/HORAS" é relativa a natureza das faltas/horas. Deverá ser preenchida no formato "000". Exemplo: 511 para horas descontadas/administrativo; 512 para horas/greve. Caso não exista falta em horas para descontar, prencher a coluna  "J - NATUREZA DA FALTA/HORAS" sempre com o número "0" (zero). 
 - A coluna "K" não deve ser preenchida.
 
---8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.   
