@@ -43,7 +43,7 @@ tags:
 </div> 
        
 
---8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: MASP e senha do SISAP.

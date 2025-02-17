@@ -73,6 +73,6 @@ __Instruções de preenchimento da planilha.__
 - A coluna "M - DESCRITOR DA OCORRÊNCIA" deve ser preenchida somente no caso de se optar por inserir a ocorrência (S - SIM) na coluna "L", e deverá conter a descrição do ocorrido. Caso exista ocorrencia cadastrada para o servidor, ela não será inserida, e as observações serão gravadas na coluna"O". Para servidores que possuirem mais de um mês/ano apuração de falta, inserir a ocorrência e seu descritor apenas no primeiro registro de falta. O campo de "ocorrências" do Sisap costuma não aceitar certo tipos de caracteres, como por exemplo: ^, /, Ç, ~, além de alguns caracteres especiais, quando eles vem exportados da planilha. Deste modo, ao preencher a coluna M, desconsiderar esses tipos de caracteres, e utilizar somente o texto. Por exemplo: "desconto de faltas relativo ao mes 00-0000". Seguem exemplos de preenchimentos nas primeiras linhas, que poderão ser apagados para inclusão dos dados. 
 
 
---8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.   
