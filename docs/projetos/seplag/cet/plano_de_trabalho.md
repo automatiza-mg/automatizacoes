@@ -28,27 +28,49 @@ Foi definida a estratégia de construção de 05 robôs:
 ### **Resultados esperados**
 - Processo de recepção de defesa de autuação de trânsito completamente automatizado; 
 - Pesquisa e inserção de AIT automatizada;
-- Análise de defesa parciialmente automatizada, com a sugestão de parecer;
+- Análise de defesa parcialmente automatizada, com a sugestão de parecer;
 - Encerramento de processo automatizada;
 
 ### **Requisitos:**
-Descreve o que será necessário para o desenvolvimento do projeto e funcionamento das automações, como estrutura de hardware, chaves de acesso (cpf, masp, etc), origem dos dados, treinamento da equipe que receberá a automação, artefatos e sistemas que serão usados (planilha, terminal prodemge, sei).
+- 05 máquinas com Power Automate Instalado; 
+- 01 servidor treinado para executar as automações;
+- Acesso aos seguintes sistemas: 
+    - SIAUT 
+    - SDAK 
+    - SEI, nas seguintes caixas: CET/...
+    - Licença Premium Power Automate
+    - Saldo no contrato de IA 
 
 ### **Limites e não escopo:** 
-define o que não está no escopo do projeto, bem como descreve fatores que restringem a atuação da equipe no projeto. 
+- Não serão analisados processos que a IA não conseguir identificar os dados devido à qualidade da digitalização dos documentos;
+- A decisão final do recurso da autuação permanece com o assessor. Desse modo, a análise automatizada apenas indicará sugestão de parecer;
+- As automações desenvolvidas se limitam às defesas em primeira instância, não contemplando defesas em segunda instância (JARI). 
 
-### **Prazo Estimado para Entrega** 
-_Deixamos esse campo?_
+### **Prazo estimado para entrega** 
+06 meses.
 
 ### **Marcos temporais importantes pro projeto**
-_Deixamos esse campo? Ex: Taxação, eventos como carnaval, encerramento de exercício, etc._ 
+Não há.
 
 ### **Time**
 | Setor | Nome | Atribuição | Contato | 
 | ------------- | ------------- | ------------- | ------------- |
-| Automatiza | Fulano | Responsável por desenvolver a automação | fulano@seplag.mg.gov.br |
-| Diretoria X | Ciclano | Responsável infomar sobre processo X | ciclano@seplag.mg.gov.br |
-| Diretoria X | Beltrano | Ponto focal do processo X,Y, Z | beltrano@seplag.mg.gov.br |
+| Automatiza | Augusta Cora | Responsável por desenvolver a automação | augusta.lamas@planejamento.mg.gov.br |
+| Automatiza | Raiane Souza | Responsável por desenvolver a automação | raiane.souza@planejamento.mg.gov.br |
+| Automatiza | Yan | Responsável por desenvolver a automação | yan.carmo@planejamento.mg.gov.br |
+| Diretoria de Infrações | Henrique | Responsável infomar sobre processo de autuações | henrique.ribeiro@planejamento.mg.gov.br |
+| Diretoria de Infrações | Gislene Rodrigues| Ponto focal do processo de recepção de defesa | gislene.rodrigues@planejamento.mg.gov.br |
 
 ### **Etapas Planejadas** 
-Marcos a serem alcançados para execução do projeto, por exemplo: redefinições do processo, estruturação de BD, alterações normativas, desenvolvimento da automação, treinamento da equipe demandantes, etc.
+1. **Desenvolvimento da Automação;**
+    - **Recepção de defesa física de autuação**: 
+        - Acesso à API dos Correios;
+        - Treinamento de IA;
+    - **Recepção de defesa digital de autuação**:
+    - **Pesquisa e adição do AIT nos processos já instruídos no Sei**: 
+    - **Análise de defesa de auto de infração**:
+        - Alterações de normativa;
+        - Treinamento de IA;
+    - **Encerramento das análises de defesa de autos de infração**:
+2. **Treinamento da Equipe**
+3. **Transição assistida das automações**
