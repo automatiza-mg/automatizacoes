@@ -49,6 +49,8 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
+:material-web: Faça login no site __[cidadao.mg.go.br](cidadao.mg.gov.br)__.
+{ .card }
 
 [:material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^1].
 { #download-button .card path="assets/planilha_modelo_multa.csv" fileName="planilha_modelo_multa.xlsx" }
