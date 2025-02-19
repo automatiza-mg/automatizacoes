@@ -49,7 +49,7 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
-:material-web: Faça login no site __[cidadao.mg.go.br](cidadao.mg.gov.br)__.
+:material-web: Faça login no site __[cidadao.mg.gov.br](cidadao.mg.gov.br)__.
 { .card }
 
 [:material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^1].
