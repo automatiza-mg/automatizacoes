@@ -57,6 +57,9 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
 ### 3.2. Configurar o navegador Google Chrome: 
 
   - Extensão **Power Automate** deverá ser instalada e habilitada
+  - Não perguntar onde salvar arquivos, salvar automaticamente em Downloads:
+  - ![image](https://github.com/user-attachments/assets/cee51b8f-73d2-4586-9dca-c062b19f2e26)
+
 
 ### 3.3. Configurar parâmetros da API do SEI: 
 
