@@ -7,11 +7,11 @@ Desse modo, as informações contidas nesse documento devem ser lançadas no SIS
 Clique aqui para baixar a planilha modelo. { #download-button .card path="assets/modelo_pericia.csv" fileName="modelo_pericia.xlsx" }
 
 ## 1. O que a automatização faz 
-- [x] Realiza uma chamada na [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar cada um dos processos indicados em uma planilha pré estabelecida.
+- [x] Realiza uma chamada na [API do SEI](https://automatiza-mg.github.io/automatizacoes/robos/consulta_procedimento_sei/) para baixar cada um dos processos listados na planilha-modelo.
 - [X] Identifica a quantidade de BIMs existentes naquele processo, separando os processos que não possuem BIM nativo do SEI ou preenchimento no campo 'Observações' e prosseguindo com a leitura dos BIMs de cada processo apto.
 - [X] Lê o PDF com as informações do BIM de cada processo SEI elegível.
 - [X] Obtém as variáveis a partir do texto lido.
-- [x] Registra na planilha as variáveis do interessado e da inspeção médica.
+- [x] Registra na planilha as variáveis do interessado e da inspeção médica (Nome; MASP; CPF; Cargo; Regional; CRM Perito; CRM Atestado; Data Início Afastamento; Data Emissão Atestado; Data Revisão Atestado; Dias solicitados; CID).
 - [x] Para os processos com mais de um BIM, adiciona uma linha para cada BIM e os preenche, em caso de não conter "observações".
 - [X] Filtra a planilha excluindo os processos sem BIM nativo do SEI ou com "Observações" existetentes. 
 - [X] Lança no SISAP as informações de cada BIM.
@@ -56,7 +56,8 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
 
 ### 3.2. Configurar o navegador Google Chrome: 
 
-  - Extensão **Power Automate** deverá ser instalada e habilitada
+  - Extensão **Power Automate** deverá ser instalada e habilitada.
+    - Conferir se existe outra extensão ativa que possa interferir no funcionamento da extensão do Power Automate (caso isso aconteça, os documentos do processo não serão baixados) 
   - Não perguntar onde salvar arquivos, salvar automaticamente em Downloads:
   - ![image](https://github.com/user-attachments/assets/cee51b8f-73d2-4586-9dca-c062b19f2e26)
 
