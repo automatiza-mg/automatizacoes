@@ -36,7 +36,7 @@ nav:
   - Blog:
     - blog/index.md
   - Termos de uso: robos/termos_uso.md
-
+  - Compromissos: robos/compromissos.md
 
 # Configuration
 theme:
