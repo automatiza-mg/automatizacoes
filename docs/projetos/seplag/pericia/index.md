@@ -52,7 +52,9 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
   - :material-application-variable: **`login_sisap`**: usuário de login no terminal Prodemge. Masp do servidor responsável pelos lançamentos.
   - :material-application-variable: **`senha_sisap`**: senha para login no terminal Prodemge. Recomenda-se incluir variável como confidencial.
   - :material-application-variable: **`caminho_excel`**: Define o caminho do arquivo excel. 
+  - :material-application-variable: **`pasta_SEI`**: Define o caminho dos arquivos dos BIM a serem salvos do SEI.
   - :material-application-variable: **`vazio`**: variavel para utilização no fluxo. Deixar o 'valor padrão' sem preenchimento.
+    - **OBS.:** cadastre os caminhos da pasta com barras normais (/) e não com barras invertidas (\)!
 
 ### 3.2. Configurar o navegador Google Chrome: 
 
