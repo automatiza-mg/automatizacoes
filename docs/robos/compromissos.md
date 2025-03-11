@@ -25,6 +25,7 @@ Nesta página, estão as informações sobre como funcionam os projetos em parce
      - Disponibilizar as máquinas físicas e virtuais necessárias;
      - Instalar e atualizar o Power Automate e outros aplicativos que forem utilizados;
      - Definir referência técnica para acompanhar o projeto;
+     - Definir referência técnica que ficará responsável pela manutenção da automação desenvolvida;
      - Fornecer todos as informações necessárias sobre o processo a ser automatizado;
 - Comunicar no âmbito próprio órgão acerca da atuação do Automatiza MG e intermediar possíveis interlocuções com outras áreas;
 - Informar métricas de tempo e escala de cada produto de automação desenvolvido;
