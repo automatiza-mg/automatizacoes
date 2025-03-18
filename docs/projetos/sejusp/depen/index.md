@@ -73,7 +73,6 @@ Este subfluxo anexa o arquivo `.zip`, contendo os relatórios financeiros, no pr
     - Ative a opção `mostrar pop-ups e redirecionamentos do navegador`.
     - Desative a opção `mostrar os downloads quando eles forem concluídos`.
 
-
 ## 4. Resultados
  - Processo manual: em média 17h30min.
  - Processo automatizado: 06h46min.
