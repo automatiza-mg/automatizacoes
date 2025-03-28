@@ -33,6 +33,7 @@ nav:
     - Secretaria de Planejamento e Gestão (Seplag):
       - Emissão de certidões INSS: projetos/seplag/scap
       - Automatização da Coordenação Estadual de Trânsito: projetos/seplag/cet
+      - Automatização da Perícia Médica: projetos/seplag/pericia
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
   - Blog:
     - blog/index.md
