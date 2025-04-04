@@ -49,9 +49,6 @@ Este subfluxo cria um novo processo no SEI!MG.
 ### 2.9. *"cria_memorando_sei"*
 Este subfluxo elabora um novo Memorando no SEI!MG.
 
-### 2.10. *"insere_anexo_sei"*
-Este subfluxo anexa o arquivo `.zip`, contendo os relatórios financeiros, no processo criado anteriormente.
-
 ## 3. Utilização do robô
 - Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes variáveis de entrada**:
     - `cpf`: inserir o número do CPF do usuário do SEI!MG.
@@ -87,4 +84,3 @@ Este subfluxo anexa o arquivo `.zip`, contendo os relatórios financeiros, no pr
 - Fluxo ['trocar_unidade_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/sejusp_depen_ipls/trocar_unidade_sei.txt)
 - Fluxo ['cria_processo_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/sejusp_depen_ipls/criar_processo_sei.txt)
 - Fluxo ['cria_memorando_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/sejusp_depen_ipls/criar_memo_sei.txt)
-- Fluxo ['insere_anexo_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/sejusp_depen_ipls/insere_anexo_sei.txt)
