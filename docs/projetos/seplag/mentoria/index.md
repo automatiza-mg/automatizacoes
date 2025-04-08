@@ -7,15 +7,102 @@ Este post tem como objetivo explicar de forma geral como funciona o robô, algum
  
  
 ## 1. Premissas
-**Acesso à planilha de controle das demandas do Cofin**
+-*Acesso à planilha de controle das demandas do Cofin*;<br>
+-*Planilhas de apoio: "Mundo" - com informações atualizadas relativas aos órgãos do Estado de MG, e "Modelos" - apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado.*;<br>
+-*Documentos modelo criados no SEI*.
+
+
+## 2. Como funciona? Passo a passo explicado do Automate
+#### 2.1. **Subfluxo "Main":**
+Este fluxo funciona como um controlador do robô, solicitando informações primordiais para o seu fucionamento, e ainda acionando os demais subfluxos:  
  
+- Executa os demais subfluxos do robô; 
+- Solicita ao usuário:  
+    - *identificação da Reunião COFIN*;  
+    - *data da reunião realizada*;
+- Executa *loop* que identifica quais pleitos deliberados estão aptos para a elaboração do ofício.
+
+
+#### 2.2. **Subfluxo "baixar_planilha":**
+O fluxo se concentra no download da planilha de andamento armazenada na nuvem. Trata-se de uma planilha interna que contém as informações relativas aos pleitos que estão atualmente abertos no Cofin. Destaca-se que, dentre esses processos, nem todos estão inseridos na pauta da reunião e, consequentemente, não irão necessariamente decorrer na elaboração de um ofício.
+
+
+#### 2.3. **Subfluxo "ler_planilha":**
+No subfluxo em questão são abertas e incorporadas três planilhas, sendo:
+
+- Pleitos em andamento: planilha baixada no início do fluxo que serve como base para toda a automatização, contendo informações vitais como o processo SEI do pleito, sua classificação (Tipo, Categoria e Subcategoria), órgão demandante, tipo de documento e data em que foi submetido o pleito, entre outros.
+
+- Modelos: planilha previamente elaborada que apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado a essa armazenagem.
+
+- Mundo: planilha interna que contém informações relativas aos órgãos do Estado de MG, contendo informações relevantes à elaboração dos ofícios como o dirigente máximo, os pronomes de tratamento adequados, assim como a vinculação dos órgãos.
+
+Destaca-se que o caminho para acessar as planilhas deve ser alterado de acordo com o computador que o usuário estiver rodando o robô.
+
+
+#### 2.4. **Subfluxo "obter_data":**
+Obtém a data atual e ajusta para o formato utilizado na elaboração do ofício.
+
+
+#### 2.5. **Subfluxo "entrar_sei":**
+Entra no SEI com o login, senha e unidade informados como variáveis de entrada. Esse subfluxo pode ser facilmente obtido na [biblioteca de robôs](https://automatiza-mg.github.io/automatizacoes/robos/) do Automatiza.MG.
+
+O envio da tecla "Esc" após o subfluxo serve para fechar eventuais avisos e informativos que possam atrapalhar a automação.
+
+
+#### 2.6. ***Loop* na "Main":**
+Tendo como base a planilha "Pleitos em Andamento", cria-se um *loop* para analisar cada linha, identificando quais pleitos estão aptos para a elaboração do ofício ou não.
+
+Para fins da automação deste robô, consideram-se "Aptos" os pleitos que apresentam o campo de decisão preenchido, não contêm a decisão "Arquivado ou Devolvido" e não apresentam o campo "Resumo Deliberação" preenchido.
+
+Assim, se o pleito não é considerado apto, aumenta-se a variável da linha em 1, efetivamente pulando para a próxima.
+
+
+#### 2.7. **Subfluxo "negado":**
+No caso dos pleitos negados, o texto do ofício é em geral mais simples, tendo um modelo comum aplicável a todos os processos independente de sua classificação. Dessa forma, ocorre procedimento semelhante ao que será descrito adiante, mas com menor complexidade.
+
+
+#### 2.8. **Filtragem das variáveis:**
+De forma a obter o código do documento a ser utilizado como modelo ao inserir o Ofício Cofin no processo SEI da linha em análise, utilizam-se as informações adquiridas na tabela "Pleitos em Andamento" referentes à classificação para filtrar a tabela "Modelos”.
+
+Em seguida, com o intuito de obter informações adicionais sobre o órgão, necessárias para a elaboração do Ofício, utiliza-se a informação do órgão demandante para filtrar a tabela "Mundo".
+
+
+#### 2.9. **Subfluxo "pesquisa_inserir_doc":**
+Na página do SEI, que já foi aberta anteriormente, é realizada a pesquisa do processo analisado na linha em questão. Aberto o processo, é inserido o documento utilizando o código do modelo filtrado obtido na filtragem.
+
+
+#### 2.10. **Subfluxo "cabeçalho_ref":**
+Utiliza informações das planilhas e a data adquirida anteriormente para preencher o cabeçalho, assim como o campo de Ref: do Ofício.
+
+
+#### 2.11. **Subfluxo "corpo_texto":**
+Utiliza o comando Ctrl+F+(texto)+Esc para localizar e substituir as informações personalizáveis no corpo do texto utilizando como base as informações de data de reunião, número da reunião (caixa de texto), pronomes de tratatamento, dirigente máximo, órgão por extenso (Tabela Mundo) e a decisão obtida na reunião (Pleitos em andamento).
+
+
+#### 2.12. **Subfluxo "encaminhamentos":**
+Identifica e insere os encaminhamentos a serem feitos no Ofício. Se o pleito é de um órgão vinculado, encaminha também para a respectiva Secretaria (utilizando a planilha Mundo). Além disso, se existe algum parecer técnico, encaminha para a área técnica competente.
+
+
+#### 2.13. **Final do *Loop*":**
+Salva, fecha o documento no SEI, preenche com um "ok" na linha da planilha de andamento para facilitar a conferência final e aumenta a variável em 1, reiniciando o *loop* até que todas as linhas da planilha sejam analisadas.
+
+
+#### 2.14. **Encerramento do fluxo:**
+Após o fim do *loop*, fecha todas as planilhas utilizadas, mas antes de fechar a planilha de andamento questiona se ela já foi conferida com uma caixa de texto.
+
+Após a confirmação de conferência, exclui a planilha ao final do processo para não gerar duplicidade, considerando que a planilha deve ser baixada toda vez que o robô é ativado.
+
+ <!---
 - Atualmente a planilha ; 
 - Fonte “Times New Roman” com tamanho 6; 
 - Margens formatadas para publicação nos seguintes moldes: Superior 1,5cm; Inferior 1,5cm; Esquerda 7,5cm e; Direita 7,5cm.
  
 **Planilha de Excel com os processos:**
- 
+--> 
+
 <!-- more -->
+
+<!---
 - Iniciar o Excel com a planilha que contém o número dos processos SEI de cada situação de Equivalência de Estudo
  
  
@@ -23,16 +110,7 @@ Este post tem como objetivo explicar de forma geral como funciona o robô, algum
  
 #### 2.1. **"Main"**
  
-Este fluxo, ramo principal do robô, contempla as ações principais:  
- 
-- Iniciar o Word no documento esepcífico; 
-- Iniciar o Excel no documento esepcífico; 
-- Ler a planilha do Excel 
-- Executar o subfluxo ‘login_sei’; 
-- Executar o subfluxo ‘troca_unidade’;
-- Executar o subfluxo ‘registro_sei_word’;
-- Executar o subfluxo ‘cria_processo_sei’;
-- Executar o subfluxo ‘autorizacao’; 
+
 
  
 #### 2.2 **"Subfluxo 'login_sei'":**
@@ -84,3 +162,4 @@ Ao final, o robô terá lido todos os processos constantes na planilha e gravado
 4. Subfluxo ['registro SEI Word'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-seiword.txt)
 5. Subfluxo ['cria processo'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-criaprocessosei.txt)
 6. Subfluxo ['autorizacao'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-autorizacao.txt)
+-->
