@@ -44,7 +44,7 @@ Obtém a data atual e ajusta para o formato utilizado na elaboração do ofício
 
 
 #### 2.5. **Subfluxo "entrar_sei":**
-Entra no SEI com o login, senha e unidade informados como variáveis de entrada. Esse subfluxo pode ser facilmente obtido na [biblioteca de robôs](https://automatiza-mg.github.io/automatizacoes/robos/) do Automatiza.MG.
+Entra no SEI com o *login*, senha e unidade informados como variáveis de entrada. Esse subfluxo pode ser facilmente obtido na [biblioteca de robôs](https://automatiza-mg.github.io/automatizacoes/robos/) do Automatiza.MG.
 
 O envio da tecla "Esc" após o subfluxo serve para fechar eventuais avisos e informativos que possam atrapalhar a automação.
 
@@ -107,74 +107,16 @@ Após a confirmação de conferência, exclui a planilha ao final do processo pa
 Ao final, o robô terá lido toda a planilha com as deliberações da reunião do Cofin, e criado os respectivos Ofícios de resposta aos órgãos para os pleitos considerados "Aptos" ou "Negados, conforme descrito nos itens 2.6 e 2.7.<br>
 É importante ressaltar que esse robô foi criado para um processo exclusivo do setor (Cofin), e passível de evolução, principalmente com relação ao uso das planilhas online. 
 
- <!---
-- Atualmente a planilha ; 
-- Fonte “Times New Roman” com tamanho 6; 
-- Margens formatadas para publicação nos seguintes moldes: Superior 1,5cm; Inferior 1,5cm; Esquerda 7,5cm e; Direita 7,5cm.
- 
-**Planilha de Excel com os processos:**
---> 
-
-<!-- more -->
-
-<!---
-- Iniciar o Excel com a planilha que contém o número dos processos SEI de cada situação de Equivalência de Estudo
- 
- 
-## 2. Como funciona? Passo a passo explicado do Automate
- 
-#### 2.1. **"Main"**
- 
-
-
- 
-#### 2.2 **"Subfluxo 'login_sei'":**
- 
-Esse subfluxo é executado para abrir o google chrome na página do SEI e realizar o login. É necessário criar as variáveis 'login_sei', 'orgao_sei' e 'senha_sei'.
- 
- 
-#### 2.3. **"Subfluxo 'troca_unidade'":**
-Esse subfluxo é executado para abrir trocar a unidade do SEI para a correta. É necessário criar a variável 'unidade_protocolo'.
-
-
-#### 2.4. **"Subfluxo 'registro_sei_word'":**
-Esse subfluxo é executado para:
-- Navegar até a página do processo iterado;
-- Selecionar o documento 'Parecer';
-- Ler a página da Web;
-- Realizar os tratamentos no texto lido e registrar as variáveis;
-- Registrar o resumo do parecer no Word.
- 
-As ações ocorrem em loop.
-
-
-#### 2.5. **"Subfluxo 'cria_processo_sei'":**
-Esse subfluxo é executado para criar um novo processo SEI onde será adiconada a autorização com os resumos dos pareceres. É necessário criar as variáveis 'especificacao', 'hipotese_restricao_autorizacao' e 'tipo_do_processo_criar'.
-
-
-#### 2.6. **"Subfluxo 'autorizacao'":**
-Esse subfluxo é executado para criar um novo documento chamado 'Autorização' no processo SEI e preenchê-lo com as informações do Word. 
- 
-## 3. Utilização do robô
- 
-- [ ] Conferir se a planilha está com o nome e caminho correto;
-- [ ] Conferir se o arquivo Word está com o nome e caminho correto;
-- [ ] Conferir se o arquivo Word está com a formatação correta;
-- [ ] Criar as variáveis login_sei, orgao_sei, senha_sei e unidade_sei;
-- [ ] É importante assegurar que o Excel e o Word estejam fechados antes da execução do robô.
- 
- 
-## 4. Resultados
- 
-Ao final, o robô terá lido todos os processos constantes na planilha e gravado o resumo de cada parecer no arquivo Word.
- 
  
 ## 5. Códigos
  
-1. [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-main.txt)
-2. Subfluxo ['login_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-loginsei.txt)
-3. Subfluxo ['troca_unidade'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-trocaunidade.txt)
-4. Subfluxo ['registro SEI Word'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-seiword.txt)
-5. Subfluxo ['cria processo'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-criaprocessosei.txt)
-6. Subfluxo ['autorizacao'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/see/see-mentoria-autorizacao.txt)
--->
+1. ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/main.txt)
+2. Subfluxo ['baixar_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/baixar_planilha.txt)
+3. Subfluxo ['ler_planilhas'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/ler_planilhas.txt)
+4. Subfluxo ['obter_data'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/obter_data.txt)
+5. Subfluxo ['entrar_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/entrar_sei.txt)
+6. Subfluxo ['negado'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/negado.txt)
+7. Subfluxo ['Pesquisar_inserir_doc'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/pesquisar_inserir_doc.txt)
+8. Subfluxo ['cabeçalho_ref'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/cabe%C3%A7alho_ref.txt)
+9. Subfluxo ['corpo_texto'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/corpo_texto.txt)
+10. Subfluxo ['encaminhamentos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_cofin_mentoria/encaminhamentos.txt)
