@@ -44,16 +44,17 @@ Este subfluxo lê a coluna F da base de dados e, em caso de situação **IRREGUL
 
 ## 3. Utilização do robô
 - Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes variáveis de entrada**:
- `caminho_excel`: inserir o caminho do arquivo da base de dados.
- `caminho_pasta`: inserir o caminho da pasta onde o robô deverá organizar os documentos baixados.
- `login_sei`: inserir o login utilizado para o SEI!MG.
- `orgao_sei`: inserir o órgão utilizado para acessar o SEI!MG.
- `senha_sei`: inserir a senha utilizada para acessar o SEI!MG.
- `tipo_documento`: inserir o tipo de documento externo a ser anexado.
- `unidade_sei`: inserir a unidade utilizada para acessar o SEI!MG.
- `vazio`: inserir variável sem valor padrão.
+  - `caminho_excel`: inserir o caminho do arquivo da base de dados.
+  - `caminho_pasta`: inserir o caminho da pasta onde o robô deverá organizar os documentos baixados.
+  - `login_sei`: inserir o login utilizado para o SEI!MG.
+  - `orgao_sei`: inserir o órgão utilizado para acessar o SEI!MG.
+  - `senha_sei`: inserir a senha utilizada para acessar o SEI!MG.
+  - `tipo_documento`: inserir o tipo de documento externo a ser anexado.
+  - `unidade_sei`: inserir a unidade utilizada para acessar o SEI!MG.
+  - `vazio`: inserir variável sem valor padrão.
+
 - O robô abrirá todos os arquivos necessários e páginas da Web, assim, **certifique-se que nenhum arquivo Excel e/ou o navegador estejam abertos**.
-- Como informado no início do post, o robô utiliza uma base de dados estruturada, que você pode baixar [aqui](inserir planilha).
+- Como informado no início do post, o robô utiliza uma base de dados estruturada, que você pode baixar <a href="../assets/base_dados_cagec_post.xlsx" download="base_dados_cagec.xlsx">aqui.</a>
 - Faça o *download* e ative a extensão Power Automate do navegador utilizado.
 - Caso o navegador utilizado seja o Google Chrome, desative o Google Lens do navegador:
   - Digite chrome://flags ​na barra de pesquisas.
