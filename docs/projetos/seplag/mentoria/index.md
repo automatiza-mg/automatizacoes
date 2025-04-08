@@ -7,9 +7,9 @@ Este post tem como objetivo explicar de forma geral como funciona o robô, algum
  
  
 ## 1. Premissas
--*Acesso à planilha de controle das demandas do Cofin*;<br>
--*Planilhas de apoio: "Mundo" - com informações atualizadas relativas aos órgãos do Estado de MG, e "Modelos" - apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado.*;<br>
--*Documentos modelo criados no SEI*.
+- Acesso à planilha de controle das demandas do Cofin;<br>
+- Planilhas de apoio: "Mundo" - com informações atualizadas relativas aos órgãos do Estado de MG, e "Modelos" - apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado.;<br>
+- Documentos modelo criados no SEI.
 
 
 ## 2. Como funciona? Passo a passo explicado do Automate
@@ -91,6 +91,21 @@ Salva, fecha o documento no SEI, preenche com um "ok" na linha da planilha de an
 Após o fim do *loop*, fecha todas as planilhas utilizadas, mas antes de fechar a planilha de andamento questiona se ela já foi conferida com uma caixa de texto.
 
 Após a confirmação de conferência, exclui a planilha ao final do processo para não gerar duplicidade, considerando que a planilha deve ser baixada toda vez que o robô é ativado.
+
+
+## 3. Utilização do robô
+ 
+- [x] Conferir se as planilhas estão com os nomes e caminhos corretos;
+- [x] Criar as variáveis login_sei, orgao_sei, senha_sei e unidade_sei;
+- [x] Documentos modelo criados no SEI de acordo com a classificação/tipo e catalogados numa planilha de apoio;
+- [x] Planilha com informações dos órgãos e suas respectivas chefias;
+- [x] É importante assegurar que o Excel esteja fechado antes da execução do robô.
+ 
+ 
+## 4. Resultados
+ 
+Ao final, o robô terá lido toda a planilha com as deliberações da reunião do Cofin, e criado os respectivos Ofícios de resposta aos órgãos para os pleitos considerados "Aptos" ou "Negados, conforme descrito nos itens 2.6 e 2.7.<br>
+É importante ressaltar que esse robô foi criado para um processo exclusivo do setor (Cofin), e passível de evolução, principalmente com relação ao uso das planilhas online. 
 
  <!---
 - Atualmente a planilha ; 
