@@ -1,6 +1,6 @@
 # Respostas às demandas do Cofin - Secretaria de Estado de Planejamento e Gestão
  
-Na mentoria "respostas às demandas do Cofin" na Secretaria de Estado de Planejamento e Gestão (SEPLAG), o objetivo foi a automatização das respostas às demandas dos orgãos ao Comitê de Orçamento e Finanças (Cofin). Importante contextualizar que a cada reunião do Cofin, centenas de demandas dos mais diversos órgãos do Estado são deliberadas pelo Comitê, que seguindo os trâmites internos estabelecidos, devem ser respondidas através do SEI! aos respectivos órgãos demandantes.
+Na mentoria "respostas às demandas do Cofin" na Secretaria de Estado de Planejamento e Gestão (SEPLAG), o objetivo foi a automatização das respostas às demandas dos orgãos ao Comitê de Orçamento e Finanças (Cofin). Importante contextualizar que, a cada reunião do Cofin, centenas de demandas dos mais diversos órgãos do estado são deliberadas pelo Comitê, que seguindo os trâmites internos estabelecidos, devem ser respondidas através do SEI! aos respectivos órgãos demandantes.
 <!-- more -->
  
 Este post tem como objetivo explicar de forma geral como funciona o robô, algumas especificidades do processo e os seus resultados.
@@ -8,7 +8,7 @@ Este post tem como objetivo explicar de forma geral como funciona o robô, algum
  
 ## 1. Premissas
 - Acesso à planilha de controle das demandas do Cofin;<br>
-- Planilhas de apoio: "Mundo" - com informações atualizadas relativas aos órgãos do Estado de MG, e "Modelos" - apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado.;<br>
+- Planilhas de apoio: "Mundo" - com informações atualizadas relativas aos órgãos do estado de Minas Gerais, e "Modelos" - apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado;<br>
 - Documentos modelo criados no SEI.
 
 
@@ -18,7 +18,7 @@ Este fluxo funciona como um controlador do robô, solicitando informações prim
  
 - Executa os demais subfluxos do robô; 
 - Solicita ao usuário:  
-    - *identificação da Reunião COFIN*;  
+    - *identificação da Reunião Cofin*;  
     - *data da reunião realizada*;
 - Executa *loop* que identifica quais pleitos deliberados estão aptos para a elaboração do ofício.
 
@@ -34,7 +34,7 @@ No subfluxo em questão são abertas e incorporadas três planilhas, sendo:
 
 - Modelos: planilha previamente elaborada que apresenta todas as combinações de classificação (passíveis de automatização) atreladas a um código de documento modelo Ofício Cofin, armazenado em processo SEI dedicado a essa armazenagem.
 
-- Mundo: planilha interna que contém informações relativas aos órgãos do Estado de MG, contendo informações relevantes à elaboração dos ofícios como o dirigente máximo, os pronomes de tratamento adequados, assim como a vinculação dos órgãos.
+- Mundo: planilha interna que contém informações relativas aos órgãos do estado de Minas Gerais, contendo informações relevantes à elaboração dos ofícios como o dirigente máximo, os pronomes de tratamento adequados, assim como a vinculação dos órgãos.
 
 Destaca-se que o caminho para acessar as planilhas deve ser alterado de acordo com o computador que o usuário estiver rodando o robô.
 
