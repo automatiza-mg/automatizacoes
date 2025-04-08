@@ -5,7 +5,7 @@ Este projeto consiste em uma séria de ações para automatizar processos na Coo
 Principais entregas:
 
  1. [Automatizar o processo de desbloqueio de gravame](gravame.md);
- 2. Automatizar a recepção de defesa física de autuação;
+ 2. [Automatizar a recepção de defesa física de autuação](recepcao_fisica.md);
  3. [Automatizar a recepção de defesa digital de autuação](recepcao_digital.md);
  4. [Automatizar a montagem do passivo de defesa digital de autuação](recepcao_digital_montagem.md);
  5. [Automatizar o processo de pesquisa e inserção do auto de infração de transito (AIT) em processos SEI](procura_ait.md);
