@@ -207,18 +207,6 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![foto_andre](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__André Amorim__</p>
-
-    ---
-
-    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
-
-    <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
-    </p>
 
 - <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
 
