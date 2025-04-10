@@ -247,4 +247,16 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
+- <p class="p-center" markdown>![foto_felipe](http://avatars.githubusercontent.com/u/64739815?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Felipe Santos__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
 </div>
