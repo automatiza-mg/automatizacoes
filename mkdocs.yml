@@ -24,6 +24,8 @@ nav:
       - Certidões de fornecedores: projetos/extensao/certidoes_fornecedores
       - Prestação de contas de transporte por aplicativo: projetos/extensao/prestacao_contas_transporte
       - Afastamento para aperfeiçoamento profissional: projetos/extensao/afastamento_aperfeicoamento_profissional
+    - Secretaria de Estado de Cultura e Turismo (Secult):
+      - Automatização da análise de projetos da Leic: projetos/secult
     - Secretaria de Educação (SEE):
       - Publicação de Parecer de Equivalência de Estudos: projetos/see/mentoria
       - Emissão e envio de chaves do FGTS - professores Lei 100: projetos/see/fgts
