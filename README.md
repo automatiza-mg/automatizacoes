@@ -28,3 +28,4 @@ $ source venv/bin/activate
 
 Encontrou algo errado ou gostaria de enviar alguma sugestão,
 Abra um [Issue](https://github.com/automatiza-mg/automatizacoes/issues) para nós.
+testando
