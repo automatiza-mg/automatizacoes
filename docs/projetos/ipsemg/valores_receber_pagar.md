@@ -1,35 +1,31 @@
-# **Robô de recepção digital de defesas de auto de infração de trânsito - novos protocolos**
+# **Automação da instrução processual de valores de compensação previdenciária**
 
-A pessoa condutora ou proprietária do veículo autuado pela Coordenadoria Estadual de Gestão de Trânsito (CET-MG), pode apresentar defesa da autuação pela internet, via UAI Virtual, sem necessidade de comparecer presencialmente à uma unidade de atendimento.
+Através do Sistema de Compensação Previdenciária (Comprev), que permite o acerto financeiro entre os regimes previdenciários, o setor de Compensação previdnciária do Ipsemg - MG processa **valores a receber** e **valores a pagar** referente aos demais entes federados e seus respectivos regimes. 
 
-Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no sistema Siaut. Estas defesas precisam ser recepcionadas e intruídas em um processo Sei para que, posteriormente, sejam apreciadas. Diante disto, foi criado um robô para apoiar nesse processo e trazer mais agilidade e eficiência para equipe responsável por esta atividade.
+Esta informação é coletada no sistema do Comprev, sendo necessária a instrução de um processo sei para cada ente federado e a inclusão dos documentos a cada mês informando os valores, prazos, informações bancárias e outos. Devido a padronização das tarefas e à sua natureza repetitiva, foi desenvolvida a seguinte automação para apoiar as atividades do setor.
 
 ## 1. O que o robô faz 
-- [x] Recepciona os protocolos digitais de defesa de multa recebidos no Siaut.
-- [x] Pesquisa AIT relacionada à defesa.
-- [x] Realiza a instrução de processo SEI da defesa com os documentos: capa, anexos eviado pelo cidadão e, se houver, AIT.
-- [x] Direciona o processo para a caixa Sei correspondente. 
+- [x] Acessa o site do Comprev e realiza o download de arquivo `.csv` com informações do mês de competência;
+- [x] Para cada item ente, verifica se já há processo sei instruído ou se é necessário a criação de novo processo;
+- [x] Cria processo sei;
+- [x] Inclui despacho para setor financeiros com informações de compensação previdenciária;
+- [x] Inclui documentos em bloco de assinaturta.
+
 
 ## 2. Subfluxos e suas funcionalidade no robô 
 
 1. **Main**:  
-  Fluxo principal no qual é realizada a separação entre protocolos novos e aqueles que constam no protocolo digital por algum tipo de erro do sistema Siaut. Após essa separação, este fluxo direciona para os subfluxos adequados para cada um desses casos.
-2. **Login_Sei**:   
+  Fluxo principal no qual é realizada a seleção do mês de competência e do tipo de processo que se busca realizar, podendo ser referente aos **valores a receber** e **valores a pagar**. Identifica se já existe processo sei para cada ente listado no `.csv` e, em seguida,  direciona para os subfluxos adequados para cada caso.
+2. **extrai_dados_comprev**:
+  Acessa o site do Comprev e realiza o download de arquivo `.csv` com informações do mês de competência e tipo de processo;
+3. **gera_lista**:  
+  Gera listas a partir do arquivo coletado no site do comprev e lista de processos sei já existentes. 
+4. **login_sei**:   
   Realiza login no sistema sei e direciona para a caixa adequada. 
-3. **Login_Siaut**:  
-  Realiza login no sistema Siaut. 
-4. **Novos_Protocolos**:
-  Recepciona os novos protocolos e gera o documento capa. No caso de erros nesta etapa, redireciona para o subfluxo main, para que seja selecionado novo protocolo. 
-5. **Gravar_Excel**:
-  Abre, grava e salva em planilha do excel as informações de número defesa, data da defesa, placa do veículo, número de processamento de cada defesa devidamente recepcionada na etapa anterior.  
-6. **Mont_Siaut_Anexos**:
-  Identifica se o cidadão que protocolou a defesa incluiu documentos anexos. Em caso positivo, realiza downloads dos arquivos e salva em pasta no computado. Em caso negativo, direciona para o subfluxo de Mont_Siaut_S/Anexos. 
-7. **Mont_Siaut_S/Anexos**:
-  Faz captura de tela do siaut na qual consta a informação que o cidadão não anexou documentos a defesa. Em seguida salva a captura de tela em pasta no computador. 
-8. **Mont_Siaut_AIT**:
-  Pesquisa se há AIT, documento digital, da defesa recepcionada. Se sim, faz download do documento. Se não, registra na planilha que não foi encontrada AIT para a defesa.
-9. **Mont_SEI**:
-  Iniciar um novo processo sei para cada defesa recepcionada, incluindo os documentos capa, anexos ou captura de tela e AIT (se houver). Em seguida, encaminha o processo sei para a caixa correspondente. Registra em planilha do excel o número do processo sei e o nome do responsável pela montagem 
+5. **inclui_despacho**:
+  Adiciona documento despacho em processo Sei com as informações de compensação previdenciária para ser encaminhada ao setor financeiro. Inclui este despacho em bloco de assinatura. 
+6. **novo_processo_sei**:
+  Instrui processo Sei com despacho incial indicando à qual ente federado o processo se refere e o inclui em bloco interno. Grava informação do número do processo, CNPJ e nome identificado do ente em planilha excel. 
 
 ## 3. Pré-requisitos para o funcionamento do robô 
 
@@ -39,13 +35,7 @@ Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no si
   - :material-application-variable: **`orgao_sei`**: órgão de login no SEI. O valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
   - :material-application-variable: **`senha_sei`**: senha para login no SEI. Recomenda-se incluir variável como confidencial.
   - :material-application-variable: **`unidade_sei`**: sigla da unidade a qual caixa deseja ter acesso. O valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
-  - :material-application-variable: **`login_siaut`**: login para entrar no Siaut. Valor cadastrado para a variável deverá conter numéricos. Favor não incluir pontos (.) ou hífen (-).
-  - :material-application-variable: **`orgao_siaut`**: órgão de login no Siaut. Valor cadastrado para variável deverá ser exatamente igual ao existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
-  - :material-application-variable: **`senha_siaut`**: senha para login no Siaut. Recomendamos incluir variável como confidencial.
-  - :material-application-variable: **`cont`**: variável de loop. O valor deve ser 0. 
-  - :material-application-variable: **`i`**: variável de loop. O valor deve ser 0. 
-  - :material-application-variable: **`j`**: variável de loop. O valor deve ser 0.
-  - :material-application-variable: **`caminho_pasta`**: Define o caminho da pasta na qual os arquivos deverão ser salvos. Esta pasta deve ser de uso exclusivo do robô, uma vez que o robô irá esvaziar a pasta em durante sua execução 
+  - :material-application-variable: **`linha`**: variável de loop. O valor deve ser igual a 2.
 
 ### 3.2. Configurar o navegador Google Chrome: 
 
@@ -53,54 +43,38 @@ Desse modo, a CET recebe, em média, 4 mil defesas de autuações por mês no si
   - Extensão **Power Automate** deverá ser instalada e habilitada
   - **Configurações de download** deverão estar programadas para “Perguntar onde salvar cada arquivo antes de fazer download”. 
 
-### 3.3. Criar arquivos em Excel: 
+### 3.3. Salvar arquivo excel: 
 
-  - Planilha nomeada “protocolo”. Esta planilha deverá conter tabela, com o seguinte cabeçalho - n. defesa (A1), data (B1), placa (C1), processamento (D1), montagem (E1), sei (F1), AIT (G1). O caminho do arquivo deverá ser incluído na primeira ação do subfluxo “Gravar_excel”.
-
- <img width="875" alt="protocolo" src="https://github.com/user-attachments/assets/e40be813-cf8a-456e-842a-9e68d7e21d23">
-
-  - Planilha nomeada “erro_protocolo”. Esta planilha deverá conter tabela, com o seguinte cabeçalho - Número Protocolo Digital (A1), Placa (B1), Processamento (C1), Data Cadastro (D1), Erro (E1), Tratado (F1). O caminho do arquivo deverá ser incluído na décima ação do subfluxo “Main”.
-
-<img width="734" alt="erro_protocolo" src="https://github.com/user-attachments/assets/e9edbe70-7653-44ea-a1a6-b445d1b7403c">
+  - A planilha nomeada “Lista de SEIs de Pagamento” deve estar salva em pasta no computador local. Certifique-se que o cabeçalho da planilha corresponde está organizado da seguinte forma: Número do SEI(A1), RPPS e RGPS (B1), CNPJ (C1). O caminho do arquivo deverá ser incluído na terceira ação do subfluxo “gerar_listas”, qual seja, Iniciar o Excel.
 
 ### 3.4 Configurar caixa de download - navegação 
 
   - Neste processo, as ações de download e upload de documentos ocorrem na caixa de navegação do próprio Windows. A navegação nessa janela é sensível a alteração de visualização dos ícones. A configuração programada é lista detalhada.
 
-<img width="1438" alt="navega" src="https://github.com/user-attachments/assets/843def40-3ffe-41b5-9387-846af0894e57">
-
 ### 3.5. Editar subfluxos: 
-  - `main`: a ação de iniciar o excel deve ser editada para que o caminho do excel seja correspondente à planilha “erro_protocolo” criada.
-  - `Gravar_excel`: Neste subfluxo, a primeira ação, que se refere à iniciar a o Excel, deve ser editada para que o caminho do excel seja correspondente à planilha “protocolo” criada.
- - `Mont_Siaut_S/Anexos`: Neste subfluxo, há duas ações que precisam ser alteradas. 
-    - A ação nomeada "Fechar o Word". Ao editar esta ação, o caminho do documento deve ser editado para ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
-    - Igualmente, a ação nomeada "executar script power Shell", na qual é possível identificar o código comentado. O caminho da pasta deve ser o mesmo da variável `caminho_pasta` seguido do nome do arquivo `captura.docx`.
+  - `gerar_listas`: a ação **Ler do arquivo CSV** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]%mes_competencia%%processo%.csv`.
+  - `gerar_listas`: a ação **IIniciar o Excel** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]\Lista de SEIs de Pagamento.xlsx`
 
 ## 4. Resultados da execução do robô
 
-Após a execução do robô, a planilha “protocolo” estará preenchida com as informações referentes aos processos recepcionados. 
+Após a execução do robô, o bloco de assinatura deve estar com todos os despachos do mês de competência, conforme informações do Comprev. Ainda, se for o caso, a planilha “Lista de SEIs de Pagamento” deverá estar atualizada com os novos processos criados. 
 
-É possível que o robô pare inesperadamente, seja por problemas na conexão com a internet, queda de energia, dentre outros. Nestes caso, a última informação gravada no excel “protocolo” indica em qual ponto o robô parou. 
+É possível que o robô pare inesperadamente, seja por problemas na conexão com a internet, queda de energia, dentre outros. Nestes caso, verifique qual foi o último despacho incluido no bloco e em qual estágio o robô parou. 
 
-- Para o caso da última defesa registrada e montagem no Siaut parcial, sugere-se manter o registro, apagar os documentos baixados na pasta de destino e iniciar o fluxo novamente. Ao final, para estes casos, pode ser utilizado o robô de montagem para finalizar o processo.
-- Já para o caso das defesas recepcionada, montagem no Siaut finalizada, mas montagem do Sei incompleta, sugere-se (i) manter o registro, (ii) apagar os documentos baixados na pasta de destino, (iii) deletar o Sei criado e (iv) executar o robô novamente. Ao final, rodar o robô de montagem para esta planilha.  
+- Caso o robô tenha parado no meio da inclusão de um novo processo ou documento, apague o processo ou documento. Em seguida, exclua do `csv` as linhas até o ente que teve o último despacho criado, mantendo o cabeçalho. 
 
-Ainda, é importante lembrar de salvar e fechar as planilhas de excel antes de rodar o robô novamente. 
+Ainda, é importante lembrar de salvar e fechar a planilha de excel antes de rodar o robô novamente. 
 
 ## 5. Métricas alcançadas
-Foi mensurado que a execução manual deste processo leva cerca de 14 minutos, enquanto o robô executa em, em média, 7 minutos por processo. 
 
-Considerando que são recepcionados cerca de 4 mil processo por mês, isto representa uma economia de mais de 450 horas por mês!
 
 ## 6. Códigos 
-- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_main.txt)
-- [x] Subfluxo ['Login_Sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_login_sei.txt)
-- [x] Subfluxo ['Login_Siaut'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_login_siaut.txt)
-- [x] Subfluxo ['Novos_Protocolos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_novos_protocolos.txt)
-- [x] Subfluxo ['Gravar_Excel'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_gravar_excel.txt)
-- [x] Subfluxo ['Mont_Siaut_Anexos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_siaut_anexos.txt)
-- [x] Subfluxo ['Mont_Siaut_S/Anexos'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_siaut_s_anexo.txt)
-- [x] Subfluxo ['Mont_Siaut_AIT'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_siaut_ait.txt)
-- [x] Subfluxo ['Mont_Sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/cet_recepcao_digital_novos_protocolos/sub_mont_sei.txt)
+- [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_main.txt)
+- [x] Subfluxo ['extrai_dados_comprev'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_extrai_dados.txt)
+- [x] Subfluxo ['gera_listas'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_gera_listas.txt)
+- [x] Subfluxo ['login_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_login_sei.txt)
+- [x] Subfluxo ['inclui_despacho'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_inclui_despacho.txt)
+- [x] Subfluxo ['novo_processo_sei'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_novo_processo.txt)
+
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
