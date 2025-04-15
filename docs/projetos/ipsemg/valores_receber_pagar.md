@@ -45,7 +45,7 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 
 ### 3.3. Salvar arquivo excel: 
 
-  - A planilha nomeada “Lista de SEIs de Pagamento” deve estar salva em pasta no computador local. Certifique-se que o cabeçalho da planilha corresponde está organizado da seguinte forma: Número do SEI(A1), RPPS e RGPS (B1), CNPJ (C1). O caminho do arquivo deverá ser incluído na terceira ação do subfluxo “gerar_listas”, qual seja, Iniciar o Excel.
+  - A planilha nomeada “Lista de SEIs de Pagamento” deve estar salva em pasta no computador local. Certifique-se que o cabeçalho da planilha corresponde está organizado da seguinte forma: `Número do SEI(A1)`, `RPPS e RGPS (B1)`, `CNPJ (C1)`. O caminho do arquivo deverá ser incluído na terceira ação do subfluxo “gerar_listas”, qual seja, `Iniciar o Excel`.
 
 ### 3.4 Configurar caixa de download - navegação 
 
@@ -53,7 +53,7 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 
 ### 3.5. Editar subfluxos: 
   - `gerar_listas`: a ação **Ler do arquivo CSV** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]%mes_competencia%%processo%.csv`.
-  - `gerar_listas`: a ação **IIniciar o Excel** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]\Lista de SEIs de Pagamento.xlsx`
+  - `gerar_listas`: a ação **Iniciar o Excel** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]\Lista de SEIs de Pagamento.xlsx`
 
 ## 4. Resultados da execução do robô
 
