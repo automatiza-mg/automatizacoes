@@ -14,7 +14,7 @@ A utilização desse robô, em geral, será apenas um subfluxo de um robô compl
 <!-- more -->
 
 !!! Info
-    Para as configurações a seguir, serão necessários os dados de acesso ao Banco de dados (URL, login e senha)
+    Para as configurações a seguir, serão necessários os dados de acesso ao banco de dados (URL, login e senha)
 
 ## Instalando o conector
 O primeiro passo para a configuração do Banco de Dados no robô é a instalação de um arquivo que vai funcionar como conector entre o banco e o Power Automate Desktop. Antes de instalar, é necessário fazer o download desse conector, chamado Connector/ODBC (aqui será utilizada a versão 9.3.0, a mais atual no momento desse post).
@@ -24,6 +24,22 @@ O primeiro passo para a configuração do Banco de Dados no robô é a instalaç
 Depois de baixado o conector, basta proceder com sua instalação básica/típica.
 
 ## Criando a fonte de conexão
+Instalado o conector, o passo seguinte é configurar a fonte de dados da conexão. Para isso, é necessário abrir um programa nativo do Windows chamado Fonte de Dados ODBC (:warning: importante abrir o programa na mesma opção de bits do download do passo inicial). 
+
+### IMAGEM DO ÍCONE DO PROGRAMA FONTE DE DADOS
+
+Nele, selecione a aba "DSN de Arquivo", e clique em "Adicionar". Caso tenha seguido todos os passos corretamente até aqui, na lista com os drivers de fonte de dados que abrir, deverá aparecer o driver "MySQL ODBC 'versão instalada' Unicode Driver", como mostrado a seguir.
+
+### IMAGEM DA LISTA COM O DRIVER INSTALADO
+
+Selecione esse driver conforme a imagem e clique em "Avançar". Na tela seguinte, defina um nome para esse conector e em "Procurar", selecione em qual pasta quer salvar esse conector (um ícone será criado nessa pasta indicada, que será usado posteriormente). <br>Por fim, clique em "Avançar" e na tela seguinte em "Concluir".
+
+Automaticamente deverá abrir uma tela onde as credenciais do banco de dados deverão ser preenchidas com a URL ou IP, usuário e senha do banco.<br>
+
+!!! Info
+    :warning: Ao preencher as credenciais, essa tela iniciará o reconhecimento do acesso ao banco que poderá parar ou sobrecarregar a máquina por alguns segundos, então é importante aguardar um pouco. 
+    
+Ao reconhecer o acesso, a lista de "Database" mostrará os bancos que seu login tem acesso. Selecione o banco correto e clique em "Ok". Na tela do Administrador de Fonte de Dados ODBC, aparecerá o ícone do conector criado, clique em "Ok" novamente.
 
 <!-- As informações abaixo estão presentes nas primeiras páginas da documentação. Para iniciar o processo de criação de um Sistema no SEI, é preciso Efetuar o cadastro do sistema cliente através do menu Administração/Sistemas:
 
