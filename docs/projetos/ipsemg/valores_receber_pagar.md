@@ -68,6 +68,7 @@ Ainda, é importante lembrar de salvar e fechar a planilha de excel e o `.csv` a
 
 ## 5. Métricas alcançadas
 
+O robô executa, em média, a instrução de processual para cada ente federado em  3 minutos e 50 segundos.  
 
 ## 6. Códigos 
 - [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_main.txt)
