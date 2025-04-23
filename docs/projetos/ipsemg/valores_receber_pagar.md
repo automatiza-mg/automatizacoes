@@ -9,7 +9,7 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 - [x] Para cada item/ente, verifica se já há processo Sei instruído ou se é necessário a criação de novo processo;
 - [x] Cria processo Sei;
 - [x] Inclui despacho para setor financeiro com informações de compensação previdenciária;
-- [x] Inclui documentos em bloco de assinaturta.
+- [x] Inclui documentos em bloco de assinatura.
 
 
 ## 2. Subfluxos e suas funcionalidade no robô 
@@ -39,8 +39,8 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 
 ### 3.2. Configurar o navegador Google Chrome: 
 
-  - Extensão **Sei ++** deverá ser instalada e habilitada.
-  - Extensão **Power Automate** deverá ser instalada e habilitada.e
+  - Desbloquear Pop-up do Sei. 
+  - Extensão **Power Automate** deverá ser instalada e habilitada.
   - **Configurações de download** deverão estar programadas para “Perguntar onde salvar cada arquivo antes de fazer download”. 
 
 ### 3.3. Salvar arquivo excel: 
@@ -54,6 +54,7 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 ### 3.5. Editar subfluxos: 
   - `gerar_listas`: a ação **Ler do arquivo CSV** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]%mes_competencia%%processo%.csv`.
   - `gerar_listas`: a ação **Iniciar o Excel** deve ser editada para que o caminho do arquivo seja correspondente à `[CAMINHO_PASTA]\Lista de SEIs de Pagamento.xlsx`.
+  - `extrai_dados_comprev`: ação 23, **enviar teclas**, deve ser editada para que o caminho da pasta esteja indicado, correspondendo à `{Control}({L})[CAMINHO_PASTA]{Enter}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}`
 
 ## 4. Resultados da execução do robô
 
@@ -67,6 +68,7 @@ Ainda, é importante lembrar de salvar e fechar a planilha de excel e o `.csv` a
 
 ## 5. Métricas alcançadas
 
+O robô executa, em média, a instrução de processual para cada ente federado em  3 minutos e 50 segundos.  
 
 ## 6. Códigos 
 - [x] Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/ipsemg_comprev/valores_receber_pagar_main.txt)
