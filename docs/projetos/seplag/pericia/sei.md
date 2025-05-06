@@ -91,8 +91,6 @@ Após a execução do robô, a planilha estará preenchida com as informações 
 - [x] 5.3 Subfluxo ['API'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/API.txt)
 - [x] 5.4 Subfluxo ['registro_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/registro_planilha.txt)
 - [x] 5.5 Subfluxo ['formulas_filtros'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/formulas_filtros.txt)
-- [x] 5.6 Subfluxo ['login_sisap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/login_sisap.txt)
-- [X] 5.7 Subfluxo ['Digitação'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/digitacao.txt)
 
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
