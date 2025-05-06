@@ -86,13 +86,13 @@ Clique aqui para baixar a planilha modelo. { #download-button .card path="assets
 Após a execução do robô, a planilha estará preenchida com as informações referentes aos BIMs de cada processo e esses processos estarão incluídos no SISAP. Além disso, a planilha terá sido separada com a quantidade de BIMs em cada processo. Dessa forma, aqueles que só contêm anexos poderão ser tratados de forma manual enquanto os demais podem ser processados pelo robô, já excetuando aqueles que possuem 'Observações'.
 
 ## 5. Códigos
-- [x] 5.1 Subfluxo ['main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/main.txt)
-- [x] 5.2 Subfluxo ['leitura_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/leitura_planilha.txt)
-- [x] 5.3 Subfluxo ['API'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/API.txt)
-- [x] 5.4 Subfluxo ['registro_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/registro_planilha.txt)
-- [x] 5.5 Subfluxo ['formulas_filtros'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/formulas_filtros.txt)
-- [x] 5.6 Subfluxo ['login_sisap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/login_sisap.txt)
-- [X] 5.7 Subfluxo ['Digitação'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/digitacao.txt)
+- [x] 5.1 Subfluxo ['main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/main.txt)
+- [x] 5.2 Subfluxo ['leitura_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/leitura_planilha.txt)
+- [x] 5.3 Subfluxo ['API'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/API.txt)
+- [x] 5.4 Subfluxo ['registro_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/registro_planilha.txt)
+- [x] 5.5 Subfluxo ['formulas_filtros'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/formulas_filtros.txt)
+- [x] 5.6 Subfluxo ['login_sisap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/login_sisap.txt)
+- [X] 5.7 Subfluxo ['Digitação'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/seplag_pericia/SEI/digitacao.txt)
 
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
