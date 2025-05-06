@@ -1720,94 +1720,44 @@
 
 <p>Este post tem como objetivo explicar o funcionamento do robô e os parâmetros que ele deve seguir para que a rodagem seja feita a cada mês.</p>
 <h2 id="1-premissas">1. Premissas<a class="headerlink" href="#1-premissas" title="Permanent link">⚓︎</a></h2>
-<p><strong>Pasta de cada mês:</strong> </p>
+<p><strong><code>Pasta de cada mês:</code></strong></p>
 <ul>
-<li>Mensal (uma nova pasta deve ser criada a cada mês);</li>
-<li>Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP (abaixo, prints de cada planilha-modelo e da pasta como um todo); </li>
+<li>Mensal (uma nova pasta deve ser criada a cada mês); </li>
+<li>Deve conter, antes de iniciar o robô, a planilha de taxação e a planilha base do SISAP. </li>
 <li>Nome da pasta: [Mês][Ano]. Ex: Maio 2024.</li>
 </ul>
-<p><strong>PLANILHA DE TAXAÇÃO</strong></p>
 <figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/f30b25c8-bebb-4529-94f9-5ce756f0afd9">
+<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1">
 <br>
 <figcaption></figcaption>
 </figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/def768bc-5377-40d1-a6a8-65e370467b4e">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/47778b18-f00b-4f39-8f1e-8047457f7d1c">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/31b5ce83-b111-49f5-b58d-74d995a7f334">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/990f9c0d-676b-4f56-a76b-5891d5f8a9d4">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/bb2c1f48-723b-46d9-b278-b98a86d7383d">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/d7d1e2ef-a7c6-459c-88c8-8fcd05174cdc">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/9dddb42e-dd21-4388-b410-22efb3da1aa8">
-<br>
-<figcaption></figcaption>
-</figure>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/e2039a20-5555-4b28-ad2f-b50e4c898b18">
-<br>
-<figcaption></figcaption>
-</figure>
-<p><strong>PLANILHA BASE DO SISAP</strong></p>
-<figure>
-  <img alt="image" src="https://github.com/user-attachments/assets/f2b97014-30ed-48ec-8a10-1424cec15eaf">
-<br>
-<figcaption></figcaption>
-</figure>
-<p><strong>PASTA E NOMES DOS ARQUIVOS</strong></p>
-<figure>
-  <img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1">
-<br>
-<figcaption></figcaption>
-</figure>
-<p><strong>Planilha de taxação:</strong></p>
-<!-- more -->
+<p><strong><code>Planilha de taxação:</code></strong></p>
 <ul>
-<li>Mensal (acompanha os dados das taxações);</li>
-<li>Abas (nesta ordem): "lanca_pagamento" (inserida pelo último robô, o da taxação), "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (<strong>essencial</strong> que sejam exatamente esses os nomes);</li>
-<li>Nome do arquivo: [mês]_[ano]. Ex: "maio_2024". </li>
+<li>Mensal (acompanha os dados das taxações).</li>
+<li>Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (<strong>essencial</strong> que sejam exatamente esses os nomes).</li>
+<li>Nome do arquivo: [mês]_[ano]. Ex: "maio_2024".</li>
 </ul>
 <figure>
-<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/f332a68c-a7e5-40b2-ab7d-1b4254fb9895">
+<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/2ae333e8-beab-4efa-b98c-2a340afbf686">
 <br>
 <figcaption></figcaption>
 </figure>
-<p><strong>Planilha de informações-base dos professores:</strong></p>
+<p>Baixe aqui o modelo da planilha de taxação! Ela está no formato com que o robô foi construído, mas com dados fictícios.</p>
+<p><a href="../assets/maio_2024.xlsx" download="maio_2024.xlsx"><strong>maio_2024</strong>.</a></p>
+<p><strong><code>Planilha de informações-base dos professores:</code></strong></p>
 <ul>
 <li>Mensal (extraída do SISAP a cada mês);</li>
-<li>Aba única: "Relatório 1" (<strong>essencial</strong> que seja exatamente esse o nome);</li>
-<li>Para este robô, usa-se a versão geral (servidores internos e externos);</li>
+<li>Aba única: "Relatório 1";</li>
+<li>Para este robô, usa-se a geral (servidores internos e externos);</li>
 <li>Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.</li>
 </ul>
 <figure>
-<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/80d5cc9a-d437-455d-be77-f8b6866c5a22">
+<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/16578ed5-0826-4b15-a0b3-086bd2ba5a01">
 <br>
 <figcaption></figcaption>
 </figure>
+<p>Baixe aqui o modelo da planilha de informações-base dos professores! Ela está no formato com que o robô foi construído, mas com dados fictícios.</p>
+<p><a href="../assets/sisap_maio_2024.xlsx" download="sisap_maio_2024.xlsx"><strong>sisap_maio_2024</strong>.</a></p>
 <h2 id="2-como-funciona-passo-a-passo-explicado-do-automate">2. Como funciona? Passo a passo explicado do Automate<a class="headerlink" href="#2-como-funciona-passo-a-passo-explicado-do-automate" title="Permanent link">⚓︎</a></h2>
 <h4 id="21-main">2.1. <strong>"Main"</strong><a class="headerlink" href="#21-main" title="Permanent link">⚓︎</a></h4>
 <p>Este fluxo, ramo principal do robô, ordena os demais subfluxos. </p>
@@ -1910,7 +1860,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">26 de dezembro de 2024 13:44:56</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">6 de maio de 2025 18:27:01</span>
   </span>
 
     

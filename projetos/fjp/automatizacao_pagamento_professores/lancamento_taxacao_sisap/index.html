@@ -1657,7 +1657,18 @@
 <p>A taxação dos professores da Fundação João Pinheiro (FJP) é realizada manualmente no SISAP. O objetivo da demanda é criar robô para efetuar os lançamentos de descontos de taxação no SISAP. Com o fluxo atual, manual, eram lançados aproximadamente 140 professores, demandando 01 (um) dia de serviço.</p>
 <p>Diante dessa situação, foi criado um fluxo automatizado utilizando a ferramenta Power Automate. O novo "robozinho" dá continuidade no preparo da planilha <code>taxação</code> e utiliza outra planilha <code>base SISAP BO</code>como subsídio que contém os masp's dos servidores. Diante disso, o robô calcula o valor a ser taxado por masp e efetua seu lançamento no SISAP, tendo a necessidade de intervenção humana apenas para iniciar o processo.</p>
 <h2 id="1-premissas">1. Premissas<a class="headerlink" href="#1-premissas" title="Permanent link">⚓︎</a></h2>
-<p><strong>Planilha <code>taxação</code>:</strong></p>
+<p><strong><code>Pasta de cada mês:</code></strong></p>
+<ul>
+<li>Mensal (uma nova pasta deve ser criada a cada mês); </li>
+<li>Deve conter, antes de iniciar o robô, a planilha de taxação e a planilha base do SISAP. </li>
+<li>Nome da pasta: [Mês][Ano]. Ex: Maio 2024.</li>
+</ul>
+<figure>
+<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1">
+<br>
+<figcaption></figcaption>
+</figure>
+<p><strong><code>Planilha de taxação:</code></strong></p>
 <ul>
 <li>Mensal (acompanha os dados das taxações).</li>
 <li>Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (<strong>essencial</strong> que sejam exatamente esses os nomes).</li>
@@ -1668,7 +1679,9 @@
 <br>
 <figcaption></figcaption>
 </figure>
-<p><strong>Planilha <code>base SISAP BO</code>:</strong></p>
+<p>Baixe aqui o modelo da planilha de taxação! Ela está no formato com que o robô foi construído, mas com dados fictícios.</p>
+<p><a href="../assets/maio_2024.xlsx" download="maio_2024.xlsx"><strong>maio_2024</strong>.</a></p>
+<p><strong><code>Planilha de informações-base dos professores:</code></strong></p>
 <ul>
 <li>Mensal (extraída do SISAP a cada mês);</li>
 <li>Aba única: "Relatório 1";</li>
@@ -1680,17 +1693,8 @@
 <br>
 <figcaption></figcaption>
 </figure>
-<p><strong>Pasta de cada mês:</strong></p>
-<ul>
-<li>Mensal (uma nova pasta deve ser criada a cada mês);</li>
-<li>Deve conter, antes de iniciar o robô, a planilha <code>taxação</code> e a planilha <code>base SISAP BO</code>.</li>
-<li>Nome da pasta: [Mês][espaço][Ano]. Ex: Maio 2024</li>
-</ul>
-<figure>
-<img alt="image" src="https://github.com/automatiza-mg/automatizacoes/assets/65547646/95bf7bc8-9aab-4bc1-85b2-d111fb446671">
-<br>
-<figcaption></figcaption>
-</figure>
+<p>Baixe aqui o modelo da planilha de informações-base dos professores! Ela está no formato com que o robô foi construído, mas com dados fictícios.</p>
+<p><a href="../assets/sisap_maio_2024.xlsx" download="sisap_maio_2024.xlsx"><strong>sisap_maio_2024</strong>.</a></p>
 <p><strong>Alterar nome de variáveis:</strong></p>
 <p>Antes de executar o robô, além da pasta criada e aquivos renomeados adequadamente, o usuário deverá renomear algumas variáveis de entrada/saída. As variáveis que devem ser renomeadas mensalmente estão fixadas.</p>
 <figure>
@@ -1778,7 +1782,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">12 de dezembro de 2024 14:05:28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">6 de maio de 2025 18:27:01</span>
   </span>
 
     
