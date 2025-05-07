@@ -39,7 +39,23 @@ Automaticamente deverá abrir uma tela onde as credenciais do banco de dados dev
 !!! Info
     :warning: Ao preencher as credenciais, essa tela iniciará o reconhecimento do acesso ao banco que poderá parar ou sobrecarregar a máquina por alguns segundos, então é importante aguardar um pouco. 
     
-Ao reconhecer o acesso, a lista de "Database" mostrará os bancos que seu login tem acesso. Selecione o banco correto e clique em "Ok". Na tela do Administrador de Fonte de Dados ODBC, aparecerá o ícone do conector criado, clique em "Ok" novamente.
+Ao reconhecer o acesso, a lista de "Database" mostrará os bancos que seu login tem acesso. Selecione o banco correto e clique em "Ok". Na tela do Administrador de Fonte de Dados ODBC, aparecerá o ícone da fonte de dados criado, clique em "Ok" novamente.
+
+### USANDO A FONTE DE DADOS NO POWER AUTOMATE
+
+Após abrir no Power Automate o fluxo que será usada a conexão com o Banco de Dados, crie um novo subfluxo para configurar a conexão com o Banco. A primeira ação a ser usada nesse fluxo será "Abrir conexão SQL". Na tela de configuração dessa ação, será necessário preencher a cadeia de conexão. Para isso clique no botão "Criar cadeia de conexão".
+
+### IMAGEM DO BOTÃO CRIAR CADEIA DE CONEXÃO
+
+Na tela seguinte selecione a opção "Microsoft OLE DB Provider for ODBC Drivers" e clique em "Avançar". Marque a opção "Usar cadeia de conexão" e clique em "Criar". Encontre fonte de dados criada nos passos anteriores (arquivo no formato .dsn normalmente) na pasta em que ele estiver salvo, selecione a mesma e clique em "Ok". 
+
+### IMAGEM DA SELEÇÃO DO CONECTOR
+
+A tela de configuração incial da conexão Banco abrirá novamente, porém já preenchida com os dados, conforme feito na criação da fonte. Clique em "Ok" e aguarde, nesse momento o próprio Power Automate fará a conexão com o Banco de Dados (o computador pode travar um pouco e demorar alguns segundos). O campo "Cadeia de Conexão" será preenchido com os dados do Banco. Clique em "Ok" e posteriormente, na configuração da ação do Power Automate, clique em "Salvar".
+
+### IMAGEM DA AÇÃO FINALIZADA NO POWER AUTOMATE
+
+Daí pra frente, basta usar a ação "Executar instrução SQL" com os respectivos códigos em SQL para manuseio e utilização do Banco de Dados.
 
 <!-- As informações abaixo estão presentes nas primeiras páginas da documentação. Para iniciar o processo de criação de um Sistema no SEI, é preciso Efetuar o cadastro do sistema cliente através do menu Administração/Sistemas:
 
@@ -66,7 +82,7 @@ Aqui é o momento de selecionar a opção de "Consultar Procedimento", que é ex
 ![tipo_operacoes](https://github.com/user-attachments/assets/a71d0145-f10f-4cf6-9b72-e5aff31bf1a1)
 ![image](https://github.com/user-attachments/assets/d1602ea2-48ab-4804-84f7-3ca97aaeda51)
 
--->
+
 ## Criando um token para o sistema SEI
 
 Por fim, para gerar o token, basta acessar o serviço criado e acessar o ícone Gerar Chave de Acesso na lista de serviços do sistema:
@@ -80,5 +96,5 @@ Assim, com essas informações em mão, é possível criar as variáveis no flux
 
 Para mais informações, [consulte a documentação da API](https://github.com/automatiza-mg/handbook/blob/main/docs/assets/SEI-WebServices-v40.3._240130_172029%201.pdf).
 
-
+-->
 
