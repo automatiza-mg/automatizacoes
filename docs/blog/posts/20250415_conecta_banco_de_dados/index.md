@@ -26,11 +26,11 @@ Depois de baixado o conector, basta proceder com sua instalação básica/típic
 ## Criando a fonte de conexão
 Instalado o conector, o passo seguinte é configurar a fonte de dados da conexão. Para isso, é necessário abrir um programa nativo do Windows chamado Fonte de Dados ODBC (:warning: importante abrir o programa na mesma opção de bits do download do passo inicial). 
 
-### IMAGEM DO ÍCONE DO PROGRAMA FONTE DE DADOS
+![programa-fonte-de-dados](https://github.com/user-attachments/assets/9cd896a1-78ca-4be4-815d-379eafb9ec04)
 
 Nele, selecione a aba "DSN de Arquivo", e clique em "Adicionar". Caso tenha seguido todos os passos corretamente até aqui, na lista com os drivers de fonte de dados que abrir, deverá aparecer o driver "MySQL ODBC 'versão instalada' Unicode Driver", como mostrado a seguir.
 
-### IMAGEM DA LISTA COM O DRIVER INSTALADO
+![lista-drivers-conector](https://github.com/user-attachments/assets/e325af5e-37d3-4ef2-b479-ade50ae2c53b)
 
 Selecione esse driver conforme a imagem e clique em "Avançar". Na tela seguinte, defina um nome para esse conector e em "Procurar", selecione em qual pasta quer salvar esse conector (um ícone será criado nessa pasta indicada, que será usado posteriormente). <br>Por fim, clique em "Avançar" e na tela seguinte em "Concluir".
 
@@ -41,60 +41,21 @@ Automaticamente deverá abrir uma tela onde as credenciais do banco de dados dev
     
 Ao reconhecer o acesso, a lista de "Database" mostrará os bancos que seu login tem acesso. Selecione o banco correto e clique em "Ok". Na tela do Administrador de Fonte de Dados ODBC, aparecerá o ícone da fonte de dados criado, clique em "Ok" novamente.
 
+![credenciais-banco-de-dados-preenchida](https://github.com/user-attachments/assets/1c74f493-1e2a-4c37-b3f8-f9c5a361cf08)
+
+
 ### USANDO A FONTE DE DADOS NO POWER AUTOMATE
 
 Após abrir no Power Automate o fluxo que será usada a conexão com o Banco de Dados, crie um novo subfluxo para configurar a conexão com o Banco. A primeira ação a ser usada nesse fluxo será "Abrir conexão SQL". Na tela de configuração dessa ação, será necessário preencher a cadeia de conexão. Para isso clique no botão "Criar cadeia de conexão".
 
-### IMAGEM DO BOTÃO CRIAR CADEIA DE CONEXÃO
+![criar cadeia de conexão](https://github.com/user-attachments/assets/14dd012c-d1a4-4fe6-a14f-e6bf509499bb)
 
 Na tela seguinte selecione a opção "Microsoft OLE DB Provider for ODBC Drivers" e clique em "Avançar". Marque a opção "Usar cadeia de conexão" e clique em "Criar". Encontre fonte de dados criada nos passos anteriores (arquivo no formato .dsn normalmente) na pasta em que ele estiver salvo, selecione a mesma e clique em "Ok". 
 
-### IMAGEM DA SELEÇÃO DO CONECTOR
+![seleção do conector](https://github.com/user-attachments/assets/eb154ab9-408b-4744-98d5-93769765b4c0)
 
 A tela de configuração incial da conexão Banco abrirá novamente, porém já preenchida com os dados, conforme feito na criação da fonte. Clique em "Ok" e aguarde, nesse momento o próprio Power Automate fará a conexão com o Banco de Dados (o computador pode travar um pouco e demorar alguns segundos). O campo "Cadeia de Conexão" será preenchido com os dados do Banco. Clique em "Ok" e posteriormente, na configuração da ação do Power Automate, clique em "Salvar".
 
-### IMAGEM DA AÇÃO FINALIZADA NO POWER AUTOMATE
+![ação abrir SQL no power automate](https://github.com/user-attachments/assets/e7b9e15e-6b9d-4c88-a071-6726168e1593)
 
-Daí pra frente, basta usar a ação "Executar instrução SQL" com os respectivos códigos em SQL para manuseio e utilização do Banco de Dados.
-
-<!-- As informações abaixo estão presentes nas primeiras páginas da documentação. Para iniciar o processo de criação de um Sistema no SEI, é preciso Efetuar o cadastro do sistema cliente através do menu Administração/Sistemas:
-
-![novo_sistema](https://github.com/user-attachments/assets/e4d93e30-2183-4aac-bdce-fd91809428f5)
-
-
-Em seguida, acessar o ícone Serviços na lista de sistemas:
-
-![icone_servicos](https://github.com/user-attachments/assets/57b03244-c51a-4c86-9ca3-10560ee21e0a)
-
-
-Então, cadastrar os serviços do sistema:
-
-![novo_servico](https://github.com/user-attachments/assets/63218307-75d9-480c-bd0c-85296b3ae789)
-
-
-Com isso, o serviço será criado. Para continuar, basta acessar o ícone Operações na lista de serviços do sistema:
-
-![clique_operacoes](https://github.com/user-attachments/assets/b7c4116a-7ab7-429c-8f61-8f857bd9cb99)
-
-
-Aqui é o momento de selecionar a opção de "Consultar Procedimento", que é exatamente o que o robô da API faz, buscando os processos e fazendo download. Portanto, deve-se cadastrar as operações permitidas para o serviço, que no caso é "Consultar Procedimento":
-
-![tipo_operacoes](https://github.com/user-attachments/assets/a71d0145-f10f-4cf6-9b72-e5aff31bf1a1)
-![image](https://github.com/user-attachments/assets/d1602ea2-48ab-4804-84f7-3ca97aaeda51)
-
-
-## Criando um token para o sistema SEI
-
-Por fim, para gerar o token, basta acessar o serviço criado e acessar o ícone Gerar Chave de Acesso na lista de serviços do sistema:
-
-![gerar_token](https://github.com/user-attachments/assets/31c49bba-1cd5-4800-8eba-c0f78f91b3f4)
-
-
-A chave estará disponível para cópia apenas no momento da geração pois é armazenada de forma criptografada no banco de dados. É necessário sinalizar a opção Autenticação/Chave de Acesso no cadastro do serviço e passar a chave no parâmetro Identificacao das chamadas de Web Services.
-
-Assim, com essas informações em mão, é possível criar as variáveis no fluxo e prosseguir para a utilização do robô que está na biblioteca de robôs.
-
-Para mais informações, [consulte a documentação da API](https://github.com/automatiza-mg/handbook/blob/main/docs/assets/SEI-WebServices-v40.3._240130_172029%201.pdf).
-
--->
-
+Daí pra frente, basta usar a ação "Executar instrução SQL" com os respectivos códigos em SQL para manuseio e utilização do Banco de Dados. :rocket::rocket:
