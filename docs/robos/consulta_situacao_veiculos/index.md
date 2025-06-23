@@ -16,12 +16,18 @@ tags:
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.39.00239.23332 |
 
-- [x] Robô dedicado a facilitar a consulta de multas e pendências veiculares. Ideal para gestores de frotas que administram um grande volume de veículos.
-- [x] Ler uma planilha, em formato Excel, contendo a placa e chassi dos veículos.
-- [x] Consultar a situação dos veículos no site [https://cidadao.mg.gov.br/](https://cidadao.mg.gov.br/)
-- [x] Atualizar a situação desses veículos na mesma planilha Excel aberta no início do processo, determinando se eles estão regulares ou irregulares.
-- [x] Aguarda o carregamento das páginas para garantir que tudo esteja certo.
-- [x] Economiza tempo e evita erros.
+- [x] Robô desenvolvido para automatizar a consulta de multas veiculares, ideal para gestores de frotas com grande volume de veículos.
+- [x] Lê uma planilha Excel contendo placas e chassis dos veículos.
+- [x] Consulta automaticamente a situação dos veículos nos seguintes sites: Cidadão MG, Auto PRF e Portal de Multas de Trânsito (DNIT).
+
+Links utilizados:
+
+[Cidadão MG](https://cidadao.mg.gov.br/) | [Auto PRF](https://pesquisa-auto.prf.gov.br/#/pesquisa/consultar-debitos) | [Portal de Multas de Trânsito](https://servicos.dnit.gov.br/multas/nada-consta/emissao-certidao)
+
+
+- [x] Atualiza as informações diretamente na mesma planilha Excel, indicando o status de cada veículo em cada fonte consultada.
+- [x] Aguarda o carregamento completo das páginas para garantir que os dados estejam corretos.
+- [x] Reduz o tempo de trabalho manual e minimiza riscos
 
 ## Pré-requisitos
 
@@ -58,7 +64,16 @@ Para dar vida a ele:
 :material-microsoft-excel: __Complete as colunas da planilha modelo__ com a placa e o chassi dos veículos que serão consultados e salve.
 { .card }
 
-[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/consulta_veicular/consulta_veicular.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
+[:octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
+{ .card }
+
+[:octicons-copy-16: __Copie o código do robô - DNIT__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_dnit.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+{ .card }
+
+[:octicons-copy-16: __Copie o código do robô - 'cidadao.mg'__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_cidadao_mg.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+{ .card }
+
+[:octicons-copy-16: __Copie o código do robô - PRF__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_prf.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
 :material-application-variable: Abra a primeira ação  __'Iniciar Excel'__, edite o campo  __'caminho do documento'__ e selecione o documento salvo no passo anterior.
@@ -68,12 +83,15 @@ Para dar vida a ele:
 
 !!! note "Observação"
 
-    Se o site cidadao.mg apresentar falhas no carregamento das páginas, algumas linhas poderão ficar em branco. Nessa situação, recomenda-se que o usuário crie uma nova planilha com as placas não consultadas e execute o robô novamente.
+    Se o robô apresentar falhas no carregamento das páginas, algumas linhas poderão ficar em branco. Nessa situação, recomenda-se que o usuário salve a planilha e execute novamente o fluxo.
   
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Qualquer modificação além da inclusão de mais CNPJs na planilha Excel pode exigir modificações no código original do robô. Download desta planilha não é suportado na versão mobile desta página.
 [^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^3]: O robô contém um fluxo principal chamado "Main" e três subfluxos, cada um responsável por consultar um dos sites.
+Para isso, é necessário criar três novos subfluxos. No canto superior direito da interface, clique em "Subfluxo" > "Novo subfluxo" e crie os seguintes fluxos: "DNIT", "PRF" e "cidadao.mg".
+Certifique-se de colar cada trecho de código no subfluxo correspondente, mantendo a organização do processo.
 
 
