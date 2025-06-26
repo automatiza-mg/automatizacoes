@@ -43,7 +43,7 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
   - Extensão **Power Automate** deverá estar instalada e habilitada.
   - **Configurações de download** deverão estar programadas para “Perguntar onde salvar cada arquivo antes de fazer download”. 
 
-### 3.3. Salvar arquivo excel: 
+### 3.3. Salvar arquivo Excel: 
 
   - A planilha nomeada “Lista de SEIs de Pagamento” deve estar salva em pasta no computador local antes de o robô começar a rodar. Certifique-se que o cabeçalho da planilha corresponde está organizado da seguinte forma: `Número do SEI(A1)`, `RPPS e RGPS (B1)`, `CNPJ (C1)`. O caminho do arquivo deverá ser incluído na terceira ação do subfluxo “gerar_listas”, qual seja, `Iniciar o Excel`.
 
@@ -60,10 +60,9 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 
 Após a execução do robô, o bloco de assinatura deve estar com todos os despachos do mês de competência, conforme informações do Comprev. Ainda, se for o caso, a planilha “Lista de SEIs de Pagamento” deverá estar atualizada com os novos processos criados. 
 
-É possível que o robô pare inesperadamente, seja por problemas na conexão com a internet, queda de energia, dentre outros. Nesses casos, verifique qual foi o último despacho incluido no bloco e em qual estágio o robô parou. 
+É possível que o robô pare inesperadamente, seja por problemas na conexão com a internet, queda de energia, dentre outros. Nesses casos, verifique qual foi o último despacho incluido no bloco e em qual estágio dele o robô parou. 
 
-- Caso o robô tenha parado **no meio da inclusão de um novo processo ou documento**, apague o processo ou documento que foi criado pela metade. Em seguida, exclua do `.csv` as linhas até o ente que teve o último despacho criado e incluido no bloco de assinaturas, mantendo o cabeçalho. 
-- Caso o robô tenha feito o último lançamento completo e **não tenha chegado a criar um novo processo ou incluir outro documento** (parou antes disso no lançamento corrente), basta verificar qual foi a última linha rodada (exemplo: Brasília de Minas foi o último lançamento completo e era a linha '6' do `.csv`). Mude a variável de entrada **`linha`** para uma linha depois (exemplo: '7', nesse exemplo de Brasília de Minas) e coloque o robô para rodar novamente.[^1]
+- Caso o robô tenha parado **no meio da inclusão de um novo processo ou documento**, finalize manualmente o que faltou nele (exemplo, se faltou incluir o despacho no bloco de assinatura, faça esse pequeno ajuste manualmente; se ele fez tudo e apenas não pulou para o próximo, não precisa fazer nada). Salve e feche os documentos Excel, feche o robô atual e vá para o robô *'compensacao_valores [em caso de erro]'*. Depois, seguindo as orientações que estão no próprio código, altere a variável 'linha' desse fluxo e coloque para executar.[^1] [^2]
 
 Ainda, é importante lembrar de salvar e fechar a planilha de excel e o `.csv` antes de rodar o robô novamente.
 
@@ -82,4 +81,5 @@ O robô executa, em média, a instrução de processual para cada ente federado 
 
 Ao abrir o link dos fluxos acima, você deve selecionar todo o conteúdo (ctrl + a), copiar (ctrl +c) e colar (ctrl+v) em um novo fluxo Power Automate Desktop. Caso o seu robô tenha subfluxos, veja os cuidados ao copiar [códigos de subfluxo](https://automatiza-mg.github.io/automatizacoes/blog/copiando-c%C3%B3digo-de-subfluxos-de-um-rob%C3%B4/).
 
-[^1]: ATENÇÃO! Lembre-se de, ao final, voltar o valor de **`linha`** para o valor '1' para que, na próxima rodada, o robô rode todas as linhas do arquivo `.csv` do mês de competência.
+[^1]: ATENÇÃO! A variável 'linha' só pode ser alterada **no robô 'compensacao_valores [em caso de erro]'**. No robô original ('compensacao_valores'), ela deve ser *sempre igual a 1*.
+[^2]: APENAS use o robô 'compensacao_valores [em caso de erro]' para a situação para a qual ele foi feita (erro inesperado no robô). A cada nova janela, seja de valores a pagar ou de valores a receber, o robô que deve ser usado em primeira instância é o 'compensacao"valores' original. 
