@@ -1684,7 +1684,7 @@
           <li class="md-nav__item">
   <a href="#33-salvar-arquivo-excel" class="md-nav__link">
     <span class="md-ellipsis">
-      3.3. Salvar arquivo excel:
+      3.3. Salvar arquivo Excel:
     </span>
   </a>
   
@@ -1805,7 +1805,7 @@
 <li>Extensão <strong>Power Automate</strong> deverá estar instalada e habilitada.</li>
 <li><strong>Configurações de download</strong> deverão estar programadas para “Perguntar onde salvar cada arquivo antes de fazer download”. </li>
 </ul>
-<h3 id="33-salvar-arquivo-excel">3.3. Salvar arquivo excel:<a class="headerlink" href="#33-salvar-arquivo-excel" title="Permanent link">⚓︎</a></h3>
+<h3 id="33-salvar-arquivo-excel">3.3. Salvar arquivo Excel:<a class="headerlink" href="#33-salvar-arquivo-excel" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li>A planilha nomeada “Lista de SEIs de Pagamento” deve estar salva em pasta no computador local antes de o robô começar a rodar. Certifique-se que o cabeçalho da planilha corresponde está organizado da seguinte forma: <code>Número do SEI(A1)</code>, <code>RPPS e RGPS (B1)</code>, <code>CNPJ (C1)</code>. O caminho do arquivo deverá ser incluído na terceira ação do subfluxo “gerar_listas”, qual seja, <code>Iniciar o Excel</code>.</li>
 </ul>
@@ -1821,10 +1821,9 @@
 </ul>
 <h2 id="4-resultados-da-execucao-do-robo">4. Resultados da execução do robô<a class="headerlink" href="#4-resultados-da-execucao-do-robo" title="Permanent link">⚓︎</a></h2>
 <p>Após a execução do robô, o bloco de assinatura deve estar com todos os despachos do mês de competência, conforme informações do Comprev. Ainda, se for o caso, a planilha “Lista de SEIs de Pagamento” deverá estar atualizada com os novos processos criados. </p>
-<p>É possível que o robô pare inesperadamente, seja por problemas na conexão com a internet, queda de energia, dentre outros. Nesses casos, verifique qual foi o último despacho incluido no bloco e em qual estágio o robô parou. </p>
+<p>É possível que o robô pare inesperadamente, seja por problemas na conexão com a internet, queda de energia, dentre outros. Nesses casos, verifique qual foi o último despacho incluido no bloco e em qual estágio dele o robô parou. </p>
 <ul>
-<li>Caso o robô tenha parado <strong>no meio da inclusão de um novo processo ou documento</strong>, apague o processo ou documento que foi criado pela metade. Em seguida, exclua do <code>.csv</code> as linhas até o ente que teve o último despacho criado e incluido no bloco de assinaturas, mantendo o cabeçalho. </li>
-<li>Caso o robô tenha feito o último lançamento completo e <strong>não tenha chegado a criar um novo processo ou incluir outro documento</strong> (parou antes disso no lançamento corrente), basta verificar qual foi a última linha rodada (exemplo: Brasília de Minas foi o último lançamento completo e era a linha '6' do <code>.csv</code>). Mude a variável de entrada <strong><code>linha</code></strong> para uma linha depois (exemplo: '7', nesse exemplo de Brasília de Minas) e coloque o robô para rodar novamente.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>Caso o robô tenha parado <strong>no meio da inclusão de um novo processo ou documento</strong>, finalize manualmente o que faltou nele (exemplo, se faltou incluir o despacho no bloco de assinatura, faça esse pequeno ajuste manualmente; se ele fez tudo e apenas não pulou para o próximo, não precisa fazer nada). Salve e feche os documentos Excel, feche o robô atual e vá para o robô <em>'compensacao_valores [em caso de erro]'</em>. Depois, seguindo as orientações que estão no próprio código, altere a variável 'linha' desse fluxo e coloque para executar.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
 </ul>
 <p>Ainda, é importante lembrar de salvar e fechar a planilha de excel e o <code>.csv</code> antes de rodar o robô novamente.</p>
 <h2 id="5-metricas-alcancadas">5. Métricas alcançadas<a class="headerlink" href="#5-metricas-alcancadas" title="Permanent link">⚓︎</a></h2>
@@ -1843,7 +1842,10 @@
 <hr>
 <ol>
 <li id="fn:1">
-<p>ATENÇÃO! Lembre-se de, ao final, voltar o valor de <strong><code>linha</code></strong> para o valor '1' para que, na próxima rodada, o robô rode todas as linhas do arquivo <code>.csv</code> do mês de competência. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>ATENÇÃO! A variável 'linha' só pode ser alterada <strong>no robô 'compensacao_valores [em caso de erro]'</strong>. No robô original ('compensacao_valores'), ela deve ser <em>sempre igual a 1</em>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>APENAS use o robô 'compensacao_valores [em caso de erro]' para a situação para a qual ele foi feita (erro inesperado no robô). A cada nova janela, seja de valores a pagar ou de valores a receber, o robô que deve ser usado em primeira <abbr title="Definir instância">instância</abbr> é o 'compensacao"valores' original. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
 </div></div>
@@ -1869,7 +1871,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">23 de abril de 2025 17:33:43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">26 de junho de 2025 18:00:45</span>
   </span>
 
     
