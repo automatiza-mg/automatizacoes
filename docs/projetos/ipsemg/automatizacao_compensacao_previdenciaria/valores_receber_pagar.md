@@ -64,7 +64,6 @@ Após a execução do robô, o bloco de assinatura deve estar com todos os despa
 
 - Caso o robô tenha parado **no meio da inclusão de um novo processo ou documento**, finalize manualmente o que faltou nele (exemplo, se faltou incluir o despacho no bloco de assinatura, faça esse pequeno ajuste manualmente; se ele fez tudo e apenas não pulou para o próximo, não precisa fazer nada). Salve e feche os documentos Excel, feche o robô atual e vá para o robô *'compensacao_valores [em caso de erro]'*. Depois, seguindo as orientações que estão no próprio código, altere a variável 'linha' desse fluxo e coloque para executar.[^1] [^2]
 
-Ainda, é importante lembrar de salvar e fechar a planilha de excel e o `.csv` antes de rodar o robô novamente.
 
 ## 5. Métricas alcançadas
 
