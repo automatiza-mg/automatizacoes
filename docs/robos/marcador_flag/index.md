@@ -33,26 +33,53 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_sei.txt)[^1] e cole em um novo subfluxo `login_sei` no Power Automate Desktop.
+:fontawesome-solid-1: :material-microsoft-excel: <a href="assets/Recurso_PAD.xlsx"download="recurso_PAD">__Clique aqui para baixar a planilha-modelo__</a>
 { .card }
 
-[:fontawesome-solid-2: :material-application-variable: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
-{ #download-button .card path="assets/inclusao_progressao.csv" fileName="inclusao_progressao.xlsx" }
-
-:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^2].
+:fontawesome-solid-2: [:octicons-copy-16: __Copie o código do robô - Main__](link)[^2] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^3].
+:fontawesome-solid-3: [:octicons-copy-16: __Copie o código do robô - Login SEI__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-5::material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^4].
+:fontawesome-solid-4: [:octicons-copy-16: __Copie o código do robô - Conferência de variáveis__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
+
+:fontawesome-solid-5: [:octicons-copy-16: __Copie o código do robô - Excel__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+{ .card }
+
+:fontawesome-solid-6: [:octicons-copy-16: __Copie o código do robô - Gravar__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+{ .card }
+
+:fontawesome-solid-7: [:octicons-copy-16: __Copie o código do robô - Marcador_Flag__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+{ .card }
+
+:fontawesome-solid-8: [:octicons-copy-16: __Copie o código do robô - Marcar Processos__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+{ .card }
+
+:fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^3].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^4].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-1: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^5].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `marcador`[^6].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `pasta_download`[^7].
+{ .card } 
 
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
-[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
-[^3]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
-[^4]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
+[^1]: O nome da aba "Recursos_2025" tem a ideia de ser atualizada anualmente, criando-se uma nova aba a cada ano. Este nome é vinculado no fluxo, devendo-se alterar o nome da aba no próprio robô no caso de alteração. 
+[^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
+[^3]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
+[^4]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
+[^5]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
+[^6]: Valor padrão: "Novas manifestações aguardando para distribuir".
+[^7]: Local e ou caminho da pasta dowload que irá receber o arquivo baixado. Exemplo: 'C:\Users\xxxx\Downloads'
