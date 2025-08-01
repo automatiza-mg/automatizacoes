@@ -34,22 +34,22 @@ tags:
 
 <div class="grid" markdown>
 
-[:octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cadastro_novo_usuario_sei.md)[^1] e cole em um novo fluxo Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cadastro_novo_usuario_sei.md)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^2].
+[:fontawesome-solid-2: :material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^2].
 { #download-button .card path="assets/usuarios.csv" fileName="usuarios.xlsx" }
 
-:material-application-variable: __Crie a variável de entrada__ `local_excel` com o caminho onde a planilha modelo foi salva.
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `local_excel` com o caminho onde a planilha modelo foi salva.
 { .card }
 
-:material-application-variable: __Crie a variável de entrada__ `login_sei`.
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `login_sei`.
 { .card }
 
-:material-application-variable: __Crie a variável de entrada__ `senha_sei`.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `senha_sei`.
 { .card }
 
-:material-application-variable: __Crie a variável de entrada__ `orgao_sei`.
+:fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`.
 { .card }
 
 </div>
