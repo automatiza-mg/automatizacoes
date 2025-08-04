@@ -35,7 +35,7 @@ tags:
 [:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de login no SEI.__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^1]
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de troca de unidade do SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt)[^2] e cole em um novo subfluxo `troca_unidade_sei` no Power Automate Desktop.
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô - `troca_unidade_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt)[^2] e cole em um novo subfluxo de mesmo nome no Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-3: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, com o nome `troca_unidade_sei`.
