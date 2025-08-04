@@ -36,25 +36,22 @@ tags:
 :fontawesome-solid-1: :material-microsoft-excel: <a href="assets/Recurso_PAD.xlsx"download="recurso_PAD">__Clique aqui para baixar a planilha-modelo__</a>
 { .card }
 
-:fontawesome-solid-2: [:octicons-copy-16: __Copie o código do robô - Main__](link)[^2] e cole em um novo fluxo Power Automate Desktop.
+:fontawesome-solid-2: [:octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-3: [:octicons-copy-16: __Copie o código do robô - Login SEI__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-3: [:octicons-copy-16: __Copie o código do robô - `login_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/login_sei.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-4: [:octicons-copy-16: __Copie o código do robô - Conferência de variáveis__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-5: [:octicons-copy-16: __Copie o código do robô - `excel`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_excel.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-5: [:octicons-copy-16: __Copie o código do robô - Excel__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-6: [:octicons-copy-16: __Copie o código do robô - `gravar`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_gravar.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-6: [:octicons-copy-16: __Copie o código do robô - Gravar__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-8: [:octicons-copy-16: __Copie o código do robô - `marcar_processos`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_marcar_processos.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-7: [:octicons-copy-16: __Copie o código do robô - Marcador_Flag__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
-{ .card }
-
-:fontawesome-solid-8: [:octicons-copy-16: __Copie o código do robô - Marcar Processos__](link)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-7: [:octicons-copy-16: __Copie o código do robô - `marcador_flag`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_marcador_flag.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^3].
