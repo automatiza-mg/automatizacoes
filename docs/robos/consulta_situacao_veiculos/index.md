@@ -55,28 +55,28 @@ Para dar vida a ele:
 
 <div class="grid" markdown>
 
-:material-web: Faça login no site __[cidadao.mg.gov.br](cidadao.mg.gov.br)__.
+:fontawesome-solid-1: :material-web: Faça login no site __[cidadao.mg.gov.br](cidadao.mg.gov.br)__.
 { .card }
 
-[:material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^1].
+[:fontawesome-solid-2: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^1].
 { #download-button .card path="assets/planilha_modelo_multa.csv" fileName="planilha_modelo_multa.xlsx" }
 
-:material-microsoft-excel: __Complete as colunas da planilha modelo__ com a placa e o chassi dos veículos que serão consultados e salve.
+:fontawesome-solid-3: :material-square-edit-outline: __Complete as colunas da planilha modelo__ com a placa e o chassi dos veículos que serão consultados e salve.
 { .card }
 
-[:octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:octicons-copy-16: __Copie o código do robô - DNIT__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_dnit.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - DNIT__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_dnit.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
-[:octicons-copy-16: __Copie o código do robô - 'cidadao.mg'__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_cidadao_mg.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô - 'cidadao.mg'__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_cidadao_mg.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
-[:octicons-copy-16: __Copie o código do robô - PRF__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_prf.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô - PRF__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_prf.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
-:material-application-variable: Abra a primeira ação  __'Iniciar Excel'__, edite o campo  __'caminho do documento'__ e selecione o documento salvo no passo anterior.
+:fontawesome-solid-8: :material-application-variable: Abra a primeira ação  __'Iniciar Excel'__, edite o campo  __'caminho do documento'__ e selecione o documento salvo no passo anterior.
 { .card }
 
 </div>

@@ -28,10 +28,10 @@ tags:
 [:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de criação de memorando no SEI.__](../cria_memorando/#montando-o-seu-robo){ target="_blank" }
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de inserir documento externo no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/insere_documento_externo.txt){ target="_blank" }[^1] :warning:{ title='Caso seja necessário' } e cole em um novo subfluxo chamado `insere_documento_externo`[^1].
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô - `insere_documento_externo`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/insere_documento_externo.txt){ target="_blank" }[^1] :warning:{ title='Caso seja necessário' } e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de assinatura de memorando e encaminhamento de processo do SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/assinatura_encaminhamento.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `assinatura_encaminhamento`[^1].
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `assinatura_encaminhamento`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/assinatura_encaminhamento.txt){ target="_blank" }[^1] :warning:{ title='Caso seja necessário' } e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `assinatura_encaminhamento`.
