@@ -35,10 +35,10 @@ tags:
 [:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de login no SEI.__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^1]
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô - `troca_unidade`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt){ target="_blank" }[^1] e cole em um novo subfluxo de mesmo nome no Power Automate Desktop[^3]:warning:{ title='Caso seja necessário' }.
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô - `troca_unidade`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop[^3]:warning:{ title='Caso seja necessário' }.
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `cria_processo_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_processo_sei.txt)[^1] e cole em um novo subfluxo de mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `cria_processo_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_processo_sei.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 2 e 3, selecionando `troca_unidade_sei`:warning:{ title='Caso seja necessário' } e `cria_processo_sei`, respectivamente.

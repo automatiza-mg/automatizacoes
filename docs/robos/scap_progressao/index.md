@@ -34,7 +34,7 @@ tags:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/progressao/progressao_main.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-2: :material-application-variable: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
+[:fontawesome-solid-2: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
 { #download-button .card path="assets/inclusao_progressao.csv" fileName="inclusao_progressao.xlsx" }
 
 :fontawesome-solid-3: :material-application-variable: __Crie as variáveis de entrada__ `usuario` e `senha` com os dados do SISAP [^2].

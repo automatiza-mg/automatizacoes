@@ -45,13 +45,13 @@ tags:
 
 <div class="grid" markdown>
 
-:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô de inclusão de faltas na rotina histórico__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
+:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
 { .card }
 
-:fontawesome-solid-2: :material-application-variable:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
+:fontawesome-solid-2: :material-microsoft-excel:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
 { #download-button .card path="assets/falta_rotina_historico.csv" fileName="falta_rotina_historico.xlsx" }
 
-:fontawesome-solid-3: :material-application-variable: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,	`NATUREZA DA FALTA`,`HORAS A DESCONTAR`,`NATUREZA DA FALTA/HORAS`.
+:fontawesome-solid-3: :material-square-edit-outline: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,	`NATUREZA DA FALTA`,`HORAS A DESCONTAR`,`NATUREZA DA FALTA/HORAS`.
 { .card }
 
 :fontawesome-solid-4: :material-application-variable: __Crie as variáveis de entrada__ `usuario` e `senha`, com as informações do seu usuário e senha de acesso ao SISAP.
