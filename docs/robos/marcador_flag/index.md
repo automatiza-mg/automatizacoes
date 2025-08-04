@@ -42,31 +42,31 @@ tags:
 :fontawesome-solid-3: [:octicons-copy-16: __Copie o código do robô - `login_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/login_sei.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-5: [:octicons-copy-16: __Copie o código do robô - `excel`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_excel.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-4: [:octicons-copy-16: __Copie o código do robô - `excel`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_excel.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-6: [:octicons-copy-16: __Copie o código do robô - `gravar`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_gravar.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-5: [:octicons-copy-16: __Copie o código do robô - `gravar`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_gravar.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-8: [:octicons-copy-16: __Copie o código do robô - `marcar_processos`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_marcar_processos.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
+:fontawesome-solid-6: [:octicons-copy-16: __Copie o código do robô - `marcar_processos`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_marcar_processos.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-7: [:octicons-copy-16: __Copie o código do robô - `marcador_flag`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_marcador_flag.txt)[^2] e cole em um novo subfluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^3].
+:fontawesome-solid-8: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^3].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^4].
+:fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^4].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-1: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^5].
+:fontawesome-solid-1::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^5].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `marcador`[^6].
+:fontawesome-solid-1::fontawesome-solid-1: :material-application-variable: __Crie a variável de entrada__ `marcador`[^6].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `pasta_download`[^7].
+:fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `pasta_download`[^7].
 { .card } 
 
 </div>
