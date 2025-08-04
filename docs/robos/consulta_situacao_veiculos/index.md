@@ -67,13 +67,13 @@ Para dar vida a ele:
 [:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - DNIT__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_dnit.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - `DNIT`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_dnit.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô - 'cidadao.mg'__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_cidadao_mg.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô - `cidadao.mg`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_cidadao_mg.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô - PRF__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_prf.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
+[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô - `PRF`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_consulta_frota/consulta_frota_prf.txt)[^2] e cole em um novo subfluxo[^3] Power Automate Desktop.
 { .card }
 
 :fontawesome-solid-8: :material-application-variable: Abra a primeira ação  __'Iniciar Excel'__, edite o campo  __'caminho do documento'__ e selecione o documento salvo no passo anterior.
