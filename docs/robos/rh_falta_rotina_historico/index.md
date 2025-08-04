@@ -54,7 +54,10 @@ tags:
 :fontawesome-solid-3: :material-square-edit-outline: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,	`NATUREZA DA FALTA`,`HORAS A DESCONTAR`,`NATUREZA DA FALTA/HORAS`.
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie as variáveis de entrada__ `usuario` e `senha`, com as informações do seu usuário e senha de acesso ao SISAP.
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `usuario`, com as informações do seu usuário de acesso ao SISAP..
+{ .card }
+
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `senha`, com as informações da sua senha de acesso ao SISAP.
 { .card }
 
 </div>

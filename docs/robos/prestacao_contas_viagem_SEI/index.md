@@ -79,22 +79,43 @@ Para dar vida a ele:
 [:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `chat_gpt`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_chat_gpt.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô subfluxo - `login_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/login_sei.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - `login_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/login_sei.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô subfluxo `cria_processo`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_cria_processo.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - `cria_processo`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_cria_processo.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô subfluxo `insere_prestacao`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_prestacao.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô - `insere_prestacao`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_prestacao.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô subfluxo `insere_PDFs`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_PDFs.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô - `insere_PDFs`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_PDFs.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô subfluxo `insere_ateste`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_ateste.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô - `insere_ateste`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/prestacao_uber/prestacao_uber_insere_ateste.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-9: :material-application-variable: __Crie as variáveis de entrada__ `acesso_processo`[^2], `especificacao`[^3], `hipotese_restricao_ateste`[^4], `hipotese_restricao_prestacao`[^4], `hipotese_restricao_processo`[^4], `login_sei`[^5], `orgao_sei`[^6], `senha_sei`[^7] e `tipo_do_processo_criar`[^8].
+:fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `acesso_processo`[^2].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `especificacao`[^3].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-1: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao_ateste`[^4].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao_prestacao`[^4].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^5].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^6].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^7].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^8].
 { .card }
 
 </div>

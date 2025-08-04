@@ -44,7 +44,13 @@ tags:
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 2 e 3, selecionando `troca_unidade_sei`:warning:{ title='Caso seja necessário' } e `cria_processo_sei`, respectivamente.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^4], `especificacao`[^5] e `hipotese_restricao`[^6].
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^4].
+{ .card }
+
+:fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `especificacao`[^5].
+{ .card }
+
+:fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao`[^6].
 { .card }
 
 </div>

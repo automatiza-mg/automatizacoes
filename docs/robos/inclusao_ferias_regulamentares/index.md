@@ -35,19 +35,22 @@ tags:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/incluir_ferias_regulamentares_MAIN.txt) e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-2::material-application-variable:__Crie as variáveis de entrada__ `usuario`[^1] e `senha`[^2].
+:fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `usuario`[^1].
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `Ferias_Periodo_Integral`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_per%C3%ADodo_integral.txt)e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `Senha`[^2].
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - `Ferias_Parceladas`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_parceladas.txt){ target="_blank" } e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - `Ferias_Periodo_Integral`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_per%C3%ADodo_integral.txt)e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-5: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - `Ferias_Parceladas`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_parceladas.txt){ target="_blank" } e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+{ .card }
+
+[:fontawesome-solid-6: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
 { #download-button .card path="assets/inclusao-ferias-regulamentares.csv" fileName="inclusao-ferias-regulamentares.xlsx" }
 
-:fontawesome-solid-6: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 20 e 100__.
+:fontawesome-solid-7: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 20 e 100__.
 { .card }
 
 </div>
