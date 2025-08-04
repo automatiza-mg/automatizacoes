@@ -35,13 +35,16 @@ tags:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_premio/incluir_concess%C3%A3o_ferias_pr%C3%AAmio.txt) e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-2::material-application-variable:__Crie as variáveis de entrada__ `usuario`[^1] e `Senha`[^2].
+:fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `usuario`[^1].
 { .card }
 
-[:fontawesome-solid-3: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `Senha`[^2].
+{ .card }
+
+[:fontawesome-solid-4: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
 { #download-button .card path="assets/inclusao-ferias-premio.csv" fileName="inclusao-ferias-premio.xlsx" }
 
-:fontawesome-solid-4: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 16 e 122__.
+:fontawesome-solid-5: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 16 e 122__.
 { .card }
 
 </div>

@@ -37,7 +37,13 @@ tags:
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `hipotese_restricao_memo`[^2], `destinatario_memo`[^3] e `assunto_memo`[^4] serão solicitadas.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao_memo`[^2].
+{ .card }
+
+:fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__  `destinatario_memo`[^3].
+{ .card }
+
+:fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__  `assunto_memo`[^4].
 { .card }
 
 </div>

@@ -37,10 +37,13 @@ tags:
 :fontawesome-solid-2: :material-microsoft-excel: <a href="assets/inclusao_quinquenio.xlsx"download="inclusao_quinquenio.xlsx">__Clique aqui para baixar a planilha-modelo__</a>
 { .card }
 
-:fontawesome-solid-3: :material-application-variable: __Crie as variáveis de entrada__ `usuario` e `senha` com os dados do SISAP [^2]. 
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `usuario`, com as informações do seu usuário de acesso ao SISAP..
 { .card }
 
-:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `caminho_documento` e atribuir o caminho do arquivo na seção Valor Padrão.
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `senha`, com as informações da sua senha de acesso ao SISAP.
+{ .card }
+
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `caminho_documento` e atribua o caminho do arquivo na seção Valor Padrão.
 { .card }
 
 </div>
@@ -63,4 +66,3 @@ __Instruções de preenchimento da planilha.__
 --8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: MASP e senha do SISAP.
