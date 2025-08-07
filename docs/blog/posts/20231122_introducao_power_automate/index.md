@@ -20,7 +20,7 @@ Desenvolvido pela Microsoft, o Automate emerge como ferramenta essencial na cria
 Este post visa explorar como simplificar procedimentos, integrar sistemas e agilizar processos de trabalho.
 Nossa intenção aqui é ser prático, então a demonstração do básico necessário será feito via automatização de um fluxo real.
 
-## Intrudução ao fluxo
+## Introdução ao fluxo
 
 Nosso cenário em foco é a necessidade de consultar a situação cadastral de CNPJs presentes em uma planilha do Excel e registrar os resultados obtidos no mesmo arquivo.
 Esta tarefa, apesar de aparentemente simples, ilustra a potência e a utilidade do Automate no contexto da administração pública.
