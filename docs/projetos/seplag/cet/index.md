@@ -1,6 +1,6 @@
 # Automatização da Coordenação Estadual de Trânsito 
 
-Este projeto consiste em uma séria de ações para automatizar processos na Coordenação Estadual de Trânsito do Estado de Minas Gerais, notadamenta àqueles relacionados à defesa de autos de infração de trânsito. 
+Este projeto consiste em uma série de ações para automatizar processos na Coordenação Estadual de Trânsito do Estado de Minas Gerais, notadamente àqueles relacionados à defesa de autos de infração de trânsito. 
 
 Principais entregas:
 
