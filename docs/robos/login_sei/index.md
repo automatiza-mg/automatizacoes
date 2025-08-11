@@ -32,19 +32,16 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_sei.txt)[^1] e cole em um novo subfluxo `login_sei` no Power Automate Desktop.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/login_sei.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-2: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, com o nome `login_sei`.
+:fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^2].
 { .card }
 
-:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^2].
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^3].
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^3].
-{ .card }
-
-:fontawesome-solid-5::material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^4].
+:fontawesome-solid-4::material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^4].
 { .card }
 
 </div>

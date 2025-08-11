@@ -20,17 +20,22 @@ nav:
       - Automatização da análise de custos: projetos/fhemig
     - Fundação João Pinheiro (FJP):  
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
+    - Instituto de Previdência dos Servidores do Estado de Minas Gerais (Ipsemg):
+      - Automatização da Compensação Previdenciária: projetos/ipsemg/automatizacao_compensacao_previdenciaria
     - Projeto de extensão Minas em Robôs:
       - Certidões de fornecedores: projetos/extensao/certidoes_fornecedores
       - Prestação de contas de transporte por aplicativo: projetos/extensao/prestacao_contas_transporte
       - Afastamento para aperfeiçoamento profissional: projetos/extensao/afastamento_aperfeicoamento_profissional
+    - Secretaria de Estado de Cultura e Turismo (Secult):
+      - Automatização da análise de projetos da Leic: projetos/secult
     - Secretaria de Educação (SEE):
       - Publicação de Parecer de Equivalência de Estudos: projetos/see/mentoria
-    - Secretaria de Justiça e Segurança Pública (Sejusp):
-      - Leitura de Faturas de Energia: projetos/sejusp/sulot
+      - Emissão e envio de chaves do FGTS - professores Lei 100: projetos/see/fgts
+    - Secretaria de Justiça e Segurança Pública (Sejusp): projetos/sejusp
     - Secretaria de Planejamento e Gestão (Seplag):
       - Emissão de certidões INSS: projetos/seplag/scap
       - Automatização da Coordenação Estadual de Trânsito: projetos/seplag/cet
+      - Respostas às demandas do Cofin: projetos/seplag/mentoria
   - Curso: https://www.ead.planejamento.mg.gov.br/course/view.php?id=98
   - Blog:
     - blog/index.md

@@ -11,7 +11,7 @@ tags:
 
 ## Informações gerais
 
-| **Desenvolvedores**| Extensionistas FJP (Diego Silva, João Vitor Fonseca e Leidi Alves) e AutomatizaMG (André Amorim)  |
+| **Desenvolvedores**| Extensionistas FJP (Diego Silva, João Vitor Fonseca e Leidi Alves) e Automatiza.MG (André Amorim)  |
 | ----------- | ------------------------------------ |
 | **E-mail**       | simplificacao@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
@@ -32,32 +32,40 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código principal na MAIN__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/certidoes-fornecedores-main.txt){ target="_blank" }[^1] e __Crie a variável de entrada__ `planilha`[^2].
-{ .card }
-
-[:fontawesome-solid-2: :material-application-variable: __Faça o download da planilha modelo__](javascript:void(0);).
+[:fontawesome-solid-1: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
 { #download-button .card path="assets/cnpj-fornecedores.csv" fileName="cnpj-fornecedores.xlsx" }
 
-
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de emissão de CRC__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/crc-cagef.txt){ target="_blank" }[^1], cole em um novo subfluxo `CRC` e :material-application-variable:__Crie a variável de entrada__ `pasta`[^3].
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô - `Main`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/certidoes-fornecedores-main.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô de consulta ao CNPJ__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/consulta-cnpj.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CNPJ`.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `CRC`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/crc-cagef.txt){ target="_blank" }[^1], cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô de consulta à CND Federal__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/cnd-federal.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CND_FEDERAL`.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - `CNPJ`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/consulta-cnpj.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô de consulta ao FGTS__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/consulta_fgts.txt){ target="_blank" }[^1] e cole em um novo subfluxo `FGTS`.
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - `CND_FEDERAL`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/cnd-federal.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô de consulta à Justiça do Trabalho__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/consulta_justiça_trabalho.txt){ target="_blank" }[^1] e cole em um novo subfluxo `JUSTIÇA_TRABALHO`.
+[:fontawesome-solid-6: :octicons-copy-16: __Copie o código do robô - `FGTS`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/consulta_fgts.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô de consulta à CND Estadual de Minas Gerais__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/cnd-mg-siare.txt){ target="_blank" }[^1] e [cadastro de endereço](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/endereço-siare.txt) e cole em 2 novos subfluxos `CND_MG` e `endereço_CND_MG`. :warning:{ title='Para empresas de MG' }
+[:fontawesome-solid-7: :octicons-copy-16: __Copie o código do robô - `JUSTIÇA_TRABALHO`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/consulta_justiça_trabalho.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-9: :octicons-copy-16: __Copie o código do robô de consulta à CND Municipal de Belo Horizonte__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/cnd-pbh.txt){ target="_blank" }[^1] e cole em um novo subfluxo `CND_BH`.:warning:{ title='Para empresas de BH' }
+[:fontawesome-solid-8: :octicons-copy-16: __Copie o código do robô - `CND_MG`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/cnd-mg-siare.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+{ .card }
+
+[:fontawesome-solid-9: :octicons-copy-16: __Copie o código do robô - `endereço_CND_MG`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/endereço-siare.txt) e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.:warning:{ title='Para empresas de MG' }
+{ .card }
+
+[:fontawesome-solid-1::fontawesome-solid-0: :octicons-copy-16: __Copie o código do robô - `CND_BH`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/certidoes_fornecedores/cnd-pbh.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop. :warning:{ title='Para empresas de BH' }
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-1: :material-application-variable: __Crie a variável de entrada__ `planilha`[^2].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `pasta`[^3].
 { .card }
 
 </div>

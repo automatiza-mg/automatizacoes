@@ -32,22 +32,25 @@ tags:
 
 <div class="grid" markdown>
 
-[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô e cole em um novo fluxo MAIN__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/incluir_ferias_regulamentares_MAIN.txt){ target="_blank" }.
+[:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/incluir_ferias_regulamentares_MAIN.txt) e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-2::material-application-variable:__Crie as variáveis de entrada__ `usuario`[^1] e `senha`[^2].
+:fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `usuario`[^1].
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de férias em período integral__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_per%C3%ADodo_integral.txt){ target="_blank" } e cole em um novo subfluxo `Ferias_Periodo_Integral`.
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `Senha`[^2].
 { .card }
 
-[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô de férias parceladas__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_parceladas.txt){ target="_blank" } e cole em um novo subfluxo `Ferias_Parceladas`.
+[:fontawesome-solid-4: :octicons-copy-16: __Copie o código do robô - `Ferias_Periodo_Integral`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_per%C3%ADodo_integral.txt)e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-5: :material-application-variable: __Faça o download da planilha modelo__](javascript:void(0);).
+[:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - `Ferias_Parceladas`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_parceladas.txt){ target="_blank" } e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
+{ .card }
+
+[:fontawesome-solid-6: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
 { #download-button .card path="assets/inclusao-ferias-regulamentares.csv" fileName="inclusao-ferias-regulamentares.xlsx" }
 
-:fontawesome-solid-6: :material-application-variable:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 20 e 100__.
+:fontawesome-solid-7: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 20 e 100__.
 { .card }
 
 </div>
@@ -63,7 +66,7 @@ tags:
 - [ ] Para servidores que marcaram as férias em dois períodos, existindo a exclusão de um dos periodos de férias para remarcação, preencher até a coluna "J - DIA INICIO FÉRIAS". 
 - [ ] A coluna "L" não deve ser preenchida, pois ela conterá o status após operação pelo robô.                   
 
---8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: MASP para acesso ao SISAP.
 [^2]: Senha de acesso ao SISAP.

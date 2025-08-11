@@ -2,7 +2,7 @@
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+:material-play-circle: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
 :simple-gitextensions:  __Extensão Chrome__ para [Power Automate](https://chromewebstore.google.com/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk) ativada.

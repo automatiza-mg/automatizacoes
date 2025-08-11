@@ -35,16 +35,22 @@ tags:
 [:fontawesome-solid-1: :octicons-workflow-24: __Siga todos os passos do robô de login no SEI.__](../login_sei/#montando-o-seu-robo){ target="_blank" }[^1]
 { .card }
 
-[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô de troca de unidade no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt){ target="_blank" }[^1] e cole em um novo subfluxo `troca_unidade` [^3]:warning:{ title='Caso seja necessário' }.
+[:fontawesome-solid-2: :octicons-copy-16: __Copie o código do robô - `troca_unidade`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/troca_unidade_sei.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop[^3]:warning:{ title='Caso seja necessário' }.
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de criar processo no SEI__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_processo_sei.txt)[^1] e cole em um novo subfluxo `cria_processo_sei`.
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `cria_processo_sei`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_processo_sei.txt)[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 2 e 3, selecionando `troca_unidade_sei` :warning:{ title='Caso seja necessário' } e `cria_processo_sei` respectivamente.
+:fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main`, para cada um dos subfluxos 2 e 3, selecionando `troca_unidade_sei`:warning:{ title='Caso seja necessário' } e `cria_processo_sei`, respectivamente.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `tipo_do_processo_criar`[^4], `especificacao`[^5] e `hipotese_restricao`[^6].
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^4].
+{ .card }
+
+:fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `especificacao`[^5].
+{ .card }
+
+:fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao`[^6].
 { .card }
 
 </div>

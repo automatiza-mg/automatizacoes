@@ -11,10 +11,10 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 
 
 ## 1. Premissas
-**Pasta de cada mês:** 
+**`Pasta de cada mês:`**
 
 - Mensal (uma nova pasta deve ser criada a cada mês); 
-- Deve conter a planilha de taxação e a planilha base do SISAP. 
+- Deve conter, antes de iniciar o robô, a planilha de taxação e a planilha base do SISAP. 
 - Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
 
 <figure markdown="span">
@@ -23,7 +23,7 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
 </figure>
 
 
-**Planilha de taxação:**
+**`Planilha de taxação:`**
 
 <!-- more -->
 - Mensal (acompanha os dados das taxações);
@@ -35,7 +35,12 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
   <figcaption></figcaption>
 </figure>
 
-**Planilha de informações-base dos professores:**
+Baixe aqui o modelo da planilha de taxação! Ela está no formato com que o robô foi construído, mas com dados fictícios.
+
+<a href="../assets/maio_2024.xlsx" download="maio_2024.xlsx">**maio_2024**.</a>
+
+
+**`Planilha de informações-base dos professores:`**
 
 - Mensal (extraída do SISAP a cada mês);
 - Aba única: "Relatório 1" (**essencial** que seja exatamente esse o nome);
@@ -47,6 +52,9 @@ Este post tem como objetivo explicar o funcionamento do robô e os parâmetros q
   <figcaption></figcaption>
 </figure>
 
+Baixe aqui o modelo da planilha de informações-base dos professores! Ela está no formato com que o robô foi construído, mas com dados fictícios.
+
+<a href="../assets/sisap_maio_2024.xlsx" download="sisap_maio_2024.xlsx">**sisap_maio_2024**.</a>
 
 
 ## 2. Como funciona? Passo a passo explicado do Automate

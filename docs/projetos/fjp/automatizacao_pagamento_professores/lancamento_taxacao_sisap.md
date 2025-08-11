@@ -6,7 +6,19 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
 
 ## 1. Premissas
 
-**Planilha `taxação`:**
+**`Pasta de cada mês:`**
+
+- Mensal (uma nova pasta deve ser criada a cada mês); 
+- Deve conter, antes de iniciar o robô, a planilha de taxação e a planilha base do SISAP. 
+- Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
+
+<figure markdown="span">
+![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1)
+  <figcaption></figcaption>
+</figure>
+
+
+**`Planilha de taxação:`**
 
 - Mensal (acompanha os dados das taxações).
 - Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (**essencial** que sejam exatamente esses os nomes).
@@ -17,8 +29,12 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
   <figcaption></figcaption>
 </figure>
 
+Baixe aqui o modelo da planilha de taxação! Ela está no formato com que o robô foi construído, mas com dados fictícios.
 
-**Planilha `base SISAP BO`:**
+<a href="../assets/maio_2024.xlsx" download="maio_2024.xlsx">**maio_2024**.</a>
+
+
+**`Planilha de informações-base dos professores:`**
 
 - Mensal (extraída do SISAP a cada mês);
 - Aba única: "Relatório 1";
@@ -30,16 +46,10 @@ Diante dessa situação, foi criado um fluxo automatizado utilizando a ferrament
   <figcaption></figcaption>
 </figure>
 
-**Pasta de cada mês:**
+Baixe aqui o modelo da planilha de informações-base dos professores! Ela está no formato com que o robô foi construído, mas com dados fictícios.
 
-- Mensal (uma nova pasta deve ser criada a cada mês);
-- Deve conter, antes de iniciar o robô, a planilha `taxação` e a planilha `base SISAP BO`.
-- Nome da pasta: [Mês][espaço][Ano]. Ex: Maio 2024
+<a href="../assets/sisap_maio_2024.xlsx" download="sisap_maio_2024.xlsx">**sisap_maio_2024**.</a>
 
-<figure markdown="span">
-![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/95bf7bc8-9aab-4bc1-85b2-d111fb446671)
-  <figcaption></figcaption>
-</figure>
 
 **Alterar nome de variáveis:**
 

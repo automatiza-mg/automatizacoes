@@ -9,95 +9,49 @@ A ideia consiste em ter como base duas planilhas primordiais: a que contém os d
 Este post tem como objetivo explicar o funcionamento do robô e os parâmetros que ele deve seguir para que a rodagem seja feita a cada mês.
 
 ## 1. Premissas
-**Pasta de cada mês:** 
+**`Pasta de cada mês:`**
 
-- Mensal (uma nova pasta deve ser criada a cada mês);
-- Deve conter, pré-rodagem, a planilha de taxação e a planilha base do SISAP (abaixo, prints de cada planilha-modelo e da pasta como um todo); 
+- Mensal (uma nova pasta deve ser criada a cada mês); 
+- Deve conter, antes de iniciar o robô, a planilha de taxação e a planilha base do SISAP. 
 - Nome da pasta: [Mês][Ano]. Ex: Maio 2024.
 
-**PLANILHA DE TAXAÇÃO**
 <figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/f30b25c8-bebb-4529-94f9-5ce756f0afd9)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/def768bc-5377-40d1-a6a8-65e370467b4e)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/47778b18-f00b-4f39-8f1e-8047457f7d1c)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/31b5ce83-b111-49f5-b58d-74d995a7f334)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/990f9c0d-676b-4f56-a76b-5891d5f8a9d4)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/bb2c1f48-723b-46d9-b278-b98a86d7383d)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/d7d1e2ef-a7c6-459c-88c8-8fcd05174cdc)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/9dddb42e-dd21-4388-b410-22efb3da1aa8)
-  <figcaption></figcaption>
-</figure>
-
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/e2039a20-5555-4b28-ad2f-b50e4c898b18)
-  <figcaption></figcaption>
-</figure>
-
-**PLANILHA BASE DO SISAP**
-<figure markdown="span">
-  ![image](https://github.com/user-attachments/assets/f2b97014-30ed-48ec-8a10-1424cec15eaf)
-  <figcaption></figcaption>
-</figure>
-
-**PASTA E NOMES DOS ARQUIVOS**
-<figure markdown="span">
-  ![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1)
+![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/6764b28d-5d04-4c89-bd72-673cf145d2c1)
   <figcaption></figcaption>
 </figure>
 
 
-**Planilha de taxação:**
+**`Planilha de taxação:`**
 
-<!-- more -->
-- Mensal (acompanha os dados das taxações);
-- Abas (nesta ordem): "lanca_pagamento" (inserida pelo último robô, o da taxação), "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (**essencial** que sejam exatamente esses os nomes);
-- Nome do arquivo: [mês]_[ano]. Ex: "maio_2024". 
+- Mensal (acompanha os dados das taxações).
+- Abas (nesta ordem): "taxacao", "Internos", "Inss internos", "Externos", "Inss Externos" (**essencial** que sejam exatamente esses os nomes).
+- Nome do arquivo: [mês]_[ano]. Ex: "maio_2024".
 
 <figure markdown="span">
-![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/f332a68c-a7e5-40b2-ab7d-1b4254fb9895)
+![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/2ae333e8-beab-4efa-b98c-2a340afbf686)
   <figcaption></figcaption>
 </figure>
 
+Baixe aqui o modelo da planilha de taxação! Ela está no formato com que o robô foi construído, mas com dados fictícios.
 
-**Planilha de informações-base dos professores:**
+<a href="../assets/maio_2024.xlsx" download="maio_2024.xlsx">**maio_2024**.</a>
+
+
+**`Planilha de informações-base dos professores:`**
 
 - Mensal (extraída do SISAP a cada mês);
-- Aba única: "Relatório 1" (**essencial** que seja exatamente esse o nome);
-- Para este robô, usa-se a versão geral (servidores internos e externos);
+- Aba única: "Relatório 1";
+- Para este robô, usa-se a geral (servidores internos e externos);
 - Nome do arquivo: sisap_[mês]_[ano]. Ex: sisap_maio_2024.
 
 <figure markdown="span">
-![image](https://github.com/automatiza-mg/automatizacoes/assets/146127524/80d5cc9a-d437-455d-be77-f8b6866c5a22)
+![image](https://github.com/automatiza-mg/automatizacoes/assets/65547646/16578ed5-0826-4b15-a0b3-086bd2ba5a01)
   <figcaption></figcaption>
 </figure>
+
+Baixe aqui o modelo da planilha de informações-base dos professores! Ela está no formato com que o robô foi construído, mas com dados fictícios.
+
+<a href="../assets/sisap_maio_2024.xlsx" download="sisap_maio_2024.xlsx">**sisap_maio_2024**.</a>
 
 
 ## 2. Como funciona? Passo a passo explicado do Automate

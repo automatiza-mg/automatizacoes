@@ -33,7 +33,7 @@ tags:
 
 <div class="grid" markdown>
 
-:simple-powerautomate: __Power Automate__ na [versão correta](#informacoes-gerais)
+:material-play-circle: __Power Automate__ na [versão correta](#informacoes-gerais)
 { .card }
 
 :octicons-key-16: __Acesso ao SiSAP__ com perfil para taxação de faltas.
@@ -45,16 +45,19 @@ tags:
 
 <div class="grid" markdown>
 
-:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô de inclusão de faltas na rotina histórico__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
+:fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
 { .card }
 
-:fontawesome-solid-2: :material-application-variable:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
-{ #download-button .card path="assets/falta_rotina_consolidada.csv" fileName="assets/falta_rotina_consolidada.xlsx" }
+:fontawesome-solid-2: :material-microsoft-excel:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
+{ #download-button .card path="assets/falta_rotina_historico.csv" fileName="falta_rotina_historico.xlsx" }
 
-:fontawesome-solid-3: :material-application-variable: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,	`NATUREZA DA FALTA`,`HORAS A DESCONTAR`,`NATUREZA DA FALTA/HORAS`.
+:fontawesome-solid-3: :material-square-edit-outline: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,	`NATUREZA DA FALTA`,`HORAS A DESCONTAR`,`NATUREZA DA FALTA/HORAS`.
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie as variáveis de entrada__ `usuario` e `senha`, com as informações do seu usuário e senha de acesso ao SISAP.
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `usuario`, com as informações do seu usuário de acesso ao SISAP..
+{ .card }
+
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `senha`, com as informações da sua senha de acesso ao SISAP.
 { .card }
 
 </div>
@@ -73,6 +76,6 @@ __Instruções de preenchimento da planilha.__
 - A coluna "J - NATUREZA DA FALTA/HORAS" é relativa a natureza das faltas/horas. Deverá ser preenchida no formato "000". Exemplo: 511 para horas descontadas/administrativo; 512 para horas/greve. Caso não exista falta em horas para descontar, prencher a coluna  "J - NATUREZA DA FALTA/HORAS" sempre com o número "0" (zero). 
 - A coluna "K" não deve ser preenchida.
 
---8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
+--8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.   

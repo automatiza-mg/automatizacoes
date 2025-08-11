@@ -18,7 +18,7 @@ hide:
 
 <div class="grid cards card-border-radius" markdown>
 
-- <p class="text-larger" markdown>:simple-powerautomate:{ .lg .middle .light-red } __Power Automate__</p>
+- <p class="text-larger" markdown>:material-play-circle:{ .lg .middle .light-red } __Power Automate__</p>
 
     ---
 
@@ -207,18 +207,6 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![foto_andre](https://res.cloudinary.com/dgll6seyc/image/upload/v1710368359/automatiza-mg/avatar_andre.webp){ .lg .middle .avatar loading=lazy }</p>
-
-
-    <p class="p-center" markdown>__André Amorim__</p>
-
-    ---
-
-    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
-
-    <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
-    </p>
 
 - <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
 
@@ -233,4 +221,42 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
+- <p class="p-center" markdown>![foto_breno](https://avatars.githubusercontent.com/u/198124650?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Breno Marques__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![foto_clarisse](https://avatars.githubusercontent.com/u/205952413?s=400&u=9221d3e4cf989a0133f4073ccfd49f802d74aa51&v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Clarisse Fidelis__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![foto_felipe](http://avatars.githubusercontent.com/u/64739815?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Felipe Santos__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
 </div>

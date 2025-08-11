@@ -31,13 +31,19 @@ tags:
 [:fontawesome-solid-2: :octicons-workflow-24: __Siga todos os passos do robô de criação de texto de memorando com IA.__](../prompt_memo/#montando-o-seu-robo){ target="_blank" } :warning:{ title='Caso seja necessário' }
 { .card }
 
-[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô de criação de memorando__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_memorando.txt){ target="_blank" }[^1] e cole em um novo subfluxo chamado `cria_memorando`[^1].
+[:fontawesome-solid-3: :octicons-copy-16: __Copie o código do robô - `cria_memorando`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/cria_memorando.txt){ target="_blank" }[^1] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.[^1].
 { .card }
 
 :fontawesome-solid-4: :octicons-workflow-24: __Crie uma ação `Executar subfluxo`__ no subfluxo `Main` e selecione o subfluxo `cria_memorando`.
 { .card }
 
-:fontawesome-solid-5: :material-application-variable: __Crie as variáveis de entrada__ `hipotese_restricao_memo`[^2], `destinatario_memo`[^3] e `assunto_memo`[^4] serão solicitadas.
+:fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao_memo`[^2].
+{ .card }
+
+:fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__  `destinatario_memo`[^3].
+{ .card }
+
+:fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__  `assunto_memo`[^4].
 { .card }
 
 </div>
