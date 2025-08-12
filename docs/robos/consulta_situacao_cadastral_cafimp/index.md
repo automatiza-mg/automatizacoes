@@ -38,7 +38,7 @@ tags:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/main/robos/site/consulta_situacao_cadastral_cafimp.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-2: :material-application-variable: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^2].
+[:fontawesome-solid-2: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);)[^2].
 { #download-button .card path="assets/fornecedores.csv" fileName="fornecedores.xlsx" }
 
 :fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `Caminho_excel` com o caminho onde a planilha modelo foi salva.
