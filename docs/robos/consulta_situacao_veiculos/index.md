@@ -90,7 +90,7 @@ Para dar vida a ele:
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
-[^1]: Qualquer modificação além da inclusão de mais CNPJs na planilha Excel pode exigir modificações no código original do robô. Download desta planilha não é suportado na versão mobile desta página.
+[^1]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.
 [^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^3]: O robô contém um fluxo principal chamado "Main" e três subfluxos, cada um responsável por consultar um dos sites.
 Para isso, é necessário criar três novos subfluxos. No canto superior direito da interface, clique em "Subfluxo" > "Novo subfluxo" e crie os seguintes fluxos: "DNIT", "PRF" e "cidadao.mg".

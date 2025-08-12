@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir Concessão de Férias Prêmio
+# Incluir concessão de Férias Prêmio
 
 
 ## Informações gerais
@@ -41,7 +41,7 @@ tags:
 :fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `Senha`[^2].
 { .card }
 
-[:fontawesome-solid-4: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
+[:fontawesome-solid-4: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);) [^3].
 { #download-button .card path="assets/inclusao-ferias-premio.csv" fileName="inclusao-ferias-premio.xlsx" }
 
 :fontawesome-solid-5: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 16 e 122__.
@@ -69,4 +69,5 @@ tags:
 
 [^1]: MASP para acesso ao SISAP.
 [^2]: Senha de acesso ao SISAP.
+[^3]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.
 

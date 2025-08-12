@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir Faltas – Rotina Histórico
+# Incluir faltas – Rotina Histórico
 
 
 ## Informações gerais
@@ -48,7 +48,7 @@ tags:
 :fontawesome-solid-1: :octicons-copy-16: [__Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/falta_rotina_historico/falta_rotina_historico.txt){ target="_blank" }[^1] e cole em um novo fluxo do Power Automate.
 { .card }
 
-:fontawesome-solid-2: :material-microsoft-excel:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
+:fontawesome-solid-2: :material-microsoft-excel:[ __Clique aqui para baixar a planilha modelo__](javascript:void(0);) [^2].
 { #download-button .card path="assets/falta_rotina_historico.csv" fileName="falta_rotina_historico.xlsx" }
 
 :fontawesome-solid-3: :material-square-edit-outline: __Complete as colunas da planilha modelo__ com as informações de faltas a serem incluídas no Sisap: `NOME`,`MASP`,`DV`,`ADMISSÃO`,`MÊS/ANO APURAÇÃO`,`TIPO DE FALTA`,`QUANTIDADE DE FALTAS`,	`NATUREZA DA FALTA`,`HORAS A DESCONTAR`,`NATUREZA DA FALTA/HORAS`.
@@ -78,4 +78,5 @@ __Instruções de preenchimento da planilha.__
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
-[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.   
+[^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar. 
+[^2]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.
