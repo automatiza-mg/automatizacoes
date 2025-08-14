@@ -33,7 +33,7 @@ tags:
 
 <div class="grid" markdown>
 
-:fontawesome-solid-1: :material-microsoft-excel: <a href="assets/Recurso_PAD.xlsx"download="recurso_PAD">__Clique aqui para baixar a planilha-modelo.__ </a>[^1]
+:fontawesome-solid-1: :material-microsoft-excel: <a href="assets/recurso_PAD.xlsx"download="recurso_PAD">__Clique aqui para baixar a planilha-modelo.__ </a>[^1]
 { .card }
 
 :fontawesome-solid-2: [:octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
