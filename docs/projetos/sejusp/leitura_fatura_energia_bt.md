@@ -1,4 +1,4 @@
-# Automação de leitura de fatura de energia elétrica
+# Automação de leitura de fatura de energia elétrica - baixa tensão
 
 O desafio em questão consiste em automatizar a leitura, a extração de informações e gerar uma base de dados de mais de 200 faturas de energia elétrica de baixa tensão que a Sejusp recebe mensalmente.
 
@@ -49,7 +49,7 @@ O processo manual era executado, em média, em 15 minutos para cada fatura, send
 **Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!!!** :rocket::rocket::rocket:
 
 
-[^1]:[Saiba mais sobre o que são ferramentas RPA.](https://meadapt.com/blog/o-que-%C3%A9-rpa-e-para-o-que-serve/)
+[^1]:[Saiba mais sobre o que são ferramentas RPA.]()
 
 [^2]:Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual.
 
