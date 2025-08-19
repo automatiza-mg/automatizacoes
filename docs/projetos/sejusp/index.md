@@ -4,7 +4,8 @@ Este projeto consiste em uma série de ações para automatizar processos na Sej
 
 ### Subsecretaria de Gestão Administrativa, Logística e Tecnologia (Sulot)
 
- 1. [Automação de leitura de fatura de energia elétrica](leitura_fatura_energia_bt.md)
+ 1. [Automação de leitura de fatura de energia elétrica - baixa tensão](leitura_fatura_energia_bt.md)
+ 2. [Automação de leitura de fatura de energia elétrica - média tensão](leitura_fatura_energia_mt.md)
 
 ### Departamento Penitenciário de Minas Gerais (Depen)
 
