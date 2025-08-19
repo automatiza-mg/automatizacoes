@@ -1,0 +1,10 @@
+graph TD
+    A[Início] --> B[Configura o Fluxo]
+    B --> C[Carrega Fila de Atribuição]
+    C --> D[Login no SEI]
+    D --> E[Troca de Unidade]
+    E --> F[Extrai Dados]
+    F --> G[Distribui Processos]
+    G --> H[Atribui Processos]
+    H --> I[Salva Dados]
+    I --> J[Fim]
