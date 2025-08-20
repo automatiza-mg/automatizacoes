@@ -80,7 +80,7 @@ hide:
 
 - :material-robot-angry-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>53</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>110</p>
 
     robôs
 
@@ -88,7 +88,7 @@ hide:
 
 - :fontawesome-solid-money-bill-1-wave:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>R$ 1,3</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>R$ 125,3</p>
 
     milhões
 
@@ -96,7 +96,7 @@ hide:
 
 - :material-clock-time-five-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>7.378,6</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>10.006,6</p>
 
     horas
 
@@ -112,15 +112,15 @@ hide:
 
 - :material-earbuds-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>27</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>31</p>
 
-    cursos
+    cursos e oficinas
 
     oferecidos
 
 - :fontawesome-solid-people-arrows:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>42,49</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>56,98</p>
 
     servidores
 
@@ -192,7 +192,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    <p class="p-center" markdown>Subsecretária de Inovação e Gestão Estratégica.</p>
+    <p class="p-center" markdown>Subsecretária do Escritório Central de Inovação e Automatização.</p>
 
 - <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
 
@@ -201,7 +201,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     ---
 
-    <p class="p-center" markdown>Diretor de Desburocratização - DCD.</p>
+    <p class="p-center" markdown>Superintendente do Centro de Automatização e Inteligência Artificial – Automatiza.MG.</p>
 
     <p class="p-center" markdown>
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
