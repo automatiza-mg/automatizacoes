@@ -51,6 +51,6 @@ O processo manual era executado, em média, em 15 minutos para cada fatura, send
 **Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!** :rocket:
 
 
-[^1]:[Saiba mais sobre o que são ferramentas RPA.]()
+[^1]:[Saiba mais sobre o que são ferramentas RPA.](/automatizacoes/blog/o-que-é-rpa-e-para-que-serve/)
 
 [^2]:Dividir PDF online [opção 1](https://www.ilovepdf.com/pt/dividir_pdf); [opção 2](https://smallpdf.com/pt/dividir-pdf); [opção 3](https://tools.pdf24.org/pt/dividir-pdf).

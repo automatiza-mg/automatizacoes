@@ -49,7 +49,7 @@ O processo manual era executado, em média, em 15 minutos para cada fatura, send
 **Com o robô, agora, o processo para cada fatura é executado, em média, em 10 segundos!!!** :rocket::rocket::rocket:
 
 
-[^1]:[Saiba mais sobre o que são ferramentas RPA.]()
+[^1]:[Saiba mais sobre o que são ferramentas RPA.](/automatizacoes/blog/o-que-é-rpa-e-para-que-serve/)
 
 [^2]:Foi identificado que há um quinto modelo de fatura, DME modelo preto e branco, no entanto, não há o número suficiente de fatura para treinar a IA e, portanto, o tratamento desta fatura segue manual.
 
