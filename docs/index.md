@@ -224,7 +224,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 - <p class="p-center" markdown>![foto_augusto](https://avatars.githubusercontent.com/u/67128722?v=4){ .lg .middle .avatar loading=lazy }</p>
 
 
-    <p class="p-center" markdown>__Augusto git push origin Souza__</p>
+    <p class="p-center" markdown>__Augusto Souza__</p>
 
     ---
 
