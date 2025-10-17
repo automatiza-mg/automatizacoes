@@ -221,6 +221,19 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
+- <p class="p-center" markdown>![foto_augusto](https://avatars.githubusercontent.com/u/67128722?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Augusto Souza__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
 - <p class="p-center" markdown>![foto_breno](https://avatars.githubusercontent.com/u/198124650?v=4){ .lg .middle .avatar loading=lazy }</p>
 
 
