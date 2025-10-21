@@ -9,6 +9,7 @@ Este projeto consiste em uma série de ações para automatizar processos na Sej
 
 ### Departamento Penitenciário de Minas Gerais (Depen)
 
- 1. [Automatização do pagamento do trabalho de IPLs​](pagamento_ipls.md)
- 2. [Automatização da consulta à situação CAGEC](consulta_situacao_cagec.md)
+ 1. [Automatização da consulta à situação CAGEC](consulta_situacao_cagec.md)
+ 2. [Automatização do pagamento do trabalho de IPLs​](pagamento_ipls.md)
+ 3. [FarmacIA - Robô de Análise de Psicotrópicos](farmacia.md)
  
