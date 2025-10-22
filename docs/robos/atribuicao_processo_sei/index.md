@@ -6,7 +6,7 @@ tags:
   - SEI
 ---
 
-# Atribuição automática de processos no SEI
+# Atribui processos no SEI
 
 
 ## Informações gerais

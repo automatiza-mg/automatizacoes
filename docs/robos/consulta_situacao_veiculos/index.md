@@ -6,7 +6,7 @@ tags:
   - Gestão de Frota
 ---
 
-# Consulta à situação de veículos
+# Consulta a situação de veículos
 
 ![type:video](https://www.youtube.com/embed/dUBgoYQbvHs)
 

@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Alterar férias regulamentares
+# Altera férias regulamentares
 
 
 ## Informações gerais

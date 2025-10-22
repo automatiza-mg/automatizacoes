@@ -6,7 +6,7 @@ tags:
   - SEI
 ---
 
-# Cadastro de novo perfil de acesso na unidade SEI
+# Cadastra novo perfil de acesso na unidade SEI
 
 ![type:video](https://www.youtube.com/embed/0-FlMyb_yr4)
 

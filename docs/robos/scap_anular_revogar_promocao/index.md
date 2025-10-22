@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Anular promoção
+# Anula promoção
 
 
 ## Informações gerais

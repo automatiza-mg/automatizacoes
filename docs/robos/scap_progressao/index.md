@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir progressão
+# Inclui progressão
 
 
 ## Informações gerais

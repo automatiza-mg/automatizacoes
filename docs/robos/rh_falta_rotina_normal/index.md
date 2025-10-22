@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir faltas – Rotina Faltas Consolidadas
+# Inclui faltas – Rotina Faltas Consolidadas
 
 
 ## Informações gerais

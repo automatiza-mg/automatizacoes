@@ -6,7 +6,7 @@ tags:
   - Compras
 ---
 
-# Consulta à situação cadastral de fornecedores - CAFIMP
+# Consulta a situação cadastral de fornecedores - CAFIMP
 
 ![type:video](https://www.youtube.com/embed/ijJdrQYm6vM)
 

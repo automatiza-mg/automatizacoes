@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir concessão de Férias Regulamentares
+# Inclui concessão de Férias Regulamentares
 
 
 ## Informações gerais
