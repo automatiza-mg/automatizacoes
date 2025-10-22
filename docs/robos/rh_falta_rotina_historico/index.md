@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir faltas – Rotina Histórico
+# Inclui faltas – Rotina Histórico
 
 
 ## Informações gerais

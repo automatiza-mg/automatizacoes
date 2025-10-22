@@ -6,7 +6,7 @@ tags:
   - SEI
 ---
 
-# Cadastro de Novo Usuário SEI
+# Cadastra Novo Usuário no SEI
 
 ![type:video](https://www.youtube.com/embed/2fA7HXFZ7vs)
 

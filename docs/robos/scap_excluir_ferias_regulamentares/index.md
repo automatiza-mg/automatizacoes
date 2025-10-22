@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Excluir férias regulamentares
+# Exclui férias regulamentares
 
 
 ## Informações gerais

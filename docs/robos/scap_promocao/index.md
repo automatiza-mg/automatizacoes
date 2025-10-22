@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir promoção
+# Inclui promoção
 
 
 ## Informações gerais

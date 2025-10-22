@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Anular progressão
+# Anula progressão
 
 
 ## Informações gerais
