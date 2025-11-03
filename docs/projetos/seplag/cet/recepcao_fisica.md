@@ -47,9 +47,6 @@ Fluxo no Power Automate Web que lê as informações de cada um dos processos e 
 2. **Registro na planilha**:
    Com as informações coletadas, o robô as insere na planilha de controle.
 
-<!--    2.3. **Data de envio no correios**:
-   Por fim, o robô utiliza a [API dos Correios](https://automatiza-mg.github.io/automatizacoes/robos/pesquisa_codigo_rastreio_correios/?h=correios), desenvolvida pela Link&Track, para identificar quando aquela correspondência foi enviada, pois essa é uma informação crucial para os prazos do processo. -->
-
 ### **Robô de cadastro no Siaut** - PAD:
 Fluxo final, que trata linha a linha daquilo que foi construído na planilha de controle. Faz análises diversas na própria planilha e ao longo do processo.
 
