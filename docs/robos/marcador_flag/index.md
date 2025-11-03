@@ -6,7 +6,7 @@ tags:
   - SEI
 ---
 
-# Marcador Flag em processos PAD
+# Insere marcador Flag em processos PAD
 
 
 ## Informações gerais
@@ -33,7 +33,7 @@ tags:
 
 <div class="grid" markdown>
 
-:fontawesome-solid-1: :material-microsoft-excel: <a href="assets/Recurso_PAD.xlsx"download="recurso_PAD">__Clique aqui para baixar a planilha-modelo__</a>
+:fontawesome-solid-1: :material-microsoft-excel: <a href="assets/recurso_PAD.xlsx"download="recurso_PAD">__Clique aqui para baixar a planilha-modelo.__ </a> [^1]
 { .card }
 
 :fontawesome-solid-2: [:octicons-copy-16: __Copie o código do robô - Main__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/marcador_flag/marcador_flag_main.txt)[^2] e cole em um novo fluxo Power Automate Desktop.
@@ -73,7 +73,7 @@ tags:
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
-[^1]: O nome da aba "Recursos_2025" tem a ideia de ser atualizada anualmente, criando-se uma nova aba a cada ano. Este nome é vinculado no fluxo, devendo-se alterar o nome da aba no próprio robô no caso de alteração. 
+[^1]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O nome da aba "Recursos_2025" tem a ideia de ser atualizada anualmente, criando-se uma nova aba a cada ano. Este nome é vinculado no fluxo, devendo-se alterar o nome da aba no próprio robô no caso de alteração. O download desta planilha não é suportado na versão mobile desta página.
 [^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^3]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
 [^4]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.

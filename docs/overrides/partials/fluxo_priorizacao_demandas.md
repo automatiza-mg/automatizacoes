@@ -1,4 +1,4 @@
-??? note "**Clique para ver o fluxo do priorização**"
+??? note "**Clique para ver o fluxo de uma priorização de projeto**"
 
     ```mermaid
     graph TD

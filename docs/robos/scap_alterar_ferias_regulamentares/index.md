@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Alterar Férias Regulamentares
+# Altera férias regulamentares
 
 
 ## Informações gerais
@@ -34,13 +34,13 @@ tags:
 [:fontawesome-solid-1: :octicons-copy-16: __Copie o código do robô__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/scap/alterar_ferias_regulamentares/alterar_ferias_consolidadas.txt)[^1] e cole em um novo fluxo Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-2: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);).
+[:fontawesome-solid-2: :material-microsoft-excel: __Clique aqui para baixar a planilha-modelo__](javascript:void(0);) [^2].
 { #download-button .card path="assets/alterar_ferias_regulamentares.csv" fileName="alterar_ferias_regulamentares.xlsx" }
 
-:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `usuario`, com as informações do seu usuário de acesso ao SISAP..
+:fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `usuario` [^3], com as informações do seu usuário de acesso ao SISAP.
 { .card }
 
-:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `senha`, com as informações da sua senha de acesso ao SISAP.
+:fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `senha`[^3], com as informações da sua senha de acesso ao SISAP.
 { .card }
 
 </div> 
@@ -49,4 +49,5 @@ tags:
 --8<-- "docs/overrides/partials/modelo_robo/ajuda externos.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: MASP e senha do SISAP.
+[^2]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.
+[^3]: MASP e senha do SISAP.

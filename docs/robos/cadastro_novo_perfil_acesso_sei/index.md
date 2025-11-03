@@ -6,7 +6,7 @@ tags:
   - SEI
 ---
 
-# Cadastro de novo perfil de acesso na unidade SEI
+# Cadastra novo perfil de acesso na unidade SEI
 
 ![type:video](https://www.youtube.com/embed/0-FlMyb_yr4)
 
@@ -57,4 +57,4 @@ tags:
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
-[^2]: Qualquer modificação além da inclusão de mais usuários na planilha Excel pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.
+[^2]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.

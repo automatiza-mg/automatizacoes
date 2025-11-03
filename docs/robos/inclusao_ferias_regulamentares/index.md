@@ -7,7 +7,7 @@ tags:
    - SISAP
 ---
 
-# Incluir Concessão de Férias Regulamentares
+# Inclui concessão de Férias Regulamentares
 
 
 ## Informações gerais
@@ -47,7 +47,7 @@ tags:
 [:fontawesome-solid-5: :octicons-copy-16: __Copie o código do robô - `Ferias_Parceladas`__](https://github.com/automatiza-mg/biblioteca-de-robos/raw/refs/heads/main/robos/site/scap/ferias_regulamentares/subfluxo_ferias_parceladas.txt){ target="_blank" } e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-[:fontawesome-solid-6: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);).
+[:fontawesome-solid-6: :material-microsoft-excel: __Clique aqui para baixar a planilha modelo__](javascript:void(0);) [^3].
 { #download-button .card path="assets/inclusao-ferias-regulamentares.csv" fileName="inclusao-ferias-regulamentares.xlsx" }
 
 :fontawesome-solid-7: :material-square-edit-outline:__Edite a planilha-modelo :warning:{ title='Veja informações abaixo'} e informe o caminho do arquivo salvo nas ações 20 e 100__.
@@ -70,4 +70,5 @@ tags:
 
 [^1]: MASP para acesso ao SISAP.
 [^2]: Senha de acesso ao SISAP.
+[^3]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O download desta planilha não é suportado na versão mobile desta página.
 
