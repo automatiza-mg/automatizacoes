@@ -1,23 +1,23 @@
-# Robô Desbloqueio Gravame
+# Robô de desbloqueio de gravame
 
-O desafio consiste em realizar o processo de desbloqueio do gravame de todos os veículos solicitados a Coordenadoria Estadual de Trânsito- CET
+O desafio consiste em realizar o processo de desbloqueio do Gravame de todos os veículos solicitados a Coordenadoria Estadual de Trânsito- CET.
 
 <!-- more -->
 ## 1. Sobre o projeto
-A Diretoria de Gestão dos Credenciamentos de Veículos- DGCV, recebe da Empresa B3, planilhas com solicitações de desbloqueio de gravames, que na prática é o cancelamento de reserva de financiamento de veículos, a ser tratado manualmente no Sistema do Departamento de Trânsito de Minas Gerais (SDAK).
+A Diretoria de Gestão dos Credenciamentos de Veículos- DGCV recebe da Empresa B3 planilhas com solicitações de desbloqueio de gravames, que na prática é o cancelamento de reserva de financiamento de veículos, a ser tratado manualmente no Sistema do Departamento de Trânsito de Minas Gerais (SDAK).
 A empresa B3 é a responsável junto a Coordenadoria Estadual de Trânsito- CET pela inserção, alteração e baixa de gravames financeiros em veículos emplacados em Minas Gerais. Os dados dos veículos, que por algum motivo, não foram processados na empresa B3, são encaminhados para a CET para que inserção no SDAK e correção de erros
 As planilhas são enviadas, diariamente pela Empresa B3, com informações de dezenas de veículos, para desbloqueio de gravames e demais tratativas referentes a pendências de gravames financeiros de veículos. 
 
 ## 2. O que o robô faz
 - Extrai dados referentes aos veículos a serem desbloqueados da planilha enviada pela B3;
-- Inseri dados como número de chassi, CPF/CNPJ, data de desbloqueio no sistema SDAK;
+- Insere dados como número de chassi, CPF/CNPJ, data de desbloqueio no sistema SDAK;
 - Realiza a validação dos dados enviados como número de caracteres de CPF/CNPJ;
 - Executa o desbloqueio do gravame com o respectivo motivo de desbloqueio;
 - Retorna o status de cada solicitação para a planilha enviada pela B3;
-- Informar a finalização do fluxo e execução de todas as solicitações ao operador.
+- Informa a finalização do fluxo e execução de todas as solicitações ao operador.
 
 ## 3. Como funciona o robô
-O operador realiza a execução do robô através do power automate desktop instalado na máquina.
+O operador realiza a execução do robô através do Power Automate Desktop, instalado na máquina.
 
 Veja o fluxo do robô:
 
@@ -43,11 +43,11 @@ flowchart TD
 ## 5. Utilização do robô
 
 - Neste projeto, a construção do robô foi realizada externamente, utilizando como base de dados as planilhas enviadas pela B3;
-- Os erros considerados para tratamento durante a execução do robô, foram repassados pelos servidores da CET;
-- É necessário a conferência da base de dados para plena execução do robô, bem como estabilidade do sistema SDAK.
+- Os erros considerados para tratamento durante a execução do robô foram repassados pelos servidores da CET;
+- É necessária a conferência da base de dados para plena execução do robô, bem como estabilidade do sistema SDAK.
 
 
 ## 6. Resultados
 
 O processo manual era executado, em média, em 20 minutos para cada planilha, sendo 01 planilha por dia. 
-**Com o robô, agora, o processo para cada planilha é executado, em média, em 9 minuto!!! Ou seja isso significa que o processo está 444% mais rápido do que antes. ** :rocket::rocket::rocket:
+**Com o robô, agora, o processo para cada planilha é executado, em média, em 9 minutos! Ou seja, o processo está 444% mais rápido do que antes.** :rocket:
