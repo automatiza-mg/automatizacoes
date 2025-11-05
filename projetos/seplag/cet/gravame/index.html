@@ -22,7 +22,7 @@
     
     
       
-        <title>Robô Desbloqueio Gravame - Automatiza.MG</title>
+        <title>Robô de desbloqueio de gravame - Automatiza.MG</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#robo-desbloqueio-gravame" class="md-skip">
+        <a href="#robo-de-desbloqueio-de-gravame" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -172,7 +172,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Robô Desbloqueio Gravame
+              Robô de desbloqueio de gravame
             
           </span>
         </div>
@@ -1746,24 +1746,24 @@
   
 
 
-<div><h1 id="robo-desbloqueio-gravame">Robô Desbloqueio Gravame<a class="headerlink" href="#robo-desbloqueio-gravame" title="Permanent link">⚓︎</a></h1>
-<p>O desafio consiste em realizar o processo de desbloqueio do gravame de todos os veículos solicitados a Coordenadoria Estadual de Trânsito- CET</p>
+<div><h1 id="robo-de-desbloqueio-de-gravame">Robô de desbloqueio de gravame<a class="headerlink" href="#robo-de-desbloqueio-de-gravame" title="Permanent link">⚓︎</a></h1>
+<p>O desafio consiste em realizar o processo de desbloqueio do Gravame de todos os veículos solicitados a Coordenadoria Estadual de Trânsito- CET.</p>
 <!-- more -->
 <h2 id="1-sobre-o-projeto">1. Sobre o projeto<a class="headerlink" href="#1-sobre-o-projeto" title="Permanent link">⚓︎</a></h2>
-<p>A Diretoria de Gestão dos Credenciamentos de Veículos- DGCV, recebe da Empresa B3, planilhas com solicitações de desbloqueio de gravames, que na prática é o cancelamento de reserva de financiamento de veículos, a ser tratado manualmente no Sistema do Departamento de Trânsito de Minas Gerais (SDAK).
+<p>A Diretoria de Gestão dos Credenciamentos de Veículos- DGCV recebe da Empresa B3 planilhas com solicitações de desbloqueio de gravames, que na prática é o cancelamento de reserva de financiamento de veículos, a ser tratado manualmente no Sistema do Departamento de Trânsito de Minas Gerais (SDAK).
 A empresa B3 é a responsável junto a Coordenadoria Estadual de Trânsito- CET pela inserção, alteração e baixa de gravames financeiros em veículos emplacados em Minas Gerais. Os dados dos veículos, que por algum motivo, não foram processados na empresa B3, são encaminhados para a CET para que inserção no SDAK e correção de erros
 As planilhas são enviadas, diariamente pela Empresa B3, com informações de dezenas de veículos, para desbloqueio de gravames e demais tratativas referentes a pendências de gravames financeiros de veículos. </p>
 <h2 id="2-o-que-o-robo-faz">2. O que o robô faz<a class="headerlink" href="#2-o-que-o-robo-faz" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Extrai dados referentes aos veículos a serem desbloqueados da planilha enviada pela B3;</li>
-<li>Inseri dados como número de chassi, CPF/CNPJ, data de desbloqueio no sistema SDAK;</li>
+<li>Insere dados como número de chassi, CPF/CNPJ, data de desbloqueio no sistema SDAK;</li>
 <li>Realiza a validação dos dados enviados como número de caracteres de CPF/CNPJ;</li>
 <li>Executa o desbloqueio do gravame com o respectivo motivo de desbloqueio;</li>
 <li>Retorna o status de cada solicitação para a planilha enviada pela B3;</li>
-<li>Informar a finalização do fluxo e execução de todas as solicitações ao operador.</li>
+<li>Informa a finalização do fluxo e execução de todas as solicitações ao operador.</li>
 </ul>
 <h2 id="3-como-funciona-o-robo">3. Como funciona o robô<a class="headerlink" href="#3-como-funciona-o-robo" title="Permanent link">⚓︎</a></h2>
-<p>O operador realiza a execução do robô através do power automate desktop instalado na máquina.</p>
+<p>O operador realiza a execução do robô através do Power Automate Desktop, instalado na máquina.</p>
 <p>Veja o fluxo do robô:</p>
 <div class="mermaid">flowchart TD
     A[Início] --&gt; B[Realizar análise dos dados da planilha excel da B3]
@@ -1788,12 +1788,12 @@ As planilhas são enviadas, diariamente pela Empresa B3, com informações de de
 <h2 id="5-utilizacao-do-robo">5. Utilização do robô<a class="headerlink" href="#5-utilizacao-do-robo" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Neste projeto, a construção do robô foi realizada externamente, utilizando como base de dados as planilhas enviadas pela B3;</li>
-<li>Os erros considerados para tratamento durante a execução do robô, foram repassados pelos servidores da CET;</li>
-<li>É necessário a conferência da base de dados para plena execução do robô, bem como estabilidade do sistema SDAK.</li>
+<li>Os erros considerados para tratamento durante a execução do robô foram repassados pelos servidores da CET;</li>
+<li>É necessária a conferência da base de dados para plena execução do robô, bem como estabilidade do sistema SDAK.</li>
 </ul>
 <h2 id="6-resultados">6. Resultados<a class="headerlink" href="#6-resultados" title="Permanent link">⚓︎</a></h2>
 <p>O processo manual era executado, em média, em 20 minutos para cada planilha, sendo 01 planilha por dia. 
-**Com o robô, agora, o processo para cada planilha é executado, em média, em 9 minuto!!! Ou seja isso significa que o processo está 444% mais rápido do que antes. ** <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:"></p></div>
+<strong>Com o robô, agora, o processo para cada planilha é executado, em média, em 9 minutos! Ou seja, o processo está 444% mais rápido do que antes.</strong> <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:"></p></div>
 
 
 
@@ -1816,7 +1816,7 @@ As planilhas são enviadas, diariamente pela Empresa B3, com informações de de
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">17 de setembro de 2024 13:23:52</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">5 de novembro de 2025 15:13:36</span>
   </span>
 
     
