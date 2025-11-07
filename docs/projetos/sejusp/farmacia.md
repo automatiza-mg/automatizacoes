@@ -37,7 +37,8 @@ flowchart TD
 <center>**As ações em destaque necessitam da interferência do(a) usuário(a).**</center>
 
 ## 3. Utilização do robô
-- Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes variáveis de entrada**:
+
+Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes variáveis de entrada**:
 - :material-application-variable: **`link_planilha_robo`**: inserir o link da planilha online que recebe o resultado da leitura do robô.
 - :material-application-variable: **`login_sei`**: inserir o CPF do usuário.
 - :material-application-variable: **`login_sigpri`**: inserir o CPF do usuário.
