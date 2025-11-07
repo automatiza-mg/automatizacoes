@@ -53,6 +53,8 @@ Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes var
 - :material-application-variable: **`tipo_processo`**: inserir o tipo do processo a ser criado.
 - :material-application-variable: **`unidade_sei`**: inserir a unidade utilizada para acessar o SEI!MG.
 
+Outras observações:
+
 - O robô abrirá todos os arquivos necessários e páginas da Web, assim, **certifique-se que o Excel e/ou o navegador não estejam abertos**.
 - Verifique, no navegador, se a extensão do Power Automate está habilitada.
 - Ative a opção `mostrar pop-ups e redirecionamentos do navegador`.
