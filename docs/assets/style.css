@@ -407,17 +407,23 @@ body p {
 	transform: scale(1.8);
 }
 
-/* deixa menores SOMENTE os cards dentro de .cards-rede */
 .cards-rede .grid.cards > * {
-    padding: 0.7rem !important;
+    padding: 0.7rem 0.7rem 0.5rem 0.7rem !important; 
     margin: 0.25rem !important;
+    min-height: 0 !important; 
+    height: auto !important;
 }
 
 .cards-rede .grid.cards {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
 }
 
-/* fontes menores só nesse bloco */
 .cards-rede .text-larger {
-    font-size: 1.05rem !important;
+    font-size: 0.9rem !important; 
+    margin-bottom: 0.1rem !important; 
+}
+
+.cards-rede .grid.cards > * > p {
+    font-size: 0.7rem !important; 
+    margin-top: 0.2rem !important; 
 }
