@@ -35,7 +35,7 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
         Ocasionalmente, promovemos capacitações e disseminações sobre automatização, IA ou temas afins.
 
-    - <p class="text-larger" markdown>:material-head-sync:{ .lg .middle .light-red } <span style='color: #1c2952;'>**Gestão da informação!**</span></p>
+    - <p class="text-larger" markdown>:material-head-sync:{ .lg .middle .light-red } <span style='color: #1c2952;'>**Gestão da informação**</span></p>
 
         ---
 
