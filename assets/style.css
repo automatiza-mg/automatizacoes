@@ -406,3 +406,41 @@ body p {
 .side-menu ul li a:hover span.dot {
 	transform: scale(1.8);
 }
+
+.cards-rede .grid.cards > * {
+    padding: 1.2rem !important;
+    border-radius: 0.6rem !important;
+}
+
+.cards-rede .text-larger {
+    font-size: 1rem !important;
+    margin-bottom: 0.4rem !important;
+}
+
+.cards-rede .grid.cards > * > p {
+    font-size: 0.85rem !important;
+    line-height: 1.35 !important;
+}
+
+/* Títulos dos cards */
+.cards-rede .text-larger {
+    font-size: 0.85rem !important;
+}
+
+/* Parágrafos dentro dos cards */
+.cards-rede .grid.cards > * > p {
+    font-size: 0.75rem !important;
+    line-height: 1.25 !important;
+}
+
+/* Ícones, se quiser diminuir também */
+.cards-rede .grid.cards svg {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+/* Aumentar apenas os ícones dentro dos cards */
+.cards-rede .grid.cards svg {
+    width: 28px !important;
+    height: 28px !important;
+}
