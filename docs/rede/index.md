@@ -39,7 +39,7 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
         ---
 
-        A dúvida apertou e pelo fórum não deu certo de resolver? Precisa compartilhar a tela para mostrar melhor o problema ou a ideia? Toda sexta-feira temos um espaço de reunião em que a equipe Automatiza ajuda em dúvidas e ideias pontuais. Entra na semana que precisar.
+        A dúvida apertou e pelo fórum não deu certo de resolver? Precisa compartilhar a tela para mostrar melhor o problema ou a ideia? Toda sexta-feira temos um espaço de reunião em que a equipe Automatiza ajuda em dúvidas e ideias pontuais. É só entrar nas semanas em que precisar.
 
     - <p class="text-larger" markdown>:material-head-sync:{ .lg .middle .light-red } <span style='color: #1c2952;'>**Gestão da informação**</span></p>
 
