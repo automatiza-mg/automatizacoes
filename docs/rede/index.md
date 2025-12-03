@@ -27,13 +27,19 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
         ---
 
-        Os participantes têm um espaço para interagir, tirar dúvidas e compartilhar aprendizados no dia a dia.
+        Os participantes têm um fórum para interagir, tirar dúvidas entre si e compartilhar aprendizados no dia a dia.
 
     - <p class="text-larger" markdown>:material-tools:{ .lg .middle .light-red } <span style='color: #1c2952;'>**Encontros periódicos**</span></p>
 
         ---
 
         Ocasionalmente, promovemos capacitações e disseminações sobre automatização, IA ou temas afins.
+
+    - <p class="text-larger" markdown>:material-book-open-variant:{ .lg .middle .light-red } <span style='color: #1c2952;'>**Tira Dúvidas semanal**</span></p>
+
+        ---
+
+        A dúvida apertou e pelo fórum não deu certo de resolver? Precisa compartilhar a tela para mostrar melhor o problema ou a ideia? Toda sexta-feira temos um espaço de reunião em que a equipe Automatiza ajuda em dúvidas e ideias pontuais. Entra na semana que precisar.
 
     - <p class="text-larger" markdown>:material-head-sync:{ .lg .middle .light-red } <span style='color: #1c2952;'>**Gestão da informação**</span></p>
 
@@ -68,12 +74,6 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
     ---
 
-    [Baixe aqui o material X]()
-
-    [Baixe aqui o material Y]()
-
-    [Link da transmissão ao vivo]()
-
-    [Matéria sobre o evento]()
+    Em breve! :hourglass_flowing_sand:
 
 </div>
