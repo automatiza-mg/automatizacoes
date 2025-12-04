@@ -74,6 +74,22 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
     ---
 
-    Em breve! :hourglass_flowing_sand:
+    [Transmissão do evento - YouTube](https://www.youtube.com/live/Xh3uoT1WlRc)
+
+    ---
+
+    :octicons-arrow-right-24: **Painel de automatizações de área meio**
+
+    1. <a href="assets/20251204_ana_luiza_ferreira.pdf" download="Lançamento - Ana Luiza Ferreira">Apresentação **Ana Luiza Ferreira** - Superintendência de Logística (Seplag-MG)</a>
+    2. <a href="assets/20251204_breno_marques.pdf" download="Lançamento - Breno Marques">Apresentação **Breno Marques** - Automatiza.MG (Seplag-MG)</a>
+    3. <a href="assets/20251204_pedro_vinicius_campos.pdf" download="Lançamento - Pedro Vinicius Campos">Apresentação **Pedro Vinicius Campos** - Assessoria do Gabinete da Subsecretaria do Tesouro Nacional (SEF-MG)</a>
+
+
+    :octicons-arrow-right-24: **Painel de automatizações de área fim**
+
+    1. <a href="assets/20251204_eric_de_souza.pdf" download="Lançamento - Eric de Souza">Apresentação **Eric de Souza** - Superintendência de Infrações e Controle do Condutor (CET-MG)</a>
+    2. <a href="assets/20251204_lucas_de_carvalho.pdf" download="Lançamento - Lucas Araújo">Apresentação **Lucas Araújo** - Assessoria de Inovação (SEE-MG)</a>
+    3. <a href="assets/20251204_andre_amorim.pdf" download="Lançamento - André Amorim">Apresentação **André Amorim** - Ouvidoria de Saúde (OGE-MG)</a>
+
 
 </div>
