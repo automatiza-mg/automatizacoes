@@ -10,7 +10,7 @@ Principais entregas:
 
 **Diretoria Central de Licitações**
 
- 1. Robô de Busca e Análise de Informações de Compras de Medicamentos
+ 1. [Robô de Busca e Análise de Informações de Compras de Medicamentos](analise_compras.md)
 
 **Diretoria Central de Planejamento, Padronização e Estratégias de Contratação**
 
