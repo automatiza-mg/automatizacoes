@@ -55,6 +55,7 @@ Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes var
 - :material-application-variable: **`pasta_download`**: caminho local da pasta de downloads do computador para a busca da planilha CMED. O valor deve estar sem aspas (ex: `C:\Projetos\SUBCOMP`).
 - :material-application-variable: **`resolucao_cap`**: link direto para o site da resolução CAP.
 - :material-application-variable: **`vazio`**: variável sem valor de texto no campo `valor padrão`.
+- :Chave de API: Configuração da integração com a IA no fluxo cap. O corpo da solicitação deve definir o comportamento do robô como um "analista de compras", estabelecendo critérios rigorosos de comparação exata (nome e dosagem) entre os itens e a Resolução, garantindo o retorno dos dados em formato JSON padronizado.
 
 Outras observações:
 
@@ -77,7 +78,7 @@ Outras observações:
 - ['analise_confaz'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/analise_confaz.txt)
 - ['baixar_informacoes'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/baixar_informacoes.txt)
 - ['cap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/cap.txt)
-- ['cmed']](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/cmed.txt)
+- ['cmed'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/cmed.txt)
 - ['dados_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/dados_planilha.txt)
 - ['simples_nacional'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/simples_nacional.txt)
 - ['situacao_cadastral'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/situacao_cadastral.txt)
