@@ -72,12 +72,12 @@ Outras observações:
 
 
 ## 5. Códigos
-- ['Main'](inserir_link)
-- ['analisar_informacoes'](inserir_link)
-- ['analise_confaz'](inserir_link)
-- ['baixar_informacoes'](inserir_link)
-- ['cap'](inserir_link)
-- ['cmed'](inserir_link)
-- ['dados_planilha'](inserir_link)
-- ['simples_nacional'](inserir_link)
-- ['situacao_cadastral'](inserir_link)
+- ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/main.txt)
+- ['analisar_informacoes'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/analisar_informacoes.txt)
+- ['analise_confaz'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/analise_confaz.txt)
+- ['baixar_informacoes'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/baixar_informacoes.txt)
+- ['cap'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/cap.txt)
+- ['cmed']](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/cmed.txt)
+- ['dados_planilha'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/dados_planilha.txt)
+- ['simples_nacional'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/simples_nacional.txt)
+- ['situacao_cadastral'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/seplag_subcomp_dclic_compramedicamentos/situacao_cadastral.txt)
