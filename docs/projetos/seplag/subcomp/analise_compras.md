@@ -69,7 +69,7 @@ Outras observações:
  - Processo manual: ~7 minutos por linha.
  - Processo automatizado: ~50 segundos por linha.
 
- - A automação representa uma economia potencial de **10 horas e 17 minutos** (por processo contendo 100 linhas), além de padronizar as análises, reduzir erros e eliminar a necessidade de acesso manual a portais externos.
+ - A automatização representa uma economia potencial de **10 horas e 17 minutos** (por processo contendo 100 linhas), além de padronizar as análises, reduzir erros e eliminar a necessidade de acesso manual a portais externos.
 
 
 ## 5. Códigos
