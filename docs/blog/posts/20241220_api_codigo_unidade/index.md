@@ -14,7 +14,7 @@ Para utilização do robô de baixar processos e documentos no SEI, presente na 
 <!-- more -->
 
 !!! Info
-    Não é necessário ter conhecimento na linguagem de programação Java para realizar esse procedimento, basta seguir o passo a passo descrito nesse post.
+    Não é necessário ter conhecimento na linguagem de programação Javascript para realizar esse procedimento, basta seguir o passo a passo descrito nesse post.
 
 ## Passo 1: Navegação no SEI
 O primeiro passo para encontrar o código da unidade SEI é entrar no sistema e clicar no botão de troca de unidade:
@@ -54,7 +54,3 @@ Assim, após o clique, o ID irá aparecer nas linhas de código:
 
 
 Agora basta você copiá-lo para utilizar no seu fluxo que utiliza a API do SEI.
-
-Caso prefira, as instruções estão detalhadas no vídeo abaixo:
-
-![type:video](https://www.youtube.com/embed/09ceWwO6Xx0)
