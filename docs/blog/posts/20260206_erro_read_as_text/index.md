@@ -27,4 +27,4 @@ Se algum dia esse erro aparecer quando você colar um código, **vá até a aç�
 
 Isso tende a fazer o erro desaparecer da sua tela de avisos do Automate. 
 
-Acompanhe o Automatiza.MG aqui pelo blog para mais dicas práticas!
+Acompanhe o Automatiza.MG aqui pelo blog para mais dicas práticas de automatização!
