@@ -93,3 +93,20 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
 
 </div>
+
+<div class="grid cards card-border-radius" markdown>
+
+- <p class="text-larger" markdown>__Biblioteca de robôs e soluções replicáveis de RH na prática__</p>
+
+    ---
+
+    [Transmissão do evento - YouTube](https://www.youtube.com/watch?v=4GSiSi0UAys)
+
+    ---
+
+
+    1. <a href="assets/20260210_erik_de_morais" download="Erik tadeu de Morais">Apresentação **Erik de Morais** - Superintendência Central de Administração de Pessoal (Seplag-MG)</a>
+    2. <a href="assets/20260210_bruno_andrade" download="Bruno Victor de Andrade">Apresentação **Bruno de Andrade** - Assessoria de Gestão 
+    Estratégica e Informação (Sejusp-MG)</a>
+
+</div>
