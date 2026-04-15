@@ -46,6 +46,12 @@ tags:
 :fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__  `assunto_memo`[^4].
 { .card }
 
+:fontawesome-solid-8: :material-application-variable: __Crie a variável de entrada__  `nprocesso`[^5].
+{ .card }
+
+:fontawesome-solid-8: :material-application-variable: __Crie a variável de entrada__  `resposta_1` com o conteúdo do seu memorando [^6].
+{ .card }
+
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
@@ -54,3 +60,5 @@ tags:
 [^2]: Apenas se o documento for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu Valor ficar em branco.
 [^3]: Nome da pessoa do setor destinatário do documento.
 [^4]: Campo aberto para inclusão do assunto do documento.
+[^5]: Campo aberto para inclusão do número do processo.
+[^6]: Resposta que compõe o corpo de texto do memorando. Essa variável pode tanto ser personalizada como advir do robô de ['Cria texto de memorando com IA'](https://automatiza-mg.github.io/automatizacoes/robos/prompt_memo/). 
