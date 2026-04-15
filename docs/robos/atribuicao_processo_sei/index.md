@@ -74,26 +74,26 @@ tags:
 :fontawesome-solid-1::fontawesome-solid-3: [:octicons-copy-16: __Copie o código do robô - `distribui_aleatoriamente`__](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/atribuicao_processo_sei/distribui_aleatoriamente.txt)[^2] e cole em um novo subfluxo com esse mesmo nome no Power Automate Desktop.
 { .card }
 
-:fontawesome-solid-8: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^3].
+:fontawesome-solid-1::fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^3].
 { .card }
 
-:fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^4].
+:fontawesome-solid-1::fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^4].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^5].
+:fontawesome-solid-1::fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^5].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `unidade_sei`[^5].
+:fontawesome-solid-1::fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__ `unidade_sei`[^5].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `pastaDeTrabalho`[^6].
+:fontawesome-solid-1::fontawesome-solid-8: :material-application-variable: __Crie a variável de entrada__ `pastaDeTrabalho`[^6].
 { .card } 
 
 </div>
 
 --8<-- "docs/overrides/partials/modelo_robo/ajuda.md"
 
-[^1]: Qualquer modificação além do preenchimento da planilha Excel nos moldes em que ela está (por exemplo, a inclusão de mais colunas ou o deslocamento das já existentes) pode exigir modificações no código original do robô. O nome da aba "Recursos_2025" tem a ideia de ser atualizada anualmente, criando-se uma nova aba a cada ano. Este nome é vinculado no fluxo, devendo-se alterar o nome da aba no próprio robô no caso de alteração. O download desta planilha não é suportado na versão mobile desta página.
+[^1]: Não mantenha linhas sem conteúdo na planilha. Preencha apenas as linhas necessárias. A inserção de linhas vazias acarretará erros no robô.
 [^2]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^3]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
 [^4]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.

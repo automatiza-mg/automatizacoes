@@ -106,16 +106,19 @@ Para dar vida a ele:
 :fontawesome-solid-1::fontawesome-solid-2: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao_prestacao`[^4].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^5].
+:fontawesome-solid-1::fontawesome-solid-3: :material-application-variable: __Crie a variável de entrada__ `hipotese_restricao_processo`[^4].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^6].
+:fontawesome-solid-1::fontawesome-solid-4: :material-application-variable: __Crie a variável de entrada__ `login_sei`[^5].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^7].
+:fontawesome-solid-1::fontawesome-solid-5: :material-application-variable: __Crie a variável de entrada__ `orgao_sei`[^6].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^8].
+:fontawesome-solid-1::fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^7].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^8].
 { .card }
 
 </div>
@@ -125,7 +128,7 @@ Para dar vida a ele:
 [^1]: Na nova aba que será aberta, basta apertar ++ctrl+a++ para selecionar todo código e ++ctrl+c++ para copiar.
 [^2]: Nível do acesso ("Público" ou "Restrito"). Recomendamos a modalidade restrita.
 [^3]: Um texto a ser inserido no campo aberto do SEI que descreve sumariamente o processo a ser criado, como um título.
-[^4]: Incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu Valor ficar em branco.
+[^4]: Apenas se o processo for passível de restrição (não for público), incluir a hipótese legal, de acordo com a lista de opções no SEI. Caso seja público, deverá ser criada mesmo assim, e o seu Valor ficar em branco.
 [^5]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
 [^6]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
 [^7]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
