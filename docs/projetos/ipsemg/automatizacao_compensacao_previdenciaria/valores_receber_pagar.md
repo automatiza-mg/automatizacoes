@@ -12,7 +12,7 @@ Esta informação é coletada no sistema do Comprev, sendo necessária a instru�
 - [x] Inclui documentos em bloco de assinatura.
 
 
-## 2. Subfluxos e suas funcionalidade no robô 
+## 2. Subfluxos e suas funcionalidades no robô 
 
 1. **Main**:  
   Fluxo principal no qual é realizada a seleção do mês de competência e do tipo de processo que se busca realizar, podendo ser referente aos **valores a receber** ou aos **valores a pagar**. Identifica se já existe processo SEI para cada ente listado no `.csv` e, em seguida,  direciona para os subfluxos adequados para cada caso.
