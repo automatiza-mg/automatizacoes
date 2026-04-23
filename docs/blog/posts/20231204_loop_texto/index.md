@@ -33,7 +33,9 @@ A parte do código a que fez referência este post:
 
 ??? copy "**Código-Fonte**"
 
-        --8<-- "docs/blog/posts/20231204_loop_texto/assets/codigo.txt"
+    ```python
+    --8<-- "docs/blog/posts/20231204_loop_texto/assets/codigo.txt"
+    ```
 
 # Saiba Mais
 
