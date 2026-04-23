@@ -26,7 +26,9 @@ A parte do código a que fez referência este post:
 
 ??? copy "**Código-Fonte**"
 
-        --8<-- "docs/blog/posts/20231129_texto_pdf/assets/texto_pdf.txt"
+    ```text
+    --8<-- "docs/blog/posts/20231129_texto_pdf/assets/texto_pdf.txt"
+    ```
 
 # Saiba Mais
 
