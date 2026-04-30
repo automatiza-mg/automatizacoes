@@ -118,7 +118,19 @@ Para dar vida a ele:
 :fontawesome-solid-1::fontawesome-solid-6: :material-application-variable: __Crie a variável de entrada__ `senha_sei`[^7].
 { .card }
 
-:fontawesome-solid-1::fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^8].
+:fontawesome-solid-1::fontawesome-solid-7: :material-application-variable: __Crie a variável de entrada__ `email_institucional`[^8].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-8: :material-application-variable: __Crie a variável de entrada__ `tipo_do_processo_criar`[^9].
+{ .card }
+
+:fontawesome-solid-1::fontawesome-solid-9: :material-application-variable: __Crie a variável de entrada__ `dado_agencia`[^10].
+{ .card }
+
+:fontawesome-solid-2::fontawesome-solid-0: :material-application-variable: __Crie a variável de entrada__ `dado_banco`[^10].
+{ .card }
+
+:fontawesome-solid-2::fontawesome-solid-1: :material-application-variable: __Crie a variável de entrada__ `dado_conta`[^10].
 { .card }
 
 </div>
@@ -132,4 +144,6 @@ Para dar vida a ele:
 [^5]: Login para entrar no SEI. Valor cadastrado para a variável deverá conter CPF com exatamente 11 caracteres numéricos. Favor não incluir pontos (.) ou hífen (-).
 [^6]: Órgão de login no SEI. Valor cadastrado para variável deverá ser exatamente igual à existente na lista de órgãos disponíveis na página inicial de login, inclusive com todas as letras maiúsculas.
 [^7]: Senha para login no SEI. Recomendamos incluir esta variável como confidencial.
-[^8]: É uma palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: `Memorando` ou `Comunicação: Interna`, por exemplo.
+[^8]: Email institucional utilizado pelo servidor.
+[^9]: É uma palavra-chave que localiza o tipo do processo na lista predefinida de criação de processos do SEI: `Memorando` ou `Comunicação: Interna`, por exemplo.
+[^10]: Dados bancários a serem informados na prestação de contas para recebimento da restituição. Recomendamos incluir estas variáveis como confidenciais.
