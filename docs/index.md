@@ -185,7 +185,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
 <div class="grid cards" markdown>
 
-- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_ana](https://res.cloudinary.com/dgll6seyc/image/upload/v1712178624/automatiza-mg/avatar_ana1.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Ana Flávia de Castro Morais__</p>
@@ -194,7 +194,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
 
     <p class="p-center" markdown>Subsecretária do Escritório Central de Inovação e Automatização.</p>
 
-- <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_yan](https://res.cloudinary.com/dgll6seyc/image/upload/v1712177540/automatiza-mg/avatar_yan.webp){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Yan Vieira do Carmo__</p>
