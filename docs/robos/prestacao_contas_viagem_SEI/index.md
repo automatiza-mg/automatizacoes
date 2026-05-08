@@ -27,7 +27,7 @@ Ele é capaz de processar informações fornecidas pelo usuário necessárias pa
 - [x] **Processamento de PDFs**:  
   1. Busca os arquivos PDF na pasta informada.
   2. Extrai e processa textos dos comprovantes para identificar valores de transporte.
-  3. Utiliza ChatGPT para extrair o valor da viagem.
+  3. Utiliza IA para extrair o valor da viagem (utilização do Chat GPT neste caso).
   4. Calcula o valor total das viagens realizadas.
 
 - [x] **Automatização no SEI**:
