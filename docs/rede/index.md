@@ -2,7 +2,18 @@
 hide:
   - navigation
 ---
-# ![Rede Automatiza.MG](https://res.cloudinary.com/dgll6seyc/image/upload/v1764252909/GitHub_-_Rede_Automatiza.MG_branco_tavs5p.png)
+
+<style>
+.md-content__inner > h1 {
+    display: none;
+}
+</style>
+
+<img 
+  src="https://res.cloudinary.com/dgll6seyc/image/upload/v1764252909/automatiza-mg/GitHub_-_Rede_Automatiza.MG_branco_tavs5p.png" 
+  alt="Rede Automatiza.MG"
+  width="700"
+/>
 
 Aqui você encontra reunidas as principais informações sobre a <span style='color: #1c2952;'>**Rede Automatiza.MG**</span>.
 
