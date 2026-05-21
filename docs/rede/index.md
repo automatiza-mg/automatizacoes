@@ -69,7 +69,7 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
     Entre em nosso grupo de WhatsApp clicando neste [link](https://chat.whatsapp.com/E9kO5yqwLbL5Zm0x11ginH) ou apontando a câmera do seu celular para este QR Code:
 
     <div style="width: 150px; margin: 0 auto; text-align: center;">
-    ![Código QR](https://res.cloudinary.com/dgll6seyc/image/upload/v1764260921/Imagem1_xlngoi.png)
+    ![Código QR](https://res.cloudinary.com/dgll6seyc/image/upload/v1779373278/automatiza-mg/qr_code_rede_tgfoga.jpg)
     </div>
 
     :octicons-arrow-right-24: <span style='color: #1c2952;'>**Tem alguma automatização, uso de IA ou iniciativa inovadora que quer compartilhar em um de nossos eventos?**</span>
