@@ -121,3 +121,13 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
     Estratégica e Informação (Sejusp-MG)</a>
 
 </div>
+
+<div class="grid cards card-border-radius" markdown>
+
+- <p class="text-larger" markdown>__Para além do Automate: ferramentas úteis no dia a dia do servidor__</p>
+
+    1. <a href="assets/20260528_luigi.pdf" download="Luigi Caetano">Apresentação **Luigi Caetano** (APMD - Sedese) - Aplicações práticas com Power Apps</a>
+    2. <a href="https://splor-mg.github.io/apresentacoes/20260514_rede_automatiza.html#/" download="Raiane Souza">Apresentação **Raiane Souza** (Splor - Seplag) - Uso de versionamento com Git e GitHub no dia a dia</a>
+    3. <a href="assets/20260528_ligia_oliveira.pdf" download="Lígia Oliveira">Apresentação **Lígia Oliveira** (ECIA - Seplag) - Aplicações do Microsoft Copilot Studio no trabalho</a>
+
+</div>
