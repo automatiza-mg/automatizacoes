@@ -9,11 +9,13 @@ hide:
 }
 </style>
 
+<!--removido temporariamente
 <img 
   src="https://res.cloudinary.com/dgll6seyc/image/upload/v1764252909/automatiza-mg/GitHub_-_Rede_Automatiza.MG_branco_tavs5p.png" 
   alt="Rede Automatiza.MG"
   width="700"
 />
+-->
 
 Aqui você encontra reunidas as principais informações sobre a <span style='color: #1c2952;'>**Rede Automatiza.MG**</span>.
 
