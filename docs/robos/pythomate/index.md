@@ -14,7 +14,7 @@ tags:
 
 | **Desenvolvedor**| Automatiza-mg  |
 | ----------- | ------------------------------------ |
-| **E-mail**       | simplificacao@planejamento.mg.gov.br|
+| **E-mail**       | automatizamg@planejamento.mg.gov.br|
 | **Ferramenta**    | Python |
 | **Versão Power Automate**    | 3.10.12 ou superior |
 

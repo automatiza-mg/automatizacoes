@@ -127,7 +127,7 @@ Vamos aos passos:
 
 Bom, apesar de ainda estar em fase de testes, acredito que o [pythomate](https://github.com/automatiza-mg/pythomate) pode ser uma boa opção para criar fluxos 100% autônomos.
 O repositório do projeto está sendo recheado com o máximo de informações possível sobre sua utilização.
-Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
+Caso tenha alguma dúvida sobre qualquer ponto abordado aqui, da instalação dos programas necessários ao agendamento em si, é só entrar em contato através do formulário abaixo ou no nosso e-mail [automatizamg@planejamento.mg.gov.br](mailto:automatizamg@planejamento.mg.gov.br).
 
 [^1]: Caso encontre algum problema durante este processo, [este Issue](https://github.com/automatiza-mg/pythomate/issues/18) poderá te auxiliar.
 [^2]: Fluxo de teste precisa [desta planilha excel](javascript:void(0);){ path="assets/teste_pythomate.csv" fileName="teste_pythomate.xlsx" }.
