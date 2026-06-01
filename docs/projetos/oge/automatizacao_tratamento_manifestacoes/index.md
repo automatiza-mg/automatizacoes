@@ -33,7 +33,7 @@ Essa automatização é constituída por 2 robôs, sendo um robô no Power Autom
  
 O robô processa os documentos de forma inteligente e eficiente. Veja o fluxo automatizado:
 
-\<div align="center"\>
+<div style="text-align: center;">
  
 ```mermaid
 flowchart TD
@@ -45,7 +45,7 @@ flowchart TD
     F --> G[Fim];
 ```
  
-\</div\>
+</div>
 
 
 ## 3. Utilização do robô

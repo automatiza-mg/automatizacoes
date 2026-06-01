@@ -22,6 +22,8 @@ nav:
       - Automatização do pagamento de professores: projetos/fjp/automatizacao_pagamento_professores
     - Instituto de Previdência dos Servidores do Estado de Minas Gerais (Ipsemg):
       - Automatização da Compensação Previdenciária: projetos/ipsemg/automatizacao_compensacao_previdenciaria
+    - Ouvidoria-Geral do Estado de Minas Gerais (OGE):
+      - Automatização do tratamento inicial de manifestações da OGE: projetos/oge/automatizacao_tratamento_manifestacoes
     - Projeto de extensão Minas em Robôs:
       - Certidões de fornecedores: projetos/extensao/certidoes_fornecedores
       - Prestação de contas de transporte por aplicativo: projetos/extensao/prestacao_contas_transporte
