@@ -52,9 +52,17 @@ flowchart TD
 
 Antes de executar o robô, **o(a) usuário(a) deverá adicionar as seguintes variáveis de entrada**:
 
-- :material-application-variable: **`link_planilha_robo`**: inserir o link da planilha online que recebe o resultado da leitura do robô.
+
 - :material-application-variable: **`login_sei`**: inserir o CPF do usuário.
-(... exemplos. adaptar os tópicos de acordo com o caso do robô)
+- :material-application-variable: **`senha_sei`**: inserir a senha do usuário.
+- :material-application-variable: **`orgao_sei`**: inserir o órgão em que o usuário está vinculado.
+- :material-application-variable: **`Pasta_Download`**: inserir o caminho da pasta em que os arquivos CSV estão armazenados.
+- :material-application-variable: **`Nome_Excel_Controle`**: inserir o nome do arquivo de controle que será utilizado para gerar o caminho da planilha do excel. 
+- :material-application-variable: **`Especificação_Desejada`**: inserir o tipo de especificação desejada como filtro de seleção dos processos.
+- :material-application-variable: **`Coluna_Processo`**: inserir coluna da planilha de controle em que será registrado o número do processo.
+- :material-application-variable: **`Coluna_Data`**: inserir coluna da planilha de controle em que será registrada a data da execução.
+- :material-application-variable: **`Tipo_Desejado`**: inserir o tipo de documento desejado como filtro de seleção.
+- :material-application-variable: **`pasta_onedrive`**: inserir o caminho da pasta no Onedrive em que os arquivos serão salvos.
 
 
 Outras observações:
@@ -70,7 +78,8 @@ Outras observações:
 
 
 ## 5. Códigos
-- Fluxo ['Main'](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/sejusp_depen_farmaco/main.txt)
-(... exemplo. adaptar os tópicos de acordo com o caso do robô)
+1. Fluxo [Main](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/manifestacao_oge/main_oge).
+2. Fluxo [Login_sei](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/login_sei.txt).
+3. Fluxo [Excel](https://raw.githubusercontent.com/automatiza-mg/biblioteca-de-robos/refs/heads/main/robos/site/manifestacao_oge/excel).
 
 
