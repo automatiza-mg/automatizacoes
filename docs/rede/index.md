@@ -133,3 +133,20 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
     3. <a href="assets/20260528_ligia_oliveira.pdf" download="Lígia Oliveira">Apresentação **Lígia Oliveira** (ECIA - Seplag) - Aplicações do Microsoft Copilot Studio no trabalho</a>
 
 </div>
+
+<div class="grid cards card-border-radius" markdown>
+
+- <p class="text-larger" markdown>__Para além do Automate: Linguagens de Programação__</p>
+
+    ---
+
+    [Transmissão do evento - YouTube](https://www.youtube.com/live/mvMxoVjn4gk)
+
+    ---
+
+    1. <a href="https://coordenacao-de-informacao-fhemig.github.io/rede-automatiza/" download="Ana Clara Mendes Rezende">Apresentação **Ana Clara Mendes Rezende** (FHEMIG) - Automação do Monitoramento de Indicadores Contratuais</a>
+    2. <a href="https://henriquesiqr.github.io/apresentacoes/#/" download="Henrique Siqueira Ribeiro">Apresentação **Henrique Siqueira Ribeiro** (SISMID - Sejusp) - Utilizando Python para automatização de rotinas de dados</a>
+    3. <a href="assets/20260624_isabellefernandes.html" download="Isabelle Fernandes de Oliveira Sannier">Apresentação **Isabelle Fernandes de Oliveira Sannier** (FHEMIG) - Casos práticos de utilização da linguagem R</a>
+    3. <a href="assets/20260624_felipefelix.pdf" download="Felipe Felix Souza dos Santos">Apresentação **Felipe Felix Souza dos Santos** (Automatiza.MG - Seplag) - Como Go ajudou a construir a Fila da Aposentadoria</a>
+
+</div>
