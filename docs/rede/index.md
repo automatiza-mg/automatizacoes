@@ -93,16 +93,16 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
     :octicons-arrow-right-24: **Painel de automatizações de área meio**
 
-    1. <a href="assets/20251204_ana_luiza_ferreira.pdf" download="Lançamento - Ana Luiza Ferreira">Apresentação **Ana Luiza Ferreira** - Superintendência de Logística (Seplag-MG)</a>
-    2. <a href="assets/20251204_breno_marques.pdf" download="Lançamento - Breno Marques">Apresentação **Breno Marques** - Automatiza.MG (Seplag-MG)</a>
-    3. <a href="assets/20251204_pedro_vinicius_campos.pdf" download="Lançamento - Pedro Vinicius Campos">Apresentação **Pedro Vinicius Campos** - Assessoria do Gabinete da Subsecretaria do Tesouro Nacional (SEF-MG)</a>
+    1. <a href="assets/20251204_ana_luiza_ferreira.pdf" download="Lançamento - Ana Luiza Ferreira">Apresentação **Ana Luiza Ferreira** (SCL - Seplag-MG) - Iniciativas de automatização na Superintendência de Logística </a>
+    2. <a href="assets/20251204_breno_marques.pdf" download="Lançamento - Breno Marques">Apresentação **Breno Marques** (Automatiza.MG - Seplag-MG) - Automatização na gestão de frotas: consulta de situação veicular </a>
+    3. <a href="assets/20251204_pedro_vinicius_campos.pdf" download="Lançamento - Pedro Vinicius Campos">Apresentação **Pedro Vinicius Campos** (STE - SEF-MG) - STEFAN</a>
 
 
     :octicons-arrow-right-24: **Painel de automatizações de área fim**
 
-    1. <a href="assets/20251204_eric_de_souza.pdf" download="Lançamento - Eric de Souza">Apresentação **Eric de Souza** - Superintendência de Infrações e Controle do Condutor (CET-MG)</a>
-    2. <a href="assets/20251204_lucas_de_carvalho.pdf" download="Lançamento - Lucas Araújo">Apresentação **Lucas Araújo** - Assessoria de Inovação (SEE-MG)</a>
-    3. <a href="assets/20251204_andre_amorim.pdf" download="Lançamento - André Amorim">Apresentação **André Amorim** - Ouvidoria de Saúde (OGE-MG)</a>
+    1. <a href="assets/20251204_eric_de_souza.pdf" download="Lançamento - Eric de Souza">Apresentação **Eric de Souza** (SUICC - CET-MG) - Implementação de automatizações na CET-MG</a>
+    2. <a href="assets/20251204_lucas_de_carvalho.pdf" download="Lançamento - Lucas Araújo">Apresentação **Lucas Araújo** (Assessoria de Inovação - SEE-MG) - IA e automatizações com tecnologias Open Source</a>
+    3. <a href="assets/20251204_andre_amorim.pdf" download="Lançamento - André Amorim">Apresentação **André Amorim** (Ouvidoria de Saúde - OGE-MG) - Automatização das transcrições de manifestações da Ouvidoria de Saúde </a>
 
 
 </div>
@@ -118,9 +118,8 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
     ---
 
 
-    1. <a href="assets/20260210_erik_de_morais.pdf" download="Erik tadeu de Morais">Apresentação **Erik de Morais** - Superintendência Central de Administração de Pessoal (Seplag-MG)</a>
-    2. <a href="assets/20260210_bruno_andrade.pdf" download="Bruno Victor de Andrade">Apresentação **Bruno de Andrade** - Assessoria de Gestão 
-    Estratégica e Informação (Sejusp-MG)</a>
+    1. <a href="assets/20260210_erik_de_morais.pdf" download="Erik tadeu de Morais">Apresentação **Erik de Morais** (SCAP - Seplag-MG) - Automatização de processos no SISAP </a>
+    2. <a href="assets/20260210_bruno_andrade.pdf" download="Bruno Victor de Andrade">Apresentação **Bruno de Andrade** (AGEI - Sejusp-MG) - Fluxo de alteração de férias </a>
 
 </div>
 
@@ -128,9 +127,9 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 
 - <p class="text-larger" markdown>__Para além do Automate: ferramentas úteis no dia a dia do servidor__</p>
 
-    1. <a href="assets/20260528_luigi.pdf" download="Luigi Caetano">Apresentação **Luigi Caetano** (APMD - Sedese) - Aplicações práticas com Power Apps</a>
-    2. <a href="https://splor-mg.github.io/apresentacoes/20260514_rede_automatiza.html#/" download="Raiane Souza">Apresentação **Raiane Souza** (Splor - Seplag) - Uso de versionamento com Git e GitHub no dia a dia</a>
-    3. <a href="assets/20260528_ligia_oliveira.pdf" download="Lígia Oliveira">Apresentação **Lígia Oliveira** (ECIA - Seplag) - Aplicações do Microsoft Copilot Studio no trabalho</a>
+    1. <a href="assets/20260528_luigi.pdf" download="Luigi Caetano">Apresentação **Luigi Caetano** (APMD - Sedese-MG) - Aplicações práticas com Power Apps</a>
+    2. <a href="https://splor-mg.github.io/apresentacoes/20260514_rede_automatiza.html#/" download="Raiane Souza">Apresentação **Raiane Souza** (Splor - Seplag-MG) - Uso de versionamento com Git e GitHub no dia a dia</a>
+    3. <a href="assets/20260528_ligia_oliveira.pdf" download="Lígia Oliveira">Apresentação **Lígia Oliveira** (NDS - Seplag) - Aplicações do Microsoft Copilot Studio no trabalho</a>
 
 </div>
 
