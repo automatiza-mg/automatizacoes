@@ -58,7 +58,7 @@ hide:
 
     Aprenda a utilizar ferramentas de automatização.
 
-    [:octicons-arrow-right-24: Curso](https://www.ead.planejamento.mg.gov.br/course/view.php?id=98)
+    [:octicons-arrow-right-24: Curso](https://ead.planejamento.mg.gov.br/course/view.php?id=10)
 
 - <p class="text-larger" markdown>:fontawesome-solid-infinity:{ .lg .middle .light-red } __Inovação__</p>
 
