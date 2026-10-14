@@ -13,7 +13,7 @@ tags:
 
 | **Desenvolvedores**| Extensionistas FJP (Diego Silva, João Vitor Fonseca e Leidi Alves) e Automatiza.MG (André Amorim)  |
 | ----------- | ------------------------------------ |
-| **E-mail**       | simplificacao@planejamento.mg.gov.br|
+| **E-mail**       | automatizamg@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.49.00202.24289 |
 

@@ -11,5 +11,6 @@ Este projeto consiste em uma série de ações para automatizar processos na Sej
 
  1. [Automatização da consulta à situação CAGEC](consulta_situacao_cagec.md)
  2. [Automatização do pagamento do trabalho de IPLs​](pagamento_ipls.md)
- 3. [FarmacIA - Robô de Análise de Psicotrópicos](farmacia.md)
+ 3. [Automatização do tratamento inicial de manifestações da OGE](oge.md)
+ 4. [FarmacIA - Robô de Análise de Psicotrópicos](farmacia.md)
  

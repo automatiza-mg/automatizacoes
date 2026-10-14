@@ -13,7 +13,7 @@ tags:
 
 | **Desenvolvedor**| Automatiza-mg  |
 | ----------- | ------------------------------------ |
-| **E-mail**       | simplificacao@planejamento.mg.gov.br|
+| **E-mail**       | automatizamg@planejamento.mg.gov.br|
 | **Ferramenta**    | Power Automate Desktop |
 | **Versão Power Automate**    | 2.58.00134.25188 |
 

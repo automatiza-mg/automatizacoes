@@ -6,6 +6,6 @@
     Também temos o espaço abaixo para perguntas e respostas.
     Dê uma olhadinha lá! Quem sabe alguém já não fez uma pergunta com o mesmo problema que você está enfrentando?
 
-    Caso prefira, mande um e-mail para [simplificacao@planejamento.mg.gov.br](mailto:simplificacao@planejamento.mg.gov.br).
+    Caso prefira, mande um e-mail para [automatizamg@planejamento.mg.gov.br](mailto:automatizamg@planejamento.mg.gov.br).
 
     Ótimo trabalho!

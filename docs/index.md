@@ -204,7 +204,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Superintendente do Centro de Automatização e Inteligência Artificial – Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
@@ -217,7 +217,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_bernardo](https://avatars.githubusercontent.com/u/167541200?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -230,7 +230,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_breno](https://avatars.githubusercontent.com/u/198124650?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -243,7 +243,20 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![foto_enzo](https://avatars.githubusercontent.com/u/102993645?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Enzo Braga__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_erick](https://avatars.githubusercontent.com/u/42552973?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -256,7 +269,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_felipe](http://avatars.githubusercontent.com/u/64739815?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -269,7 +282,33 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![foto_igor](https://avatars.githubusercontent.com/u/104989162?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Igor Crispim__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![foto_joao](https://avatars.githubusercontent.com/u/188368099?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__João Vitor Fonseca__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_luciano](https://avatars.githubusercontent.com/u/250369595?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -282,7 +321,20 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+    </p>
+
+- <p class="p-center" markdown>![foto_marcos](https://avatars.githubusercontent.com/u/173073486?v=4){ .lg .middle .avatar loading=lazy }</p>
+
+
+    <p class="p-center" markdown>__Marcos Vinícius__</p>
+
+    ---
+
+    <p class="p-center" markdown>Equipe Automatiza.MG.</p>
+
+    <p class="p-center" markdown>
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_mateus](https://avatars.githubusercontent.com/u/191279792?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -295,7 +347,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
 - <p class="p-center" markdown>![foto_thais](https://avatars.githubusercontent.com/u/282049309?v=4){ .lg .middle .avatar loading=lazy }</p>
@@ -308,6 +360,6 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
     <p class="p-center" markdown>Equipe Automatiza.MG.</p>
 
     <p class="p-center" markdown>
-      [:material-email:](mailto:simplificacao@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
+      [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 </div>
