@@ -52,7 +52,7 @@ theme:
   custom_dir: docs/overrides
 
   # removido temporariamente
-  # logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710367935/automatiza-mg/logo_grande.webp
+  logo: https://res.cloudinary.com/dgll6seyc/image/upload/v1710367935/automatiza-mg/logo_grande.webp
 
   features:
     - content.code.annotate
@@ -76,7 +76,7 @@ theme:
     text: Plus Jakarta Sans
     code: Roboto Mono
   # removido temporariamente
-  # favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1711112766/automatiza-mg/apenas_logo_favicon.webp
+  favicon: https://res.cloudinary.com/dgll6seyc/image/upload/v1711112766/automatiza-mg/apenas_logo_favicon.webp
 
 markdown_extensions:
   - abbr
