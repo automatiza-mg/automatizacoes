@@ -68,7 +68,7 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
 === "<span style='color: #1c2952;'>Como posso participar?</span>"
 
     :octicons-arrow-right-24: <span style='color: #1c2952;'>**Ficou interessado/a?**</span> 
-    Entre em nosso grupo de WhatsApp clicando neste [link](https://chat.whatsapp.com/E9kO5yqwLbL5Zm0x11ginH) ou apontando a câmera do seu celular para este QR Code:
+    Entre em nosso grupo de WhatsApp clicando neste [link](https://chat.whatsapp.com/G396cWs6Uze5xjyOj7dxfi?s=cl&p=i&mlu=4&ilr=4) ou apontando a câmera do seu celular para este QR Code:
 
     <div style="width: 150px; margin: 0 auto; text-align: center;">
     ![Código QR](https://res.cloudinary.com/dgll6seyc/image/upload/v1779373278/automatiza-mg/qr_code_rede_tgfoga.jpg)

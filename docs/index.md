@@ -70,9 +70,11 @@ hide:
 
 </div>
 
+<!--
 ## Veja funcionando { .h2-center }
 
 ![type:video](https://www.youtube.com/embed/2GMy8TcuQ6A){: #iframe-youtube style='width: 60%; height: 17em; border-radius:20px'}
+-->
 
 ## O Projeto em Números { .h2-center }
 
@@ -80,7 +82,7 @@ hide:
 
 - :material-robot-angry-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>110</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>139</p>
 
     robôs
 
@@ -88,7 +90,7 @@ hide:
 
 - :fontawesome-solid-money-bill-1-wave:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>R$ 125,3</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>R$ 221,5</p>
 
     milhões
 
@@ -96,7 +98,7 @@ hide:
 
 - :material-clock-time-five-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>10.006,6</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>17.500</p>
 
     horas
 
@@ -104,7 +106,7 @@ hide:
 
 - :material-book:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>1.035</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>1.270</p>
 
     servidores
 
@@ -112,7 +114,7 @@ hide:
 
 - :material-earbuds-outline:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>31</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>41</p>
 
     cursos e oficinas
 
@@ -120,7 +122,7 @@ hide:
 
 - :fontawesome-solid-people-arrows:
 
-    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>56,98</p>
+    <p class="p-black" style="border-top: 5px solid #6f4398" markdown>99,4</p>
 
     servidores
 
@@ -207,7 +209,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1710959678/automatiza-mg/avatar_cora1.webp){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1793209936/avatar_cora1.jpg){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Augusta Cora__</p>
