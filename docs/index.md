@@ -209,7 +209,7 @@ Clique [aqui](blog/posts/20231229_metricas/index.md) para mais detalhes sobre es
       [:material-email:](mailto:automatizamg@planejamento.mg.gov.br){ .lg .middle .light-red .text-larger }
     </p>
 
-- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1793209936/avatar_cora1.jpg){ .lg .middle .avatar loading=lazy }</p>
+- <p class="p-center" markdown>![foto_cora](https://res.cloudinary.com/dgll6seyc/image/upload/v1793215907/avatar_cora2.jpg){ .lg .middle .avatar loading=lazy }</p>
 
 
     <p class="p-center" markdown>__Augusta Cora__</p>
