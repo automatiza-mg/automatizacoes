@@ -74,6 +74,8 @@ Aqui você encontra reunidas as principais informações sobre a <span style='co
     ![Código QR](https://res.cloudinary.com/dgll6seyc/image/upload/v1779373278/automatiza-mg/qr_code_rede_tgfoga.jpg)
     </div>
 
+    ###[**ATENÇÃO**: grupo temporariamente desativado. Retornamos em breve!]
+
     :octicons-arrow-right-24: <span style='color: #1c2952;'>**Tem alguma automatização, uso de IA ou iniciativa inovadora que quer compartilhar em um de nossos eventos?**</span>
     Preencha nosso [formulário](https://forms.office.com/r/XbCScp6cpE)!
 
