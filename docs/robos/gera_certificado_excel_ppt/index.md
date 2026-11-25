@@ -11,9 +11,9 @@ tags:
 
 ## Informações gerais
 
-| **Desenvolvedor**| Automatiza-mg  |
+| **Desenvolvedor**| Isabela Romancini  |
 | ----------- | ------------------------------------ |
-| **E-mail**       | automatizamg@planejamento.mg.gov.br|
+| **E-mail**       | isabela.romancini@planejamento.mg.gov.br|
 | **Ferramenta**    | Excel com VBA e Power Point |
 | **Versão Excel**    | 2016 ou superior |
 
